@@ -21,7 +21,7 @@ module Crossref
       args = {"query" => self.query}
       args = args.delete_if { |k, v| v.nil? }
 
-      if doi.nil?
+      if self.doi.nil?
         # puts args
         # puts url
         res = HTTParty.get(url, :query => args)
