@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name        = 'crossrefrb'
   s.version     = Crossref::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.date        = '2015-08-28'
+  s.date        = '2015-09-07'
   s.summary     = "Crossref Client"
   s.description = "Low Level Ruby Client for the Crossref Search API"
   s.authors     = "Scott Chamberlain"
