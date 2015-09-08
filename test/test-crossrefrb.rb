@@ -18,7 +18,7 @@ class TestResponse < Test::Unit::TestCase
   end
 
   def test_works
-    res = Crossref.works(doi: @doi)
+    res = Crossref.works(ids: @doi)
     assert_equal(1, res.length)
     assert_equal(Array, res.class)
     assert_equal(HTTParty::Response, res[0].class)
@@ -26,7 +26,7 @@ class TestResponse < Test::Unit::TestCase
   end
 
   def test_works_many_dois
-    res = Crossref.works(doi: @dois)
+    res = Crossref.works(ids: @dois)
     assert_equal(3, res.length)
     assert_equal(Array, res.class)
     assert_equal(HTTParty::Response, res[0].class)
