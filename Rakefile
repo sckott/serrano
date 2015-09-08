@@ -10,6 +10,11 @@ end
 desc "Run tests"
 task :default => :test
 
+desc "Build crossrefrb docs"
+task :docs do
+	system "yardoc"
+end
+
 desc "Build crossrefrb"
 task :build do
 	system "gem build crossrefrb.gemspec"
