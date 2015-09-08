@@ -2,6 +2,7 @@ require 'httparty'
 require 'json'
 require "crossrefrb/version"
 require "crossrefrb/request"
+require "crossrefrb/filterhandler"
 
 # @!macro crossref_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
@@ -62,6 +63,7 @@ module Crossref
   #     Crossref.members(ids: [98, 340, 45])
   #     # query
   #     Crossref.members(query: "ecology")
+  #     Crossref.members(query: "hindawi")
   #     # Sort
   #     Crossref.members(query: "ecology", sort: 'relevance', order: "asc")
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,

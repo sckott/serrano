@@ -36,8 +36,9 @@ module Crossref
 
     def perform
       url = $crbase + self.endpt
+      filt = filter_handler(self.filter)
 
-      args = { query: self.query, filter: self.filter, offset: self.offset,
+      args = { query: self.query, filter: filt, offset: self.offset,
               rows: self.limit, sample: self.sample, sort: self.sort,
               order: self.order, facet: self.facet }
       options = { query: args.delete_if { |k, v| v.nil? } }
