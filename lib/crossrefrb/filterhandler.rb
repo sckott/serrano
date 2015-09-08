@@ -8,7 +8,7 @@ module Crossref
 			if x.nil?
 				nil
 			else
-				x = x.stringify
+				x = stringify(x)
 				nn = x.keys.collect{ |x| x.to_s }
 				if nn.collect{ |x| others.include? x }.any?
 					nn = nn.collect{ |x|
@@ -36,22 +36,30 @@ module Crossref
 				end
 
 				newnn = nn.collect{ |x| x.gsub("_", "-") }
-				x = x.rename_keys newnn
+				x = rename_keys(x, newnn)
 				x = x.collect{ |k,v| [k, v].join(":") }.join(',')
 				return x
 			end
 		end
 
-		class Hash
-			def stringify
-				(self.keys.map{ |k,v| k.to_s }.zip self.values).to_h
-			end
+		# class Hash
+		# 	def stringify
+		# 		(self.keys.map{ |k,v| k.to_s }.zip self.values).to_h
+		# 	end
+		# end
+
+		def stringify(x)
+			(x.keys.map{ |k,v| k.to_s }.zip x.values).to_h
 		end
 
-		class Hash
-			def rename_keys(x)
-				(x.zip self.values).to_h
-			end
+		# class Hash
+		# 	def rename_keys(x)
+		# 		(x.zip self.values).to_h
+		# 	end
+		# end
+
+		def rename_keys(x, y)
+			(y.zip x.values).to_h
 		end
 
 		others = ['license_url','license_version','license_delay','full_text_version','full_text_type',
