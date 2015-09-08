@@ -44,9 +44,8 @@ module Crossref
   #     Crossref.works(query: "ecology", sort: 'relevance', order: "asc")
   #     # Filters
   #     Crossref.works(filter: {has_full_text: true})
-  #     x = {has_full_text: true}
-  #     x = {has_funder: true, has_full_text: true}
-  #     x = {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'}
+  #     Crossref.works(filter: {has_funder: true, has_full_text: true})
+  #     Crossref.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
