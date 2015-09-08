@@ -9,7 +9,7 @@ module Crossref
     $crbase = "http://api.crossref.org/"
 
     attr_accessor :endpt
-    attr_accessor :doi
+    attr_accessor :id
     attr_accessor :query
     attr_accessor :filter
     attr_accessor :offset
@@ -19,11 +19,11 @@ module Crossref
     attr_accessor :order
     attr_accessor :facet
 
-    def initialize(endpt, doi, query, filter, offset,
+    def initialize(endpt, id, query, filter, offset,
       limit, sample, sort, order, facet)
 
       self.endpt = endpt
-      self.doi = doi
+      self.id = id
       self.query = query
       self.filter = filter
       self.offset = offset
@@ -42,13 +42,13 @@ module Crossref
               order: self.order, facet: self.facet }
       options = { query: args.delete_if { |k, v| v.nil? } }
 
-      if self.doi.nil?
+      if self.id.nil?
         res = HTTParty.get(url, options)
         return res
       else
         coll = []
-        Array(self.doi).each do |x|
-          coll << HTTParty.get(url + '/' + x)
+        Array(self.id).each do |x|
+          coll << HTTParty.get(url + '/' + x.to_s)
         end
         return coll
       end

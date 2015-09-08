@@ -15,7 +15,7 @@ module Crossref
   # @return [Array] the output
   #
   # @example
-  #     require 'crossref'
+  #     require 'crossrefrb'
   #     # Search by DOI, one or more
   #     Crossref.works(doi: '10.5555/515151')
   #     Crossref.works(doi: '10.1371/journal.pone.0033693')
@@ -29,6 +29,30 @@ module Crossref
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
     Request.new('works', doi, query, filter, offset,
+      limit, sample, sort, order, facet).perform
+  end
+
+  ##
+  # Search the members API
+  #
+  # @param ids [Array] A member id, or more than one
+  # @param query [String] A query string
+  # @return [Array] the output
+  #
+  # @example
+  #     require 'crossrefrb'
+  #     # Search by DOI, one or more
+  #     Crossref.members(ids: 98)
+  #     Crossref.members(ids: 340)
+  #     Crossref.members(ids: [98, 340, 45])
+  #     # query
+  #     Crossref.members(query: "ecology")
+  #     # Sort
+  #     Crossref.members(query: "ecology", sort: 'relevance', order: "asc")
+  def self.members(ids: nil, query: nil, filter: nil, offset: nil,
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
+
+    Request.new('members', ids, query, filter, offset,
       limit, sample, sort, order, facet).perform
   end
 end
