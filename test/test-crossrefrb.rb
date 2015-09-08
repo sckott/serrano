@@ -5,7 +5,7 @@ if ENV['CI']=='true'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
-require "textminer"
+require "crossrefrb"
 require 'fileutils'
 require "test/unit"
 require "oga"
@@ -13,40 +13,31 @@ require "oga"
 class TestResponse < Test::Unit::TestCase
 
   def setup
-    @doi = '10.5555/515151'
-    @doi2 = "10.3897/phytokeys.42.7604"
-    @pdf = ["http://annalsofpsychoceramics.labs.crossref.org/fulltext/10.5555/515151.pdf"]
-    @xml = ["http://annalsofpsychoceramics.labs.crossref.org/fulltext/10.5555/515151.xml"]
+    @doi = '10.1371/journal.pone.0033693'
+    @dois = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993']
   end
 
-  def test_links_endpoint
-    assert_equal(Textminer::Response, Textminer.links(@doi).class)
-  end
-
-  def test_doi
-    assert_equal(@doi, Textminer.links(@doi).doi)
-  end
-
-  def test_pdf
-    assert_equal(@pdf, Textminer.links(@doi).pdf)
-  end
-
-  def test_xml
-    assert_equal(@xml, Textminer.links(@doi).xml)
-  end
-
-  def test_fetch_xml
-    res = Textminer.fetch(@doi2, "xml")
+  def test_works
+    res = Crossref.works(doi: @doi)
+    assert_equal(1, res.length)
+    assert_equal(Array, res.class)
     assert_equal(HTTParty::Response, res[0].class)
-    assert_true(res[0].ok?)
-    assert_equal(String, res[0].body.class)
-    assert_equal("PhytoKeys", Oga.parse_xml(res[0].body).xpath('//journal-meta//journal-id').text)
+    assert_equal(res[0]['status'], 'ok')
   end
 
-  # def test_fetch_pdf
-  #   res = Textminer.fetch(@doi2, "pdf")
-  #   assert_equal(HTTParty::Response, res.class)
-  #   assert_true(res.ok?)
-  # end
+  def test_works_many_dois
+    res = Crossref.works(doi: @dois)
+    assert_equal(3, res.length)
+    assert_equal(Array, res.class)
+    assert_equal(HTTParty::Response, res[0].class)
+    assert_equal(res[0]['status'], 'ok')
+  end
+
+  def test_works_query
+    res = Crossref.works(query: "ecology")
+    assert_equal(4, res.length)
+    assert_equal(HTTParty::Response, res.class)
+    assert_equal(res['status'], 'ok')
+  end
 
 end
