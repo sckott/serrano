@@ -1,3 +1,3 @@
-## 0.0.1 (2015-08-27)
+## 0.0.1 (xxxx-xx-xx)
 
 * First version to Rubygems
