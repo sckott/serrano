@@ -1,3 +1,3 @@
 module Crossref
-  VERSION = "0.0.1.9900"
+  VERSION = "0.0.2.9000"
 end

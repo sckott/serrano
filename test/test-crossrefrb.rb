@@ -40,4 +40,11 @@ class TestResponse < Test::Unit::TestCase
     assert_equal(res['status'], 'ok')
   end
 
+  def test_works_filter_handler
+    res = Crossref.works(filter: {has_funder: true, has_full_text: true})
+    assert_equal(4, res.length)
+    assert_equal(HTTParty::Response, res.class)
+    assert_equal(res['status'], 'ok')
+  end
+
 end
