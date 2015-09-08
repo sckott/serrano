@@ -6,6 +6,10 @@ require "crossrefrb/request"
 ##
 # Crossref - The top level module for using methods
 # to access Crossref APIs
+#
+# The following methods are available:
+# * works - Use the /works endpoint
+# * members - use the /members endpoint
 module Crossref
   ##
   # Search the works API
