@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    crossrefrb (0.0.2.9000)
+    crossrefrb (0.0.2.9300)
       httparty (~> 0.13)
       json (~> 1.8)
       thor (~> 0.19)
