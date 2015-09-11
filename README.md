@@ -6,6 +6,8 @@ crossrefrb
 
 `crossrefrb` is a low level client for Crossref APIs
 
+Docs: http://recology.info/crossrefrb/
+
 ## Changes
 
 For changes see the [NEWS file](https://github.com/sckott/crossrefrb/blob/master/NEWS.md).
