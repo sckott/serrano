@@ -27,7 +27,7 @@ require "crossrefrb/filterhandler"
 # * members - use the /members endpoint
 module Crossref
   ##
-  # Search the works API
+  # Search the works route
   #
   # @!macro crossref_params
   # @return [Array] the output
@@ -55,7 +55,7 @@ module Crossref
   end
 
   ##
-  # Search the members API
+  # Search the members route
   #
   # @!macro crossref_params
   # @return [Array] the output
@@ -81,7 +81,7 @@ module Crossref
   end
 
   ##
-  # Search the prefixes API
+  # Search the prefixes route
   #
   # @!macro crossref_params
   # @return [Array] the output
@@ -101,6 +101,59 @@ module Crossref
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('prefixes', ids, nil, filter, offset,
+      limit, sample, sort, order, facet, works).perform
+  end
+
+  ##
+  # Search the fundref route
+  #
+  # @!macro crossref_params
+  # @return [Array] the output
+  #
+  # @example
+  #     require 'crossrefrb'
+  #     # Search by DOI, one or more
+  #     Crossref.fundref(ids: '10.13039/100000001')
+  #     Crossref.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+  #     # query
+  #     Crossref.fundref(query: "NSF")
+  #     # works
+  #     Crossref.fundref(ids: '10.13039/100000001', works: true)
+  #     # Limit number of results
+  #     Crossref.fundref(ids: '10.13039/100000001', works: true, limit: 3)
+  #     # Sort and order
+  #     Crossref.fundref(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
+  def self.fundref(ids: nil, query: nil, filter: nil, offset: nil,
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+
+    Request.new('funders', ids, query, filter, offset,
+      limit, sample, sort, order, facet, works).perform
+  end
+
+  ##
+  # Search the journals route
+  #
+  # @!macro crossref_params
+  # @return [Array] the output
+  #
+  # @example
+  #     require 'crossrefrb'
+  #     Crossref.journals(ids: "2167-8359")
+  #     Crossref.journals()
+  #     Crossref.journals(ids: "2167-8359", works: TRUE)
+  #     Crossref.journals(ids: ['1803-2427', '2326-4225'])
+  #     Crossref.journals(query: "ecology")
+  #     Crossref.journals(query: "peerj")
+  #     Crossref.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "asc")
+  #     Crossref.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "desc")
+  #     Crossref.journals(ids: "2167-8359", works: TRUE, filter: {from_pub_date: '2014-03-03'})
+  #     Crossref.journals(ids: '1803-2427', works: TRUE)
+  #     Crossref.journals(ids: '1803-2427', works: TRUE, sample: 1)
+  #     Crossref.journals(limit: 2)
+  def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+
+    Request.new('journals', ids, query, filter, offset,
       limit, sample, sort, order, facet, works).perform
   end
 end

@@ -10,7 +10,18 @@ Docs: http://recology.info/crossrefrb/
 
 ## Changes
 
-For changes see the [NEWS file](https://github.com/sckott/crossrefrb/blob/master/NEWS.md).
+For changes see the [NEWS file](NEWS.md).
+
+## API
+
+Methods in relation to Crossref search API routes
+
+* `/works` - `Crossref.works()`
+* `/members` - `Crossref.members()`
+* `/prefixes` - `Crossref.prefixes()`
+* `/funders` - `Crossref.fundref()`
+* `/journals` - `Crossref.journals()`
+* `/licenses` - `Crossref.licenses()`
 
 ## Install
 
@@ -28,20 +39,39 @@ cd crossrefrb
 rake install
 ```
 
-## Within Ruby
+## Examples
 
-Search by DOI
+Search works by DOI
 
 ```ruby
 require 'crossrefrb'
 Crossref.works(doi: '10.1371/journal.pone.0033693')
 ```
 
-Search by query string
+Search works by query string
 
 ```ruby
 Crossref.works(query: "ecology")
 ```
+
+Search journals by publisher name
+
+```ruby
+Crossref.journals(query: "peerj")
+```
+
+Search funding information by DOI
+
+```ruby
+Crossref.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+```
+
+## Todo
+
+* Export CLI interface
+* More robust test suite
+* More examples
+* Suite of methods on output data
 
 ## Meta
 
