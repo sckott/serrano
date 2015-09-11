@@ -1,5 +1,3 @@
-require "httparty"
-require "json"
 require "crossrefrb/version"
 require "crossrefrb/request"
 require "crossrefrb/filterhandler"

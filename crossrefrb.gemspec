@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = Crossref::VERSION
   s.platform    = Gem::Platform::RUBY
   s.required_ruby_version = '>= 2.0'
-  s.date        = '2015-09-07'
+  s.date        = '2015-09-11'
   s.summary     = "Crossref Client"
   s.description = "Low Level Ruby Client for the Crossref Search API"
   s.authors     = "Scott Chamberlain"
@@ -26,8 +26,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency "oga", '~> 1.2'
   s.add_development_dependency "simplecov", '~> 0.10'
   s.add_development_dependency "codecov", '~> 0.1'
+  s.add_development_dependency 'json', '~> 1.8.3'
 
-  s.add_runtime_dependency 'httparty', '~> 0.13'
+  s.add_runtime_dependency 'faraday', '~> 0.9.1'
   s.add_runtime_dependency 'thor', '~> 0.19'
-  s.add_runtime_dependency 'json', '~> 1.8'
 end

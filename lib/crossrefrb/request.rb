@@ -1,4 +1,4 @@
-require 'httparty'
+require "faraday"
 
 ##
 # Crossref::Request
@@ -37,27 +37,32 @@ module Crossref
     end
 
     def perform
-      url = $crbase + self.endpt
+      # url = $crbase + self.endpt
 
       filt = filter_handler(self.filter)
 
       args = { query: self.query, filter: filt, offset: self.offset,
               rows: self.limit, sample: self.sample, sort: self.sort,
               order: self.order, facet: self.facet }
-      options = { query: args.delete_if { |k, v| v.nil? } }
+      options = args.delete_if { |k, v| v.nil? }
+
+      conn = Faraday.new(:url => $crbase)
 
       if self.id.nil?
-        res = HTTParty.get(url, options)
+        # res = HTTParty.get(url, options)
+        res = conn.get self.endpt, options
         return res
       else
         coll = []
         Array(self.id).each do |x|
           if works
-            url = url + '/' + x.to_s + "/works"
+            endpt = self.endpt + '/' + x.to_s + "/works"
           else
-            url = url + '/' + x.to_s
+            endpt = self.endpt + '/' + x.to_s
           end
-          coll << HTTParty.get(url, options)
+          # coll << HTTParty.get(url, options)
+          res = conn.get endpt, options
+          coll << res
         end
         return coll
       end
