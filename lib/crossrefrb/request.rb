@@ -18,9 +18,10 @@ module Crossref
     attr_accessor :sort
     attr_accessor :order
     attr_accessor :facet
+    attr_accessor :works
 
     def initialize(endpt, id, query, filter, offset,
-      limit, sample, sort, order, facet)
+      limit, sample, sort, order, facet, works)
 
       self.endpt = endpt
       self.id = id
@@ -32,10 +33,12 @@ module Crossref
       self.sort = sort
       self.order = order
       self.facet = facet
+      self.works = works
     end
 
     def perform
       url = $crbase + self.endpt
+
       filt = filter_handler(self.filter)
 
       args = { query: self.query, filter: filt, offset: self.offset,
@@ -49,7 +52,12 @@ module Crossref
       else
         coll = []
         Array(self.id).each do |x|
-          coll << HTTParty.get(url + '/' + x.to_s)
+          if works
+            url = url + '/' + x.to_s + "/works"
+          else
+            url = url + '/' + x.to_s
+          end
+          coll << HTTParty.get(url, options)
         end
         return coll
       end
