@@ -22,10 +22,10 @@ end
 
 desc "Install serrano"
 task :install => :build do
-	system "gem install serrano-#{Crossref::VERSION}.gem"
+	system "gem install serrano-#{Serrano::VERSION}.gem"
 end
 
 desc "Release to Rubygems"
 task :release => :build do
-  system "gem push serrano-#{Crossref::VERSION}.gem"
+  system "gem push serrano-#{Serrano::VERSION}.gem"
 end

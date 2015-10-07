@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "oga", '~> 1.2'
   s.add_development_dependency "simplecov", '~> 0.10'
   s.add_development_dependency "codecov", '~> 0.1'
-  s.add_development_dependency 'json', '~> 1.8.3'
+  s.add_development_dependency 'json', '~> 1.8', '>= 1.8.3'
 
   s.add_runtime_dependency 'faraday', '~> 0.9.1'
   s.add_runtime_dependency 'thor', '~> 0.19'
