@@ -1,5 +1,5 @@
 # helper functions
-module Crossref
+module Serrano
   class Request #:nodoc:
 
     private

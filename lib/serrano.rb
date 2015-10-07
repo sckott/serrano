@@ -1,8 +1,8 @@
-require "crossrefrb/version"
-require "crossrefrb/request"
-require "crossrefrb/filterhandler"
+require "serrano/version"
+require "serrano/request"
+require "serrano/filterhandler"
 
-# @!macro crossref_params
+# @!macro serrano_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
 #   @param query [String] A query string
 #   @param filter [Hash] Filter options. See ...
@@ -17,34 +17,34 @@ require "crossrefrb/filterhandler"
 #   @param works [Boolean] If true, works returned as well. Default: false
 
 ##
-# Crossref - The top level module for using methods
-# to access Crossref APIs
+# Serrano - The top level module for using methods
+# to access Serrano APIs
 #
 # The following methods are available:
 # * works - Use the /works endpoint
 # * members - use the /members endpoint
-module Crossref
+module Serrano
   ##
   # Search the works route
   #
-  # @!macro crossref_params
+  # @!macro serrano_params
   # @return [Array] the output
   #
   # @example
-  #     require 'crossrefrb'
+  #     require 'serrano'
   #     # Search by DOI, one or more
-  #     Crossref.works(ids: '10.5555/515151')
-  #     Crossref.works(ids: '10.1371/journal.pone.0033693')
-  #     Crossref.works(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+  #     Serrano.works(ids: '10.5555/515151')
+  #     Serrano.works(ids: '10.1371/journal.pone.0033693')
+  #     Serrano.works(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
   #     # query
-  #     Crossref.works(query: "ecology")
-  #     Crossref.works(query: "renear+-ontologies")
+  #     Serrano.works(query: "ecology")
+  #     Serrano.works(query: "renear+-ontologies")
   #     # Sort
-  #     Crossref.works(query: "ecology", sort: 'relevance', order: "asc")
+  #     Serrano.works(query: "ecology", sort: 'relevance', order: "asc")
   #     # Filters
-  #     Crossref.works(filter: {has_full_text: true})
-  #     Crossref.works(filter: {has_funder: true, has_full_text: true})
-  #     Crossref.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
+  #     Serrano.works(filter: {has_full_text: true})
+  #     Serrano.works(filter: {has_funder: true, has_full_text: true})
+  #     Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -55,22 +55,22 @@ module Crossref
   ##
   # Search the members route
   #
-  # @!macro crossref_params
+  # @!macro serrano_params
   # @return [Array] the output
   #
   # @example
-  #     require 'crossrefrb'
+  #     require 'serrano'
   #     # Search by DOI, one or more
-  #     Crossref.members(ids: 98)
-  #     Crossref.members(ids: 340)
-  #     Crossref.members(ids: [98, 340, 45])
+  #     Serrano.members(ids: 98)
+  #     Serrano.members(ids: 340)
+  #     Serrano.members(ids: [98, 340, 45])
   #     # query
-  #     Crossref.members(query: "ecology")
-  #     Crossref.members(query: "hindawi")
+  #     Serrano.members(query: "ecology")
+  #     Serrano.members(query: "hindawi")
   #     # Sort
-  #     Crossref.members(query: "ecology", sort: 'relevance', order: "asc")
+  #     Serrano.members(query: "ecology", sort: 'relevance', order: "asc")
   #     # Works
-  #     Crossref.members(ids: 98, works: true)
+  #     Serrano.members(ids: 98, works: true)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -81,20 +81,20 @@ module Crossref
   ##
   # Search the prefixes route
   #
-  # @!macro crossref_params
+  # @!macro serrano_params
   # @return [Array] the output
   #
   # @example
-  #     require 'crossrefrb'
+  #     require 'serrano'
   #     # Search by DOI, one or more
-  #     Crossref.prefixes(ids: "10.1016")
-  #     Crossref.prefixes(ids: ['10.1016','10.1371','10.1023','10.4176','10.1093'])
+  #     Serrano.prefixes(ids: "10.1016")
+  #     Serrano.prefixes(ids: ['10.1016','10.1371','10.1023','10.4176','10.1093'])
   #     # works
-  #     Crossref.prefixes(ids: "10.1016", works: true)
+  #     Serrano.prefixes(ids: "10.1016", works: true)
   #     # Limit number of results
-  #     Crossref.prefixes(ids: "10.1016", works: true, limit: 3)
+  #     Serrano.prefixes(ids: "10.1016", works: true, limit: 3)
   #     # Sort and order
-  #     Crossref.prefixes(ids: "10.1016", works: true, sort: 'relevance', order: "asc")
+  #     Serrano.prefixes(ids: "10.1016", works: true, sort: 'relevance', order: "asc")
   def self.prefixes(ids:, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -105,22 +105,22 @@ module Crossref
   ##
   # Search the fundref route
   #
-  # @!macro crossref_params
+  # @!macro serrano_params
   # @return [Array] the output
   #
   # @example
-  #     require 'crossrefrb'
+  #     require 'serrano'
   #     # Search by DOI, one or more
-  #     Crossref.fundref(ids: '10.13039/100000001')
-  #     Crossref.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+  #     Serrano.fundref(ids: '10.13039/100000001')
+  #     Serrano.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
   #     # query
-  #     Crossref.fundref(query: "NSF")
+  #     Serrano.fundref(query: "NSF")
   #     # works
-  #     Crossref.fundref(ids: '10.13039/100000001', works: true)
+  #     Serrano.fundref(ids: '10.13039/100000001', works: true)
   #     # Limit number of results
-  #     Crossref.fundref(ids: '10.13039/100000001', works: true, limit: 3)
+  #     Serrano.fundref(ids: '10.13039/100000001', works: true, limit: 3)
   #     # Sort and order
-  #     Crossref.fundref(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
+  #     Serrano.fundref(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
   def self.fundref(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -131,23 +131,23 @@ module Crossref
   ##
   # Search the journals route
   #
-  # @!macro crossref_params
+  # @!macro serrano_params
   # @return [Array] the output
   #
   # @example
-  #     require 'crossrefrb'
-  #     Crossref.journals(ids: "2167-8359")
-  #     Crossref.journals()
-  #     Crossref.journals(ids: "2167-8359", works: TRUE)
-  #     Crossref.journals(ids: ['1803-2427', '2326-4225'])
-  #     Crossref.journals(query: "ecology")
-  #     Crossref.journals(query: "peerj")
-  #     Crossref.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "asc")
-  #     Crossref.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "desc")
-  #     Crossref.journals(ids: "2167-8359", works: TRUE, filter: {from_pub_date: '2014-03-03'})
-  #     Crossref.journals(ids: '1803-2427', works: TRUE)
-  #     Crossref.journals(ids: '1803-2427', works: TRUE, sample: 1)
-  #     Crossref.journals(limit: 2)
+  #     require 'serrano'
+  #     Serrano.journals(ids: "2167-8359")
+  #     Serrano.journals()
+  #     Serrano.journals(ids: "2167-8359", works: TRUE)
+  #     Serrano.journals(ids: ['1803-2427', '2326-4225'])
+  #     Serrano.journals(query: "ecology")
+  #     Serrano.journals(query: "peerj")
+  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "asc")
+  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "desc")
+  #     Serrano.journals(ids: "2167-8359", works: TRUE, filter: {from_pub_date: '2014-03-03'})
+  #     Serrano.journals(ids: '1803-2427', works: TRUE)
+  #     Serrano.journals(ids: '1803-2427', works: TRUE, sample: 1)
+  #     Serrano.journals(limit: 2)
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 

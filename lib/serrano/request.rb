@@ -1,10 +1,10 @@
 require "faraday"
 
 ##
-# Crossref::Request
+# Serrano::Request
 #
-# Class to perform HTTP requests to the Crossref API
-module Crossref
+# Class to perform HTTP requests to the Serrano API
+module Serrano
   class Request #:nodoc:
     $crbase = "http://api.crossref.org/"
 

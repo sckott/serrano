@@ -1,12 +1,12 @@
-crossrefrb
+serrano
 =========
 
-[![Build Status](https://api.travis-ci.org/sckott/crossrefrb.png)](https://travis-ci.org/sckott/crossrefrb)
-[![codecov.io](http://codecov.io/github/sckott/crossrefrb/coverage.svg?branch=master)](http://codecov.io/github/sckott/crossrefrb?branch=master)
+[![Build Status](https://api.travis-ci.org/sckott/serrano.png)](https://travis-ci.org/sckott/serrano)
+[![codecov.io](http://codecov.io/github/sckott/serrano/coverage.svg?branch=master)](http://codecov.io/github/sckott/serrano?branch=master)
 
-`crossrefrb` is a low level client for Crossref APIs
+`serrano` is a low level client for Crossref APIs
 
-Docs: http://recology.info/crossrefrb/
+Docs: http://recology.info/serrano/
 
 ## Changes
 
@@ -28,14 +28,14 @@ Methods in relation to Crossref search API routes
 ### Release version
 
 ```
-gem install crossrefrb
+gem install serrano
 ```
 
 ### Development version
 
 ```
-git clone git@github.com:sckott/crossrefrb.git
-cd crossrefrb
+git clone git@github.com:sckott/serrano.git
+cd serrano
 rake install
 ```
 
@@ -44,7 +44,7 @@ rake install
 Search works by DOI
 
 ```ruby
-require 'crossrefrb'
+require 'serrano'
 Crossref.works(doi: '10.1371/journal.pone.0033693')
 ```
 

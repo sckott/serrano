@@ -5,7 +5,7 @@ if ENV['CI']=='true'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
-require "crossrefrb"
+require "serrano"
 require 'fileutils'
 require "test/unit"
 require "oga"
@@ -19,7 +19,7 @@ class TestResponse < Test::Unit::TestCase
   end
 
   def test_works
-    res = Crossref.works(ids: @doi)
+    res = Serrano.works(ids: @doi)
     assert_equal(1, res.length)
     assert_equal(Array, res.class)
     assert_equal(Faraday::Response, res[0].class)
@@ -27,7 +27,7 @@ class TestResponse < Test::Unit::TestCase
   end
 
   def test_works_many_dois
-    res = Crossref.works(ids: @dois)
+    res = Serrano.works(ids: @dois)
     assert_equal(3, res.length)
     assert_equal(Array, res.class)
     assert_equal(Faraday::Response, res[0].class)
@@ -35,14 +35,14 @@ class TestResponse < Test::Unit::TestCase
   end
 
   def test_works_query
-    res = Crossref.works(query: "ecology")
+    res = Serrano.works(query: "ecology")
     assert_equal(4, JSON.parse(res.body).length)
     assert_equal(Faraday::Response, res.class)
     assert_equal(200, res.status)
   end
 
   def test_works_filter_handler
-    res = Crossref.works(filter: {has_funder: true, has_full_text: true})
+    res = Serrano.works(filter: {has_funder: true, has_full_text: true})
     assert_equal(Faraday::Response, res.class)
     assert_equal(200, res.status)
   end

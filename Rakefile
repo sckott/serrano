@@ -10,22 +10,22 @@ end
 desc "Run tests"
 task :default => :test
 
-desc "Build crossrefrb docs"
+desc "Build serrano docs"
 task :docs do
 	system "yardoc"
 end
 
-desc "Build crossrefrb"
+desc "Build serrano"
 task :build do
-	system "gem build crossrefrb.gemspec"
+	system "gem build serrano.gemspec"
 end
 
-desc "Install crossrefrb"
+desc "Install serrano"
 task :install => :build do
-	system "gem install crossrefrb-#{Crossref::VERSION}.gem"
+	system "gem install serrano-#{Crossref::VERSION}.gem"
 end
 
 desc "Release to Rubygems"
 task :release => :build do
-  system "gem push crossrefrb-#{Crossref::VERSION}.gem"
+  system "gem push serrano-#{Crossref::VERSION}.gem"
 end
