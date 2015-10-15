@@ -22,13 +22,25 @@ require "serrano/filterhandler"
 #
 # The following methods are available:
 # * works - Use the /works endpoint
-# * members - use the /members endpoint
+# * members - Use the /members endpoint
+# * prefixes - Use the /prefixes endpoint
+# * fundref - Use the /fundref endpoint
+# * journals - Use the /journals endpoint
+# * types - Use the /types endpoint
+# * licenses - Use the /licenses endpoint
+#
+# All routes return an array of Faraday responses, which allows maximum flexibility.
+# For example, if you want to inspect headers returned from the HTTP request,
+# and parse the raw result in any way you wish.
+#
+# @see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md for
+# detailed description of the Crossref API
 module Serrano
   ##
   # Search the works route
   #
   # @!macro serrano_params
-  # @return [Array] the output
+  # @return [Array] An array of Faraday responses
   #
   # @example
   #     require 'serrano'
@@ -56,7 +68,7 @@ module Serrano
   # Search the members route
   #
   # @!macro serrano_params
-  # @return [Array] the output
+  # @return [Array] An array of Faraday responses
   #
   # @example
   #     require 'serrano'
@@ -82,7 +94,7 @@ module Serrano
   # Search the prefixes route
   #
   # @!macro serrano_params
-  # @return [Array] the output
+  # @return [Array] An array of Faraday responses
   #
   # @example
   #     require 'serrano'
@@ -106,8 +118,9 @@ module Serrano
   # Search the fundref route
   #
   # @!macro serrano_params
-  # @return [Array] the output
-  #
+  # @return [Array] An array of Faraday responses
+  # @author Scott Chamberlain
+  # @
   # @example
   #     require 'serrano'
   #     # Search by DOI, one or more
@@ -132,7 +145,7 @@ module Serrano
   # Search the journals route
   #
   # @!macro serrano_params
-  # @return [Array] the output
+  # @return [Array] An array of Faraday responses
   #
   # @example
   #     require 'serrano'
@@ -152,6 +165,40 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('journals', ids, query, filter, offset,
+      limit, sample, sort, order, facet, works).perform
+  end
+
+  ##
+  # Search the types route
+  #
+  # @!macro serrano_params
+  # @return [Array] An array of Faraday responses
+  #
+  # @example
+  #     require 'serrano'
+  #     Serrano.types(ids: "2167-8359")
+  #     Serrano.types()
+  def self.types(ids: nil, query: nil, filter: nil, offset: nil,
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+
+    Request.new('types', ids, query, filter, offset,
+      limit, sample, sort, order, facet, works).perform
+  end
+
+  ##
+  # Search the licenses route
+  #
+  # @!macro serrano_params
+  # @return [Array] An array of Faraday responses
+  #
+  # @example
+  #     require 'serrano'
+  #     Serrano.licenses(ids: "2167-8359")
+  #     Serrano.licenses()
+  def self.licenses(ids: nil, query: nil, filter: nil, offset: nil,
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+
+    Request.new('licenses', ids, query, filter, offset,
       limit, sample, sort, order, facet, works).perform
   end
 end
