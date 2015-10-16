@@ -10,17 +10,22 @@ require "serrano/filterhandler"
 #   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
 #   @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
 #   the limit and offset parameters are ignored.
-#   @param sort [String] Field to sort on, one of score, relevance, updated, deposited, indexed,
-#   or published.
+#   @param sort [String] Field to sort on, one of score, relevance,
+#   updated (date of most recent change to metadata. Currently the same as deposited),
+#   deposited (time of most recent deposit), indexed (time of most recent index), or
+#   published (publication date). Note: If the API call includes a query, then the sort
+#   order will be by the relevance score. If no query is included, then the sort order
+#   will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean] Include facet results. Default: false
 #   @param works [Boolean] If true, works returned as well. Default: false
+#   @param options [Hash] Hash of curl options. See xxxx. Ignored for now.
 
 ##
 # Serrano - The top level module for using methods
 # to access Serrano APIs
 #
-# The following methods are available:
+# The following methods, matching the main Crossref API routes, are available:
 # * works - Use the /works endpoint
 # * members - Use the /members endpoint
 # * prefixes - Use the /prefixes endpoint
@@ -28,6 +33,9 @@ require "serrano/filterhandler"
 # * journals - Use the /journals endpoint
 # * types - Use the /types endpoint
 # * licenses - Use the /licenses endpoint
+#
+# Additional methods
+# * agency - test the registration agency for a DOI
 #
 # All routes return an array of Faraday responses, which allows maximum flexibility.
 # For example, if you want to inspect headers returned from the HTTP request,
@@ -57,11 +65,13 @@ module Serrano
   #     Serrano.works(filter: {has_full_text: true})
   #     Serrano.works(filter: {has_funder: true, has_full_text: true})
   #     Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
+  #     # Curl options
+  #     Serrano.works(ids: '10.1371/journal.pone.0033693', options: {request.timeout: 3})
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
     Request.new('works', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+      limit, sample, sort, order, facet, nil, nil).perform
   end
 
   ##
@@ -87,7 +97,7 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('members', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+      limit, sample, sort, order, facet, works, nil).perform
   end
 
   ##
@@ -196,9 +206,25 @@ module Serrano
   #     Serrano.licenses(ids: "2167-8359")
   #     Serrano.licenses()
   def self.licenses(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
     Request.new('licenses', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+      limit, sample, sort, order, facet, nil, nil).perform
+  end
+
+  ##
+  # Determine registration agency for DOIs
+  #
+  # @!macro serrano_params
+  # @return [Array] An array of Faraday responses
+  #
+  # @example
+  #     require 'serrano'
+  #     Serrano.agency(ids: '10.1371/journal.pone.0033693')
+  #     Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+  def self.agency(ids:)
+
+    Request.new('works', ids, nil, nil, nil,
+      nil, nil, nil, nil, nil, false, true).perform
   end
 end

@@ -1,9 +1,12 @@
 require "faraday"
+require "multi_json"
+require "serrano/errors"
+require "serrano/constants"
 
 ##
 # Serrano::Request
 #
-# Class to perform HTTP requests to the Serrano API
+# Class to perform HTTP requests to the Crossref API
 module Serrano
   class Request #:nodoc:
     $crbase = "http://api.crossref.org/"
@@ -19,9 +22,10 @@ module Serrano
     attr_accessor :order
     attr_accessor :facet
     attr_accessor :works
+    attr_accessor :agency
 
     def initialize(endpt, id, query, filter, offset,
-      limit, sample, sort, order, facet, works)
+      limit, sample, sort, order, facet, works, agency)
 
       self.endpt = endpt
       self.id = id
@@ -34,35 +38,47 @@ module Serrano
       self.order = order
       self.facet = facet
       self.works = works
+      self.agency = agency
     end
 
     def perform
-      # url = $crbase + self.endpt
-
       filt = filter_handler(self.filter)
 
       args = { query: self.query, filter: filt, offset: self.offset,
               rows: self.limit, sample: self.sample, sort: self.sort,
               order: self.order, facet: self.facet }
-      options = args.delete_if { |k, v| v.nil? }
+      opts = args.delete_if { |k, v| v.nil? }
 
       conn = Faraday.new(:url => $crbase)
 
       if self.id.nil?
-        # res = HTTParty.get(url, options)
-        res = conn.get self.endpt, options
-        return res
+        # begin
+        res = conn.get self.endpt, opts
+        return MultiJson.load(res.body)
+        # rescue *NETWORKABLE_EXCEPTIONS => e
+        #   rescue_faraday_error(endpt, e)
+        # end
       else
         coll = []
         Array(self.id).each do |x|
-          if works
+          if self.works
             endpt = self.endpt + '/' + x.to_s + "/works"
           else
-            endpt = self.endpt + '/' + x.to_s
+            if self.agency
+              endpt = self.endpt + '/' + x.to_s + "/agency"
+            else
+              endpt = self.endpt + '/' + x.to_s
+            end
           end
-          # coll << HTTParty.get(url, options)
-          res = conn.get endpt, options
-          coll << res
+
+          res = conn.get endpt, opts
+          coll << MultiJson.load(res.body)
+          # begin
+          #   res = conn.get endpt, opts
+          #   coll << MultiJson.load(res.body)
+          # rescue *NETWORKABLE_EXCEPTIONS => e
+          #   rescue_faraday_error(endpt, e)
+          # end
         end
         return coll
       end
