@@ -2,6 +2,7 @@ require "faraday"
 require "multi_json"
 require "serrano/errors"
 require "serrano/constants"
+require 'serrano/helpers/configuration'
 
 ##
 # Serrano::Request
@@ -9,7 +10,7 @@ require "serrano/constants"
 # Class to perform HTTP requests to the Crossref API
 module Serrano
   class Request #:nodoc:
-    $crbase = "http://api.crossref.org/"
+    # $crbase = "http://api.crossref.org/"
 
     attr_accessor :endpt
     attr_accessor :id
@@ -49,7 +50,7 @@ module Serrano
               order: self.order, facet: self.facet }
       opts = args.delete_if { |k, v| v.nil? }
 
-      conn = Faraday.new(:url => $crbase)
+      conn = Faraday.new(:url => Serrano.base_url)
 
       if self.id.nil?
         # begin

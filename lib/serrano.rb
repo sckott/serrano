@@ -44,6 +44,12 @@ require "serrano/filterhandler"
 # @see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md for
 # detailed description of the Crossref API
 module Serrano
+  extend Configuration
+
+  define_setting :access_token
+  define_setting :access_secret
+  define_setting :base_url, "http://api.crossref.org/"
+
   ##
   # Search the works route
   #

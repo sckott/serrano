@@ -39,6 +39,18 @@ cd serrano
 rake install
 ```
 
+## Setup
+
+Crossref's API will likely be used by others in the future, allowing the base URL to be swapped out. You can swap out the base URL by passing named options in a block to `Serrano.configuration`. 
+
+This will also be the way to set up other user options, as needed down the road.
+
+```ruby
+Serrano.configuration do |config|
+  config.base_url = "http://api.crossref.org"
+end
+```
+
 ## Examples
 
 Search works by DOI
