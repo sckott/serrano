@@ -4,7 +4,6 @@ require "serrano/filterhandler"
 
 # @!macro serrano_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
-#   @param query [String] A query string
 #   @param filter [Hash] Filter options. See ...
 #   @param offset [Fixnum] Number of record to start at, from 1 to infinity.
 #   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
@@ -18,8 +17,6 @@ require "serrano/filterhandler"
 #   will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean] Include facet results. Default: false
-#   @param works [Boolean] If true, works returned as well. Default: false
-#   @param options [Hash] Hash of curl options. See xxxx. Ignored for now.
 
 ##
 # Serrano - The top level module for using methods
@@ -54,6 +51,7 @@ module Serrano
   # Search the works route
   #
   # @!macro serrano_params
+  # @param query [String] A query string
   # @return [Array] An array of Faraday responses
   #
   # @example
@@ -84,6 +82,8 @@ module Serrano
   # Search the members route
   #
   # @!macro serrano_params
+  # @param query [String] A query string
+  # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of Faraday responses
   #
   # @example
@@ -110,6 +110,7 @@ module Serrano
   # Search the prefixes route
   #
   # @!macro serrano_params
+  # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of Faraday responses
   #
   # @example
@@ -134,9 +135,10 @@ module Serrano
   # Search the fundref route
   #
   # @!macro serrano_params
+  # @param query [String] A query string
+  # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of Faraday responses
-  # @author Scott Chamberlain
-  # @
+  #
   # @example
   #     require 'serrano'
   #     # Search by DOI, one or more
@@ -161,6 +163,8 @@ module Serrano
   # Search the journals route
   #
   # @!macro serrano_params
+  # @param query [String] A query string
+  # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of Faraday responses
   #
   # @example
@@ -188,6 +192,8 @@ module Serrano
   # Search the types route
   #
   # @!macro serrano_params
+  # @param query [String] A query string
+  # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of Faraday responses
   #
   # @example
@@ -205,6 +211,7 @@ module Serrano
   # Search the licenses route
   #
   # @!macro serrano_params
+  # @param query [String] A query string
   # @return [Array] An array of Faraday responses
   #
   # @example
@@ -221,7 +228,7 @@ module Serrano
   ##
   # Determine registration agency for DOIs
   #
-  # @!macro serrano_params
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @return [Array] An array of Faraday responses
   #
   # @example

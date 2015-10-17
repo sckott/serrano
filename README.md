@@ -16,12 +16,17 @@ For changes see the [NEWS file](NEWS.md).
 
 Methods in relation to Crossref search API routes
 
-* `/works` - `Crossref.works()`
-* `/members` - `Crossref.members()`
-* `/prefixes` - `Crossref.prefixes()`
-* `/funders` - `Crossref.fundref()`
-* `/journals` - `Crossref.journals()`
-* `/licenses` - `Crossref.licenses()`
+* `/works` - `Serrano.works()`
+* `/members` - `Serrano.members()`
+* `/prefixes` - `Serrano.prefixes()`
+* `/funders` - `Serrano.fundref()`
+* `/journals` - `Serrano.journals()`
+* `/licenses` - `Serrano.licenses()`
+* `/types` - `Serrano.licenses()`
+
+Additional methods:
+
+* `/agency` - `Serrano.agency()`
 
 ## Install
 
@@ -57,25 +62,31 @@ Search works by DOI
 
 ```ruby
 require 'serrano'
-Crossref.works(doi: '10.1371/journal.pone.0033693')
+Serrano.works(doi: '10.1371/journal.pone.0033693')
 ```
 
 Search works by query string
 
 ```ruby
-Crossref.works(query: "ecology")
+Serrano.works(query: "ecology")
 ```
 
 Search journals by publisher name
 
 ```ruby
-Crossref.journals(query: "peerj")
+Serrano.journals(query: "peerj")
 ```
 
 Search funding information by DOI
 
 ```ruby
-Crossref.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+Serrano.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+```
+
+Get agency for a set of DOIs
+
+```ruby
+Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125'])
 ```
 
 ## Todo
