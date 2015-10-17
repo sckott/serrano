@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.licenses    = 'MIT'
 
   s.files = `git ls-files -z`.split("\x0").reject {|f| f.match(%r{^(test|spec|features)/}) }
-  s.test_files  = ["test/test-serrano.rb"]
+  s.test_files  = ["test/test*.rb"]
   s.require_paths = ["lib"]
 
   s.add_development_dependency "bundler", '~> 1.6'
