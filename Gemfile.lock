@@ -9,8 +9,6 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    ansi (1.5.0)
-    ast (2.1.0)
     codecov (0.1.1)
       json
       simplecov
@@ -21,14 +19,8 @@ GEM
     json (1.8.3)
     multi_json (1.11.2)
     multipart-post (2.0.0)
-    oga (1.2.3)
-      ast
-      ruby-ll (~> 2.1)
     power_assert (0.2.4)
     rake (10.4.2)
-    ruby-ll (2.1.2)
-      ansi
-      ast
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -46,7 +38,6 @@ DEPENDENCIES
   bundler (~> 1.6)
   codecov (~> 0.1)
   json (~> 1.8, >= 1.8.3)
-  oga (~> 1.2)
   rake (~> 10.4)
   serrano!
   simplecov (~> 0.10)

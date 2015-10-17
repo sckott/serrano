@@ -8,7 +8,6 @@ end
 require "serrano"
 require 'fileutils'
 require "test/unit"
-require "oga"
 require "json"
 
 class TestResponse < Test::Unit::TestCase
@@ -22,29 +21,29 @@ class TestResponse < Test::Unit::TestCase
     res = Serrano.works(ids: @doi)
     assert_equal(1, res.length)
     assert_equal(Array, res.class)
-    assert_equal(Faraday::Response, res[0].class)
-    assert_equal(200, res[0].status)
+    assert_equal(Hash, res[0].class)
+    # assert_equal(200, res[0].status)
   end
 
   def test_works_many_dois
     res = Serrano.works(ids: @dois)
     assert_equal(3, res.length)
     assert_equal(Array, res.class)
-    assert_equal(Faraday::Response, res[0].class)
-    assert_equal(200, res[0].status)
+    assert_equal(Hash, res[0].class)
+    # assert_equal(200, res[0].status)
   end
 
   def test_works_query
     res = Serrano.works(query: "ecology")
-    assert_equal(4, JSON.parse(res.body).length)
-    assert_equal(Faraday::Response, res.class)
-    assert_equal(200, res.status)
+    assert_equal(4, res.length)
+    assert_equal(Hash, res.class)
+    # assert_equal(200, res.status)
   end
 
   def test_works_filter_handler
     res = Serrano.works(filter: {has_funder: true, has_full_text: true})
-    assert_equal(Faraday::Response, res.class)
-    assert_equal(200, res.status)
+    assert_equal(Hash, res.class)
+    # assert_equal(200, res.status)
   end
 
 end
