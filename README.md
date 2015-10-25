@@ -8,6 +8,11 @@ serrano
 
 Docs: http://recology.info/serrano/
 
+Other Crossref API clients:
+
+- Python: [habanero](https://github.com/sckott/habanero)
+- R: [rcrossref](https://github.com/ropensci/rcrossref)
+
 ## Changes
 
 For changes see the [NEWS file](NEWS.md).
