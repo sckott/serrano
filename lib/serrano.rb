@@ -198,8 +198,8 @@ module Serrano
   #
   # @example
   #     require 'serrano'
-  #     Serrano.types(ids: "2167-8359")
   #     Serrano.types()
+  #     Serrano.types(ids: "journal")
   def self.types(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -216,7 +216,7 @@ module Serrano
   #
   # @example
   #     require 'serrano'
-  #     Serrano.licenses(ids: "2167-8359")
+  #     Serrano.licenses(filter: {member: 78})
   #     Serrano.licenses()
   def self.licenses(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
