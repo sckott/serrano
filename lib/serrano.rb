@@ -246,4 +246,25 @@ module Serrano
     Request.new('works', ids, nil, nil, nil,
       nil, nil, nil, nil, nil, false, true).perform
   end
+
+  ##
+  # Get a random set of DOI's
+  #
+  # @param sample [Fixnum] Number of random DOIs to return
+  # @return [Array] A list of strings, each a DOI
+  # @note This method uses {Serrano.works} internally, but doesn't allow you to pass on
+  # arguments to that method.
+  #
+  # @example
+  #     require 'serrano'
+  #     Serrano.random_dois(sample: 1)
+  #     Serrano.random_dois(sample: 10)
+  #     Serrano.random_dois(sample: 100)
+  def self.random_dois(sample:)
+
+    tmp = Request.new('works', nil, nil, nil, nil,
+      nil, sample, nil, nil, nil, false, nil).perform
+    tmp['message']['items'].collect { |x| x['DOI'] }
+  end
+
 end
