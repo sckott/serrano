@@ -9,7 +9,7 @@ require 'serrano/helpers/configuration'
 # Serrano::CNRequest
 #
 # Class to perform HTTP requests to the Crossref API
-module CN
+module Serrano
   class CNRequest #:nodoc:
 
     attr_accessor :ids
