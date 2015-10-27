@@ -95,8 +95,8 @@ module Serrano
   #     # query
   #     Serrano.members(query: "ecology")
   #     Serrano.members(query: "hindawi")
-  #     # Sort
-  #     Serrano.members(query: "ecology", sort: 'relevance', order: "asc")
+  #     # Sort - weird, doesn't work
+  #     Serrano.members(query: "ecology", order: "asc")
   #     # Works
   #     Serrano.members(ids: 98, works: true)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
@@ -128,7 +128,7 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('prefixes', ids, nil, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+      limit, sample, sort, order, facet, works, nil).perform
   end
 
   ##
@@ -156,7 +156,7 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('funders', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+      limit, sample, sort, order, facet, works, nil).perform
   end
 
   ##
@@ -171,28 +171,28 @@ module Serrano
   #     require 'serrano'
   #     Serrano.journals(ids: "2167-8359")
   #     Serrano.journals()
-  #     Serrano.journals(ids: "2167-8359", works: TRUE)
+  #     Serrano.journals(ids: "2167-8359", works: true)
   #     Serrano.journals(ids: ['1803-2427', '2326-4225'])
   #     Serrano.journals(query: "ecology")
   #     Serrano.journals(query: "peerj")
-  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "asc")
-  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "desc")
-  #     Serrano.journals(ids: "2167-8359", works: TRUE, filter: {from_pub_date: '2014-03-03'})
-  #     Serrano.journals(ids: '1803-2427', works: TRUE)
-  #     Serrano.journals(ids: '1803-2427', works: TRUE, sample: 1)
+  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: true, sort: 'score', order: "asc")
+  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: true, sort: 'score', order: "desc")
+  #     Serrano.journals(ids: "2167-8359", works: true, filter: {from_pub_date: '2014-03-03'})
+  #     Serrano.journals(ids: '1803-2427', works: true)
+  #     Serrano.journals(ids: '1803-2427', works: true)
   #     Serrano.journals(limit: 2)
+  #     Serrano.journals(sample: 2)
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('journals', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+      limit, sample, sort, order, facet, works, nil).perform
   end
 
   ##
   # Search the types route
   #
   # @!macro serrano_params
-  # @param query [String] A query string
   # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of Faraday responses
   #
@@ -200,11 +200,12 @@ module Serrano
   #     require 'serrano'
   #     Serrano.types()
   #     Serrano.types(ids: "journal")
-  def self.types(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+  #     Serrano.types(ids: ["journal", "dissertation"])
+  #     Serrano.types(ids: "journal", works: true)
+  def self.types(ids: nil, works: false)
 
-    Request.new('types', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works).perform
+    Request.new('types', ids, nil, nil, nil,
+      nil, nil, nil, nil, nil, works, nil).perform
   end
 
   ##
@@ -216,12 +217,13 @@ module Serrano
   #
   # @example
   #     require 'serrano'
-  #     Serrano.licenses(filter: {member: 78})
+  #     Serrano.licenses(query: "creative")
   #     Serrano.licenses()
-  def self.licenses(ids: nil, query: nil, filter: nil, offset: nil,
+  #     Serrano.licenses(limit: 3)
+  def self.licenses(ids: nil, query: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
-    Request.new('licenses', ids, query, filter, offset,
+    Request.new('licenses', ids, query, nil, offset,
       limit, sample, sort, order, facet, nil, nil).perform
   end
 
