@@ -24,7 +24,7 @@ Methods in relation to Crossref search API routes
 * `/works` - `Serrano.works()`
 * `/members` - `Serrano.members()`
 * `/prefixes` - `Serrano.prefixes()`
-* `/funders` - `Serrano.fundref()`
+* `/funders` - `Serrano.funders()`
 * `/journals` - `Serrano.journals()`
 * `/licenses` - `Serrano.licenses()`
 * `/types` - `Serrano.licenses()`
@@ -85,7 +85,7 @@ Serrano.journals(query: "peerj")
 Search funding information by DOI
 
 ```ruby
-Serrano.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+Serrano.funders(ids: ['10.13039/100000001','10.13039/100000015'])
 ```
 
 Get agency for a set of DOIs

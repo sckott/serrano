@@ -26,7 +26,7 @@ require "serrano/filterhandler"
 # * works - Use the /works endpoint
 # * members - Use the /members endpoint
 # * prefixes - Use the /prefixes endpoint
-# * fundref - Use the /fundref endpoint
+# * funders - Use the /funders endpoint
 # * journals - Use the /journals endpoint
 # * types - Use the /types endpoint
 # * licenses - Use the /licenses endpoint
@@ -132,7 +132,7 @@ module Serrano
   end
 
   ##
-  # Search the fundref route
+  # Search the funders route
   #
   # @!macro serrano_params
   # @param query [String] A query string
@@ -142,17 +142,17 @@ module Serrano
   # @example
   #     require 'serrano'
   #     # Search by DOI, one or more
-  #     Serrano.fundref(ids: '10.13039/100000001')
-  #     Serrano.fundref(ids: ['10.13039/100000001','10.13039/100000015'])
+  #     Serrano.funders(ids: '10.13039/100000001')
+  #     Serrano.funders(ids: ['10.13039/100000001','10.13039/100000015'])
   #     # query
-  #     Serrano.fundref(query: "NSF")
+  #     Serrano.funders(query: "NSF")
   #     # works
-  #     Serrano.fundref(ids: '10.13039/100000001', works: true)
+  #     Serrano.funders(ids: '10.13039/100000001', works: true)
   #     # Limit number of results
-  #     Serrano.fundref(ids: '10.13039/100000001', works: true, limit: 3)
+  #     Serrano.funders(ids: '10.13039/100000001', works: true, limit: 3)
   #     # Sort and order
-  #     Serrano.fundref(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
-  def self.fundref(ids: nil, query: nil, filter: nil, offset: nil,
+  #     Serrano.funders(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
+  def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
     Request.new('funders', ids, query, filter, offset,
