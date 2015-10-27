@@ -4,7 +4,6 @@ require "serrano/filterhandler"
 
 # @!macro serrano_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
-#   @param filter [Hash] Filter options. See ...
 #   @param offset [Fixnum] Number of record to start at, from 1 to infinity.
 #   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
 #   @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -34,7 +33,7 @@ require "serrano/filterhandler"
 # Additional methods
 # * agency - test the registration agency for a DOI
 #
-# All routes return an array of Faraday responses, which allows maximum flexibility.
+# All routes return an array of hashes
 # For example, if you want to inspect headers returned from the HTTP request,
 # and parse the raw result in any way you wish.
 #
@@ -52,7 +51,8 @@ module Serrano
   #
   # @!macro serrano_params
   # @param query [String] A query string
-  # @return [Array] An array of Faraday responses
+  # @param filter [Hash] Filter options. See ...
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -83,8 +83,9 @@ module Serrano
   #
   # @!macro serrano_params
   # @param query [String] A query string
+  # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -110,8 +111,9 @@ module Serrano
   # Search the prefixes route
   #
   # @!macro serrano_params
+  # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -136,8 +138,9 @@ module Serrano
   #
   # @!macro serrano_params
   # @param query [String] A query string
+  # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -164,8 +167,9 @@ module Serrano
   #
   # @!macro serrano_params
   # @param query [String] A query string
+  # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -192,9 +196,9 @@ module Serrano
   ##
   # Search the types route
   #
-  # @!macro serrano_params
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param works [Boolean] If true, works returned as well. Default: false
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -213,7 +217,7 @@ module Serrano
   #
   # @!macro serrano_params
   # @param query [String] A query string
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
@@ -231,7 +235,7 @@ module Serrano
   # Determine registration agency for DOIs
   #
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
-  # @return [Array] An array of Faraday responses
+  # @return [Array] An array of hashes
   #
   # @example
   #     require 'serrano'
