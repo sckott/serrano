@@ -25,7 +25,7 @@ module Serrano
     end
 
     def perform
-      if cn_formats.include? self.format
+      if !$cn_formats.include? self.format
         raise "format not one of accepted types"
       end
 

@@ -7,7 +7,7 @@ NETWORKABLE_EXCEPTIONS = [Faraday::Error::ClientError,
                           NoMethodError,
                           TypeError]
 
-cn_formats = ["rdf-xml", "turtle", "citeproc-json",
+$cn_formats = ["rdf-xml", "turtle", "citeproc-json",
 	          "citeproc-json-ish", "text", "ris", "bibtex",
 	          "crossref-xml", "datacite-xml", "bibentry",
 	          "crossref-tdm"]
@@ -23,7 +23,7 @@ $cn_format_headers = {"rdf-xml" => "application/rdf+xml",
 	          "bibentry" => "application/x-bibtex",
 	          "crossref-tdm" => "application/vnd.crossref.unixsd+xml"}
 
-cn_types = {"rdf-xml" => "text/xml",
+$cn_types = {"rdf-xml" => "text/xml",
 		      "turtle" => "text/plain",
 		      "citeproc-json" => "application/json",
 		      "citeproc-json-ish" => "application/json",

@@ -1,5 +1,5 @@
 require "serrano/version"
-require "cnrequest"
+require "serrano/cnrequest"
 
 ##
 # ContentNegotiation - Content Negotiation class

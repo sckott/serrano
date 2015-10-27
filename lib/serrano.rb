@@ -1,6 +1,7 @@
 require "serrano/version"
 require "serrano/request"
 require "serrano/filterhandler"
+require "serrano/cnrequest"
 
 # @!macro serrano_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
@@ -55,22 +56,22 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     # Search by DOI, one or more
-  #     Serrano.works(ids: '10.5555/515151')
-  #     Serrano.works(ids: '10.1371/journal.pone.0033693')
-  #     Serrano.works(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
-  #     # query
-  #     Serrano.works(query: "ecology")
-  #     Serrano.works(query: "renear+-ontologies")
-  #     # Sort
-  #     Serrano.works(query: "ecology", sort: 'relevance', order: "asc")
-  #     # Filters
-  #     Serrano.works(filter: {has_full_text: true})
-  #     Serrano.works(filter: {has_funder: true, has_full_text: true})
-  #     Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
-  #     # Curl options
-  #     Serrano.works(ids: '10.1371/journal.pone.0033693', options: {request.timeout: 3})
+  #      require 'serrano'
+  #      # Search by DOI, one or more
+  #      Serrano.works(ids: '10.5555/515151')
+  #      Serrano.works(ids: '10.1371/journal.pone.0033693')
+  #      Serrano.works(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+  #      # query
+  #      Serrano.works(query: "ecology")
+  #      Serrano.works(query: "renear+-ontologies")
+  #      # Sort
+  #      Serrano.works(query: "ecology", sort: 'relevance', order: "asc")
+  #      # Filters
+  #      Serrano.works(filter: {has_full_text: true})
+  #      Serrano.works(filter: {has_funder: true, has_full_text: true})
+  #      Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
+  #      # Curl options
+  #      Serrano.works(ids: '10.1371/journal.pone.0033693', options: {request.timeout: 3})
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
@@ -88,18 +89,18 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     # Search by DOI, one or more
-  #     Serrano.members(ids: 98)
-  #     Serrano.members(ids: 340)
-  #     Serrano.members(ids: [98, 340, 45])
-  #     # query
-  #     Serrano.members(query: "ecology")
-  #     Serrano.members(query: "hindawi")
-  #     # Sort - weird, doesn't work
-  #     Serrano.members(query: "ecology", order: "asc")
-  #     # Works
-  #     Serrano.members(ids: 98, works: true)
+  #      require 'serrano'
+  #      # Search by DOI, one or more
+  #      Serrano.members(ids: 98)
+  #      Serrano.members(ids: 340)
+  #      Serrano.members(ids: [98, 340, 45])
+  #      # query
+  #      Serrano.members(query: "ecology")
+  #      Serrano.members(query: "hindawi")
+  #      # Sort - weird, doesn't work
+  #      Serrano.members(query: "ecology", order: "asc")
+  #      # Works
+  #      Serrano.members(ids: 98, works: true)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -116,16 +117,16 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     # Search by DOI, one or more
-  #     Serrano.prefixes(ids: "10.1016")
-  #     Serrano.prefixes(ids: ['10.1016','10.1371','10.1023','10.4176','10.1093'])
-  #     # works
-  #     Serrano.prefixes(ids: "10.1016", works: true)
-  #     # Limit number of results
-  #     Serrano.prefixes(ids: "10.1016", works: true, limit: 3)
-  #     # Sort and order
-  #     Serrano.prefixes(ids: "10.1016", works: true, sort: 'relevance', order: "asc")
+  #      require 'serrano'
+  #      # Search by DOI, one or more
+  #      Serrano.prefixes(ids: "10.1016")
+  #      Serrano.prefixes(ids: ['10.1016','10.1371','10.1023','10.4176','10.1093'])
+  #      # works
+  #      Serrano.prefixes(ids: "10.1016", works: true)
+  #      # Limit number of results
+  #      Serrano.prefixes(ids: "10.1016", works: true, limit: 3)
+  #      # Sort and order
+  #      Serrano.prefixes(ids: "10.1016", works: true, sort: 'relevance', order: "asc")
   def self.prefixes(ids:, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -143,18 +144,18 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     # Search by DOI, one or more
-  #     Serrano.funders(ids: '10.13039/100000001')
-  #     Serrano.funders(ids: ['10.13039/100000001','10.13039/100000015'])
-  #     # query
-  #     Serrano.funders(query: "NSF")
-  #     # works
-  #     Serrano.funders(ids: '10.13039/100000001', works: true)
-  #     # Limit number of results
-  #     Serrano.funders(ids: '10.13039/100000001', works: true, limit: 3)
-  #     # Sort and order
-  #     Serrano.funders(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
+  #      require 'serrano'
+  #      # Search by DOI, one or more
+  #      Serrano.funders(ids: '10.13039/100000001')
+  #      Serrano.funders(ids: ['10.13039/100000001','10.13039/100000015'])
+  #      # query
+  #      Serrano.funders(query: "NSF")
+  #      # works
+  #      Serrano.funders(ids: '10.13039/100000001', works: true)
+  #      # Limit number of results
+  #      Serrano.funders(ids: '10.13039/100000001', works: true, limit: 3)
+  #      # Sort and order
+  #      Serrano.funders(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -172,20 +173,20 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     Serrano.journals(ids: "2167-8359")
-  #     Serrano.journals()
-  #     Serrano.journals(ids: "2167-8359", works: true)
-  #     Serrano.journals(ids: ['1803-2427', '2326-4225'])
-  #     Serrano.journals(query: "ecology")
-  #     Serrano.journals(query: "peerj")
-  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: true, sort: 'score', order: "asc")
-  #     Serrano.journals(ids: "2167-8359", query: 'ecology', works: true, sort: 'score', order: "desc")
-  #     Serrano.journals(ids: "2167-8359", works: true, filter: {from_pub_date: '2014-03-03'})
-  #     Serrano.journals(ids: '1803-2427', works: true)
-  #     Serrano.journals(ids: '1803-2427', works: true)
-  #     Serrano.journals(limit: 2)
-  #     Serrano.journals(sample: 2)
+  #      require 'serrano'
+  #      Serrano.journals(ids: "2167-8359")
+  #      Serrano.journals()
+  #      Serrano.journals(ids: "2167-8359", works: true)
+  #      Serrano.journals(ids: ['1803-2427', '2326-4225'])
+  #      Serrano.journals(query: "ecology")
+  #      Serrano.journals(query: "peerj")
+  #      Serrano.journals(ids: "2167-8359", query: 'ecology', works: true, sort: 'score', order: "asc")
+  #      Serrano.journals(ids: "2167-8359", query: 'ecology', works: true, sort: 'score', order: "desc")
+  #      Serrano.journals(ids: "2167-8359", works: true, filter: {from_pub_date: '2014-03-03'})
+  #      Serrano.journals(ids: '1803-2427', works: true)
+  #      Serrano.journals(ids: '1803-2427', works: true)
+  #      Serrano.journals(limit: 2)
+  #      Serrano.journals(sample: 2)
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
 
@@ -201,11 +202,11 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     Serrano.types()
-  #     Serrano.types(ids: "journal")
-  #     Serrano.types(ids: ["journal", "dissertation"])
-  #     Serrano.types(ids: "journal", works: true)
+  #      require 'serrano'
+  #      Serrano.types()
+  #      Serrano.types(ids: "journal")
+  #      Serrano.types(ids: ["journal", "dissertation"])
+  #      Serrano.types(ids: "journal", works: true)
   def self.types(ids: nil, works: false)
 
     Request.new('types', ids, nil, nil, nil,
@@ -220,10 +221,10 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     Serrano.licenses(query: "creative")
-  #     Serrano.licenses()
-  #     Serrano.licenses(limit: 3)
+  #      require 'serrano'
+  #      Serrano.licenses(query: "creative")
+  #      Serrano.licenses()
+  #      Serrano.licenses(limit: 3)
   def self.licenses(ids: nil, query: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
 
@@ -238,9 +239,9 @@ module Serrano
   # @return [Array] An array of hashes
   #
   # @example
-  #     require 'serrano'
-  #     Serrano.agency(ids: '10.1371/journal.pone.0033693')
-  #     Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+  #      require 'serrano'
+  #      Serrano.agency(ids: '10.1371/journal.pone.0033693')
+  #      Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
   def self.agency(ids:)
 
     Request.new('works', ids, nil, nil, nil,
@@ -256,15 +257,76 @@ module Serrano
   # arguments to that method.
   #
   # @example
-  #     require 'serrano'
-  #     Serrano.random_dois(sample: 1)
-  #     Serrano.random_dois(sample: 10)
-  #     Serrano.random_dois(sample: 100)
+  #      require 'serrano'
+  #      Serrano.random_dois(sample: 1)
+  #      Serrano.random_dois(sample: 10)
+  #      Serrano.random_dois(sample: 100)
   def self.random_dois(sample:)
 
     tmp = Request.new('works', nil, nil, nil, nil,
       nil, sample, nil, nil, nil, false, nil).perform
     tmp['message']['items'].collect { |x| x['DOI'] }
+  end
+
+  ##
+  # Get citations in various formats from CrossRef
+  #
+  # @param ids [String] DOIs
+  # @param format [String] Format
+  # @param style [String] Style
+  # @param locale [String] Locale
+  # @return [Hash] A hash
+  #
+  # @example
+  #     require 'serrano'
+  #     # By default, you get bibtex, apa format, in en-US locale
+  #     Serrano.cn(ids: '10.1126/science.169.3946.635')
+  #
+  #     # get citeproc-json
+  #     Serrano.cn(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "citeproc-json")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "rdf-xml")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "crossref-xml")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text")
+  #
+  #     # return an R bibentry type
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "bibentry")
+  #     Serrano.cn(ids: "10.6084/m9.figshare.97218", format: "bibentry")
+  #
+  #     # return an apa style citation
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "apa")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "harvard3")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "elsevier-harvard")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "ecoscience")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "heredity")
+  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "oikos")
+  #
+  #     # example with many DOIs
+  #     dois <- cr_r(2)
+  #     Serrano.cn(dois, format: "text", style: "apa")
+  #
+  #     # Using DataCite DOIs
+  #     ## some formats don't work
+  #     # Serrano.cn(ids: "10.5284/1011335", format: "text")
+  #     # Serrano.cn(ids: "10.5284/1011335", format: "crossref-xml")
+  #     # Serrano.cn(ids: "10.5284/1011335", format: "crossref-tdm")
+  #
+  #     ## But most do work
+  #     Serrano.cn(ids: "10.5284/1011335", format: "datacite-xml")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "rdf-xml")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "turtle")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "citeproc-json")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "ris")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "bibtex")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "bibentry")
+  #     Serrano.cn(ids: "10.5284/1011335", format: "bibtex")
+  #
+  #     # many DOIs
+  #     dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', '10.5167/UZH-38402','10.5167/UZH-41217']
+  #     x = Serrano.cn(ids: dois)
+  #     puts x
+  def self.cn(ids:, format: "bibtex", style: 'apa', locale: "en-US")
+    CNRequest.new(ids, format, style, locale).perform
   end
 
 end
