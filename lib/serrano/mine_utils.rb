@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'uuidtools'
 
 def detect_type(x)
   ctype = x.headers['content-type']
@@ -12,9 +13,24 @@ def detect_type(x)
   end
 end
 
-def make_path(x, type)
-  id = x.split('article/')[1].split('?')[0]
-  path = id + '.' + type
+def make_ext(x)
+  case x
+  when 'xml'
+    'xml'
+  when 'plain'
+    'txt'
+  when 'pdf'
+    'pdf'
+  end
+end
+
+def make_path(type)
+  # id = x.split('article/')[1].split('?')[0]
+  # path = id + '.' + type
+  # return path
+  type = make_ext(type)
+  uuid = UUIDTools::UUID.random_create.to_s
+  path = uuid + '.' + type
   return path
 end
 
@@ -41,4 +57,9 @@ end
 
 def parse_pdf(x)
   raise "not ready yet"
+end
+
+def is_elsevier(x)
+  tmp = x.match 'elsevier'
+  !tmp.nil?
 end

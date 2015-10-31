@@ -23,12 +23,16 @@ module Serrano
     def perform
       conn = Faraday.new(:url => self.url)
 
-      res = conn.get do |req|
-        req.headers['X-ELS-APIKey'] = Serrano.elsevier_key
+      if is_elsevier(self.url)
+        res = conn.get do |req|
+          req.headers['X-ELS-APIKey'] = Serrano.elsevier_key
+        end
+      else
+        res = conn.get
       end
 
       type = detect_type(res)
-      path = make_path(self.url, type)
+      path = make_path(type)
       write_disk(res, path)
 
       return Mined.new(self.url, path, type)

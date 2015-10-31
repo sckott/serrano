@@ -371,6 +371,15 @@ module Serrano
   #   res = Serrano.text(url: links[0]);
   #   res.url
   #   res.parse
+  #
+  #   # With open access content - using Pensoft
+  #   res = Serrano.members(ids: 2258, works: true, filter: {has_full_text: true});
+  #   links = res[0]['message']['items'].collect { |x| x['link'].keep_if { |z| z['content-type'] == 'application/xml' } };
+  #   links = links.collect { |z| z[0].select { |k,v| k[/URL/] }.values[0] };
+  #   # Get full text for an article
+  #   res = Serrano.text(url: links[0]);
+  #   res.url
+  #   res.parse
   def self.text(url:, type: 'xml')
     Miner.new(url, type).perform
   end
