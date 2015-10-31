@@ -19,7 +19,7 @@ For changes see the [NEWS file](NEWS.md).
 
 ## API
 
-Methods in relation to Crossref search API routes
+Methods in relation to [Crossref search API][crapi] routes
 
 * `/works` - `Serrano.works()`
 * `/members` - `Serrano.members()`
@@ -27,11 +27,17 @@ Methods in relation to Crossref search API routes
 * `/funders` - `Serrano.funders()`
 * `/journals` - `Serrano.journals()`
 * `/licenses` - `Serrano.licenses()`
-* `/types` - `Serrano.licenses()`
+* `/types` - `Serrano.types()`
 
-Additional methods:
+Additional methods built on top of the Crossref search API:
 
-* `/agency` - `Serrano.agency()`
+* DOI minting agency - `Serrano.agency()`
+* Get random DOIs - `Serrano.random_dois()`
+
+Other methods:
+
+* [Conent negotiation][cn] - `Serrano.cn()`
+* [Text and data mining][tdm] - `Serrano.text()`
 
 ## Install
 
@@ -94,13 +100,29 @@ Get agency for a set of DOIs
 Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125'])
 ```
 
-## Todo
+Get random set of DOIs
 
-* Export CLI interface
-* More robust test suite
-* More examples
-* Suite of methods on output data
+```ruby
+Serrano.random_dois(sample: 100)
+```
+
+Content negotiation
+
+```ruby
+Serrano.cn(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
+```
+
+Text mining
+
+```ruby
+res = Serrano.text(url: 'http://...');
+```
 
 ## Meta
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* License: MIT
+
+[crapi]: https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md
+[cn]: http://www.crosscite.org/cn/
+[tdm]: http://www.crossref.org/tdm/
