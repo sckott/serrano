@@ -2,6 +2,7 @@ require "serrano/version"
 require "serrano/request"
 require "serrano/filterhandler"
 require "serrano/cnrequest"
+require "serrano/miner"
 
 # @!macro serrano_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
@@ -45,6 +46,7 @@ module Serrano
 
   define_setting :access_token
   define_setting :access_secret
+  define_setting :elsevier_key
   define_setting :base_url, "http://api.crossref.org/"
 
   ##
@@ -327,6 +329,50 @@ module Serrano
   #     puts x
   def self.cn(ids:, format: "bibtex", style: 'apa', locale: "en-US")
     CNRequest.new(ids, format, style, locale).perform
+  end
+
+  ##
+  # Get full text
+  #
+  # Should work for open access papers, but for closed, requires authentication and
+  # likely pre-authorized IP address.
+  #
+  # @param url [String] A url for full text
+  # @param type [Hash] Ignored for now. One of xml, plain, or pdf. Right now, type auto-detected from the URL
+  # @return [Mined] An object of class Mined, with methods for extracting
+  # the url requested, the file path, and parsing the plain text, XML, or extracting
+  # text from the pdf.
+  #
+  # @example
+  #   require 'serrano'
+  #   # Set authorization
+  #   Serrano.configuration do |config|
+  #     config.elsevier_key = "<your key>"
+  #   end
+  #   # Get some elsevier works
+  #   res = Serrano.members(ids: 78, works: true);
+  #   # get full text links, here doing xml
+  #   links = res[0]['message']['items'].collect { |x| x['link'].keep_if { |z| z['content-type'] == 'text/xml' } };
+  #   links = links.collect { |z| z[0].select { |k,v| k[/URL/] }.values[0] };
+  #   # Get full text for an article
+  #   res = Serrano.text(url: links[0]);
+  #   res.url
+  #   res.path
+  #   res.type
+  #   xml = res.parse()
+  #   puts xml
+  #   xml.xpath('//xocs:cover-date-text', xml.root.namespaces).text
+  #
+  #   ## plain text
+  #   # get full text links, here doing xml
+  #   links = res[0]['message']['items'].collect { |x| x['link'].keep_if { |z| z['content-type'] == 'text/plain' } };
+  #   links = links.collect { |z| z[0].select { |k,v| k[/URL/] }.values[0] };
+  #   # Get full text for an article
+  #   res = Serrano.text(url: links[0]);
+  #   res.url
+  #   res.parse
+  def self.text(url:, type: 'xml')
+    Miner.new(url, type).perform
   end
 
 end
