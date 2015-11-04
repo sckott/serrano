@@ -3,6 +3,8 @@ require "serrano/request"
 require "serrano/filterhandler"
 require "serrano/cnrequest"
 require "serrano/miner"
+require 'rexml/document'
+require 'rexml/xpath'
 
 # @!macro serrano_params
 #   @param ids [Array] DOIs (digital object identifier) or other identifiers
@@ -404,6 +406,33 @@ module Serrano
   #   res.parse
   def self.text(url:, type: 'xml')
     Miner.new(url, type).perform
+  end
+
+  # Lookup article info via CrossRef with DOI and get a citation count
+  #
+  # @param doi [String] DOI, digital object identifier
+  # @param url [String] the API url for the function (should be left to default)
+  # @param key [String] your API key
+  #
+  # @see http://labs.crossref.org/openurl/ for more info on this Crossref API service.
+  #
+  # @example
+  #   require 'serrano'
+  #   Serrano.citation_count(doi: "10.1371/journal.pone.0042793")
+  #   Serrano.citation_count(doi: "10.1016/j.fbr.2012.01.001")
+  #   # DOI not found
+  #   Serrano.citation_count(doi: "10.1016/j.fbr.2012")
+  def self.citation_count(doi:, url: "http://www.crossref.org/openurl/",
+    key: "cboettig@ropensci.org", options: nil)
+
+    args = { id: "doi:" + doi, pid: key, noredirect: true }
+    opts = args.delete_if { |k, v| v.nil? }
+    conn = Faraday.new(:url => url, :request => options)
+    res = conn.get '', opts
+    x = res.body
+    oc = REXML::Document.new("<doc>#{x}</doc>")
+    value = REXML::XPath.first(oc, '//query').attributes['fl_count'].to_i
+    return value
   end
 
 end

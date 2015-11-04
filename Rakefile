@@ -20,6 +20,11 @@ task :b do
   system "bundle install"
 end
 
+desc "bundle install"
+task :clean do
+  system "ls | grep [0-9].gem | xargs rm"
+end
+
 desc "Build serrano"
 task :build do
 	system "gem build serrano.gemspec"
