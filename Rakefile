@@ -15,6 +15,11 @@ task :docs do
 	system "yardoc"
 end
 
+desc "bundle install"
+task :b do
+  system "bundle install"
+end
+
 desc "Build serrano"
 task :build do
 	system "gem build serrano.gemspec"
