@@ -3,6 +3,8 @@ require "serrano/request"
 require "serrano/filterhandler"
 require "serrano/cnrequest"
 require "serrano/miner"
+require "serrano/filters"
+
 require 'rexml/document'
 require 'rexml/xpath'
 

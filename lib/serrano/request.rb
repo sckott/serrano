@@ -10,7 +10,6 @@ require 'serrano/helpers/configuration'
 # Class to perform HTTP requests to the Crossref API
 module Serrano
   class Request #:nodoc:
-    # $crbase = "http://api.crossref.org/"
 
     attr_accessor :endpt
     attr_accessor :id

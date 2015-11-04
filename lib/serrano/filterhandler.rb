@@ -45,35 +45,13 @@ module Serrano
       end
     end
 
-    # class Hash
-    #   def stringify
-    #     (self.keys.map{ |k,v| k.to_s }.zip self.values).to_h
-    #   end
-    # end
-
     def stringify(x)
       (x.keys.map{ |k,v| k.to_s }.zip x.values).to_h
     end
 
-    # class Hash
-    #   def rename_keys(x)
-    #     (x.zip self.values).to_h
-    #   end
-    # end
-
     def rename_keys(x, y)
       (y.zip x.values).to_h
     end
-
-    # $filterchoices = [
-    #   'has_funder','funder','prefix','member','from_index_date','until_index_date',
-    #   'from_deposit_date','until_deposit_date','from_update_date','until_update_date',
-    #   'from_first_deposit_date','until_first_deposit_date','from_pub_date','until_pub_date',
-    #   'has_license','license_url','license_version','license_delay','has_full_text',
-    #   'full_text_version','full_text_type','public_references','has_references','has_archive',
-    #   'archive','has_orcid','orcid','issn','type','directory','doi','updates','is_update',
-    #   'has_update_policy','container_title','publisher_name','category_name','type_name'
-    # ]
 
   end
 
