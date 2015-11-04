@@ -22,7 +22,7 @@ require 'rexml/xpath'
 #   will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean] Include facet results. Default: false
-#   @param request [Hash] Hash of options for configuring the request, passed on to Faraday.new
+#   @param options [Hash] Hash of options for configuring the request, passed on to Faraday.new
 #     :timeout      - [Fixnum] open/read timeout Integer in seconds
 #     :open_timeout - [Fixnum] read timeout Integer in seconds
 #     :proxy        - [Hash] hash of proxy options
