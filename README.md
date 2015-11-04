@@ -6,7 +6,7 @@ serrano
 
 `serrano` is a low level client for Crossref APIs
 
-Docs: http://recology.info/serrano/
+Docs: http://www.rubydoc.info/gems/serrano
 
 Other Crossref API clients:
 
@@ -15,7 +15,7 @@ Other Crossref API clients:
 
 ## Changes
 
-For changes see the [NEWS file](NEWS.md).
+For changes see the [Changelog](CHANGELOG.md)
 
 ## API
 
@@ -38,6 +38,7 @@ Other methods:
 
 * [Conent negotiation][cn] - `Serrano.cn()`
 * [Text and data mining][tdm] - `Serrano.text()`
+* [Citation count][ccount] - `Serrano.citation_count()`
 
 ## Install
 
@@ -126,3 +127,4 @@ res = Serrano.text(url: 'http://...');
 [crapi]: https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md
 [cn]: http://www.crosscite.org/cn/
 [tdm]: http://www.crossref.org/tdm/
+[ccount]: http://labs.crossref.org/openurl/

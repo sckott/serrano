@@ -410,7 +410,7 @@ module Serrano
     Miner.new(url, type).perform
   end
 
-  # Lookup article info via CrossRef with DOI and get a citation count
+  # Get a citation count with a DOI
   #
   # @param doi [String] DOI, digital object identifier
   # @param url [String] the API url for the function (should be left to default)
