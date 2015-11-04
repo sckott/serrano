@@ -24,9 +24,12 @@ module Serrano
     attr_accessor :facet
     attr_accessor :works
     attr_accessor :agency
+    attr_accessor :options
+    attr_accessor :verbose
 
     def initialize(endpt, id, query, filter, offset,
-      limit, sample, sort, order, facet, works, agency)
+      limit, sample, sort, order, facet, works, agency,
+      options, verbose)
 
       self.endpt = endpt
       self.id = id
@@ -40,6 +43,8 @@ module Serrano
       self.facet = facet
       self.works = works
       self.agency = agency
+      self.options = options
+      self.verbose = verbose
     end
 
     def perform
@@ -50,7 +55,14 @@ module Serrano
               order: self.order, facet: self.facet }
       opts = args.delete_if { |k, v| v.nil? }
 
-      conn = Faraday.new(:url => Serrano.base_url)
+      if verbose
+        conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
+          f.response :logger
+          f.adapter  Faraday.default_adapter
+        end
+      else
+        conn = Faraday.new(:url => Serrano.base_url, :request => options)
+      end
 
       if self.id.nil?
         # begin

@@ -18,6 +18,18 @@ require "serrano/miner"
 #   will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean] Include facet results. Default: false
+#   @param request [Hash] Hash of options for configuring the request, passed on to Faraday.new
+#     :timeout      - [Fixnum] open/read timeout Integer in seconds
+#     :open_timeout - [Fixnum] read timeout Integer in seconds
+#     :proxy        - [Hash] hash of proxy options
+#       :uri - [String] Proxy Server URI
+#       :user - [String] Proxy server username
+#       :password - [String] Proxy server password
+#     :params_encoder - [Hash] not sure what this is
+#     :bind           - [Hash] A hash with host and port values
+#     :boundary       - [String] of the boundary value
+#     :oauth          - [Hash] A hash with OAuth details
+#   @param verbose [Boolean] Print request headers to stdout. Default: false
 
 ##
 # Serrano - The top level module for using methods
@@ -72,13 +84,18 @@ module Serrano
   #      Serrano.works(filter: {has_full_text: true})
   #      Serrano.works(filter: {has_funder: true, has_full_text: true})
   #      Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
+  #
   #      # Curl options
-  #      Serrano.works(ids: '10.1371/journal.pone.0033693', options: {request.timeout: 3})
+  #      ## set a request timeout and an open timeout
+  #      Serrano.works(ids: '10.1371/journal.pone.0033693', options: {timeout: 3, open_timeout: 2})
+  #      ## log request details - uses Faraday middleware
+  #      Serrano.works(ids: '10.1371/journal.pone.0033693', verbose: true)
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    options: nil, verbose: false)
 
     Request.new('works', ids, query, filter, offset,
-      limit, sample, sort, order, facet, nil, nil).perform
+      limit, sample, sort, order, facet, nil, nil, options, verbose).perform
   end
 
   ##
@@ -104,10 +121,11 @@ module Serrano
   #      # Works
   #      Serrano.members(ids: 98, works: true)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    works: false, options: nil, verbose: false)
 
     Request.new('members', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil).perform
+      limit, sample, sort, order, facet, works, nil, options, verbose).perform
   end
 
   ##
@@ -130,10 +148,11 @@ module Serrano
   #      # Sort and order
   #      Serrano.prefixes(ids: "10.1016", works: true, sort: 'relevance', order: "asc")
   def self.prefixes(ids:, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    works: false, options: nil, verbose: false)
 
     Request.new('prefixes', ids, nil, filter, offset,
-      limit, sample, sort, order, facet, works, nil).perform
+      limit, sample, sort, order, facet, works, nil, options, verbose).perform
   end
 
   ##
@@ -159,10 +178,11 @@ module Serrano
   #      # Sort and order
   #      Serrano.funders(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    works: false, options: nil, verbose: false)
 
     Request.new('funders', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil).perform
+      limit, sample, sort, order, facet, works, nil, options, verbose).perform
   end
 
   ##
@@ -190,10 +210,11 @@ module Serrano
   #      Serrano.journals(limit: 2)
   #      Serrano.journals(sample: 2)
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil, works: false)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    works: false, options: nil, verbose: false)
 
     Request.new('journals', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil).perform
+      limit, sample, sort, order, facet, works, nil, options, verbose).perform
   end
 
   ##
@@ -209,10 +230,10 @@ module Serrano
   #      Serrano.types(ids: "journal")
   #      Serrano.types(ids: ["journal", "dissertation"])
   #      Serrano.types(ids: "journal", works: true)
-  def self.types(ids: nil, works: false)
+  def self.types(ids: nil, works: false, options: nil, verbose: false)
 
     Request.new('types', ids, nil, nil, nil,
-      nil, nil, nil, nil, nil, works, nil).perform
+      nil, nil, nil, nil, nil, works, nil, options, verbose).perform
   end
 
   ##
@@ -228,10 +249,11 @@ module Serrano
   #      Serrano.licenses()
   #      Serrano.licenses(limit: 3)
   def self.licenses(ids: nil, query: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil)
+    limit: nil, sample: nil, sort: nil, order: nil,
+    facet: nil, options: nil, verbose: false)
 
     Request.new('licenses', ids, query, nil, offset,
-      limit, sample, sort, order, facet, nil, nil).perform
+      limit, sample, sort, order, facet, nil, nil, options, verbose).perform
   end
 
   ##
@@ -244,10 +266,10 @@ module Serrano
   #      require 'serrano'
   #      Serrano.agency(ids: '10.1371/journal.pone.0033693')
   #      Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
-  def self.agency(ids:)
+  def self.agency(ids:, options: nil, verbose: false)
 
     Request.new('works', ids, nil, nil, nil,
-      nil, nil, nil, nil, nil, false, true).perform
+      nil, nil, nil, nil, nil, false, true, options, verbose).perform
   end
 
   ##
@@ -263,10 +285,10 @@ module Serrano
   #      Serrano.random_dois(sample: 1)
   #      Serrano.random_dois(sample: 10)
   #      Serrano.random_dois(sample: 100)
-  def self.random_dois(sample:)
+  def self.random_dois(sample:, options: nil, verbose: false)
 
     tmp = Request.new('works', nil, nil, nil, nil,
-      nil, sample, nil, nil, nil, false, nil).perform
+      nil, sample, nil, nil, nil, false, nil, options, verbose).perform
     tmp['message']['items'].collect { |x| x['DOI'] }
   end
 
