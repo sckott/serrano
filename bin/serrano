@@ -1,40 +1,171 @@
 #!/usr/bin/env ruby
 
 require "thor"
+require "serrano"
+require "multi_json"
+
+# class Query < Thor
+#   desc "query", "query things"
+#   option :query, :type => :string, :default => nil
+#   def query
+#     out = Serrano.works(query: options[:query])
+#     if !options[:json]
+#       out = out.collect { |x| x['message']['title'] }
+#     end
+#     puts out
+#   end
+# end
 
 class Sr < Thor
   include Thor::Actions
-  require 'serrano'
-  require 'launchy'
-  require 'json'
-  require 'pp'
+  # class_option :json, :type => :boolean, :default => false
 
-  desc "works STRING", "Get works"
+  desc "works [DOIs]", "Get works by DOIs"
   long_desc <<-LONGDESC
-    `serrano works` accepts either a DOI or query string to
-    search for works
+    `serrano works` accepts one or more DOIs to search for works
 
-    You can toggle verbose to get simplified or complete
-    outputs
+    Toggle `json` to get simplified (summary) or complete output (JSON)
 
-    $ serrano works 10.1371/journal.pone.0033693 --verbose=false
-    Methylphenidate Exposure Induces Dopamine Neuron Loss and Activation
+    # A single DOI
+    $ serrano works 10.1371/journal.pone.0033693
+    DOI: 10.1371/journal.pone.0033693  type: journal-article  publisher: Public Library of Science (PLoS)
 
-    $ serrano works '10.1007/12080.1874-1746,10.1007/10452.1573-5125,10.1111/(issn)1442-9993'  --verbose=false
-    Theoretical Ecology
-    Aquatic Ecology
-    Austral Ecology
+    # Many DOIs
+    $ serrano works 10.1007/12080.1874-1746 10.1007/10452.1573-5125
+    DOI: 10.1007/12080.1874-1746  type: journal  publisher: Springer Science + Business Media
+    DOI: 10.1007/10452.1573-5125  type: journal  publisher: Springer Science + Business Media
+
+    # Verbose output gives JSON, pipe onwards, e.g., parse with jq
+    $ serrano works 10.1371/journal.pone.0033693 10.1007/12080.1874-1746 10.1007/10452.1573-5125 --json=true | jq .[].message.member
+    "http://id.crossref.org/member/340"
+    "http://id.crossref.org/member/297"
+    "http://id.crossref.org/member/297"
   LONGDESC
-  # method_option :doi => :string
-  option :verbose, :type => :boolean, :default => true
-  def works(tt)
-  	tt = "#{tt}"
-    tt = tt.split(',')
-    out = Serrano.works(ids: tt)
-    if !options[:verbose]
-      out = out.collect { |x| x['message']['title'] }
+  option :json, :type => :boolean, :default => false
+  def works(*dois)
+    out = Serrano.works(ids: dois)
+    if !options[:json]
+      out = out.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
+      out.each do |x|
+        puts 'DOI: ' + x['DOI'].to_s
+        puts 'type: ' + x['type']
+        puts 'title: ' + x['title'][0]
+        puts
+      end
+    else
+      puts MultiJson.encode(out)
     end
-    puts out
+  end
+
+  desc "members [IDs]", "Get members by id"
+  long_desc <<-LONGDESC
+    `serrano members` accepts one or more Crossref member IDs
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano members 98
+
+    id: 98  name: Hindawi Publishing Corporation
+
+    $ serrano members 98 340 45
+
+    id: 98  name: Hindawi Publishing Corporation
+    id: 340  name: Public Library of Science (PLoS)
+    id: 45  name: British Institute of Radiology
+
+    $ serrano members 98 340 45 311 78 --json=true | jq .[].message.coverage.\"resource-links-current\"
+
+    1 0 0 0.8311812281608582 0.985091507434845
+
+    $ serrano members 98 --works=true --json=true | jq .[].message.items[].\"reference-count\"
+
+    24 7 45 31 22 67 72 17 53 75 0 68 12 16 50 79 40 18 40 195
+  LONGDESC
+  option :json, :type => :boolean, :default => false
+  option :works, :type => :boolean, :default => false
+  def members(*ids)
+    out = Serrano.members(ids: ids, works: options[:works])
+    if !options[:json]
+      if !options[:works]
+        out = out.collect { |x| x['message'].select { |k,v| k[/id|primary-name/] } }
+        out.each do |x|
+          puts 'id: ' + x['id'].to_s
+          puts 'title: ' + x['primary-name']
+          puts
+        end
+      else
+        print_works(out)
+      end
+    else
+      puts MultiJson.encode(out)
+    end
+  end
+
+
+  desc "prefixes [DOI prefixes]", "Search for prefixes by DOI prefix"
+  long_desc <<-LONGDESC
+    `serrano prefixes` accepts one or more Crossref member IDs
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano prefixes 10.1016
+    member: http://id.crossref.org/member/78
+    name: Elsevier BV
+    prefix: http://id.crossref.org/prefix/10.1016
+
+    $ serrano prefixes 10.1016 10.1371 10.1023
+    member: http://id.crossref.org/member/78
+    name: Elsevier BV
+    prefix: http://id.crossref.org/prefix/10.1016
+
+    member: http://id.crossref.org/member/340
+    name: Public Library of Science (PLoS)
+    prefix: http://id.crossref.org/prefix/10.1371
+
+    member: http://id.crossref.org/member/297
+    name: Springer Science + Business Media
+    prefix: http://id.crossref.org/prefix/10.1023
+
+    $ serrano prefixes 10.1016 10.1371 10.1023 10.4176 10.1093 --json=true | jq .[].message.name
+    "Elsevier BV"
+    "Public Library of Science (PLoS)"
+    "Springer Science + Business Media"
+    "Co-Action Publishing"
+    "Oxford University Press (OUP)"
+  LONGDESC
+  option :json, :type => :boolean, :default => false
+  def prefixes(*ids)
+    out = Serrano.prefixes(ids: ids)
+    if !options[:json]
+      out = out.collect { |x| x['message'] }
+      out.each do |x|
+        puts 'member: ' + x['member']
+        puts 'name: ' + x['name']
+        puts 'prefix: ' + x['prefix']
+        puts
+      end
+    else
+      puts MultiJson.encode(out)
+    end
+  end
+
+  # desc "query SUBCOMMAND ...ARGS", "query a route"
+  # subcommand "query", Query
+
+  desc "version", "Get serrano version"
+  def version
+    puts Serrano::VERSION
+  end
+
+  private
+  def print_works(data)
+    data = data.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
+    data.each do |x|
+      puts 'DOI: ' + x['DOI'].to_s
+      puts 'type: ' + x['type']
+      puts 'title: ' + x['title'][0]
+      puts
+    end
   end
 end
 
