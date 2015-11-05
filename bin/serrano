@@ -27,19 +27,29 @@ class Sr < Thor
     Toggle `json` to get simplified (summary) or complete output (JSON)
 
     # A single DOI
-    $ serrano works 10.1371/journal.pone.0033693
-    DOI: 10.1371/journal.pone.0033693  type: journal-article  publisher: Public Library of Science (PLoS)
+    \x5$ serrano works 10.1371/journal.pone.0033693
+
+    DOI: 10.1371/journal.pone.0033693
+    \x5type: journal-article
+    \x5title: Methylphenidate Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal Ganglia of Mice
 
     # Many DOIs
-    $ serrano works 10.1007/12080.1874-1746 10.1007/10452.1573-5125
-    DOI: 10.1007/12080.1874-1746  type: journal  publisher: Springer Science + Business Media
-    DOI: 10.1007/10452.1573-5125  type: journal  publisher: Springer Science + Business Media
+    \x5$ serrano works 10.1007/12080.1874-1746 10.1007/10452.1573-5125
+
+    DOI: 10.1007/12080.1874-1746
+    \x5type: journal
+    \x5title: Theoretical Ecology
+
+    DOI: 10.1007/10452.1573-5125
+    \x5type: journal
+    \x5title: Aquatic Ecology
 
     # Verbose output gives JSON, pipe onwards, e.g., parse with jq
-    $ serrano works 10.1371/journal.pone.0033693 10.1007/12080.1874-1746 10.1007/10452.1573-5125 --json=true | jq .[].message.member
+    \x5$ serrano works 10.1371/journal.pone.0033693 10.1007/12080.1874-1746 10.1007/10452.1573-5125 --json=true | jq .[].message.member
+
     "http://id.crossref.org/member/340"
-    "http://id.crossref.org/member/297"
-    "http://id.crossref.org/member/297"
+    \x5"http://id.crossref.org/member/297"
+    \x5"http://id.crossref.org/member/297"
   LONGDESC
   option :json, :type => :boolean, :default => false
   def works(*dois)
@@ -65,13 +75,16 @@ class Sr < Thor
 
     $ serrano members 98
 
-    id: 98  name: Hindawi Publishing Corporation
+    id: 98
+    \x5title: Hindawi Publishing Corporation
 
-    $ serrano members 98 340 45
+    $ serrano members 98 340
 
-    id: 98  name: Hindawi Publishing Corporation
-    id: 340  name: Public Library of Science (PLoS)
-    id: 45  name: British Institute of Radiology
+    id: 98
+    \x5title: Hindawi Publishing Corporation
+
+    id: 340
+    \x5title: Public Library of Science (PLoS)
 
     $ serrano members 98 340 45 311 78 --json=true | jq .[].message.coverage.\"resource-links-current\"
 
@@ -109,29 +122,28 @@ class Sr < Thor
     Toggle `json` to get simplified (summary) or complete output (JSON)
 
     $ serrano prefixes 10.1016
-    member: http://id.crossref.org/member/78
-    name: Elsevier BV
-    prefix: http://id.crossref.org/prefix/10.1016
 
-    $ serrano prefixes 10.1016 10.1371 10.1023
     member: http://id.crossref.org/member/78
-    name: Elsevier BV
-    prefix: http://id.crossref.org/prefix/10.1016
+    \x5name: Elsevier BV
+    \x5prefix: http://id.crossref.org/prefix/10.1016
+
+    $ serrano prefixes 10.1016 10.1371
+
+    member: http://id.crossref.org/member/78
+    \x5name: Elsevier BV
+    \x5prefix: http://id.crossref.org/prefix/10.1016
 
     member: http://id.crossref.org/member/340
-    name: Public Library of Science (PLoS)
-    prefix: http://id.crossref.org/prefix/10.1371
-
-    member: http://id.crossref.org/member/297
-    name: Springer Science + Business Media
-    prefix: http://id.crossref.org/prefix/10.1023
+    \x5name: Public Library of Science (PLoS)
+    \x5prefix: http://id.crossref.org/prefix/10.1371
 
     $ serrano prefixes 10.1016 10.1371 10.1023 10.4176 10.1093 --json=true | jq .[].message.name
+
     "Elsevier BV"
-    "Public Library of Science (PLoS)"
-    "Springer Science + Business Media"
-    "Co-Action Publishing"
-    "Oxford University Press (OUP)"
+    \x5"Public Library of Science (PLoS)"
+    \x5"Springer Science + Business Media"
+    \x5"Co-Action Publishing"
+    \x5"Oxford University Press (OUP)"
   LONGDESC
   option :json, :type => :boolean, :default => false
   def prefixes(*ids)
