@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+require "thor"
+
+class Sr < Thor
+  include Thor::Actions
+  require 'serrano'
+  require 'launchy'
+  require 'json'
+  require 'pp'
+
+  desc "works STRING", "Get works"
+  long_desc <<-LONGDESC
+    `serrano works` accepts either a DOI or query string to
+    search for works
+
+    You can toggle verbose to get simplified or complete
+    outputs
+
+    $ serrano works 10.1371/journal.pone.0033693 --verbose=false
+    Methylphenidate Exposure Induces Dopamine Neuron Loss and Activation
+
+    $ serrano works '10.1007/12080.1874-1746,10.1007/10452.1573-5125,10.1111/(issn)1442-9993'  --verbose=false
+    Theoretical Ecology
+    Aquatic Ecology
+    Austral Ecology
+  LONGDESC
+  # method_option :doi => :string
+  option :verbose, :type => :boolean, :default => true
+  def works(tt)
+  	tt = "#{tt}"
+    tt = tt.split(',')
+    out = Serrano.works(ids: tt)
+    if !options[:verbose]
+      out = out.collect { |x| x['message']['title'] }
+    end
+    puts out
+  end
+end
+
+Sr.start(ARGV)
