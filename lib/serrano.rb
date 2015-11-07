@@ -171,7 +171,7 @@ module Serrano
   # @example
   #      require 'serrano'
   #      # Search by DOI, one or more
-  #      Serrano.funders(ids: '10.13039/100000001')
+  #      Serrano.funders(ids: 100004410)
   #      Serrano.funders(ids: ['10.13039/100000001','10.13039/100000015'])
   #      # query
   #      Serrano.funders(query: "NSF")

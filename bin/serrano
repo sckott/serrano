@@ -161,6 +161,135 @@ class Sr < Thor
     end
   end
 
+  desc "funders [funder IDs]", "Search for funders by DOI prefix"
+  long_desc <<-LONGDESC
+    `serrano funders` accepts one or more Crossref funder IDs
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano funders 100004410
+
+    id: 100004410
+    \x5name: European Molecular Biology Organization
+    \x5location: Germany
+
+    $ serrano funders 10.13039/100000001 10.13039/100000015
+
+    id: 100000001
+    \x5name: National Science Foundation
+    \x5location: United States
+
+    id: 100000015
+    \x5name: U.S. Department of Energy
+    \x5location: United States
+
+    $ serrano funders 10.13039/100000001 10.13039/100000015 --json=true | jq .[].message.name
+
+    "National Science Foundation"
+    \x5"U.S. Department of Energy"
+  LONGDESC
+  option :json, :type => :boolean, :default => false
+  def funders(*ids)
+    out = Serrano.funders(ids: ids)
+    if !options[:json]
+      out = out.collect { |x| x['message'] }
+      out.each do |x|
+        puts 'id: ' + x['id']
+        puts 'name: ' + x['name']
+        puts 'location: ' + x['location']
+        puts
+      end
+    else
+      puts MultiJson.encode(out)
+    end
+  end
+
+
+  desc "journals [journal ISSNs]", "Search for journals by ISSNs"
+  long_desc <<-LONGDESC
+    `serrano journals` accepts one or more journal ISSNs
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano journals 2167-8359
+
+    id: 100004410
+    \x5name: European Molecular Biology Organization
+    \x5location: Germany
+
+    $ serrano journals 1803-2427 2326-4225
+
+    id: 100000001
+    \x5name: National Science Foundation
+    \x5location: United States
+
+    id: 100000015
+    \x5name: U.S. Department of Energy
+    \x5location: United States
+
+    $ serrano journals 1803-2427 2326-4225 --json=true | jq .[].message.title
+
+    "National Science Foundation"
+    \x5"U.S. Department of Energy"
+  LONGDESC
+  option :json, :type => :boolean, :default => false
+  def journals(*ids)
+    out = Serrano.journals(ids: ids)
+    if !options[:json]
+      out = out.collect { |x| x['message'] }
+      out.each do |x|
+        puts 'ISSN: ' + x['ISSN'][0]
+        puts 'title: ' + x['title']
+        puts 'publisher: ' + x['publisher']
+        puts
+      end
+    else
+      puts MultiJson.encode(out)
+    end
+  end
+
+  desc "types [type name]", "Search for types by name"
+  long_desc <<-LONGDESC
+    `serrano types` accepts one or more type names
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano types journal
+
+    id: 100004410
+    \x5name: European Molecular Biology Organization
+    \x5location: Germany
+
+    $ serrano types journal dissertation
+
+    id: 100000001
+    \x5name: National Science Foundation
+    \x5location: United States
+
+    id: 100000015
+    \x5name: U.S. Department of Energy
+    \x5location: United States
+
+    $ serrano types journal dissertation --json=true | jq .[].message
+
+    "National Science Foundation"
+    \x5"U.S. Department of Energy"
+  LONGDESC
+  option :json, :type => :boolean, :default => false
+  def types(*ids)
+    out = Serrano.types(ids: ids)
+    if !options[:json]
+      out = out.collect { |x| x['message'] }
+      out.each do |x|
+        puts 'id: ' + x['id']
+        puts 'label: ' + x['label']
+        puts
+      end
+    else
+      puts MultiJson.encode(out)
+    end
+  end
+
   # desc "query SUBCOMMAND ...ARGS", "query a route"
   # subcommand "query", Query
 
