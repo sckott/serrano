@@ -4,17 +4,34 @@ require "thor"
 require "serrano"
 require "multi_json"
 
-# class Query < Thor
-#   desc "query", "query things"
-#   option :query, :type => :string, :default => nil
-#   def query
-#     out = Serrano.works(query: options[:query])
-#     if !options[:json]
-#       out = out.collect { |x| x['message']['title'] }
-#     end
-#     puts out
-#   end
-# end
+funder_long = '`serrano funders` accepts one or more Crossref funder IDs
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano funders 100004410
+
+    id: 100004410
+    \x5name: European Molecular Biology Organization
+    \x5location: Germany
+
+    $ serrano funders 10.13039/100000001 10.13039/100000015
+
+    id: 100000001
+    \x5name: National Science Foundation
+    \x5location: United States
+
+    id: 100000015
+    \x5name: U.S. Department of Energy
+    \x5location: United States
+
+    $ serrano funders 10.13039/100000001 10.13039/100000015 --json=true | jq .[].message.name
+
+    "National Science Foundation"
+    \x5"U.S. Department of Energy"
+
+    $ serrano funders --query=NSF --limit=2
+
+    $ serrano funders 10.13039/100000001 --works=true --limit=2'
 
 class Sr < Thor
   include Thor::Actions
@@ -34,7 +51,7 @@ class Sr < Thor
     \x5title: Methylphenidate Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal Ganglia of Mice
 
     # Many DOIs
-    \x5$ serrano works 10.1007/12080.1874-1746 10.1007/10452.1573-5125
+    \x5$ serrano works "10.1007/12080.1874-1746,10.1007/10452.1573-5125"
 
     DOI: 10.1007/12080.1874-1746
     \x5type: journal
@@ -45,7 +62,7 @@ class Sr < Thor
     \x5title: Aquatic Ecology
 
     # Verbose output gives JSON, pipe onwards, e.g., parse with jq
-    \x5$ serrano works 10.1371/journal.pone.0033693 10.1007/12080.1874-1746 10.1007/10452.1573-5125 --json=true | jq .[].message.member
+    \x5$ serrano works "10.1371/journal.pone.0033693,10.1007/12080.1874-1746,10.1007/10452.1573-5125" --json=true | jq .[].message.member
 
     "http://id.crossref.org/member/340"
     \x5"http://id.crossref.org/member/297"
@@ -78,7 +95,7 @@ class Sr < Thor
     id: 98
     \x5title: Hindawi Publishing Corporation
 
-    $ serrano members 98 340
+    $ serrano members "98,340"
 
     id: 98
     \x5title: Hindawi Publishing Corporation
@@ -86,7 +103,7 @@ class Sr < Thor
     id: 340
     \x5title: Public Library of Science (PLoS)
 
-    $ serrano members 98 340 45 311 78 --json=true | jq .[].message.coverage.\"resource-links-current\"
+    $ serrano members "98,340,45,311,78" --json=true | jq .[].message.coverage.\"resource-links-current\"
 
     1 0 0 0.8311812281608582 0.985091507434845
 
@@ -95,12 +112,27 @@ class Sr < Thor
     24 7 45 31 22 67 72 17 53 75 0 68 12 16 50 79 40 18 40 195
   LONGDESC
   option :json, :type => :boolean, :default => false
+  option :query, :type => :string, :default => nil
+  option :limit, :type => :numeric, :default => nil
   option :works, :type => :boolean, :default => false
-  def members(*ids)
-    out = Serrano.members(ids: ids, works: options[:works])
+  def members(ids=nil)
+    if ids.nil?
+      out = Serrano.members(query: options[:query], limit: options[:limit],
+        works: options[:works])
+    else
+      out = Serrano.members(ids: ids.split(","), query: options[:query], limit: options[:limit],
+        works: options[:works])
+    end
+
     if !options[:json]
       if !options[:works]
-        out = out.collect { |x| x['message'].select { |k,v| k[/id|primary-name/] } }
+        if out.class == Hash
+          out = out['message']['items']
+        else
+          out = out.collect { |x| x['message'] }
+        end
+
+        # out = out.collect { |x| x['message'].select { |k,v| k[/id|primary-name/] } }
         out.each do |x|
           puts 'id: ' + x['id'].to_s
           puts 'title: ' + x['primary-name']
@@ -127,7 +159,7 @@ class Sr < Thor
     \x5name: Elsevier BV
     \x5prefix: http://id.crossref.org/prefix/10.1016
 
-    $ serrano prefixes 10.1016 10.1371
+    $ serrano prefixes "10.1016,10.1371"
 
     member: http://id.crossref.org/member/78
     \x5name: Elsevier BV
@@ -137,7 +169,7 @@ class Sr < Thor
     \x5name: Public Library of Science (PLoS)
     \x5prefix: http://id.crossref.org/prefix/10.1371
 
-    $ serrano prefixes 10.1016 10.1371 10.1023 10.4176 10.1093 --json=true | jq .[].message.name
+    $ serrano prefixes "10.1016,10.1371,10.1023,10.4176,10.1093" --json=true | jq .[].message.name
 
     "Elsevier BV"
     \x5"Public Library of Science (PLoS)"
@@ -146,15 +178,32 @@ class Sr < Thor
     \x5"Oxford University Press (OUP)"
   LONGDESC
   option :json, :type => :boolean, :default => false
-  def prefixes(*ids)
-    out = Serrano.prefixes(ids: ids)
+  option :limit, :type => :numeric, :default => nil
+  option :works, :type => :boolean, :default => false
+  def prefixes(ids=nil)
+    if ids.nil?
+      out = Serrano.prefixes(limit: options[:limit], works: options[:works])
+    else
+      out = Serrano.prefixes(ids: ids.split(","), limit: options[:limit],
+        works: options[:works])
+    end
+
     if !options[:json]
-      out = out.collect { |x| x['message'] }
-      out.each do |x|
-        puts 'member: ' + x['member']
-        puts 'name: ' + x['name']
-        puts 'prefix: ' + x['prefix']
-        puts
+      if !options[:works]
+        if out.class == Hash
+          out = out['message']['items']
+        else
+          out = out.collect { |x| x['message'] }
+        end
+
+        out.each do |x|
+          puts 'member: ' + x['member']
+          puts 'name: ' + x['name']
+          puts 'prefix: ' + x['prefix']
+          puts
+        end
+      else
+        print_works(out)
       end
     else
       puts MultiJson.encode(out)
@@ -173,7 +222,7 @@ class Sr < Thor
     \x5name: European Molecular Biology Organization
     \x5location: Germany
 
-    $ serrano funders 10.13039/100000001 10.13039/100000015
+    $ serrano funders "10.13039/100000001,10.13039/100000015"
 
     id: 100000001
     \x5name: National Science Foundation
@@ -183,21 +232,44 @@ class Sr < Thor
     \x5name: U.S. Department of Energy
     \x5location: United States
 
-    $ serrano funders 10.13039/100000001 10.13039/100000015 --json=true | jq .[].message.name
+    $ serrano funders "10.13039/100000001,10.13039/100000015" --json=true | jq .[].message.name
 
     "National Science Foundation"
     \x5"U.S. Department of Energy"
+
+    $ serrano funders --query=NSF --limit=2
+
+    $ serrano funders 10.13039/100000001 --works=true --limit=2
   LONGDESC
   option :json, :type => :boolean, :default => false
-  def funders(*ids)
-    out = Serrano.funders(ids: ids)
+  option :query, :type => :string, :default => nil
+  option :limit, :type => :numeric, :default => nil
+  option :works, :type => :boolean, :default => false
+  def funders(ids=nil)
+    if ids.nil?
+      out = Serrano.funders(query: options[:query], limit: options[:limit],
+        works: options[:works])
+    else
+      out = Serrano.funders(ids: ids.split(","), query: options[:query], limit: options[:limit],
+        works: options[:works])
+    end
+
     if !options[:json]
-      out = out.collect { |x| x['message'] }
-      out.each do |x|
-        puts 'id: ' + x['id']
-        puts 'name: ' + x['name']
-        puts 'location: ' + x['location']
-        puts
+      if !options[:works]
+        if out.class == Hash
+          out = out['message']['items']
+        else
+          out = out.collect { |x| x['message'] }
+        end
+
+        out.each do |x|
+          puts 'id: ' + x['id']
+          puts 'name: ' + x['name']
+          puts 'location: ' + x['location']
+          puts
+        end
+      else
+        print_works(out)
       end
     else
       puts MultiJson.encode(out)
@@ -217,7 +289,7 @@ class Sr < Thor
     \x5name: European Molecular Biology Organization
     \x5location: Germany
 
-    $ serrano journals 1803-2427 2326-4225
+    $ serrano journals "1803-2427,2326-4225"
 
     id: 100000001
     \x5name: National Science Foundation
@@ -227,21 +299,44 @@ class Sr < Thor
     \x5name: U.S. Department of Energy
     \x5location: United States
 
-    $ serrano journals 1803-2427 2326-4225 --json=true | jq .[].message.title
+    $ serrano journals "1803-2427,2326-4225" --json=true | jq .[].message.title
 
     "National Science Foundation"
     \x5"U.S. Department of Energy"
+
+    $ serrano journals --query=ecology --limit=2
+
+    $ serrano journals 2167-8359 --query=ecology --works=true --limit=2
   LONGDESC
   option :json, :type => :boolean, :default => false
-  def journals(*ids)
-    out = Serrano.journals(ids: ids)
+  option :query, :type => :string, :default => nil
+  option :limit, :type => :numeric, :default => nil
+  option :works, :type => :boolean, :default => false
+  def journals(ids=nil)
+    if ids.nil?
+      out = Serrano.journals(query: options[:query], limit: options[:limit],
+        works: options[:works])
+    else
+      out = Serrano.journals(ids: ids.split(","), query: options[:query], limit: options[:limit],
+        works: options[:works])
+    end
+
     if !options[:json]
-      out = out.collect { |x| x['message'] }
-      out.each do |x|
-        puts 'ISSN: ' + x['ISSN'][0]
-        puts 'title: ' + x['title']
-        puts 'publisher: ' + x['publisher']
-        puts
+      if !options[:works]
+        if out.class == Hash
+          out = out['message']['items']
+        else
+          out = out.collect { |x| x['message'] }
+        end
+
+        out.each do |x|
+          puts 'ISSN: ' + x['ISSN'][0]
+          puts 'title: ' + x['title']
+          puts 'publisher: ' + x['publisher']
+          puts
+        end
+      else
+        print_works(out)
       end
     else
       puts MultiJson.encode(out)
@@ -274,15 +369,77 @@ class Sr < Thor
 
     "National Science Foundation"
     \x5"U.S. Department of Energy"
+
+    $ serrano types dissertation --works
+
+    $ serrano types dissertation --works --limit=2
   LONGDESC
   option :json, :type => :boolean, :default => false
+  option :works, :type => :boolean, :default => false
+  option :limit, :type => :numeric, :default => nil
   def types(*ids)
-    out = Serrano.types(ids: ids)
+    out = Serrano.types(ids: ids, limit: options[:limit],
+      works: options[:works])
+
     if !options[:json]
-      out = out.collect { |x| x['message'] }
+      if !options[:works]
+        if out.class == Hash
+          out = out['message']['items']
+        else
+          out = out.collect { |x| x['message'] }
+        end
+
+        out.each do |x|
+          puts 'id: ' + x['id']
+          puts 'label: ' + x['label']
+          puts
+        end
+      else
+        print_works(out)
+      end
+    else
+      puts MultiJson.encode(out)
+    end
+  end
+
+  desc "licenses [type name]", "Search for licenses by name"
+  long_desc <<-LONGDESC
+    `serrano licenses` accepts one or more type names
+
+    Toggle `json` to get simplified (summary) or complete output (JSON)
+
+    $ serrano licenses
+
+    url: http://avs.org
+    \x5work-count: 1
+
+    url: http://creativecommons.org/LICENSEs/by/3.0/
+    \x5work-count: 14
+
+    $ serrano licenses --query=creative
+
+    id: 100000001
+    \x5name: National Science Foundation
+    \x5location: United States
+
+    id: 100000015
+    \x5name: U.S. Department of Energy
+    \x5location: United States
+
+    $ serrano licenses --json=true | jq .[].message.items.work-count
+
+    "National Science Foundation"
+    \x5"U.S. Department of Energy"
+  LONGDESC
+  option :json, :type => :boolean, :default => false
+  option :query, :type => :string, :default => nil
+  def licenses
+    out = Serrano.licenses(query: options[:query])
+    if !options[:json]
+      out = out['message']['items']
       out.each do |x|
-        puts 'id: ' + x['id']
-        puts 'label: ' + x['label']
+        puts 'url: ' + x['URL']
+        puts 'work-count: ' + x['work-count'].to_s
         puts
       end
     else
@@ -290,24 +447,41 @@ class Sr < Thor
     end
   end
 
-  # desc "query SUBCOMMAND ...ARGS", "query a route"
-  # subcommand "query", Query
-
   desc "version", "Get serrano version"
   def version
     puts Serrano::VERSION
   end
 
   private
+
   def print_works(data)
-    data = data.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
+    if data.is_a? Array
+      data = data[0]['message']['items']
+    else
+      data = data.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
+    end
     data.each do |x|
-      puts 'DOI: ' + x['DOI'].to_s
+      puts 'DOI: ' + x['DOI']
       puts 'type: ' + x['type']
       puts 'title: ' + x['title'][0]
       puts
     end
   end
+
 end
 
 Sr.start(ARGV)
+
+# class Query < Thor
+#   desc "query", "query things"
+#   option :query, :type => :string, :default => nil
+#   def query
+#     out = Serrano.works(query: options[:query])
+#     if !options[:json]
+#       out = out.collect { |x| x['message']['title'] }
+#     end
+#     puts out
+#   end
+# end
+# desc "query SUBCOMMAND ...ARGS", "query a route"
+# subcommand "query", Query

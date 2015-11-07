@@ -234,10 +234,11 @@ module Serrano
   #      Serrano.types(ids: "journal")
   #      Serrano.types(ids: ["journal", "dissertation"])
   #      Serrano.types(ids: "journal", works: true)
-  def self.types(ids: nil, works: false, options: nil, verbose: false)
+  def self.types(ids: nil, offset: nil,
+    limit: nil, works: false, options: nil, verbose: false)
 
-    Request.new('types', ids, nil, nil, nil,
-      nil, nil, nil, nil, nil, works, nil, options, verbose).perform
+    Request.new('types', ids, nil, nil, offset,
+      limit, nil, nil, nil, nil, works, nil, options, verbose).perform
   end
 
   ##
@@ -252,11 +253,11 @@ module Serrano
   #      Serrano.licenses(query: "creative")
   #      Serrano.licenses()
   #      Serrano.licenses(limit: 3)
-  def self.licenses(ids: nil, query: nil, offset: nil,
+  def self.licenses(query: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil,
     facet: nil, options: nil, verbose: false)
 
-    Request.new('licenses', ids, query, nil, offset,
+    Request.new('licenses', nil, query, nil, offset,
       limit, sample, sort, order, facet, nil, nil, options, verbose).perform
   end
 
