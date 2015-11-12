@@ -9,7 +9,6 @@ require 'rexml/document'
 require 'rexml/xpath'
 
 # @!macro serrano_params
-#   @param ids [Array] DOIs (digital object identifier) or other identifiers
 #   @param offset [Fixnum] Number of record to start at, from 1 to infinity.
 #   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
 #   @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -22,6 +21,9 @@ require 'rexml/xpath'
 #   will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean] Include facet results. Default: false
+#   @param verbose [Boolean] Print request headers to stdout. Default: false
+
+# @!macro serrano_options
 #   @param options [Hash] Hash of options for configuring the request, passed on to Faraday.new
 #     :timeout      - [Fixnum] open/read timeout Integer in seconds
 #     :open_timeout - [Fixnum] read timeout Integer in seconds
@@ -33,7 +35,6 @@ require 'rexml/xpath'
 #     :bind           - [Hash] A hash with host and port values
 #     :boundary       - [String] of the boundary value
 #     :oauth          - [Hash] A hash with OAuth details
-#   @param verbose [Boolean] Print request headers to stdout. Default: false
 
 ##
 # Serrano - The top level module for using methods
@@ -69,6 +70,8 @@ module Serrano
   # Search the works route
   #
   # @!macro serrano_params
+  # @!macro serrano_options
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
   # @return [Array] An array of hashes
@@ -106,6 +109,8 @@ module Serrano
   # Search the members route
   #
   # @!macro serrano_params
+  # @!macro serrano_options
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
@@ -136,6 +141,8 @@ module Serrano
   # Search the prefixes route
   #
   # @!macro serrano_params
+  # @!macro serrano_options
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of hashes
@@ -163,6 +170,8 @@ module Serrano
   # Search the funders route
   #
   # @!macro serrano_params
+  # @!macro serrano_options
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
@@ -193,6 +202,8 @@ module Serrano
   # Search the journals route
   #
   # @!macro serrano_params
+  # @!macro serrano_options
+  # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
@@ -224,6 +235,7 @@ module Serrano
   ##
   # Search the types route
   #
+  # @!macro serrano_options
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of hashes
@@ -245,6 +257,7 @@ module Serrano
   # Search the licenses route
   #
   # @!macro serrano_params
+  # @!macro serrano_options
   # @param query [String] A query string
   # @return [Array] An array of hashes
   #
@@ -264,14 +277,15 @@ module Serrano
   ##
   # Determine registration agency for DOIs
   #
+  # @!macro serrano_options
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @return [Array] An array of hashes
   #
   # @example
   #      require 'serrano'
-  #      Serrano.agency(ids: '10.1371/journal.pone.0033693')
-  #      Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
-  def self.agency(ids:, options: nil, verbose: false)
+  #      Serrano.registration_agency(ids: '10.1371/journal.pone.0033693')
+  #      Serrano.registration_agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+  def self.registration_agency(ids:, options: nil, verbose: false)
 
     Request.new('works', ids, nil, nil, nil,
       nil, nil, nil, nil, nil, false, true, options, verbose).perform
@@ -280,7 +294,9 @@ module Serrano
   ##
   # Get a random set of DOI's
   #
+  # @!macro serrano_options
   # @param sample [Fixnum] Number of random DOIs to return
+  # @param verbose [Boolean] Print request headers to stdout. Default: false
   # @return [Array] A list of strings, each a DOI
   # @note This method uses {Serrano.works} internally, but doesn't allow you to pass on
   # arguments to that method.
@@ -309,52 +325,54 @@ module Serrano
   # @example
   #     require 'serrano'
   #     # By default, you get bibtex, apa format, in en-US locale
-  #     Serrano.cn(ids: '10.1126/science.169.3946.635')
+  #     Serrano.content_negotiation(ids: '10.1126/science.169.3946.635')
   #
   #     # get citeproc-json
-  #     Serrano.cn(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "citeproc-json")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "rdf-xml")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "crossref-xml")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text")
+  #     Serrano.content_negotiation(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "citeproc-json")
+  #
+  #     # some other formats
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "rdf-xml")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "crossref-xml")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text")
   #
   #     # return an R bibentry type
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "bibentry")
-  #     Serrano.cn(ids: "10.6084/m9.figshare.97218", format: "bibentry")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "bibentry")
+  #     Serrano.content_negotiation(ids: "10.6084/m9.figshare.97218", format: "bibentry")
   #
   #     # return an apa style citation
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "apa")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "harvard3")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "elsevier-harvard")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "ecoscience")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "heredity")
-  #     Serrano.cn(ids: "10.1126/science.169.3946.635", format: "text", style: "oikos")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "apa")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "harvard3")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "elsevier-harvard")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "ecoscience")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "heredity")
+  #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "oikos")
   #
   #     # example with many DOIs
   #     dois <- cr_r(2)
-  #     Serrano.cn(dois, format: "text", style: "apa")
+  #     Serrano.content_negotiation(dois, format: "text", style: "apa")
   #
   #     # Using DataCite DOIs
   #     ## some formats don't work
-  #     # Serrano.cn(ids: "10.5284/1011335", format: "text")
-  #     # Serrano.cn(ids: "10.5284/1011335", format: "crossref-xml")
-  #     # Serrano.cn(ids: "10.5284/1011335", format: "crossref-tdm")
+  #     # Serrano.content_negotiation(ids: "10.5284/1011335", format: "text")
+  #     # Serrano.content_negotiation(ids: "10.5284/1011335", format: "crossref-xml")
+  #     # Serrano.content_negotiation(ids: "10.5284/1011335", format: "crossref-tdm")
   #
   #     ## But most do work
-  #     Serrano.cn(ids: "10.5284/1011335", format: "datacite-xml")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "rdf-xml")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "turtle")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "citeproc-json")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "ris")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "bibtex")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "bibentry")
-  #     Serrano.cn(ids: "10.5284/1011335", format: "bibtex")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "datacite-xml")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "rdf-xml")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "turtle")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "citeproc-json")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "ris")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "bibtex")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "bibentry")
+  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "bibtex")
   #
   #     # many DOIs
   #     dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', '10.5167/UZH-38402','10.5167/UZH-41217']
-  #     x = Serrano.cn(ids: dois)
+  #     x = Serrano.content_negotiation(ids: dois)
   #     puts x
-  def self.cn(ids:, format: "bibtex", style: 'apa', locale: "en-US")
+  def self.content_negotiation(ids:, format: "bibtex", style: 'apa', locale: "en-US")
     CNRequest.new(ids, format, style, locale).perform
   end
 
@@ -413,6 +431,7 @@ module Serrano
 
   # Get a citation count with a DOI
   #
+  # @!macro serrano_options
   # @param doi [String] DOI, digital object identifier
   # @param url [String] the API url for the function (should be left to default)
   # @param key [String] your API key

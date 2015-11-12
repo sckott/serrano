@@ -32,12 +32,12 @@ Methods in relation to [Crossref search API][crapi] routes
 
 Additional methods built on top of the Crossref search API:
 
-* DOI minting agency - `Serrano.agency()`
+* DOI minting agency - `Serrano.registration_agency()`
 * Get random DOIs - `Serrano.random_dois()`
 
 Other methods:
 
-* [Conent negotiation][cn] - `Serrano.cn()`
+* [Conent negotiation][cn] - `Serrano.content_negotiation()`
 * [Text and data mining][tdm] - `Serrano.text()`
 * [Citation count][ccount] - `Serrano.citation_count()`
 

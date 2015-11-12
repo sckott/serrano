@@ -20,7 +20,7 @@ task :b do
   system "bundle install"
 end
 
-desc "bundle install"
+desc "clean out builds"
 task :clean do
   system "ls | grep [0-9].gem | xargs rm"
 end
