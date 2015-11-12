@@ -40,6 +40,8 @@ Other methods:
 * [Conent negotiation][cn] - `Serrano.content_negotiation()`
 * [Text and data mining][tdm] - `Serrano.text()`
 * [Citation count][ccount] - `Serrano.citation_count()`
+* [Crosscite][crosscite] -  `Serrano.crosscite()`
+* [get CSL styles][csl] -  `Serrano.csl_styles()`
 
 ## Install
 
@@ -129,3 +131,5 @@ res = Serrano.text(url: 'http://...');
 [cn]: http://www.crosscite.org/cn/
 [tdm]: http://www.crossref.org/tdm/
 [ccount]: http://labs.crossref.org/openurl/
+[crosscite]: http://www.crosscite.org/cn/
+[csl]: https://github.com/citation-style-language/styles
