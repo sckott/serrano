@@ -4,35 +4,6 @@ require "thor"
 require "serrano"
 require "multi_json"
 
-funder_long = '`serrano funders` accepts one or more Crossref funder IDs
-
-    Toggle `json` to get simplified (summary) or complete output (JSON)
-
-    $ serrano funders 100004410
-
-    id: 100004410
-    \x5name: European Molecular Biology Organization
-    \x5location: Germany
-
-    $ serrano funders 10.13039/100000001 10.13039/100000015
-
-    id: 100000001
-    \x5name: National Science Foundation
-    \x5location: United States
-
-    id: 100000015
-    \x5name: U.S. Department of Energy
-    \x5location: United States
-
-    $ serrano funders 10.13039/100000001 10.13039/100000015 --json=true | jq .[].message.name
-
-    "National Science Foundation"
-    \x5"U.S. Department of Energy"
-
-    $ serrano funders --query=NSF --limit=2
-
-    $ serrano funders 10.13039/100000001 --works=true --limit=2'
-
 class Sr < Thor
   include Thor::Actions
   # class_option :json, :type => :boolean, :default => false
@@ -471,17 +442,3 @@ class Sr < Thor
 end
 
 Sr.start(ARGV)
-
-# class Query < Thor
-#   desc "query", "query things"
-#   option :query, :type => :string, :default => nil
-#   def query
-#     out = Serrano.works(query: options[:query])
-#     if !options[:json]
-#       out = out.collect { |x| x['message']['title'] }
-#     end
-#     puts out
-#   end
-# end
-# desc "query SUBCOMMAND ...ARGS", "query a route"
-# subcommand "query", Query
