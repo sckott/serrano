@@ -42,16 +42,21 @@ require 'rexml/xpath'
 # to access Serrano APIs
 #
 # The following methods, matching the main Crossref API routes, are available:
-# * works - Use the /works endpoint
-# * members - Use the /members endpoint
-# * prefixes - Use the /prefixes endpoint
-# * funders - Use the /funders endpoint
-# * journals - Use the /journals endpoint
-# * types - Use the /types endpoint
-# * licenses - Use the /licenses endpoint
+# * `Serrano.works` - Use the /works endpoint
+# * `Serrano.members` - Use the /members endpoint
+# * `Serrano.prefixes` - Use the /prefixes endpoint
+# * `Serrano.funders` - Use the /funders endpoint
+# * `Serrano.journals` - Use the /journals endpoint
+# * `Serrano.types` - Use the /types endpoint
+# * `Serrano.licenses` - Use the /licenses endpoint
 #
 # Additional methods
-# * agency - test the registration agency for a DOI
+# * `Serrano.agency` - test the registration agency for a DOI
+# * `Serrano.content_negotiation` - Conent negotiation
+# * `Serrano.text` - Text and data mining
+# * `Serrano.citation_count` - Citation count
+# * `Serrano.crosscite` - CrossCite
+# * `Serrano.csl_styles` - get CSL styles
 #
 # All routes return an array of hashes
 # For example, if you want to inspect headers returned from the HTTP request,
