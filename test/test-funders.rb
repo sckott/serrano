@@ -10,7 +10,7 @@ require 'fileutils'
 require "test/unit"
 require "json"
 
-class TestResponse < Test::Unit::TestCase
+class TestFunders < Test::Unit::TestCase
 
   def setup
     @id = 100004410
@@ -38,7 +38,7 @@ class TestResponse < Test::Unit::TestCase
     res = Serrano.funders(query: "NSF")
     assert_equal(4, res.length)
     assert_equal(Hash, res.class)
-    assert_equal("funder-list", res[0]['message-type'])
+    assert_equal("funder-list", res['message-type'])
   end
 
   def test_funders_filter_handler

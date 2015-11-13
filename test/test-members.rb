@@ -10,7 +10,7 @@ require 'fileutils'
 require "test/unit"
 require "json"
 
-class TestResponse < Test::Unit::TestCase
+class TestMembers < Test::Unit::TestCase
 
   def setup
     @id = 98
@@ -19,7 +19,7 @@ class TestResponse < Test::Unit::TestCase
 
   def test_members
     res = Serrano.members(ids: @id)
-    assert_equal(4, res.length)
+    assert_equal(1, res.length)
     # assert_equal(Array, res.class)
     # assert_equal(Hash, res[0].class)
     # assert_equal(200, res[0].status)
@@ -27,7 +27,7 @@ class TestResponse < Test::Unit::TestCase
 
   def test_members_many_ids
     res = Serrano.members(ids: @ids)
-    assert_equal(4, res.length)
+    assert_equal(3, res.length)
     # assert_equal(Array, res.class)
     # assert_equal(Hash, res[0].class)
     # assert_equal(200, res[0].status)
@@ -42,8 +42,8 @@ class TestResponse < Test::Unit::TestCase
 
   def test_members_works
     res = Serrano.members(ids: @id, works: true)
-    assert_equal(4, res.length)
-    assert_equal(Hash, res.class)
+    assert_equal(1, res.length)
+    assert_equal(Array, res.class)
   end
 
   # should fail

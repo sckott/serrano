@@ -10,7 +10,7 @@ require 'fileutils'
 require "test/unit"
 require "json"
 
-class TestResponse < Test::Unit::TestCase
+class TestWorks < Test::Unit::TestCase
 
   def setup
     @doi = '10.1371/journal.pone.0033693'

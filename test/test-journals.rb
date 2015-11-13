@@ -10,7 +10,7 @@ require 'fileutils'
 require "test/unit"
 require "json"
 
-class TestResponse < Test::Unit::TestCase
+class TestJournals < Test::Unit::TestCase
 
   def setup
     @id = "2167-8359"
@@ -39,14 +39,14 @@ class TestResponse < Test::Unit::TestCase
     assert_equal(4, res.length)
     assert_equal(Hash, res.class)
     assert_equal("journal-list", res['message-type'])
-    assert_equal(String, res['message']['items'][0]['title'])
+    assert_equal(String, res['message']['items'][0]['title'].class)
   end
 
   def test_journals_filter_handler
     res = Serrano.journals(ids: "2167-8359", works: false, filter: {from_pub_date: '2014-03-03'})
     assert_equal(Array, res.class)
     assert_equal("validation-failure", res[0]['message-type'])
-    assert_equal("filter-not-available", res[0]['message'][0]['type'])
+    assert_equal("parameter-not-allowed", res[0]['message'][0]['type'])
   end
 
 end
