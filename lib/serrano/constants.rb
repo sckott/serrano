@@ -1,7 +1,5 @@
 require 'net/http'
 
-$crossciteurl = "http://crosscite.org/citeproc/format"
-
 NETWORKABLE_EXCEPTIONS = [Faraday::Error::ClientError,
                           URI::InvalidURIError,
                           Encoding::UndefinedConversionError,

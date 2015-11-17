@@ -55,7 +55,6 @@ require 'rexml/xpath'
 # * `Serrano.content_negotiation` - Conent negotiation
 # * `Serrano.text` - Text and data mining
 # * `Serrano.citation_count` - Citation count
-# * `Serrano.crosscite` - CrossCite
 # * `Serrano.csl_styles` - get CSL styles
 #
 # All routes return an array of hashes
@@ -461,37 +460,6 @@ module Serrano
     oc = REXML::Document.new("<doc>#{x}</doc>")
     value = REXML::XPath.first(oc, '//query').attributes['fl_count'].to_i
     return value
-  end
-
-  # Crosscite - citation formatter
-  #
-  # @!macro serrano_options
-  # @param doi [String,Array] Search by a single DOI or many DOIs.
-  # @param style [String] a CSL style (for text format only). See {Serrano.csl_styles}
-  # for options. Default: apa. If there's a style that CrossRef doesn't support you'll get
-  # @param locale [String] Language locale
-  #
-  # @see http://www.crosscite.org/cn/ for more info on the
-  #    Crossref Content Negotiation API service
-  #
-  # @example
-  #   Serrano.crosscite(doi: "10.5284/1011335")
-  #   Serrano.crosscite(doi: ['10.5169/SEALS-52668','10.2314/GBV:493109919','10.2314/GBV:493105263','10.2314/GBV:487077911','10.2314/GBV:607866403'])
-  def self.crosscite(doi:, style: 'apa', locale: "en-US", options: nil)
-    doi = Array(doi)
-    if doi.length > 1
-      coll = []
-      doi.each do |x|
-        begin
-          coll << ccite(x, style, locale, options)
-        rescue Exception => e
-          raise e
-        end
-      end
-      return coll
-    else
-      return ccite(doi[0], style, locale, options)
-    end
   end
 
   # Get csl styles

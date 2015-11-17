@@ -40,7 +40,6 @@ Other methods:
 * [Conent negotiation][cn] - `Serrano.content_negotiation()`
 * [Text and data mining][tdm] - `Serrano.text()`
 * [Citation count][ccount] - `Serrano.citation_count()`
-* [Crosscite][crosscite] -  `Serrano.crosscite()`
 * [get CSL styles][csl] -  `Serrano.csl_styles()`
 
 ## Install
