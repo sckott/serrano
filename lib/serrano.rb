@@ -4,7 +4,6 @@ require "serrano/filterhandler"
 require "serrano/cnrequest"
 require "serrano/miner"
 require "serrano/filters"
-require "serrano/cross_cite"
 
 require 'rexml/document'
 require 'rexml/xpath'
@@ -308,10 +307,12 @@ module Serrano
   #
   # @example
   #      require 'serrano'
+  #      # by default, gives 10
+  #      Serrano.random_dois()
   #      Serrano.random_dois(sample: 1)
   #      Serrano.random_dois(sample: 10)
   #      Serrano.random_dois(sample: 100)
-  def self.random_dois(sample:, options: nil, verbose: false)
+  def self.random_dois(sample: 10, options: nil, verbose: false)
 
     tmp = Request.new('works', nil, nil, nil, nil,
       nil, sample, nil, nil, nil, false, nil, options, verbose).perform
