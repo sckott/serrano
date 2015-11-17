@@ -55,7 +55,7 @@ class Sr < Thor
     end
   end
 
-  desc "members [IDs]", "Get members by id"
+  desc "members [member IDs]", "Get members by id"
   long_desc <<-LONGDESC
     `serrano members` accepts one or more Crossref member IDs
 
@@ -373,7 +373,7 @@ class Sr < Thor
     end
   end
 
-  desc "licenses [type name]", "Search for licenses by name"
+  desc "licenses", "Search for licenses by name"
   long_desc <<-LONGDESC
     `serrano licenses` accepts one or more type names
 
