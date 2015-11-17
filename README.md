@@ -100,7 +100,7 @@ Serrano.funders(ids: ['10.13039/100000001','10.13039/100000015'])
 Get agency for a set of DOIs
 
 ```ruby
-Serrano.agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125'])
+Serrano.registration_agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125'])
 ```
 
 Get random set of DOIs
@@ -130,5 +130,4 @@ res = Serrano.text(url: 'http://...');
 [cn]: http://www.crosscite.org/cn/
 [tdm]: http://www.crossref.org/tdm/
 [ccount]: http://labs.crossref.org/openurl/
-[crosscite]: http://www.crosscite.org/cn/
 [csl]: https://github.com/citation-style-language/styles
