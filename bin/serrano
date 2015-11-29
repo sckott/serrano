@@ -38,10 +38,24 @@ class Sr < Thor
     "http://id.crossref.org/member/340"
     \x5"http://id.crossref.org/member/297"
     \x5"http://id.crossref.org/member/297"
+
+    # Filter usage
+    \x5$ serrano works --filter=has_orcid:true --json --limit=2 | jq '.message.items[].author[].ORCID | select(. != null)'
+
+    "http://orcid.org/0000-0003-4087-8021"
+    \x5"http://orcid.org/0000-0002-2076-5452"
+    \x5"http://orcid.org/0000-0003-4087-8021"
+    \x5"http://orcid.org/0000-0002-2076-5452"
   LONGDESC
   option :json, :type => :boolean, :default => false
-  def works(*dois)
-    out = Serrano.works(ids: dois)
+  option :filter, :type => :hash, :default => nil
+  option :limit, :type => :numeric, :default => nil
+  def works(ids=nil)
+    if ids.nil?
+      out = Serrano.works(filter: options[:filter], limit: options[:limit])
+    else
+      out = Serrano.works(ids: dois, filter: options[:filter])
+    end
     if !options[:json]
       out = out.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
       out.each do |x|
@@ -416,6 +430,26 @@ class Sr < Thor
     else
       puts MultiJson.encode(out)
     end
+  end
+
+  desc "contneg", "Content negotiation"
+  long_desc <<-LONGDESC
+    `serrano contneg` accepts a DOI
+
+    $ serrano contneg 10.1890/13-0590.1
+
+    Murtaugh, P. A. (2014).  In defense of P values . Ecology, 95(3), 611–617. doi:10.1890/13-0590.1
+
+    $ serrano contneg 10.1890/13-0590.1 --style=heredity
+
+    Murtaugh PA (2014).  In defense of P values . Ecology 95: 611–617.
+  LONGDESC
+  option :format, :type => :string, :default => "text"
+  option :style, :type => :string, :default => "apa"
+  option :locale, :type => :string, :default => "en-US"
+  def contneg(ids)
+    puts Serrano.content_negotiation(ids: ids, format: options[:format], style:
+      options[:style], locale: options[:locale])
   end
 
   desc "version", "Get serrano version"
