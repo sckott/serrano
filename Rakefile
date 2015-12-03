@@ -31,7 +31,7 @@ task :build do
 end
 
 desc "Install serrano"
-task :install => :build do
+task :install => [:b, :build] do
 	system "gem install serrano-#{Serrano::VERSION}.gem"
 end
 

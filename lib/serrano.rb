@@ -182,6 +182,8 @@ module Serrano
   # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of hashes
   #
+  # @note Funders without IDs don't show up on the /funders route
+  #
   # @example
   #      require 'serrano'
   #      # Search by DOI, one or more
