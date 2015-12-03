@@ -4,6 +4,7 @@ require "serrano/filterhandler"
 require "serrano/cnrequest"
 require "serrano/miner"
 require "serrano/filters"
+require "serrano/styles"
 
 require 'rexml/document'
 require 'rexml/xpath'
