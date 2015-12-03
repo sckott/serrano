@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    serrano (0.1.2.9000)
+    serrano (0.1.2.9500)
       faraday (~> 0.9.1)
       faraday_middleware (~> 0.10.0)
       multi_json (~> 1.0)
