@@ -85,6 +85,20 @@ Search works by query string
 Serrano.works(query: "ecology")
 ```
 
+Get links
+
+```ruby
+res = Serrano.works(filter: {has_full_text: true})
+# entire links metadata
+res.links
+# just links URLs
+res.links(true)
+# just xml links, if present
+res.links_xml(true)
+# just pdf links, if present
+res.links_pdf(true)
+```
+
 Search journals by publisher name
 
 ```ruby
