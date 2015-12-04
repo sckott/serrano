@@ -89,6 +89,7 @@ module Serrano
   #      Serrano.works(ids: '10.5555/515151')
   #      Serrano.works(ids: '10.1371/journal.pone.0033693')
   #      Serrano.works(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+  #      Serrano.works(ids: ["10.1016/0304-4009(81)90025-5", "10.1016/0304-4009(83)90036-0"])
   #      # query
   #      Serrano.works(query: "ecology")
   #      Serrano.works(query: "renear+-ontologies")
