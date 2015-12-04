@@ -5,6 +5,8 @@ require "serrano/cnrequest"
 require "serrano/miner"
 require "serrano/filters"
 require "serrano/styles"
+require "serrano/link_methods_hash"
+require "serrano/link_methods_array"
 
 require 'rexml/document'
 require 'rexml/xpath'
@@ -94,6 +96,9 @@ module Serrano
   #      Serrano.works(query: "ecology", sort: 'relevance', order: "asc")
   #      # Filters
   #      Serrano.works(filter: {has_full_text: true})
+  #      res = Serrano.works(filter: {has_full_text: true})
+  #      res.links # entire links metadata
+  #      res.links(true) # just links URLs
   #      Serrano.works(filter: {has_funder: true, has_full_text: true})
   #      Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
   #
