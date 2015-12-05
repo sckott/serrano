@@ -77,7 +77,7 @@ Search works by DOI
 
 ```ruby
 require 'serrano'
-Serrano.works(doi: '10.1371/journal.pone.0033693')
+Serrano.works(ids: '10.1371/journal.pone.0033693')
 ```
 
 Search works by query string
@@ -97,7 +97,7 @@ res.links(true)
 # just xml links, if present
 res.links_xml(true)
 # just pdf links, if present
-res.links_pdf(true)
+res.links_pdf
 ```
 
 Search journals by publisher name
@@ -127,7 +127,7 @@ Serrano.random_dois(sample: 100)
 Content negotiation
 
 ```ruby
-Serrano.cn(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
+Serrano.content_negotiation(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
 ```
 
 ### Use on the CLI
