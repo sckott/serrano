@@ -54,7 +54,7 @@ class Sr < Thor
     if ids.nil?
       out = Serrano.works(filter: options[:filter], limit: options[:limit])
     else
-      out = Serrano.works(ids: dois, filter: options[:filter])
+      out = Serrano.works(ids: ids.split(","), filter: options[:filter])
     end
     if !options[:json]
       out = out.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
@@ -411,7 +411,7 @@ class Sr < Thor
     \x5name: U.S. Department of Energy
     \x5location: United States
 
-    $ serrano licenses --json=true | jq .[].message.items.work-count
+    $ serrano licenses --json=true | jq .message.items[]
 
     "National Science Foundation"
     \x5"U.S. Department of Energy"
