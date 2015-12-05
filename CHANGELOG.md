@@ -1,3 +1,11 @@
+## 0.1.4 (2015-12-04)
+
+* Added `csl_styles()` method to get CSL styles info (#23)
+* note to docs that `sample` parameter is ignored unless `works` route used (#22)
+* note to docs that `funderes` without IDs don't show up in the `funders` route (#21)
+* Added hash and array method to extract links from output of any methods with works (#18)
+* Method `Serrano.text` for text mining removed. use the `textminer` gem (#13)
+
 ## 0.1.0 (2015-11-17)
 
 * Improved documentation

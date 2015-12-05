@@ -16,7 +16,7 @@ Other Crossref API clients:
 
 ## Changes
 
-For changes see the [Changelog](CHANGELOG.md)
+For changes see the [Changelog][changelog]
 
 ## API
 
@@ -38,7 +38,6 @@ Additional methods built on top of the Crossref search API:
 Other methods:
 
 * [Conent negotiation][cn] - `Serrano.content_negotiation()`
-* [Text and data mining][tdm] - `Serrano.text()`
 * [Citation count][ccount] - `Serrano.citation_count()`
 * [get CSL styles][csl] -  `Serrano.csl_styles()`
 
@@ -71,6 +70,8 @@ end
 ```
 
 ## Examples
+
+### Use in a Ruby repl
 
 Search works by DOI
 
@@ -129,10 +130,34 @@ Content negotiation
 Serrano.cn(ids: '10.1126/science.169.3946.635', format: "citeproc-json")
 ```
 
-Text mining
+### Use on the CLI
 
-```ruby
-res = Serrano.text(url: 'http://...');
+The command line tool `serrano` should be available after you install
+
+```
+~$ serrano
+Commands:
+  serrano contneg                   # Content negotiation
+  serrano funders [funder IDs]      # Search for funders by DOI prefix
+  serrano help [COMMAND]            # Describe available commands or one spec...
+  serrano journals [journal ISSNs]  # Search for journals by ISSNs
+  serrano licenses                  # Search for licenses by name
+  serrano members [member IDs]      # Get members by id
+  serrano prefixes [DOI prefixes]   # Search for prefixes by DOI prefix
+  serrano types [type name]         # Search for types by name
+  serrano version                   # Get serrano version
+  serrano works [DOIs]              # Get works by DOIs
+```
+
+```
+# A single DOI
+~$ serrano works 10.1371/journal.pone.0033693
+
+# Many DOIs
+~$ serrano works "10.1007/12080.1874-1746,10.1007/10452.1573-5125"
+
+# output JSON, then parse with e.g., jq
+~$ serrano works --filter=has_orcid:true --json --limit=2 | jq '.message.items[].author[].ORCID | select(. != null)'
 ```
 
 ## Meta
@@ -145,3 +170,4 @@ res = Serrano.text(url: 'http://...');
 [tdm]: http://www.crossref.org/tdm/
 [ccount]: http://labs.crossref.org/openurl/
 [csl]: https://github.com/citation-style-language/styles
+[changelog]: https://github.com/sckott/serrano/blob/master/CHANGELOG.md
