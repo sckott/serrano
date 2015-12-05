@@ -4,8 +4,6 @@ require "serrano/filterhandler"
 require "serrano/cnrequest"
 require "serrano/filters"
 require "serrano/styles"
-require "serrano/link_methods_hash"
-require "serrano/link_methods_array"
 
 require 'rexml/document'
 require 'rexml/xpath'
