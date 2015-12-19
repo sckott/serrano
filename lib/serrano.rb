@@ -14,7 +14,7 @@ require 'rexml/xpath'
 #   @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
 #   the limit and offset parameters are ignored. This parameter only used when works requested.
 #   @param sort [String] Field to sort on, one of score, relevance,
-#   updated (date of most recent change to metadata. Currently the same as deposited),
+#   updated (date of most recent change to metadata - currently the same as deposited),
 #   deposited (time of most recent deposit), indexed (time of most recent index), or
 #   published (publication date). Note: If the API call includes a query, then the sort
 #   order will be by the relevance score. If no query is included, then the sort order
@@ -101,6 +101,12 @@ module Serrano
   #      Serrano.works(ids: '10.1371/journal.pone.0033693', options: {timeout: 3, open_timeout: 2})
   #      ## log request details - uses Faraday middleware
   #      Serrano.works(ids: '10.1371/journal.pone.0033693', verbose: true)
+  #
+  #      # facets
+  #      Serrano.works(facet: 'license:*', limit: 0, filter: {has_full_text: true})
+  #
+  #      # sample
+  #      Serrano.works(sample: 2)
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     options: nil, verbose: false)
