@@ -87,6 +87,15 @@ module Serrano
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
+  # @param cursor [String] Cursor character string to do deep paging. Default is `nil`.
+  # Pass in '*' to start deep paging. Any combination of query, filters and facets may be
+  # used with deep paging cursors. While limit may be specified along with cursor, offset
+  # and sample cannot be used. See
+  # https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+  # @param cursor_max [Fixnum] Max records to retrieve. Only used when cursor
+  # param used. Because deep paging can result in continuous requests until all
+  # are retrieved, use this parameter to set a maximum number of records. Of course,
+  # if there are less records found than this value, you will get only those found.
   # @return [Array] An array of hashes
   #
   # @example
@@ -118,12 +127,16 @@ module Serrano
   #
   #      # sample
   #      Serrano.works(sample: 2)
+  #
+  #      # cursor for deep paging
+  #      Serrano.works(query: "widget", cursor: "*", limit: 100)
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    options: nil, verbose: false)
+    options: nil, verbose: false, cursor: nil, cursor_max: 5000)
 
-    Request.new('works', ids, query, filter, offset,
-      limit, sample, sort, order, facet, nil, nil, options, verbose).perform
+    RequestCursor.new('works', ids, query, filter, offset,
+      limit, sample, sort, order, facet, nil, nil, options,
+      verbose, cursor, cursor_max).perform
   end
 
   ##
