@@ -3,6 +3,7 @@ require "faraday_middleware"
 require "multi_json"
 require "serrano/errors"
 require "serrano/constants"
+require 'serrano/utils'
 require 'serrano/helpers/configuration'
 
 ##
@@ -53,6 +54,8 @@ def make_request(ids, format, style, locale)
   if format == "citeproc-json"
     endpt = "http://api.crossref.org/works/" + ids + "/" + type
     cr_works = Faraday.new(:url => endpt)
+    cr_works.headers[:user_agent] = make_ua
+    cr_works.headers["X-USER-AGENT"] = make_ua
     res = cr_works.get
   else
     if format == "text"
@@ -62,6 +65,8 @@ def make_request(ids, format, style, locale)
     res = $conn.get do |req|
       req.url ids
       req.headers['Accept'] = type
+      req.headers[:user_agent] = make_ua
+      req.headers["X-USER-AGENT"] = make_ua
     end
   end
 

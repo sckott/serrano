@@ -2,6 +2,7 @@ require "faraday"
 require "multi_json"
 require "serrano/errors"
 require "serrano/constants"
+require 'serrano/utils'
 require 'serrano/helpers/configuration'
 
 ##
@@ -62,6 +63,9 @@ module Serrano
       else
         conn = Faraday.new(:url => Serrano.base_url, :request => options)
       end
+
+      conn.headers[:user_agent] = make_ua
+      conn.headers["X-USER-AGENT"] = make_ua
 
       if self.id.nil?
         # begin
