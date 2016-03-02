@@ -12,8 +12,6 @@ module FaradayMiddleware
           raise Serrano::BadRequest, error_message_400(response)
         when 404
           raise Serrano::NotFound, error_message_400(response)
-        when 429
-          raise Serrano::TooManyRequests, error_message_400(response)
         when 500
           raise Serrano::InternalServerError, error_message_500(response, "Something is technically wrong.")
         when 502
@@ -38,7 +36,6 @@ module FaradayMiddleware
     end
 
     def error_body(body)
-      # puts body
       if not body.nil? and not body.empty? and body.kind_of?(String)
         if is_json?(body)
           body = ::MultiJson.load(body)
