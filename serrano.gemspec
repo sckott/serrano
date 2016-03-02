@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = Serrano::VERSION
   s.platform    = Gem::Platform::RUBY
   s.required_ruby_version = '>= 2.0'
-  s.date        = '2016-02-19'
+  s.date        = '2016-03-02'
   s.summary     = "Crossref Client"
   s.description = "Low Level Ruby Client for the Crossref Search API"
   s.authors     = "Scott Chamberlain"

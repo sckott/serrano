@@ -42,10 +42,9 @@ class TestFunders < Test::Unit::TestCase
   end
 
   def test_funders_filter_handler
-    res = Serrano.funders(filter: {has_funder: true})
-    assert_equal(Hash, res.class)
-    assert_equal("validation-failure", res['message-type'])
-    assert_equal("filter-not-available", res['message'][0]['type'])
+    exception = assert_raise(Serrano::BadRequest) {Serrano.funders(filter: {has_funder: true})}
+    assert_equal("\n   GET http://api.crossref.org/funders?filter=has-funder%3Atrue\n   Status 400: Filter has-funder specified but there is no such filter for this route. Valid filters for this route are: location",
+      exception.message)
   end
 
 end
