@@ -182,6 +182,12 @@ module Serrano
   #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res[0].collect { |x| x['message']['items'] }.flatten
   #      items.collect{ |z| z['DOI'] }[0,50]
+  #
+  #      # multiple ids with cursor
+  #      res = Serrano.members(ids: [98, 340], works: true, cursor: "*", cursor_max: 300);
+  #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res[0].collect { |x| x['message']['items'] }.flatten
+  #      items.collect{ |z| z['DOI'] }[0,50]
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     works: false, options: nil, verbose: false,
