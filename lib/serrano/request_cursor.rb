@@ -3,6 +3,7 @@ require "multi_json"
 require "serrano/errors"
 require "serrano/constants"
 require 'serrano/helpers/configuration'
+require 'serrano/filterhandler2'
 
 ##
 # Serrano::RequestCursor
@@ -51,7 +52,7 @@ module Serrano
     end
 
     def perform
-      filt = filter_handler(self.filter)
+      filt = filter_handler2(self.filter)
 
       if self.cursor_max.class != nil
         if self.cursor_max.class != Fixnum
@@ -65,31 +66,55 @@ module Serrano
       opts = args.delete_if { |k, v| v.nil? }
 
       if verbose
-        conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
+        $conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
           f.response :logger
           f.adapter  Faraday.default_adapter
         end
       else
-        conn = Faraday.new(:url => Serrano.base_url, :request => options)
+        $conn = Faraday.new(:url => Serrano.base_url, :request => options)
       end
 
-      js = self._req(conn, opts)
-      cu = js['message'].get('next-cursor')
-      max_avail = js['message']['total-results']
-      res = self._redo_req(js, payload, cu, max_avail)
-      return res
+      $conn.headers[:user_agent] = make_ua
+      $conn.headers["X-USER-AGENT"] = make_ua
+
+      if self.id.nil?
+        js = self._req(self.endpt, opts)
+        cu = js['message']['next-cursor']
+        max_avail = js['message']['total-results']
+        res = self._redo_req(js, opts, cu, max_avail)
+        return res
+      else
+        coll = []
+        Array(self.id).each do |x|
+          if self.works
+            endpt = self.endpt + '/' + x.to_s + "/works"
+          else
+            if self.agency
+              endpt = self.endpt + '/' + x.to_s + "/agency"
+            else
+              endpt = self.endpt + '/' + x.to_s
+            end
+          end
+
+          js = self._req(endpt, opts)
+          cu = js['message']['next-cursor']
+          max_avail = js['message']['total-results']
+          coll << self._redo_req(js, opts, cu, max_avail)
+        end
+        return coll
+      end
     end
 
-    def _redo_req(js, payload, cu, max_avail)
-      if is_not_none(cu) and self.cursor_max > js['message']['items'].length
+    def _redo_req(js, opts, cu, max_avail)
+      if !cu.nil? and self.cursor_max > js['message']['items'].length
         res = [js]
-        total = len(js['message']['items'])
-        while cu.__class__.__name__ != 'NoneType' and self.cursor_max > total and total < max_avail do
-          payload['cursor'] = cu
-          out = self._req(payload = payload)
-          cu = out['message'].get('next-cursor')
-          res.append(out)
-          total = sum([ len(z['message']['items']) for z in res ])
+        total = js['message']['items'].length
+        while !cu.nil? and self.cursor_max > total and total < max_avail do
+          opts[:cursor] = cu
+          out = self._req(endpt, opts)
+          cu = out['message']['next-cursor']
+          res << out
+          total = res.collect {|x| x['message']['items'].length}.reduce(0, :+)
         end
         return res
       else
@@ -97,8 +122,8 @@ module Serrano
       end
     end
 
-    def _req(conn, path, opts)
-      res = conn.get path, opts
+    def _req(path, opts)
+      res = $conn.get path, opts
       return MultiJson.load(res.body)
     end
   end

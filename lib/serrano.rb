@@ -1,5 +1,6 @@
 require "serrano/version"
 require "serrano/request"
+require "serrano/request_cursor"
 require "serrano/filterhandler"
 require "serrano/cnrequest"
 require "serrano/filters"
@@ -130,6 +131,14 @@ module Serrano
   #
   #      # cursor for deep paging
   #      Serrano.works(query: "widget", cursor: "*", limit: 100)
+  #      # another query, more results this time
+  #      res = Serrano.works(query: "science", cursor: "*", limit: 250, cursor_max: 1000);
+  #      res.collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      # another query
+  #      res = Serrano.works(query: "ecology", cursor: "*", limit: 1000, cursor_max: 10000);
+  #      res.collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res.collect {|x| x['message']['items']}.flatten
+  #      items.collect { |x| x['DOI'] }[0,20]
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     options: nil, verbose: false, cursor: nil, cursor_max: 5000)
@@ -163,6 +172,12 @@ module Serrano
   #      Serrano.members(query: "ecology", order: "asc")
   #      # Works
   #      Serrano.members(ids: 98, works: true)
+  #
+  #      # cursor - deep paging
+  #      res = Serrano.members(ids: 98, works: true, cursor: "*")
+  #      res.collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res.collect { |x| x['message']['items'] }.flatten
+  #      items.collect{ |z| z['DOI'] }[0,50]
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     works: false, options: nil, verbose: false)
