@@ -87,16 +87,16 @@ module Serrano
         coll = []
         Array(self.id).each do |x|
           if self.works
-            endpt = self.endpt + '/' + x.to_s + "/works"
+            $endpt2 = self.endpt + '/' + x.to_s + "/works"
           else
             if self.agency
-              endpt = self.endpt + '/' + x.to_s + "/agency"
+              $endpt2 = self.endpt + '/' + x.to_s + "/agency"
             else
-              endpt = self.endpt + '/' + x.to_s
+              $endpt2 = self.endpt + '/' + x.to_s
             end
           end
 
-          js = self._req(endpt, opts)
+          js = self._req($endpt2, opts)
           cu = js['message']['next-cursor']
           max_avail = js['message']['total-results']
           coll << self._redo_req(js, opts, cu, max_avail)
@@ -111,7 +111,7 @@ module Serrano
         total = js['message']['items'].length
         while !cu.nil? and self.cursor_max > total and total < max_avail do
           opts[:cursor] = cu
-          out = self._req(endpt, opts)
+          out = self._req($endpt2, opts)
           cu = out['message']['next-cursor']
           res << out
           total = res.collect {|x| x['message']['items'].length}.reduce(0, :+)

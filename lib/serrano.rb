@@ -13,29 +13,40 @@ require 'rexml/xpath'
 #   @param offset [Fixnum] Number of record to start at, from 1 to infinity.
 #   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
 #   @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
-#   the limit and offset parameters are ignored. This parameter only used when works requested.
+#       the limit and offset parameters are ignored. This parameter only used when works requested.
 #   @param sort [String] Field to sort on, one of score, relevance,
-#   updated (date of most recent change to metadata - currently the same as deposited),
-#   deposited (time of most recent deposit), indexed (time of most recent index), or
-#   published (publication date). Note: If the API call includes a query, then the sort
-#   order will be by the relevance score. If no query is included, then the sort order
-#   will be by DOI update date.
+#       updated (date of most recent change to metadata - currently the same as deposited),
+#       deposited (time of most recent deposit), indexed (time of most recent index), or
+#       published (publication date). Note: If the API call includes a query, then the sort
+#       order will be by the relevance score. If no query is included, then the sort order
+#       will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean] Include facet results. Default: false
 #   @param verbose [Boolean] Print request headers to stdout. Default: false
 
+# @!macro cursor_params
+#   @param cursor [String] Cursor character string to do deep paging. Default is `nil`.
+#       Pass in '*' to start deep paging. Any combination of query, filters and facets may be
+#       used with deep paging cursors. While limit may be specified along with cursor, offset
+#       and sample cannot be used. See
+#       https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+#   @param cursor_max [Fixnum] Max records to retrieve. Only used when cursor
+#       param used. Because deep paging can result in continuous requests until all
+#       are retrieved, use this parameter to set a maximum number of records. Of course,
+#       if there are less records found than this value, you will get only those found.
+
 # @!macro serrano_options
 #   @param options [Hash] Hash of options for configuring the request, passed on to Faraday.new
-#     :timeout      - [Fixnum] open/read timeout Integer in seconds
-#     :open_timeout - [Fixnum] read timeout Integer in seconds
-#     :proxy        - [Hash] hash of proxy options
-#       :uri - [String] Proxy Server URI
-#       :user - [String] Proxy server username
-#       :password - [String] Proxy server password
-#     :params_encoder - [Hash] not sure what this is
-#     :bind           - [Hash] A hash with host and port values
-#     :boundary       - [String] of the boundary value
-#     :oauth          - [Hash] A hash with OAuth details
+#     - timeout [Fixnum] open/read timeout Integer in seconds
+#     - open_timeout [Fixnum] read timeout Integer in seconds
+#     - proxy [Hash] hash of proxy options
+#       - uri [String] Proxy Server URI
+#       - user [String] Proxy server username
+#       - password [String] Proxy server password
+#     - params_encoder [Hash] not sure what this is
+#     - bind [Hash] A hash with host and port values
+#     - boundary [String] of the boundary value
+#     - oauth [Hash] A hash with OAuth details
 
 ##
 # Serrano - The top level module for using methods
@@ -85,18 +96,10 @@ module Serrano
   #
   # @!macro serrano_params
   # @!macro serrano_options
+  # @!macro cursor_params
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
-  # @param cursor [String] Cursor character string to do deep paging. Default is `nil`.
-  # Pass in '*' to start deep paging. Any combination of query, filters and facets may be
-  # used with deep paging cursors. While limit may be specified along with cursor, offset
-  # and sample cannot be used. See
-  # https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-  # @param cursor_max [Fixnum] Max records to retrieve. Only used when cursor
-  # param used. Because deep paging can result in continuous requests until all
-  # are retrieved, use this parameter to set a maximum number of records. Of course,
-  # if there are less records found than this value, you will get only those found.
   # @return [Array] An array of hashes
   #
   # @example
@@ -153,6 +156,7 @@ module Serrano
   #
   # @!macro serrano_params
   # @!macro serrano_options
+  # @!macro cursor_params
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -174,16 +178,18 @@ module Serrano
   #      Serrano.members(ids: 98, works: true)
   #
   #      # cursor - deep paging
-  #      res = Serrano.members(ids: 98, works: true, cursor: "*")
-  #      res.collect { |x| x['message']['items'].length }.reduce(0, :+)
-  #      items = res.collect { |x| x['message']['items'] }.flatten
+  #      res = Serrano.members(ids: 98, works: true, cursor: "*", cursor_max: 1000);
+  #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res[0].collect { |x| x['message']['items'] }.flatten
   #      items.collect{ |z| z['DOI'] }[0,50]
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false)
+    works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000)
 
-    Request.new('members', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options, verbose).perform
+    RequestCursor.new('members', ids, query, filter, offset,
+      limit, sample, sort, order, facet, works, nil, options,
+      verbose, cursor, cursor_max).perform
   end
 
   ##
@@ -191,6 +197,7 @@ module Serrano
   #
   # @!macro serrano_params
   # @!macro serrano_options
+  # @!macro cursor_params
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
@@ -207,12 +214,20 @@ module Serrano
   #      Serrano.prefixes(ids: "10.1016", works: true, limit: 3)
   #      # Sort and order
   #      Serrano.prefixes(ids: "10.1016", works: true, sort: 'relevance', order: "asc")
+  #
+  #      # cursor - deep paging
+  #      res = Serrano.prefixes(ids: "10.1016", works: true, cursor: "*", cursor_max: 1000);
+  #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res[0].collect { |x| x['message']['items'] }.flatten;
+  #      items.collect{ |z| z['DOI'] }[0,50]
   def self.prefixes(ids:, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false)
+    works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000)
 
-    Request.new('prefixes', ids, nil, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options, verbose).perform
+    RequestCursor.new('prefixes', ids, nil, filter, offset,
+      limit, sample, sort, order, facet, works, nil, options,
+      verbose, cursor, cursor_max).perform
   end
 
   ##
@@ -220,6 +235,7 @@ module Serrano
   #
   # @!macro serrano_params
   # @!macro serrano_options
+  # @!macro cursor_params
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -241,12 +257,20 @@ module Serrano
   #      Serrano.funders(ids: '10.13039/100000001', works: true, limit: 3)
   #      # Sort and order
   #      Serrano.funders(ids: "10.13039/100000001", works: true, sort: 'relevance', order: "asc")
+  #
+  #      # cursor - deep paging
+  #      res = Serrano.funders(ids: '10.13039/100000001', works: true, cursor: "*", cursor_max: 500);
+  #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res[0].collect { |x| x['message']['items'] }.flatten;
+  #      items.collect{ |z| z['DOI'] }[0,50]
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false)
+    works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000)
 
-    Request.new('funders', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options, verbose).perform
+    RequestCursor.new('funders', ids, query, filter, offset,
+      limit, sample, sort, order, facet, works, nil, options,
+      verbose, cursor, cursor_max).perform
   end
 
   ##
@@ -254,6 +278,7 @@ module Serrano
   #
   # @!macro serrano_params
   # @!macro serrano_options
+  # @!macro cursor_params
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -275,18 +300,27 @@ module Serrano
   #      Serrano.journals(ids: '1803-2427', works: true)
   #      Serrano.journals(limit: 2)
   #      Serrano.journals(sample: 2)
+  #
+  #      # cursor - deep paging
+  #      res = Serrano.journals(ids: "2167-8359", works: true, cursor: "*", cursor_max: 500);
+  #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res[0].collect { |x| x['message']['items'] }.flatten;
+  #      items.collect{ |z| z['DOI'] }[0,50]
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false)
+    works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000)
 
-    Request.new('journals', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options, verbose).perform
+    RequestCursor.new('journals', ids, query, filter, offset,
+      limit, sample, sort, order, facet, works, nil, options,
+      verbose, cursor, cursor_max).perform
   end
 
   ##
   # Search the types route
   #
   # @!macro serrano_options
+  # @!macro cursor_params
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of hashes
@@ -297,11 +331,18 @@ module Serrano
   #      Serrano.types(ids: "journal")
   #      Serrano.types(ids: ["journal", "dissertation"])
   #      Serrano.types(ids: "journal", works: true)
-  def self.types(ids: nil, offset: nil,
-    limit: nil, works: false, options: nil, verbose: false)
+  #
+  #      # cursor - deep paging
+  #      res = Serrano.types(ids: "journal", works: true, cursor: "*", cursor_max: 500);
+  #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
+  #      items = res[0].collect { |x| x['message']['items'] }.flatten;
+  #      items.collect{ |z| z['DOI'] }[0,50]
+  def self.types(ids: nil, offset: nil, limit: nil, works: false,
+    options: nil, verbose: false, cursor: nil, cursor_max: 5000)
 
-    Request.new('types', ids, nil, nil, offset,
-      limit, nil, nil, nil, nil, works, nil, options, verbose).perform
+    RequestCursor.new('types', ids, nil, nil, offset,
+      limit, nil, nil, nil, nil, works, nil, options,
+      verbose, cursor, cursor_max).perform
   end
 
   ##
