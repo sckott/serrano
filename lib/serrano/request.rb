@@ -59,21 +59,21 @@ module Serrano
         conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
           f.response :logger
           f.adapter  Faraday.default_adapter
+          f.use FaradayMiddleware::RaiseHttpException
         end
       else
-        conn = Faraday.new(:url => Serrano.base_url, :request => options)
+        conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
+          f.adapter  Faraday.default_adapter
+          f.use FaradayMiddleware::RaiseHttpException
+        end
       end
 
       conn.headers[:user_agent] = make_ua
       conn.headers["X-USER-AGENT"] = make_ua
 
       if self.id.nil?
-        # begin
         res = conn.get self.endpt, opts
         return MultiJson.load(res.body)
-        # rescue *NETWORKABLE_EXCEPTIONS => e
-        #   rescue_faraday_error(endpt, e)
-        # end
       else
         coll = []
         Array(self.id).each do |x|
@@ -89,12 +89,6 @@ module Serrano
 
           res = conn.get endpt, opts
           coll << MultiJson.load(res.body)
-          # begin
-          #   res = conn.get endpt, opts
-          #   coll << MultiJson.load(res.body)
-          # rescue *NETWORKABLE_EXCEPTIONS => e
-          #   rescue_faraday_error(endpt, e)
-          # end
         end
         return coll
       end

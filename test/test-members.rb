@@ -48,11 +48,9 @@ class TestMembers < Test::Unit::TestCase
 
   # should fail
   def test_members_filter_handler
-    res = Serrano.members(filter: {has_funder: true, has_full_text: true})
-    assert_equal(3, res.length)
-    assert_equal(Hash, res.class)
-    assert_equal('failed', res['status'])
-    # assert_equal(200, res.status)
+    exception = assert_raise(Serrano::BadRequest) {Serrano.members(filter: {has_funder: true, has_full_text: true})}
+    assert_equal("\n   GET http://api.crossref.org/members?filter=has-funder%3Atrue%2Chas-full-text%3Atrue\n   Status 400: Filter has-full-text specified but there is no such filter for this route. Valid filters for this route are: prefix, has-public-references, backfile-doi-count, current-doi-count; Filter has-funder specified but there is no such filter for this route. Valid filters for this route are: prefix, has-public-references, backfile-doi-count, current-doi-count",
+      exception.message)
   end
 
 end

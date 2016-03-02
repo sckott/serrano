@@ -1,9 +1,12 @@
 require "faraday"
+require 'faraday_middleware'
 require "multi_json"
 require "serrano/errors"
 require "serrano/constants"
 require 'serrano/helpers/configuration'
 require 'serrano/filterhandler2'
+require 'serrano/error'
+require 'serrano/faraday'
 
 ##
 # Serrano::RequestCursor
@@ -68,10 +71,16 @@ module Serrano
       if verbose
         $conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
           f.response :logger
-          f.adapter  Faraday.default_adapter
+          f.adapter Faraday.default_adapter
+          f.use FaradayMiddleware::RaiseHttpException
+          #f.use Faraday::Response::RaiseError
         end
       else
-        $conn = Faraday.new(:url => Serrano.base_url, :request => options)
+        $conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
+          f.adapter Faraday.default_adapter
+          f.use FaradayMiddleware::RaiseHttpException
+          #f.use Faraday::Response::RaiseError
+        end
       end
 
       $conn.headers[:user_agent] = make_ua
@@ -125,6 +134,13 @@ module Serrano
     def _req(path, opts)
       res = $conn.get path, opts
       return MultiJson.load(res.body)
+      # begin
+      #   res = $conn.get path, opts
+      #   return MultiJson.load(res.body)
+      # rescue Faraday::Error::ClientError => e
+      #   raise e
+      # end
     end
+
   end
 end
