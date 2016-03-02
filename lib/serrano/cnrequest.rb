@@ -1,7 +1,7 @@
 require "faraday"
 require "faraday_middleware"
 require "multi_json"
-require "serrano/errors"
+require "serrano/error"
 require "serrano/constants"
 require 'serrano/utils'
 require 'serrano/helpers/configuration'
