@@ -1,3 +1,10 @@
+## 0.2.0 (2016-03-07)
+
+* Added error classes to fail more gracefully, adapted from instagram gem (#4)
+* Added support for the cursor feature in the Crossref API for deep paging (#14)
+* Added disclaimer to docs that full text/abstracts aren't searched (#24)
+* Now passing user agent string with serrano version in each request (#25)
+
 ## 0.1.4 (2015-12-04)
 
 * Added `csl_styles()` method to get CSL styles info (#23)
