@@ -1,3 +1,9 @@
+## 0.2.2 (2016-06-07)
+
+* Fixed bug in `content_negotation` in which a length 1 array of DOIs was
+failing (#29)
+* Added more tests to the test suite
+
 ## 0.2.0 (2016-03-07)
 
 * Added error classes to fail more gracefully, adapted from instagram gem (#4)

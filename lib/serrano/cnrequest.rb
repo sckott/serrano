@@ -36,6 +36,9 @@ module Serrano
       end
 
       if self.ids.length == 1
+        if self.ids.class == Array
+          self.ids = self.ids[0]
+        end
         return make_request(self.ids, self.format, self.style, self.locale)
       else
         coll = []
