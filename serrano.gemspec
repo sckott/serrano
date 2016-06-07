@@ -22,15 +22,15 @@ Gem::Specification.new do |s|
   s.bindir      = 'bin'
   s.executables = ['serrano']
 
-  s.add_development_dependency "bundler", '~> 1.6'
-  s.add_development_dependency "rake", '~> 10.4'
-  s.add_development_dependency "test-unit", '~> 3.1'
-  s.add_development_dependency "simplecov", '~> 0.10'
-  s.add_development_dependency "codecov", '~> 0.1'
+  s.add_development_dependency "bundler", '~> 1.12.5'
+  s.add_development_dependency "rake", '~> 11.1.2'
+  s.add_development_dependency "test-unit", '~> 3.1.9'
+  s.add_development_dependency "simplecov", '~> 0.11.2'
+  s.add_development_dependency "codecov", '~> 0.1.4'
   s.add_development_dependency 'json', '~> 1.8', '>= 1.8.3'
 
-  s.add_runtime_dependency 'faraday', '~> 0.9.1'
+  s.add_runtime_dependency 'faraday', '~> 0.9.2'
   s.add_runtime_dependency 'faraday_middleware', '~> 0.10.0'
-  s.add_runtime_dependency 'thor', '~> 0.19'
-  s.add_runtime_dependency 'multi_json', '~> 1.0'
+  s.add_runtime_dependency 'thor', '~> 0.19.1'
+  s.add_runtime_dependency 'multi_json', '~> 1.12.1'
 end
