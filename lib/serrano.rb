@@ -117,16 +117,21 @@ module Serrano
   #      Serrano.works(ids: '10.1371/journal.pone.0033693')
   #      Serrano.works(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
   #      Serrano.works(ids: ["10.1016/0304-4009(81)90025-5", "10.1016/0304-4009(83)90036-0"])
+  #
   #      # query
   #      Serrano.works(query: "ecology")
   #      Serrano.works(query: "renear+-ontologies")
+  #
   #      # Sort
   #      Serrano.works(query: "ecology", sort: 'relevance', order: "asc")
+  #
   #      # Filters
   #      Serrano.works(filter: {has_full_text: true})
   #      res = Serrano.works(filter: {has_full_text: true})
   #      Serrano.works(filter: {has_funder: true, has_full_text: true})
   #      Serrano.works(filter: {award_number: 'CBET-0756451', award_funder: '10.13039/100000001'})
+  #      Serrano.works(filter: {has_abstract: true})
+  #      Serrano.works(filter: {has_clinical_trial_number: true})
   #
   #      # Curl options
   #      ## set a request timeout and an open timeout

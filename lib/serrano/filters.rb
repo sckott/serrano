@@ -31,7 +31,8 @@ $filter_list = [
   'archive','has_orcid','orcid','issn','type','directory','doi','updates','is_update',
   'has_update_policy','container_title','publisher_name','category_name','type_name',
   'from_created_date', 'until_created_date', 'affiliation', 'has_affiliation',
-  'assertion_group', 'assertion', 'article_number', 'alternative_id'
+  'assertion_group', 'assertion', 'article_number', 'alternative_id',
+  'has_clinical_trial_number', 'has_abstract'
 ]
 
 $filter_details = {
@@ -80,5 +81,7 @@ $filter_details = {
   "affiliation" => { "possible_values" => nil, "description" => "metadata for records with at least one contributor with the given affiliation" },
   "has_affiliation" => { "possible_values" => nil, "description" => "metadata for records that have any affiliation information" },
   "alternative_id" => { "possible_values" => nil, "description" => "metadata for records with the given alternative ID, which may be a publisher_specific ID, or any other identifier a publisher may have provided" },
-  "article_number" => { "possible_values" => nil, "description" => "metadata for records with a given article number" }
+  "article_number" => { "possible_values" => nil, "description" => "metadata for records with a given article number" },
+  "has_clinical_trial_number" => { "possible_values" => nil, "description" => "metadata for records which include a clinical trial number" },
+  "has_abstract" => { "possible_values" => nil, "description" => "metadata for records which include an abstract" }
 }
