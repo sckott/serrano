@@ -1,10 +1,14 @@
 ## 0.3.0 (2016-10-20)
 
-* xxxx (#xx)
-* xxxx (#xx)
-* xxxx (#xx)
-* xxxx (#xx)
-* xxxx (#xx)
+* Field queries now supported in appropriate methods:
+`Serrano.works`, `Serrano.members`, `Serrano.prefixes`, `Serrano.funders`,
+`Serrano.journals`, and `Serrano.types` (#27)
+* Caching bundler on Travis for faster build time (#28)
+* `sample` parameter now has a max of 100, where it was
+1000 previously (#30)
+* Two new filters are available: `has-clinical-trial-number` and `has-abstract`.
+Both are added to the filter helper functions and can be used in queries (#31)
+* Updated (dev) dependency versions
 
 ## 0.2.2 (2016-06-07)
 
