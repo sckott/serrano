@@ -9,11 +9,11 @@ module Helpers
       nil
     else
       x = stringify(x)
-      nn = x.keys.collect{ |x| x.to_s }
-      if nn.collect{ |x| $others.include? x }.any?
-        nn = nn.collect{ |x|
-          if $others.include? x
-            case x
+      nn = x.keys.collect{ |z| z.to_s }
+      if nn.collect{ |w| $others.include? w }.any?
+        nn = nn.collect{ |b|
+          if $others.include? b
+            case b
             when 'license_url'
               'license.url'
             when 'license_version'
@@ -30,12 +30,12 @@ module Helpers
               'award.funder'
             end
           else
-            x
+            b
           end
         }
       end
 
-      newnn = nn.collect{ |x| x.gsub("_", "-") }
+      newnn = nn.collect{ |m| m.gsub("_", "-") }
       x = rename_keys(x, newnn)
       x = x.collect{ |k,v| [k, v].join(":") }.join(',')
       return x

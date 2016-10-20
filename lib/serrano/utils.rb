@@ -5,15 +5,15 @@ def make_ua
 end
 
 def field_query_handler(x)
-	tmp = x.keep_if { |x| x.match(/query_/) }
+	tmp = x.keep_if { |z| z.match(/query_/) }
   return rename_query_filters(tmp)
 end
 
-def rename_query_filters(x)
-	x = x.tostrings
-	x = x.map { |x,y| [x.to_s.sub('container_title', 'container-title'), y] }.to_h
-	x = x.map { |x,y| [x.to_s.sub('query_', 'query.'), y] }.to_h
-  return x
+def rename_query_filters(foo)
+	foo = foo.tostrings
+	foo = foo.map { |x,y| [x.to_s.sub('container_title', 'container-title'), y] }.to_h
+	foo = foo.map { |x,y| [x.to_s.sub('query_', 'query.'), y] }.to_h
+  return foo
 end
 
 class Hash
