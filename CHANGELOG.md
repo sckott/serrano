@@ -1,3 +1,11 @@
+## 0.3.0 (2016-10-20)
+
+* xxxx (#xx)
+* xxxx (#xx)
+* xxxx (#xx)
+* xxxx (#xx)
+* xxxx (#xx)
+
 ## 0.2.2 (2016-06-07)
 
 * Fixed bug in `content_negotation` in which a length 1 array of DOIs was
