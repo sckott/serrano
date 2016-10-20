@@ -49,6 +49,12 @@ require 'rexml/xpath'
 #     - boundary [String] of the boundary value
 #     - oauth [Hash] A hash with OAuth details
 
+# @!macro field_queries
+#   @param [Hash<Object>] args Field queries, as named parameters.
+#       See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries
+#       Field query parameters mut be named, and must start with `query_`. Any dashes or
+#       periods should be replaced with underscores.
+
 ##
 # Serrano - The top level module for using methods
 # to access Serrano APIs
@@ -98,6 +104,7 @@ module Serrano
   # @!macro serrano_params
   # @!macro serrano_options
   # @!macro cursor_params
+  # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -143,13 +150,22 @@ module Serrano
   #      res.collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res.collect {|x| x['message']['items']}.flatten
   #      items.collect { |x| x['DOI'] }[0,20]
+  #
+  #      # field queries
+  #      ## query.author
+  #      res = Serrano.works(query: "ecology", query_author: 'Boettiger')
+  #      res['message']['items'].collect { |x| x['author'][0]['family'] }
+  #
+  #      ## query.container-title
+  #      res = Serrano.works(query: "ecology", query_container_title: 'Ecology')
+  #      res['message']['items'].collect { |x| x['container-title'] }
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    options: nil, verbose: false, cursor: nil, cursor_max: 5000)
+    options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('works', ids, query, filter, offset,
       limit, sample, sort, order, facet, nil, nil, options,
-      verbose, cursor, cursor_max).perform
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -158,6 +174,7 @@ module Serrano
   # @!macro serrano_params
   # @!macro serrano_options
   # @!macro cursor_params
+  # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -189,14 +206,19 @@ module Serrano
   #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res[0].collect { |x| x['message']['items'] }.flatten
   #      items.collect{ |z| z['DOI'] }[0,50]
+  #
+  #      # field queries
+  #      ## query.title
+  #      res = Serrano.members(ids: 221, works: true, query_container_title: 'Advances')
+  #      res[0]['message']['items'].collect { |x| x['container-title'] }
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000)
+    cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('members', ids, query, filter, offset,
       limit, sample, sort, order, facet, works, nil, options,
-      verbose, cursor, cursor_max).perform
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -205,6 +227,7 @@ module Serrano
   # @!macro serrano_params
   # @!macro serrano_options
   # @!macro cursor_params
+  # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param filter [Hash] Filter options. See ...
   # @param works [Boolean] If true, works returned as well. Default: false
@@ -227,14 +250,19 @@ module Serrano
   #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res[0].collect { |x| x['message']['items'] }.flatten;
   #      items.collect{ |z| z['DOI'] }[0,50]
+  #
+  #      # field queries
+  #      ## query.title
+  #      res = Serrano.prefixes(ids: "10.1016", works: true, query_title: 'cell biology')
+  #      res[0]['message']['items'].collect { |x| x['title'] }
   def self.prefixes(ids:, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000)
+    cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('prefixes', ids, nil, filter, offset,
       limit, sample, sort, order, facet, works, nil, options,
-      verbose, cursor, cursor_max).perform
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -243,6 +271,7 @@ module Serrano
   # @!macro serrano_params
   # @!macro serrano_options
   # @!macro cursor_params
+  # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -270,14 +299,19 @@ module Serrano
   #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res[0].collect { |x| x['message']['items'] }.flatten;
   #      items.collect{ |z| z['DOI'] }[0,50]
+  #
+  #      # field queries
+  #      ## query.title
+  #      res = Serrano.funders(ids: "10.13039/100000001", works: true, query_author: 'Simon')
+  #      res[0]['message']['items'].collect { |x| x['author'][0]['family'] }
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000)
+    cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('funders', ids, query, filter, offset,
       limit, sample, sort, order, facet, works, nil, options,
-      verbose, cursor, cursor_max).perform
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -286,6 +320,7 @@ module Serrano
   # @!macro serrano_params
   # @!macro serrano_options
   # @!macro cursor_params
+  # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param query [String] A query string
   # @param filter [Hash] Filter options. See ...
@@ -313,14 +348,19 @@ module Serrano
   #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res[0].collect { |x| x['message']['items'] }.flatten;
   #      items.collect{ |z| z['DOI'] }[0,50]
+  #
+  #      # field queries
+  #      ## query.title
+  #      res = Serrano.journals(ids: "2167-8359", works: true, query_container_title: 'Advances')
+  #      res[0]['message']['items'].collect { |x| x['container-title'] }
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000)
+    cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('journals', ids, query, filter, offset,
       limit, sample, sort, order, facet, works, nil, options,
-      verbose, cursor, cursor_max).perform
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -328,6 +368,7 @@ module Serrano
   #
   # @!macro serrano_options
   # @!macro cursor_params
+  # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param works [Boolean] If true, works returned as well. Default: false
   # @return [Array] An array of hashes
@@ -344,12 +385,17 @@ module Serrano
   #      res[0].collect { |x| x['message']['items'].length }.reduce(0, :+)
   #      items = res[0].collect { |x| x['message']['items'] }.flatten;
   #      items.collect{ |z| z['DOI'] }[0,50]
+  #
+  #      # field queries
+  #      ## query.title
+  #      res = Serrano.types(ids: "journal", works: true, query_container_title: 'Advances')
+  #      res[0]['message']['items'].collect { |x| x['container-title'] }
   def self.types(ids: nil, offset: nil, limit: nil, works: false,
-    options: nil, verbose: false, cursor: nil, cursor_max: 5000)
+    options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('types', ids, nil, nil, offset,
       limit, nil, nil, nil, nil, works, nil, options,
-      verbose, cursor, cursor_max).perform
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##

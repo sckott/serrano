@@ -7,6 +7,7 @@ require 'serrano/helpers/configuration'
 require 'serrano/filterhandler'
 require 'serrano/error'
 require 'serrano/faraday'
+require 'serrano/utils'
 
 ##
 # Serrano::RequestCursor
@@ -31,10 +32,11 @@ module Serrano
     attr_accessor :verbose
     attr_accessor :cursor
     attr_accessor :cursor_max
+    attr_accessor :args
 
     def initialize(endpt, id, query, filter, offset,
       limit, sample, sort, order, facet, works, agency,
-      options, verbose, cursor, cursor_max)
+      options, verbose, cursor, cursor_max, args)
 
       self.endpt = endpt
       self.id = id
@@ -52,10 +54,12 @@ module Serrano
       self.verbose = verbose
       self.cursor = cursor
       self.cursor_max = cursor_max
+      self.args = args
     end
 
     def perform
       filt = filter_handler(self.filter)
+      fieldqueries = field_query_handler(self.args)
 
       if self.cursor_max.class != nil
         if self.cursor_max.class != Fixnum
@@ -63,10 +67,11 @@ module Serrano
         end
       end
 
-      args = { query: self.query, filter: filt, offset: self.offset,
+      arguments = { query: self.query, filter: filt, offset: self.offset,
               rows: self.limit, sample: self.sample, sort: self.sort,
-              order: self.order, facet: self.facet, cursor: self.cursor }
-      opts = args.delete_if { |k, v| v.nil? }
+              order: self.order, facet: self.facet, cursor: self.cursor }.tostrings
+      arguments = arguments.merge(fieldqueries)
+      opts = arguments.delete_if { |k, v| v.nil? }
 
       if verbose
         $conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
