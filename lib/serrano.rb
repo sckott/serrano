@@ -11,7 +11,8 @@ require 'rexml/xpath'
 
 # @!macro serrano_params
 #   @param offset [Fixnum] Number of record to start at, any non-negative integer up to 10,000
-#   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+#   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois.
+#       Default: 20. Max: 1000
 #   @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
 #       the limit and offset parameters are ignored. This parameter only used when works requested.
 #       Max: 100.
@@ -22,7 +23,8 @@ require 'rexml/xpath'
 #       order will be by the relevance score. If no query is included, then the sort order
 #       will be by DOI update date.
 #   @param order [String] Sort order, one of 'asc' or 'desc'
-#   @param facet [Boolean] Include facet results. Default: false
+#   @param facet [Boolean/String] Include facet results OR a query (e.g., `license:*`) to facet by
+#       license. Default: false
 #   @param verbose [Boolean] Print request headers to stdout. Default: false
 
 # @!macro cursor_params
