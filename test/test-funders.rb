@@ -9,6 +9,7 @@ require "serrano"
 require 'fileutils'
 require "test/unit"
 require "json"
+require_relative "test-helper"
 
 class TestFunders < Test::Unit::TestCase
 
@@ -18,33 +19,41 @@ class TestFunders < Test::Unit::TestCase
   end
 
   def test_funders
-    res = Serrano.funders(ids: @id)
-    assert_equal(1, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    assert_equal("funder", res[0]['message-type'])
+    VCR.use_cassette("test_funders") do
+      res = Serrano.funders(ids: @id)
+      assert_equal(1, res.length)
+      assert_equal(Array, res.class)
+      assert_equal(Hash, res[0].class)
+      assert_equal("funder", res[0]['message-type'])
+    end
   end
 
-  # def test_funders_many_ids
-  #   res = Serrano.funders(ids: @ids)
-  #   assert_equal(2, res.length)
-  #   assert_equal(Array, res.class)
-  #   assert_equal(Hash, res[0].class)
-  #   assert_equal("funder", res[0]['message-type'])
-  #   assert_equal("National Science Foundation", res[0]['message']['name'])
-  # end
+  def test_funders_many_ids
+    VCR.use_cassette("test_funders_many_ids") do
+      res = Serrano.funders(ids: @ids)
+      assert_equal(2, res.length)
+      assert_equal(Array, res.class)
+      assert_equal(Hash, res[0].class)
+      assert_equal("funder", res[0]['message-type'])
+      assert_equal("National Science Foundation", res[0]['message']['name'])
+    end
+  end
 
   def test_funders_query
-    res = Serrano.funders(query: "NSF")
-    assert_equal(4, res.length)
-    assert_equal(Hash, res.class)
-    assert_equal("funder-list", res['message-type'])
+    VCR.use_cassette("test_funders_query") do
+      res = Serrano.funders(query: "NSF")
+      assert_equal(4, res.length)
+      assert_equal(Hash, res.class)
+      assert_equal("funder-list", res['message-type'])
+    end
   end
 
   def test_funders_filter_handler
-    exception = assert_raise(Serrano::BadRequest) {Serrano.funders(filter: {has_funder: true})}
-    assert_equal("\n   GET https://api.crossref.org/funders?filter=has-funder%3Atrue\n   Status 400: Filter has-funder specified but there is no such filter for this route. Valid filters for this route are: location",
-      exception.message)
+    VCR.use_cassette("test_funders_filter_handler") do
+      exception = assert_raise(Serrano::BadRequest) {Serrano.funders(filter: {has_funder: true})}
+      assert_equal("\n   GET https://api.crossref.org/funders?filter=has-funder%3Atrue\n   Status 400: Filter has-funder specified but there is no such filter for this route. Valid filters for this route are: location",
+        exception.message)
+    end
   end
 
 end

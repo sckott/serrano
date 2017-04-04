@@ -33,6 +33,7 @@ GEM
       power_assert
     thor (0.19.4)
     url (0.3.2)
+    vcr (3.0.3)
 
 PLATFORMS
   ruby
@@ -45,6 +46,7 @@ DEPENDENCIES
   serrano!
   simplecov (~> 0.14.1)
   test-unit (~> 3.2, >= 3.2.1)
+  vcr (~> 3.0, >= 3.0.3)
 
 BUNDLED WITH
    1.14.6

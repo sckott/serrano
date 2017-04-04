@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/members/98
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '4431'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:21:30 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"member","message-version":"1.0.0","message":{"last-status-check-time":1489986122275,"primary-name":"Hindawi
+        Limited","counts":{"total-dois":158042,"current-dois":22792,"backfile-dois":135250},"breakdowns":{"dois-by-issued-year":[[2014,28910],[2013,26107],[2012,23103],[2015,21827],[2016,18601],[2011,12405],[2010,6505],[2017,4169],[2009,3850],[2008,2994],[2002,2330],[2001,2116],[2007,2030],[2006,2030],[2004,1811],[2005,1649],[2003,1625],[2000,1480],[1999,1228],[1998,1221],[1995,1031],[1996,1026],[1994,1015],[1997,1006],[1993,852],[1992,762],[1991,688],[1990,540],[1989,387],[1988,362],[1983,289],[1987,249],[1981,244],[1980,244],[1986,234],[1985,226],[1982,217],[1984,213],[1979,178],[1978,140],[1891,110],[1977,97],[1893,94],[1974,85],[1897,76],[1892,71],[1975,67],[1895,66],[1929,64],[1888,64],[1898,63],[1896,61],[1976,60],[1899,60],[1882,60],[1912,59],[1902,59],[1901,59],[1880,58],[1928,56],[1900,56],[1910,55],[1904,55],[1894,54],[1915,53],[1889,52],[1884,50],[1890,49],[1924,48],[1914,48],[1911,48],[1930,47],[1972,46],[1916,46],[1883,43],[1923,42],[1913,42],[1881,42],[1917,41],[1907,41],[1906,41],[1903,41],[1909,40],[1927,39],[1926,39],[1921,38],[1908,38],[1932,37],[1875,37],[1925,36],[1920,36],[1970,34],[1934,34],[1919,34],[1876,34],[1969,33],[1922,33],[1905,32],[1955,31],[1918,30],[1953,29],[1973,28],[1963,28],[1950,28],[1885,28],[1966,27],[1947,27],[1965,26],[1956,26],[1941,26],[1931,26],[1964,25],[1952,25],[1951,25],[1948,25],[1933,25],[1968,24],[1879,24],[1874,24],[1957,23],[1949,23],[1935,22],[1962,21],[1943,21],[1939,21],[1936,21],[1946,19],[1944,19],[1877,19],[1971,17],[1967,17],[1938,17],[1954,16],[1937,16],[1878,15],[1961,14],[1960,14],[1945,14],[1942,14],[1959,12],[1958,12],[1940,6]]},"prefixes":["10.6064","10.7217","10.7167","10.3814","10.4061","10.1155","10.1100","10.5402"],"coverage":{"affiliations-current":0.9968410134315491,"funders-backfile":0.3885767161846161,"licenses-backfile":0.986025869846344,"funders-current":0.5423394441604614,"affiliations-backfile":0.920502781867981,"resource-links-backfile":0.9873271584510803,"orcids-backfile":0.2519778311252594,"update-policies-current":0.0,"orcids-current":0.698051929473877,"references-backfile":0.7237929701805115,"award-numbers-backfile":0.272938996553421,"update-policies-backfile":0.0,"licenses-current":0.9989908933639526,"award-numbers-current":0.43778517842292786,"abstracts-backfile":0.8665582537651062,"resource-links-current":1.0,"abstracts-current":0.9641101956367493,"references-current":0.982450008392334},"prefix":[{"public-references":true,"name":"Hindawi
+        (Scientifica)","value":"10.6064"},{"public-references":true,"name":"Hindawi
+        (Conference Papers in Science)","value":"10.7217"},{"public-references":true,"name":"Hindawi
+        (Datasets International)","value":"10.7167"},{"public-references":true,"name":"Hindawi
+        Publishing Corporation (Syrexe)","value":"10.3814"},{"public-references":true,"name":"Hindawi
+        Publishing Corporation (Sage-Hindawi Access to Research)","value":"10.4061"},{"public-references":true,"name":"Hindawi
+        Limited","value":"10.1155"},{"public-references":true,"name":"Hindawi (The
+        Scientific World)","value":"10.1100"},{"public-references":true,"name":"Hindawi
+        (International Scholarly Research Network)","value":"10.5402"}],"id":98,"tokens":["hindawi","limited"],"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":false,"deposits-licenses-current":true},"location":"3rd
+        Floor, Adam House 1 Fitzroy Square London W1T 5HE United Kingdom","names":["Hindawi
+        Publishing Corporation (Sage-Hindawi Access to Research)","Hindawi Limited","Hindawi
+        (Conference Papers in Science)","Hindawi (International Scholarly Research
+        Network)","Hindawi Publishing Corporation (Syrexe)","Hindawi (Scientifica)","Hindawi
+        (The Scientific World)","Hindawi (Datasets International)"]}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:21:30 GMT
+recorded_with: VCR 3.0.3

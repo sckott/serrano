@@ -9,6 +9,7 @@ require "serrano"
 require 'fileutils'
 require "test/unit"
 require "json"
+require_relative "test-helper"
 
 class TestTypes < Test::Unit::TestCase
 
@@ -18,27 +19,33 @@ class TestTypes < Test::Unit::TestCase
   end
 
   def test_types_no_ids
-    res = Serrano.types()
-    assert_equal(4, res.length)
-    assert_equal(Hash, res.class)
-    assert_equal("type-list", res['message-type'])
+    VCR.use_cassette("test_types_no_ids") do
+      res = Serrano.types()
+      assert_equal(4, res.length)
+      assert_equal(Hash, res.class)
+      assert_equal("type-list", res['message-type'])
+    end
   end
 
   def test_types_single_id
-    res = Serrano.types(ids: @id)
-    assert_equal(1, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    assert_equal("type", res[0]['message-type'])
+    VCR.use_cassette("test_types_single_id") do
+      res = Serrano.types(ids: @id)
+      assert_equal(1, res.length)
+      assert_equal(Array, res.class)
+      assert_equal(Hash, res[0].class)
+      assert_equal("type", res[0]['message-type'])
+    end
   end
 
   def test_types_many_ids
-    res = Serrano.types(ids: @ids)
-    assert_equal(2, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    assert_equal("type", res[0]['message-type'])
-    assert_equal("journal", res[0]['message']['id'])
+    VCR.use_cassette("test_types_many_ids") do
+      res = Serrano.types(ids: @ids)
+      assert_equal(2, res.length)
+      assert_equal(Array, res.class)
+      assert_equal(Hash, res[0].class)
+      assert_equal("type", res[0]['message-type'])
+      assert_equal("journal", res[0]['message']['id'])
+    end
   end
 
 end

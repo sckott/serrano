@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/journals/1803-2427
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '1298'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:23:22 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"title":"Journal
+        of Landscape Ecology","publisher":"De Gruyter Open Sp. z o.o. ","ISSN":["1803-2427"],"flags":{"deposits-orcids-current":false,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0,"orcids-current":0,"references-backfile":1.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0,"award-numbers-current":0,"resource-links-current":0,"references-current":0},"breakdowns":{"dois-by-issued-year":[[2011,15],[2010,10],[2008,10],[2009,9],[2012,5]]},"counts":{"total-dois":49,"current-dois":0,"backfile-dois":49},"last-status-check-time":1459490507212}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:23:22 GMT
+- request:
+    method: get
+    uri: https://api.crossref.org/journals/2326-4225
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '294'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:23:23 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"title":"Journal
+        of Nutritional Ecology and Food Research","publisher":"American Scientific
+        Publishers","ISSN":["2326-4225"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:23:23 GMT
+recorded_with: VCR 3.0.3

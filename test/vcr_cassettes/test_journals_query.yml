@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/journals?query=ecology
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '10066'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:23:23 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"journal-list","message-version":"1.0.0","message":{"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"},"total-results":173,"items":[{"title":"BMC
+        Ecology","publisher":"Springer (Biomed Central Ltd.)","ISSN":["1472-6785"],"flags":{"deposits-orcids-current":true,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":true,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":true,"deposits-licenses-current":true},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.34090909361839294,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.9772727489471436,"orcids-current":0.06818182021379471,"references-backfile":0.3468634784221649,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.1818181872367859,"award-numbers-current":0.13636364042758942,"resource-links-current":0.1818181872367859,"references-current":0.9545454382896423},"breakdowns":{"dois-by-issued-year":[[2013,51],[2014,32],[2011,32],[2012,28],[2009,25],[2010,24],[2015,23],[2008,23],[2006,19],[2004,17],[2007,16],[2016,13],[2003,11],[2002,11],[2005,8],[2001,6]]},"counts":{"total-dois":315,"current-dois":44,"backfile-dois":271},"last-status-check-time":1459490470489},{"title":"Chemistry-Didactics-Ecology-Metrology","publisher":"De
+        Gruyter Open Sp. z o.o. ","ISSN":["2084-4506"],"flags":{"deposits-orcids-current":false,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":true,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"orcids-current":0.0,"references-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"resource-links-current":0.0,"references-current":0.75},"breakdowns":{"dois-by-issued-year":[[2013,13],[2015,12],[2014,12],[2012,12]]},"counts":{"total-dois":49,"current-dois":12,"backfile-dois":37},"last-status-check-time":1459490478087},{"title":"Nature
+        Ecology & Evolution","publisher":"Nature Publishing Group","ISSN":["2397-334X"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Journal
+        of Ecology and Environment","publisher":"Springer (Biomed Central Ltd.)","ISSN":["2288-1220"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Bulletin
+        of the PNRPU Applied ecology Urban development","publisher":"PNRPU Publishing
+        Office","ISSN":["2409-5125","2409-5125"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Journal
+        of Landscape Ecology","publisher":"De Gruyter Open Sp. z o.o. ","ISSN":["1803-2427"],"flags":{"deposits-orcids-current":false,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0,"orcids-current":0,"references-backfile":1.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0,"award-numbers-current":0,"resource-links-current":0,"references-current":0},"breakdowns":{"dois-by-issued-year":[[2011,15],[2010,10],[2008,10],[2009,9],[2012,5]]},"counts":{"total-dois":49,"current-dois":0,"backfile-dois":49},"last-status-check-time":1459490507212},{"title":"Plant
+        Ecology and Evolution","publisher":"Botanical Garden Meise","ISSN":["2032-3921"],"flags":{"deposits-orcids-current":false,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"orcids-current":0.0,"references-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"resource-links-current":0.0,"references-current":0.0},"breakdowns":{"dois-by-issued-year":[[2014,55],[2013,43],[2012,43],[2011,43],[2010,42],[2015,40],[2016,15]]},"counts":{"total-dois":281,"current-dois":95,"backfile-dois":186},"last-status-check-time":1459490526783},{"title":"Researches
+        on Population Ecology","publisher":"Springer-Verlag","ISSN":["0034-5466"],"flags":{"deposits-orcids-current":false,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0,"orcids-current":0,"references-backfile":0.9456635117530823,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0,"award-numbers-current":0,"resource-links-current":0,"references-current":0},"breakdowns":{"dois-by-issued-year":[[1998,41],[1980,41],[1983,36],[1976,36],[1995,34],[1994,34],[1996,33],[1992,31],[1997,30],[1993,30],[1985,30],[1990,29],[1991,28],[1989,28],[1986,28],[1982,28],[1988,27],[1981,26],[1987,25],[1984,25],[1973,25],[1979,23],[1977,22],[1978,20],[1970,20],[1975,18],[1972,17],[1967,17],[1966,17],[1968,16],[1969,15],[1952,15],[2000,14],[1999,14],[1963,14],[1965,13],[1974,12],[1953,11],[1964,10],[1956,10],[1971,7],[1962,7]]},"counts":{"total-dois":957,"current-dois":0,"backfile-dois":957},"last-status-check-time":1459490532122},{"title":"TRANSPORT
+        TRANSPORT FACILITIES ECOLOGY","publisher":"PNRPU Publishing Office","ISSN":["2411-1678"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Russian
+        Journal of Ecosystem Ecology","publisher":"Penza State University","ISSN":["2500-0578"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Rethinking
+        Ecology","publisher":"Pensoft Publishers","ISSN":["2534-9260"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Tyumen
+        State University Herald Natural Resource Use and Ecology","publisher":"Tyumen
+        State University","ISSN":["2411-7927","2500-0888"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Iranian
+        Journal of Applied Ecology","publisher":"CASRP; Center of Advanced Scientific
+        Research and Publications","ISSN":["2476-3128","2476-3217"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Ecology
+        and Resilient Infrastructure","publisher":"Korean Society of Ecology and Infrastructure
+        Engineering","ISSN":["2288-8527","2288-8527"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Current
+        Landscape Ecology Reports","publisher":"Springer-Verlag","ISSN":["2364-494X"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Conservation
+        Ecology","publisher":"\"Resilience Alliance, Inc.\"","ISSN":["1195-5449"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"New
+        Zealand Journal of Ecology","publisher":"New Zealand Ecological Society","ISSN":[],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Tyumen
+        State University Herald Natural Resource Use and Ecology","publisher":"Tyumen
+        State University","ISSN":["2411-7927"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"American
+        Journal of Human Ecology","publisher":"World Scholars","ISSN":["2167-9622","2167-9630"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null},{"title":"Annual
+        Review of Ecology and Systematics","publisher":"Annual Reviews","ISSN":["0066-4162"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null}]}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:23:23 GMT
+recorded_with: VCR 3.0.3

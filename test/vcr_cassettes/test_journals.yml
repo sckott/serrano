@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/journals/2167-8359
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '226'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:23:21 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"title":"PeerJ","publisher":"PeerJ","ISSN":["2167-8359"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:23:21 GMT
+recorded_with: VCR 3.0.3

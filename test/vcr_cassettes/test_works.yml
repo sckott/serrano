@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.1371/journal.pone.0033693
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '2079'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:04:03 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,3,7]],"date-time":"2017-03-07T03:43:05Z","timestamp":1488858185121},"reference-count":70,"publisher":"Public
+        Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
+        ONE"],"cited-count":0,"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"CrossRef","title":["Methylphenidate
+        Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
+        Ganglia of Mice"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","affiliation":[]},{"given":"Brooks
+        B.","family":"Pond","affiliation":[]},{"given":"Amar K.","family":"Pani","affiliation":[]},{"given":"Chunxu","family":"Qu","affiliation":[]},{"given":"Yun","family":"Jiao","affiliation":[]},{"given":"Richard
+        J.","family":"Smeyne","affiliation":[]}],"member":"http:\/\/id.crossref.org\/member\/340","published-online":{"date-parts":[[2012,3,21]]},"container-title":["PLoS
+        ONE"],"original-title":[],"deposited":{"date-parts":[[2017,3,7]],"date-time":"2017-03-07T02:19:05Z","timestamp":1488853145000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
+        V.","family":"Borlongan","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"citing-count":70,"subject":["Biochemistry,
+        Genetics and Molecular Biology(all)","Agricultural and Biological Sciences(all)","Medicine(all)"]}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:04:03 GMT
+recorded_with: VCR 3.0.3

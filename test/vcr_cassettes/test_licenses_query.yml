@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/licenses?query=creative
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      X-User-Agent:
+      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '4940'
+      Server:
+      - http-kit
+      Date:
+      - Tue, 04 Apr 2017 23:22:28 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":51,"items":[{"URL":"\n                http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining\n            ","work-count":1},{"URL":"\n                http:\/\/iopscience.iop.org\/page\/copyright\n            ","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":19},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":169},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":182},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":143},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/
+        ","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":10},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nd\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/4.0","work-count":6},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/uk\/legalcode","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":48},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/deed.en_US","work-count":7},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0","work-count":47},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":1464},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","work-count":2084},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","work-count":1424},{"URL":"http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining","work-count":37},{"URL":"http:\/\/iopscience.iop.org\/page\/copyright","work-count":31},{"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html","work-count":1},{"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html#TDM","work-count":1},{"URL":"http:\/\/link.aps.org\/licenses\/aps-default-accepted-manuscript-license","work-count":7},{"URL":"http:\/\/link.aps.org\/licenses\/aps-default-license","work-count":22},{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions","work-count":111},{"URL":"http:\/\/pubs.acs.org\/page\/policy\/authorchoice_termsofuse.html","work-count":4},{"URL":"http:\/\/royalsocietypublishing.org\/licence","work-count":2},{"URL":"http:\/\/www.acm.org\/publications\/policies\/copyright_policy#Background","work-count":148},{"URL":"http:\/\/www.biologists.com\/user-licence-1-1","work-count":1},{"URL":"http:\/\/www.biologists.com\/user-licence-1-1\/","work-count":1},{"URL":"http:\/\/www.bmj.org\/licenses\/tdm\/1.0\/terms-and-conditions.html","work-count":1},{"URL":"http:\/\/www.diabetesjournals.org\/site\/license","work-count":1},{"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/","work-count":50},{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","work-count":3594},{"URL":"http:\/\/www.emeraldinsight.com\/page\/tdm","work-count":271},{"URL":"http:\/\/www.nationalarchives.gov.uk\/doc\/non-commercial-government-licence\/non-commercial-government-licence.htm","work-count":1},{"URL":"http:\/\/www.pnas.org\/site\/misc\/userlicense.xhtml","work-count":2},{"URL":"http:\/\/www.springer.com\/tdm","work-count":1453},{"URL":"http:\/\/www.zju.edu.cn\/jzus\/download\/Copyright_Transfer_Statement.pdf","work-count":8},{"URL":"https:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/us\/","work-count":1},{"URL":"https:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":1},{"URL":"https:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":3},{"URL":"https:\/\/publishing.aip.org\/authors\/rights-and-permissions","work-count":1},{"URL":"\u00a9
+        1991, American Association for the Advancement of Science, All Rights Reserved.
+        In situ images in panels 4 and 5 are reprinted with permission from Figure
+        3A and 3C, Stanojevic et al. (1991), Science.","work-count":1},{"URL":"\u00a9
+        1991, Cold Spring Harbor Laboratory Press, All Rights Reserved. The in situ
+        image in panel 3 is reprinted with permission from Figure 2D, Small et al.
+        (1991), Genes & Development.","work-count":1},{"URL":"\u00a9 1996, The Company
+        of Biologists, All Rights Reserved. The in situ image in panel 7 is reproduced
+        with permission from Figure 6B, Arnosti et al. (1996), Development.","work-count":1},{"URL":"\u00a9
+        2007 Elsevier Masson SAS. All rights reserved. The patient figure in Figure
+        6, part A is reproduced from Ferrero et al., (2007), European Journal of Medical
+        Genetics with permission.","work-count":1}],"items-per-page":20,"query":{"start-index":0,"search-terms":"creative"}}}'
+    http_version: 
+  recorded_at: Tue, 04 Apr 2017 23:22:28 GMT
+recorded_with: VCR 3.0.3
