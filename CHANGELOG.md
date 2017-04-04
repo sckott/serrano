@@ -1,3 +1,15 @@
+## 0.3.6 (2017-04-04)
+
+* Updated dependency versions
+* Now using `vcr` gem for caching HTTP requests for test suite (#38)
+* Changed base URL for Crossref API for all requests to `https` (#37)
+* Updated docs for `facet` parameter that it can be either a
+boolean or a query string, e.g,. `license:*` to facet by license (#36)
+* Documented in `offset` parameter the max of 10K instituted somewhat
+recently (#34)
+* Documented in top level `Serrano` module and in README the new
+rate limit on all requests - which varies through time. (#32)
+
 ## 0.3.0 (2016-10-20)
 
 * Field queries now supported in appropriate methods:
