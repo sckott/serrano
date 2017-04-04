@@ -74,13 +74,13 @@ module Serrano
       opts = arguments.delete_if { |k, v| v.nil? }
 
       if verbose
-        $conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
+        $conn = Faraday.new(:url => Serrano.base_url, :request => options || []) do |f|
           f.response :logger
           f.adapter Faraday.default_adapter
           f.use FaradayMiddleware::RaiseHttpException
         end
       else
-        $conn = Faraday.new(:url => Serrano.base_url, :request => options) do |f|
+        $conn = Faraday.new(:url => Serrano.base_url, :request => options || []) do |f|
           f.adapter Faraday.default_adapter
           f.use FaradayMiddleware::RaiseHttpException
         end

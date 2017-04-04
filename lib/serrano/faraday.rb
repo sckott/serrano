@@ -63,7 +63,7 @@ module FaradayMiddleware
     def is_json?(string)
       MultiJson.load(string)
       return true
-    rescue MultiJson::ParseError => e
+    rescue MultiJson::ParseError
       return false
     end
 

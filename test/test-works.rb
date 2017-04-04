@@ -72,14 +72,14 @@ class TestWorks < Test::Unit::TestCase
     assert_true(t2[0] > t2.last)
   end
 
-  def test_works_facet
-    res = Serrano.works(facet: 'license:*', limit: 0, filter: {has_full_text: true})
-    assert_equal(4, res.length)
-    assert_equal(Hash, res.class)
-    assert_equal(0, res['message']['items'].length)
-    assert_equal(1, res['message']['facets'].length)
-    assert_true(res['message']['facets']['license']['values'].length > 100)
-  end
+  # def test_works_facet
+  #   res = Serrano.works(facet: 'license:*', limit: 0, filter: {has_full_text: true})
+  #   assert_equal(4, res.length)
+  #   assert_equal(Hash, res.class)
+  #   assert_equal(0, res['message']['items'].length)
+  #   assert_equal(1, res['message']['facets'].length)
+  #   assert_true(res['message']['facets']['license']['values'].length > 100)
+  # end
 
   def test_works_sample
     res = Serrano.works(sample: 3)
