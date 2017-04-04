@@ -46,6 +46,15 @@ Note about searching:
 
 You are using the Crossref search API described at https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://github.com/CrossRef/rest-api-doc/issues/101
 
+Rate limits:
+
+Crossref introduced rate limiting recently. The rate limits apparently vary,
+so we can't give a predictable rate limit. As of this writing, the rate
+limit is 50 requests per second. Look for the headers `X-Rate-Limit-Limit`
+and `X-Rate-Limit-Interval` in requests to see what the current rate
+limits are.
+
+
 ## Install
 
 ### Release version
