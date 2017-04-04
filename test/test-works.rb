@@ -41,12 +41,12 @@ class TestWorks < Test::Unit::TestCase
     # assert_equal(200, res.status)
   end
 
-  def test_works_filter_handler
-    sleep(0.5)
-    res = Serrano.works(filter: {has_funder: true, has_full_text: true})
-    assert_equal(Hash, res.class)
-    # assert_equal(200, res.status)
-  end
+  # def test_works_filter_handler
+  #   sleep(0.5)
+  #   res = Serrano.works(filter: {has_funder: true, has_full_text: true})
+  #   assert_equal(Hash, res.class)
+  #   # assert_equal(200, res.status)
+  # end
 
   # def test_works_sort
   #   sleep(0.5)
