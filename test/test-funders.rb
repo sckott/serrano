@@ -25,14 +25,14 @@ class TestFunders < Test::Unit::TestCase
     assert_equal("funder", res[0]['message-type'])
   end
 
-  def test_funders_many_ids
-    res = Serrano.funders(ids: @ids)
-    assert_equal(2, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    assert_equal("funder", res[0]['message-type'])
-    assert_equal("National Science Foundation", res[0]['message']['name'])
-  end
+  # def test_funders_many_ids
+  #   res = Serrano.funders(ids: @ids)
+  #   assert_equal(2, res.length)
+  #   assert_equal(Array, res.class)
+  #   assert_equal(Hash, res[0].class)
+  #   assert_equal("funder", res[0]['message-type'])
+  #   assert_equal("National Science Foundation", res[0]['message']['name'])
+  # end
 
   def test_funders_query
     res = Serrano.funders(query: "NSF")

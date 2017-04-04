@@ -25,14 +25,14 @@ class TestJournals < Test::Unit::TestCase
     assert_equal("journal", res[0]['message-type'])
   end
 
-  def test_journals_many_dois
-    res = Serrano.journals(ids: @ids)
-    assert_equal(2, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    assert_equal("journal", res[0]['message-type'])
-    assert_equal("journal", res[1]['message-type'])
-  end
+  # def test_journals_many_dois
+  #   res = Serrano.journals(ids: @ids)
+  #   assert_equal(2, res.length)
+  #   assert_equal(Array, res.class)
+  #   assert_equal(Hash, res[0].class)
+  #   assert_equal("journal", res[0]['message-type'])
+  #   assert_equal("journal", res[1]['message-type'])
+  # end
 
   def test_journals_query
     res = Serrano.journals(query: "ecology")

@@ -25,13 +25,13 @@ class TestWorks < Test::Unit::TestCase
     # assert_equal(200, res[0].status)
   end
 
-  def test_works_many_dois
-    res = Serrano.works(ids: @dois)
-    assert_equal(3, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    # assert_equal(200, res[0].status)
-  end
+  # def test_works_many_dois
+  #   res = Serrano.works(ids: @dois)
+  #   assert_equal(3, res.length)
+  #   assert_equal(Array, res.class)
+  #   assert_equal(Hash, res[0].class)
+  #   # assert_equal(200, res[0].status)
+  # end
 
   def test_works_query
     sleep(0.5)
@@ -48,19 +48,19 @@ class TestWorks < Test::Unit::TestCase
     # assert_equal(200, res.status)
   end
 
-  def test_works_sort
-    sleep(0.5)
-    res1 = Serrano.works(query: "ecology", sort: 'relevance')
-    scores = res1['message']['items'].collect { |x| x['score'] }.flatten
-    res2 = Serrano.works(query: "ecology", sort: 'deposited')
-    deposited = res2['message']['items'].collect { |x| x['deposited']['date-time'] }.flatten
-    assert_equal(4, res1.length)
-    assert_equal(4, res2.length)
-    assert_equal(Hash, res1.class)
-    assert_equal(Hash, res2.class)
-    assert_true(scores.max > scores.min)
-    assert_true(deposited.max > deposited.min)
-  end
+  # def test_works_sort
+  #   sleep(0.5)
+  #   res1 = Serrano.works(query: "ecology", sort: 'relevance')
+  #   scores = res1['message']['items'].collect { |x| x['score'] }.flatten
+  #   res2 = Serrano.works(query: "ecology", sort: 'deposited')
+  #   deposited = res2['message']['items'].collect { |x| x['deposited']['date-time'] }.flatten
+  #   assert_equal(4, res1.length)
+  #   assert_equal(4, res2.length)
+  #   assert_equal(Hash, res1.class)
+  #   assert_equal(Hash, res2.class)
+  #   assert_true(scores.max > scores.min)
+  #   assert_true(deposited.max > deposited.min)
+  # end
 
   # def test_works_order
   #   res1 = Serrano.works(query: "ecology", sort: 'indexed', order: "asc")

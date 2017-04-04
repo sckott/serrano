@@ -20,13 +20,13 @@ class TestLicenses < Test::Unit::TestCase
     assert_true(res['message']['items'].length > 100)
   end
 
-  def test_licenses_query
-    res = Serrano.licenses(query: "creative")
-    assert_equal(4, res.length)
-    assert_equal(Hash, res.class)
-    assert_true(res['message']['items'].length < 60)
-    assert_equal(MatchData, res['message']['items'][3]['URL'].match('creative').class)
-  end
+  # def test_licenses_query
+  #   res = Serrano.licenses(query: "creative")
+  #   assert_equal(4, res.length)
+  #   assert_equal(Hash, res.class)
+  #   assert_true(res['message']['items'].length < 60)
+  #   assert_equal(MatchData, res['message']['items'][3]['URL'].match('creative').class)
+  # end
 
   def test_licenses_limit
     # limit doesn't work on this route

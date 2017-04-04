@@ -25,14 +25,14 @@ class TestPrefixes < Test::Unit::TestCase
     assert_equal("prefix", res[0]['message-type'])
   end
 
-  def test_prefixes_many_ids
-    res = Serrano.prefixes(ids: @ids)
-    assert_equal(5, res.length)
-    assert_equal(Array, res.class)
-    assert_equal(Hash, res[0].class)
-    assert_equal("prefix", res[0]['message-type'])
-    assert_equal("Elsevier BV", res[0]['message']['name'])
-  end
+  # def test_prefixes_many_ids
+  #   res = Serrano.prefixes(ids: @ids)
+  #   assert_equal(5, res.length)
+  #   assert_equal(Array, res.class)
+  #   assert_equal(Hash, res[0].class)
+  #   assert_equal("prefix", res[0]['message-type'])
+  #   assert_equal("Elsevier BV", res[0]['message']['name'])
+  # end
 
   def test_prefixes_works
     res = Serrano.prefixes(ids: @id, works: true)
