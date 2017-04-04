@@ -24,8 +24,8 @@ class TestLicenses < Test::Unit::TestCase
     res = Serrano.licenses(query: "creative")
     assert_equal(4, res.length)
     assert_equal(Hash, res.class)
-    assert_true(res['message']['items'].length < 50)
-    assert_equal(MatchData, res['message']['items'][0]['URL'].match('creative').class)
+    assert_true(res['message']['items'].length < 60)
+    assert_equal(MatchData, res['message']['items'][3]['URL'].match('creative').class)
   end
 
   def test_licenses_limit
