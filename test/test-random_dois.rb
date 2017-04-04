@@ -11,8 +11,6 @@ require 'fileutils'
 require "test/unit"
 require "json"
 
-sleep(1)
-
 class TestRandomDois < Test::Unit::TestCase
 
   def test_random_dois

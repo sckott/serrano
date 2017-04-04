@@ -44,7 +44,7 @@ class TestJournals < Test::Unit::TestCase
 
   def test_journals_filter_handler
     exception = assert_raise(Serrano::BadRequest) {Serrano.journals(ids: "2167-8359", works: false, filter: {from_pub_date: '2014-03-03'})}
-    assert_equal("\n   GET http://api.crossref.org/journals/2167-8359?filter=from-pub-date%3A2014-03-03\n   Status 400: This route does not support filter",
+    assert_equal("\n   GET https://api.crossref.org/journals/2167-8359?filter=from-pub-date%3A2014-03-03\n   Status 400: This route does not support filter",
       exception.message)
   end
 

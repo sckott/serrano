@@ -105,7 +105,7 @@ module Serrano
 
   define_setting :access_token
   define_setting :access_secret
-  define_setting :base_url, "http://api.crossref.org/"
+  define_setting :base_url, "https://api.crossref.org/"
 
   ##
   # Search the works route

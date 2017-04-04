@@ -50,7 +50,7 @@ class TestPrefixes < Test::Unit::TestCase
 
   def test_prefixes_filter_handler_failure
     exception = assert_raise(Serrano::BadRequest) {Serrano.prefixes(ids: @id, filter: {has_funder: true})}
-    assert_equal("\n   GET http://api.crossref.org/prefixes/10.1016?filter=has-funder%3Atrue\n   Status 400: This route does not support filter",
+    assert_equal("\n   GET https://api.crossref.org/prefixes/10.1016?filter=has-funder%3Atrue\n   Status 400: This route does not support filter",
       exception.message)
   end
 
