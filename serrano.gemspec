@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'codecov', '~> 0.1.10'
   s.add_development_dependency 'json', '~> 2.0', '>= 2.0.3'
   s.add_development_dependency 'vcr', '~> 3.0', '>= 3.0.3'
+  s.add_development_dependency 'webmock', '~> 2.3', '>= 2.3.2'
 
   s.add_runtime_dependency 'faraday', '~> 0.12.0.1'
   s.add_runtime_dependency 'faraday_middleware', '~> 0.11.0.1'
