@@ -30,7 +30,7 @@ module Serrano
         raise "format not one of accepted types"
       end
 
-      $conn = Faraday.new "http://dx.doi.org/" do |c|
+      $conn = Faraday.new "https://doi.org/" do |c|
         c.use FaradayMiddleware::FollowRedirects
         c.adapter :net_http
       end
