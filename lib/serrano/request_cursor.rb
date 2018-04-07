@@ -62,7 +62,7 @@ module Serrano
       fieldqueries = field_query_handler(self.args)
 
       if self.cursor_max.class != nil
-        if self.cursor_max.class != Fixnum
+        if !self.cursor_max.kind_of?(Integer)
           raise "cursor_max must be of class int"
         end
       end
