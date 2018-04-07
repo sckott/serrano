@@ -155,7 +155,7 @@ module Serrano
   #      Serrano.works(sample: 2)
   #
   #      # cursor for deep paging
-  #      Serrano.works(query: "widget", cursor: "*", limit: 100)
+  #      Serrano.works(query: "widget", cursor: "*", limit: 100, cursor_max: 1000)
   #      # another query, more results this time
   #      res = Serrano.works(query: "science", cursor: "*", limit: 250, cursor_max: 1000);
   #      res.collect { |x| x['message']['items'].length }.reduce(0, :+)

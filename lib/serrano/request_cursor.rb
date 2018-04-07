@@ -90,6 +90,7 @@ module Serrano
       $conn.headers["X-USER-AGENT"] = make_ua
 
       if self.id.nil?
+        $endpt2 = self.endpt
         js = self._req(self.endpt, opts)
         cu = js['message']['next-cursor']
         max_avail = js['message']['total-results']
