@@ -58,13 +58,13 @@ module Serrano
       if verbose
         conn = Faraday.new(:url => Serrano.base_url, :request => options || []) do |f|
           f.response :logger
-          f.adapter  Faraday.default_adapter
           f.use FaradayMiddleware::RaiseHttpException
+          f.adapter  Faraday.default_adapter
         end
       else
         conn = Faraday.new(:url => Serrano.base_url, :request => options || []) do |f|
-          f.adapter  Faraday.default_adapter
           f.use FaradayMiddleware::RaiseHttpException
+          f.adapter  Faraday.default_adapter
         end
       end
 
