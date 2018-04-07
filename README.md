@@ -54,6 +54,11 @@ limit is 50 requests per second. Look for the headers `X-Rate-Limit-Limit`
 and `X-Rate-Limit-Interval` in requests to see what the current rate
 limits are.
 
+The Polite Pool:
+
+To get in the polite pool it's a good idea now to include a `mailto` email
+address. See docs for more information. TLDR: set your email in an env var `CROSSREF_EMAIL`.
+
 
 ## Install
 

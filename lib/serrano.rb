@@ -93,6 +93,28 @@ require 'rexml/xpath'
 # article titles, authors, etc. For some discussion on this, see
 # https://github.com/CrossRef/rest-api-doc/issues/101
 #
+#
+# The Polite Pool
+# As of September 18th 2017 any API queries that use HTTPS and have
+# appropriate contact information will be directed to a special pool
+# of API machines that are reserved for polite users. If you connect
+# to the Crossreef API using HTTPS and provide contact
+# information, then they will send you to a separate pool of machines,
+# with better control the performance of these machines because they can
+# block abusive users.
+# 
+# We have been using `https` in `serrano` for a while now, so that's good
+# to go. To get into the Polite Pool, also set your `mailto` email address
+# with `Serrano.configuration` (example below), or set as an environment
+# variable with the name `CROSSREF_EMAIL` and your mailto will be set
+# for each request automatically. 
+# 
+# require 'serrano'
+# Serrano.configuration do |config|
+#   config.mailto = "foo@bar.com"
+# end
+#
+#
 # Rate limiting
 # Crossref introduced rate limiting recently. The rate limits apparently vary,
 # so we can't give a predictable rate limit. As of this writing, the rate
@@ -105,6 +127,7 @@ module Serrano
 
   define_setting :access_token
   define_setting :access_secret
+  define_setting :mailto, ENV["CROSSREF_EMAIL"]
   define_setting :base_url, "https://api.crossref.org/"
 
   ##

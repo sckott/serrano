@@ -1,7 +1,11 @@
 def make_ua
-	requa = 'Faraday/v' + Faraday::VERSION
+  requa = 'Faraday/v' + Faraday::VERSION
   habua = 'Serrano/v' + Serrano::VERSION
-  return requa + ' ' + habua
+  ua = requa + ' ' + habua
+  if Serrano.mailto
+    ua = ua + " (mailto:%s)" % Serrano.mailto
+  end
+  return ua
 end
 
 def field_query_handler(x)
