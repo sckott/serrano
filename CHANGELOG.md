@@ -1,3 +1,14 @@
+## 0.5.0 (2018-04-08)
+
+* Updated dependency versions
+* Change url used in content negotation from `http://dx.doi.org/` to `https://doi.org/` (#49)
+* Fix `cursor_max` parameter type check to avoid Fixnum warning (#50)
+* Add support for `mailto` email polite pool, and docs updated with info (#46) (#47)
+* Add select parameter throughout methods (#43)
+* Added additional filter options (#45) (#40)
+* Added to docs info about additional `sort` parameter options (#41)
+* Added to docs info about additional field query options (#42)
+
 ## 0.3.6 (2017-04-04)
 
 * Updated dependency versions
