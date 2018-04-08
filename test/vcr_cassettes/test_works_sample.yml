@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       X-User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '4402'
+      - '17940'
       Server:
       - http-kit
       Date:
-      - Tue, 04 Apr 2017 23:06:13 GMT
+      - Sat, 07 Apr 2018 23:03:00 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,18 +42,136 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":87666235,"items":[{"indexed":{"date-parts":[[2016,11,9]],"date-time":"2016-11-09T19:55:15Z","timestamp":1478721315675},"reference-count":11,"publisher":"Elsevier
-        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2012,12,1]],"date-time":"2012-12-01T00:00:00Z","timestamp":1354320000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["L''Enc\u00e9phale"],"cited-count":0,"published-print":{"date-parts":[[2012,12]]},"DOI":"10.1016\/s0013-7006(12)70072-6","type":"journal-article","created":{"date-parts":[[2012,12,29]],"date-time":"2012-12-29T16:15:35Z","timestamp":1356797735000},"page":"S33-S36","source":"CrossRef","title":["Les
-        nouvelles formes du ralentissement d\u00e9pressif"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1016","volume":"38","author":[{"given":"M.","family":"Freton","affiliation":[]}],"member":"http:\/\/id.crossref.org\/member\/78","container-title":["L''Enc\u00e9phale"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0013700612700726?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0013700612700726?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,1,16]],"date-time":"2016-01-16T20:37:33Z","timestamp":1452976653000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,12]]},"alternative-id":["S0013700612700726"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0013-7006(12)70072-6","ISSN":["0013-7006"],"citing-count":11,"subject":["Psychiatry
-        and Mental health"]},{"indexed":{"date-parts":[[2016,11,11]],"date-time":"2016-11-11T09:32:27Z","timestamp":1478856747575},"reference-count":0,"publisher":"Springer
-        Nature","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"cited-count":0,"published-print":{"date-parts":[[1973]]},"DOI":"10.1007\/978-3-662-10823-9","type":"book","created":{"date-parts":[[2013,2,9]],"date-time":"2013-02-09T07:22:30Z","timestamp":1360394550000},"source":"CrossRef","title":["Vorlesungen
-        \u00fcber Massivbau"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1007","author":[{"given":"Fritz","family":"Leonhardt","affiliation":[]},{"given":"Eduard","family":"M\u00f6nnig","affiliation":[]}],"member":"http:\/\/id.crossref.org\/member\/297","container-title":[],"original-title":[],"deposited":{"date-parts":[[2016,8,17]],"date-time":"2016-08-17T13:29:47Z","timestamp":1471440587000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1973]]},"ISBN":["http:\/\/id.crossref.org\/isbn\/978-3-540-05733-8","http:\/\/id.crossref.org\/isbn\/978-3-662-10823-9"],"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-662-10823-9","citing-count":0},{"indexed":{"date-parts":[[2016,10,25]],"date-time":"2016-10-25T02:50:30Z","timestamp":1477363830066},"reference-count":18,"publisher":"CFA
-        Institute","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Financial
-        Analysts Journal"],"cited-count":0,"published-print":{"date-parts":[[2006,7]]},"DOI":"10.2469\/faj.v62.n4.4188","type":"journal-article","created":{"date-parts":[[2006,7,21]],"date-time":"2006-07-21T15:03:00Z","timestamp":1153494180000},"page":"76-85","source":"CrossRef","title":["Covariance
-        Misspecification in Asset Allocation"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.2469","volume":"62","author":[{"given":"Steven
-        P.","family":"Peterson","affiliation":[]},{"given":"John T.","family":"Grier","affiliation":[]}],"member":"http:\/\/id.crossref.org\/member\/1300","container-title":["Financial
-        Analysts Journal"],"original-title":[],"deposited":{"date-parts":[[2011,2,27]],"date-time":"2011-02-27T22:36:07Z","timestamp":1298846167000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2006,7]]},"alternative-id":["10.2469\/faj.v62.n4.4188"],"URL":"http:\/\/dx.doi.org\/10.2469\/faj.v62.n4.4188","ISSN":["0015-198X"],"citing-count":18,"subject":["Economics
-        and Econometrics","Accounting","Finance"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":96004801,"items":[{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T06:43:59Z","timestamp":1509000239984},"reference-count":0,"publisher":"Japanese
+        Society of Periodontology","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J
+        Jpn Soc Periodontol"],"published-print":{"date-parts":[[2001]]},"DOI":"10.2329\/perio.43.260","type":"journal-article","created":{"date-parts":[[2011,11,16]],"date-time":"2011-11-16T18:06:52Z","timestamp":1321466812000},"page":"260-272","source":"Crossref","is-referenced-by-count":0,"title":["Effects
+        of Lipopolysaccharide on Phagocytic Function in Polymorphonuclear Leukocytes
+        Using Flow Cytometry and Confocal Laser Scanning Microscopy."],"prefix":"10.2329","volume":"43","author":[{"given":"Yasuko","family":"Saitoh","affiliation":[]},{"given":"Youichi","family":"Saitoh","affiliation":[]},{"given":"Yukihiro","family":"Numabe","affiliation":[]},{"given":"Kyuichi","family":"Kamoi","affiliation":[]}],"member":"1156","container-title":["Nihon
+        Shishubyo Gakkai Kaishi (Journal of the Japanese Society of Periodontology)"],"original-title":["\u591a\u5f62\u6838\u767d\u8840\u7403\u306e\u8ca7\u98df\u6a5f\u80fd\u306b\u5bfe\u3059\u308b\uff2c\uff49\uff50\uff4f\uff50\uff4f\uff4c\uff59\uff53\uff41\uff43\uff43\uff48\uff41\uff52\uff49\uff44\uff45\u306e\u5f71\u97ff\u306b\u3064\u3044\u3066\u3000\u3000\u30d5\u30ed\u30fc\u30b5\u30a4\u30c8\u30e1\u30fc\u30bf\u30fc\u3068\u5171\u7126\u70b9\u30ec\u30fc\u30b6\u30fc\u8d70\u67fb\u9855\u5fae\u93e1\u306b\u3088\u308b\u89b3\u5bdf"],"deposited":{"date-parts":[[2011,11,16]],"date-time":"2011-11-16T18:12:01Z","timestamp":1321467121000},"score":1.0,"issued":{"date-parts":[[2001]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2329\/perio.43.260","ISSN":["0385-0110","1880-408X"],"issn-type":[{"value":"0385-0110","type":"print"},{"value":"1880-408X","type":"electronic"}]},{"indexed":{"date-parts":[[2018,1,3]],"date-time":"2018-01-03T20:41:27Z","timestamp":1515012087553},"reference-count":0,"publisher":"National
+        Research University, Higher School of Economics (HSE)","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JSPS"],"abstract":"<jats:p>\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430
+        \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430 \u041b\u0430\u0442\u044b\u0448\u0435\u0432\u0430
+        \u2013 a\u0441\u043f\u0438\u0440\u0430\u043d\u0442, \u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442
+        \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u043d\u0430\u0443\u043a,
+        \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0430\u043a\u0430\u0434\u0435\u043c\u0438\u044f
+        \u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0430
+        \u0438 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439
+        \u0441\u043b\u0443\u0436\u0431\u044b \u043f\u0440\u0438 \u041f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0435
+        \u0420\u0424 (\u0420\u0410\u041d\u0425\u0438\u0413\u0421); \u043f\u0440\u043e\u0434\u044e\u0441\u0435\u0440,
+        \u0410\u041e \u00ab\u041f\u0435\u0440\u0432\u044b\u0439 \u043a\u0430\u043d\u0430\u043b.
+        \u0412\u0441\u0435\u043c\u0438\u0440\u043d\u0430\u044f \u0441\u0435\u0442\u044c\u00bb
+        (\u041f\u0435\u0440\u0432\u044b\u0439 Digital), \u041c\u043e\u0441\u043a\u0432\u0430,
+        \u0420\u043e\u0441\u0441\u0438\u044f. \u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0430\u044f
+        \u043f\u043e\u0447\u0442\u0430: sasha.latysheva@yandex.ru&#x0D;\nDOI: 10.17323\/727-0634-2017-15-4-660-668&#x0D;\n\u0420\u0430\u0441\u0441\u043c\u0430\u0442\u0440\u0438\u0432\u0430\u044f
+        \u0438\u0441\u0442\u043e\u0440\u0438\u044e \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f
+        \u0442\u0435\u0440\u043c\u0438\u043d\u0430 \u00ab\u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u00bb,
+        \u044f \u0430\u043d\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u044e \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0435
+        \u0442\u0435\u043e\u0440\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435
+        \u043f\u043e\u0434\u0445\u043e\u0434\u044b \u043a \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u044e
+        \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430.
+        \u0412\u043e-\u043f\u0435\u0440\u0432\u044b\u0445, \u043a\u0430\u043a \u0431\u0438\u0437\u043d\u0435\u0441-\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430
+        \u0434\u043b\u044f \u0441\u0431\u043e\u0440\u0430 \u0441\u0440\u0435\u0434\u0441\u0442\u0432
+        \u043d\u0430 \u00ab\u0441\u0442\u0430\u0440\u0442\u0430\u043f\u044b\u00bb.
+        \u0412\u043e-\u0432\u0442\u043e\u0440\u044b\u0445, \u043a\u0430\u043a \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430
+        \u0430\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u043e\u0439
+        \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438, \u043a\u043e\u0433\u0434\u0430
+        \u043a\u0440\u0430\u0443\u0434-\u0441\u043f\u043e\u043d\u0441\u043e\u0440\u044b
+        \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0443\u044e\u0442 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e
+        \u0432\u043e\u043a\u0440\u0443\u0433 \u0441\u0432\u043e\u0435\u0439 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438,
+        \u0447\u0442\u043e\u0431\u044b \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0441\u0442\u0438
+        \u043d\u0443\u0436\u043d\u044b\u0439 \u043f\u0440\u043e\u0434\u0443\u043a\u0442
+        \u0438\u043b\u0438 \u0443\u0441\u043b\u0443\u0433\u0443. \u0412-\u0442\u0440\u0435\u0442\u044c\u0438\u0445,
+        \u0432 \u043a\u043e\u043d\u0442\u0435\u043a\u0441\u0442\u0435 \u0441\u043e\u0446\u0438\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0433\u043e
+        \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f \u044d\u0442\u043e\u0433\u043e
+        \u044f\u0432\u043b\u0435\u043d\u0438\u044f. \u041a\u0430\u043a \u043e\u0442\u043c\u0435\u0447\u0430\u044e\u0442
+        \u043c\u043d\u043e\u0433\u0438\u0435 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435
+        \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u0438,
+        \u0431\u043e\u043b\u044c\u0448\u0438\u043d\u0441\u0442\u0432\u043e \u043a\u0440\u0430\u0443\u0434-\u0441\u043f\u043e\u043d\u0441\u043e\u0440\u043e\u0432
+        \u0438\u043c\u0435\u044e\u0442 \u043d\u0435\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u0443\u044e
+        \u043c\u043e\u0442\u0438\u0432\u0430\u0446\u0438\u044e, \u043a\u043e\u0442\u043e\u0440\u0430\u044f
+        \u0438\u0433\u043d\u043e\u0440\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043f\u0440\u0438
+        \u0438\u0437\u0443\u0447\u0435\u043d\u0438\u0438 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430
+        \u0438\u0441\u043a\u043b\u044e\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e
+        \u043a\u0430\u043a \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430
+        \u0434\u043b\u044f \u0442\u043e\u0432\u0430\u0440\u043d\u043e-\u0434\u0435\u043d\u0435\u0436\u043d\u043e\u0433\u043e
+        \u043e\u0431\u043c\u0435\u043d\u0430. \u042f \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u044e
+        \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430,
+        \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u0438\u0440\u0443\u044e\u0449\u0435\u0435
+        \u0440\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f,
+        \u0438 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0437\u0443\u044e
+        \u0432\u0435\u0434\u0443\u0449\u0438\u0435 \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u044b\u0435
+        \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u043e\u0432\u044b\u0435
+        \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b (Kickstarter \u0438
+        IndieGoGo), \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u044f\u044e \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435
+        \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438, \u0440\u0430\u0437\u0431\u0438\u0440\u0430\u044e
+        \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043a\u0440\u0443\u043f\u043d\u0435\u0439\u0448\u0438\u0445
+        \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u043e\u0432\u044b\u0445
+        \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c (Planeta.ru \u0438 Boomstarter).
+        \u0412 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043f\u0440\u0438\u043c\u0435\u0440\u0430
+        \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0439
+        \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438
+        \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u044e \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c
+        \u043f\u0440\u043e\u0435\u043a\u0442 Sbor-nik, \u0437\u0430\u043d\u0438\u043c\u0430\u044e\u0449\u0438\u0439\u0441\u044f
+        \u0441\u0431\u043e\u0440\u043e\u043c \u0441\u0440\u0435\u0434\u0441\u0442\u0432
+        \u0434\u043b\u044f \u0438\u0437\u0434\u0430\u043d\u0438\u044f \u043a\u043d\u0438\u0433.
+        \u0414\u043b\u044f \u043a\u0430\u0436\u0434\u043e\u0439 \u0438\u0437 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c
+        \u043f\u0440\u0438\u0432\u043e\u0436\u0443 \u0434\u0430\u043d\u043d\u044b\u0435
+        \u043f\u043e \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0443
+        \u0437\u0430\u043f\u0443\u0449\u0435\u043d\u043d\u044b\u0445 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432,
+        \u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0445 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439
+        \u0438 \u0441\u043e\u0431\u0440\u0430\u043d\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432.
+        \u041e\u0442\u0434\u0435\u043b\u044c\u043d\u043e \u0443\u0434\u0435\u043b\u044f\u0435\u0442\u0441\u044f
+        \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435 \u043d\u0435\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u043e\u0439
+        \u043c\u043e\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439:
+        \u043f\u0440\u0438\u0432\u043e\u0436\u0443 \u043f\u0440\u0438\u043c\u0435\u0440\u044b
+        \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u0431\u043b\u0430\u0433\u043e\u0442\u0432\u043e\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445
+        \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432, \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u043d\u044b\u0445
+        \u043d\u0430 \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0445
+        \u0432\u044b\u0448\u0435 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430\u0445,
+        \u0430 \u0442\u0430\u043a\u0436\u0435 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u0438,
+        \u043a\u043e\u0433\u0434\u0430 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438
+        \u043e\u0442\u043a\u0430\u0437\u044b\u0432\u0430\u043b\u0438\u0441\u044c \u043e\u0442
+        \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0439
+        \u0438\u043b\u0438 \u0432\u044b\u0431\u0438\u0440\u0430\u043b\u0438 \u043d\u0435\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u044b\u0435
+        \u0444\u043e\u0440\u043c\u044b \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0439
+        (\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u043e\u0441\u0442\u044c,
+        \u0443\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 \u0432 \u0447\u0438\u0441\u043b\u0435
+        \u0441\u043f\u043e\u043d\u0441\u043e\u0440\u043e\u0432). \u041e\u0441\u043e\u0431\u043e
+        \u0430\u043a\u0446\u0435\u043d\u0442\u0438\u0440\u0443\u044e \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435
+        \u043d\u0430 \u0441\u043e\u0446\u0438\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u044b\u0445
+        \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u044f\u0445 \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0442\u0435\u043d\u0438\u0439
+        \u0441\u043f\u043e\u043d\u0441\u043e\u0440\u043e\u0432. \u0410\u043d\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u044e
+        \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0439
+        \u043f\u043b\u043e\u0449\u0430\u0434\u043e\u043a, \u0438\u0445 \u0441\u0430\u043c\u043e\u043f\u043e\u0437\u0438\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f
+        \u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432, \u0440\u0430\u0437\u043c\u0435\u0449\u0430\u0435\u043c\u044b\u0445
+        \u043d\u0430 \u043d\u0438\u0445. \u0421\u0434\u0435\u043b\u0430\u043d\u0430
+        \u043f\u043e\u043f\u044b\u0442\u043a\u0430 \u043e\u0442\u0432\u0435\u0442\u0438\u0442\u044c
+        \u043d\u0430 \u0432\u043e\u043f\u0440\u043e\u0441\u044b, \u0447\u0442\u043e
+        \u0442\u0430\u043a\u043e\u0435 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433
+        \u043a\u0430\u043a \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435
+        \u0438 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0435 \u044f\u0432\u043b\u0435\u043d\u0438\u0435
+        \u0438 \u0432 \u0447\u0435\u043c \u0437\u0430\u043a\u043b\u044e\u0447\u0430\u044e\u0442\u0441\u044f
+        \u0435\u0433\u043e \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438
+        \u0432 \u0420\u043e\u0441\u0441\u0438\u0438. \u042d\u0442\u043e \u044f\u0432\u043b\u0435\u043d\u0438\u0435
+        \u043c\u043e\u0436\u043d\u043e \u0440\u0430\u0441\u0441\u043c\u0430\u0442\u0440\u0438\u0432\u0430\u0442\u044c
+        \u043a\u0430\u043a \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043e, \u043a\u043e\u0442\u043e\u0440\u043e\u0435
+        \u0432\u044b\u0431\u0438\u0440\u0430\u044e\u0442 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438,
+        \u0447\u0442\u043e\u0431\u044b \u043a\u043e\u043c\u043f\u0435\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u0442\u044c
+        \u043d\u0435\u0434\u043e\u0441\u0442\u0430\u0442\u043a\u0438 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439
+        \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0438 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0439
+        \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0438.<\/jats:p>","DOI":"10.17323\/727-0634-2017-15-4-660-668","type":"journal-article","created":{"date-parts":[[2018,1,3]],"date-time":"2018-01-03T20:17:17Z","timestamp":1515010637000},"page":"660","source":"Crossref","is-referenced-by-count":0,"title":["
+        \u042d\u0442\u043e \u043d\u0435\u00a0\u043f\u0440\u043e\u0441\u0442\u043e
+        \u0431\u0438\u0437\u043d\u0435\u0441: \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u0430\u044f
+        \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0433\u043e
+        \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430"],"prefix":"10.17323","volume":"15","author":[{"given":"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430
+        \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430","family":"\u041b\u0430\u0442\u044b\u0448\u0435\u0432\u0430","affiliation":[]}],"member":"6872","published-online":{"date-parts":[[2017,12,23]]},"container-title":["The
+        Journal of Social Policy Studies"],"link":[{"URL":"https:\/\/jsps.hse.ru\/article\/download\/7332\/8205","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/jsps.hse.ru\/article\/download\/7332\/8205","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,1,3]],"date-time":"2018-01-03T20:17:18Z","timestamp":1515010638000},"score":1.0,"issued":{"date-parts":[[2017,12,23]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.17323\/727-0634-2017-15-4-660-668","ISSN":["1727-0634"],"issn-type":[{"value":"1727-0634","type":"print"}],"subject":["Sociology
+        and Political Science","Public Administration"]},{"indexed":{"date-parts":[[2018,2,3]],"date-time":"2018-02-03T19:32:57Z","timestamp":1517686377977},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1994,2,1]],"date-time":"1994-02-01T00:00:00Z","timestamp":760060800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Free
+        Radical Biology and Medicine"],"published-print":{"date-parts":[[1994,2]]},"DOI":"10.1016\/0891-5849(94)90151-1","type":"journal-article","created":{"date-parts":[[2003,2,12]],"date-time":"2003-02-12T02:03:32Z","timestamp":1045015412000},"page":"263-269","source":"Crossref","is-referenced-by-count":11,"title":["Ethanol
+        synergizes with hydrogen peroxide, peroxyl radical, and trypsin to kill epithelial
+        cells in culture\u2606"],"prefix":"10.1016","volume":"16","author":[{"given":"I","family":"GINSBURG","affiliation":[]},{"given":"R","family":"KOHEN","affiliation":[]},{"given":"M","family":"LIGUMSKY","affiliation":[]}],"member":"78","container-title":["Free
+        Radical Biology and Medicine"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0891584994901511?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0891584994901511?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,20]],"date-time":"2015-09-20T03:45:39Z","timestamp":1442720739000},"score":1.0,"issued":{"date-parts":[[1994,2]]},"references-count":0,"alternative-id":["0891584994901511"],"URL":"http:\/\/dx.doi.org\/10.1016\/0891-5849(94)90151-1","ISSN":["0891-5849"],"issn-type":[{"value":"0891-5849","type":"print"}],"subject":["Physiology
+        (medical)","Biochemistry"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     http_version: 
-  recorded_at: Tue, 04 Apr 2017 23:06:13 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sat, 07 Apr 2018 23:03:00 GMT
+recorded_with: VCR 4.0.0

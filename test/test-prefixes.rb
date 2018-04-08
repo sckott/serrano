@@ -65,4 +65,14 @@ class TestPrefixes < Test::Unit::TestCase
     end
   end
 
+  def test_prefixes_select
+    VCR.use_cassette("test_prefixes_select") do
+      res = Serrano.prefixes(ids: @id, works: true, select: ['DOI', 'title'])
+      assert_equal(4, res[0].length)
+      assert_equal(Hash, res[0].class)
+      assert_equal(2, res[0]['message']['items'][0].length)
+      assert_equal(["DOI","title"], res[0]['message']['items'][0].keys)
+    end
+  end
+
 end

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       X-User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1002'
+      - '1056'
       Server:
       - http-kit
       Date:
-      - Tue, 04 Apr 2017 23:04:03 GMT
+      - Sat, 07 Apr 2018 23:02:53 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,12 +42,12 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2016,10,26]],"date-time":"2016-10-26T23:37:02Z","timestamp":1477525022933},"reference-count":0,"publisher":"Springer
-        Nature","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"cited-count":0,"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"source":"CrossRef","title":["Theoretical
-        Ecology"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1007","member":"http:\/\/id.crossref.org\/member\/297","container-title":[],"original-title":[],"deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","ISSN":["1874-1738","1874-1746"],"citing-count":0,"subject":["Ecological
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T08:17:16Z","timestamp":1509005836362},"reference-count":0,"publisher":"Springer
+        Nature","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
         Modelling","Ecology"]}}'
     http_version: 
-  recorded_at: Tue, 04 Apr 2017 23:04:04 GMT
+  recorded_at: Sat, 07 Apr 2018 23:02:53 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007/10452.1573-5125
@@ -56,9 +56,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       X-User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -77,11 +77,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1030'
+      - '1131'
       Server:
       - http-kit
       Date:
-      - Tue, 04 Apr 2017 23:04:04 GMT
+      - Sat, 07 Apr 2018 23:02:54 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -90,12 +90,13 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2016,10,26]],"date-time":"2016-10-26T23:34:24Z","timestamp":1477524864480},"reference-count":0,"publisher":"Springer
-        Nature","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"cited-count":0,"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"source":"CrossRef","title":["Aquatic
-        Ecology"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1007","member":"http:\/\/id.crossref.org\/member\/297","container-title":[],"original-title":[],"deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","ISSN":["1386-2588","1573-5125"],"citing-count":0,"subject":["Aquatic
-        Science","Ecology, Evolution, Behavior and Systematics"]}}'
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T08:17:11Z","timestamp":1509005831003},"reference-count":0,"publisher":"Springer
+        Nature","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
+        Science","Ecology, Evolution, Behavior and Systematics","General Agricultural
+        and Biological Sciences"]}}'
     http_version: 
-  recorded_at: Tue, 04 Apr 2017 23:04:04 GMT
+  recorded_at: Sat, 07 Apr 2018 23:02:54 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1111/(issn)1442-9993
@@ -104,9 +105,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       X-User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -125,11 +126,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1022'
+      - '1076'
       Server:
       - http-kit
       Date:
-      - Tue, 04 Apr 2017 23:04:05 GMT
+      - Sat, 07 Apr 2018 23:02:55 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -138,9 +139,9 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2016,10,24]],"date-time":"2016-10-24T22:42:54Z","timestamp":1477348974477},"reference-count":0,"publisher":"Wiley-Blackwell","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"cited-count":0,"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"source":"CrossRef","title":["Austral
-        Ecology"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1111","member":"http:\/\/id.crossref.org\/member\/311","container-title":[],"original-title":[],"deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","ISSN":["1442-9985","1442-9993"],"citing-count":0,"subject":["Ecology","Ecology,
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T23:14:00Z","timestamp":1508973240446},"reference-count":0,"publisher":"Wiley-Blackwell","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
+        Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}],"subject":["Ecology","Ecology,
         Evolution, Behavior and Systematics"]}}'
     http_version: 
-  recorded_at: Tue, 04 Apr 2017 23:04:05 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sat, 07 Apr 2018 23:02:56 GMT
+recorded_with: VCR 4.0.0

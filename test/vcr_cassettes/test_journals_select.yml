@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/journals/2167-8359/works?select=DOI,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      X-User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '3298'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 07 Apr 2018 23:15:36 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":4559,"items":[{"DOI":"10.7717\/peerj.598","title":["Multi-decade
+        biomass dynamics in an old-growth hemlock-northern hardwood forest, Michigan,
+        USA"]},{"DOI":"10.7717\/peerj.1463","title":["Parental encouragement is positively
+        associated with outdoor active play outside of school hours among 7\u201312
+        year olds"]},{"DOI":"10.7717\/peerj.816","title":["The use of neuralgia medications
+        to treat sensory neuropathic cough: our experience in a retrospective cohort
+        of thirty-two patients"]},{"DOI":"10.7717\/peerj.1337","title":["Gluten-free
+        food database: the nutritional quality and cost of packaged gluten-free foods"]},{"DOI":"10.7717\/peerj.1766","title":["Transgenerational
+        effects enhance specific immune response in a wild passerine"]},{"DOI":"10.7717\/peerj.4114","title":["Molecular
+        evolution of virulence genes and non-virulence genes in clinical, natural
+        and artificial environmental Legionella pneumophila isolates"]},{"DOI":"10.7717\/peerj.1303","title":["Factors
+        affecting the identification of individual mountain bongo antelope"]},{"DOI":"10.7717\/peerj.3799","title":["Development
+        and evaluation of rapid novel isothermal amplification assays for important
+        veterinary pathogens: Chlamydia psittaci and Chlamydia pecorum"]},{"DOI":"10.7717\/peerj.4256","title":["Characterization
+        of sympatric Platanthera bifolia and Platanthera chlorantha (Orchidaceae)
+        populations with intermediate plants"]},{"DOI":"10.7717\/peerj.4157","title":["Species
+        identification by conservation practitioners using online images: accuracy
+        and agreement between experts"]},{"DOI":"10.7717\/peerj.4296","title":["Molecular
+        and serological dynamics of Chlamydia pecorum infection in a longitudinal
+        study of prime lamb production"]},{"DOI":"10.7717\/peerj.4243","title":["Breeding
+        and multiple waves of primary molt in common ground doves of coastal Sinaloa"]},{"DOI":"10.7717\/peerj.4298","title":["Tissue
+        material properties and computational modelling of the human tibiofemoral
+        joint: a critical review"]},{"DOI":"10.7717\/peerj.4320","title":["Linking
+        pangenomes and metagenomes: the Prochlorococcus metapangenome"]},{"DOI":"10.7717\/peerj.2433","title":["Metaproteomics
+        of saliva identifies human protein markers specific for individuals with periodontitis
+        and dental caries compared to orally healthy controls"]},{"DOI":"10.7717\/peerj.2751","title":["Perception
+        of color emotions for single colors in red-green defective observers"]},{"DOI":"10.7717\/peerj.2983","title":["Patient
+        satisfaction with doctor-patient interaction and its association with modifiable
+        cardiovascular risk factors among moderately-high risk patients in primary
+        healthcare"]},{"DOI":"10.7717\/peerj.951","title":["Accuracy of the interferon-gamma
+        release assay for the diagnosis of tuberculous pleurisy: an updated meta-analysis"]},{"DOI":"10.7717\/peerj.2037","title":["Transcranial
+        sonography findings related to depression in parkinsonian disorders: cross-sectional
+        study in 126 patients"]},{"DOI":"10.7717\/peerj.4154","title":["Ergonomic
+        risk and preventive measures of musculoskeletal disorders in the dentistry
+        environment: an umbrella review"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: 
+  recorded_at: Sat, 07 Apr 2018 23:15:37 GMT
+recorded_with: VCR 4.0.0

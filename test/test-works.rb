@@ -105,4 +105,14 @@ class TestWorks < Test::Unit::TestCase
     end
   end
 
+  def test_works_select
+    VCR.use_cassette("test_works_select") do
+      res = Serrano.works(select: ['DOI', 'title'])
+      assert_equal(4, res.length)
+      assert_equal(Hash, res.class)
+      assert_equal(2, res['message']['items'][0].length)
+      assert_equal(["DOI","title"], res['message']['items'][0].keys)
+    end
+  end
+
 end

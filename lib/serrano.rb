@@ -25,6 +25,10 @@ require 'rexml/xpath'
 #   @param order [String] Sort order, one of 'asc' or 'desc'
 #   @param facet [Boolean/String] Include facet results OR a query (e.g., `license:*`) to facet by
 #       license. Default: false
+#   @param select [String/Array(String)] Crossref metadata records can be
+#       quite large. Sometimes you just want a few elements from the schema. You can "select"
+#       a subset of elements to return. This can make your API calls much more efficient. Not
+#       clear yet which fields are allowed here. 
 #   @param verbose [Boolean] Print request headers to stdout. Default: false
 
 # @!macro cursor_params
@@ -176,6 +180,10 @@ module Serrano
   #
   #      # sample
   #      Serrano.works(sample: 2)
+  #  
+  #      # select - pass an array or a comma separated string
+  #      Serrano.works(query: "ecology", select: "DOI,title", limit: 30)
+  #      Serrano.works(query: "ecology", select: ["DOI","title"], limit: 30)
   #
   #      # cursor for deep paging
   #      Serrano.works(query: "widget", cursor: "*", limit: 100, cursor_max: 1000)
@@ -198,10 +206,11 @@ module Serrano
   #      res['message']['items'].collect { |x| x['container-title'] }
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
+    select: nil, options: nil, verbose: false, cursor: nil, 
+    cursor_max: 5000, **args)
 
     RequestCursor.new('works', ids, query, filter, offset,
-      limit, sample, sort, order, facet, nil, nil, options,
+      limit, sample, sort, order, facet, select, nil, nil, options,
       verbose, cursor, cursor_max, args).perform
   end
 
@@ -250,12 +259,12 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false,
+    select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('members', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options,
-      verbose, cursor, cursor_max, args).perform
+      limit, sample, sort, order, facet, select, works, nil, 
+      options, verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -294,12 +303,12 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['title'] }
   def self.prefixes(ids:, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false,
+    select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('prefixes', ids, nil, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options,
-      verbose, cursor, cursor_max, args).perform
+      limit, sample, sort, order, facet, select, works, nil, 
+      options, verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -343,11 +352,11 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['author'][0]['family'] }
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false,
+    select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('funders', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options,
+      limit, sample, sort, order, facet, select, works, nil, options,
       verbose, cursor, cursor_max, args).perform
   end
 
@@ -392,11 +401,11 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    works: false, options: nil, verbose: false,
+    select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('journals', ids, query, filter, offset,
-      limit, sample, sort, order, facet, works, nil, options,
+      limit, sample, sort, order, facet, select, works, nil, options,
       verbose, cursor, cursor_max, args).perform
   end
 
@@ -431,7 +440,7 @@ module Serrano
     options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('types', ids, nil, nil, offset,
-      limit, nil, nil, nil, nil, works, nil, options,
+      limit, nil, nil, nil, nil, select, works, nil, options,
       verbose, cursor, cursor_max, args).perform
   end
 
@@ -453,7 +462,7 @@ module Serrano
     facet: nil, options: nil, verbose: false)
 
     Request.new('licenses', nil, query, nil, offset,
-      limit, sample, sort, order, facet, nil, nil, options, verbose).perform
+      limit, sample, sort, order, facet, nil, nil, nil, options, verbose).perform
   end
 
   ##

@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/members/98/works?select=DOI,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      X-User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '2328'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 07 Apr 2018 23:17:26 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":198878,"items":[{"DOI":"10.1002\/cfg.114","title":["Meeting
+        Highlights: Joint Cold Spring Harbor Laboratory and Wellcome Trust Conference
+        \u2013 Genome Informatics"]},{"DOI":"10.1002\/cfg.126","title":["In This Issue"]},{"DOI":"10.1002\/cfg.127","title":["Meeting
+        Highlights:15thInternational Mouse Genome Conference"]},{"DOI":"10.1002\/cfg.60","title":["Current
+        Awareness on Comparative and Functional Genomics"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<241::aid-yea28>3.0.co;2-t","title":["Life
+        Will Never Be the Same"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<169::aid-yea33>3.0.co;2-u","title":["Editorial"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<235::aid-yea36>3.0.co;2-x","title":["Functional
+        Genomics at the Arabidopsis Meeting"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<244::aid-yea38>3.0.co;2-p","title":["UK
+        CropNet"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<255::aid-yea9>3.0.co;2-7","title":["Current
+        Awareness on Comparative and Functional Genomics"]},{"DOI":"10.1002\/1097-0061(20000630)17:2<79::aid-yea21>3.0.co;2-x","title":["In
+        This Issue"]},{"DOI":"10.1002\/cfg.122","title":["Conference Calendar"]},{"DOI":"10.1002\/cfg.125","title":["Upstream
+        \u2013 News in Genomics"]},{"DOI":"10.1002\/cfg.80","title":["IBC \u2013 Proteomics,
+        1\u20132 March 2000, Basel Hilton, Switzerland"]},{"DOI":"10.1002\/cfg.84","title":["In
+        This Issue"]},{"DOI":"10.1002\/cfg.83","title":["Interview with Duncan Campbell:
+        After the Draft Sequence, What Next for the Human Genome Mapping Project Resource
+        Centre?"]},{"DOI":"10.1002\/cfg.57","title":["Current Awareness on Comparative
+        and Functional Genomics"]},{"DOI":"10.1002\/cfg.59","title":["Current Awareness
+        on Comparative and Functional Genomics"]},{"DOI":"10.1002\/cfg.100","title":["Mapping
+        Protein-Protein Interactions with Combinatorial Peptides"]},{"DOI":"10.1002\/cfg.103","title":["A
+        Special Section Including Selected Reviews From the ESF \u2018Integrated Approaches
+        for Functional Genomics\u2019 Programme Workshop \u2018Proteomics: Focus on
+        Protein Interactions\u2019"]},{"DOI":"10.1002\/cfg.107","title":["Meeting
+        Review: The Bioinformatics Open Source Conference 2001 (BOSC 2001)"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: 
+  recorded_at: Sat, 07 Apr 2018 23:17:26 GMT
+recorded_with: VCR 4.0.0

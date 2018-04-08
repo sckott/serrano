@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/funders/10.13039/100000001/works?select=DOI,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      X-User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '2808'
+      Server:
+      - http-kit
+      Date:
+      - Sat, 07 Apr 2018 23:13:41 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":148750,"items":[{"DOI":"10.1118\/1.1427308","title":["Accelerator-based
+        neutron brachytherapy"]},{"DOI":"10.1002\/cfg.172","title":["Upstream \u2013
+        News in Genomics"]},{"DOI":"10.1103\/physrevb.91.020101","title":["Prediction
+        of a stable post-post-perovskite structure from first principles"]},{"DOI":"10.1016\/j.ica.2015.11.010","title":["Metal-organodiphosphonate
+        chemistry: Hydrothermal syntheses and structures of Ca(II) coordination polymers
+        with xylyldiphosphonate ligands"]},{"DOI":"10.1016\/j.jcp.2015.03.033","title":["Semi-implicit
+        integration factor methods on sparse grids for high-dimensional systems"]},{"DOI":"10.1016\/j.nimb.2017.05.052","title":["PIGE
+        as a screening tool for Per- and polyfluorinated substances in papers and
+        textiles"]},{"DOI":"10.1021\/jp500617n","title":["Vibrational Spectroscopy
+        of Co+(CH4)n and Ni+(CH4)n (n = 1\u20134)"]},{"DOI":"10.1103\/physrevlett.115.153201","title":["Geometric
+        Phase Appears in the Ultracold Hydrogen Exchange Reaction"]},{"DOI":"10.1016\/j.ceramint.2014.08.076","title":["Nanostructured
+        iridium oxide-hematite magnetic ceramic semiconductors"]},{"DOI":"10.1063\/1.3573801","title":["Effect
+        of Mn substituents on the domain and local structures of Na1\/2Bi1\/2TiO3\u2013BaTiO3
+        single crystals near a morphotropic phase boundary"]},{"DOI":"10.1103\/physreva.91.012708","title":["Ultracold
+        chemistry with alkali-metal\u2013rare-earth molecules"]},{"DOI":"10.1039\/c5cp00296f","title":["Electronic
+        state dependence of heterogeneous electron transfer: injection from the S1
+        and S2 state of phlorin into TiO2"]},{"DOI":"10.1063\/1.3559895","title":["Effect
+        of nanoscale surface roughness on transverse energy spread from GaAs photocathodes"]},{"DOI":"10.1039\/c5cp01757b","title":["Vibrational
+        spectroscopy and theory of Fe2+(CH4)n (n = 1\u20133)"]},{"DOI":"10.1016\/j.dsr2.2015.11.001","title":["Projected
+        future biophysical states of the Bering Sea"]},{"DOI":"10.1073\/pnas.1511878112","title":["Burkholderiabacteria
+        infectiously induce the proto-farming symbiosis ofDictyosteliumamoebae and
+        food bacteria"]},{"DOI":"10.1007\/s10980-015-0282-5","title":["Toward accounting
+        for ecoclimate teleconnections: intra- and inter-continental consequences
+        of altered energy balance after vegetation change"]},{"DOI":"10.1364\/josab.35.000417","title":["Coupling
+        coefficient in antiguided coupling: magnitude and sign control"]},{"DOI":"10.1364\/josab.35.000436","title":["Cross-phase-modulation-induced
+        temporal reflection and waveguiding of optical pulses"]},{"DOI":"10.1364\/ao.57.000794","title":["Alignment
+        of sensor arrays in optical instruments using a geometric approach"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: 
+  recorded_at: Sat, 07 Apr 2018 23:13:41 GMT
+recorded_with: VCR 4.0.0

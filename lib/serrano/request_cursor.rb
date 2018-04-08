@@ -26,6 +26,7 @@ module Serrano
     attr_accessor :sort
     attr_accessor :order
     attr_accessor :facet
+    attr_accessor :select
     attr_accessor :works
     attr_accessor :agency
     attr_accessor :options
@@ -35,8 +36,9 @@ module Serrano
     attr_accessor :args
 
     def initialize(endpt, id, query, filter, offset,
-      limit, sample, sort, order, facet, works, agency,
-      options, verbose, cursor, cursor_max, args)
+      limit, sample, sort, order, facet, select, 
+      works, agency, options, verbose, cursor, 
+      cursor_max, args)
 
       self.endpt = endpt
       self.id = id
@@ -48,6 +50,7 @@ module Serrano
       self.sort = sort
       self.order = order
       self.facet = facet
+      self.select = select
       self.works = works
       self.agency = agency
       self.options = options
@@ -60,6 +63,7 @@ module Serrano
     def perform
       filt = filter_handler(self.filter)
       fieldqueries = field_query_handler(self.args)
+      self.select = self.select.join(",") if self.select && self.select.class == Array
 
       if self.cursor_max.class != nil
         if !self.cursor_max.kind_of?(Integer)
@@ -69,7 +73,8 @@ module Serrano
 
       arguments = { query: self.query, filter: filt, offset: self.offset,
               rows: self.limit, sample: self.sample, sort: self.sort,
-              order: self.order, facet: self.facet, cursor: self.cursor }.tostrings
+              order: self.order, facet: self.facet, select: self.select, 
+              cursor: self.cursor }.tostrings
       arguments = arguments.merge(fieldqueries)
       opts = arguments.delete_if { |k, v| v.nil? }
 

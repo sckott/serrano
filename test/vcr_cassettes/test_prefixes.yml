@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       X-User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.14.0 Serrano/v0.3.6.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,7 +33,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Tue, 04 Apr 2017 23:20:19 GMT
+      - Sun, 08 Apr 2018 00:36:51 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -45,5 +45,5 @@ http_interactions:
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
         BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
     http_version: 
-  recorded_at: Tue, 04 Apr 2017 23:20:19 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sun, 08 Apr 2018 00:36:51 GMT
+recorded_with: VCR 4.0.0
