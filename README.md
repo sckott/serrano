@@ -84,9 +84,19 @@ This will also be the way to set up other user options, as needed down the road.
 
 ```ruby
 Serrano.configuration do |config|
-  config.base_url = "http://api.crossref.org"
+  config.base_url = "https://api.crossref.org"
 end
 ```
+
+We recommend you set your `mailto` email here so you can get in the "polite pool" which gives you faster rate limits:
+
+```ruby
+Serrano.configuration do |config|
+  config.mailto = "jane@doe.org"
+end
+```
+
+Or use an env var with name `CROSSREF_EMAIL`
 
 ## Examples
 
