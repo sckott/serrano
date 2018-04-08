@@ -60,10 +60,19 @@ require 'rexml/xpath'
 #     - oauth [Hash] A hash with OAuth details
 
 # @!macro field_queries
-#   @param [Hash<Object>] args Field queries, as named parameters.
-#       See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries
+#   @param [Hash<Object>] args Field queries, as named parameters. See 
+#       https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries
 #       Field query parameters mut be named, and must start with `query_`. Any dashes or
-#       periods should be replaced with underscores.
+#       periods should be replaced with underscores. The options include:
+#       - query_title: Query title and subtitle
+#       - query_container_title: Query container-title aka. publication name
+#       - query_author: Query author given and family names
+#       - query_editor: Query editor given and family names
+#       - query_chair: Query chair given and family names
+#       - query_translator: Query translator given and family names
+#       - query_contributor: Query author, editor, chair and translator given and family names
+#       - query_bibliographic: Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years
+#       - query_affiliation: Query contributor affiliations
 
 ##
 # Serrano - The top level module for using methods
@@ -436,6 +445,10 @@ module Serrano
   # @!macro field_queries
   # @param ids [Array] DOIs (digital object identifier) or other identifiers
   # @param works [Boolean] If true, works returned as well. Default: false
+  # @param select [String/Array(String)] Crossref metadata records can be
+  #     quite large. Sometimes you just want a few elements from the schema. You can "select"
+  #     a subset of elements to return. This can make your API calls much more efficient. Not
+  #     clear yet which fields are allowed here. 
   # @return [Array] An array of hashes
   #
   # @example

@@ -1,3 +1,3 @@
 module Serrano
-  VERSION = "0.3.6.4"
+  VERSION = "0.3.9.1"
 end
