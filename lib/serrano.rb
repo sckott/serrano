@@ -204,6 +204,9 @@ module Serrano
   #      ## query.container-title
   #      res = Serrano.works(query: "ecology", query_container_title: 'Ecology')
   #      res['message']['items'].collect { |x| x['container-title'] }
+  #
+  #      # select certain fields
+  #      Serrano.works(select: ['DOI', 'title'], limit: 3)
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, options: nil, verbose: false, cursor: nil, 
@@ -257,6 +260,9 @@ module Serrano
   #      ## query.title
   #      res = Serrano.members(ids: 221, works: true, query_container_title: 'Advances')
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
+  #
+  #      # select certain fields
+  #      Serrano.members(ids: 340, works: true, select: ['DOI', 'title'], limit: 3)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
@@ -301,6 +307,9 @@ module Serrano
   #      ## query.title
   #      res = Serrano.prefixes(ids: "10.1016", works: true, query_title: 'cell biology')
   #      res[0]['message']['items'].collect { |x| x['title'] }
+  #
+  #      # select certain fields
+  #      Serrano.prefixes(ids: "10.1016", works: true, select: ['DOI', 'title'], limit: 3) 
   def self.prefixes(ids:, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
@@ -350,6 +359,9 @@ module Serrano
   #      ## query.title
   #      res = Serrano.funders(ids: "10.13039/100000001", works: true, query_author: 'Simon')
   #      res[0]['message']['items'].collect { |x| x['author'][0]['family'] }
+  #
+  #      # select certain fields
+  #      Serrano.funders(ids: "10.13039/100000001", works: true, select: ['DOI', 'title'], limit: 3) 
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
@@ -399,6 +411,9 @@ module Serrano
   #      ## query.title
   #      res = Serrano.journals(ids: "2167-8359", works: true, query_container_title: 'Advances')
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
+  #
+  #      # select certain fields
+  #      Serrano.journals(ids: "2167-8359", works: true, select: ['DOI', 'title'], limit: 3) 
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
@@ -436,7 +451,10 @@ module Serrano
   #      ## query.title
   #      res = Serrano.types(ids: "journal", works: true, query_container_title: 'Advances')
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
-  def self.types(ids: nil, offset: nil, limit: nil, works: false,
+  #
+  #      # select certain fields
+  #      Serrano.types(ids: "journal", works: true, select: ['DOI', 'title'], limit: 3) 
+  def self.types(ids: nil, offset: nil, limit: nil, select: nil, works: false,
     options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('types', ids, nil, nil, offset,
@@ -502,7 +520,7 @@ module Serrano
   def self.random_dois(sample: 10, options: nil, verbose: false)
 
     tmp = Request.new('works', nil, nil, nil, nil,
-      nil, sample, nil, nil, nil, false, nil, options, verbose).perform
+      nil, sample, nil, nil, nil, nil, false, nil, options, verbose).perform
     tmp['message']['items'].collect { |x| x['DOI'] }
   end
 

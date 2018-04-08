@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/types/journal/works?select=DOI,title
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.3 (mailto:myrmecocystus@gmail.com)
+      X-User-Agent:
+      - Faraday/v0.14.0 Serrano/v0.3.6.3 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Vary:
+      - Accept
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Content-Length:
+      - '1765'
+      Server:
+      - http-kit
+      Date:
+      - Sun, 08 Apr 2018 17:02:48 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":25696,"items":[{"DOI":"10.22550\/rep","title":["Revista
+        Espa\u00f1ola de Pedagog\u00eda"]},{"DOI":"10.18590\/issn.2379-9536","title":["Marshall
+        Journal of Medicine"]},{"DOI":"10.21134\/rpcna","title":["Revista de Psicolog\u00eda
+        Cl\u00ednica con Ni\u00f1os y Adolescentes"]},{"DOI":"10.15862\/nv","title":["On-line
+        Journal \"Naukovedenie\""]},{"DOI":"10.26634\/jmgt","title":["i-manager\u2019s
+        Journal on Management"]},{"DOI":"10.13187\/issn.2500-3712","title":["Propaganda
+        in the World and Local Conflicts"]},{"DOI":"10.29362\/ist20veka","title":["Istorija
+        20. veka"]},{"DOI":"10.26634\/jfet","title":["i-manager''s Journal on Future
+        Engineering and Technology"]},{"DOI":"10.22403\/uqroomx\/typ","title":["Teor\u00eda
+        y Praxis"]},{"DOI":"10.1007\/s00268-003-7042-4","title":["World Journal of
+        Surgery"]},{"DOI":"10.1007\/s00268-003-7065-x","title":["World Journal of
+        Surgery"]},{"DOI":"10.1007\/s00464-002-4257-7","title":["Surgical Endoscopy"]},{"DOI":"10.1007\/s00464-002-4514-9","title":["Surgical
+        Endoscopy"]},{"DOI":"10.12733\/issn.1548-7741","title":["Journal of Information
+        and Computational Science"]},{"DOI":"10.4000\/signata","title":["Signata"]},{"DOI":"10.2147\/oajc","title":["Open
+        Access Journal of Contraception"]},{"DOI":"10.17223\/20764103","title":["Sistematicheskie
+        zametki po materialam Gerbariya im. P.N. Krylova Tomskogo gosudarstvennogo
+        universiteta"]},{"DOI":"10.1126\/scitranslmed","title":["Science Translational
+        Medicine"]},{"DOI":"10.4000\/jsa","title":["Journal de la soci\u00e9t\u00e9
+        des am\u00e9ricanistes"]},{"DOI":"10.4000\/appareil","title":["Appareil"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: 
+  recorded_at: Sun, 08 Apr 2018 17:02:48 GMT
+recorded_with: VCR 4.0.0
