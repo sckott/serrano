@@ -1,0 +1,283 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://doi.org/10.1007%2F12080.1874-1746
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept:
+      - application/x-bibtex
+      X-User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept
+      Location:
+      - https://data.crossref.org/10.1007%2F12080.1874-1746
+      Expires:
+      - Wed, 09 May 2018 19:55:31 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '187'
+      Date:
+      - Wed, 09 May 2018 19:33:58 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        <html><head><title>Handle Redirect</title></head>
+        <body><a href="https://data.crossref.org/10.1007%2F12080.1874-1746">https://data.crossref.org/10.1007%2F12080.1874-1746</a></body></html>
+    http_version: 
+  recorded_at: Wed, 09 May 2018 19:33:59 GMT
+- request:
+    method: get
+    uri: https://data.crossref.org/10.1007%2F12080.1874-1746
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept:
+      - application/x-bibtex
+      X-User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Expose-Headers:
+      - Link
+      Link:
+      - <http://dx.doi.org/10.1007/12080.1874-1746>; rel="canonical"
+      Content-Type:
+      - application/x-bibtex
+      Content-Length:
+      - '159'
+      Server:
+      - http-kit
+      Date:
+      - Wed, 09 May 2018 19:33:59 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "@misc{1,\n\tdoi = {10.1007/12080.1874-1746},\n\turl = {https://doi.org/10.1007%2F12080.1874-1746},\n\tpublisher
+        = {Springer Nature},\n\ttitle = {Theoretical Ecology}\n}"
+    http_version: 
+  recorded_at: Wed, 09 May 2018 19:33:59 GMT
+- request:
+    method: get
+    uri: https://doi.org/10.1007%2F10452.1573-5125
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept:
+      - application/x-bibtex
+      X-User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept
+      Location:
+      - https://data.crossref.org/10.1007%2F10452.1573-5125
+      Expires:
+      - Wed, 09 May 2018 19:55:31 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '187'
+      Date:
+      - Wed, 09 May 2018 19:33:59 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        <html><head><title>Handle Redirect</title></head>
+        <body><a href="https://data.crossref.org/10.1007%2F10452.1573-5125">https://data.crossref.org/10.1007%2F10452.1573-5125</a></body></html>
+    http_version: 
+  recorded_at: Wed, 09 May 2018 19:33:59 GMT
+- request:
+    method: get
+    uri: https://data.crossref.org/10.1007%2F10452.1573-5125
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept:
+      - application/x-bibtex
+      X-User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Expose-Headers:
+      - Link
+      Link:
+      - <http://dx.doi.org/10.1007/10452.1573-5125>; rel="canonical"
+      Content-Type:
+      - application/x-bibtex
+      Content-Length:
+      - '155'
+      Server:
+      - http-kit
+      Date:
+      - Wed, 09 May 2018 19:34:00 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "@misc{1,\n\tdoi = {10.1007/10452.1573-5125},\n\turl = {https://doi.org/10.1007%2F10452.1573-5125},\n\tpublisher
+        = {Springer Nature},\n\ttitle = {Aquatic Ecology}\n}"
+    http_version: 
+  recorded_at: Wed, 09 May 2018 19:34:00 GMT
+- request:
+    method: get
+    uri: https://doi.org/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept:
+      - application/x-bibtex
+      X-User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept
+      Location:
+      - https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v
+      Expires:
+      - Wed, 09 May 2018 19:55:31 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '293'
+      Date:
+      - Wed, 09 May 2018 19:34:00 GMT
+    body:
+      encoding: UTF-8
+      string: |-
+        <html><head><title>Handle Redirect</title></head>
+        <body><a href="https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v">https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v</a></body></html>
+    http_version: 
+  recorded_at: Wed, 09 May 2018 19:34:00 GMT
+- request:
+    method: get
+    uri: https://data.crossref.org/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept:
+      - application/x-bibtex
+      X-User-Agent:
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Expose-Headers:
+      - Link
+      Link:
+      - <http://dx.doi.org/10.1002/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v>;
+        rel="canonical", <https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V>;
+        version="vor"; rel="item", <http://doi.wiley.com/10.1002/tdm_license_1.1>;
+        version="tdm"; rel="license"
+      Content-Type:
+      - application/x-bibtex
+      Content-Length:
+      - '681'
+      Server:
+      - http-kit
+      Date:
+      - Wed, 09 May 2018 19:34:00 GMT
+      X-Rate-Limit-Limit:
+      - '50'
+      X-Rate-Limit-Interval:
+      - 1s
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "@article{Sloviter_2001,\n\tdoi = {10.1002/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v},\n\turl
+        = {https://doi.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v},\n\tyear
+        = 2001,\n\tpublisher = {Wiley-Blackwell},\n\tvolume = {430},\n\tnumber = {3},\n\tpages
+        = {283--305},\n\tauthor = {Robert S. Sloviter and Leila Ali-Akbarian and Kathryn
+        D. Horvath and Kent A. Menkens},\n\ttitle = {Substance P receptor expression
+        by inhibitory interneurons of the rat hippocampus: Enhanced detection using
+        improved immunocytochemical methods for the preservation and colocalization
+        of {GABA} and other neuronal markers},\n\tjournal = {The Journal of Comparative
+        Neurology}\n}"
+    http_version: 
+  recorded_at: Wed, 09 May 2018 19:34:00 GMT
+recorded_with: VCR 4.0.0

@@ -60,6 +60,11 @@ To get in the polite pool it's a good idea now to include a `mailto` email
 address. See docs for more information. TLDR: set your email in an env var `CROSSREF_EMAIL`.
 
 
+URL Encoding:
+
+We do URL encoding of DOIs for you for all methods except `Serrano.citation_count` which doesn't work if you encode DOIs beforehand. We use `ERB::Util.url_encode` to encode.
+
+
 ## Install
 
 ### Release version

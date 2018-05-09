@@ -2,15 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.crossref.org/works/10.1007/12080.1874-1746
+    uri: https://api.crossref.org/works/10.1007%2F12080.1874-1746
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,7 +33,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:02:53 GMT
+      - Wed, 09 May 2018 19:29:58 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -47,18 +47,18 @@ http_interactions:
         Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
         Modelling","Ecology"]}}'
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:02:53 GMT
+  recorded_at: Wed, 09 May 2018 19:29:58 GMT
 - request:
     method: get
-    uri: https://api.crossref.org/works/10.1007/10452.1573-5125
+    uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -81,7 +81,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:02:54 GMT
+      - Wed, 09 May 2018 19:29:58 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -96,18 +96,18 @@ http_interactions:
         Science","Ecology, Evolution, Behavior and Systematics","General Agricultural
         and Biological Sciences"]}}'
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:02:54 GMT
+  recorded_at: Wed, 09 May 2018 19:29:59 GMT
 - request:
     method: get
-    uri: https://api.crossref.org/works/10.1111/(issn)1442-9993
+    uri: https://api.crossref.org/works/10.1111%2F(issn)1442-9993
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -130,7 +130,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:02:55 GMT
+      - Wed, 09 May 2018 19:29:59 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -143,5 +143,5 @@ http_interactions:
         Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}],"subject":["Ecology","Ecology,
         Evolution, Behavior and Systematics"]}}'
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:02:56 GMT
+  recorded_at: Wed, 09 May 2018 19:29:59 GMT
 recorded_with: VCR 4.0.0

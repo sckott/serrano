@@ -1,3 +1,4 @@
+require "erb"
 require "serrano/version"
 require "serrano/request"
 require "serrano/request_cursor"
@@ -138,6 +139,13 @@ require 'rexml/xpath'
 # limit is 50 requests per second. Look for the headers `X-Rate-Limit-Limit`
 # and `X-Rate-Limit-Interval` in requests to see what the current rate
 # limits are.
+#
+#
+# URL Encoding
+# We do URL encoding of DOIs for you for all methods except `Serrano.citation_count`
+# which doesn't work if you encode DOIs beforehand. We use `ERB::Util.url_encode`
+# to encode.
+
 
 module Serrano
   extend Configuration
@@ -564,7 +572,7 @@ module Serrano
   #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "crossref-xml")
   #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text")
   #
-  #     # return an R bibentry type
+  #     # return a bibentry type
   #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "bibentry")
   #     Serrano.content_negotiation(ids: "10.6084/m9.figshare.97218", format: "bibentry")
   #
@@ -601,6 +609,7 @@ module Serrano
   #     x = Serrano.content_negotiation(ids: dois)
   #     puts x
   def self.content_negotiation(ids:, format: "bibtex", style: 'apa', locale: "en-US")
+    ids = Array(ids).map { |x| ERB::Util.url_encode(x) }
     CNRequest.new(ids, format, style, locale).perform
   end
 

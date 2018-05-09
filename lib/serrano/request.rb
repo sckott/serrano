@@ -1,3 +1,4 @@
+require "erb"
 require "faraday"
 require "multi_json"
 require "serrano/error"
@@ -80,8 +81,11 @@ module Serrano
         res = conn.get self.endpt, opts
         return MultiJson.load(res.body)
       else
+        self.id = Array(self.id)
+        # url encoding
+        self.id = self.id.map { |x| ERB::Util.url_encode(x) }
         coll = []
-        Array(self.id).each do |x|
+        self.id.each do |x|
           if self.works
             endpt = self.endpt + '/' + x.to_s + "/works"
           else

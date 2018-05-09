@@ -1,3 +1,4 @@
+require "erb"
 require "faraday"
 require 'faraday_middleware'
 require "multi_json"
@@ -102,8 +103,11 @@ module Serrano
         res = self._redo_req(js, opts, cu, max_avail)
         return res
       else
+        self.id = Array(self.id)
+        # url encoding
+        self.id = self.id.map { |x| ERB::Util.url_encode(x) }
         coll = []
-        Array(self.id).each do |x|
+        self.id.each do |x|
           if self.works
             $endpt2 = self.endpt + '/' + x.to_s + "/works"
           else
