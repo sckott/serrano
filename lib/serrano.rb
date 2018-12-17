@@ -489,9 +489,28 @@ module Serrano
   ##
   # Search the licenses route
   #
-  # @!macro serrano_params
   # @!macro serrano_options
   # @param query [String] A query string
+  # @param offset [Fixnum] Number of record to start at, any non-negative integer up to 10,000
+  # @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois.
+  #       Default: 20. Max: 1000
+  # @param sample [Fixnum] Number of random results to return. when you use the sample parameter,
+  #       the limit and offset parameters are ignored. This parameter only used when works requested.
+  #       Max: 100.
+  # @param sort [String] Field to sort on, one of score, relevance,
+  #       updated (date of most recent change to metadata - currently the same as deposited),
+  #       deposited (time of most recent deposit), indexed (time of most recent index),
+  #       published (publication date), published-print (print publication date),
+  #       published-online (online publication date), issued (issued date (earliest known publication date)),
+  #       is-referenced-by-count (number of times this DOI is referenced by other Crossref DOIs), or
+  #       references-count (number of references included in the references section of the document
+  #       identified by this DOI). Note: If the API call includes a query, then the sort
+  #       order will be by the relevance score. If no query is included, then the sort order
+  #       will be by DOI update date.
+  # @param order [String] Sort order, one of 'asc' or 'desc'
+  # @param facet [Boolean/String] Include facet results OR a query (e.g., `license:*`) to facet by
+  #       license. Default: false
+  # @param verbose [Boolean] Print request headers to stdout. Default: false
   # @return [Array] An array of hashes
   #
   # @example
