@@ -1,11 +1,11 @@
-require "erb"
-require "serrano/version"
-require "serrano/request"
-require "serrano/request_cursor"
-require "serrano/filterhandler"
-require "serrano/cnrequest"
-require "serrano/filters"
-require "serrano/styles"
+require 'erb'
+require 'serrano/version'
+require 'serrano/request'
+require 'serrano/request_cursor'
+require 'serrano/filterhandler'
+require 'serrano/cnrequest'
+require 'serrano/filters'
+require 'serrano/styles'
 
 require 'rexml/document'
 require 'rexml/xpath'
@@ -20,10 +20,10 @@ require 'rexml/xpath'
 #   @param sort [String] Field to sort on, one of score, relevance,
 #       updated (date of most recent change to metadata - currently the same as deposited),
 #       deposited (time of most recent deposit), indexed (time of most recent index),
-#       published (publication date), published-print (print publication date), 
-#       published-online (online publication date), issued (issued date (earliest known publication date)), 
-#       is-referenced-by-count (number of times this DOI is referenced by other Crossref DOIs), or 
-#       references-count (number of references included in the references section of the document 
+#       published (publication date), published-print (print publication date),
+#       published-online (online publication date), issued (issued date (earliest known publication date)),
+#       is-referenced-by-count (number of times this DOI is referenced by other Crossref DOIs), or
+#       references-count (number of references included in the references section of the document
 #       identified by this DOI). Note: If the API call includes a query, then the sort
 #       order will be by the relevance score. If no query is included, then the sort order
 #       will be by DOI update date.
@@ -33,7 +33,7 @@ require 'rexml/xpath'
 #   @param select [String/Array(String)] Crossref metadata records can be
 #       quite large. Sometimes you just want a few elements from the schema. You can "select"
 #       a subset of elements to return. This can make your API calls much more efficient. Not
-#       clear yet which fields are allowed here. 
+#       clear yet which fields are allowed here.
 #   @param verbose [Boolean] Print request headers to stdout. Default: false
 
 # @!macro cursor_params
@@ -61,7 +61,7 @@ require 'rexml/xpath'
 #     - oauth [Hash] A hash with OAuth details
 
 # @!macro field_queries
-#   @param [Hash<Object>] args Field queries, as named parameters. See 
+#   @param [Hash<Object>] args Field queries, as named parameters. See
 #       https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries
 #       Field query parameters mut be named, and must start with `query_`. Any dashes or
 #       periods should be replaced with underscores. The options include:
@@ -120,13 +120,13 @@ require 'rexml/xpath'
 # information, then they will send you to a separate pool of machines,
 # with better control the performance of these machines because they can
 # block abusive users.
-# 
+#
 # We have been using `https` in `serrano` for a while now, so that's good
 # to go. To get into the Polite Pool, also set your `mailto` email address
 # with `Serrano.configuration` (example below), or set as an environment
 # variable with the name `CROSSREF_EMAIL` and your mailto will be set
-# for each request automatically. 
-# 
+# for each request automatically.
+#
 # require 'serrano'
 # Serrano.configuration do |config|
 #   config.mailto = "foo@bar.com"
@@ -146,14 +146,13 @@ require 'rexml/xpath'
 # which doesn't work if you encode DOIs beforehand. We use `ERB::Util.url_encode`
 # to encode.
 
-
 module Serrano
   extend Configuration
 
   define_setting :access_token
   define_setting :access_secret
-  define_setting :mailto, ENV["CROSSREF_EMAIL"]
-  define_setting :base_url, "https://api.crossref.org/"
+  define_setting :mailto, ENV['CROSSREF_EMAIL']
+  define_setting :base_url, 'https://api.crossref.org/'
 
   ##
   # Search the works route
@@ -201,7 +200,7 @@ module Serrano
   #
   #      # sample
   #      Serrano.works(sample: 2)
-  #  
+  #
   #      # select - pass an array or a comma separated string
   #      Serrano.works(query: "ecology", select: "DOI,title", limit: 30)
   #      Serrano.works(query: "ecology", select: ["DOI","title"], limit: 30)
@@ -229,13 +228,13 @@ module Serrano
   #      # select certain fields
   #      Serrano.works(select: ['DOI', 'title'], limit: 3)
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    select: nil, options: nil, verbose: false, cursor: nil, 
-    cursor_max: 5000, **args)
+                 limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+                 select: nil, options: nil, verbose: false, cursor: nil,
+                 cursor_max: 5000, **args)
 
     RequestCursor.new('works', ids, query, filter, offset,
-      limit, sample, sort, order, facet, select, nil, nil, options,
-      verbose, cursor, cursor_max, args).perform
+                      limit, sample, sort, order, facet, select, nil, nil, options,
+                      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -285,13 +284,13 @@ module Serrano
   #      # select certain fields
   #      Serrano.members(ids: 340, works: true, select: ['DOI', 'title'], limit: 3)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    select: nil, works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000, **args)
+                   limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+                   select: nil, works: false, options: nil, verbose: false,
+                   cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('members', ids, query, filter, offset,
-      limit, sample, sort, order, facet, select, works, nil, 
-      options, verbose, cursor, cursor_max, args).perform
+                      limit, sample, sort, order, facet, select, works, nil,
+                      options, verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -330,15 +329,15 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['title'] }
   #
   #      # select certain fields
-  #      Serrano.prefixes(ids: "10.1016", works: true, select: ['DOI', 'title'], limit: 3) 
+  #      Serrano.prefixes(ids: "10.1016", works: true, select: ['DOI', 'title'], limit: 3)
   def self.prefixes(ids:, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    select: nil, works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000, **args)
+                    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+                    select: nil, works: false, options: nil, verbose: false,
+                    cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('prefixes', ids, nil, filter, offset,
-      limit, sample, sort, order, facet, select, works, nil, 
-      options, verbose, cursor, cursor_max, args).perform
+                      limit, sample, sort, order, facet, select, works, nil,
+                      options, verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -382,15 +381,15 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['author'][0]['family'] }
   #
   #      # select certain fields
-  #      Serrano.funders(ids: "10.13039/100000001", works: true, select: ['DOI', 'title'], limit: 3) 
+  #      Serrano.funders(ids: "10.13039/100000001", works: true, select: ['DOI', 'title'], limit: 3)
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    select: nil, works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000, **args)
+                   limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+                   select: nil, works: false, options: nil, verbose: false,
+                   cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('funders', ids, query, filter, offset,
-      limit, sample, sort, order, facet, select, works, nil, options,
-      verbose, cursor, cursor_max, args).perform
+                      limit, sample, sort, order, facet, select, works, nil, options,
+                      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -434,15 +433,15 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
   #
   #      # select certain fields
-  #      Serrano.journals(ids: "2167-8359", works: true, select: ['DOI', 'title'], limit: 3) 
+  #      Serrano.journals(ids: "2167-8359", works: true, select: ['DOI', 'title'], limit: 3)
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-    select: nil, works: false, options: nil, verbose: false,
-    cursor: nil, cursor_max: 5000, **args)
+                    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+                    select: nil, works: false, options: nil, verbose: false,
+                    cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('journals', ids, query, filter, offset,
-      limit, sample, sort, order, facet, select, works, nil, options,
-      verbose, cursor, cursor_max, args).perform
+                      limit, sample, sort, order, facet, select, works, nil, options,
+                      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -456,7 +455,7 @@ module Serrano
   # @param select [String/Array(String)] Crossref metadata records can be
   #     quite large. Sometimes you just want a few elements from the schema. You can "select"
   #     a subset of elements to return. This can make your API calls much more efficient. Not
-  #     clear yet which fields are allowed here. 
+  #     clear yet which fields are allowed here.
   # @return [Array] An array of hashes
   #
   # @example
@@ -478,13 +477,13 @@ module Serrano
   #      res[0]['message']['items'].collect { |x| x['container-title'] }
   #
   #      # select certain fields
-  #      Serrano.types(ids: "journal", works: true, select: ['DOI', 'title'], limit: 3) 
+  #      Serrano.types(ids: "journal", works: true, select: ['DOI', 'title'], limit: 3)
   def self.types(ids: nil, offset: nil, limit: nil, select: nil, works: false,
-    options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
+                 options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
 
     RequestCursor.new('types', ids, nil, nil, offset,
-      limit, nil, nil, nil, nil, select, works, nil, options,
-      verbose, cursor, cursor_max, args).perform
+                      limit, nil, nil, nil, nil, select, works, nil, options,
+                      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -501,11 +500,11 @@ module Serrano
   #      Serrano.licenses()
   #      Serrano.licenses(limit: 3)
   def self.licenses(query: nil, offset: nil,
-    limit: nil, sample: nil, sort: nil, order: nil,
-    facet: nil, options: nil, verbose: false)
+                    limit: nil, sample: nil, sort: nil, order: nil,
+                    facet: nil, options: nil, verbose: false)
 
     Request.new('licenses', nil, query, nil, offset,
-      limit, sample, sort, order, facet, nil, nil, nil, options, verbose).perform
+                limit, sample, sort, order, facet, nil, nil, nil, options, verbose).perform
   end
 
   ##
@@ -520,9 +519,8 @@ module Serrano
   #      Serrano.registration_agency(ids: '10.1371/journal.pone.0033693')
   #      Serrano.registration_agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
   def self.registration_agency(ids:, options: nil, verbose: false)
-
     Request.new('works', ids, nil, nil, nil,
-      nil, nil, nil, nil, nil, false, true, options, verbose).perform
+                nil, nil, nil, nil, nil, false, true, options, verbose).perform
   end
 
   ##
@@ -543,9 +541,8 @@ module Serrano
   #      Serrano.random_dois(sample: 10)
   #      Serrano.random_dois(sample: 100)
   def self.random_dois(sample: 10, options: nil, verbose: false)
-
     tmp = Request.new('works', nil, nil, nil, nil,
-      nil, sample, nil, nil, nil, nil, false, nil, options, verbose).perform
+                      nil, sample, nil, nil, nil, nil, false, nil, options, verbose).perform
     tmp['message']['items'].collect { |x| x['DOI'] }
   end
 
@@ -585,30 +582,31 @@ module Serrano
   #     Serrano.content_negotiation(ids: "10.1126/science.169.3946.635", format: "text", style: "oikos")
   #
   #     # example with many DOIs
-  #     dois = cr_r(2)
-  #     Serrano.content_negotiation(dois, format: "text", style: "apa")
+  #     dois = Serrano.random_dois(sample: 2)
+  #     Serrano.content_negotiation(ids: dois, format: "text", style: "apa")
   #
   #     # Using DataCite DOIs
-  #     ## some formats don't work
-  #     # Serrano.content_negotiation(ids: "10.5284/1011335", format: "text")
-  #     # Serrano.content_negotiation(ids: "10.5284/1011335", format: "crossref-xml")
-  #     # Serrano.content_negotiation(ids: "10.5284/1011335", format: "crossref-tdm")
+  #     doi = "10.1126/science.169.3946.635"
+  #     Serrano.content_negotiation(ids: doi, format: "text")
+  #     Serrano.content_negotiation(ids: doi, format: "crossref-xml")
+  #     Serrano.content_negotiation(ids: doi, format: "crossref-tdm")
   #
   #     ## But most do work
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "datacite-xml")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "rdf-xml")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "turtle")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "citeproc-json")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "ris")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "bibtex")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "bibentry")
-  #     Serrano.content_negotiation(ids: "10.5284/1011335", format: "bibtex")
+  #     Serrano.content_negotiation(ids: doi, format: "datacite-xml")
+  #     Serrano.content_negotiation(ids: doi, format: "rdf-xml")
+  #     Serrano.content_negotiation(ids: doi, format: "turtle")
+  #     Serrano.content_negotiation(ids: doi, format: "citeproc-json")
+  #     Serrano.content_negotiation(ids: doi, format: "ris")
+  #     Serrano.content_negotiation(ids: doi, format: "bibtex")
+  #     Serrano.content_negotiation(ids: doi, format: "bibentry")
+  #     Serrano.content_negotiation(ids: doi, format: "bibtex")
   #
   #     # many DOIs
-  #     dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', '10.5167/UZH-38402','10.5167/UZH-41217']
+  #     dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', 
+  #      '10.5167/UZH-38402','10.5167/UZH-41217']
   #     x = Serrano.content_negotiation(ids: dois)
   #     puts x
-  def self.content_negotiation(ids:, format: "bibtex", style: 'apa', locale: "en-US")
+  def self.content_negotiation(ids:, format: 'bibtex', style: 'apa', locale: 'en-US')
     ids = Array(ids).map { |x| ERB::Util.url_encode(x) }
     CNRequest.new(ids, format, style, locale).perform
   end
@@ -628,17 +626,17 @@ module Serrano
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012.01.001")
   #   # DOI not found
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012")
-  def self.citation_count(doi:, url: "http://www.crossref.org/openurl/",
-    key: "cboettig@ropensci.org", options: nil)
+  def self.citation_count(doi:, url: 'http://www.crossref.org/openurl/',
+                          key: 'cboettig@ropensci.org', options: nil)
 
-    args = { id: "doi:" + doi, pid: key, noredirect: true }
-    opts = args.delete_if { |k, v| v.nil? }
-    conn = Faraday.new(:url => url, :request => options)
+    args = { id: 'doi:' + doi, pid: key, noredirect: true }
+    opts = args.delete_if { |_k, v| v.nil? }
+    conn = Faraday.new(url: url, request: options)
     res = conn.get '', opts
     x = res.body
     oc = REXML::Document.new("<doc>#{x}</doc>")
     value = REXML::XPath.first(oc, '//query').attributes['fl_count'].to_i
-    return value
+    value
   end
 
   # Get csl styles
@@ -648,7 +646,6 @@ module Serrano
   # @example
   #   Serrano.csl_styles
   def self.csl_styles
-    get_styles()
+    get_styles
   end
-
 end

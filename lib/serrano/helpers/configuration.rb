@@ -1,6 +1,5 @@
 # taken from: https://viget.com/extend/easy-gem-configuration-variables-with-defaults
 module Configuration
-
   def configuration
     yield self
   end
@@ -22,5 +21,4 @@ module Configuration
       define_method name, &block
     end
   end
-
 end

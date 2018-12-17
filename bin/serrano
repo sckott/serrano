@@ -1,14 +1,14 @@
 #!/usr/bin/env ruby
 
-require "thor"
-require "serrano"
-require "multi_json"
+require 'thor'
+require 'serrano'
+require 'multi_json'
 
 class Sr < Thor
   include Thor::Actions
   # class_option :json, :type => :boolean, :default => false
 
-  desc "works [DOIs]", "Get works by DOIs"
+  desc 'works [DOIs]', 'Get works by DOIs'
   long_desc <<-LONGDESC
     `serrano works` accepts one or more DOIs to search for works
 
@@ -47,17 +47,17 @@ class Sr < Thor
     \x5"http://orcid.org/0000-0003-4087-8021"
     \x5"http://orcid.org/0000-0002-2076-5452"
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :filter, :type => :hash, :default => nil
-  option :limit, :type => :numeric, :default => nil
-  def works(ids=nil)
-    if ids.nil?
-      out = Serrano.works(filter: options[:filter], limit: options[:limit])
-    else
-      out = Serrano.works(ids: ids.split(","), filter: options[:filter])
-    end
+  option :json, type: :boolean, default: false
+  option :filter, type: :hash, default: nil
+  option :limit, type: :numeric, default: nil
+  def works(ids = nil)
+    out = if ids.nil?
+            Serrano.works(filter: options[:filter], limit: options[:limit])
+          else
+            Serrano.works(ids: ids.split(','), filter: options[:filter])
+          end
     if !options[:json]
-      out = out.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
+      out = out.collect { |x| x['message'].select { |k, _v| k[/DOI|type|title/] } }
       out.each do |x|
         puts 'DOI: ' + x['DOI'].to_s
         puts 'type: ' + x['type']
@@ -69,7 +69,7 @@ class Sr < Thor
     end
   end
 
-  desc "members [member IDs]", "Get members by id"
+  desc 'members [member IDs]', 'Get members by id'
   long_desc <<-LONGDESC
     `serrano members` accepts one or more Crossref member IDs
 
@@ -96,26 +96,26 @@ class Sr < Thor
 
     24 7 45 31 22 67 72 17 53 75 0 68 12 16 50 79 40 18 40 195
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :query, :type => :string, :default => nil
-  option :limit, :type => :numeric, :default => nil
-  option :works, :type => :boolean, :default => false
-  def members(ids=nil)
+  option :json, type: :boolean, default: false
+  option :query, type: :string, default: nil
+  option :limit, type: :numeric, default: nil
+  option :works, type: :boolean, default: false
+  def members(ids = nil)
     if ids.nil?
       out = Serrano.members(query: options[:query], limit: options[:limit],
-        works: options[:works])
+                            works: options[:works])
     else
-      out = Serrano.members(ids: ids.split(","), query: options[:query], limit: options[:limit],
-        works: options[:works])
+      out = Serrano.members(ids: ids.split(','), query: options[:query], limit: options[:limit],
+                            works: options[:works])
     end
 
     if !options[:json]
       if !options[:works]
-        if out.class == Hash
-          out = out['message']['items']
-        else
-          out = out.collect { |x| x['message'] }
-        end
+        out = if out.class == Hash
+                out['message']['items']
+              else
+                out.collect { |x| x['message'] }
+              end
 
         # out = out.collect { |x| x['message'].select { |k,v| k[/id|primary-name/] } }
         out.each do |x|
@@ -131,8 +131,7 @@ class Sr < Thor
     end
   end
 
-
-  desc "prefixes [DOI prefixes]", "Search for prefixes by DOI prefix"
+  desc 'prefixes [DOI prefixes]', 'Search for prefixes by DOI prefix'
   long_desc <<-LONGDESC
     `serrano prefixes` accepts one or more Crossref member IDs
 
@@ -162,24 +161,24 @@ class Sr < Thor
     \x5"Co-Action Publishing"
     \x5"Oxford University Press (OUP)"
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :limit, :type => :numeric, :default => nil
-  option :works, :type => :boolean, :default => false
-  def prefixes(ids=nil)
-    if ids.nil?
-      out = Serrano.prefixes(limit: options[:limit], works: options[:works])
-    else
-      out = Serrano.prefixes(ids: ids.split(","), limit: options[:limit],
-        works: options[:works])
-    end
+  option :json, type: :boolean, default: false
+  option :limit, type: :numeric, default: nil
+  option :works, type: :boolean, default: false
+  def prefixes(ids = nil)
+    out = if ids.nil?
+            Serrano.prefixes(limit: options[:limit], works: options[:works])
+          else
+            Serrano.prefixes(ids: ids.split(','), limit: options[:limit],
+                             works: options[:works])
+          end
 
     if !options[:json]
       if !options[:works]
-        if out.class == Hash
-          out = out['message']['items']
-        else
-          out = out.collect { |x| x['message'] }
-        end
+        out = if out.class == Hash
+                out['message']['items']
+              else
+                out.collect { |x| x['message'] }
+              end
 
         out.each do |x|
           puts 'member: ' + x['member']
@@ -195,7 +194,7 @@ class Sr < Thor
     end
   end
 
-  desc "funders [funder IDs]", "Search for funders by DOI prefix"
+  desc 'funders [funder IDs]', 'Search for funders by DOI prefix'
   long_desc <<-LONGDESC
     `serrano funders` accepts one or more Crossref funder IDs
 
@@ -226,26 +225,26 @@ class Sr < Thor
 
     $ serrano funders 10.13039/100000001 --works=true --limit=2
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :query, :type => :string, :default => nil
-  option :limit, :type => :numeric, :default => nil
-  option :works, :type => :boolean, :default => false
-  def funders(ids=nil)
+  option :json, type: :boolean, default: false
+  option :query, type: :string, default: nil
+  option :limit, type: :numeric, default: nil
+  option :works, type: :boolean, default: false
+  def funders(ids = nil)
     if ids.nil?
       out = Serrano.funders(query: options[:query], limit: options[:limit],
-        works: options[:works])
+                            works: options[:works])
     else
-      out = Serrano.funders(ids: ids.split(","), query: options[:query], limit: options[:limit],
-        works: options[:works])
+      out = Serrano.funders(ids: ids.split(','), query: options[:query], limit: options[:limit],
+                            works: options[:works])
     end
 
     if !options[:json]
       if !options[:works]
-        if out.class == Hash
-          out = out['message']['items']
-        else
-          out = out.collect { |x| x['message'] }
-        end
+        out = if out.class == Hash
+                out['message']['items']
+              else
+                out.collect { |x| x['message'] }
+              end
 
         out.each do |x|
           puts 'id: ' + x['id']
@@ -261,8 +260,7 @@ class Sr < Thor
     end
   end
 
-
-  desc "journals [journal ISSNs]", "Search for journals by ISSNs"
+  desc 'journals [journal ISSNs]', 'Search for journals by ISSNs'
   long_desc <<-LONGDESC
     `serrano journals` accepts one or more journal ISSNs
 
@@ -293,26 +291,26 @@ class Sr < Thor
 
     $ serrano journals 2167-8359 --query=ecology --works=true --limit=2
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :query, :type => :string, :default => nil
-  option :limit, :type => :numeric, :default => nil
-  option :works, :type => :boolean, :default => false
-  def journals(ids=nil)
+  option :json, type: :boolean, default: false
+  option :query, type: :string, default: nil
+  option :limit, type: :numeric, default: nil
+  option :works, type: :boolean, default: false
+  def journals(ids = nil)
     if ids.nil?
       out = Serrano.journals(query: options[:query], limit: options[:limit],
-        works: options[:works])
+                             works: options[:works])
     else
-      out = Serrano.journals(ids: ids.split(","), query: options[:query], limit: options[:limit],
-        works: options[:works])
+      out = Serrano.journals(ids: ids.split(','), query: options[:query], limit: options[:limit],
+                             works: options[:works])
     end
 
     if !options[:json]
       if !options[:works]
-        if out.class == Hash
-          out = out['message']['items']
-        else
-          out = out.collect { |x| x['message'] }
-        end
+        out = if out.class == Hash
+                out['message']['items']
+              else
+                out.collect { |x| x['message'] }
+              end
 
         out.each do |x|
           puts 'ISSN: ' + x['ISSN'][0]
@@ -328,7 +326,7 @@ class Sr < Thor
     end
   end
 
-  desc "types [type name]", "Search for types by name"
+  desc 'types [type name]', 'Search for types by name'
   long_desc <<-LONGDESC
     `serrano types` accepts one or more type names
 
@@ -359,20 +357,20 @@ class Sr < Thor
 
     $ serrano types dissertation --works --limit=2
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :works, :type => :boolean, :default => false
-  option :limit, :type => :numeric, :default => nil
+  option :json, type: :boolean, default: false
+  option :works, type: :boolean, default: false
+  option :limit, type: :numeric, default: nil
   def types(*ids)
     out = Serrano.types(ids: ids, limit: options[:limit],
-      works: options[:works])
+                        works: options[:works])
 
     if !options[:json]
       if !options[:works]
-        if out.class == Hash
-          out = out['message']['items']
-        else
-          out = out.collect { |x| x['message'] }
-        end
+        out = if out.class == Hash
+                out['message']['items']
+              else
+                out.collect { |x| x['message'] }
+              end
 
         out.each do |x|
           puts 'id: ' + x['id']
@@ -387,7 +385,7 @@ class Sr < Thor
     end
   end
 
-  desc "licenses", "Search for licenses by name"
+  desc 'licenses', 'Search for licenses by name'
   long_desc <<-LONGDESC
     `serrano licenses` accepts one or more type names
 
@@ -416,8 +414,8 @@ class Sr < Thor
     "National Science Foundation"
     \x5"U.S. Department of Energy"
   LONGDESC
-  option :json, :type => :boolean, :default => false
-  option :query, :type => :string, :default => nil
+  option :json, type: :boolean, default: false
+  option :query, type: :string, default: nil
   def licenses
     out = Serrano.licenses(query: options[:query])
     if !options[:json]
@@ -432,7 +430,7 @@ class Sr < Thor
     end
   end
 
-  desc "contneg", "Content negotiation"
+  desc 'contneg', 'Content negotiation'
   long_desc <<-LONGDESC
     `serrano contneg` accepts a DOI
 
@@ -444,15 +442,15 @@ class Sr < Thor
 
     Murtaugh PA (2014).  In defense of P values . Ecology 95: 611–617.
   LONGDESC
-  option :format, :type => :string, :default => "text"
-  option :style, :type => :string, :default => "apa"
-  option :locale, :type => :string, :default => "en-US"
+  option :format, type: :string, default: 'text'
+  option :style, type: :string, default: 'apa'
+  option :locale, type: :string, default: 'en-US'
   def contneg(ids)
     puts Serrano.content_negotiation(ids: ids, format: options[:format], style:
       options[:style], locale: options[:locale])
   end
 
-  desc "version", "Get serrano version"
+  desc 'version', 'Get serrano version'
   def version
     puts Serrano::VERSION
   end
@@ -460,11 +458,11 @@ class Sr < Thor
   private
 
   def print_works(data)
-    if data.is_a? Array
-      data = data[0]['message']['items']
-    else
-      data = data.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
-    end
+    data = if data.is_a? Array
+             data[0]['message']['items']
+           else
+             data.collect { |x| x['message'].select { |k, _v| k[/DOI|type|title/] } }
+           end
     data.each do |x|
       puts 'DOI: ' + x['DOI']
       puts 'type: ' + x['type']
@@ -472,7 +470,6 @@ class Sr < Thor
       puts
     end
   end
-
 end
 
 Sr.start(ARGV)

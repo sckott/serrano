@@ -13,13 +13,13 @@ module FaradayMiddleware
         when 404
           raise Serrano::NotFound, error_message_400(response)
         when 500
-          raise Serrano::InternalServerError, error_message_500(response, "Something is technically wrong.")
+          raise Serrano::InternalServerError, error_message_500(response, 'Something is technically wrong.')
         when 502
-          raise Serrano::BadGateway, error_message_500(response, "The server returned an invalid or incomplete response.")
+          raise Serrano::BadGateway, error_message_500(response, 'The server returned an invalid or incomplete response.')
         when 503
-          raise Serrano::ServiceUnavailable, error_message_500(response, "Crossref is rate limiting your requests.")
+          raise Serrano::ServiceUnavailable, error_message_500(response, 'Crossref is rate limiting your requests.')
         when 504
-          raise Serrano::GatewayTimeout, error_message_500(response, "504 Gateway Time-out")
+          raise Serrano::GatewayTimeout, error_message_500(response, '504 Gateway Time-out')
         end
       end
     end
@@ -32,16 +32,16 @@ module FaradayMiddleware
     private
 
     def error_message_400(response)
-      "\n   #{response[:method].to_s.upcase} #{response[:url].to_s}\n   Status #{response[:status]}#{error_body(response[:body])}"
+      "\n   #{response[:method].to_s.upcase} #{response[:url]}\n   Status #{response[:status]}#{error_body(response[:body])}"
     end
 
     def error_body(body)
-      if not body.nil? and not body.empty? and body.kind_of?(String)
+      if !body.nil? && !body.empty? && body.is_a?(String)
         if is_json?(body)
           body = ::MultiJson.load(body)
           if body['message'].nil?
             body = nil
-          elseif body['message'].length == 1
+            elseif body['message'].length == 1
             body = body['message']
           else
             body = body['message'].collect { |x| x['message'] }.join('; ')
@@ -56,16 +56,15 @@ module FaradayMiddleware
       end
     end
 
-    def error_message_500(response, body=nil)
-      "#{response[:method].to_s.upcase} #{response[:url].to_s}: #{[response[:status].to_s + ':', body].compact.join(' ')}"
+    def error_message_500(response, body = nil)
+      "#{response[:method].to_s.upcase} #{response[:url]}: #{[response[:status].to_s + ':', body].compact.join(' ')}"
     end
 
     def is_json?(string)
       MultiJson.load(string)
-      return true
+      true
     rescue MultiJson::ParseError
-      return false
+      false
     end
-
   end
 end

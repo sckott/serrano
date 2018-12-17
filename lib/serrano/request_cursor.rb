@@ -1,9 +1,9 @@
-require "erb"
-require "faraday"
+require 'erb'
+require 'faraday'
 require 'faraday_middleware'
-require "multi_json"
-require "serrano/error"
-require "serrano/constants"
+require 'multi_json'
+require 'serrano/error'
+require 'serrano/constants'
 require 'serrano/helpers/configuration'
 require 'serrano/filterhandler'
 require 'serrano/error'
@@ -16,7 +16,6 @@ require 'serrano/utils'
 # Class to perform HTTP requests to the Crossref API
 module Serrano
   class RequestCursor #:nodoc:
-
     attr_accessor :endpt
     attr_accessor :id
     attr_accessor :query
@@ -37,9 +36,9 @@ module Serrano
     attr_accessor :args
 
     def initialize(endpt, id, query, filter, offset,
-      limit, sample, sort, order, facet, select, 
-      works, agency, options, verbose, cursor, 
-      cursor_max, args)
+                   limit, sample, sort, order, facet, select,
+                   works, agency, options, verbose, cursor,
+                   cursor_max, args)
 
       self.endpt = endpt
       self.id = id
@@ -62,92 +61,89 @@ module Serrano
     end
 
     def perform
-      filt = filter_handler(self.filter)
-      fieldqueries = field_query_handler(self.args)
-      self.select = self.select.join(",") if self.select && self.select.class == Array
+      filt = filter_handler(filter)
+      fieldqueries = field_query_handler(args)
+      self.select = select.join(',') if select && select.class == Array
 
-      if self.cursor_max.class != nil
-        if !self.cursor_max.kind_of?(Integer)
-          raise "cursor_max must be of class int"
-        end
+      unless cursor_max.class.nil?
+        raise 'cursor_max must be of class int' unless cursor_max.is_a?(Integer)
       end
 
-      arguments = { query: self.query, filter: filt, offset: self.offset,
-              rows: self.limit, sample: self.sample, sort: self.sort,
-              order: self.order, facet: self.facet, select: self.select, 
-              cursor: self.cursor }.tostrings
+      arguments = { query: query, filter: filt, offset: offset,
+                    rows: limit, sample: sample, sort: sort,
+                    order: order, facet: facet, select: select,
+                    cursor: cursor }.tostrings
       arguments = arguments.merge(fieldqueries)
-      opts = arguments.delete_if { |k, v| v.nil? }
+      opts = arguments.delete_if { |_k, v| v.nil? }
 
-      if verbose
-        $conn = Faraday.new(:url => Serrano.base_url, :request => options || []) do |f|
-          f.response :logger
-          f.use FaradayMiddleware::RaiseHttpException
-          f.adapter Faraday.default_adapter
-        end
-      else
-        $conn = Faraday.new(:url => Serrano.base_url, :request => options || []) do |f|
-          f.use FaradayMiddleware::RaiseHttpException
-          f.adapter Faraday.default_adapter
-        end
-      end
+      $conn = if verbose
+                Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+                  f.response :logger
+                  f.use FaradayMiddleware::RaiseHttpException
+                  f.adapter Faraday.default_adapter
+                end
+              else
+                Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+                  f.use FaradayMiddleware::RaiseHttpException
+                  f.adapter Faraday.default_adapter
+                end
+              end
 
       $conn.headers[:user_agent] = make_ua
-      $conn.headers["X-USER-AGENT"] = make_ua
+      $conn.headers['X-USER-AGENT'] = make_ua
 
-      if self.id.nil?
-        $endpt2 = self.endpt
-        js = self._req(self.endpt, opts)
+      if id.nil?
+        $endpt2 = endpt
+        js = _req(endpt, opts)
         cu = js['message']['next-cursor']
         max_avail = js['message']['total-results']
-        res = self._redo_req(js, opts, cu, max_avail)
+        res = _redo_req(js, opts, cu, max_avail)
         return res
       else
-        self.id = Array(self.id)
+        self.id = Array(id)
         # url encoding
-        self.id = self.id.map { |x| ERB::Util.url_encode(x) }
+        self.id = id.map { |x| ERB::Util.url_encode(x) }
         coll = []
-        self.id.each do |x|
-          if self.works
-            $endpt2 = self.endpt + '/' + x.to_s + "/works"
-          else
-            if self.agency
-              $endpt2 = self.endpt + '/' + x.to_s + "/agency"
-            else
-              $endpt2 = self.endpt + '/' + x.to_s
-            end
-          end
+        id.each do |x|
+          $endpt2 = if works
+                      endpt + '/' + x.to_s + '/works'
+                    else
+                      $endpt2 = if agency
+                                  endpt + '/' + x.to_s + '/agency'
+                                else
+                                  endpt + '/' + x.to_s
+                                end
+                    end
 
-          js = self._req($endpt2, opts)
+          js = _req($endpt2, opts)
           cu = js['message']['next-cursor']
           max_avail = js['message']['total-results']
-          coll << self._redo_req(js, opts, cu, max_avail)
+          coll << _redo_req(js, opts, cu, max_avail)
         end
         return coll
       end
     end
 
     def _redo_req(js, opts, cu, max_avail)
-      if !cu.nil? and self.cursor_max > js['message']['items'].length
+      if !cu.nil? && (cursor_max > js['message']['items'].length)
         res = [js]
         total = js['message']['items'].length
-        while !cu.nil? and self.cursor_max > total and total < max_avail do
+        while !cu.nil? && (cursor_max > total) && (total < max_avail)
           opts[:cursor] = cu
-          out = self._req($endpt2, opts)
+          out = _req($endpt2, opts)
           cu = out['message']['next-cursor']
           res << out
-          total = res.collect {|x| x['message']['items'].length}.reduce(0, :+)
+          total = res.collect { |x| x['message']['items'].length }.reduce(0, :+)
         end
-        return res
+        res
       else
-        return js
+        js
       end
     end
 
     def _req(path, opts)
       res = $conn.get path, opts
-      return MultiJson.load(res.body)
+      MultiJson.load(res.body)
     end
-
   end
 end
