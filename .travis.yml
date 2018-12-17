@@ -4,7 +4,6 @@ rvm:
   - 2.1.8
   - 2.2.4
   - 2.5.0
-before_script:
-  bundle exec rubocop
 script:
   bundle exec rake test TESTOPTS="-v"
+  bundle exec rubocop
