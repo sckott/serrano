@@ -1,9 +1,23 @@
 language: ruby
 cache: bundler
-rvm:
-  - 2.1.8
-  - 2.2.4
-  - 2.5.0
+
+matrix:
+  include:
+    - rvm: 2.1.8
+      env: RUBOCOP_VER=0.57.2
+    - rvm: 2.2.4
+    - rvm: 2.5.0
+
+before_install:
+  - case "$RUBOCOP_VER" in
+    "") ;;
+
+    "0.57.2")
+      export RUBOCOP_VER=0.57.2 ;
+      gem install rubocop -v $RUBOCOP_VER
+      ;;
+   esac
+
 script:
   - bundle exec rake test TESTOPTS="-v"
   - bundle exec rubocop
