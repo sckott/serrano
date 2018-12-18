@@ -8,7 +8,7 @@ matrix:
     - rvm: 2.2.4
     - rvm: 2.5.0
 
-before_install:
+script:
   - case "$RUBOCOP_VER" in
     "") ;;
 
@@ -17,7 +17,5 @@ before_install:
       gem install rubocop -v $RUBOCOP_VER
       ;;
    esac
-
-script:
   - bundle exec rake test TESTOPTS="-v"
   - bundle exec rubocop
