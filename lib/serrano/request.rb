@@ -2,7 +2,6 @@ require 'erb'
 require 'faraday'
 require 'multi_json'
 require 'serrano/error'
-require 'serrano/constants'
 require 'serrano/utils'
 require 'serrano/helpers/configuration'
 
