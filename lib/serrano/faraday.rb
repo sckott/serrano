@@ -37,7 +37,7 @@ module FaradayMiddleware
 
     def error_body(body)
       if !body.nil? && !body.empty? && body.is_a?(String)
-        if is_json?(body)
+        if json?(body)
           body = ::MultiJson.load(body)
           if body['message'].nil?
             body = nil
@@ -60,7 +60,7 @@ module FaradayMiddleware
       "#{response[:method].to_s.upcase} #{response[:url]}: #{[response[:status].to_s + ':', body].compact.join(' ')}"
     end
 
-    def is_json?(string)
+    def json?(string)
       MultiJson.load(string)
       true
     rescue MultiJson::ParseError

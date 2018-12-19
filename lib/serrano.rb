@@ -621,7 +621,7 @@ module Serrano
   #     Serrano.content_negotiation(ids: doi, format: "bibtex")
   #
   #     # many DOIs
-  #     dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', 
+  #     dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503',
   #      '10.5167/UZH-38402','10.5167/UZH-41217']
   #     x = Serrano.content_negotiation(ids: dois)
   #     puts x
@@ -665,6 +665,6 @@ module Serrano
   # @example
   #   Serrano.csl_styles
   def self.csl_styles
-    get_styles
+    fetch_styles
   end
 end

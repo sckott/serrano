@@ -14,19 +14,19 @@
 module Serrano
   module Filters
     def self.names
-      $filter_details.keys
+      filter_details.keys
     end
 
     def self.filters
-      $filter_details
+      filter_details
     end
   end
 end
 
-$filter_details = {
+filter_details = {
   'has_funder' => { 'possible_values' => nil, 'description' => 'metadata which includes one or more funder entry' },
   'funder' => { 'possible_values' => '{funder_id}', 'description' => 'metadata which include the {funder_id} in FundRef data' },
-  'location' =>  { 'possible_values' => '{country_name}', 'description' => 'funder records where location = {country name}. Only works on /funders route' },
+  'location' => { 'possible_values' => '{country_name}', 'description' => 'funder records where location = {country name}. Only works on /funders route' },
   'prefix' => { 'possible_values' => '{owner_prefix}', 'description' => "metadata belonging to a DOI owner prefix {owner_prefix} (e.g. '10.1016' )" },
   'member' => { 'possible_values' => '{member_id}', 'description' => 'metadata belonging to a CrossRef member' },
   'from_index_date' => { 'possible_values' => '{date}', 'description' => 'metadata indexed since (inclusive) {date}' },

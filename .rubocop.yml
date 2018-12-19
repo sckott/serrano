@@ -1,0 +1,14 @@
+inherit_from: .rubocop_todo.yml
+
+Naming/FileName:
+  Exclude:
+    - 'test/test-helper.rb'
+
+Metrics/ParameterLists:
+  Max: 18
+
+# Offense count: 22
+# Configuration parameters: AllowedVariables.
+Lint/UselessAssignment:
+  Exclude:
+    - 'lib/serrano/filters.rb'

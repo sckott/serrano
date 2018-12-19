@@ -1,7 +1,7 @@
 require 'faraday'
 require 'multi_json'
 
-def get_styles
+def fetch_styles
   base = 'https://api.github.com/repos/citation-style-language/styles'
   conn = Faraday.new(url: base) do |f|
     f.use FaradayMiddleware::RaiseHttpException

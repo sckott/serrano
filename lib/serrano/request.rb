@@ -87,12 +87,10 @@ module Serrano
         id.each do |x|
           endpt = if works
                     self.endpt + '/' + x.to_s + '/works'
+                  elsif agency
+                    self.endpt + '/' + x.to_s + '/agency'
                   else
-                    endpt = if agency
-                              self.endpt + '/' + x.to_s + '/agency'
-                            else
-                              self.endpt + '/' + x.to_s
-                            end
+                    self.endpt + '/' + x.to_s
                   end
 
           res = conn.get endpt, opts

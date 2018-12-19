@@ -2,9 +2,19 @@ require 'faraday'
 require 'faraday_middleware'
 require 'multi_json'
 require 'serrano/error'
-require 'serrano/constants'
 require 'serrano/utils'
 require 'serrano/helpers/configuration'
+
+CN_FORMAT_HEADERS = { 'rdf-xml' => 'application/rdf+xml',
+                      'turtle' => 'text/turtle',
+                      'citeproc-json' => 'transform/application/vnd.citationstyles.csl+json',
+                      'text' => 'text/x-bibliography',
+                      'ris' => 'application/x-research-info-systems',
+                      'bibtex' => 'application/x-bibtex',
+                      'crossref-xml' => 'application/vnd.crossref.unixref+xml',
+                      'datacite-xml' => 'application/vnd.datacite.datacite+xml',
+                      'bibentry' => 'application/x-bibtex',
+                      'crossref-tdm' => 'application/vnd.crossref.unixsd+xml' }.freeze
 
 ##
 # Serrano::CNRequest
@@ -17,6 +27,11 @@ module Serrano
     attr_accessor :style
     attr_accessor :locale
 
+    CN_FORMATS = ['rdf-xml', 'turtle', 'citeproc-json',
+                  'citeproc-json-ish', 'text', 'ris', 'bibtex',
+                  'crossref-xml', 'datacite-xml', 'bibentry',
+                  'crossref-tdm'].freeze
+
     def initialize(ids, format, style, locale)
       self.ids = ids
       self.format = format
@@ -25,22 +40,22 @@ module Serrano
     end
 
     def perform
-      unless $cn_formats.include? format
+      unless CN_FORMATS.include? format
         raise 'format not one of accepted types'
       end
 
-      $conn = Faraday.new 'https://doi.org/' do |c|
+      conn = Faraday.new 'https://doi.org/' do |c|
         c.use FaradayMiddleware::FollowRedirects
         c.adapter :net_http
       end
 
       if ids.length == 1
         self.ids = ids[0] if ids.class == Array
-        return make_request(ids, format, style, locale)
+        return make_request(conn, ids, format, style, locale)
       else
         coll = []
         Array(ids).each do |x|
-          coll << make_request(x, format, style, locale)
+          coll << make_request(conn, x, format, style, locale)
         end
         return coll
       end
@@ -48,8 +63,8 @@ module Serrano
   end
 end
 
-def make_request(ids, format, style, locale)
-  type = $cn_format_headers.select { |x, _| x.include? format }.values[0]
+def make_request(conn, ids, format, style, locale)
+  type = CN_FORMAT_HEADERS.select { |x, _| x.include? format }.values[0]
 
   if format == 'citeproc-json'
     endpt = 'http://api.crossref.org/works/' + ids + '/' + type
@@ -62,7 +77,7 @@ def make_request(ids, format, style, locale)
       type = type + '; style = ' + style + '; locale = ' + locale
     end
 
-    res = $conn.get do |req|
+    res = conn.get do |req|
       req.url ids
       req.headers['Accept'] = type
       req.headers[:user_agent] = make_ua

@@ -1,17 +1,16 @@
 # helper functions
 module Helpers
-  $others = %w[license_url license_version license_delay full_text_version full_text_type
-               award_number award_funder]
-
   def filter_handler(x = nil)
+    others = %w[license_url license_version license_delay full_text_version full_text_type
+                award_number award_funder]
     if x.nil?
       nil
     else
       x = stringify(x)
       nn = x.keys.collect(&:to_s)
-      if nn.collect { |w| $others.include? w }.any?
+      if nn.collect { |w| others.include? w }.any?
         nn = nn.collect do |b|
-          if $others.include? b
+          if others.include? b
             case b
             when 'license_url'
               'license.url'

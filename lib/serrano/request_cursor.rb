@@ -76,28 +76,28 @@ module Serrano
       arguments = arguments.merge(fieldqueries)
       opts = arguments.delete_if { |_k, v| v.nil? }
 
-      $conn = if verbose
-                Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-                  f.response :logger
-                  f.use FaradayMiddleware::RaiseHttpException
-                  f.adapter Faraday.default_adapter
-                end
-              else
-                Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-                  f.use FaradayMiddleware::RaiseHttpException
-                  f.adapter Faraday.default_adapter
-                end
-              end
+      conn = if verbose
+               Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+                 f.response :logger
+                 f.use FaradayMiddleware::RaiseHttpException
+                 f.adapter Faraday.default_adapter
+               end
+             else
+               Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+                 f.use FaradayMiddleware::RaiseHttpException
+                 f.adapter Faraday.default_adapter
+               end
+             end
 
-      $conn.headers[:user_agent] = make_ua
-      $conn.headers['X-USER-AGENT'] = make_ua
+      conn.headers[:user_agent] = make_ua
+      conn.headers['X-USER-AGENT'] = make_ua
 
       if id.nil?
-        $endpt2 = endpt
-        js = _req(endpt, opts)
+        endpt2 = endpt
+        js = _req(conn, endpt, opts)
         cu = js['message']['next-cursor']
         max_avail = js['message']['total-results']
-        res = _redo_req(js, opts, cu, max_avail)
+        res = _redo_req(conn, js, opts, cu, max_avail)
         return res
       else
         self.id = Array(id)
@@ -105,32 +105,32 @@ module Serrano
         self.id = id.map { |x| ERB::Util.url_encode(x) }
         coll = []
         id.each do |x|
-          $endpt2 = if works
-                      endpt + '/' + x.to_s + '/works'
-                    else
-                      $endpt2 = if agency
-                                  endpt + '/' + x.to_s + '/agency'
-                                else
-                                  endpt + '/' + x.to_s
-                                end
-                    end
+          endpt2 = if works
+                     endpt + '/' + x.to_s + '/works'
+                   else
+                     endpt2 = if agency
+                                endpt + '/' + x.to_s + '/agency'
+                              else
+                                endpt + '/' + x.to_s
+                              end
+                   end
 
-          js = _req($endpt2, opts)
+          js = _req(conn, endpt2, opts)
           cu = js['message']['next-cursor']
           max_avail = js['message']['total-results']
-          coll << _redo_req(js, opts, cu, max_avail)
+          coll << _redo_req(conn, js, opts, cu, max_avail)
         end
         return coll
       end
     end
 
-    def _redo_req(js, opts, cu, max_avail)
+    def _redo_req(conn, js, opts, cu, max_avail)
       if !cu.nil? && (cursor_max > js['message']['items'].length)
         res = [js]
         total = js['message']['items'].length
         while !cu.nil? && (cursor_max > total) && (total < max_avail)
           opts[:cursor] = cu
-          out = _req($endpt2, opts)
+          out = _req(conn, endpt2, opts)
           cu = out['message']['next-cursor']
           res << out
           total = res.collect { |x| x['message']['items'].length }.reduce(0, :+)
@@ -141,8 +141,8 @@ module Serrano
       end
     end
 
-    def _req(path, opts)
-      res = $conn.get path, opts
+    def _req(conn, path, opts)
+      res = conn.get path, opts
       MultiJson.load(res.body)
     end
   end
