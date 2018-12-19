@@ -36,3 +36,5 @@ build/
 cache/
 
 lib/serrano/response.rb
+
+cursor_testing.rb
