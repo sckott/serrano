@@ -36,7 +36,7 @@ GEM
     powerpack (0.1.2)
     public_suffix (3.0.3)
     rainbow (3.0.0)
-    rake (12.3.1)
+    rake (12.3.2)
     rubocop (0.61.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -67,7 +67,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16, >= 1.16.1)
+  bundler (~> 2.0, >= 1.16.1)
   codecov (~> 0.1.10)
   json (~> 2.1)
   rake (~> 12.3, >= 12.3.1)
