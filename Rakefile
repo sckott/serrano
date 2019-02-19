@@ -1,5 +1,6 @@
 require 'bundler/gem_tasks'
 require 'rake/testtask'
+require 'rubocop/rake_task'
 
 Rake::TestTask.new do |t|
   t.libs << 'test'
@@ -10,6 +11,10 @@ end
 
 desc 'Run tests'
 task default: :test
+
+RuboCop::RakeTask.new(:rubocop) do |t|
+  t.options = ['--display-cop-names']
+end
 
 desc 'Build serrano docs'
 task :docs do
