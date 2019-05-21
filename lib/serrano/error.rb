@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Serrano
   # Custom error class for rescuing from all Serrano errors
   class Error < StandardError; end

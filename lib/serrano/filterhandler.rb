@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # helper functions
 module Helpers
   def filter_handler(x = nil)

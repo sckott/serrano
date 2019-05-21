@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # taken from: https://viget.com/extend/easy-gem-configuration-variables-with-defaults
 module Configuration
   def configuration

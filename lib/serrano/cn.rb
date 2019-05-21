@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'serrano/version'
 require 'serrano/cnrequest'
 

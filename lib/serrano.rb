@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'erb'
 require 'serrano/version'
 require 'serrano/request'

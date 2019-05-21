@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def make_ua
   requa = 'Faraday/v' + Faraday::VERSION
   habua = 'Serrano/v' + Serrano::VERSION
