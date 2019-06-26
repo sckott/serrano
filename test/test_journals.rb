@@ -16,7 +16,7 @@ require_relative 'test-helper'
 class TestJournals < Test::Unit::TestCase
   def setup
     @id = '2167-8359'
-    @ids = ['1803-2427', '2326-4225']
+    @ids = %w[1803-2427 2326-4225]
   end
 
   def test_journals

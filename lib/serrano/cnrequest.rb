@@ -29,10 +29,10 @@ module Serrano
     attr_accessor :style
     attr_accessor :locale
 
-    CN_FORMATS = ['rdf-xml', 'turtle', 'citeproc-json',
-                  'citeproc-json-ish', 'text', 'ris', 'bibtex',
-                  'crossref-xml', 'datacite-xml', 'bibentry',
-                  'crossref-tdm'].freeze
+    CN_FORMATS = %w[rdf-xml turtle citeproc-json
+                    citeproc-json-ish text ris bibtex
+                    crossref-xml datacite-xml bibentry
+                    crossref-tdm].freeze
 
     def initialize(ids, format, style, locale)
       self.ids = ids

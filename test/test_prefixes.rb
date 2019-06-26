@@ -54,7 +54,7 @@ class TestPrefixes < Test::Unit::TestCase
       res = Serrano.prefixes(ids: @id, works: true, filter: { has_funder: true })
       assert_equal(1, res.length)
       assert_equal(Array, res.class)
-      assert_equal(['status', 'message-type', 'message-version', 'message'], res[0].keys)
+      assert_equal(%w[status message-type message-version message], res[0].keys)
     end
   end
 
