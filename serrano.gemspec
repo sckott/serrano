@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Serrano::VERSION
   s.platform    = Gem::Platform::RUBY
   s.required_ruby_version = '>= 2.1'
-  s.date        = '2018-05-09'
+  s.date        = '2019-08-07'
   s.summary     = 'Crossref Client'
   s.description = 'Low Level Ruby Client for the Crossref Search API'
   s.authors     = 'Scott Chamberlain'
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.bindir      = 'bin'
   s.executables = ['serrano']
 
-  s.add_development_dependency 'bundler', '>= 1.16.1', '~> 2.0'
+  s.add_development_dependency 'bundler', '~> 2.0', '>= 2.0.2'
   s.add_development_dependency 'codecov', '~> 0.1.10'
   s.add_development_dependency 'json', '~> 2.1'
   s.add_development_dependency 'rake', '~> 12.3', '>= 12.3.1'
