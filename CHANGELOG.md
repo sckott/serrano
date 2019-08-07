@@ -1,3 +1,8 @@
+## 0.5.2 (2019-08-07)
+
+* fix url encoding (#51)
+* started using Rubocop; many styling changes (#52)
+
 ## 0.5.0 (2018-04-08)
 
 * Updated dependency versions
