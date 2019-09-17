@@ -45,7 +45,7 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
     safe_yaml (1.0.5)
-    simplecov (0.17.0)
+    simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
