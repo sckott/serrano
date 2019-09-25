@@ -111,7 +111,7 @@ require 'rexml/xpath'
 # searching full text, or even abstracts of articles, but only what is
 # available in the data that is returned to you. That is, they search
 # article titles, authors, etc. For some discussion on this, see
-# https://github.com/CrossRef/rest-api-doc/issues/101
+# https://gitlab.com/crossref/issues/issues/101
 #
 #
 # The Polite Pool
