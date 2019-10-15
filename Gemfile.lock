@@ -27,7 +27,7 @@ GEM
     hashdiff (1.0.0)
     jaro_winkler (1.5.3)
     json (2.2.0)
-    multi_json (1.13.1)
+    multi_json (1.14.0)
     multipart-post (2.1.1)
     parallel (1.17.0)
     parser (2.6.4.1)
