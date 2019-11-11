@@ -57,17 +57,17 @@ class TestWorks < Test::Unit::TestCase
   end
 
   def test_bad_filter_structure_raises_exception
-    assert_raises(ArgumentError) {
+    assert_raises(ArgumentError) do
       # Uses a string instead of a hash
-      Serrano.works(filter: "has-abstract")
-    }
+      Serrano.works(filter: 'has-abstract')
+    end
   end
 
   def test_bad_filter_content_raises_exception
-    assert_raises(ArgumentError) {
+    assert_raises(ArgumentError) do
       # Uses an incorrect filter name
-      Serrano.works(filter: { "has_nonsense" => true })
-    }
+      Serrano.works(filter: { 'has_nonsense' => true })
+    end
   end
 
   def test_works_sort
