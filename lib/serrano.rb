@@ -234,6 +234,8 @@ module Serrano
                  select: nil, options: nil, verbose: false, cursor: nil,
                  cursor_max: 5000, **args)
 
+    assert_valid_filters(filter) if filter
+
     RequestCursor.new('works', ids, query, filter, offset,
                       limit, sample, sort, order, facet, select, nil, nil, options,
                       verbose, cursor, cursor_max, args).perform
@@ -669,4 +671,27 @@ module Serrano
   def self.csl_styles
     fetch_styles
   end
+
+  private
+
+  def self.assert_valid_filters(filters)
+    unless filters.is_a? Hash
+      raise ArgumentError, <<~ERR
+        Filters must be provided as a hash, like:
+
+        Serrano.works(query: "something", filters: { has_abstract: true })
+      ERR
+    end
+
+    filters.each do |name, _|
+      unless Filters.names.map(&:to_s).include? name.to_s
+        raise ArgumentError, <<~ERR
+          The filter "#{name}" is not a valid filter.
+
+          Please run `Serrano.filters.details` to see all valid filters.
+        ERR
+      end
+    end
+  end
+
 end
