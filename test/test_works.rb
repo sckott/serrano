@@ -56,6 +56,20 @@ class TestWorks < Test::Unit::TestCase
     # assert_equal(200, res.status)
   end
 
+  def test_bad_filter_structure_raises_exception
+    assert_raises(ArgumentError) {
+      # Uses a string instead of a hash
+      Serrano.works(filter: "has-abstract")
+    }
+  end
+
+  def test_bad_filter_content_raises_exception
+    assert_raises(ArgumentError) {
+      # Uses an incorrect filter name
+      Serrano.works(filter: { "has_nonsense" => true })
+    }
+  end
+
   def test_works_sort
     VCR.use_cassette('test_works_sort') do
       res1 = Serrano.works(query: 'ecology', sort: 'relevance')

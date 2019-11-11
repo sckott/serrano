@@ -122,6 +122,12 @@ Search works by query string
 Serrano.works(query: "ecology")
 ```
 
+Search works using metadata filters. See [CrossRef filter docs(https://github.com/CrossRef/rest-api-doc#filter-names).
+
+```ruby
+Serrano.works(query: "ecology", filter: { has_abstract: true })
+```
+
 Search journals by publisher name
 
 ```ruby
