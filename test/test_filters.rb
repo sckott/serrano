@@ -12,13 +12,12 @@ require 'test/unit'
 require_relative 'test-helper'
 
 class TestFilters < Test::Unit::TestCase
-
   def test_filter_name_metadata
-    assert_equal "affiliation", Serrano::Filters.names.sort.first
+    assert_equal 'affiliation', Serrano::Filters.names.min
   end
 
   def test_filter_detail_metadata
-    expected_keys = ['possible_values', 'description'].sort
+    expected_keys = %w[possible_values description].sort
     actual_keys = Serrano::Filters.filters['affiliation'].keys.sort
     assert_equal expected_keys, actual_keys
   end

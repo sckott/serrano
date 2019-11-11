@@ -14,7 +14,6 @@
 #    Serrano::Filters.filters['has_funder']
 #    Serrano::Filters.filters['has_funder']['description']
 module Serrano
-
   def self.filters
     Filters
   end
@@ -100,6 +99,6 @@ module Serrano
       'public_references' => { 'possible_values' => nil, 'description' => 'metadata where publishers allow references to be distributed publically' },
       'publisher_name' => { 'possible_values' => nil, 'description' => 'metadata for records with an exact matching publisher name' },
       'affiliation' => { 'possible_values' => nil, 'description' => 'metadata for records with at least one contributor with the given affiliation' }
-    }
+    }.freeze
   end
 end
