@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    serrano (0.5.2)
+    serrano (0.5.3)
       faraday (>= 0.15, < 0.18)
       faraday_middleware (>= 0.12.2, < 0.14.0)
       multi_json (~> 1.13, >= 1.13.1)
@@ -13,7 +13,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.0)
-    codecov (0.1.15)
+    codecov (0.1.16)
       json
       simplecov
       url
@@ -25,15 +25,15 @@ GEM
     faraday_middleware (0.13.1)
       faraday (>= 0.7.4, < 1.0)
     hashdiff (1.0.0)
-    jaro_winkler (1.5.3)
+    jaro_winkler (1.5.4)
     json (2.2.0)
     multi_json (1.14.1)
     multipart-post (2.1.1)
-    parallel (1.18.0)
+    parallel (1.19.1)
     parser (2.6.5.0)
       ast (~> 2.4.0)
     power_assert (1.1.5)
-    public_suffix (3.1.1)
+    public_suffix (4.0.1)
     rainbow (3.0.0)
     rake (12.3.3)
     rubocop (0.76.0)

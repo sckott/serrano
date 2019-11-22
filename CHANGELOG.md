@@ -1,3 +1,7 @@
+## 0.5.3 (2019-11-22)
+
+* bundle update, changes in gemfile.lock
+
 ## 0.5.2 (2019-08-07)
 
 * fix url encoding (#51)
