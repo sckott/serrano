@@ -1,5 +1,6 @@
-## 0.5.3 (2019-11-22)
+## 0.5.4 (2019-11-27)
 
+* `Serrano.registration_agency` fixed: a change in an internal function caused this function to fail; tests added to prevent this in the future (#106)
 * bundle update, changes in gemfile.lock
 
 ## 0.5.2 (2019-08-07)
