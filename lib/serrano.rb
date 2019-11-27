@@ -541,7 +541,7 @@ module Serrano
   #      Serrano.registration_agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
   def self.registration_agency(ids:, options: nil, verbose: false)
     Request.new('works', ids, nil, nil, nil,
-                nil, nil, nil, nil, nil, false, true, options, verbose).perform
+                nil, nil, nil, nil, nil, nil, false, true, options, verbose).perform
   end
 
   ##
