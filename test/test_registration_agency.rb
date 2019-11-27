@@ -21,17 +21,17 @@ class TestRegistrationAgency < Test::Unit::TestCase
       assert_equal(1, res.length)
       assert_equal(Array, res.class)
       assert_equal(Hash, res[0].class)
-      assert_equal("crossref", res[0]["message"]["agency"]["id"])
+      assert_equal('crossref', res[0]['message']['agency']['id'])
     end
   end
 
   def test_registration_agency_limit
     VCR.use_cassette('test_registration_agency_many') do
-      res = Serrano.registration_agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+      res = Serrano.registration_agency(ids: ['10.1007/12080.1874-1746', '10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
       assert_equal(3, res.length)
       assert_equal(Array, res.class)
       assert_equal(Hash, res[0].class)
-      assert_equal("crossref", res[0]["message"]["agency"]["id"])
+      assert_equal('crossref', res[0]['message']['agency']['id'])
     end
   end
 
@@ -43,7 +43,7 @@ class TestRegistrationAgency < Test::Unit::TestCase
 
     # required keyword
     assert_raise ArgumentError do
-      puts Serrano.registration_agency("asdf")
+      puts Serrano.registration_agency('asdf')
     end
 
     # required keyword
