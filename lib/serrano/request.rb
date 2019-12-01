@@ -79,7 +79,7 @@ module Serrano
 
       if id.nil?
         res = conn.get endpt, opts
-        return MultiJson.load(res.body)
+        MultiJson.load(res.body)
       else
         self.id = Array(id)
         # url encoding
@@ -97,7 +97,7 @@ module Serrano
           res = conn.get endpt, opts
           coll << MultiJson.load(res.body)
         end
-        return coll
+        coll
       end
     end
   end

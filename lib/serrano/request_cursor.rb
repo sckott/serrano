@@ -99,7 +99,7 @@ module Serrano
         cu = js['message']['next-cursor']
         max_avail = js['message']['total-results']
         res = _redo_req(conn, js, opts, cu, max_avail)
-        return res
+        res
       else
         self.id = Array(id)
         # url encoding
@@ -121,7 +121,7 @@ module Serrano
           max_avail = js['message']['total-results']
           coll << _redo_req(conn, js, opts, cu, max_avail)
         end
-        return coll
+        coll
       end
     end
 

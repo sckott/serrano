@@ -53,13 +53,13 @@ module Serrano
 
       if ids.length == 1
         self.ids = ids[0] if ids.class == Array
-        return make_request(conn, ids, format, style, locale)
+        make_request(conn, ids, format, style, locale)
       else
         coll = []
         Array(ids).each do |x|
           coll << make_request(conn, x, format, style, locale)
         end
-        return coll
+        coll
       end
     end
   end
