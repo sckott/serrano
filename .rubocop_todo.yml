@@ -49,7 +49,7 @@ Metrics/PerceivedComplexity:
 # Offense count: 7
 # Configuration parameters: MinNameLength, AllowNamesEndingInNumbers, AllowedNames, ForbiddenNames.
 # AllowedNames: io, id, to, by, on, in, at, ip, db
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Exclude:
     - 'lib/serrano/filterhandler.rb'
     - 'lib/serrano/request_cursor.rb'
