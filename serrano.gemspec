@@ -17,7 +17,9 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/sckott/serrano'
   s.licenses    = 'MIT'
 
-  s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  s.files = `git ls-files -z`.split("\x0").reject { |f|
+    f.match(%r{^(test|spec|features)/}) 
+  }
   s.require_paths = ['lib']
 
   s.bindir      = 'bin'
@@ -37,4 +39,12 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'faraday_middleware', '>= 0.12.2', '< 0.14.0'
   s.add_runtime_dependency 'multi_json', '~> 1.13', '>= 1.13.1'
   s.add_runtime_dependency 'thor', '>= 0.20', '< 1.1'
+
+  s.metadata = {
+    'homepage_uri' => 'https://github.com/sckott/serrano',
+    'changelog_uri' =>
+      "https://github.com/sckott/serrano/releases/tag/v#{s.version}",
+    'source_code_uri' => 'https://github.com/sckott/serrano',
+    'bug_tracker_uri' => 'https://github.com/sckott/serrano/issues'
+  }
 end
