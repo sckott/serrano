@@ -1,3 +1,11 @@
+## 0.6.0 (2020-02-18)
+
+* query.title (`query_title` query filter as used here) has been removed; use `query_bibliographic` instead (#111)
+* bump `faraday` to version 0.17.1 from 0.17.0 (via dependabot) (#107)
+* bump `json` to version 2.3 from 2.2 (via dependabot) (#109)
+* bump `thor` minimum version (via dependabot) (#110)
+* better checking of filters; always check filters for proper formatting and acceptable types; improve filter tests; link to information on filters (#105) via PR from @beechnut
+
 ## 0.5.4 (2019-11-27)
 
 * `Serrano.registration_agency` fixed: a change in an internal function caused this function to fail; tests added to prevent this in the future (#106)
