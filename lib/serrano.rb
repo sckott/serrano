@@ -67,7 +67,6 @@ require 'rexml/xpath'
 #       https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries
 #       Field query parameters mut be named, and must start with `query_`. Any dashes or
 #       periods should be replaced with underscores. The options include:
-#       - query_title: Query title and subtitle
 #       - query_container_title: Query container-title aka. publication name
 #       - query_author: Query author given and family names
 #       - query_editor: Query editor given and family names
@@ -235,7 +234,6 @@ module Serrano
                  cursor_max: 5000, **args)
 
     assert_valid_filters(filter) if filter
-
     RequestCursor.new('works', ids, query, filter, offset,
                       limit, sample, sort, order, facet, select, nil, nil, options,
                       verbose, cursor, cursor_max, args).perform
@@ -292,6 +290,7 @@ module Serrano
                    select: nil, works: false, options: nil, verbose: false,
                    cursor: nil, cursor_max: 5000, **args)
 
+    assert_valid_filters(filter) if filter
     RequestCursor.new('members', ids, query, filter, offset,
                       limit, sample, sort, order, facet, select, works, nil,
                       options, verbose, cursor, cursor_max, args).perform
@@ -328,8 +327,8 @@ module Serrano
   #      items.collect{ |z| z['DOI'] }[0,50]
   #
   #      # field queries
-  #      ## query.title
-  #      res = Serrano.prefixes(ids: "10.1016", works: true, query_title: 'cell biology')
+  #      ## query.bibliographic
+  #      res = Serrano.prefixes(ids: "10.1016", works: true, query_bibliographic: 'cell biology')
   #      res[0]['message']['items'].collect { |x| x['title'] }
   #
   #      # select certain fields
@@ -339,6 +338,7 @@ module Serrano
                     select: nil, works: false, options: nil, verbose: false,
                     cursor: nil, cursor_max: 5000, **args)
 
+    assert_valid_filters(filter) if filter
     RequestCursor.new('prefixes', ids, nil, filter, offset,
                       limit, sample, sort, order, facet, select, works, nil,
                       options, verbose, cursor, cursor_max, args).perform
@@ -391,6 +391,7 @@ module Serrano
                    select: nil, works: false, options: nil, verbose: false,
                    cursor: nil, cursor_max: 5000, **args)
 
+    assert_valid_filters(filter) if filter
     RequestCursor.new('funders', ids, query, filter, offset,
                       limit, sample, sort, order, facet, select, works, nil, options,
                       verbose, cursor, cursor_max, args).perform
@@ -443,6 +444,7 @@ module Serrano
                     select: nil, works: false, options: nil, verbose: false,
                     cursor: nil, cursor_max: 5000, **args)
 
+    assert_valid_filters(filter) if filter
     RequestCursor.new('journals', ids, query, filter, offset,
                       limit, sample, sort, order, facet, select, works, nil, options,
                       verbose, cursor, cursor_max, args).perform
@@ -686,7 +688,7 @@ module Serrano
       next if filter_strings.include?(name.to_s)
 
       raise ArgumentError, <<~ERR
-        The filter "#{name}" is not a valid filter. Please run `Serrano.filters.details` to see all valid filters.
+        The filter "#{name}" is not a valid filter. Please run `Serrano.filters.filters` to see all valid filters.
       ERR
     end
   end

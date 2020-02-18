@@ -24,6 +24,6 @@ class TestFilters < Test::Unit::TestCase
 
   def test_method_alias
     assert_equal Serrano::Filters.names,   Serrano.filters.names
-    assert_equal Serrano::Filters.filters, Serrano.filters.details
+    assert_equal Serrano::Filters.filters, Serrano.filters.filters
   end
 end

@@ -1,33 +1,29 @@
 # frozen_string_literal: true
 
-##
-# Serrano::Filters
-#
-# Information on Crossref API filters
-#
-# @example
-#    require 'serrano'
-#    # List filter names
-#    Serrano::Filters.names
-#    # List filter values and description
-#    Serrano::Filters.filters
-#    Serrano::Filters.filters['has_funder']
-#    Serrano::Filters.filters['has_funder']['description']
 module Serrano
   def self.filters
     Filters
   end
 
+  ##
+  # Serrano::Filters
+  #
+  # Information on Crossref API filters
+  #
+  # @example
+  #    require 'serrano'
+  #    # List filter names
+  #    Serrano::Filters.names
+  #    # List filter values and description
+  #    Serrano::Filters.filters
+  #    Serrano::Filters.filters['has_funder']
+  #    Serrano::Filters.filters['has_funder']['description']
   module Filters
     def self.names
       FILTER_DETAILS.keys
     end
 
     def self.filters
-      FILTER_DETAILS
-    end
-
-    def self.details
       FILTER_DETAILS
     end
 
