@@ -7,6 +7,9 @@ Naming/FileName:
 Metrics/ParameterLists:
   Max: 18
 
+Metrics/ModuleLength:
+  Max: 800
+
 # Offense count: 22
 # Configuration parameters: AllowedVariables.
 Lint/UselessAssignment:
