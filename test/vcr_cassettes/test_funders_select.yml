@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '2741'
+      - '2682'
       Server:
       - http-kit
       Date:
-      - Wed, 09 May 2018 19:29:57 GMT
+      - Tue, 18 Feb 2020 18:37:37 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,32 +42,34 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":151572,"items":[{"DOI":"10.1118\/1.1427308","title":["Accelerator-based
-        neutron brachytherapy"]},{"DOI":"10.1002\/cfg.172","title":["Upstream \u2013
-        News in Genomics"]},{"DOI":"10.1103\/physrevb.91.020101","title":["Prediction
-        of a stable post-post-perovskite structure from first principles"]},{"DOI":"10.1016\/j.jcp.2015.03.033","title":["Semi-implicit
-        integration factor methods on sparse grids for high-dimensional systems"]},{"DOI":"10.1016\/j.nimb.2017.05.052","title":["PIGE
-        as a screening tool for Per- and polyfluorinated substances in papers and
-        textiles"]},{"DOI":"10.1021\/jp500617n","title":["Vibrational Spectroscopy
-        of Co+(CH4)n and Ni+(CH4)n (n = 1\u20134)"]},{"DOI":"10.1103\/physrevlett.115.153201","title":["Geometric
-        Phase Appears in the Ultracold Hydrogen Exchange Reaction"]},{"DOI":"10.1016\/j.ceramint.2014.08.076","title":["Nanostructured
-        iridium oxide-hematite magnetic ceramic semiconductors"]},{"DOI":"10.1063\/1.3573801","title":["Effect
-        of Mn substituents on the domain and local structures of Na1\/2Bi1\/2TiO3\u2013BaTiO3
-        single crystals near a morphotropic phase boundary"]},{"DOI":"10.1103\/physreva.91.012708","title":["Ultracold
-        chemistry with alkali-metal\u2013rare-earth molecules"]},{"DOI":"10.1039\/c5cp00296f","title":["Electronic
-        state dependence of heterogeneous electron transfer: injection from the S1
-        and S2 state of phlorin into TiO2"]},{"DOI":"10.1039\/c5cp01757b","title":["Vibrational
-        spectroscopy and theory of Fe2+(CH4)n (n = 1\u20133)"]},{"DOI":"10.1364\/josab.35.000417","title":["Coupling
-        coefficient in antiguided coupling: magnitude and sign control"]},{"DOI":"10.1364\/josab.35.000436","title":["Cross-phase-modulation-induced
-        temporal reflection and waveguiding of optical pulses"]},{"DOI":"10.1364\/ao.57.000794","title":["Alignment
-        of sensor arrays in optical instruments using a geometric approach"]},{"DOI":"10.1126\/science.aan2317","title":["Infants
-        make more attempts to achieve a goal when they see adults persist"]},{"DOI":"10.1007\/s10853-017-1879-7","title":["Role
-        of nanoscale Cu\/Ta interfaces on the shock compression and spall failure
-        of nanocrystalline Cu\/Ta systems at the atomic scales"]},{"DOI":"10.1016\/j.stemcr.2017.04.020","title":["An
-        Embryonic Stem Cell-Specific NuRD Complex Functions through Interaction with
-        WDR5"]},{"DOI":"10.1364\/ao.56.005295","title":["Using confidence intervals
-        to evaluate the focus alignment of spectrograph detector arrays"]},{"DOI":"10.1007\/s10853-017-1893-9","title":["Interfacial
-        stability of graphene-based surfaces in water and organic solvents"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Wed, 09 May 2018 19:29:57 GMT
-recorded_with: VCR 4.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":231609,"items":[{"DOI":"10.1016\/s0009-2541(99)00129-1","title":["Meta-gabbro
+        weathering in the Georgia Piedmont, USA: implications for global silicate
+        weathering rates"]},{"DOI":"10.1016\/0272-6963(95)00033-x","title":["The operating
+        impact of parts commonality"]},{"DOI":"10.1002\/cplx.10117","title":["A conductivity-dependent
+        phase transition from closed-loop to open-loop dendritic networks"]},{"DOI":"10.1002\/asi.10350","title":["Metadata-based
+        modeling of information resources on the Web"]},{"DOI":"10.1002\/lsm.10285","title":["Photothermal
+        detection of laser-induced damage in single intact cells"]},{"DOI":"10.1002\/kin.10189","title":["Gas-phase
+        radical-radical recombination reactions of nitroxides with substituted phenyl
+        radicals"]},{"DOI":"10.1002\/cne.20038","title":["The inner ear of the lungfishProtopterus"]},{"DOI":"10.1016\/0272-6963(95)00012-h","title":["Hierarchical
+        capacity expansion and production planning decisions in stochastic manufacturing
+        systems"]},{"DOI":"10.1002\/cpa.20004","title":["Pseudospectra of semiclassical
+        (pseudo-) differential operators"]},{"DOI":"10.1002\/sia.1642","title":["Electron-beam-induced
+        decomposition of trimethylamine on Si(100)-2 \u00d7 1"]},{"DOI":"10.1002\/cne.20039","title":["Synaptic
+        structural modification following changes in activity induced by tetanus neurotoxin
+        in cat abducens neurons"]},{"DOI":"10.1002\/cfg.397","title":["A Comparison
+        of Global Gene Expression Measurement Technologies inArabidopsis thaliana"]},{"DOI":"10.1002\/net.20004","title":["A
+        directed cycle-based column-and-cut generation method for capacitated survivable
+        network design"]},{"DOI":"10.1002\/gea.20006","title":["Assessing the role
+        of winter grazing in historic land degradation, M\u00fdvatnssveit, northeast
+        Iceland"]},{"DOI":"10.1155\/s0161171204212108","title":["On the geometry of
+        Riemannian manifolds with a Lie structure at infinity"]},{"DOI":"10.1155\/s108533750431105x","title":["Contractive
+        projections in Orlicz sequence spaces"]},{"DOI":"10.1118\/1.1427308","title":["Accelerator-based
+        neutron brachytherapy"]},{"DOI":"10.1080\/106551402100012318","title":["Frequency
+        Domain Kernel Estimation for 2nd-order Volterra Models Using Random Multi-tone
+        Excitation"]},{"DOI":"10.1080\/1065514021000012354","title":["Particle-based
+        Full-band Approach for Fast Simulation of Charge Transport in Si, GaAs, and
+        InP"]},{"DOI":"10.1080\/1065514021000012264","title":["Using Temporal and
+        Functional Information in Crosstalk Aware Static Timing Analysis"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:37:38 GMT
+recorded_with: VCR 5.1.0

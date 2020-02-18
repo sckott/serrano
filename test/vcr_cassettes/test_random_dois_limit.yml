@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.12.0.1 Serrano/v0.3.1
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '4170'
+      - '7829'
       Server:
       - http-kit
       Date:
-      - Tue, 04 Apr 2017 23:19:08 GMT
+      - Tue, 18 Feb 2020 18:42:01 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,19 +42,29 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":87666386,"items":[{"indexed":{"date-parts":[[2016,10,31]],"date-time":"2016-10-31T03:54:49Z","timestamp":1477886089090},"reference-count":31,"publisher":"Elsevier
-        BV","issue":"1","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1994,4,1]],"date-time":"1994-04-01T00:00:00Z","timestamp":765158400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Virus
-        Research"],"cited-count":0,"published-print":{"date-parts":[[1994,4]]},"DOI":"10.1016\/0168-1702(94)90058-2","type":"journal-article","created":{"date-parts":[[2002,12,28]],"date-time":"2002-12-28T11:34:05Z","timestamp":1041075245000},"page":"1-12","source":"CrossRef","title":["Accumulation
-        of unintegrated viral DNA in rat glial cells infected with neurotropic Friend
-        murine leukemia virus"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1016","volume":"32","author":[{"given":"Sayaka","family":"Takase-Yoden","affiliation":[]},{"given":"Rihito","family":"Watanabe","affiliation":[]}],"member":"http:\/\/id.crossref.org\/member\/78","container-title":["Virus
-        Research"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0168170294900582?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0168170294900582?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,18]],"date-time":"2015-09-18T16:59:00Z","timestamp":1442595540000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1994,4]]},"alternative-id":["0168170294900582"],"URL":"http:\/\/dx.doi.org\/10.1016\/0168-1702(94)90058-2","ISSN":["0168-1702"],"citing-count":31,"subject":["Cancer
-        Research","Virology","Infectious Diseases"]},{"indexed":{"date-parts":[[2017,3,4]],"date-time":"2017-03-04T02:40:38Z","timestamp":1488595238272},"reference-count":0,"publisher":"Public
-        Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"cited-count":0,"DOI":"10.1371\/journal.pone.0021694.g003","type":"component","created":{"date-parts":[[2011,6,27]],"date-time":"2011-06-27T22:16:38Z","timestamp":1309212998000},"source":"CrossRef","title":[],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1371","member":"http:\/\/id.crossref.org\/member\/340","container-title":[],"original-title":[],"deposited":{"date-parts":[[2017,3,4]],"date-time":"2017-03-04T01:28:05Z","timestamp":1488590885000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0021694.g003","citing-count":0},{"indexed":{"date-parts":[[2016,10,25]],"date-time":"2016-10-25T10:03:22Z","timestamp":1477389802831},"reference-count":0,"publisher":"American
-        Psychiatric Publishing","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psychiatric
-        Services"],"cited-count":0,"published-print":{"date-parts":[[2007,4,1]]},"DOI":"10.1176\/appi.ps.58.4.460","type":"journal-article","created":{"date-parts":[[2007,4,5]],"date-time":"2007-04-05T16:30:30Z","timestamp":1175790630000},"page":"460-462","source":"CrossRef","title":["Law
-        & Psychiatry: The New Lie Detectors: Neuroscience, Deception, and the Courts"],"prefix":"http:\/\/id.crossref.org\/prefix\/10.1176","volume":"58","author":[{"given":"P.
-        S.","family":"Appelbaum","affiliation":[]}],"member":"http:\/\/id.crossref.org\/member\/230","container-title":["Psychiatric
-        Services"],"original-title":[],"deposited":{"date-parts":[[2015,11,3]],"date-time":"2015-11-03T20:20:44Z","timestamp":1446582044000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2007,4,1]]},"URL":"http:\/\/dx.doi.org\/10.1176\/appi.ps.58.4.460","ISSN":["1075-2730"],"citing-count":0,"subject":["Medicine(all)"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Tue, 04 Apr 2017 23:19:08 GMT
-recorded_with: VCR 3.0.3
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":111302334,"items":[{"indexed":{"date-parts":[[2019,11,20]],"date-time":"2019-11-20T23:15:43Z","timestamp":1574291743384},"reference-count":45,"publisher":"AIP
+        Publishing","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Mathematical Physics"],"published-print":{"date-parts":[[2007,5]]},"DOI":"10.1063\/1.2723552","type":"journal-article","created":{"date-parts":[[2007,5,9]],"date-time":"2007-05-09T22:56:00Z","timestamp":1178751360000},"page":"052102","source":"Crossref","is-referenced-by-count":5,"title":["Geometry
+        of quantum active subspaces and of effective Hamiltonians"],"prefix":"10.1063","volume":"48","author":[{"given":"David","family":"Viennot","sequence":"first","affiliation":[]}],"member":"317","reference":[{"key":"c1","DOI":"10.1002\/9780470141229.ch17","doi-asserted-by":"publisher"},{"key":"c2","DOI":"10.1088\/0305-4470\/36\/40\/R01","doi-asserted-by":"publisher"},{"key":"c3","DOI":"10.1002\/0471428027.ch3","doi-asserted-by":"publisher"},{"key":"c4","DOI":"10.1088\/0305-4470\/27\/24\/028","doi-asserted-by":"publisher"},{"key":"c5","DOI":"10.1007\/s100530050236","doi-asserted-by":"publisher"},{"key":"c6","DOI":"10.1021\/jp0499373","doi-asserted-by":"publisher"},{"key":"c7","DOI":"10.1146\/annurev.physchem.46.1.83","doi-asserted-by":"publisher"},{"key":"c8","unstructured":"G.
+        Jolicard and J. P. Killingbeck,Domain-based Parallelism and Problem Decomposition
+        Methods in Computational Science and Engineering(SIAM, Philadelphia, 1995),
+        Chap. 16, p. 179."},{"key":"c9","DOI":"10.1103\/PhysRevA.28.3184","doi-asserted-by":"publisher"},{"key":"c10","DOI":"10.1103\/PhysRevA.58.1867","doi-asserted-by":"publisher"},{"key":"c11","DOI":"10.1088\/0305-4470\/36\/20\/201","doi-asserted-by":"publisher"},{"key":"c12","DOI":"10.1016\/0009-2614(83)87511-3","doi-asserted-by":"publisher"},{"key":"c13","DOI":"10.1063\/1.451184","doi-asserted-by":"publisher"},{"key":"c14","author":"Wyatt
+        R. E.","year":"1996","volume-title":"Quantum Mechanical Studies of Molecular
+        Spectra and Dynamics: Dynamics of Molecules and Chemical Reactions"},{"key":"c15","DOI":"10.1098\/rspa.1984.0023","doi-asserted-by":"publisher"},{"key":"c16","DOI":"10.1103\/PhysRevLett.51.2167","doi-asserted-by":"publisher"},{"key":"c17","DOI":"10.1103\/PhysRevLett.58.1593","doi-asserted-by":"publisher"},{"key":"c18","author":"Rohlin
+        V.","year":"1977","volume-title":"Premiers Cours de Topologie, Chapitres G\u00e9om\u00e9triques"},{"key":"c19","author":"Steenrod
+        N.","year":"1951","volume-title":"The topology of Fibre Bundles","DOI":"10.1515\/9781400883875","doi-asserted-by":"crossref"},{"key":"c20","DOI":"10.1103\/PhysRevLett.65.1697","doi-asserted-by":"publisher"},{"key":"c21","DOI":"10.1016\/0393-0440(93)90085-S","doi-asserted-by":"publisher"},{"key":"c22","DOI":"10.1063\/1.530601","doi-asserted-by":"publisher"},{"key":"c23","DOI":"10.1007\/978-3-662-10333-3","doi-asserted-by":"publisher"},{"key":"c24","DOI":"10.1103\/PhysRevLett.52.2111","doi-asserted-by":"publisher"},{"key":"c25","DOI":"10.1063\/1.1940547","doi-asserted-by":"publisher"},{"key":"c26","DOI":"10.1063\/1.533405","doi-asserted-by":"publisher"},{"key":"c28","DOI":"10.1016\/S0375-9601(99)00803-8","doi-asserted-by":"publisher"},{"key":"c29","DOI":"10.1103\/PhysRevA.61.010305","doi-asserted-by":"publisher"},{"key":"c30","DOI":"10.1016\/S0034-4877(01)80066-5","doi-asserted-by":"publisher"},{"key":"c31","DOI":"10.1126\/science.1058835","doi-asserted-by":"publisher"},{"key":"c32","first-page":"1257","volume":"15","author":"Pachos
+        J.","year":"2001","journal-title":"Am. J. Math.","ISSN":"http:\/\/id.crossref.org\/issn\/0002-9327","issn-type":"print"},{"key":"c33","DOI":"10.1016\/S0375-9601(02)01230-6","doi-asserted-by":"publisher"},{"key":"c34","DOI":"10.1063\/1.1888028","doi-asserted-by":"publisher"},{"key":"c35","DOI":"10.1063\/1.1664991","doi-asserted-by":"publisher"},{"key":"c36","DOI":"10.1088\/0305-4470\/27\/20\/025","doi-asserted-by":"publisher"},{"key":"c37","DOI":"10.1088\/0305-4470\/31\/49\/015","doi-asserted-by":"publisher"},{"key":"c38","DOI":"10.1088\/0305-4470\/32\/46\/312","doi-asserted-by":"publisher"},{"key":"c39","DOI":"10.1007\/978-1-4612-0741-2","doi-asserted-by":"publisher"},{"key":"c40","author":"Messiah
+        A.","year":"1965","volume-title":"Quantum Mechanics"},{"key":"c41","DOI":"10.2307\/2372896","doi-asserted-by":"publisher"},{"key":"c42","unstructured":"M.
+        Nakahara, Geometry, Topology and Physics (IOP, Bristol 1990).","DOI":"10.1887\/0750306068","doi-asserted-by":"crossref"},{"key":"c43","DOI":"10.1017\/CBO9780511615344","doi-asserted-by":"publisher"},{"key":"c44","unstructured":"P.
+        M. Morse and H. Feshbach, Methods of Theoretical Physics (McGraw-Hill, New
+        York, 1953)."},{"key":"c45","DOI":"10.1088\/0305-4470\/34\/12\/308","doi-asserted-by":"publisher"},{"key":"c46","DOI":"10.1063\/1.2345473","doi-asserted-by":"publisher"}],"container-title":["Journal
+        of Mathematical Physics"],"language":"en","link":[{"URL":"http:\/\/aip.scitation.org\/doi\/pdf\/10.1063\/1.2723552","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T17:06:57Z","timestamp":1497719217000},"score":1.0,"issued":{"date-parts":[[2007,5]]},"references-count":45,"journal-issue":{"published-print":{"date-parts":[[2007,5]]},"issue":"5"},"alternative-id":["10.1063\/1.2723552"],"URL":"http:\/\/dx.doi.org\/10.1063\/1.2723552","relation":{"cites":[]},"ISSN":["0022-2488","1089-7658"],"issn-type":[{"value":"0022-2488","type":"print"},{"value":"1089-7658","type":"electronic"}]},{"indexed":{"date-parts":[[2019,11,21]],"date-time":"2019-11-21T00:03:33Z","timestamp":1574294613284},"reference-count":0,"publisher":"Public
+        Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0000461.g003","type":"component","created":{"date-parts":[[2007,5,23]],"date-time":"2007-05-23T17:15:42Z","timestamp":1179940542000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2018,10,23]],"date-time":"2018-10-23T21:55:47Z","timestamp":1540331747000},"score":1.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0000461.g003"},{"indexed":{"date-parts":[[2019,11,27]],"date-time":"2019-11-27T12:24:59Z","timestamp":1574857499691},"reference-count":0,"publisher":"The
+        University of Iowa","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Annals of Iowa"],"published-print":{"date-parts":[[1988,7]]},"DOI":"10.17077\/0003-4827.9278","type":"journal-article","created":{"date-parts":[[2018,7,25]],"date-time":"2018-07-25T00:23:52Z","timestamp":1532478232000},"page":"349-370","source":"Crossref","is-referenced-by-count":0,"title":["The
+        Farmers Union and the 1948 Henry Wallace Campaign"],"prefix":"10.17077","volume":"49","author":[{"given":"William
+        C.","family":"Pratt","sequence":"first","affiliation":[]}],"member":"6626","published-online":{"date-parts":[[2015,1,26]]},"container-title":["The
+        Annals of Iowa"],"language":"en","deposited":{"date-parts":[[2018,7,25]],"date-time":"2018-07-25T00:25:35Z","timestamp":1532478335000},"score":1.0,"issued":{"date-parts":[[1988,7]]},"references-count":0,"journal-issue":{"published-online":{"date-parts":[[2015,1,26]]},"published-print":{"date-parts":[[1988]]},"issue":"5"},"URL":"http:\/\/dx.doi.org\/10.17077\/0003-4827.9278","ISSN":["0003-4827","2473-9006"],"issn-type":[{"value":"0003-4827","type":"print"},{"value":"2473-9006","type":"electronic"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:42:01 GMT
+recorded_with: VCR 5.1.0

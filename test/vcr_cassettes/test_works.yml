@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '22753'
+      - '23088'
       Server:
       - http-kit
       Date:
-      - Wed, 09 May 2018 19:29:58 GMT
+      - Tue, 18 Feb 2020 18:43:09 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,13 +42,14 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,14]],"date-time":"2018-02-14T18:48:50Z","timestamp":1518634130251},"reference-count":70,"publisher":"Public
-        Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":33,"title":["Methylphenidate
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,22]],"date-time":"2019-11-22T22:41:16Z","timestamp":1574462476103},"reference-count":70,"publisher":"Public
+        Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
+        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":44,"title":["Methylphenidate
         Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
-        Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","affiliation":[]},{"given":"Brooks
-        B.","family":"Pond","affiliation":[]},{"given":"Amar K.","family":"Pani","affiliation":[]},{"given":"Chunxu","family":"Qu","affiliation":[]},{"given":"Yun","family":"Jiao","affiliation":[]},{"given":"Richard
-        J.","family":"Smeyne","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2012,3,21]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"2376","DOI":"10.1038\/sj.npp.1301164","article-title":"Stimulants:
+        Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
+        B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
+        K.","family":"Pani","sequence":"additional","affiliation":[]},{"given":"Chunxu","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Yun","family":"Jiao","sequence":"additional","affiliation":[]},{"given":"Richard
+        J.","family":"Smeyne","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2012,3,21]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"2376","DOI":"10.1038\/sj.npp.1301164","article-title":"Stimulants:
         Therapeutic actions in ADHD.","volume":"31","author":"AF Arnsten","year":"2006","journal-title":"Neuropsychopharmacology"},{"key":"ref2","doi-asserted-by":"crossref","first-page":"325","DOI":"10.1586\/14737175.5.3.325","article-title":"Methylphenidate
         HCl: therapy for attention deficit hyperactivity disorder.","volume":"5","author":"PK
         Capp","year":"2005","journal-title":"Expert Rev Neurother"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"437","DOI":"10.1007\/s11940-011-0137-6","article-title":"Recent
@@ -179,13 +180,13 @@ http_interactions:
         Redox Signal"},{"key":"ref51","doi-asserted-by":"crossref","first-page":"35","DOI":"10.1016\/j.drugalcdep.2011.06.013","article-title":"Increased
         risk of Parkinson&apos;s disease in individuals hospitalized with conditions
         related to the use of methamphetamine or other amphetamine-type drugs.","volume":"120","author":"RC
-        Callaghan","year":"2012","journal-title":"Drug Alcohol Depend"},{"key":"ref52","first-page":"2424","article-title":"Increased
+        Callaghan","year":"2012","journal-title":"Drug Alcohol Depend"},{"key":"ref52","doi-asserted-by":"crossref","first-page":"2424","DOI":"10.1523\/JNEUROSCI.19-07-02424.1999","article-title":"Increased
         methamphetamine neurotoxicity in heterozygous vesicular monoamine transporter
         2 knock-out mice.","volume":"19","author":"F Fumagalli","year":"1999","journal-title":"J
         Neurosci"},{"key":"ref53","doi-asserted-by":"crossref","first-page":"2459","DOI":"10.1096\/fj.00-0205rev","article-title":"The
         VMAT2 gene in mice and humans: amphetamine responses, locomotion, cardiac
         arrhythmias, aging, and vulnerability to dopaminergic toxins.","volume":"14","author":"GR
-        Uhl","year":"2000","journal-title":"Faseb J"},{"key":"ref54","first-page":"10289","article-title":"Peroxynitrite
+        Uhl","year":"2000","journal-title":"Faseb J"},{"key":"ref54","doi-asserted-by":"crossref","first-page":"10289","DOI":"10.1523\/JNEUROSCI.19-23-10289.1999","article-title":"Peroxynitrite
         inactivation of tyrosine hydroxylase: mediation by sulfhydryl oxidation, not
         tyrosine nitration.","volume":"19","author":"DM Kuhn","year":"1999","journal-title":"J
         Neurosci"},{"key":"ref55","doi-asserted-by":"crossref","first-page":"691","DOI":"10.1002\/(SICI)1097-4547(19981201)54:5<691::AID-JNR14>3.0.CO;2-F","article-title":"Dopamine,
@@ -224,13 +225,11 @@ http_interactions:
         of Affymetrix GeneChip probe level data.","volume":"31","author":"RA Irizarry","year":"2003","journal-title":"Nucleic
         Acids Res"},{"key":"ref69","doi-asserted-by":"crossref","first-page":"118","DOI":"10.1093\/biostatistics\/kxj037","article-title":"Adjusting
         batch effects in microarray expression data using empirical Bayes methods.","volume":"8","author":"WE
-        Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","first-page":"Article3","article-title":"Linear
+        Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
         models and empirical bayes methods for assessing differential expression in
         microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T15:58:06Z","timestamp":1497974286000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
-        V.","family":"Borlongan","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["General
-        Biochemistry, Genetics and Molecular Biology","General Agricultural and Biological
-        Sciences","General Medicine"]}}'
-    http_version: 
-  recorded_at: Wed, 09 May 2018 19:29:58 GMT
-recorded_with: VCR 4.0.0
+        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,25]],"date-time":"2019-06-25T23:42:29Z","timestamp":1561506149000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
+        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"published-online":{"date-parts":[[2012,3,21]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}]}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:43:09 GMT
+recorded_with: VCR 5.1.0

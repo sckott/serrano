@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,7 +33,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 00:36:56 GMT
+      - Tue, 18 Feb 2020 18:41:35 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -44,8 +44,8 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
         BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 00:36:56 GMT
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:35 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1371
@@ -54,9 +54,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -79,7 +79,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 00:36:57 GMT
+      - Tue, 18 Feb 2020 18:41:36 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -90,8 +90,8 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/340","name":"Public
         Library of Science (PLoS)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1371"}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 00:36:57 GMT
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:36 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1023
@@ -100,9 +100,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -121,11 +121,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '204'
+      - '228'
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 00:36:58 GMT
+      - Tue, 18 Feb 2020 18:41:36 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -135,9 +135,9 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/297","name":"Springer
-        Nature","prefix":"http:\/\/id.crossref.org\/prefix\/10.1023"}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 00:36:58 GMT
+        Science and Business Media LLC","prefix":"http:\/\/id.crossref.org\/prefix\/10.1023"}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:36 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.4176
@@ -146,9 +146,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -171,7 +171,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 00:36:59 GMT
+      - Tue, 18 Feb 2020 18:41:37 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -182,8 +182,8 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/1989","name":"Co-Action
         Publishing","prefix":"http:\/\/id.crossref.org\/prefix\/10.4176"}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 00:36:59 GMT
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:37 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1093
@@ -192,9 +192,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -217,7 +217,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 00:37:00 GMT
+      - Tue, 18 Feb 2020 18:41:37 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -228,6 +228,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/286","name":"Oxford
         University Press (OUP)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1093"}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 00:37:00 GMT
-recorded_with: VCR 4.0.0
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:37 GMT
+recorded_with: VCR 5.1.0

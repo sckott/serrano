@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '2254'
+      - '2767'
       Server:
       - http-kit
       Date:
-      - Wed, 09 May 2018 19:29:53 GMT
+      - Tue, 18 Feb 2020 18:37:32 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,19 +42,24 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100010608":"Office
-        of Inspector General","100000179":"Office of the Director","100005716":"National
-        Science Board","100000081":"Directorate for Education and Human Resources","100000083":"Directorate
-        for Computer and Information Science and Engineering","100005441":"Office
-        of Budget, Finance and Award Management","100000001":"National Science Foundation","100000076":"Directorate
-        for Biological Sciences","100000084":"Directorate for Engineering","more":null,"100000088":"Directorate
-        for Social, Behavioral and Economic Sciences","100005447":"Office of Information
-        and Resource Management","100000086":"Directorate for Mathematical and Physical
-        Sciences","100000085":"Directorate for Geosciences"},"replaced-by":[],"work-count":121874,"name":"National
-        Science Foundation","descendants":["100000076","100010608","100005716","100000179","100005447","100000086","100000085","100000088","100005441","100000081","100000084","100000083","100000152","100000155","100000154","100000156","100000153","100000089","100006603","100000178","100000177","100007522","100000176","100000106","100005714","100005450","100005448","100005449","100000165","100000164","100000121","100006091","100000078","100000166","100000159","100000087","100000160","100000141","100007352","100000163","100000162","100000175","100000174","100007521","100005717","100000077","100000170","100000169","100005446","100005445","100005442","100005444","100005443","100005554","100005553","100000082","100000171","100000173","100000172","100000149","100000148","100000151","100000150","100000147","100000146","100000105","100000143","100000145","100000144","100007523"],"descendant-work-count":151572,"id":"100000001","tokens":["national","science","foundation","nsf"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100010608":{},"100000179":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100000085":{"more":true}}},"alt-names":["NSF"],"location":"United
-        States"}}'
-    http_version: 
-  recorded_at: Wed, 09 May 2018 19:29:54 GMT
+      string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100014074":"Integrative
+        and Collaborative Education and Research","100010608":"Office of Inspector
+        General","100000179":"Office of the Director","100014411":"Center for Unmanned
+        Aircraft Systems","100005716":"National Science Board","100000081":"Directorate
+        for Education and Human Resources","100000083":"Directorate for Computer and
+        Information Science and Engineering","100005441":"Office of Budget, Finance
+        and Award Management","100000001":"National Science Foundation","100000076":"Directorate
+        for Biological Sciences","100000084":"Directorate for Engineering","100014073":"National
+        Nanotechnology Coordinating Office","more":null,"100014591":"BioXFEL Science
+        and Technology Center","100000088":"Directorate for Social, Behavioral and
+        Economic Sciences","100005447":"Office of Information and Resource Management","100014071":"Large
+        Facilities Office","100000086":"Directorate for Mathematical and Physical
+        Sciences","100000085":"Directorate for Geosciences","100014072":"National
+        Coordination Office"},"replaced-by":[],"work-count":184609,"name":"National
+        Science Foundation","descendants":["100014411","100000081","100000084","100000083","100000076","100000179","100000086","100000085","100014073","100000088","100014072","100014074","100005441","100014071","100014591","100005716","100005447","100010608","100000082","100000171","100000173","100000172","100005553","100005554","100000151","100000150","100000147","100000146","100000149","100000148","100000105","100000143","100000145","100007523","100000144","100000156","100000153","100000152","100000155","100000154","100000177","100000176","100006603","100000089","100000178","100000106","100007522","100005714","100000078","100000166","100006091","100000165","100000164","100000121","100000087","100000141","100000159","100007352","100000160","100000163","100000162","100007521","100000174","100000175","100000077","100000170","100000169","100005717","100005442","100005444","100005443","100005446","100005445","100005449","100005450","100005448"],"descendant-work-count":231609,"id":"100000001","tokens":["national","science","foundation","usa","nsf","nsf","us","nsf"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100014071":{},"100000086":{"more":true},"100000085":{"more":true},"100014072":{}}},"alt-names":["USA
+        NSF","NSF","US NSF"],"location":"United States"}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:37:32 GMT
 - request:
     method: get
     uri: https://api.crossref.org/funders/10.13039%2F100000015
@@ -63,9 +68,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.15.0 Serrano/v0.5.1 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -84,11 +89,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '3649'
+      - '4105'
       Server:
       - http-kit
       Date:
-      - Wed, 09 May 2018 19:29:56 GMT
+      - Tue, 18 Feb 2020 18:37:34 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -99,22 +104,25 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100006130":"Office
         of Electricity Delivery and Energy Reliability","100000015":"U.S. Department
-        of Energy","100006138":"Office of Environmental Management","100006133":"Advanced
-        Research Projects Agency - Energy","100007783":"Office of International Affairs","100006174":"Office
-        of Under Secretary for Science","100006132":"Office of Science","100006113":"Office
-        of Under Secretary","100006131":"Office of Public Affairs","100006124":"Office
-        of Chief Information Officer","100006147":"Office of Nuclear Energy","100006122":"Office
-        of Health, Safety, and Security","100006150":"Office of Policy and International
-        Affairs","100007002":"Small Business Innovative Research and Small Business
-        Technology Transfer","100006120":"Office of Fossil Energy","100006162":"Energy
-        Information Administration","100006157":"Office of Secretary of Energy","100006144":"Office
-        of Intelligence and Counterintelligence","100006186":"Office of Legacy Management","100006143":"Office
-        of Inspector General","more":null,"100006121":"Office of General Counsel","100007000":"Laboratory
-        Directed Research and Development","100006158":"Office of Congressional and
-        Intergovernmental Affairs","100006168":"National Nuclear Security Administration","100006134":"Office
-        of Energy Efficiency and Renewable Energy"},"replaced-by":[],"work-count":41486,"name":"U.S.
-        Department of Energy","descendants":["100006122","100006144","100006157","100006124","100006174","100006121","100007002","100006120","100006150","100006134","100006168","100006186","100006131","100006130","100006133","100006147","100006132","100006113","100007783","100006138","100006162","100006158","100007000","100006143","100006184","100006165","100006183","100006142","100006123","100006167","100006126","100006185","100006200","100006141","100006182","100006140","100006181","100006164","100010268","100011681","100006160","100011680","100006117","100006116","100006177","100006176","100011883","100006135","100006137","100006136","100011682","100011884","100011735","100006335","100006178","100006159","100006161","100011031","100011030","100006115","100006127","100006169","100006187","100006128","100006188","100006146","100006145","100006191","100006172","100006190","100006149","100007001","100006170","100006999","100006998","100006129","100006171","100006189","100006148","100006210","100006151","100006208","100006207","100006209","100006192","100006206","100006173","100006201","100006180","100006139","100006163","100006119","100006179","100006118","100006114","100006175","100006230","100008902","100006235","100011659","100011663","100006228","100011662","100006227","100011665","100011664","100006229","100006224","100006231","100011661","100006226","100006234","100011660","100006233","100006166"],"descendant-work-count":63283,"id":"100000015","tokens":["us","department","of","energy","doe"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000015","hierarchy":{"100000015":{"100006130":{"more":true},"100006138":{"more":true},"100006133":{"more":true},"100007783":{"more":true},"100006174":{},"100006132":{"more":true},"100006113":{},"100006131":{"more":true},"100006124":{"more":true},"100006147":{"more":true},"100006122":{"more":true},"100006150":{},"100007002":{},"100006120":{"more":true},"100006162":{"more":true},"100006157":{},"100006144":{"more":true},"100006186":{"more":true},"100006143":{"more":true},"100006121":{"more":true},"100007000":{"more":true},"100006158":{"more":true},"100006168":{"more":true},"100006134":{"more":true}}},"alt-names":["DOE"],"location":"United
+        of Energy","100013165":"National Energy Technology Laboratory","100014433":"Energy
+        Research and Development Administration","100006138":"Office of Environmental
+        Management","100006133":"Advanced Research Projects Agency - Energy","100007783":"Office
+        of International Affairs","100006174":"Office of Under Secretary for Science","100006132":"Office
+        of Science","100006113":"Office of Under Secretary","100006131":"Office of
+        Public Affairs","100006124":"Office of Chief Information Officer","100006147":"Office
+        of Nuclear Energy","100006122":"Office of Health, Safety, and Security","100006150":"Office
+        of Policy and International Affairs","100007002":"Small Business Innovative
+        Research and Small Business Technology Transfer","100006120":"Office of Fossil
+        Energy","100006162":"Energy Information Administration","100006157":"Office
+        of Secretary of Energy","100013178":"Environmental Management Consolidated
+        Business Center","100006144":"Office of Intelligence and Counterintelligence","100006186":"Office
+        of Legacy Management","100006143":"Office of Inspector General","more":null,"100006121":"Office
+        of General Counsel","100007000":"Laboratory Directed Research and Development","100006158":"Office
+        of Congressional and Intergovernmental Affairs","100006168":"National Nuclear
+        Security Administration","100006134":"Office of Energy Efficiency and Renewable
+        Energy"},"replaced-by":[],"work-count":60973,"name":"U.S. Department of Energy","descendants":["100006144","100007002","100006150","100007783","100006113","100006138","100006162","100006158","100006122","100006157","100006124","100006174","100013165","100006121","100006120","100014433","100006134","100006168","100013178","100006186","100006131","100006130","100006133","100006147","100006132","100007000","100006143","100006126","100006167","100006173","100006139","100006163","100006201","100006180","100006119","100006179","100006118","100006114","100006175","100006142","100006165","100006123","100006184","100006183","100006185","100006200","100006141","100006182","100006164","100006140","100006181","100006115","100006117","100006116","100011884","100011681","100011680","100006335","100006159","100010268","100006161","100006160","100006177","100006176","100011682","100011735","100006135","100011031","100006137","100011030","100006136","100006178","100011883","100006127","100006128","100006169","100006187","100006188","100014492","100006146","100006145","100006191","100006190","100006172","100006149","100007001","100006999","100006998","100006129","100006170","100006171","100006189","100006148","100006210","100014456","100013145","100006151","100006192","100006206","100006208","100006207","100006209","100011659","100006231","100006234","100006233","100006230","100011663","100011662","100006235","100011665","100011664","100008902","100011661","100011660","100006228","100006227","100006229","100006224","100006226","100013055","100006166"],"descendant-work-count":97099,"id":"100000015","tokens":["us","department","of","energy","doe","department","of","energy","usdoe","energy","department","usadoe","us","doe"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000015","hierarchy":{"100000015":{"100006130":{"more":true},"100013165":{},"100014433":{},"100006138":{"more":true},"100006133":{"more":true},"100007783":{"more":true},"100006174":{},"100006132":{"more":true},"100006113":{},"100006131":{"more":true},"100006124":{"more":true},"100006147":{"more":true},"100006122":{"more":true},"100006150":{},"100007002":{},"100006120":{"more":true},"100006162":{"more":true},"100006157":{},"100013178":{},"100006144":{"more":true},"100006186":{"more":true},"100006143":{"more":true},"100006121":{"more":true},"100007000":{"more":true},"100006158":{"more":true},"100006168":{"more":true},"100006134":{"more":true}}},"alt-names":["DOE","Department
+        of Energy","USDOE","Energy Department","USADOE","US DOE"],"location":"United
         States"}}'
-    http_version: 
-  recorded_at: Wed, 09 May 2018 19:29:56 GMT
-recorded_with: VCR 4.0.0
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:37:34 GMT
+recorded_with: VCR 5.1.0

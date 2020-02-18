@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1982'
+      - '2981'
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 00:37:03 GMT
+      - Tue, 18 Feb 2020 18:41:38 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,22 +42,34 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":15543284,"items":[{"DOI":"10.1016\/s0305-9006(99)00007-0","title":["Editorial"]},{"DOI":"10.1016\/s0032-5910(98)00174-0","title":["A
-        visual kinematic model of flowing foams incorporating coalescence"]},{"DOI":"10.1016\/s0305-9006(98)00020-8","title":["Preface"]},{"DOI":"10.1016\/s0032-5910(98)00119-3","title":["Load
-        diversion by embedding in crushed salt"]},{"DOI":"10.1016\/s0079-6700(98)00007-0","title":["Conference"]},{"DOI":"10.1016\/s0306-4530(99)00053-0","title":["Index"]},{"DOI":"10.1016\/s0306-4530(98)00066-3","title":["Growth
-        hormone response to baclofen in patients with seasonal affective disorder:
-        effects of light therapy"]},{"DOI":"10.1016\/s0306-4530(98)00082-1","title":["Index"]},{"DOI":"10.1016\/s0032-5910(98)00010-2","title":["Mixing
-        of granular material in a drum mixer undergoing rotational and rocking motions
-        I. Uniform particles"]},{"DOI":"10.1016\/s0306-4530(98)00010-9","title":["Book
-        Review"]},{"DOI":"10.1016\/s0306-4530(98)00016-x","title":["BOOK REVIEW"]},{"DOI":"10.1016\/s0032-5910(98)00036-9","title":["Subject
-        index of volume 96"]},{"DOI":"10.1016\/s0306-4530(97)87950-4","title":["Keyword
-        index"]},{"DOI":"10.1016\/s0032-5910(97)03300-7","title":["Coarse-particle
-        pipeline transport: Effect of particle degradation on friction"]},{"DOI":"10.1016\/s1350-9462(96)00020-1","title":["A
-        membrane receptor for plasma Retinal-binding Protein (RBP) is expressed in
-        the retinal pigment epithelium"]},{"DOI":"10.1016\/s0363-8111(99)80077-0","title":["Employee
-        relations"]},{"DOI":"10.1016\/s0363-8111(99)80074-5","title":["Corporate social
-        responsibility"]},{"DOI":"10.1016\/s0363-8111(99)80081-2","title":["Futurists"]},{"DOI":"10.1016\/s0363-8111(99)80163-5","title":["Litigation
-        public relations problems and limits"]},{"DOI":"10.1016\/s0363-8111(99)80166-0","title":[""]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 00:37:03 GMT
-recorded_with: VCR 4.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":16708620,"items":[{"DOI":"10.1016\/0197-2456(96)84672-1","title":["P52
+        Can the forest plot be simplified without loosing relevant information in
+        meta-analyses?"]},{"DOI":"10.1016\/s0261-2194(97)00018-5","title":["Influence
+        of cropping system on sharp eyespot in winter wheat"]},{"DOI":"10.1016\/0011-2275(96)80768-5","title":["Magnetization
+        in a generalized critical-state model for type-II superconductors"]},{"DOI":"10.1016\/0011-2275(96)80770-3","title":["Acoustic
+        quality factor of vanadium"]},{"DOI":"10.1016\/s0261-2194(97)00016-1","title":["Sub-lethal
+        effects of tefluthrin on Diabrotica undecimpunctata howardi, Barber: adult
+        emergence weights, fecundity and fertility"]},{"DOI":"10.1016\/s0010-8545(99)00097-1","title":["Isokinetic
+        and isoequilibrium relationships in spin\u2013crossover systems"]},{"DOI":"10.1016\/0011-2275(96)80773-9","title":["Multi-purpose
+        optical cell for the study of quantum crystals"]},{"DOI":"10.1016\/s0011-2275(99)80002-2","title":["Local
+        normal zone nucleation to \u2018global\u2019 transition: quench development
+        in superconductors with changing current"]},{"DOI":"10.1016\/s0261-2194(97)00019-7","title":["Comparison
+        of four particulate substances as wildlife feeding repellents"]},{"DOI":"10.1016\/s0010-8545(99)00111-3","title":["Cooperative
+        phenomena and light-induced bistability in iron(II) spin-crossover compounds"]},{"DOI":"10.1016\/s0011-2275(99)80005-8","title":["Second
+        sound wave heat transfer, thermal boundary layer formation and boiling: highly
+        transient heat transport phenomena in He II"]},{"DOI":"10.1016\/s0261-2194(97)00010-0","title":["Ranging
+        behaviour and habitat utilisation of the Malayan wood rat (Rattus tiomanicus)
+        in an oil palm plantation in Johore, Malaysia"]},{"DOI":"10.1016\/s0011-2275(99)80007-1","title":["Motional
+        heat loss of a Gifford-McMahon cryorefrigerator"]},{"DOI":"10.1016\/s0010-8545(99)00101-0","title":["Nitrile
+        hydratase and related non-heme iron sulfur complexes"]},{"DOI":"10.1016\/s1463-0184(99)00013-1","title":["Silver(I)\u20133,6-bis(pyridin-3-yl)-1,2,4,5-tetrazine
+        coordination polymers: a diversity of chain motifs"]},{"DOI":"10.1016\/s1463-0184(99)00012-x","title":["New
+        coordination networks constructed from N-(4-pyridyl)isonicotinamide"]},{"DOI":"10.1016\/s0010-8545(99)00109-5","title":["Correlations
+        of the distribution of spin states in spin crossover compounds"]},{"DOI":"10.1016\/s0261-2194(97)00006-9","title":["Whiteheads
+        associated with stem borer infestation in modern rice varieties: an attempt
+        to resolve the dilemma of yield losses"]},{"DOI":"10.1016\/s1463-0184(99)00015-5","title":["Cocrystalline
+        salts of alkynoic acids. II. the crystal and molecular structure of 5-bromo-2-aminopyridinium
+        propynoate"]},{"DOI":"10.1016\/s0010-8545(99)00120-4","title":["Reactivity
+        of galactose oxidase"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:38 GMT
+recorded_with: VCR 5.1.0

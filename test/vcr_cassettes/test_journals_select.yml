@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '3298'
+      - '3473'
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:15:36 GMT
+      - Tue, 18 Feb 2020 18:38:13 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,41 +42,44 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":4559,"items":[{"DOI":"10.7717\/peerj.598","title":["Multi-decade
-        biomass dynamics in an old-growth hemlock-northern hardwood forest, Michigan,
-        USA"]},{"DOI":"10.7717\/peerj.1463","title":["Parental encouragement is positively
-        associated with outdoor active play outside of school hours among 7\u201312
-        year olds"]},{"DOI":"10.7717\/peerj.816","title":["The use of neuralgia medications
-        to treat sensory neuropathic cough: our experience in a retrospective cohort
-        of thirty-two patients"]},{"DOI":"10.7717\/peerj.1337","title":["Gluten-free
-        food database: the nutritional quality and cost of packaged gluten-free foods"]},{"DOI":"10.7717\/peerj.1766","title":["Transgenerational
-        effects enhance specific immune response in a wild passerine"]},{"DOI":"10.7717\/peerj.4114","title":["Molecular
-        evolution of virulence genes and non-virulence genes in clinical, natural
-        and artificial environmental Legionella pneumophila isolates"]},{"DOI":"10.7717\/peerj.1303","title":["Factors
-        affecting the identification of individual mountain bongo antelope"]},{"DOI":"10.7717\/peerj.3799","title":["Development
-        and evaluation of rapid novel isothermal amplification assays for important
-        veterinary pathogens: Chlamydia psittaci and Chlamydia pecorum"]},{"DOI":"10.7717\/peerj.4256","title":["Characterization
-        of sympatric Platanthera bifolia and Platanthera chlorantha (Orchidaceae)
-        populations with intermediate plants"]},{"DOI":"10.7717\/peerj.4157","title":["Species
-        identification by conservation practitioners using online images: accuracy
-        and agreement between experts"]},{"DOI":"10.7717\/peerj.4296","title":["Molecular
-        and serological dynamics of Chlamydia pecorum infection in a longitudinal
-        study of prime lamb production"]},{"DOI":"10.7717\/peerj.4243","title":["Breeding
-        and multiple waves of primary molt in common ground doves of coastal Sinaloa"]},{"DOI":"10.7717\/peerj.4298","title":["Tissue
-        material properties and computational modelling of the human tibiofemoral
-        joint: a critical review"]},{"DOI":"10.7717\/peerj.4320","title":["Linking
-        pangenomes and metagenomes: the Prochlorococcus metapangenome"]},{"DOI":"10.7717\/peerj.2433","title":["Metaproteomics
-        of saliva identifies human protein markers specific for individuals with periodontitis
-        and dental caries compared to orally healthy controls"]},{"DOI":"10.7717\/peerj.2751","title":["Perception
-        of color emotions for single colors in red-green defective observers"]},{"DOI":"10.7717\/peerj.2983","title":["Patient
-        satisfaction with doctor-patient interaction and its association with modifiable
-        cardiovascular risk factors among moderately-high risk patients in primary
-        healthcare"]},{"DOI":"10.7717\/peerj.951","title":["Accuracy of the interferon-gamma
-        release assay for the diagnosis of tuberculous pleurisy: an updated meta-analysis"]},{"DOI":"10.7717\/peerj.2037","title":["Transcranial
-        sonography findings related to depression in parkinsonian disorders: cross-sectional
-        study in 126 patients"]},{"DOI":"10.7717\/peerj.4154","title":["Ergonomic
-        risk and preventive measures of musculoskeletal disorders in the dentistry
-        environment: an umbrella review"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:15:37 GMT
-recorded_with: VCR 4.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":8538,"items":[{"DOI":"10.7717\/peerj.7276","title":["Molecular
+        characterization of bacterial leaf streak resistance in hard winter wheat"]},{"DOI":"10.7717\/peerj.5697","title":["Distribution
+        of deep-water corals, sponges, and demersal fisheries landings in Southern
+        California, USA: implications for conservation priorities"]},{"DOI":"10.7717\/peerj.285","title":["Lack
+        of quantitative training among early-career ecologists: a survey of the problem
+        and potential solutions"]},{"DOI":"10.7717\/peerj.7128","title":["Altitudinal
+        gradients in Magellanic sub-Antarctic lagoons: the effect of elevation on
+        freshwater macroinvertebrate diversity and distribution"]},{"DOI":"10.7717\/peerj.6056","title":["Urbanization,
+        environmental stabilization and temporal persistence of bird species: a view
+        from Latin America"]},{"DOI":"10.7717\/peerj.7765","title":["Chemical profile
+        and pancreatic lipase inhibitory activity of Sinobambusa tootsik (Sieb.) Makino
+        leaves"]},{"DOI":"10.7717\/peerj.2068","title":["A closer look at four-dot
+        masking of a foveated target"]},{"DOI":"10.7717\/peerj.6237","title":["Termite
+        mound architecture regulates nest temperature and correlates with species
+        identities of symbiotic fungi"]},{"DOI":"10.7717\/peerj.903","title":["Temporal
+        changes in nasopharyngeal carriage ofStreptococcus pneumoniaeserotype 1 genotypes
+        in healthy Gambians before and after the 7-valent pneumococcal conjugate vaccine"]},{"DOI":"10.7717\/peerj.4261","title":["Differential
+        response to stress inOstrea luridaas measured by gene expression"]},{"DOI":"10.7717\/peerj.5024","title":["Weak
+        population structure in the ant Formica fusca"]},{"DOI":"10.7717\/peerj.3202","title":["Endosymbiont
+        interference and microbial diversity of the Pacific coast tick,Dermacentor
+        occidentalis, in San Diego County, California"]},{"DOI":"10.7717\/peerj.5885","title":["Effects
+        of waste stream combinations from brewing industry on performance of Black
+        Soldier Fly, Hermetia illucens (Diptera: Stratiomyidae)"]},{"DOI":"10.7717\/peerj.2735","title":["Effects
+        of arachidonic acid supplementation in maturation diet on female reproductive
+        performance and larval quality of giant river prawn (Macrobrachium rosenbergii)"]},{"DOI":"10.7717\/peerj.792","title":["Knowledge
+        of malaria prevention among pregnant women and female caregivers of under-five
+        children in rural southwest Nigeria"]},{"DOI":"10.7717\/peerj.2181","title":["On
+        the relationship between enamel band complexity and occlusal surface area
+        in Equids (Mammalia, Perissodactyla)"]},{"DOI":"10.7717\/peerj.1252","title":["Brain-derived
+        neurotrophic factor serum levels in genetically isolated populations: gender-specific
+        association with anxiety disorder subtypes but not with anxiety levels or
+        Val66Met polymorphism"]},{"DOI":"10.7717\/peerj.5018","title":["Availability
+        of Nanopore sequences in the genome taxonomy for Vibrionaceae systematics:
+        Rumoiensis clade species as a test case"]},{"DOI":"10.7717\/peerj.2483","title":["Aggressive
+        nutrition in extremely low birth weight infants: impact on parenteral nutrition
+        associated cholestasis and growth"]},{"DOI":"10.7717\/peerj.5185","title":["Criterion-related
+        validity and reliability of the Urdu version of the patient health questionnaire
+        in a sample of community-based pregnant women in Pakistan"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:38:13 GMT
+recorded_with: VCR 5.1.0

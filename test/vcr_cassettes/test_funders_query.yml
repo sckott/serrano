@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '3170'
+      - '7436'
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:13:37 GMT
+      - Tue, 18 Feb 2020 18:37:35 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,21 +42,43 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":20,"query":{"start-index":0,"search-terms":"NSF"},"total-results":9,"items":[{"id":"100006445","location":"United
+      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":20,"query":{"start-index":0,"search-terms":"NSF"},"total-results":15,"items":[{"id":"100006445","location":"United
         States","name":"Center for Hierarchical Manufacturing, National Science Foundation","alt-names":["CHM,
         NSF","University of Massachusetts NSF Center for Hierarchical Manufacturing","Center
-        for Hierarchical Manufacturing"],"uri":"http:\/\/dx.doi.org\/10.13039\/100006445","replaces":[],"replaced-by":[],"tokens":["center","for","hierarchical","manufacturing","national","science","foundation","chm","nsf","university","of","massachusetts","nsf","center","for","hierarchical","manufacturing","center","for","hierarchical","manufacturing"]},{"id":"100003187","location":"United
-        States","name":"National Sleep Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100003187","replaces":[],"replaced-by":[],"tokens":["national","sleep","foundation","nsf"]},{"id":"501100008982","location":"Sri
-        Lanka","name":"National Science Foundation","alt-names":["National Science
-        Foundation of Sri Lanka","NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008982","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","national","science","foundation","of","sri","lanka","nsf"]},{"id":"100008367","location":"Denmark","name":"Statens
+        for Hierarchical Manufacturing"],"uri":"http:\/\/dx.doi.org\/10.13039\/100006445","replaces":[],"replaced-by":[],"tokens":["center","for","hierarchical","manufacturing","national","science","foundation","chm","nsf","university","of","massachusetts","nsf","center","for","hierarchical","manufacturing","center","for","hierarchical","manufacturing"]},{"id":"501100003995","location":"China","name":"Natural
+        Science Foundation of Anhui Province","alt-names":["Anhui Provincial Natural
+        Science Foundation","NSF of Anhui Province"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100003995","replaces":[],"replaced-by":[],"tokens":["natural","science","foundation","of","anhui","province","anhui","provincial","natural","science","foundation","nsf","of","anhui","province"]},{"id":"100008367","location":null,"name":"Statens
         Naturvidenskabelige Forskningsrad","alt-names":["Danish National Science Foundation","SNF","Danish
-        NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100008367","replaces":[],"replaced-by":[],"tokens":["statens","naturvidenskabelige","forskningsrad","danish","national","science","foundation","snf","danish","nsf"]},{"id":"501100004190","location":"Norway","name":"Norsk
-        Sykepleierforbund","alt-names":["NSF","Norwegian Nurses Organisation"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004190","replaces":[],"replaced-by":[],"tokens":["norsk","sykepleierforbund","nsf","norwegian","nurses","organisation"]},{"id":"100000179","location":"United
-        States","name":"Office of the Director","alt-names":["NSF Office of the Director","OD"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000179","replaces":[],"replaced-by":[],"tokens":["office","of","the","director","nsf","office","of","the","director","od"]},{"id":"501100000930","location":"Australia","name":"National
-        Stroke Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000930","replaces":[],"replaced-by":[],"tokens":["national","stroke","foundation","nsf"]},{"id":"100000001","location":"United
-        States","name":"National Science Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","nsf"]},{"id":"501100001809","location":"China","name":"National
-        Natural Science Foundation of China","alt-names":["Natural Science Foundation
-        of China","National Science Foundation of China","NSFC"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100001809","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","natural","science","foundation","of","china","national","science","foundation","of","china","nsfc"]}]}}'
-    http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:13:38 GMT
-recorded_with: VCR 4.0.0
+        NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100008367","replaces":[],"replaced-by":[],"tokens":["statens","naturvidenskabelige","forskningsrad","danish","national","science","foundation","snf","danish","nsf"]},{"id":"501100000930","location":null,"name":"National
+        Stroke Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000930","replaces":[],"replaced-by":[],"tokens":["national","stroke","foundation","nsf"]},{"id":"100003187","location":"United
+        States","name":"National Sleep Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100003187","replaces":[],"replaced-by":[],"tokens":["national","sleep","foundation","nsf"]},{"id":"100000001","location":"United
+        States","name":"National Science Foundation","alt-names":["USA NSF","NSF","US
+        NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","usa","nsf","nsf","us","nsf"]},{"id":"100000179","location":"United
+        States","name":"Office of the Director","alt-names":["NSF Office of the Director","OD"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000179","replaces":[],"replaced-by":[],"tokens":["office","of","the","director","nsf","office","of","the","director","od"]},{"id":"501100001809","location":"China","name":"National
+        Natural Science Foundation of China","alt-names":["NNSF of China","NSF of
+        China","NSFC","NSF","National Science Foundation of China","Natural Science
+        Foundation of China","NNSFC","Chinese National Science Foundation","NNSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100001809","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","nnsf","of","china","nsf","of","china","nsfc","nsf","national","science","foundation","of","china","natural","science","foundation","of","china","nnsfc","chinese","national","science","foundation","nnsf"]},{"id":"100014591","location":"United
+        States","name":"BioXFEL Science and Technology Center","alt-names":["National
+        Science Foundation BioXFEL Science and Technology Center","NSF BioXFEL STC"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014591","replaces":[],"replaced-by":[],"tokens":["bioxfel","science","and","technology","center","national","science","foundation","bioxfel","science","and","technology","center","nsf","bioxfel","stc"]},{"id":"501100008982","location":null,"name":"National
+        Science Foundation","alt-names":["National Science Foundation of Sri Lanka","NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008982","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","national","science","foundation","of","sri","lanka","nsf"]},{"id":"501100004190","location":null,"name":"Norsk
+        Sykepleierforbund","alt-names":["NSF","Norwegian Nurses Organisation"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004190","replaces":[],"replaced-by":[],"tokens":["norsk","sykepleierforbund","nsf","norwegian","nurses","organisation"]},{"id":"501100011002","location":"China","name":"National
+        Natural Science Foundation of China-Yunnan Joint Fund","alt-names":["NSFC-Yunnan
+        Joint Fund"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011002","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","yunnan","joint","fund","nsfc","yunnan","joint","fund"]},{"id":"501100013143","location":"China","name":"National
+        Natural Science Foundation of China-Shandong Joint Fund for Marine Science
+        Research Centers","alt-names":["NSFC-Shandong Joint Fund for Marine Science
+        Research Centers"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100013143","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","shandong","joint","fund","for","marine","science","research","centers","nsfc","shandong","joint","fund","for","marine","science","research","centers"]},{"id":"100014718","location":"China","name":"Innovative
+        Research Group Project of the National Natural Science Foundation of China","alt-names":["Fund
+        for innovative Research Groups of the National Natural Science Fund Committee
+        of Science","AIC","Innovative Research Group Project","Funds for Innovative
+        Research Groups of China","Innovative Research Groups of the Natural Science
+        Foundation of China NSFC","Foundation for Innovative Research Groups of the
+        National Natural Science Fund of China"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014718","replaces":[],"replaced-by":[],"tokens":["innovative","research","group","project","of","the","national","natural","science","foundation","of","china","fund","for","innovative","research","groups","of","the","national","natural","science","fund","committee","of","science","aic","innovative","research","group","project","funds","for","innovative","research","groups","of","china","innovative","research","groups","of","the","natural","science","foundation","of","china","nsfc","foundation","for","innovative","research","groups","of","the","national","natural","science","fund","of","china"]},{"id":"100014717","location":"China","name":"National
+        Outstanding Youth Science Fund Project of National Natural Science Foundation
+        of China","alt-names":["National Outstanding Youth Science Fund Project of
+        NSFC","National Natural Science Foundation for Excellent Youth Science Fund
+        Project of China","Outstanding Youth Science Fund Project of the National
+        Natural Science Foundation of China","National Science Fund for Excellent
+        Young Scholars","National Outstanding Youth Science Fund Project of China","IUSS"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014717","replaces":[],"replaced-by":[],"tokens":["national","outstanding","youth","science","fund","project","of","national","natural","science","foundation","of","china","national","outstanding","youth","science","fund","project","of","nsfc","national","natural","science","foundation","for","excellent","youth","science","fund","project","of","china","outstanding","youth","science","fund","project","of","the","national","natural","science","foundation","of","china","national","science","fund","for","excellent","young","scholars","national","outstanding","youth","science","fund","project","of","china","iuss"]}]}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:37:35 GMT
+recorded_with: VCR 5.1.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '17940'
+      - '17564'
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:03:00 GMT
+      - Tue, 18 Feb 2020 18:44:17 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,136 +42,65 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":96004801,"items":[{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T06:43:59Z","timestamp":1509000239984},"reference-count":0,"publisher":"Japanese
-        Society of Periodontology","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J
-        Jpn Soc Periodontol"],"published-print":{"date-parts":[[2001]]},"DOI":"10.2329\/perio.43.260","type":"journal-article","created":{"date-parts":[[2011,11,16]],"date-time":"2011-11-16T18:06:52Z","timestamp":1321466812000},"page":"260-272","source":"Crossref","is-referenced-by-count":0,"title":["Effects
-        of Lipopolysaccharide on Phagocytic Function in Polymorphonuclear Leukocytes
-        Using Flow Cytometry and Confocal Laser Scanning Microscopy."],"prefix":"10.2329","volume":"43","author":[{"given":"Yasuko","family":"Saitoh","affiliation":[]},{"given":"Youichi","family":"Saitoh","affiliation":[]},{"given":"Yukihiro","family":"Numabe","affiliation":[]},{"given":"Kyuichi","family":"Kamoi","affiliation":[]}],"member":"1156","container-title":["Nihon
-        Shishubyo Gakkai Kaishi (Journal of the Japanese Society of Periodontology)"],"original-title":["\u591a\u5f62\u6838\u767d\u8840\u7403\u306e\u8ca7\u98df\u6a5f\u80fd\u306b\u5bfe\u3059\u308b\uff2c\uff49\uff50\uff4f\uff50\uff4f\uff4c\uff59\uff53\uff41\uff43\uff43\uff48\uff41\uff52\uff49\uff44\uff45\u306e\u5f71\u97ff\u306b\u3064\u3044\u3066\u3000\u3000\u30d5\u30ed\u30fc\u30b5\u30a4\u30c8\u30e1\u30fc\u30bf\u30fc\u3068\u5171\u7126\u70b9\u30ec\u30fc\u30b6\u30fc\u8d70\u67fb\u9855\u5fae\u93e1\u306b\u3088\u308b\u89b3\u5bdf"],"deposited":{"date-parts":[[2011,11,16]],"date-time":"2011-11-16T18:12:01Z","timestamp":1321467121000},"score":1.0,"issued":{"date-parts":[[2001]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2329\/perio.43.260","ISSN":["0385-0110","1880-408X"],"issn-type":[{"value":"0385-0110","type":"print"},{"value":"1880-408X","type":"electronic"}]},{"indexed":{"date-parts":[[2018,1,3]],"date-time":"2018-01-03T20:41:27Z","timestamp":1515012087553},"reference-count":0,"publisher":"National
-        Research University, Higher School of Economics (HSE)","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JSPS"],"abstract":"<jats:p>\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430
-        \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430 \u041b\u0430\u0442\u044b\u0448\u0435\u0432\u0430
-        \u2013 a\u0441\u043f\u0438\u0440\u0430\u043d\u0442, \u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442
-        \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0445 \u043d\u0430\u0443\u043a,
-        \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0430\u043a\u0430\u0434\u0435\u043c\u0438\u044f
-        \u043d\u0430\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0445\u043e\u0437\u044f\u0439\u0441\u0442\u0432\u0430
-        \u0438 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439
-        \u0441\u043b\u0443\u0436\u0431\u044b \u043f\u0440\u0438 \u041f\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442\u0435
-        \u0420\u0424 (\u0420\u0410\u041d\u0425\u0438\u0413\u0421); \u043f\u0440\u043e\u0434\u044e\u0441\u0435\u0440,
-        \u0410\u041e \u00ab\u041f\u0435\u0440\u0432\u044b\u0439 \u043a\u0430\u043d\u0430\u043b.
-        \u0412\u0441\u0435\u043c\u0438\u0440\u043d\u0430\u044f \u0441\u0435\u0442\u044c\u00bb
-        (\u041f\u0435\u0440\u0432\u044b\u0439 Digital), \u041c\u043e\u0441\u043a\u0432\u0430,
-        \u0420\u043e\u0441\u0441\u0438\u044f. \u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0430\u044f
-        \u043f\u043e\u0447\u0442\u0430: sasha.latysheva@yandex.ru&#x0D;\nDOI: 10.17323\/727-0634-2017-15-4-660-668&#x0D;\n\u0420\u0430\u0441\u0441\u043c\u0430\u0442\u0440\u0438\u0432\u0430\u044f
-        \u0438\u0441\u0442\u043e\u0440\u0438\u044e \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f
-        \u0442\u0435\u0440\u043c\u0438\u043d\u0430 \u00ab\u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u00bb,
-        \u044f \u0430\u043d\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u044e \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0435
-        \u0442\u0435\u043e\u0440\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435
-        \u043f\u043e\u0434\u0445\u043e\u0434\u044b \u043a \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u044e
-        \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430.
-        \u0412\u043e-\u043f\u0435\u0440\u0432\u044b\u0445, \u043a\u0430\u043a \u0431\u0438\u0437\u043d\u0435\u0441-\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430
-        \u0434\u043b\u044f \u0441\u0431\u043e\u0440\u0430 \u0441\u0440\u0435\u0434\u0441\u0442\u0432
-        \u043d\u0430 \u00ab\u0441\u0442\u0430\u0440\u0442\u0430\u043f\u044b\u00bb.
-        \u0412\u043e-\u0432\u0442\u043e\u0440\u044b\u0445, \u043a\u0430\u043a \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430
-        \u0430\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u043e\u0439
-        \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438, \u043a\u043e\u0433\u0434\u0430
-        \u043a\u0440\u0430\u0443\u0434-\u0441\u043f\u043e\u043d\u0441\u043e\u0440\u044b
-        \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0443\u044e\u0442 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e
-        \u0432\u043e\u043a\u0440\u0443\u0433 \u0441\u0432\u043e\u0435\u0439 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438,
-        \u0447\u0442\u043e\u0431\u044b \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0441\u0442\u0438
-        \u043d\u0443\u0436\u043d\u044b\u0439 \u043f\u0440\u043e\u0434\u0443\u043a\u0442
-        \u0438\u043b\u0438 \u0443\u0441\u043b\u0443\u0433\u0443. \u0412-\u0442\u0440\u0435\u0442\u044c\u0438\u0445,
-        \u0432 \u043a\u043e\u043d\u0442\u0435\u043a\u0441\u0442\u0435 \u0441\u043e\u0446\u0438\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0433\u043e
-        \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f \u044d\u0442\u043e\u0433\u043e
-        \u044f\u0432\u043b\u0435\u043d\u0438\u044f. \u041a\u0430\u043a \u043e\u0442\u043c\u0435\u0447\u0430\u044e\u0442
-        \u043c\u043d\u043e\u0433\u0438\u0435 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435
-        \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u0438,
-        \u0431\u043e\u043b\u044c\u0448\u0438\u043d\u0441\u0442\u0432\u043e \u043a\u0440\u0430\u0443\u0434-\u0441\u043f\u043e\u043d\u0441\u043e\u0440\u043e\u0432
-        \u0438\u043c\u0435\u044e\u0442 \u043d\u0435\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u0443\u044e
-        \u043c\u043e\u0442\u0438\u0432\u0430\u0446\u0438\u044e, \u043a\u043e\u0442\u043e\u0440\u0430\u044f
-        \u0438\u0433\u043d\u043e\u0440\u0438\u0440\u0443\u0435\u0442\u0441\u044f \u043f\u0440\u0438
-        \u0438\u0437\u0443\u0447\u0435\u043d\u0438\u0438 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430
-        \u0438\u0441\u043a\u043b\u044e\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u043e
-        \u043a\u0430\u043a \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430
-        \u0434\u043b\u044f \u0442\u043e\u0432\u0430\u0440\u043d\u043e-\u0434\u0435\u043d\u0435\u0436\u043d\u043e\u0433\u043e
-        \u043e\u0431\u043c\u0435\u043d\u0430. \u042f \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u044e
-        \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u0435 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430,
-        \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u0438\u0440\u0443\u044e\u0449\u0435\u0435
-        \u0440\u0430\u0437\u043d\u044b\u0435 \u0442\u043e\u0447\u043a\u0438 \u0437\u0440\u0435\u043d\u0438\u044f,
-        \u0438 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0437\u0443\u044e
-        \u0432\u0435\u0434\u0443\u0449\u0438\u0435 \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u044b\u0435
-        \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u043e\u0432\u044b\u0435
-        \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b (Kickstarter \u0438
-        IndieGoGo), \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u044f\u044e \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435
-        \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438, \u0440\u0430\u0437\u0431\u0438\u0440\u0430\u044e
-        \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u043a\u0440\u0443\u043f\u043d\u0435\u0439\u0448\u0438\u0445
-        \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u043e\u0432\u044b\u0445
-        \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c (Planeta.ru \u0438 Boomstarter).
-        \u0412 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043f\u0440\u0438\u043c\u0435\u0440\u0430
-        \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0439
-        \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438
-        \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u044e \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c
-        \u043f\u0440\u043e\u0435\u043a\u0442 Sbor-nik, \u0437\u0430\u043d\u0438\u043c\u0430\u044e\u0449\u0438\u0439\u0441\u044f
-        \u0441\u0431\u043e\u0440\u043e\u043c \u0441\u0440\u0435\u0434\u0441\u0442\u0432
-        \u0434\u043b\u044f \u0438\u0437\u0434\u0430\u043d\u0438\u044f \u043a\u043d\u0438\u0433.
-        \u0414\u043b\u044f \u043a\u0430\u0436\u0434\u043e\u0439 \u0438\u0437 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c
-        \u043f\u0440\u0438\u0432\u043e\u0436\u0443 \u0434\u0430\u043d\u043d\u044b\u0435
-        \u043f\u043e \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u0443
-        \u0437\u0430\u043f\u0443\u0449\u0435\u043d\u043d\u044b\u0445 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432,
-        \u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0445 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439
-        \u0438 \u0441\u043e\u0431\u0440\u0430\u043d\u043d\u044b\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432.
-        \u041e\u0442\u0434\u0435\u043b\u044c\u043d\u043e \u0443\u0434\u0435\u043b\u044f\u0435\u0442\u0441\u044f
-        \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435 \u043d\u0435\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u043e\u0439
-        \u043c\u043e\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439:
-        \u043f\u0440\u0438\u0432\u043e\u0436\u0443 \u043f\u0440\u0438\u043c\u0435\u0440\u044b
-        \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u0431\u043b\u0430\u0433\u043e\u0442\u0432\u043e\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445
-        \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432, \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d\u043d\u044b\u0445
-        \u043d\u0430 \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0445
-        \u0432\u044b\u0448\u0435 \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430\u0445,
-        \u0430 \u0442\u0430\u043a\u0436\u0435 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u0438,
-        \u043a\u043e\u0433\u0434\u0430 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438
-        \u043e\u0442\u043a\u0430\u0437\u044b\u0432\u0430\u043b\u0438\u0441\u044c \u043e\u0442
-        \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0439
-        \u0438\u043b\u0438 \u0432\u044b\u0431\u0438\u0440\u0430\u043b\u0438 \u043d\u0435\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u044b\u0435
-        \u0444\u043e\u0440\u043c\u044b \u0432\u043e\u0437\u043d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0439
-        (\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u043e\u0441\u0442\u044c,
-        \u0443\u043f\u043e\u043c\u0438\u043d\u0430\u043d\u0438\u0435 \u0432 \u0447\u0438\u0441\u043b\u0435
-        \u0441\u043f\u043e\u043d\u0441\u043e\u0440\u043e\u0432). \u041e\u0441\u043e\u0431\u043e
-        \u0430\u043a\u0446\u0435\u043d\u0442\u0438\u0440\u0443\u044e \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435
-        \u043d\u0430 \u0441\u043e\u0446\u0438\u043e\u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u044b\u0445
-        \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u044f\u0445 \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0442\u0435\u043d\u0438\u0439
-        \u0441\u043f\u043e\u043d\u0441\u043e\u0440\u043e\u0432. \u0410\u043d\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u044e
-        \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0439
-        \u043f\u043b\u043e\u0449\u0430\u0434\u043e\u043a, \u0438\u0445 \u0441\u0430\u043c\u043e\u043f\u043e\u0437\u0438\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f
-        \u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432, \u0440\u0430\u0437\u043c\u0435\u0449\u0430\u0435\u043c\u044b\u0445
-        \u043d\u0430 \u043d\u0438\u0445. \u0421\u0434\u0435\u043b\u0430\u043d\u0430
-        \u043f\u043e\u043f\u044b\u0442\u043a\u0430 \u043e\u0442\u0432\u0435\u0442\u0438\u0442\u044c
-        \u043d\u0430 \u0432\u043e\u043f\u0440\u043e\u0441\u044b, \u0447\u0442\u043e
-        \u0442\u0430\u043a\u043e\u0435 \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433
-        \u043a\u0430\u043a \u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435
-        \u0438 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0435 \u044f\u0432\u043b\u0435\u043d\u0438\u0435
-        \u0438 \u0432 \u0447\u0435\u043c \u0437\u0430\u043a\u043b\u044e\u0447\u0430\u044e\u0442\u0441\u044f
-        \u0435\u0433\u043e \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438
-        \u0432 \u0420\u043e\u0441\u0441\u0438\u0438. \u042d\u0442\u043e \u044f\u0432\u043b\u0435\u043d\u0438\u0435
-        \u043c\u043e\u0436\u043d\u043e \u0440\u0430\u0441\u0441\u043c\u0430\u0442\u0440\u0438\u0432\u0430\u0442\u044c
-        \u043a\u0430\u043a \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043e, \u043a\u043e\u0442\u043e\u0440\u043e\u0435
-        \u0432\u044b\u0431\u0438\u0440\u0430\u044e\u0442 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438,
-        \u0447\u0442\u043e\u0431\u044b \u043a\u043e\u043c\u043f\u0435\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u0442\u044c
-        \u043d\u0435\u0434\u043e\u0441\u0442\u0430\u0442\u043a\u0438 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439
-        \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0438 \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0439
-        \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0438.<\/jats:p>","DOI":"10.17323\/727-0634-2017-15-4-660-668","type":"journal-article","created":{"date-parts":[[2018,1,3]],"date-time":"2018-01-03T20:17:17Z","timestamp":1515010637000},"page":"660","source":"Crossref","is-referenced-by-count":0,"title":["
-        \u042d\u0442\u043e \u043d\u0435\u00a0\u043f\u0440\u043e\u0441\u0442\u043e
-        \u0431\u0438\u0437\u043d\u0435\u0441: \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u0430\u044f
-        \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u044e\u0449\u0430\u044f \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0433\u043e
-        \u043a\u0440\u0430\u0443\u0434\u0444\u0430\u043d\u0434\u0438\u043d\u0433\u0430"],"prefix":"10.17323","volume":"15","author":[{"given":"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430
-        \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430","family":"\u041b\u0430\u0442\u044b\u0448\u0435\u0432\u0430","affiliation":[]}],"member":"6872","published-online":{"date-parts":[[2017,12,23]]},"container-title":["The
-        Journal of Social Policy Studies"],"link":[{"URL":"https:\/\/jsps.hse.ru\/article\/download\/7332\/8205","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/jsps.hse.ru\/article\/download\/7332\/8205","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,1,3]],"date-time":"2018-01-03T20:17:18Z","timestamp":1515010638000},"score":1.0,"issued":{"date-parts":[[2017,12,23]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.17323\/727-0634-2017-15-4-660-668","ISSN":["1727-0634"],"issn-type":[{"value":"1727-0634","type":"print"}],"subject":["Sociology
-        and Political Science","Public Administration"]},{"indexed":{"date-parts":[[2018,2,3]],"date-time":"2018-02-03T19:32:57Z","timestamp":1517686377977},"reference-count":0,"publisher":"Elsevier
-        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1994,2,1]],"date-time":"1994-02-01T00:00:00Z","timestamp":760060800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Free
-        Radical Biology and Medicine"],"published-print":{"date-parts":[[1994,2]]},"DOI":"10.1016\/0891-5849(94)90151-1","type":"journal-article","created":{"date-parts":[[2003,2,12]],"date-time":"2003-02-12T02:03:32Z","timestamp":1045015412000},"page":"263-269","source":"Crossref","is-referenced-by-count":11,"title":["Ethanol
-        synergizes with hydrogen peroxide, peroxyl radical, and trypsin to kill epithelial
-        cells in culture\u2606"],"prefix":"10.1016","volume":"16","author":[{"given":"I","family":"GINSBURG","affiliation":[]},{"given":"R","family":"KOHEN","affiliation":[]},{"given":"M","family":"LIGUMSKY","affiliation":[]}],"member":"78","container-title":["Free
-        Radical Biology and Medicine"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0891584994901511?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0891584994901511?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,20]],"date-time":"2015-09-20T03:45:39Z","timestamp":1442720739000},"score":1.0,"issued":{"date-parts":[[1994,2]]},"references-count":0,"alternative-id":["0891584994901511"],"URL":"http:\/\/dx.doi.org\/10.1016\/0891-5849(94)90151-1","ISSN":["0891-5849"],"issn-type":[{"value":"0891-5849","type":"print"}],"subject":["Physiology
-        (medical)","Biochemistry"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:03:00 GMT
-recorded_with: VCR 4.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":111302756,"items":[{"indexed":{"date-parts":[[2019,11,21]],"date-time":"2019-11-21T22:46:52Z","timestamp":1574376412906},"reference-count":24,"publisher":"IEEE","isbn-type":[{"value":"9781424422302","type":"print"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2008,5]]},"DOI":"10.1109\/ectc.2008.4550146","type":"proceedings-article","created":{"date-parts":[[2008,6,25]],"date-time":"2008-06-25T18:08:12Z","timestamp":1214417292000},"source":"Crossref","is-referenced-by-count":1,"title":["Real-time
+        protein detection using ZnO nanowire\/thin film bio-sensor integrated with
+        microfluidic system"],"prefix":"10.1109","author":[{"family":"Jin Liu","sequence":"first","affiliation":[]},{"given":"Janagama","family":"Goud","sequence":"additional","affiliation":[]},{"given":"P.
+        Markondeya","family":"Raj","sequence":"additional","affiliation":[]},{"given":"Mahadevan","family":"Iyer","sequence":"additional","affiliation":[]},{"family":"Zhong
+        Lin Wang","sequence":"additional","affiliation":[]},{"given":"Rao R.","family":"Tummala","sequence":"additional","affiliation":[]}],"member":"263","event":{"name":"2008
+        58th Electronic Components and Technology Conference (ECTC 2008)","location":"Lake
+        Buena Vista, FL, USA","start":{"date-parts":[[2008,5,27]]},"end":{"date-parts":[[2008,5,30]]}},"container-title":["2008
+        58th Electronic Components and Technology Conference"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/4542565\/4549927\/04550146.pdf?arnumber=4550146","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,16]],"date-time":"2017-03-16T16:07:18Z","timestamp":1489680438000},"score":1.0,"issued":{"date-parts":[[2008,5]]},"ISBN":["9781424422302"],"references-count":24,"URL":"http:\/\/dx.doi.org\/10.1109\/ectc.2008.4550146"},{"indexed":{"date-parts":[[2019,12,2]],"date-time":"2019-12-02T15:32:01Z","timestamp":1575300721038},"reference-count":60,"publisher":"Royal
+        Society of Chemistry (RSC)","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Mater. Chem. B"],"DOI":"10.1039\/c3tb21102a","type":"journal-article","created":{"date-parts":[[2013,10,29]],"date-time":"2013-10-29T09:54:00Z","timestamp":1383040440000},"page":"283-294","source":"Crossref","is-referenced-by-count":25,"title":["Chemically
+        regulated bioactive ion delivery platform on a titanium surface for sustained
+        controlled release"],"prefix":"10.1039","volume":"2","author":[{"given":"Jinhua","family":"Li","sequence":"first","affiliation":[]},{"given":"Wenjie","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Yuqin","family":"Qiao","sequence":"additional","affiliation":[]},{"given":"Hongqin","family":"Zhu","sequence":"additional","affiliation":[]},{"given":"Xinquan","family":"Jiang","sequence":"additional","affiliation":[]},{"given":"Xuanyong","family":"Liu","sequence":"additional","affiliation":[]},{"given":"Chuanxian","family":"Ding","sequence":"additional","affiliation":[]}],"member":"292","published-online":{"date-parts":[[2014]]},"reference":[{"key":"C3TB21102A-(cit1)\/*[position()=1]","author":"Chung","volume":"485","first-page":"486","year":"2012","journal-title":"Nature","DOI":"10.1038\/nature11067","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit2)\/*[position()=1]","author":"Chen","volume":"331","first-page":"746","year":"2011","journal-title":"Science","DOI":"10.1126\/science.1200448","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit3)\/*[position()=1]","author":"Murdoch","volume":"3","first-page":"489","year":"2011","journal-title":"Nat.
+        Chem.","DOI":"10.1038\/nchem.1048","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit4)\/*[position()=1]","author":"Song","volume":"131","first-page":"4230","year":"2009","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja810130h","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit5)\/*[position()=1]","author":"Balasundaram","volume":"16","first-page":"3737","year":"2006","journal-title":"J.
+        Mater. Chem.","DOI":"10.1039\/b604966b","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit6)\/*[position()=1]","author":"Soumya","volume":"22","first-page":"1904","year":"2012","journal-title":"J.
+        Mater. Chem.","DOI":"10.1039\/C1JM14038H","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit7)\/*[position()=1]","author":"Wu","volume":"8","first-page":"3803","year":"2008","journal-title":"Nano
+        Lett.","DOI":"10.1021\/nl802145n","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit8)\/*[position()=1]","author":"Dong","volume":"19","first-page":"4454","year":"2007","journal-title":"Chem.
+        Mater.","DOI":"10.1021\/cm070845a","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit9)\/*[position()=1]","author":"Divya
+        Rani","volume":"20","first-page":"195101","year":"2009","journal-title":"Nanotechnology","DOI":"10.1088\/0957-4484\/20\/19\/195101","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit10)\/*[position()=1]","author":"Xue","volume":"26","first-page":"3029","year":"2005","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2004.09.003","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit11)\/*[position()=1]","author":"Liu","volume":"70","first-page":"275","year":"2010","journal-title":"Mater.
+        Sci. Eng., R","DOI":"10.1016\/j.mser.2010.06.013","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit12)\/*[position()=1]","author":"Ng","volume":"2","first-page":"10110","year":"2012","journal-title":"RSC
+        Adv.","DOI":"10.1039\/c2ra21085a","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit13)\/*[position()=1]","author":"Klymov","volume":"1","first-page":"135","year":"2013","journal-title":"Biomater.
+        Sci.","DOI":"10.1039\/C2BM00032F","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit14)\/*[position()=1]","author":"Higuchi","volume":"113","first-page":"3297","year":"2013","journal-title":"Chem.
+        Rev.","DOI":"10.1021\/cr300426x","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit15)\/*[position()=1]","author":"Santos","volume":"29","first-page":"4306","year":"2008","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2008.07.033","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit16)\/*[position()=1]","author":"Liu","volume":"1","first-page":"2078","year":"2013","journal-title":"J.
+        Mater. Chem. B","DOI":"10.1039\/c3tb20084a","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit17)\/*[position()=1]","author":"Kubo","volume":"30","first-page":"5319","year":"2009","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2009.06.021","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit18)\/*[position()=1]","author":"Li","volume":"3","first-page":"11214","year":"2013","journal-title":"RSC
+        Adv.","DOI":"10.1039\/c3ra23252b","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit19)\/*[position()=1]","author":"Fan","volume":"5","first-page":"2144","year":"2009","journal-title":"Small","DOI":"10.1002\/smll.200900345","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit20)\/*[position()=1]","author":"Zhao","volume":"33","first-page":"2629","year":"2012","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2011.12.024","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit21)\/*[position()=1]","author":"Liu","volume":"47","first-page":"49","year":"2004","journal-title":"Mater.
+        Sci. Eng., R","DOI":"10.1016\/j.mser.2004.11.001","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit22)\/*[position()=1]","author":"Braux","volume":"7","first-page":"2593","year":"2011","journal-title":"Acta
+        Biomater.","DOI":"10.1016\/j.actbio.2011.02.013","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit23)\/*[position()=1]","author":"Yang","volume":"29","first-page":"981","year":"2011","journal-title":"Stem
+        Cells","DOI":"10.1002\/stem.646","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit24)\/*[position()=1]","author":"Peng","volume":"23","first-page":"165","year":"2009","journal-title":"Cell.
+        Physiol. Biochem.","DOI":"10.1159\/000204105","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit25)\/*[position()=1]","author":"Renaudin","volume":"18","first-page":"3593","year":"2008","journal-title":"J.
+        Mater. Chem.","DOI":"10.1039\/b804140g","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit26)\/*[position()=1]","author":"Gentleman","volume":"31","first-page":"3949","year":"2010","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2010.01.121","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit27)\/*[position()=1]","author":"Xue","volume":"201","first-page":"4685","year":"2007","journal-title":"Surf.
+        Coat. Technol.","DOI":"10.1016\/j.surfcoat.2006.10.012","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit28)\/*[position()=1]","author":"Zhao","volume":"34","first-page":"19","year":"2013","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2012.09.041","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit29)\/*[position()=1]","author":"Anast","volume":"177","first-page":"606","year":"1972","journal-title":"Science","DOI":"10.1126\/science.177.4049.606","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit30)\/*[position()=1]","author":"Abed","volume":"40","first-page":"849","year":"2007","journal-title":"Cell
+        Proliferation","DOI":"10.1111\/j.1365-2184.2007.00476.x","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit31)\/*[position()=1]","author":"Sul","volume":"17","first-page":"521","year":"2006","journal-title":"Clin.
+        Oral Implants Res.","DOI":"10.1111\/j.1600-0501.2005.01230.x","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit32)\/*[position()=1]","author":"Sul","volume":"89","first-page":"942","year":"2009","journal-title":"J.
+        Biomed. Mater. Res., Part A","DOI":"10.1002\/jbm.a.32041","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit33)\/*[position()=1]","author":"Jiang","volume":"30","first-page":"4522","year":"2009","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2009.05.021","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit34)\/*[position()=1]","author":"Feist","volume":"101","first-page":"275","year":"1992","journal-title":"J.
+        Solid State Chem.","DOI":"10.1016\/0022-4596(92)90184-W","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit35)\/*[position()=1]","author":"Akimoto","volume":"83","first-page":"132","year":"1989","journal-title":"J.
+        Solid State Chem.","DOI":"10.1016\/0022-4596(89)90062-5","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit36)\/*[position()=1]","author":"Atuchin","volume":"152","first-page":"18","year":"2006","journal-title":"J.
+        Electron Spectrosc. Relat. Phenom.","DOI":"10.1016\/j.elspec.2006.02.004","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit37)\/*[position()=1]","author":"Vasquez","volume":"56","first-page":"217","year":"1991","journal-title":"J.
+        Electron Spectrosc. Relat. Phenom.","DOI":"10.1016\/0368-2048(91)85005-E","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit38)\/*[position()=1]","author":"Riss","volume":"7","first-page":"433","year":"2007","journal-title":"Nano
+        Lett.","DOI":"10.1021\/nl062699y","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit39)\/*[position()=1]","author":"Tengvall","volume":"10","first-page":"166","year":"1989","journal-title":"Biomaterials","DOI":"10.1016\/0142-9612(89)90019-7","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit40)\/*[position()=1]","author":"Wu","volume":"21","first-page":"6995","year":"2005","journal-title":"Langmuir","DOI":"10.1021\/la0500272","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit41)\/*[position()=1]","author":"Tengvall","volume":"130","first-page":"405","year":"1989","journal-title":"J.
+        Colloid Interface Sci.","DOI":"10.1016\/0021-9797(89)90117-3","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit42)\/*[position()=1]","author":"Been","year":"1998","unstructured":"J.
+        Been , UBC Retrospective Theses Digitization Project, 1998"},{"key":"C3TB21102A-(cit43)\/*[position()=1]","author":"Kim","volume":"8","first-page":"341","year":"1997","journal-title":"J.
+        Mater. Sci.: Mater. Med."},{"key":"C3TB21102A-(cit44)\/*[position()=1]","author":"Miyauchi","volume":"111","first-page":"12440","year":"2007","journal-title":"J.
+        Phys. Chem. C","DOI":"10.1021\/jp073604z","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit45)\/*[position()=1]","author":"Tokudome","first-page":"958","year":"2004","journal-title":"Chem.
+        Commun.","DOI":"10.1039\/b316924c","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit46)\/*[position()=1]","author":"Core\u00f1o","volume":"75","first-page":"478","year":"2005","journal-title":"J.
+        Biomed. Mater. Res., Part A","DOI":"10.1002\/jbm.a.30447","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit47)\/*[position()=1]","author":"L\u00f3pez","volume":"20","first-page":"107","year":"2000","journal-title":"J.
+        Eur. Ceram. Soc.","DOI":"10.1016\/S0955-2219(99)00137-5","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit48)\/*[position()=1]","author":"Seeman","volume":"21","first-page":"1113","year":"2006","journal-title":"J.
+        Bone Miner. Res.","DOI":"10.1359\/jbmr.060404","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit49)\/*[position()=1]","author":"Gu","volume":"26","first-page":"6916","year":"2005","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2005.04.051","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit50)\/*[position()=1]","author":"Han","volume":"3","first-page":"11169","year":"2013","journal-title":"RSC
+        Adv.","DOI":"10.1039\/c3ra23425h","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit51)\/*[position()=1]","author":"Bellino","volume":"1","first-page":"186","year":"2013","journal-title":"Biomater.
+        Sci.","DOI":"10.1039\/C2BM00136E","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit52)\/*[position()=1]","author":"Oh","volume":"106","first-page":"2130","year":"2009","journal-title":"Proc.
+        Natl. Acad. Sci. U. S. A.","DOI":"10.1073\/pnas.0813200106","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit53)\/*[position()=1]","author":"Diener","volume":"26","first-page":"383","year":"2005","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2004.02.038","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit54)\/*[position()=1]","author":"McBeath","volume":"6","first-page":"483","year":"2004","journal-title":"Dev.
+        Cell","DOI":"10.1016\/S1534-5807(04)00075-9","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit55)\/*[position()=1]","author":"Biggs","volume":"30","first-page":"5094","year":"2009","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2009.05.049","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit56)\/*[position()=1]","author":"Biggs","volume":"6","first-page":"619","year":"2010","journal-title":"Nanomedicine","DOI":"10.1016\/j.nano.2010.01.009","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit57)\/*[position()=1]","author":"Fournier","volume":"50","first-page":"499","year":"2012","journal-title":"Bone","DOI":"10.1016\/j.bone.2011.07.038","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit58)\/*[position()=1]","author":"Zreiqat","volume":"26","first-page":"7579","year":"2005","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2005.05.024","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit59)\/*[position()=1]","author":"Gu","volume":"32","first-page":"7023","year":"2011","journal-title":"Biomaterials","DOI":"10.1016\/j.biomaterials.2011.06.003","doi-asserted-by":"crossref"},{"key":"C3TB21102A-(cit60)\/*[position()=1]","author":"Jeon","volume":"84","first-page":"23","year":"2009","journal-title":"Life
+        Sci.","DOI":"10.1016\/j.lfs.2008.10.011","doi-asserted-by":"crossref"}],"container-title":["J.
+        Mater. Chem. B"],"language":"en","link":[{"URL":"http:\/\/pubs.rsc.org\/en\/content\/articlepdf\/2014\/TB\/C3TB21102A","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,7,31]],"date-time":"2019-07-31T12:15:42Z","timestamp":1564575342000},"score":1.0,"issued":{"date-parts":[[2014]]},"references-count":60,"journal-issue":{"published-print":{"date-parts":[[2014]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1039\/c3tb21102a","relation":{"cites":[]},"ISSN":["2050-750X","2050-7518"],"issn-type":[{"value":"2050-750X","type":"print"},{"value":"2050-7518","type":"electronic"}],"subject":["General
+        Materials Science","General Chemistry","Biomedical Engineering","General Medicine"]},{"indexed":{"date-parts":[[2019,11,26]],"date-time":"2019-11-26T06:40:47Z","timestamp":1574750447929},"publisher-location":"400
+        Commonwealth Drive, Warrendale, PA, United States","standards-body":{"name":"SAE
+        International","acronym":"SAE"},"reference-count":0,"publisher":"SAE International","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.4271\/as3238c","type":"standard","created":{"date-parts":[[2017,2,20]],"date-time":"2017-02-20T20:13:12Z","timestamp":1487621592000},"approved":{"date-parts":[[2011,12]]},"source":"Crossref","is-referenced-by-count":0,"title":["Bolt,
+        Machine - Double Hexagon Extended Washer Head, PD Shank, Nickel Alloy, UNS
+        N07718, 185 ksi min, .3125-24 UNJF-3A"],"prefix":"10.4271","author":[{"name":"E-25
+        General Standards for Aerospace and Propulsion Systems","sequence":"first","affiliation":[]}],"member":"2796","deposited":{"date-parts":[[2019,1,15]],"date-time":"2019-01-15T17:42:26Z","timestamp":1547574146000},"score":1.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.4271\/as3238c"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:44:18 GMT
+recorded_with: VCR 5.1.0

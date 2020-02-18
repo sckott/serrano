@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1765'
+      - '1820'
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 17:02:48 GMT
+      - Tue, 18 Feb 2020 18:42:25 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,25 +42,25 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":25696,"items":[{"DOI":"10.22550\/rep","title":["Revista
-        Espa\u00f1ola de Pedagog\u00eda"]},{"DOI":"10.18590\/issn.2379-9536","title":["Marshall
-        Journal of Medicine"]},{"DOI":"10.21134\/rpcna","title":["Revista de Psicolog\u00eda
-        Cl\u00ednica con Ni\u00f1os y Adolescentes"]},{"DOI":"10.15862\/nv","title":["On-line
-        Journal \"Naukovedenie\""]},{"DOI":"10.26634\/jmgt","title":["i-manager\u2019s
-        Journal on Management"]},{"DOI":"10.13187\/issn.2500-3712","title":["Propaganda
-        in the World and Local Conflicts"]},{"DOI":"10.29362\/ist20veka","title":["Istorija
-        20. veka"]},{"DOI":"10.26634\/jfet","title":["i-manager''s Journal on Future
-        Engineering and Technology"]},{"DOI":"10.22403\/uqroomx\/typ","title":["Teor\u00eda
-        y Praxis"]},{"DOI":"10.1007\/s00268-003-7042-4","title":["World Journal of
-        Surgery"]},{"DOI":"10.1007\/s00268-003-7065-x","title":["World Journal of
-        Surgery"]},{"DOI":"10.1007\/s00464-002-4257-7","title":["Surgical Endoscopy"]},{"DOI":"10.1007\/s00464-002-4514-9","title":["Surgical
-        Endoscopy"]},{"DOI":"10.12733\/issn.1548-7741","title":["Journal of Information
-        and Computational Science"]},{"DOI":"10.4000\/signata","title":["Signata"]},{"DOI":"10.2147\/oajc","title":["Open
-        Access Journal of Contraception"]},{"DOI":"10.17223\/20764103","title":["Sistematicheskie
-        zametki po materialam Gerbariya im. P.N. Krylova Tomskogo gosudarstvennogo
-        universiteta"]},{"DOI":"10.1126\/scitranslmed","title":["Science Translational
-        Medicine"]},{"DOI":"10.4000\/jsa","title":["Journal de la soci\u00e9t\u00e9
-        des am\u00e9ricanistes"]},{"DOI":"10.4000\/appareil","title":["Appareil"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 17:02:48 GMT
-recorded_with: VCR 4.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":34805,"items":[{"DOI":"10.1007\/s00268-003-7063-2","title":["World
+        Journal of Surgery"]},{"DOI":"10.1007\/s10126-002-0076-9","title":["Marine
+        Biotechnology"]},{"DOI":"10.1007\/s10126-002-0069-8","title":["Marine Biotechnology"]},{"DOI":"10.1007\/s10126-002-0071-1","title":["Marine
+        Biotechnology"]},{"DOI":"10.1007\/s10126-002-0086-z","title":["Marine Biotechnology"]},{"DOI":"10.1007\/s00464-002-4265-7","title":["Surgical
+        Endoscopy"]},{"DOI":"10.17513\/sn","title":["\u0421\u0442\u0430\u0440\u0442
+        \u0432 \u043d\u0430\u0443\u043a\u0435 (Science Start)"]},{"DOI":"10.17352\/amgm","title":["Annals
+        of Molecular and Genetic Medicine"]},{"DOI":"10.14574\/ojrnhc","title":["Online
+        Journal of Rural Nursing and Health Care"]},{"DOI":"10.15406\/jbmoa","title":["Journal
+        of Bacteriology & Mycology: Open Access"]},{"DOI":"10.33805\/2638-8073","title":["Edelweiss:
+        Psychiatry Open Access"]},{"DOI":"10.16965\/ijar","title":["International
+        Journal of Anatomy and Research"]},{"DOI":"10.15804\/tner","title":["The New
+        Educational Review"]},{"DOI":"10.17963\/ccek","title":["Journal of Chinese
+        Characters Education in Korea"]},{"DOI":"10.22172\/cogbio","title":["Korean
+        Journal of Cognitive and Biological Psychology"]},{"DOI":"10.20878\/cshr","title":["Culinary
+        Science & Hospitality Research"]},{"DOI":"10.34143\/jtr","title":["Journal
+        of Transport Research"]},{"DOI":"10.17248\/knulaw","title":["KYUNGPOOK NATIONAL
+        UNIVERSITY LAW JOURNAL"]},{"DOI":"10.35637\/klehrd","title":["The Journal
+        of Lifelong Education and HRD"]},{"DOI":"10.35873\/ajmahs","title":["Asia-pacific
+        Journal of Multimedia Services Convergent with Art, Humanities, and Sociology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:42:25 GMT
+recorded_with: VCR 5.1.0

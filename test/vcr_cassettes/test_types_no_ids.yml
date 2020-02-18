@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1216'
+      - '1316'
       Server:
       - http-kit
       Date:
-      - Sun, 08 Apr 2018 17:02:47 GMT
+      - Tue, 18 Feb 2020 18:42:24 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,16 +42,18 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":26,"items":[{"id":"book-section","label":"Book
-        Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"book-track","label":"Book
-        Track"},{"id":"journal-article","label":"Journal Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
+      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":28,"items":[{"id":"book-section","label":"Book
+        Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
+        Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
+        Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
         Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
         Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
-        Chapter"},{"id":"report-series","label":"Report Series"},{"id":"proceedings","label":"Proceedings"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
+        Chapter"},{"id":"proceedings-series","label":"Proceedings Series"},{"id":"report-series","label":"Report
+        Series"},{"id":"proceedings","label":"Proceedings"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
         Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
         Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
         Series"},{"id":"edited-book","label":"Edited Book"},{"id":"standard-series","label":"Standard
         Series"}]}}'
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 17:02:47 GMT
-recorded_with: VCR 4.0.0
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:42:24 GMT
+recorded_with: VCR 5.1.0

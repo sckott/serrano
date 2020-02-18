@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.14.0 Serrano/v0.3.6.2
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,11 +29,11 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '2328'
+      - '2410'
       Server:
       - http-kit
       Date:
-      - Sat, 07 Apr 2018 23:17:26 GMT
+      - Tue, 18 Feb 2020 18:41:14 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -42,28 +42,30 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":198878,"items":[{"DOI":"10.1002\/cfg.114","title":["Meeting
-        Highlights: Joint Cold Spring Harbor Laboratory and Wellcome Trust Conference
-        \u2013 Genome Informatics"]},{"DOI":"10.1002\/cfg.126","title":["In This Issue"]},{"DOI":"10.1002\/cfg.127","title":["Meeting
-        Highlights:15thInternational Mouse Genome Conference"]},{"DOI":"10.1002\/cfg.60","title":["Current
-        Awareness on Comparative and Functional Genomics"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<241::aid-yea28>3.0.co;2-t","title":["Life
-        Will Never Be the Same"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<169::aid-yea33>3.0.co;2-u","title":["Editorial"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<235::aid-yea36>3.0.co;2-x","title":["Functional
-        Genomics at the Arabidopsis Meeting"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<244::aid-yea38>3.0.co;2-p","title":["UK
-        CropNet"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<255::aid-yea9>3.0.co;2-7","title":["Current
-        Awareness on Comparative and Functional Genomics"]},{"DOI":"10.1002\/1097-0061(20000630)17:2<79::aid-yea21>3.0.co;2-x","title":["In
-        This Issue"]},{"DOI":"10.1002\/cfg.122","title":["Conference Calendar"]},{"DOI":"10.1002\/cfg.125","title":["Upstream
-        \u2013 News in Genomics"]},{"DOI":"10.1002\/cfg.80","title":["IBC \u2013 Proteomics,
-        1\u20132 March 2000, Basel Hilton, Switzerland"]},{"DOI":"10.1002\/cfg.84","title":["In
-        This Issue"]},{"DOI":"10.1002\/cfg.83","title":["Interview with Duncan Campbell:
-        After the Draft Sequence, What Next for the Human Genome Mapping Project Resource
-        Centre?"]},{"DOI":"10.1002\/cfg.57","title":["Current Awareness on Comparative
-        and Functional Genomics"]},{"DOI":"10.1002\/cfg.59","title":["Current Awareness
-        on Comparative and Functional Genomics"]},{"DOI":"10.1002\/cfg.100","title":["Mapping
-        Protein-Protein Interactions with Combinatorial Peptides"]},{"DOI":"10.1002\/cfg.103","title":["A
-        Special Section Including Selected Reviews From the ESF \u2018Integrated Approaches
-        for Functional Genomics\u2019 Programme Workshop \u2018Proteomics: Focus on
-        Protein Interactions\u2019"]},{"DOI":"10.1002\/cfg.107","title":["Meeting
-        Review: The Bioinformatics Open Source Conference 2001 (BOSC 2001)"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: 
-  recorded_at: Sat, 07 Apr 2018 23:17:26 GMT
-recorded_with: VCR 4.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":236469,"items":[{"DOI":"10.1155\/s1085337503305032","title":["L2(\u03a3)-regularity
+        of the boundary to boundary operator B\u2217L for hyperbolic and Petrowski
+        PDEs"]},{"DOI":"10.1155\/s1085337503304014","title":["Nonsmooth optimal regulation
+        and discontinuous stabilization"]},{"DOI":"10.1155\/s1110757x03305030","title":["On
+        the weak solutions of the forward problem in EEG"]},{"DOI":"10.1155\/s1110757x03206033","title":["Multiscale
+        deformation analysis by Cauchy-Navier wavelets"]},{"DOI":"10.1155\/s1085337503309042","title":["The
+        Apollonian metric: limits of the comparison and bilipschitz properties"]},{"DOI":"10.1155\/s0161171203210668","title":["On
+        a few Diophantine equations, in particular, Fermat''s last theorem"]},{"DOI":"10.1155\/s0161171203211534","title":["On
+        Dedekind''s criterion and monogenicity over Dedekind rings"]},{"DOI":"10.1155\/s016117120321067x","title":["Characterization
+        of the automorphisms having the lifting property in the category of abelianp-groups"]},{"DOI":"10.1155\/s0161171203209418","title":["Atomical
+        Grothendieck categories"]},{"DOI":"10.1155\/s0161171203210693","title":["Nagata
+        rings and directed unions of Artinian subrings"]},{"DOI":"10.1155\/s0161171204305284","title":["Partial
+        sums of functions of bounded turning"]},{"DOI":"10.1155\/s0161171204305156","title":["Estimates
+        of convolutions of certain number-theoretic error terms"]},{"DOI":"10.1155\/s0161171204210365","title":["On
+        Gromov''s theorem andL\u20092-Hodge decomposition"]},{"DOI":"10.1155\/s0161171204208158","title":["A
+        lower bound for ratio of power means"]},{"DOI":"10.1155\/s0161171204301511","title":["Inclusion
+        results for convolution submethods"]},{"DOI":"10.1155\/s0161171204211280","title":["On
+        embedding properties ofSD-groups"]},{"DOI":"10.1155\/s016117120430726x","title":["On
+        uniform Kadec-Klee properties and rotundity in generalized Ces\u00e0ro sequence
+        spaces"]},{"DOI":"10.1155\/s0161171204206172","title":["Stability of reaction
+        fronts in thin domains"]},{"DOI":"10.1155\/s0161171204203325","title":["On
+        hypersurfaces in a locally affine Riemannian Banach manifold II"]},{"DOI":"10.1155\/s0161171204307271","title":["A
+        delayed mathematical model for testosterone secretion with feedback control
+        mechanism"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:41:14 GMT
+recorded_with: VCR 5.1.0

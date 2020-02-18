@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.0 Serrano/v0.5.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.0 Serrano/v0.5.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,7 +33,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 27 Nov 2019 00:29:47 GMT
+      - Tue, 18 Feb 2020 18:42:12 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,8 +43,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1007\/12080.1874-1746","agency":{"id":"crossref","label":"Crossref"}}}'
-    http_version: 
-  recorded_at: Wed, 27 Nov 2019 00:29:48 GMT
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:42:12 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125/agency
@@ -53,9 +53,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.0 Serrano/v0.5.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.0 Serrano/v0.5.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -78,7 +78,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 27 Nov 2019 00:29:49 GMT
+      - Tue, 18 Feb 2020 18:42:12 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -88,8 +88,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1007\/10452.1573-5125","agency":{"id":"crossref","label":"Crossref"}}}'
-    http_version: 
-  recorded_at: Wed, 27 Nov 2019 00:29:49 GMT
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:42:13 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1111%2F(issn)1442-9993/agency
@@ -98,9 +98,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.0 Serrano/v0.5.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.0 Serrano/v0.5.3 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -123,7 +123,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Wed, 27 Nov 2019 00:29:49 GMT
+      - Tue, 18 Feb 2020 18:42:13 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -133,6 +133,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1111\/(issn)1442-9993","agency":{"id":"crossref","label":"Crossref"}}}'
-    http_version: 
-  recorded_at: Wed, 27 Nov 2019 00:29:49 GMT
-recorded_with: VCR 5.0.0
+    http_version: null
+  recorded_at: Tue, 18 Feb 2020 18:42:13 GMT
+recorded_with: VCR 5.1.0
