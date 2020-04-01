@@ -16,6 +16,12 @@ Lint/UselessAssignment:
   Exclude:
     - 'lib/serrano/filters.rb'
 
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
 Style/HashEachMethods:
   Enabled: true
 
