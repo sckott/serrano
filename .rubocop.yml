@@ -33,4 +33,9 @@ Style/HashTransformValues:
 
 Layout/LineLength:
   Max: 525
-  
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
