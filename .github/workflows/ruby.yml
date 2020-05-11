@@ -23,9 +23,8 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Run tests
-      run: |
-        echo "run gem tests"
-        bundle exec rake test TESTOPTS="-v"
-        echo "ruby rubocop"
-        bundle exec rubocop
-
+      run: bundle exec rake test TESTOPTS="-v"
+    - name: Rubocop checks
+      uses: luizfonseca/github-actions-rubocop@1.5.5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
