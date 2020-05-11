@@ -24,7 +24,5 @@ jobs:
       run: bundle install
     - name: Run tests
       run: bundle exec rake test TESTOPTS="-v"
-    - name: Rubocop checks
-      uses: luizfonseca/github-actions-rubocop@1.5.5
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Run rubocop
+      run: bundle exec rubocop
