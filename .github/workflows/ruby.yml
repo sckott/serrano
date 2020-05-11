@@ -24,6 +24,6 @@ jobs:
       run: bundle install
     - name: Run tests
       run: |
-      bundle exec rake test TESTOPTS="-v"
-      bundle exec rubocop
+        bundle exec rake test TESTOPTS="-v"
+        bundle exec rubocop
 
