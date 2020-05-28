@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rubocop', '~> 0.84.0'
   s.add_development_dependency 'simplecov', '~> 0.18.5'
   s.add_development_dependency 'test-unit', '~> 3.2', '>= 3.2.7'
-  s.add_development_dependency 'vcr', '~> 5.0'
+  s.add_development_dependency 'vcr', '~> 6.0'
   s.add_development_dependency 'webmock', '~> 3.4', '>= 3.4.1'
 
   s.add_runtime_dependency 'faraday', '~> 1.0', '>= 1.0.1'
