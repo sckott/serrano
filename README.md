@@ -2,7 +2,7 @@ serrano
 =========
 
 [![gem version](https://img.shields.io/gem/v/serrano.svg)](https://rubygems.org/gems/serrano)
-![Ruby](https://github.com/sckott/serrano/workflows/Ruby/badge.svg)
+[![Ruby](https://github.com/sckott/serrano/workflows/Ruby/badge.svg)](https://github.com/sckott/serrano/actions)
 [![codecov.io](http://codecov.io/github/sckott/serrano/coverage.svg?branch=master)](http://codecov.io/github/sckott/serrano?branch=master)
 [![DOI](https://zenodo.org/badge/2600/sckott/serrano.svg)](https://zenodo.org/badge/latestdoi/2600/sckott/serrano)
 
