@@ -1,3 +1,7 @@
+## 0.6.2 (2020-05-29)
+
+* put documentation link back in rubygems page (#132)
+
 ## 0.6.0 (2020-02-18)
 
 * query.title (`query_title` query filter as used here) has been removed; use `query_bibliographic` instead (#111)
