@@ -6,7 +6,7 @@ require 'serrano/cnrequest'
 ##
 # ContentNegotiation - Content Negotiation class
 #
-# @see http://www.crosscite.org/cn/ for details
+# @see https://citation.crosscite.org/docs.html for details
 module Serrano
   class ContentNegotiation
     attr_accessor :ids

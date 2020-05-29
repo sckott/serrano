@@ -3,7 +3,7 @@ serrano
 
 [![gem version](https://img.shields.io/gem/v/serrano.svg)](https://rubygems.org/gems/serrano)
 [![Ruby](https://github.com/sckott/serrano/workflows/Ruby/badge.svg)](https://github.com/sckott/serrano/actions)
-[![codecov.io](http://codecov.io/github/sckott/serrano/coverage.svg?branch=master)](http://codecov.io/github/sckott/serrano?branch=master)
+[![codecov.io](https://codecov.io/github/sckott/serrano/coverage.svg?branch=master)](https://codecov.io/github/sckott/serrano?branch=master)
 [![DOI](https://zenodo.org/badge/2600/sckott/serrano.svg)](https://zenodo.org/badge/latestdoi/2600/sckott/serrano)
 
 `serrano` is a low level client for Crossref APIs
@@ -194,8 +194,8 @@ Commands:
 * License: MIT
 
 [crapi]: https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md
-[cn]: http://www.crosscite.org/cn/
-[tdm]: http://www.crossref.org/tdm/
-[ccount]: http://labs.crossref.org/openurl/
+[cn]: https://citation.crosscite.org/docs.html
+[tdm]: https://www.crossref.org/education/retrieve-metadata/rest-api/text-and-data-mining/
+[ccount]: https://labs.crossref.org/openurl/
 [csl]: https://github.com/citation-style-language/styles
 [changelog]: https://github.com/sckott/serrano/blob/master/CHANGELOG.md
