@@ -651,7 +651,7 @@ module Serrano
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012.01.001")
   #   # DOI not found
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012")
-  def self.citation_count(doi:, url: 'http://www.crossref.org/openurl/',
+  def self.citation_count(doi:, url: 'https://www.crossref.org/openurl/',
                           key: 'cboettig@ropensci.org', options: nil)
 
     args = { id: 'doi:' + doi, pid: key, noredirect: true }

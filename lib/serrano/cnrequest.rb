@@ -69,7 +69,7 @@ def make_request(conn, ids, format, style, locale)
   type = CN_FORMAT_HEADERS.select { |x, _| x.include? format }.values[0]
 
   if format == 'citeproc-json'
-    endpt = 'http://api.crossref.org/works/' + ids + '/' + type
+    endpt = 'https://api.crossref.org/works/' + ids + '/' + type
     cr_works = Faraday.new(url: endpt)
     cr_works.headers[:user_agent] = make_ua
     cr_works.headers['X-USER-AGENT'] = make_ua
