@@ -42,6 +42,7 @@ Gem::Specification.new do |s|
 
   s.metadata = {
     'homepage_uri' => 'https://github.com/sckott/serrano',
+    'documentation_uri' => 'https://www.rubydoc.info/gems/serrano',
     'changelog_uri' =>
       "https://github.com/sckott/serrano/releases/tag/v#{s.version}",
     'source_code_uri' => 'https://github.com/sckott/serrano',
