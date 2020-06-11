@@ -24,5 +24,5 @@ jobs:
       run: bundle install
     - name: Run tests
       run: |
-        gem install standard
+        bundle exec rake install
         bundle exec rake test TESTOPTS="-v"
