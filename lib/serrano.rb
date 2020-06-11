@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require 'erb'
-require 'serrano/version'
-require 'serrano/request'
-require 'serrano/request_cursor'
-require 'serrano/filterhandler'
-require 'serrano/cnrequest'
-require 'serrano/filters'
-require 'serrano/styles'
+require "erb"
+require "serrano/version"
+require "serrano/request"
+require "serrano/request_cursor"
+require "serrano/filterhandler"
+require "serrano/cnrequest"
+require "serrano/filters"
+require "serrano/styles"
 
-require 'rexml/document'
-require 'rexml/xpath'
+require "rexml/document"
+require "rexml/xpath"
 
 # @!macro serrano_params
 #   @param offset [Fixnum] Number of record to start at, any non-negative integer up to 10,000
@@ -152,8 +152,8 @@ module Serrano
 
   define_setting :access_token
   define_setting :access_secret
-  define_setting :mailto, ENV['CROSSREF_EMAIL']
-  define_setting :base_url, 'https://api.crossref.org/'
+  define_setting :mailto, ENV["CROSSREF_EMAIL"]
+  define_setting :base_url, "https://api.crossref.org/"
 
   ##
   # Search the works route
@@ -229,14 +229,14 @@ module Serrano
   #      # select certain fields
   #      Serrano.works(select: ['DOI', 'title'], limit: 3)
   def self.works(ids: nil, query: nil, filter: nil, offset: nil,
-                 limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-                 select: nil, options: nil, verbose: false, cursor: nil,
-                 cursor_max: 5000, **args)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    select: nil, options: nil, verbose: false, cursor: nil,
+    cursor_max: 5000, **args)
 
     assert_valid_filters(filter) if filter
-    RequestCursor.new('works', ids, query, filter, offset,
-                      limit, sample, sort, order, facet, select, nil, nil, options,
-                      verbose, cursor, cursor_max, args).perform
+    RequestCursor.new("works", ids, query, filter, offset,
+      limit, sample, sort, order, facet, select, nil, nil, options,
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -286,14 +286,14 @@ module Serrano
   #      # select certain fields
   #      Serrano.members(ids: 340, works: true, select: ['DOI', 'title'], limit: 3)
   def self.members(ids: nil, query: nil, filter: nil, offset: nil,
-                   limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-                   select: nil, works: false, options: nil, verbose: false,
-                   cursor: nil, cursor_max: 5000, **args)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    select: nil, works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000, **args)
 
     assert_valid_filters(filter) if filter
-    RequestCursor.new('members', ids, query, filter, offset,
-                      limit, sample, sort, order, facet, select, works, nil,
-                      options, verbose, cursor, cursor_max, args).perform
+    RequestCursor.new("members", ids, query, filter, offset,
+      limit, sample, sort, order, facet, select, works, nil,
+      options, verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -334,14 +334,14 @@ module Serrano
   #      # select certain fields
   #      Serrano.prefixes(ids: "10.1016", works: true, select: ['DOI', 'title'], limit: 3)
   def self.prefixes(ids:, filter: nil, offset: nil,
-                    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-                    select: nil, works: false, options: nil, verbose: false,
-                    cursor: nil, cursor_max: 5000, **args)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    select: nil, works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000, **args)
 
     assert_valid_filters(filter) if filter
-    RequestCursor.new('prefixes', ids, nil, filter, offset,
-                      limit, sample, sort, order, facet, select, works, nil,
-                      options, verbose, cursor, cursor_max, args).perform
+    RequestCursor.new("prefixes", ids, nil, filter, offset,
+      limit, sample, sort, order, facet, select, works, nil,
+      options, verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -387,14 +387,14 @@ module Serrano
   #      # select certain fields
   #      Serrano.funders(ids: "10.13039/100000001", works: true, select: ['DOI', 'title'], limit: 3)
   def self.funders(ids: nil, query: nil, filter: nil, offset: nil,
-                   limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-                   select: nil, works: false, options: nil, verbose: false,
-                   cursor: nil, cursor_max: 5000, **args)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    select: nil, works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000, **args)
 
     assert_valid_filters(filter) if filter
-    RequestCursor.new('funders', ids, query, filter, offset,
-                      limit, sample, sort, order, facet, select, works, nil, options,
-                      verbose, cursor, cursor_max, args).perform
+    RequestCursor.new("funders", ids, query, filter, offset,
+      limit, sample, sort, order, facet, select, works, nil, options,
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -440,14 +440,14 @@ module Serrano
   #      # select certain fields
   #      Serrano.journals(ids: "2167-8359", works: true, select: ['DOI', 'title'], limit: 3)
   def self.journals(ids: nil, query: nil, filter: nil, offset: nil,
-                    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
-                    select: nil, works: false, options: nil, verbose: false,
-                    cursor: nil, cursor_max: 5000, **args)
+    limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
+    select: nil, works: false, options: nil, verbose: false,
+    cursor: nil, cursor_max: 5000, **args)
 
     assert_valid_filters(filter) if filter
-    RequestCursor.new('journals', ids, query, filter, offset,
-                      limit, sample, sort, order, facet, select, works, nil, options,
-                      verbose, cursor, cursor_max, args).perform
+    RequestCursor.new("journals", ids, query, filter, offset,
+      limit, sample, sort, order, facet, select, works, nil, options,
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -485,11 +485,11 @@ module Serrano
   #      # select certain fields
   #      Serrano.types(ids: "journal", works: true, select: ['DOI', 'title'], limit: 3)
   def self.types(ids: nil, offset: nil, limit: nil, select: nil, works: false,
-                 options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
+    options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
 
-    RequestCursor.new('types', ids, nil, nil, offset,
-                      limit, nil, nil, nil, nil, select, works, nil, options,
-                      verbose, cursor, cursor_max, args).perform
+    RequestCursor.new("types", ids, nil, nil, offset,
+      limit, nil, nil, nil, nil, select, works, nil, options,
+      verbose, cursor, cursor_max, args).perform
   end
 
   ##
@@ -525,11 +525,11 @@ module Serrano
   #      Serrano.licenses()
   #      Serrano.licenses(limit: 3)
   def self.licenses(query: nil, offset: nil,
-                    limit: nil, sample: nil, sort: nil, order: nil,
-                    facet: nil, options: nil, verbose: false)
+    limit: nil, sample: nil, sort: nil, order: nil,
+    facet: nil, options: nil, verbose: false)
 
-    Request.new('licenses', nil, query, nil, offset,
-                limit, sample, sort, order, facet, nil, nil, nil, options, verbose).perform
+    Request.new("licenses", nil, query, nil, offset,
+      limit, sample, sort, order, facet, nil, nil, nil, options, verbose).perform
   end
 
   ##
@@ -544,8 +544,8 @@ module Serrano
   #      Serrano.registration_agency(ids: '10.1371/journal.pone.0033693')
   #      Serrano.registration_agency(ids: ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
   def self.registration_agency(ids:, options: nil, verbose: false)
-    Request.new('works', ids, nil, nil, nil,
-                nil, nil, nil, nil, nil, nil, false, true, options, verbose).perform
+    Request.new("works", ids, nil, nil, nil,
+      nil, nil, nil, nil, nil, nil, false, true, options, verbose).perform
   end
 
   ##
@@ -566,9 +566,9 @@ module Serrano
   #      Serrano.random_dois(sample: 10)
   #      Serrano.random_dois(sample: 100)
   def self.random_dois(sample: 10, options: nil, verbose: false)
-    tmp = Request.new('works', nil, nil, nil, nil,
-                      nil, sample, nil, nil, nil, nil, false, nil, options, verbose).perform
-    tmp['message']['items'].collect { |x| x['DOI'] }
+    tmp = Request.new("works", nil, nil, nil, nil,
+      nil, sample, nil, nil, nil, nil, false, nil, options, verbose).perform
+    tmp["message"]["items"].collect { |x| x["DOI"] }
   end
 
   ##
@@ -631,7 +631,7 @@ module Serrano
   #      '10.5167/UZH-38402','10.5167/UZH-41217']
   #     x = Serrano.content_negotiation(ids: dois)
   #     puts x
-  def self.content_negotiation(ids:, format: 'bibtex', style: 'apa', locale: 'en-US')
+  def self.content_negotiation(ids:, format: "bibtex", style: "apa", locale: "en-US")
     ids = Array(ids).map { |x| ERB::Util.url_encode(x) }
     CNRequest.new(ids, format, style, locale).perform
   end
@@ -651,16 +651,16 @@ module Serrano
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012.01.001")
   #   # DOI not found
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012")
-  def self.citation_count(doi:, url: 'https://www.crossref.org/openurl/',
-                          key: 'cboettig@ropensci.org', options: nil)
+  def self.citation_count(doi:, url: "https://www.crossref.org/openurl/",
+    key: "cboettig@ropensci.org", options: nil)
 
-    args = { id: 'doi:' + doi, pid: key, noredirect: true }
+    args = {id: "doi:" + doi, pid: key, noredirect: true}
     opts = args.delete_if { |_k, v| v.nil? }
     conn = Faraday.new(url: url, request: options)
-    res = conn.get '', opts
+    res = conn.get "", opts
     x = res.body
     oc = REXML::Document.new("<doc>#{x}</doc>")
-    value = REXML::XPath.first(oc, '//query').attributes['fl_count'].to_i
+    value = REXML::XPath.first(oc, "//query").attributes["fl_count"].to_i
     value
   end
 

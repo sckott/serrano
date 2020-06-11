@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'serrano/version'
-require 'serrano/cnrequest'
+require "serrano/version"
+require "serrano/cnrequest"
 
 ##
 # ContentNegotiation - Content Negotiation class
@@ -14,7 +14,7 @@ module Serrano
     attr_accessor :style
     attr_accessor :locale
 
-    def initialize(ids, format = 'bibtex', style = 'apa', locale = 'en-US')
+    def initialize(ids, format = "bibtex", style = "apa", locale = "en-US")
       self.ids = ids
       self.format = format
       self.style = style

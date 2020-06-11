@@ -5,6 +5,7 @@ serrano
 [![Ruby](https://github.com/sckott/serrano/workflows/Ruby/badge.svg)](https://github.com/sckott/serrano/actions)
 [![codecov.io](https://codecov.io/github/sckott/serrano/coverage.svg?branch=master)](https://codecov.io/github/sckott/serrano?branch=master)
 [![DOI](https://zenodo.org/badge/2600/sckott/serrano.svg)](https://zenodo.org/badge/latestdoi/2600/sckott/serrano)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
 `serrano` is a low level client for Crossref APIs
 

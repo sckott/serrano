@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'erb'
-require 'faraday'
-require 'multi_json'
-require 'serrano/error'
-require 'serrano/utils'
-require 'serrano/helpers/configuration'
+require "erb"
+require "faraday"
+require "multi_json"
+require "serrano/error"
+require "serrano/utils"
+require "serrano/helpers/configuration"
 
 ##
 # Serrano::Request
@@ -30,8 +30,8 @@ module Serrano
     attr_accessor :verbose
 
     def initialize(endpt, id, query, filter, offset,
-                   limit, sample, sort, order, facet, select,
-                   works, agency, options, verbose)
+      limit, sample, sort, order, facet, select,
+      works, agency, options, verbose)
 
       self.endpt = endpt
       self.id = id
@@ -53,29 +53,29 @@ module Serrano
     def perform
       filt = filter_handler(filter)
 
-      self.select = select.join(',') if select && select.class == Array
+      self.select = select.join(",") if select && select.class == Array
 
-      args = { query: query, filter: filt, offset: offset,
-               rows: limit, sample: sample, sort: sort,
-               order: order, facet: facet,
-               select: select }
+      args = {query: query, filter: filt, offset: offset,
+              rows: limit, sample: sample, sort: sort,
+              order: order, facet: facet,
+              select: select}
       opts = args.delete_if { |_k, v| v.nil? }
 
       conn = if verbose
-               Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-                 f.response :logger
-                 f.use FaradayMiddleware::RaiseHttpException
-                 f.adapter Faraday.default_adapter
-               end
-             else
-               Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-                 f.use FaradayMiddleware::RaiseHttpException
-                 f.adapter Faraday.default_adapter
-               end
-             end
+        Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+          f.response :logger
+          f.use FaradayMiddleware::RaiseHttpException
+          f.adapter Faraday.default_adapter
+        end
+      else
+        Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+          f.use FaradayMiddleware::RaiseHttpException
+          f.adapter Faraday.default_adapter
+        end
+      end
 
       conn.headers[:user_agent] = make_ua
-      conn.headers['X-USER-AGENT'] = make_ua
+      conn.headers["X-USER-AGENT"] = make_ua
 
       if id.nil?
         res = conn.get endpt, opts
@@ -87,12 +87,12 @@ module Serrano
         coll = []
         id.each do |x|
           endpt = if works
-                    self.endpt + '/' + x.to_s + '/works'
-                  elsif agency
-                    self.endpt + '/' + x.to_s + '/agency'
-                  else
-                    self.endpt + '/' + x.to_s
-                  end
+            self.endpt + "/" + x.to_s + "/works"
+          elsif agency
+            self.endpt + "/" + x.to_s + "/agency"
+          else
+            self.endpt + "/" + x.to_s
+          end
 
           res = conn.get endpt, opts
           coll << MultiJson.load(res.body)

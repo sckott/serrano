@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require 'erb'
-require 'faraday'
-require 'faraday_middleware'
-require 'multi_json'
-require 'serrano/error'
-require 'serrano/helpers/configuration'
-require 'serrano/filterhandler'
-require 'serrano/error'
-require 'serrano/faraday'
-require 'serrano/utils'
+require "erb"
+require "faraday"
+require "faraday_middleware"
+require "multi_json"
+require "serrano/error"
+require "serrano/helpers/configuration"
+require "serrano/filterhandler"
+require "serrano/error"
+require "serrano/faraday"
+require "serrano/utils"
 
 ##
 # Serrano::RequestCursor
@@ -37,9 +37,9 @@ module Serrano
     attr_accessor :args
 
     def initialize(endpt, id, query, filter, offset,
-                   limit, sample, sort, order, facet, select,
-                   works, agency, options, verbose, cursor,
-                   cursor_max, args)
+      limit, sample, sort, order, facet, select,
+      works, agency, options, verbose, cursor,
+      cursor_max, args)
 
       self.endpt = endpt
       self.id = id
@@ -64,40 +64,40 @@ module Serrano
     def perform
       filt = filter_handler(filter)
       fieldqueries = field_query_handler(args)
-      self.select = select.join(',') if select && select.class == Array
+      self.select = select.join(",") if select && select.class == Array
 
       unless cursor_max.class.nil?
-        raise 'cursor_max must be of class int' unless cursor_max.is_a?(Integer)
+        raise "cursor_max must be of class int" unless cursor_max.is_a?(Integer)
       end
 
-      arguments = { query: query, filter: filt, offset: offset,
-                    rows: limit, sample: sample, sort: sort,
-                    order: order, facet: facet, select: select,
-                    cursor: cursor }.tostrings
+      arguments = {query: query, filter: filt, offset: offset,
+                   rows: limit, sample: sample, sort: sort,
+                   order: order, facet: facet, select: select,
+                   cursor: cursor}.tostrings
       arguments = arguments.merge(fieldqueries)
       opts = arguments.delete_if { |_k, v| v.nil? }
 
       conn = if verbose
-               Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-                 f.response :logger
-                 f.use FaradayMiddleware::RaiseHttpException
-                 f.adapter Faraday.default_adapter
-               end
-             else
-               Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-                 f.use FaradayMiddleware::RaiseHttpException
-                 f.adapter Faraday.default_adapter
-               end
-             end
+        Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+          f.response :logger
+          f.use FaradayMiddleware::RaiseHttpException
+          f.adapter Faraday.default_adapter
+        end
+      else
+        Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+          f.use FaradayMiddleware::RaiseHttpException
+          f.adapter Faraday.default_adapter
+        end
+      end
 
       conn.headers[:user_agent] = make_ua
-      conn.headers['X-USER-AGENT'] = make_ua
+      conn.headers["X-USER-AGENT"] = make_ua
 
       if id.nil?
         endpt2 = endpt
         js = _req(conn, endpt, opts)
-        cu = js['message']['next-cursor']
-        max_avail = js['message']['total-results']
+        cu = js["message"]["next-cursor"]
+        max_avail = js["message"]["total-results"]
         res = _redo_req(conn, js, opts, cu, max_avail)
         res
       else
@@ -107,18 +107,18 @@ module Serrano
         coll = []
         id.each do |x|
           endpt2 = if works
-                     endpt + '/' + x.to_s + '/works'
-                   else
-                     endpt2 = if agency
-                                endpt + '/' + x.to_s + '/agency'
-                              else
-                                endpt + '/' + x.to_s
-                              end
-                   end
+            endpt + "/" + x.to_s + "/works"
+          else
+            endpt2 = if agency
+              endpt + "/" + x.to_s + "/agency"
+            else
+              endpt + "/" + x.to_s
+            end
+          end
 
           js = _req(conn, endpt2, opts)
-          cu = js['message']['next-cursor']
-          max_avail = js['message']['total-results']
+          cu = js["message"]["next-cursor"]
+          max_avail = js["message"]["total-results"]
           coll << _redo_req(conn, js, opts, cu, max_avail)
         end
         coll
@@ -126,15 +126,15 @@ module Serrano
     end
 
     def _redo_req(conn, js, opts, cu, max_avail)
-      if !cu.nil? && (cursor_max > js['message']['items'].length)
+      if !cu.nil? && (cursor_max > js["message"]["items"].length)
         res = [js]
-        total = js['message']['items'].length
+        total = js["message"]["items"].length
         while !cu.nil? && (cursor_max > total) && (total < max_avail)
           opts[:cursor] = cu
           out = _req(conn, endpt2, opts)
-          cu = out['message']['next-cursor']
+          cu = out["message"]["next-cursor"]
           res << out
-          total = res.collect { |x| x['message']['items'].length }.reduce(0, :+)
+          total = res.collect { |x| x["message"]["items"].length }.reduce(0, :+)
         end
         res
       else

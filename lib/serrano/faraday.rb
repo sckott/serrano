@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'faraday'
-require 'multi_json'
+require "faraday"
+require "multi_json"
 
 # @private
 module FaradayMiddleware
@@ -15,13 +15,13 @@ module FaradayMiddleware
         when 404
           raise Serrano::NotFound, error_message_400(response)
         when 500
-          raise Serrano::InternalServerError, error_message_500(response, 'Something is technically wrong.')
+          raise Serrano::InternalServerError, error_message_500(response, "Something is technically wrong.")
         when 502
-          raise Serrano::BadGateway, error_message_500(response, 'The server returned an invalid or incomplete response.')
+          raise Serrano::BadGateway, error_message_500(response, "The server returned an invalid or incomplete response.")
         when 503
-          raise Serrano::ServiceUnavailable, error_message_500(response, 'Crossref is rate limiting your requests.')
+          raise Serrano::ServiceUnavailable, error_message_500(response, "Crossref is rate limiting your requests.")
         when 504
-          raise Serrano::GatewayTimeout, error_message_500(response, '504 Gateway Time-out')
+          raise Serrano::GatewayTimeout, error_message_500(response, "504 Gateway Time-out")
         end
       end
     end
@@ -41,12 +41,12 @@ module FaradayMiddleware
       if !body.nil? && !body.empty? && body.is_a?(String)
         if json?(body)
           body = ::MultiJson.load(body)
-          if body['message'].nil?
+          if body["message"].nil?
             body = nil
-            elseif body['message'].length == 1
-            body = body['message']
+            elseif body["message"].length == 1
+            body = body["message"]
           else
-            body = body['message'].collect { |x| x['message'] }.join('; ')
+            body = body["message"].collect { |x| x["message"] }.join("; ")
           end
         end
       end
@@ -59,7 +59,7 @@ module FaradayMiddleware
     end
 
     def error_message_500(response, body = nil)
-      "#{response[:method].to_s.upcase} #{response[:url]}: #{[response[:status].to_s + ':', body].compact.join(' ')}"
+      "#{response[:method].to_s.upcase} #{response[:url]}: #{[response[:status].to_s + ":", body].compact.join(" ")}"
     end
 
     def json?(string)
