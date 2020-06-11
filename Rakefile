@@ -2,6 +2,7 @@
 
 require "bundler/gem_tasks"
 require "rake/testtask"
+require "standard"
 require "standard/rake"
 
 Rake::TestTask.new do |t|
