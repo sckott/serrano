@@ -1,18 +1,6 @@
 # frozen_string_literal: true
-
-require "simplecov"
-SimpleCov.start
-if ENV["CI"] == "true"
-  require "codecov"
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
-
-require "serrano"
-require "serrano/error"
-require "fileutils"
-require "test/unit"
-require "json"
 require_relative "test-helper"
+require "serrano/error"
 
 class TestRandomDois < Test::Unit::TestCase
   def test_random_dois

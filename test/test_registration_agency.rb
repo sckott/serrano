@@ -1,18 +1,6 @@
 # frozen_string_literal: true
-
-require "simplecov"
-SimpleCov.start
-if ENV["CI"] == "true"
-  require "codecov"
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
-
-require "serrano"
-require "serrano/error"
-require "fileutils"
-require "test/unit"
-require "json"
 require_relative "test-helper"
+require "serrano/error"
 
 class TestRegistrationAgency < Test::Unit::TestCase
   def test_registration_agency
