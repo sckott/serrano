@@ -13,10 +13,11 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
-    codecov (0.1.17)
+    codecov (0.1.19)
+      colorize
       json
       simplecov
-      url
+    colorize (0.8.1)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     docile (1.3.2)
@@ -63,7 +64,6 @@ GEM
       power_assert
     thor (1.0.1)
     unicode-display_width (1.7.0)
-    url (0.3.2)
     vcr (6.0.0)
     webmock (3.8.3)
       addressable (>= 2.3.6)
