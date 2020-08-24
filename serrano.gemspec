@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "codecov", "~> 0.2.0"
   s.add_development_dependency "json", "~> 2.1"
   s.add_development_dependency "rake", ">= 12.3.1", "~> 13.0"
-  s.add_development_dependency "standard", "~> 0.4.7"
+  s.add_development_dependency "standard", "~> 0.5.1"
   s.add_development_dependency "simplecov", "~> 0.19.0"
   s.add_development_dependency "test-unit", "~> 3.2", ">= 3.2.7"
   s.add_development_dependency "vcr", "~> 6.0"
