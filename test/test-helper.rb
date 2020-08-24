@@ -1,10 +1,10 @@
-require 'simplecov'
+require "simplecov"
 SimpleCov.start do
-  track_files '../lib/**/*.rb'
-  add_filter '/test'
+  track_files "../lib/**/*.rb"
+  add_filter "/test"
 end
-if ENV['CI']=='true'
-  require 'codecov'
+if ENV["CI"] == "true"
+  require "codecov"
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 

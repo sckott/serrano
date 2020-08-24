@@ -660,8 +660,7 @@ module Serrano
     res = conn.get "", opts
     x = res.body
     oc = REXML::Document.new("<doc>#{x}</doc>")
-    value = REXML::XPath.first(oc, "//query").attributes["fl_count"].to_i
-    value
+    REXML::XPath.first(oc, "//query").attributes["fl_count"].to_i
   end
 
   # Get csl styles

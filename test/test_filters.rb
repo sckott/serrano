@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative "test-helper"
 
 class TestFilters < Test::Unit::TestCase

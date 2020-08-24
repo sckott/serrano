@@ -19,8 +19,7 @@ end
 def rename_query_filters(foo)
   foo = foo.tostrings
   foo = foo.map { |x, y| [x.to_s.sub("container_title", "container-title"), y] }.to_h
-  foo = foo.map { |x, y| [x.to_s.sub("query_", "query."), y] }.to_h
-  foo
+  foo.map { |x, y| [x.to_s.sub("query_", "query."), y] }.to_h
 end
 
 class Hash
