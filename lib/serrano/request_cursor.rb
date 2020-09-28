@@ -134,7 +134,7 @@ module Serrano
           out = _req(conn, endpt2, opts)
           cu = out["message"]["next-cursor"]
           res << out
-          total = res.collect { |x| x["message"]["items"].length }.reduce(0, :+)
+          total = res.collect { |x| x["message"]["items"].length }.sum
         end
         res
       else
