@@ -9,7 +9,7 @@ serrano
 
 `serrano` is a low level client for Crossref APIs
 
-Docs: http://www.rubydoc.info/gems/serrano
+Docs: https://www.rubydoc.info/gems/serrano
 
 Other Crossref API clients:
 
