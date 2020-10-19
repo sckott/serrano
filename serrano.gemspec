@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version = Serrano::VERSION
   s.platform = Gem::Platform::RUBY
   s.required_ruby_version = ">= 2.1"
-  s.date = "2020-06-11"
+  s.date = "2020-10-19"
   s.summary = "Crossref Client"
   s.description = "Low Level Ruby Client for the Crossref Search API"
   s.authors = "Scott Chamberlain"
@@ -25,20 +25,20 @@ Gem::Specification.new do |s|
   s.bindir = "bin"
   s.executables = ["serrano"]
 
-  s.add_development_dependency "bundler", "~> 2.0", ">= 2.0.2"
+  s.add_development_dependency "bundler", '~> 2.1', '>= 2.1.4'
   s.add_development_dependency "codecov", "~> 0.2.0"
-  s.add_development_dependency "json", "~> 2.1"
-  s.add_development_dependency "rake", ">= 12.3.1", "~> 13.0"
+  s.add_development_dependency "json", '~> 2.3', '>= 2.3.1'
+  s.add_development_dependency "rake", '~> 13.0', '>= 13.0.1'
   s.add_development_dependency "standard", "~> 0.7"
   s.add_development_dependency "simplecov", "~> 0.19.0"
-  s.add_development_dependency "test-unit", "~> 3.2", ">= 3.2.7"
+  s.add_development_dependency "test-unit", '~> 3.3', '>= 3.3.6'
   s.add_development_dependency "vcr", "~> 6.0"
-  s.add_development_dependency "webmock", "~> 3.4", ">= 3.4.1"
+  s.add_development_dependency "webmock", '~> 3.9', '>= 3.9.3'
 
-  s.add_runtime_dependency "faraday", "~> 1.0", ">= 1.0.1"
+  s.add_runtime_dependency "faraday", "~> 1.1"
   s.add_runtime_dependency "faraday_middleware", "~> 1.0"
-  s.add_runtime_dependency "multi_json", "~> 1.13", ">= 1.13.1"
-  s.add_runtime_dependency "thor", ">= 0.20", "< 1.1"
+  s.add_runtime_dependency "multi_json", '~> 1.15'
+  s.add_runtime_dependency 'thor', '~> 1.0', '>= 1.0.1'
 
   s.metadata = {
     "homepage_uri" => "https://github.com/sckott/serrano",
