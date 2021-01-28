@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "faraday", "~> 1.1"
   s.add_runtime_dependency "faraday_middleware", "~> 1.0"
   s.add_runtime_dependency "multi_json", '~> 1.15'
+  s.add_runtime_dependency "rexml", '~> 3.2', '>= 3.2.4'
   s.add_runtime_dependency 'thor', '~> 1.0', '>= 1.0.1'
 
   s.metadata = {
