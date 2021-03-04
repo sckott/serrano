@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "json", '~> 2.3', '>= 2.3.1'
   s.add_development_dependency "rake", '~> 13.0', '>= 13.0.1'
   s.add_development_dependency "standard", "~> 1.0"
-  s.add_development_dependency "simplecov", "~> 0.19.0"
+  s.add_development_dependency "simplecov", "~> 0.21.2"
   s.add_development_dependency "test-unit", '~> 3.3', '>= 3.3.6'
   s.add_development_dependency "vcr", "~> 6.0"
   s.add_development_dependency "webmock", '~> 3.9', '>= 3.9.3'
