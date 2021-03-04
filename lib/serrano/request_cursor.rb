@@ -7,7 +7,6 @@ require "multi_json"
 require "serrano/error"
 require "serrano/helpers/configuration"
 require "serrano/filterhandler"
-require "serrano/error"
 require "serrano/faraday"
 require "serrano/utils"
 
@@ -64,7 +63,7 @@ module Serrano
     def perform
       filt = filter_handler(filter)
       fieldqueries = field_query_handler(args)
-      self.select = select.join(",") if select && select.class == Array
+      self.select = select&.instance_of?(Array) ? select.join(",") : select
 
       unless cursor_max.class.nil?
         raise "cursor_max must be of class int" unless cursor_max.is_a?(Integer)

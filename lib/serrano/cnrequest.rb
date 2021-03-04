@@ -52,7 +52,7 @@ module Serrano
       end
 
       if ids.length == 1
-        self.ids = ids[0] if ids.class == Array
+        self.ids = ids[0] if ids.instance_of?(Array)
         make_request(conn, ids, format, style, locale)
       else
         coll = []

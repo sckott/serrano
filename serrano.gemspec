@@ -25,21 +25,21 @@ Gem::Specification.new do |s|
   s.bindir = "bin"
   s.executables = ["serrano"]
 
-  s.add_development_dependency "bundler", '~> 2.1', '>= 2.1.4'
+  s.add_development_dependency "bundler", "~> 2.1", ">= 2.1.4"
   s.add_development_dependency "codecov", "~> 0.5.0"
-  s.add_development_dependency "json", '~> 2.3', '>= 2.3.1'
-  s.add_development_dependency "rake", '~> 13.0', '>= 13.0.1'
+  s.add_development_dependency "json", "~> 2.3", ">= 2.3.1"
+  s.add_development_dependency "rake", "~> 13.0", ">= 13.0.1"
   s.add_development_dependency "standard", "~> 1.0"
   s.add_development_dependency "simplecov", "~> 0.21.2"
-  s.add_development_dependency "test-unit", '~> 3.3', '>= 3.3.6'
+  s.add_development_dependency "test-unit", "~> 3.3", ">= 3.3.6"
   s.add_development_dependency "vcr", "~> 6.0"
-  s.add_development_dependency "webmock", '~> 3.9', '>= 3.9.3'
+  s.add_development_dependency "webmock", "~> 3.9", ">= 3.9.3"
 
   s.add_runtime_dependency "faraday", "~> 1.1"
   s.add_runtime_dependency "faraday_middleware", "~> 1.0"
-  s.add_runtime_dependency "multi_json", '~> 1.15'
-  s.add_runtime_dependency "rexml", '~> 3.2', '>= 3.2.4'
-  s.add_runtime_dependency 'thor', '~> 1.0', '>= 1.0.1'
+  s.add_runtime_dependency "multi_json", "~> 1.15"
+  s.add_runtime_dependency "rexml", "~> 3.2", ">= 3.2.4"
+  s.add_runtime_dependency "thor", "~> 1.0", ">= 1.0.1"
 
   s.metadata = {
     "homepage_uri" => "https://github.com/sckott/serrano",

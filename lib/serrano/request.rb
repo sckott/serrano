@@ -53,7 +53,7 @@ module Serrano
     def perform
       filt = filter_handler(filter)
 
-      self.select = select.join(",") if select && select.class == Array
+      self.select = select&.instance_of?(Array) ? select.join(",") : select
 
       args = {query: query, filter: filt, offset: offset,
               rows: limit, sample: sample, sort: sort,
