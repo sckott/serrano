@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: codecov
+    versions:
+    - "> 0.1.17, < 0.2"
+  - dependency-name: codecov
+    versions:
+    - "> 0.2.1, < 0.3"
+  - dependency-name: codecov
+    versions:
+    - 0.4.2
+    - 0.4.3
+  - dependency-name: simplecov
+    versions:
+    - 0.20.0
