@@ -24,12 +24,12 @@ end
 
 class Hash
   def tostrings
-    Hash[map { |(k, v)| [k.to_s, v] }]
+    map { |(k, v)| [k.to_s, v] }.to_h
   end
 end
 
 class Hash
   def tosymbols
-    Hash[map { |(k, v)| [k.to_sym, v] }]
+    map { |(k, v)| [k.to_sym, v] }.to_h
   end
 end
