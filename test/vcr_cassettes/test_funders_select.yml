@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,47 +29,55 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '2682'
+      - '3240'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:37:37 GMT
+      - Fri, 23 Jul 2021 15:43:35 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":231609,"items":[{"DOI":"10.1016\/s0009-2541(99)00129-1","title":["Meta-gabbro
-        weathering in the Georgia Piedmont, USA: implications for global silicate
-        weathering rates"]},{"DOI":"10.1016\/0272-6963(95)00033-x","title":["The operating
-        impact of parts commonality"]},{"DOI":"10.1002\/cplx.10117","title":["A conductivity-dependent
-        phase transition from closed-loop to open-loop dendritic networks"]},{"DOI":"10.1002\/asi.10350","title":["Metadata-based
-        modeling of information resources on the Web"]},{"DOI":"10.1002\/lsm.10285","title":["Photothermal
-        detection of laser-induced damage in single intact cells"]},{"DOI":"10.1002\/kin.10189","title":["Gas-phase
-        radical-radical recombination reactions of nitroxides with substituted phenyl
-        radicals"]},{"DOI":"10.1002\/cne.20038","title":["The inner ear of the lungfishProtopterus"]},{"DOI":"10.1016\/0272-6963(95)00012-h","title":["Hierarchical
-        capacity expansion and production planning decisions in stochastic manufacturing
-        systems"]},{"DOI":"10.1002\/cpa.20004","title":["Pseudospectra of semiclassical
-        (pseudo-) differential operators"]},{"DOI":"10.1002\/sia.1642","title":["Electron-beam-induced
-        decomposition of trimethylamine on Si(100)-2 \u00d7 1"]},{"DOI":"10.1002\/cne.20039","title":["Synaptic
-        structural modification following changes in activity induced by tetanus neurotoxin
-        in cat abducens neurons"]},{"DOI":"10.1002\/cfg.397","title":["A Comparison
-        of Global Gene Expression Measurement Technologies inArabidopsis thaliana"]},{"DOI":"10.1002\/net.20004","title":["A
-        directed cycle-based column-and-cut generation method for capacitated survivable
-        network design"]},{"DOI":"10.1002\/gea.20006","title":["Assessing the role
-        of winter grazing in historic land degradation, M\u00fdvatnssveit, northeast
-        Iceland"]},{"DOI":"10.1155\/s0161171204212108","title":["On the geometry of
-        Riemannian manifolds with a Lie structure at infinity"]},{"DOI":"10.1155\/s108533750431105x","title":["Contractive
-        projections in Orlicz sequence spaces"]},{"DOI":"10.1118\/1.1427308","title":["Accelerator-based
-        neutron brachytherapy"]},{"DOI":"10.1080\/106551402100012318","title":["Frequency
-        Domain Kernel Estimation for 2nd-order Volterra Models Using Random Multi-tone
-        Excitation"]},{"DOI":"10.1080\/1065514021000012354","title":["Particle-based
-        Full-band Approach for Fast Simulation of Charge Transport in Si, GaAs, and
-        InP"]},{"DOI":"10.1080\/1065514021000012264","title":["Using Temporal and
-        Functional Information in Crosstalk Aware Static Timing Analysis"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:37:38 GMT
-recorded_with: VCR 5.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":306353,"items":[{"DOI":"10.3389\/fevo.2016.00097","title":["Host
+        Defense Skin Peptides Vary with Color Pattern in the Highly Polymorphic Red-Eyed
+        Treefrog"]},{"DOI":"10.1088\/2053-1583\/aadb5f","title":["Theory-assisted
+        determination of nano-rippling and impurities in atomic resolution images
+        of angle-mismatched bilayer graphene"]},{"DOI":"10.1080\/00949655.2018.1440294","title":["The
+        generalized Poisson-binomial distribution and the computation of its distribution
+        function"]},{"DOI":"10.3982\/te1362","title":["Rationalizable partition-confirmed
+        equilibrium"]},{"DOI":"10.1103\/physrevb.97.184430","title":["Quadrupolar
+        quantum criticality on a fractal"]},{"DOI":"10.1371\/journal.pone.0196841","title":["Can
+        excreted thiocyanate be used to detect cyanide exposure in live reef fish?"]},{"DOI":"10.1021\/cm501348r","title":["Water-Based
+        Synthesis of Ultrasmall PEGylated Gold\u2013Silica Core\u2013Shell Nanoparticles
+        with Long-Term Stability"]},{"DOI":"10.1109\/tcad.2016.2523439","title":["OSFA:
+        A New Paradigm of Aging Aware Gate-Sizing for Power\/Performance Optimizations
+        Under Multiple Operating Conditions"]},{"DOI":"10.1021\/acs.jpcb.6b08857","title":["Correction
+        to \u201cBest Face Forward: Crystal-Face Competition at the Ice\u2013Water
+        Interface\u201d"]},{"DOI":"10.1021\/acsmacrolett.6b00560","title":["Poly(isoprenecarboxylates)
+        from Glucose via Anhydromevalonolactone"]},{"DOI":"10.1021\/acs.inorgchem.6b01889","title":["Spectroscopic
+        Evidence for Room Temperature Interaction of Molecular Oxygen with Cobalt
+        Porphyrin Linker Sites within a Metal\u2013Organic Framework"]},{"DOI":"10.1021\/acs.orglett.6b02523","title":["Synthesis
+        of Hindered Anilines: Three-Component Coupling of Arylboronic Acids, tert-Butyl
+        Nitrite, and Alkyl Bromides"]},{"DOI":"10.1021\/acs.inorgchem.6b01909","title":["Sulfate-Incarcerating
+        Nanojars: Solution and Solid-State Studies, Sulfate Extraction from Water,
+        and Anion Exchange with Carbonate"]},{"DOI":"10.1021\/acs.inorgchem.6b01472","title":["Structure
+        and Magnetic Behavior of Layered Honeycomb Tellurates, BiM(III)TeO6 (M = Cr,
+        Mn, Fe)"]},{"DOI":"10.1021\/acs.inorgchem.6b01714","title":["Synthesis and
+        Reactivity of Electronically Unsaturated Dirhenium Carbonyl Compounds Containing
+        Bridging Gold-Carbene Groups"]},{"DOI":"10.1021\/acs.jpca.6b07610","title":["Millimeter-Wave
+        Spectroscopy, X-ray Crystal Structure, and Quantum Chemical Studies of Diketene:
+        Resolving Ambiguities Concerning the Structure of the Ketene Dimer"]},{"DOI":"10.1021\/jacs.6b06562","title":["Two-Dimensional
+        Supramolecular Polymers Embodying Large Unilamellar Vesicles in Water"]},{"DOI":"10.1021\/acs.biochem.6b00517","title":["Interplay
+        of Specific Trans- and Juxtamembrane Interfaces in Plexin A3 Dimerization
+        and Signal Transduction"]},{"DOI":"10.1021\/acs.joc.6b01846","title":["Reversible
+        Hydrolysis Reaction with the Spore Photoproduct under Alkaline Conditions"]},{"DOI":"10.1021\/acs.iecr.6b02279","title":["A
+        One-Step and Scalable Continuous-Flow Nanoprecipitation for Catalytic Reduction
+        of Organic Pollutants in Water"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Fri, 23 Jul 2021 15:43:35 GMT
+recorded_with: VCR 6.0.0

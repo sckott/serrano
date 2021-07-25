@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,47 +29,47 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '2981'
+      - '2810'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:41:38 GMT
+      - Fri, 23 Jul 2021 15:44:54 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":16708620,"items":[{"DOI":"10.1016\/0197-2456(96)84672-1","title":["P52
-        Can the forest plot be simplified without loosing relevant information in
-        meta-analyses?"]},{"DOI":"10.1016\/s0261-2194(97)00018-5","title":["Influence
-        of cropping system on sharp eyespot in winter wheat"]},{"DOI":"10.1016\/0011-2275(96)80768-5","title":["Magnetization
-        in a generalized critical-state model for type-II superconductors"]},{"DOI":"10.1016\/0011-2275(96)80770-3","title":["Acoustic
-        quality factor of vanadium"]},{"DOI":"10.1016\/s0261-2194(97)00016-1","title":["Sub-lethal
-        effects of tefluthrin on Diabrotica undecimpunctata howardi, Barber: adult
-        emergence weights, fecundity and fertility"]},{"DOI":"10.1016\/s0010-8545(99)00097-1","title":["Isokinetic
-        and isoequilibrium relationships in spin\u2013crossover systems"]},{"DOI":"10.1016\/0011-2275(96)80773-9","title":["Multi-purpose
-        optical cell for the study of quantum crystals"]},{"DOI":"10.1016\/s0011-2275(99)80002-2","title":["Local
-        normal zone nucleation to \u2018global\u2019 transition: quench development
-        in superconductors with changing current"]},{"DOI":"10.1016\/s0261-2194(97)00019-7","title":["Comparison
-        of four particulate substances as wildlife feeding repellents"]},{"DOI":"10.1016\/s0010-8545(99)00111-3","title":["Cooperative
-        phenomena and light-induced bistability in iron(II) spin-crossover compounds"]},{"DOI":"10.1016\/s0011-2275(99)80005-8","title":["Second
-        sound wave heat transfer, thermal boundary layer formation and boiling: highly
-        transient heat transport phenomena in He II"]},{"DOI":"10.1016\/s0261-2194(97)00010-0","title":["Ranging
-        behaviour and habitat utilisation of the Malayan wood rat (Rattus tiomanicus)
-        in an oil palm plantation in Johore, Malaysia"]},{"DOI":"10.1016\/s0011-2275(99)80007-1","title":["Motional
-        heat loss of a Gifford-McMahon cryorefrigerator"]},{"DOI":"10.1016\/s0010-8545(99)00101-0","title":["Nitrile
-        hydratase and related non-heme iron sulfur complexes"]},{"DOI":"10.1016\/s1463-0184(99)00013-1","title":["Silver(I)\u20133,6-bis(pyridin-3-yl)-1,2,4,5-tetrazine
-        coordination polymers: a diversity of chain motifs"]},{"DOI":"10.1016\/s1463-0184(99)00012-x","title":["New
-        coordination networks constructed from N-(4-pyridyl)isonicotinamide"]},{"DOI":"10.1016\/s0010-8545(99)00109-5","title":["Correlations
-        of the distribution of spin states in spin crossover compounds"]},{"DOI":"10.1016\/s0261-2194(97)00006-9","title":["Whiteheads
-        associated with stem borer infestation in modern rice varieties: an attempt
-        to resolve the dilemma of yield losses"]},{"DOI":"10.1016\/s1463-0184(99)00015-5","title":["Cocrystalline
-        salts of alkynoic acids. II. the crystal and molecular structure of 5-bromo-2-aminopyridinium
-        propynoate"]},{"DOI":"10.1016\/s0010-8545(99)00120-4","title":["Reactivity
-        of galactose oxidase"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:41:38 GMT
-recorded_with: VCR 5.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":18169799,"items":[{"DOI":"10.1016\/j.anplas.2018.09.003","title":["Les
+        indications des reconstructions mammaires apr\u00e8s mastectomie selon la
+        situation carcinologique"]},{"DOI":"10.1016\/j.laa.2017.06.043","title":["A
+        bound on the Carath\u00e9odory number"]},{"DOI":"10.1016\/s0034-5288(18)31216-5","title":["Sensitisation
+        of preruminant calves and piglets to antigenic protein in early weaning diets:
+        control of the systemic antibody responses"]},{"DOI":"10.1016\/s1872-0978(06)01001-5","title":["Chapter
+        1 Enterprise-Wide Asset and Liability Management: Issues, Institutions, and
+        Models"]},{"DOI":"10.1016\/b978-012088438-4.50001-0","title":["Managing Risk
+        Across the Enterprise"]},{"DOI":"10.1016\/s0967-2109(97)00165-8","title":["Local
+        anesthesia for above knee femoropopliteal bypass: An alternative technique
+        to endoluminal bypass grafting"]},{"DOI":"10.1016\/j.jamcollsurg.2007.03.030","title":["Incidence
+        of Complications in Outpatient Mastectomy with Immediate Reconstruction"]},{"DOI":"10.1016\/j.ejso.2011.08.001","title":["Initial
+        experiences with a multidisciplinary approach to decreasing the length of
+        hospital stay for patients undergoing unilateral mastectomy"]},{"DOI":"10.1016\/0370-2693(95)00624-t","title":["Threshold
+        production of heavy mesons in the reaction"]},{"DOI":"10.1016\/0166-1280(94)03828-9","title":["Contribution
+        to the vibrational normal modes analysis of d8-THF by neutron inelastic scattering"]},{"DOI":"10.1016\/0370-2693(95)00621-q","title":["Topology
+        changes by quantum tunneling in four dimensional gravity"]},{"DOI":"10.1016\/s1464-1895(99)00107-6","title":["Anomalous
+        phenomena preceding earthquakes (one more approach to discussion on SES nature
+        and VAN-prediction reliability)"]},{"DOI":"10.1016\/s1464-1895(99)00080-0","title":["Pore
+        structure determination using Confocal Scanning Laser Microscopy"]},{"DOI":"10.1016\/s0031-9422(96)00714-5","title":["Cadinanolides
+        and other constituents from Vernonia fruticulosa and Vernonanthura discolor"]},{"DOI":"10.1016\/s0370-2693(96)01596-1","title":["The
+        constituent quark as a soliton in a linear \u03c3-model"]},{"DOI":"10.1016\/s0370-2693(96)01599-7","title":["A
+        high statistics lattice calculation of the B-meson binding energy"]},{"DOI":"10.1016\/s0031-9422(97)80768-6","title":["Plant
+        membrane biology"]},{"DOI":"10.1016\/s0031-9422(97)80772-8","title":["Medicinal
+        and aromatic plants, volume ix"]},{"DOI":"10.1016\/s1464-1895(99)00059-9","title":["Intensity
+        field of the 19 June 1975 Gargano (Southern Italy) earthquake"]},{"DOI":"10.1016\/s1464-1895(99)00067-8","title":["Allocated
+        imperfections of developed convective structures"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Fri, 23 Jul 2021 15:44:54 GMT
+recorded_with: VCR 6.0.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,22 +29,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '23088'
+      - '23219'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:43:09 GMT
+      - Fri, 23 Jul 2021 15:45:11 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,22]],"date-time":"2019-11-22T22:41:16Z","timestamp":1574462476103},"reference-count":70,"publisher":"Public
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,1,21]],"date-time":"2021-01-21T00:03:40Z","timestamp":1611187420122},"reference-count":70,"publisher":"Public
         Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":44,"title":["Methylphenidate
+        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":48,"title":["Methylphenidate
         Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
         Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
         B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
@@ -228,8 +230,9 @@ http_interactions:
         Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
         models and empirical bayes methods for assessing differential expression in
         microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,25]],"date-time":"2019-06-25T23:42:29Z","timestamp":1561506149000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
-        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"published-online":{"date-parts":[[2012,3,21]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}]}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:43:09 GMT
-recorded_with: VCR 5.1.0
+        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,5,8]],"date-time":"2020-05-08T19:05:59Z","timestamp":1588964759000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
+        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"published-online":{"date-parts":[[2012,3,21]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["General
+        Biochemistry, Genetics and Molecular Biology","General Agricultural and Biological
+        Sciences","General Medicine"]}}'
+  recorded_at: Fri, 23 Jul 2021 15:45:11 GMT
+recorded_with: VCR 6.0.0

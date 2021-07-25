@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,21 +33,22 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:44:13 GMT
+      - Fri, 23 Jul 2021 15:47:12 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,12,1]],"date-time":"2019-12-01T19:07:09Z","timestamp":1575227229930},"reference-count":0,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,7,28]],"date-time":"2020-07-28T14:00:45Z","timestamp":1595944845733},"reference-count":0,"publisher":"Springer
         Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
         Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
         Modelling","Ecology"]}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:44:13 GMT
+  recorded_at: Fri, 23 Jul 2021 15:47:12 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125
@@ -56,9 +57,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -81,22 +82,23 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:44:13 GMT
+      - Fri, 23 Jul 2021 15:47:12 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,12,1]],"date-time":"2019-12-01T19:06:54Z","timestamp":1575227214811},"reference-count":0,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,7,28]],"date-time":"2020-07-28T14:00:34Z","timestamp":1595944834937},"reference-count":0,"publisher":"Springer
         Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
         Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
         Science","Ecology, Evolution, Behavior and Systematics","General Agricultural
         and Biological Sciences"]}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:44:14 GMT
+  recorded_at: Fri, 23 Jul 2021 15:47:12 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1111%2F(issn)1442-9993
@@ -105,9 +107,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -126,21 +128,23 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1013'
+      - '1081'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:44:14 GMT
+      - Fri, 23 Jul 2021 15:47:13 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2019,11,22]],"date-time":"2019-11-22T10:26:00Z","timestamp":1574418360264},"reference-count":0,"publisher":"Wiley","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
-        Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}]}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:44:14 GMT
-recorded_with: VCR 5.1.0
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,4,14]],"date-time":"2020-04-14T21:09:40Z","timestamp":1586898580217},"reference-count":0,"publisher":"Wiley","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
+        Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}],"subject":["Ecology","Ecology,
+        Evolution, Behavior and Systematics"]}}'
+  recorded_at: Fri, 23 Jul 2021 15:47:13 GMT
+recorded_with: VCR 6.0.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,43 +29,50 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '2410'
+      - '2836'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:41:14 GMT
+      - Fri, 23 Jul 2021 15:44:22 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":236469,"items":[{"DOI":"10.1155\/s1085337503305032","title":["L2(\u03a3)-regularity
-        of the boundary to boundary operator B\u2217L for hyperbolic and Petrowski
-        PDEs"]},{"DOI":"10.1155\/s1085337503304014","title":["Nonsmooth optimal regulation
-        and discontinuous stabilization"]},{"DOI":"10.1155\/s1110757x03305030","title":["On
-        the weak solutions of the forward problem in EEG"]},{"DOI":"10.1155\/s1110757x03206033","title":["Multiscale
-        deformation analysis by Cauchy-Navier wavelets"]},{"DOI":"10.1155\/s1085337503309042","title":["The
-        Apollonian metric: limits of the comparison and bilipschitz properties"]},{"DOI":"10.1155\/s0161171203210668","title":["On
-        a few Diophantine equations, in particular, Fermat''s last theorem"]},{"DOI":"10.1155\/s0161171203211534","title":["On
-        Dedekind''s criterion and monogenicity over Dedekind rings"]},{"DOI":"10.1155\/s016117120321067x","title":["Characterization
-        of the automorphisms having the lifting property in the category of abelianp-groups"]},{"DOI":"10.1155\/s0161171203209418","title":["Atomical
-        Grothendieck categories"]},{"DOI":"10.1155\/s0161171203210693","title":["Nagata
-        rings and directed unions of Artinian subrings"]},{"DOI":"10.1155\/s0161171204305284","title":["Partial
-        sums of functions of bounded turning"]},{"DOI":"10.1155\/s0161171204305156","title":["Estimates
-        of convolutions of certain number-theoretic error terms"]},{"DOI":"10.1155\/s0161171204210365","title":["On
-        Gromov''s theorem andL\u20092-Hodge decomposition"]},{"DOI":"10.1155\/s0161171204208158","title":["A
-        lower bound for ratio of power means"]},{"DOI":"10.1155\/s0161171204301511","title":["Inclusion
-        results for convolution submethods"]},{"DOI":"10.1155\/s0161171204211280","title":["On
-        embedding properties ofSD-groups"]},{"DOI":"10.1155\/s016117120430726x","title":["On
-        uniform Kadec-Klee properties and rotundity in generalized Ces\u00e0ro sequence
-        spaces"]},{"DOI":"10.1155\/s0161171204206172","title":["Stability of reaction
-        fronts in thin domains"]},{"DOI":"10.1155\/s0161171204203325","title":["On
-        hypersurfaces in a locally affine Riemannian Banach manifold II"]},{"DOI":"10.1155\/s0161171204307271","title":["A
-        delayed mathematical model for testosterone secretion with feedback control
-        mechanism"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:41:14 GMT
-recorded_with: VCR 5.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":286067,"items":[{"DOI":"10.1155\/2015\/486346","title":["A
+        Robust Numerical Procedure for the Thermomechanical Flow Simulation of Friction
+        Stir Welding Process Using an Adaptive Element-Free Galerkin Method"]},{"DOI":"10.1155\/2014\/276475","title":["Insulin
+        Resistance, Type 1 and Type 2 Diabetes, and Related Complications: Current
+        Status and Future Perspective"]},{"DOI":"10.1155\/2014\/246714","title":["Glia
+        and the Synapse: Plasticity and Disease"]},{"DOI":"10.1155\/2014\/354132","title":["Refinements
+        of Bounds for Neuman Means"]},{"DOI":"10.1155\/2014\/464276","title":["Tracking
+        Control of a Leg Rehabilitation Machine Driven by Pneumatic Artificial Muscles
+        Using Composite Fuzzy Theory"]},{"DOI":"10.1155\/2014\/607347","title":["On
+        Hardy-Pachpatte-Copson''s Inequalities"]},{"DOI":"10.1155\/2014\/631925","title":["Seismic
+        Stability of Subsea Tunnels Subjected to Seepage"]},{"DOI":"10.1155\/2014\/576365","title":["Analysis
+        of a Patch Model for the Dynamical Transmission of Echinococcosis"]},{"DOI":"10.1155\/2014\/670467","title":["DistributedH\u221eSampled-Data
+        Filtering over Sensor Networks with Markovian Switching Topologies"]},{"DOI":"10.1155\/2014\/523245","title":["Intuitionistic
+        Fuzzy Subbialgebras and Duality"]},{"DOI":"10.1155\/2014\/632871","title":["Context-Aware
+        and Locality-Constrained Coding for Image Categorization"]},{"DOI":"10.1155\/2014\/626972","title":["Erratum
+        to \u201cShenqi Fuzheng Injection Alleviates the Transient Worsening Caused
+        by Steroids Pulse Therapy in Treating Myasthenia Gravis\u201d"]},{"DOI":"10.1155\/2014\/541847","title":["Image
+        Guided Hypofractionated Radiotherapy by Helical Tomotherapy for Prostate Carcinoma:
+        Toxicity and Impact on Nadir PSA"]},{"DOI":"10.1155\/2014\/684068","title":["Interval
+        Oscillation Criteria for Second-Order Forced Functional Dynamic Equations
+        on Time Scales"]},{"DOI":"10.1155\/2014\/718690","title":["Paraplegia after
+        Gastrectomy in a Patient with Cervical Disc Herniation: A Case Report and
+        Review of Literature"]},{"DOI":"10.1155\/2014\/716046","title":["An Embedded
+        Laser Marking Controller Based on ARM and FPGA Processors"]},{"DOI":"10.1155\/2014\/738953","title":["The
+        Empirical Cressie-Read Test Statistics for Longitudinal Generalized Linear
+        Models"]},{"DOI":"10.1155\/2014\/780959","title":["Swellings over the Limbs
+        as the Earliest Feature in a Patient with Osteogenesis Imperfecta Type V"]},{"DOI":"10.1155\/2014\/782393","title":["Mathematical
+        Models Arising in the Fractal Forest Gap via Local Fractional Calculus"]},{"DOI":"10.1155\/2014\/869628","title":["One-Step
+        Dynamic Classifier Ensemble Model for Customer Value Segmentation with Missing
+        Values"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Fri, 23 Jul 2021 15:44:22 GMT
+recorded_with: VCR 6.0.0

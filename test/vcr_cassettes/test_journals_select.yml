@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,57 +29,54 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '3473'
+      - '3264'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:38:13 GMT
+      - Fri, 23 Jul 2021 15:43:39 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":8538,"items":[{"DOI":"10.7717\/peerj.7276","title":["Molecular
-        characterization of bacterial leaf streak resistance in hard winter wheat"]},{"DOI":"10.7717\/peerj.5697","title":["Distribution
-        of deep-water corals, sponges, and demersal fisheries landings in Southern
-        California, USA: implications for conservation priorities"]},{"DOI":"10.7717\/peerj.285","title":["Lack
-        of quantitative training among early-career ecologists: a survey of the problem
-        and potential solutions"]},{"DOI":"10.7717\/peerj.7128","title":["Altitudinal
-        gradients in Magellanic sub-Antarctic lagoons: the effect of elevation on
-        freshwater macroinvertebrate diversity and distribution"]},{"DOI":"10.7717\/peerj.6056","title":["Urbanization,
-        environmental stabilization and temporal persistence of bird species: a view
-        from Latin America"]},{"DOI":"10.7717\/peerj.7765","title":["Chemical profile
-        and pancreatic lipase inhibitory activity of Sinobambusa tootsik (Sieb.) Makino
-        leaves"]},{"DOI":"10.7717\/peerj.2068","title":["A closer look at four-dot
-        masking of a foveated target"]},{"DOI":"10.7717\/peerj.6237","title":["Termite
-        mound architecture regulates nest temperature and correlates with species
-        identities of symbiotic fungi"]},{"DOI":"10.7717\/peerj.903","title":["Temporal
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":11753,"items":[{"DOI":"10.7717\/peerj.6161","title":["Changes
+        in bone density and bone quality caused by single fasting for 96 hours in
+        rats"]},{"DOI":"10.7717\/peerj.3409","title":["Europatitan eastwoodi, a new
+        sauropod from the lower Cretaceous of Iberia in the initial radiation of somphospondylans
+        in Laurasia"]},{"DOI":"10.7717\/peerj.4086","title":["Do rotational shear-cushioning
+        shoes influence horizontal ground reaction forces and perceived comfort during
+        basketball cutting maneuvers?"]},{"DOI":"10.7717\/peerj.2068","title":["A
+        closer look at four-dot masking of a foveated target"]},{"DOI":"10.7717\/peerj.903","title":["Temporal
         changes in nasopharyngeal carriage ofStreptococcus pneumoniaeserotype 1 genotypes
         in healthy Gambians before and after the 7-valent pneumococcal conjugate vaccine"]},{"DOI":"10.7717\/peerj.4261","title":["Differential
-        response to stress inOstrea luridaas measured by gene expression"]},{"DOI":"10.7717\/peerj.5024","title":["Weak
-        population structure in the ant Formica fusca"]},{"DOI":"10.7717\/peerj.3202","title":["Endosymbiont
-        interference and microbial diversity of the Pacific coast tick,Dermacentor
-        occidentalis, in San Diego County, California"]},{"DOI":"10.7717\/peerj.5885","title":["Effects
-        of waste stream combinations from brewing industry on performance of Black
-        Soldier Fly, Hermetia illucens (Diptera: Stratiomyidae)"]},{"DOI":"10.7717\/peerj.2735","title":["Effects
-        of arachidonic acid supplementation in maturation diet on female reproductive
-        performance and larval quality of giant river prawn (Macrobrachium rosenbergii)"]},{"DOI":"10.7717\/peerj.792","title":["Knowledge
-        of malaria prevention among pregnant women and female caregivers of under-five
-        children in rural southwest Nigeria"]},{"DOI":"10.7717\/peerj.2181","title":["On
-        the relationship between enamel band complexity and occlusal surface area
-        in Equids (Mammalia, Perissodactyla)"]},{"DOI":"10.7717\/peerj.1252","title":["Brain-derived
-        neurotrophic factor serum levels in genetically isolated populations: gender-specific
-        association with anxiety disorder subtypes but not with anxiety levels or
-        Val66Met polymorphism"]},{"DOI":"10.7717\/peerj.5018","title":["Availability
-        of Nanopore sequences in the genome taxonomy for Vibrionaceae systematics:
-        Rumoiensis clade species as a test case"]},{"DOI":"10.7717\/peerj.2483","title":["Aggressive
-        nutrition in extremely low birth weight infants: impact on parenteral nutrition
-        associated cholestasis and growth"]},{"DOI":"10.7717\/peerj.5185","title":["Criterion-related
-        validity and reliability of the Urdu version of the patient health questionnaire
-        in a sample of community-based pregnant women in Pakistan"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:38:13 GMT
-recorded_with: VCR 5.1.0
+        response to stress inOstrea luridaas measured by gene expression"]},{"DOI":"10.7717\/peerj.1153","title":["Development
+        of a greenhouse-based inoculation protocol for the fungusColletotrichum cerealepathogenic
+        to annual bluegrass (Poa annua)"]},{"DOI":"10.7717\/peerj.730","title":["A
+        quantitative approach for integrating multiple lines of evidence for the evaluation
+        of environmental health risks"]},{"DOI":"10.7717\/peerj.6513","title":["Effects
+        of root phenotypic changes on the deep rooting of Populus euphratica seedlings
+        under drought stresses"]},{"DOI":"10.7717\/peerj.5611","title":["BdBG: a bucket-based
+        method for compressing genome sequencing data with dynamic de Bruijn graphs"]},{"DOI":"10.7717\/peerj.9714","title":["Extracellular
+        vesicles in patients in the acute phase of psychosis and after clinical improvement:
+        an explorative study"]},{"DOI":"10.7717\/peerj.9769","title":["HPLC profiling
+        of selected phenolic acids and flavonoids in Salvia eigii, Salvia hierosolymitana
+        and Salvia viridis growing wild in Jordan and their in vitro antioxidant activity"]},{"DOI":"10.7717\/peerj.3102","title":["Insect
+        herbivores increase mortality and reduce tree seedling growth of some species
+        in temperate forest canopy gaps"]},{"DOI":"10.7717\/peerj.6752","title":["A
+        proposed terminology for the dentition of gomphodont cynodonts and dental
+        morphology in Diademodontidae and Trirachodontidae"]},{"DOI":"10.7717\/peerj.4485","title":["Ecosystem
+        functional response across precipitation extremes in a sagebrush steppe"]},{"DOI":"10.7717\/peerj.1098","title":["Early
+        prediction of language and literacy problems: is 18 months too early?"]},{"DOI":"10.7717\/peerj.1400","title":["Porphyrobacter
+        mercurialissp. nov., isolated from a stadium seat and emended description
+        of the genusPorphyrobacter"]},{"DOI":"10.7717\/peerj.114","title":["Lacosamide
+        adjunctive therapy for partial-onset seizures: a meta-analysis"]},{"DOI":"10.7717\/peerj.10679","title":["Reproducing
+        country-wide COVID-19 dynamics can require the usage of a set of SIR systems"]},{"DOI":"10.7717\/peerj.10675","title":["Differential
+        relieving effects of shikonin and its derivatives on inflammation and mucosal
+        barrier damage caused by ulcerative colitis"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Fri, 23 Jul 2021 15:43:39 GMT
+recorded_with: VCR 6.0.0

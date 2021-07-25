@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,18 +33,19 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:42:23 GMT
+      - Fri, 23 Jul 2021 15:45:05 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"journal","label":"Journal"}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:42:23 GMT
+  recorded_at: Fri, 23 Jul 2021 15:45:05 GMT
 - request:
     method: get
     uri: https://api.crossref.org/types/dissertation
@@ -53,9 +54,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -78,16 +79,17 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:42:24 GMT
+      - Fri, 23 Jul 2021 15:45:05 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"dissertation","label":"Dissertation"}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:42:24 GMT
-recorded_with: VCR 5.1.0
+  recorded_at: Fri, 23 Jul 2021 15:45:05 GMT
+recorded_with: VCR 6.0.0

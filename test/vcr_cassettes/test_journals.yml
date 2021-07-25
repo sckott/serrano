@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,23 +29,24 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '3609'
+      - '3619'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:38:08 GMT
+      - Fri, 23 Jul 2021 15:43:35 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1582028073648,"counts":{"total-dois":8538,"current-dois":4370,"backfile-dois":4168},"breakdowns":{"dois-by-issued-year":[[2019,2126],[2018,1931],[2017,1368],[2016,1296],[2015,801],[2014,471],[2020,313],[2013,232]]},"publisher":"PeerJ","coverage":{"affiliations-current":0.9135011434555054,"similarity-checking-current":0.9961098432540894,"funders-backfile":0.5647792816162109,"licenses-backfile":0.7017754316329956,"funders-current":0.796338677406311,"affiliations-backfile":0.9700096249580383,"resource-links-backfile":0.7017754316329956,"orcids-backfile":0.04750479757785797,"update-policies-current":0.0,"open-references-backfile":1.0,"orcids-current":0.2803203761577606,"similarity-checking-backfile":0.9973608255386353,"references-backfile":0.9968810081481934,"award-numbers-backfile":0.42874279618263245,"update-policies-backfile":0.0,"licenses-current":0.9961098432540894,"award-numbers-current":0.634096086025238,"abstracts-backfile":0.7017754316329956,"resource-links-current":0.9961098432540894,"abstracts-current":0.9961098432540894,"open-references-current":1.0,"references-current":0.9951944947242737},"title":"PeerJ","subjects":[{"name":"General
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1626468036890,"counts":{"total-dois":11711,"current-dois":5611,"backfile-dois":6100},"breakdowns":{"dois-by-issued-year":[[2020,2281],[2019,2126],[2018,1932],[2017,1368],[2016,1296],[2021,1204],[2015,801],[2014,471],[2013,232]]},"publisher":"PeerJ","coverage":{"affiliations-current":0.911067545413971,"similarity-checking-current":0.9994653463363647,"funders-backfile":0.6306557655334473,"licenses-backfile":0.7940983772277832,"funders-current":0.816431999206543,"affiliations-backfile":0.9565573930740356,"resource-links-backfile":0.7940983772277832,"orcids-backfile":0.11213114857673645,"update-policies-current":0.0,"open-references-backfile":1.0,"orcids-current":0.30458030104637146,"similarity-checking-backfile":0.9959016442298889,"references-backfile":0.9955737590789795,"award-numbers-backfile":0.4781967103481293,"update-policies-backfile":0.0,"licenses-current":0.9994653463363647,"award-numbers-current":0.6754589080810547,"abstracts-backfile":0.7940983772277832,"resource-links-current":0.9994653463363647,"abstracts-current":0.9994653463363647,"open-references-current":1.0,"references-current":0.998217761516571},"title":"PeerJ","subjects":[{"name":"General
         Agricultural and Biological Sciences","ASJC":1100},{"name":"General Biochemistry,
         Genetics and Molecular Biology","ASJC":1300},{"name":"General Medicine","ASJC":2700},{"name":"General
-        Neuroscience","ASJC":2800}],"coverage-type":{"all":{"last-status-check-time":1582028063951,"affiliations":0.9410868883132935,"abstracts":0.8524244427680969,"orcids":0.1666666716337204,"licenses":0.8524244427680969,"references":0.9960178136825562,"funders":0.6832981705665588,"similarity-checking":0.996720552444458,"award-numbers":0.5338487029075623,"update-policies":0.0,"resource-links":0.8524244427680969,"open-references":1.0},"backfile":{"last-status-check-time":1582028060656,"affiliations":0.9700096249580383,"abstracts":0.7017754316329956,"orcids":0.04750479757785797,"licenses":0.7017754316329956,"references":0.9968810081481934,"funders":0.5647792816162109,"similarity-checking":0.9973608255386353,"award-numbers":0.42874279618263245,"update-policies":0.0,"resource-links":0.7017754316329956,"open-references":1.0},"current":{"last-status-check-time":1582028058156,"affiliations":0.9135011434555054,"abstracts":0.9961098432540894,"orcids":0.2803203761577606,"licenses":0.9961098432540894,"references":0.9951944947242737,"funders":0.796338677406311,"similarity-checking":0.9961098432540894,"award-numbers":0.634096086025238,"update-policies":0.0,"resource-links":0.9961098432540894,"open-references":1.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-open-references-backfile":true,"deposits-open-references-current":true,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["2167-8359"],"issn-type":[{"value":"2167-8359","type":"electronic"}]}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:38:08 GMT
-recorded_with: VCR 5.1.0
+        Neuroscience","ASJC":2800}],"coverage-type":{"all":{"last-status-check-time":1626468025615,"affiliations":0.934762179851532,"abstracts":0.892494261264801,"orcids":0.20433780550956726,"licenses":0.892494261264801,"references":0.9968405961990356,"funders":0.7196652889251709,"similarity-checking":0.9976090788841248,"award-numbers":0.5727094411849976,"update-policies":0.0,"resource-links":0.892494261264801,"open-references":1.0},"backfile":{"last-status-check-time":1626468022099,"affiliations":0.9565573930740356,"abstracts":0.7940983772277832,"orcids":0.11213114857673645,"licenses":0.7940983772277832,"references":0.9955737590789795,"funders":0.6306557655334473,"similarity-checking":0.9959016442298889,"award-numbers":0.4781967103481293,"update-policies":0.0,"resource-links":0.7940983772277832,"open-references":1.0},"current":{"last-status-check-time":1626468018504,"affiliations":0.911067545413971,"abstracts":0.9994653463363647,"orcids":0.30458030104637146,"licenses":0.9994653463363647,"references":0.998217761516571,"funders":0.816431999206543,"similarity-checking":0.9994653463363647,"award-numbers":0.6754589080810547,"update-policies":0.0,"resource-links":0.9994653463363647,"open-references":1.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-open-references-backfile":true,"deposits-open-references-current":true,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["2167-8359"],"issn-type":[{"value":"2167-8359","type":"electronic"}]}}'
+  recorded_at: Fri, 23 Jul 2021 15:43:35 GMT
+recorded_with: VCR 6.0.0

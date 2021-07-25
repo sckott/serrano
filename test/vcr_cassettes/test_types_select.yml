@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       X-User-Agent:
-      - Faraday/v0.17.3 Serrano/v0.5.5 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,38 +29,37 @@ http_interactions:
       Access-Control-Allow-Headers:
       - X-Requested-With
       Content-Length:
-      - '1820'
+      - '1688'
       Server:
       - http-kit
       Date:
-      - Tue, 18 Feb 2020 18:42:25 GMT
+      - Fri, 23 Jul 2021 15:45:06 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
       - 1s
+      Permissions-Policy:
+      - interest-cohort=()
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":34805,"items":[{"DOI":"10.1007\/s00268-003-7063-2","title":["World
-        Journal of Surgery"]},{"DOI":"10.1007\/s10126-002-0076-9","title":["Marine
-        Biotechnology"]},{"DOI":"10.1007\/s10126-002-0069-8","title":["Marine Biotechnology"]},{"DOI":"10.1007\/s10126-002-0071-1","title":["Marine
-        Biotechnology"]},{"DOI":"10.1007\/s10126-002-0086-z","title":["Marine Biotechnology"]},{"DOI":"10.1007\/s00464-002-4265-7","title":["Surgical
-        Endoscopy"]},{"DOI":"10.17513\/sn","title":["\u0421\u0442\u0430\u0440\u0442
-        \u0432 \u043d\u0430\u0443\u043a\u0435 (Science Start)"]},{"DOI":"10.17352\/amgm","title":["Annals
-        of Molecular and Genetic Medicine"]},{"DOI":"10.14574\/ojrnhc","title":["Online
-        Journal of Rural Nursing and Health Care"]},{"DOI":"10.15406\/jbmoa","title":["Journal
-        of Bacteriology & Mycology: Open Access"]},{"DOI":"10.33805\/2638-8073","title":["Edelweiss:
-        Psychiatry Open Access"]},{"DOI":"10.16965\/ijar","title":["International
-        Journal of Anatomy and Research"]},{"DOI":"10.15804\/tner","title":["The New
-        Educational Review"]},{"DOI":"10.17963\/ccek","title":["Journal of Chinese
-        Characters Education in Korea"]},{"DOI":"10.22172\/cogbio","title":["Korean
-        Journal of Cognitive and Biological Psychology"]},{"DOI":"10.20878\/cshr","title":["Culinary
-        Science & Hospitality Research"]},{"DOI":"10.34143\/jtr","title":["Journal
-        of Transport Research"]},{"DOI":"10.17248\/knulaw","title":["KYUNGPOOK NATIONAL
-        UNIVERSITY LAW JOURNAL"]},{"DOI":"10.35637\/klehrd","title":["The Journal
-        of Lifelong Education and HRD"]},{"DOI":"10.35873\/ajmahs","title":["Asia-pacific
-        Journal of Multimedia Services Convergent with Art, Humanities, and Sociology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-    http_version: null
-  recorded_at: Tue, 18 Feb 2020 18:42:25 GMT
-recorded_with: VCR 5.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":43197,"items":[{"DOI":"10.7711\/feemre3.2014.03.001","title":["Review
+        of Environment, Energy and Economics"]},{"DOI":"10.15388\/omee","title":["Organizations
+        and Markets in Emerging Economies"]},{"DOI":"10.5555\/test20140318abc","title":["Journal
+        of Test deposits"]},{"DOI":"10.9734\/ajahr","title":["Asian Journal of Agricultural
+        and Horticultural Research"]},{"DOI":"10.5555\/test20140318","title":["Journal
+        of Test deposits"]},{"DOI":"10.11137\/aig","title":["Anu\u00e1rio do Instituto
+        de Geoci\u00eancias - UFRJ"]},{"DOI":"10.3900\/fpj.7","title":["Fitness &
+        Performance Journal"]},{"DOI":"10.1002\/(issn)1521-3994","title":["Astronomische
+        Nachrichten"]},{"DOI":"10.1002\/(issn)1949-3592","title":["Cytoskeleton"]},{"DOI":"10.1002\/(issn)1522-2357","title":["forschung"]},{"DOI":"10.35465\/burs.1","title":["Revmatologiia
+        (Bulgaria)"]},{"DOI":"10.1002\/(issn)1520-6548","title":["Geoarchaeology"]},{"DOI":"10.1002\/(issn)1542-7811","title":["National
+        Civic Review"]},{"DOI":"10.1002\/(issn)1531-5355","title":["Leader to Leader"]},{"DOI":"10.1002\/(issn)1557-6841","title":["Journal
+        of Synthetic Lubrication"]},{"DOI":"10.1002\/(issn)1099-1107","title":["International
+        Insolvency Review"]},{"DOI":"10.1002\/(issn)1523-149x","title":["Heat Transfer-Asian
+        Research"]},{"DOI":"10.1002\/(issn)1520-6513","title":["Federal Facilities
+        Environmental Journal"]},{"DOI":"10.1002\/(issn)1099-0917","title":["Early
+        Development and Parenting"]},{"DOI":"10.1002\/(issn)1548-2839","title":["Mergent''s
+        Dividend Achievers"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Fri, 23 Jul 2021 15:45:06 GMT
+recorded_with: VCR 6.0.0
