@@ -97,7 +97,7 @@ module Serrano
         js = _req(conn, endpt, opts)
         cu = js["message"]["next-cursor"]
         max_avail = js["message"]["total-results"]
-        _redo_req(conn, js, opts, cu, max_avail)
+        _redo_req(conn, js, opts, cu, max_avail, endpt2)
 
       else
         self.id = Array(id)
@@ -114,17 +114,17 @@ module Serrano
               endpt + "/" + x.to_s
             end
           end
-
+          
           js = _req(conn, endpt2, opts)
           cu = js["message"]["next-cursor"]
           max_avail = js["message"]["total-results"]
-          coll << _redo_req(conn, js, opts, cu, max_avail)
+          coll << _redo_req(conn, js, opts, cu, max_avail, endpt2)
         end
         coll
       end
     end
 
-    def _redo_req(conn, js, opts, cu, max_avail)
+    def _redo_req(conn, js, opts, cu, max_avail, endpt2)
       if !cu.nil? && (cursor_max > js["message"]["items"].length)
         res = [js]
         total = js["message"]["items"].length
