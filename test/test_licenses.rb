@@ -9,7 +9,7 @@ class TestLicenses < Test::Unit::TestCase
       assert_equal(4, res.length)
       assert_equal(Hash, res.class)
       assert_equal("license-list", res["message-type"])
-      assert_true(res["message"]["items"].length > 100)
+      assert_equal(Array, res["message"]["items"].class)
     end
   end
 
@@ -18,7 +18,7 @@ class TestLicenses < Test::Unit::TestCase
       res = Serrano.licenses(query: "creative")
       assert_equal(4, res.length)
       assert_equal(Hash, res.class)
-      assert_true(res["message"]["items"].length < 200)
+      assert_equal(Array, res["message"]["items"].class)
       assert_equal(MatchData, res["message"]["items"][3]["URL"].match("creative").class)
     end
   end
@@ -27,7 +27,7 @@ class TestLicenses < Test::Unit::TestCase
     # limit doesn't work on this route
     VCR.use_cassette("test_licenses_limit") do
       res = Serrano.licenses(limit: 3)
-      assert_true(res["message"]["items"].length > 100)
+      assert_equal(Array, res["message"]["items"].class)
     end
   end
 end
