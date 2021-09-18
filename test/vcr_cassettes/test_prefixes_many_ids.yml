@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:37 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '199'
+      Set-Cookie:
+      - AWSALB=DKaPCiSpFvfrYG7m1JF5KI4FJGaGmU9tvXa58eLmVtvUOXz7bR5iTBdjjjJMdxcyTne63rH7QPTR4opPJm3wvd0AMNlmYKijeh82Dq3q+umitXkb4l6aBxJumsYB;
+        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/
+      - AWSALBCORS=DKaPCiSpFvfrYG7m1JF5KI4FJGaGmU9tvXa58eLmVtvUOXz7bR5iTBdjjjJMdxcyTne63rH7QPTR4opPJm3wvd0AMNlmYKijeh82Dq3q+umitXkb4l6aBxJumsYB;
+        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:46 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -46,7 +60,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
         BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:46 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:37 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1371
@@ -67,20 +81,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:37 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '221'
+      Set-Cookie:
+      - AWSALB=I9W7ybIqpczklNf9ABqKju+O8UlgLUoo+EL1ghwoSlm5iXfyQ87I8DESPQbFyO3+qiHvomDFihlqiFA0jkPPPu/CaJ1dCI0IU3GTFRNPPEzqBMa649kZhdKIrgzl;
+        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/
+      - AWSALBCORS=I9W7ybIqpczklNf9ABqKju+O8UlgLUoo+EL1ghwoSlm5iXfyQ87I8DESPQbFyO3+qiHvomDFihlqiFA0jkPPPu/CaJ1dCI0IU3GTFRNPPEzqBMa649kZhdKIrgzl;
+        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:46 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -93,7 +121,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/340","name":"Public
         Library of Science (PLoS)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1371"}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:46 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:37 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1023
@@ -114,20 +142,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:38 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '228'
+      Set-Cookie:
+      - AWSALB=OHEz3iBGqsO4cEZ6tKuVOTedZv8JBDExyO5eaDa+Z99Ik10ZJT3CRJUBCXYOONIcWoZkxZSQnxrYQkBzJz7Ht1/f8X1dDeXnGu5UIZOgA+IQP8Lu694Rawyv2c2D;
+        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/
+      - AWSALBCORS=OHEz3iBGqsO4cEZ6tKuVOTedZv8JBDExyO5eaDa+Z99Ik10ZJT3CRJUBCXYOONIcWoZkxZSQnxrYQkBzJz7Ht1/f8X1dDeXnGu5UIZOgA+IQP8Lu694Rawyv2c2D;
+        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:47 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -140,7 +182,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/297","name":"Springer
         Science and Business Media LLC","prefix":"http:\/\/id.crossref.org\/prefix\/10.1023"}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:47 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:38 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.4176
@@ -161,20 +203,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:38 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '210'
+      Set-Cookie:
+      - AWSALB=+LzZCJTc5VQ6FNXaBeuqqDuICpc598LxcpPDhDDMBHJTxHiWfSPjCha5CKf5xyZfllc9t7df5Q+lqXOhEFqrRVPl4n+fCc5iqa/rXOFbJSbqZV2cd5EwJdgVSd/N;
+        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/
+      - AWSALBCORS=+LzZCJTc5VQ6FNXaBeuqqDuICpc598LxcpPDhDDMBHJTxHiWfSPjCha5CKf5xyZfllc9t7df5Q+lqXOhEFqrRVPl4n+fCc5iqa/rXOFbJSbqZV2cd5EwJdgVSd/N;
+        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:47 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -187,7 +243,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/1989","name":"Co-Action
         Publishing","prefix":"http:\/\/id.crossref.org\/prefix\/10.4176"}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:47 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:38 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1093
@@ -208,20 +264,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:38 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '218'
+      Set-Cookie:
+      - AWSALB=UT30ebirILdKDTK4pvjzQtqPERLl3OT1Cn+tQ+e8glNZ8NuukSapGcWfRBm4HAZJDiUZHXZQhDwbWgseI3YWgMpvpVm74Z6VlyJUwdnxE1cRm2GpUr8amsR4OBw+;
+        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/
+      - AWSALBCORS=UT30ebirILdKDTK4pvjzQtqPERLl3OT1Cn+tQ+e8glNZ8NuukSapGcWfRBm4HAZJDiUZHXZQhDwbWgseI3YWgMpvpVm74Z6VlyJUwdnxE1cRm2GpUr8amsR4OBw+;
+        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:48 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -234,5 +304,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/286","name":"Oxford
         University Press (OUP)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1093"}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:48 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:39 GMT
 recorded_with: VCR 6.0.0

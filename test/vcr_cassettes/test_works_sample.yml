@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:20 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '14129'
+      Set-Cookie:
+      - AWSALB=4vKm9yITMJic4BBLYiY7gErqQLCMLU/kvZZK653ImLaU70u7J9aZw46OSlaq0lcz3ZUpTnHdSHrnGA+1C7ViTHYPeRjJEEIsYfPA8Nx5YCSscpCWvEN33LE8XlNP;
+        Expires=Sat, 25 Sep 2021 16:12:14 GMT; Path=/
+      - AWSALBCORS=4vKm9yITMJic4BBLYiY7gErqQLCMLU/kvZZK653ImLaU70u7J9aZw46OSlaq0lcz3ZUpTnHdSHrnGA+1C7ViTHYPeRjJEEIsYfPA8Nx5YCSscpCWvEN33LE8XlNP;
+        Expires=Sat, 25 Sep 2021 16:12:14 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '5908'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:47:44 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,25 +57,448 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":126358038,"items":[{"indexed":{"date-parts":[[2021,4,14]],"date-time":"2021-04-14T07:44:25Z","timestamp":1618386265203},"reference-count":0,"publisher":"WORLD
-        SCIENTIFIC","isbn-type":[{"value":"9789810232115","type":"print"},{"value":"9789812812155","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1998,7]]},"DOI":"10.1142\/3544","type":"book","created":{"date-parts":[[2012,7,18]],"date-time":"2012-07-18T23:02:53Z","timestamp":1342652573000},"source":"Crossref","is-referenced-by-count":27,"title":["Molecular
-        Complexes in Earth''s, Planetary, Cometary, and Interstellar Atmospheres"],"prefix":"10.1142","author":[{"given":"Andrei
-        A","family":"Vigasin","sequence":"first","affiliation":[{"name":"Obukhov Institute
-        of Atmospheric PhysicsRussia"}]},{"given":"Zdenek","family":"Slanina","sequence":"additional","affiliation":[{"name":"Toyohashi
-        University of TechnologyJapan"}]}],"member":"219","published-online":{"date-parts":[[2011,11,21]]},"deposited":{"date-parts":[[2018,8,2]],"date-time":"2018-08-02T17:52:48Z","timestamp":1533232368000},"score":1.0,"issued":{"date-parts":[[1998,7]]},"ISBN":["9789810232115","9789812812155"],"references-count":0,"alternative-id":["10.1142\/3544"],"URL":"http:\/\/dx.doi.org\/10.1142\/3544"},{"indexed":{"date-parts":[[2020,4,11]],"date-time":"2020-04-11T05:43:52Z","timestamp":1586583832958},"reference-count":8,"publisher":"IOP
-        Publishing","issue":"8","license":[{"URL":"http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining","start":{"date-parts":[[2014,8,1]],"date-time":"2014-08-01T00:00:00Z","timestamp":1406851200000},"delay-in-days":0,"content-version":"tdm"},{"URL":"http:\/\/iopscience.iop.org\/page\/copyright","start":{"date-parts":[[2014,8,1]],"date-time":"2014-08-01T00:00:00Z","timestamp":1406851200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Semicond."],"published-print":{"date-parts":[[2014,8]]},"DOI":"10.1088\/1674-4926\/35\/8\/085003","type":"journal-article","created":{"date-parts":[[2014,8,6]],"date-time":"2014-08-06T10:14:28Z","timestamp":1407320068000},"page":"085003","source":"Crossref","is-referenced-by-count":0,"title":["An
-        IQ mismatch calibration and compensation technique for wideband wireless transceivers"],"prefix":"10.1088","volume":"35","author":[{"given":"Jin","family":"Peng","sequence":"first","affiliation":[]},{"given":"Liguo","family":"Zhou","sequence":"additional","affiliation":[]},{"given":"Heng","family":"Yao","sequence":"additional","affiliation":[]},{"given":"Fang","family":"Yuan","sequence":"additional","affiliation":[]},{"given":"Zhi","family":"Fang","sequence":"additional","affiliation":[]},{"given":"Yin","family":"Shi","sequence":"additional","affiliation":[]}],"member":"266","published-online":{"date-parts":[[2014,8,6]]},"reference":[{"key":"1","author":"Faulkner
-        M","volume":"27","first-page":"214","year":"1991","journal-title":"IET Journals
-        & Magazines"},{"key":"2","DOI":"10.1109\/JSSC.2008.2005742","doi-asserted-by":"publisher"},{"key":"3","author":"Schenk
-        T C W","first-page":"329","year":"2007"},{"key":"4","DOI":"10.1109\/JSSC.2005.857348","doi-asserted-by":"publisher"},{"key":"5","author":"Kang
-        B","first-page":"332","year":"2010"},{"key":"6","DOI":"10.1109\/JSSC.2003.819086","doi-asserted-by":"publisher"},{"key":"7","author":"","year":"2009","journal-title":"IEEE
-        802.11n-2009, Part 11: Wireless LAN Medium Access Control (MAC) and Physical
-        Layer (PHY) Specifications, Amendment 5: Enhancements for Higher Throughput"},{"key":"8","author":"Hsieh
-        Y H","first-page":"92","year":"2005"}],"container-title":["Journal of Semiconductors"],"link":[{"URL":"http:\/\/stacks.iop.org\/1674-4926\/35\/i=8\/a=085003\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/stacks.iop.org\/1674-4926\/35\/i=8\/a=085003?key=crossref.0ef85d22f1f21933a47e9e05abe0048a","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/stacks.iop.org\/1674-4926\/35\/i=8\/a=085003\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"},{"URL":"http:\/\/stacks.iop.org\/1674-4926\/35\/i=8\/a=085003?key=crossref.0ef85d22f1f21933a47e9e05abe0048a","content-type":"text\/html","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,4,11]],"date-time":"2020-04-11T05:01:06Z","timestamp":1586581266000},"score":1.0,"issued":{"date-parts":[[2014,8]]},"references-count":8,"journal-issue":{"published-print":{"date-parts":[[2014,8,1]]},"issue":"8"},"URL":"http:\/\/dx.doi.org\/10.1088\/1674-4926\/35\/8\/085003","relation":{"cites":[]},"ISSN":["1674-4926"],"issn-type":[{"value":"1674-4926","type":"print"}],"subject":["Electrical
-        and Electronic Engineering","Materials Chemistry","Electronic, Optical and
-        Magnetic Materials","Condensed Matter Physics"]},{"indexed":{"date-parts":[[2020,11,24]],"date-time":"2020-11-24T22:38:46Z","timestamp":1606257526916},"reference-count":0,"publisher":"Public
-        Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0242605.r002","type":"component","created":{"date-parts":[[2020,11,24]],"date-time":"2020-11-24T21:49:09Z","timestamp":1606254549000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2020,11,24]],"date-time":"2020-11-24T21:49:13Z","timestamp":1606254553000},"score":1.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0242605.r002"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:47:44 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":127472782,"items":[{"indexed":{"date-parts":[[2021,5,9]],"date-time":"2021-05-09T09:25:06Z","timestamp":1620552306056},"reference-count":0,"publisher":"Informa
+        UK Limited","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["American
+        Journal of Clinical Hypnosis"],"published-print":{"date-parts":[[2009,10]]},"DOI":"10.1080\/00029157.2009.10401707","type":"journal-article","created":{"date-parts":[[2011,9,22]],"date-time":"2011-09-22T10:11:13Z","timestamp":1316686273000},"page":"151-152","source":"Crossref","is-referenced-by-count":0,"title":["Gosling,
+        S. (2008).Snoop: What Your Stuff Says about You. New York: Basic Books. Reviewed
+        by William Danton, Ph.D., ABPP, University of Nevada School of Medicine, Reno
+        NV"],"prefix":"10.1080","volume":"52","member":"301","container-title":["American
+        Journal of Clinical Hypnosis"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/00029157.2009.10401707","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,9]],"date-time":"2016-12-09T22:30:15Z","timestamp":1481322615000},"score":0.99999994,"issued":{"date-parts":[[2009,10]]},"references-count":0,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2009,10]]}},"alternative-id":["10.1080\/00029157.2009.10401707"],"URL":"http:\/\/dx.doi.org\/10.1080\/00029157.2009.10401707","ISSN":["0002-9157","2160-0562"],"issn-type":[{"value":"0002-9157","type":"print"},{"value":"2160-0562","type":"electronic"}],"subject":["Complementary
+        and alternative medicine","General Medicine"],"published":{"date-parts":[[2009,10]]}},{"indexed":{"date-parts":[[2021,5,12]],"date-time":"2021-05-12T08:20:35Z","timestamp":1620807635666},"reference-count":26,"publisher":"Informa
+        UK Limited","issue":"2","funder":[{"name":"Australia-China Research Program
+        on Market Mechanisms for Climate Change Policy"},{"DOI":"10.13039\/501100001809","name":"National
+        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["71503087"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Climate
+        Policy"],"published-print":{"date-parts":[[2018,2,7]]},"DOI":"10.1080\/14693062.2016.1277684","type":"journal-article","created":{"date-parts":[[2017,2,13]],"date-time":"2017-02-13T19:19:35Z","timestamp":1487013575000},"page":"258-273","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":3,"title":["Ex-post
+        cap adjustment for China\u2019s ETS: an applicable indexation rule, simulating
+        the Hubei ETS, and implications for a national scheme"],"prefix":"10.1080","volume":"18","author":[{"given":"Banban","family":"Wang","sequence":"first","affiliation":[{"name":"School
+        of Economics, Huazhong University of Science and Technology, Wuhan, People\u2019s
+        Republic of China"},{"name":"Center of Hubei Cooperative Innovation for Emissions
+        Trading System, Wuhan, Hubei University of Economics, People\u2019s Republic
+        of China"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-2856-847X","authenticated-orcid":false,"given":"Frank","family":"Jotzo","sequence":"additional","affiliation":[{"name":"Centre
+        for Climate Economics &amp; Policy, Australian National University, Canberra,
+        Australia"}]},{"given":"Shaozhou","family":"Qi","sequence":"additional","affiliation":[{"name":"Center
+        of Hubei Cooperative Innovation for Emissions Trading System, Wuhan, Hubei
+        University of Economics, People\u2019s Republic of China"},{"name":"Climate
+        Change and Energy Economics Study Center, Wuhan University, Wuhan, People\u2019s
+        Republic of China"}]}],"member":"301","published-online":{"date-parts":[[2017,2,13]]},"reference":[{"key":"CIT1001","doi-asserted-by":"publisher","DOI":"10.1016\/j.enpol.2003.10.012"},{"key":"CIT0001","doi-asserted-by":"publisher","DOI":"10.1007\/s10640-014-9789-5"},{"key":"CIT0002","doi-asserted-by":"publisher","DOI":"10.1596\/1813-9450-2019"},{"key":"CIT0003","doi-asserted-by":"publisher","DOI":"10.1016\/j.jeem.2011.04.005"},{"key":"CIT0004","doi-asserted-by":"publisher","DOI":"10.1016\/j.jclepro.2016.04.029"},{"key":"CIT0005","doi-asserted-by":"publisher","DOI":"10.1016\/j.apenergy.2014.12.056"},{"key":"CIT0006","doi-asserted-by":"publisher","DOI":"10.1016\/j.enpol.2014.02.030"},{"key":"CIT0007","first-page":"116","author":"Jiang
+        K.","year":"2002","journal-title":"Proceeding of Climate Change Policy Assessment"},{"key":"CIT0009","doi-asserted-by":"publisher","DOI":"10.1016\/j.enpol.2014.09.019"},{"key":"CIT0010","doi-asserted-by":"publisher","DOI":"10.1007\/s10640-006-9078-z"},{"key":"CIT0011","doi-asserted-by":"publisher","DOI":"10.1093\/reep\/ren016"},{"key":"CIT0012","doi-asserted-by":"publisher","DOI":"10.1016\/j.jeem.2008.07.001"},{"key":"CIT1002","doi-asserted-by":"crossref","unstructured":"Pang,
+        T. & Duan, M. (2016). Cap setting and allowance allocation in China\u2019s
+        emissions trading pilot programmes: Special issues and innovative solutions.
+        Climate Policy, 16, 1\u201321. doi.org\/10.1080\/14693062.2015.1052956","DOI":"10.1080\/14693062.2015.1052956"},{"key":"CIT0013","doi-asserted-by":"publisher","DOI":"10.1016\/j.jeem.2012.02.006"},{"key":"CIT0014","doi-asserted-by":"publisher","DOI":"10.1016\/S0047-2727(01)00118-9"},{"key":"CIT0015","doi-asserted-by":"publisher","DOI":"10.1016\/j.enpol.2014.07.010"},{"key":"CIT0016","doi-asserted-by":"publisher","DOI":"10.1016\/j.reseneeco.2005.05.002"},{"key":"CIT0017","doi-asserted-by":"publisher","DOI":"10.1016\/0047-2727(76)90014-1"},{"key":"CIT0018","volume-title":"Proposal
+        for a U.S. Cap-and-trade system to address global climate change: A sensible
+        and practical approach to reduce greenhouse gas emissions","author":"Stavins
+        R. N.","year":"2007"},{"key":"CIT0019","doi-asserted-by":"publisher","DOI":"10.1016\/j.jeem.2010.01.002"},{"key":"CIT0020","doi-asserted-by":"publisher","DOI":"10.1016\/j.chieco.2011.06.002"},{"key":"CIT0021","doi-asserted-by":"publisher","DOI":"10.1016\/j.enpol.2014.01.022"},{"key":"CIT0022","doi-asserted-by":"publisher","DOI":"10.1016\/j.eneco.2013.08.018"},{"key":"CIT0023","doi-asserted-by":"publisher","DOI":"10.1016\/j.jclepro.2014.09.079"},{"key":"CIT0024","doi-asserted-by":"publisher","DOI":"10.1016\/j.enpol.2014.08.006"},{"key":"CIT1003","doi-asserted-by":"publisher","DOI":"10.1016\/j.apenergy.2013.04.013"}],"container-title":["Climate
+        Policy"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/14693062.2016.1277684","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,1,4]],"date-time":"2018-01-04T03:58:31Z","timestamp":1515038311000},"score":0.99999994,"issued":{"date-parts":[[2017,2,13]]},"references-count":26,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2017,2,13]]},"published-print":{"date-parts":[[2018,2,7]]}},"alternative-id":["10.1080\/14693062.2016.1277684"],"URL":"http:\/\/dx.doi.org\/10.1080\/14693062.2016.1277684","ISSN":["1469-3062","1752-7457"],"issn-type":[{"value":"1469-3062","type":"print"},{"value":"1752-7457","type":"electronic"}],"subject":["Atmospheric
+        Science","Environmental Science (miscellaneous)","Global and Planetary Change","Management,
+        Monitoring, Policy and Law"],"published":{"date-parts":[[2017,2,13]]},"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=tcpo20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=tcpo20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2021,7,9]],"date-time":"2021-07-09T10:46:02Z","timestamp":1625827562436},"reference-count":149,"publisher":"Frontiers
+        Media SA","license":[{"start":{"date-parts":[[2021,3,24]],"date-time":"2021-03-24T00:00:00Z","timestamp":1616544000000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["frontiersin.org"],"crossmark-restriction":true},"short-container-title":["Front.
+        Psychol."],"abstract":"<jats:p>Drawing insight from affective events theory,
+        this study presents a new dimension of perceived organizational politics and
+        job attitudes. The motivation for this study was based on the fact that perceived
+        organizational politics affect job attitudes and that personal resources (political
+        skill and work ethic) moderate the direct relationship between perceived organizational
+        politics and job attitudes in the context of the higher-education sector.
+        In this regard, the data was collected through purposive sampling from 310
+        faculty members from higher-education institutions in Pakistan. To test the
+        relationships among the variables, we employed structural equation modeling
+        via the AMOS software version 24.0. The results indicated that perceived organizational
+        politics were significantly negatively related to job satisfaction. Moreover,
+        perceived organizational politics were non-significantly related to job involvement.
+        Political skill and work ethic weakened the relationship between perceived
+        organizational politics and job satisfaction. We anticipated that these personal
+        resources could mitigate the negative effect of perceived organizational politics
+        and job attitudes. This study also suggests organizations to train their employees
+        to develop essential personal skills.<\/jats:p>","DOI":"10.3389\/fpsyg.2021.609842","type":"journal-article","created":{"date-parts":[[2021,3,24]],"date-time":"2021-03-24T05:37:43Z","timestamp":1616564263000},"update-policy":"http:\/\/dx.doi.org\/10.3389\/crossmark-policy","source":"Crossref","is-referenced-by-count":1,"title":["\u201cWho
+        Champions or Mentors Others\u201d? The Role of Personal Resources in the Perceived
+        Organizational Politics and Job Attitudes Relationship"],"prefix":"10.3389","volume":"12","author":[{"given":"Hira
+        Salah ud din","family":"Khan","sequence":"first","affiliation":[]},{"given":"Shakira
+        Huma","family":"Siddiqui","sequence":"additional","affiliation":[]},{"given":"Ma","family":"Zhiqiang","sequence":"additional","affiliation":[]},{"given":"Hu","family":"Weijun","sequence":"additional","affiliation":[]},{"given":"Li","family":"Mingxing","sequence":"additional","affiliation":[]}],"member":"1965","published-online":{"date-parts":[[2021,3,24]]},"reference":[{"key":"B1","doi-asserted-by":"publisher","first-page":"1813","DOI":"10.1177\/0149206312455243","article-title":"Combined
+        effects of perceived politics and psychological capital on job satisfaction,
+        turnover intentions, and performance","volume":"40","author":"Abbas","year":"2014","journal-title":"J.
+        Manage."},{"key":"B2","doi-asserted-by":"publisher","first-page":"1","DOI":"10.3390\/su9112125","article-title":"The
+        organizational identification perspective of CSR on creative performance:
+        the moderating role of creative self-efficacy","volume":"9","author":"Abdullah","year":"2017","journal-title":"Sustainability"},{"key":"B3","doi-asserted-by":"publisher","first-page":"2308","DOI":"10.4236\/tel.2018.811150","article-title":"Examining
+        the impact of leader-member exchange on perceptions of organizational justice:
+        the mediating role of perceptions of organizational politics","volume":"8","author":"Aggarwal","year":"2018","journal-title":"Theor.
+        Econ. Lett."},{"key":"B4","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1177\/1094428115627498","article-title":"Improving
+        our understanding of moderation and mediation in strategic management research","volume":"20","author":"Aguinis","year":"2016","journal-title":"Organ.
+        Res. Method"},{"key":"B5","doi-asserted-by":"publisher","first-page":"341","DOI":"10.31703\/gssr.2020(V-II).33","article-title":"Influence
+        of organizational politics on university teachers'' performance","volume":"5","author":"Ahmed","year":"2020","journal-title":"Glob.
+        Soc. Sci. Rev."},{"key":"B6","doi-asserted-by":"publisher","first-page":"130","DOI":"10.1177\/0020881718790689","article-title":"Socio-economic
+        and political determinants of Terrorism in Pakistan","volume":"55","author":"Ahmed","year":"2018","journal-title":"Int.
+        Stud."},{"key":"B7","doi-asserted-by":"publisher","first-page":"49","DOI":"10.1016\/0148-2963(93)90042-N","article-title":"Organizational
+        commitment: evidence of career stage effects?","volume":"26","author":"Allen","year":"1993","journal-title":"J.
+        Bus. Res."},{"key":"B8","doi-asserted-by":"publisher","first-page":"1","DOI":"10.3390\/ijerph15051035","article-title":"An
+        empirical study analyzing job productivity in toxic workplace environments","volume":"15","author":"Anjum","year":"2018","journal-title":"Int.
+        Joiurnal Environ. Res. Public Heal."},{"key":"B9","first-page":"2057","article-title":"Unveiling
+        antecedents of organizational politics: an exploratory study on science and
+        technology universities of Pakistan","volume":"29","author":"Asad","year":"2020","journal-title":"Int.
+        J. Adv. Sci. Technol."},{"key":"B10","doi-asserted-by":"publisher","first-page":"185","DOI":"10.1108\/SAJBS-07-2018-0086","article-title":"Impact
+        of organizational politics on employee work outcomes in higher education institutions
+        of Pakistan: Moderating role of social capital","volume":"8","author":"Asrar-ul-Haq","year":"2019","journal-title":"South
+        Asian J. Bus. Stud."},{"key":"B11","first-page":"119","article-title":"Impact
+        of islamic work ethics on organizational commitment: mediating role of job
+        satisfaction","volume":"6","author":"Athar","year":"2016","journal-title":"J.
+        Islam. Bus. Manag."},{"key":"B12","first-page":"21","article-title":"Perceived
+        organizational politics, organizational citizenship behavior and job attitudes
+        among university teachers","volume":"26","author":"Atta","year":"2016","journal-title":"J.
+        Behav. Sci."},{"key":"B13","doi-asserted-by":"publisher","first-page":"1838","DOI":"10.1111\/jan.12958","article-title":"A
+        cross-sectional survey on consequences of nurses'' burnout: moderating role
+        of organizational politics","volume":"72","author":"Basar","year":"2016","journal-title":"J.
+        Adv. Nurs."},{"key":"B14","doi-asserted-by":"publisher","first-page":"374","DOI":"10.1080\/13602381.2015.1129767","article-title":"Work
+        ethic formed by pedagogical approach: evolution of institutional approach
+        to education and competitiveness","volume":"22","author":"Baumann","year":"2016","journal-title":"Asia
+        Pacific Bus. Rev."},{"key":"B15","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1177\/0734371X19884102","article-title":"Challenged
+        by great expectations? Examining cross-level moderations and curvilinearity
+        in the public sector job demands \u2013 resources model","volume":"39","author":"Bauwens","year":"2019","journal-title":"Rev.
+        Public Pers. Adm."},{"key":"B16","doi-asserted-by":"publisher","first-page":"850","DOI":"10.3389\/fpsyg.2017.00850","article-title":"The
+        moderating effect of employee political skill on the link between perceptions
+        of a victimizing work environment and job performance","volume":"8","author":"Bentley","year":"2017","journal-title":"Front.
+        Psychol."},{"key":"B17","doi-asserted-by":"publisher","first-page":"195","DOI":"10.1177\/0021886319900332","article-title":"Speaking
+        up at work: the role of perceived organizational support in explaining the
+        relationship between perceptions of organizational politics and voice behavior","volume":"56","author":"Bergeron","year":"2020","journal-title":"J.
+        Appl. Behav. Sci."},{"key":"B18","doi-asserted-by":"publisher","first-page":"1145","DOI":"10.1002\/job.1843","article-title":"The
+        interactive effects of conscientiousness, openness to experience, and political
+        skill on job performance in complex jobs: the importance of context","volume":"34","author":"Blickle","year":"2013","journal-title":"J.
+        Organ. Behav."},{"key":"B19","first-page":"66","article-title":"Perceived
+        organizational politics and employee morale: mediating role of social exchange
+        perceptions in Pakistani Organizations","volume":"4","author":"Bodla","year":"2015","journal-title":"Eur.
+        Online J. Nat. Soc. Sci."},{"key":"B20","article-title":"\u201cAn examination
+        of reactions to perceptions of organizational politics,\u201d","volume-title":"Southern
+        Management Association Meeting","author":"Bozeman","year":"1996"},{"key":"B21","doi-asserted-by":"publisher","first-page":"869","DOI":"10.1002\/job.718","article-title":"The
+        moderating effects of political skill on the perceived politics\u2013outcome
+        relationships","volume":"32","author":"Brouer","year":"2011","journal-title":"J.
+        Organ. Behav."},{"key":"B22","first-page":"54","article-title":"Longitudinal
+        study to examine the influence of emotional intelligence on organizational
+        citizenship behavior: mediating role of political skills","volume":"33","author":"Butt","year":"2017","journal-title":"Walia"},{"key":"B23","doi-asserted-by":"publisher","first-page":"10","DOI":"10.11648\/j.ijvetr.20190501.12","article-title":"Work
+        ethic in China changes over time from 2004 to 2018","volume":"5","author":"Cao","year":"2019","journal-title":"Int.
+        J. Vocat. Educ. Train. Res."},{"key":"B24","doi-asserted-by":"publisher","first-page":"779","DOI":"10.5465\/amj.2009.43670894","article-title":"The
+        relationship between perceptions of organizational politics and employee attitudes,
+        strain, and behavior: a meta-analytic examination","volume":"52","author":"Chang","year":"2009","journal-title":"Acad.
+        Manag. J."},{"key":"B25","first-page":"93","article-title":"Perspectives on
+        work ethic. An intercultural approach","volume":"16","author":"Chasovschi","year":"2016","journal-title":"USV
+        Ann. Econ. Public Adm."},{"key":"B26","volume-title":"Regression Analysis
+        by Example","author":"Chatterjee","year":"2015"},{"key":"B27","doi-asserted-by":"publisher","first-page":"102600","DOI":"10.1016\/j.ijhm.2020.102600","article-title":"Personal
+        resources and personal demands for work engagement: evidence from employees
+        in the service industry","volume":"90","author":"Chen","year":"2020","journal-title":"Int.
+        J. Hosp. Manag."},{"key":"B28","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1177\/0894845319832666","article-title":"\u201cIt
+        is all in the game!\u201d: the role of political skill for perceived employability
+        enhancement","volume":"46","author":"Chiesa","year":"2019","journal-title":"J.
+        Career Dev."},{"key":"B29","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1016\/j.apmrv.2017.05.003","article-title":"How
+        perceptions of organizational politics in fl uence self-determined motivation:
+        the mediating role of work mood","volume":"30","author":"Cho","year":"2017","journal-title":"Asia
+        Pacific Manag. Rev."},{"key":"B30","doi-asserted-by":"publisher","first-page":"254","DOI":"10.1177\/002224377401100303","article-title":"Measuring
+        the job satisfaction of industrial","volume":"11","author":"Churchill","year":"1974","journal-title":"J.
+        Mark. Res."},{"key":"B31","doi-asserted-by":"publisher","first-page":"689","DOI":"10.1017\/jmo.2017.7","article-title":"Mitigating
+        the negative effect of perceived organizational politics on organizational
+        citizenship behavior: Moderating roles of contextual and personal resources","volume":"23","author":"Clerq","year":"2017","journal-title":"J.
+        Manag. Organ."},{"key":"B32","volume-title":"Applied Multiple Regression\/Correlation
+        Analysis for the Behavioral Sciences","author":"Cohen","year":"2003"},{"key":"B33","doi-asserted-by":"publisher","first-page":"20","DOI":"10.1108\/IJEBR-05-2015-0103","article-title":"Political
+        skill, entrepreneurial orientation and organizational justice: A study of
+        entrepreneurial enterprise in China","volume":"23","author":"Cong","year":"2017","journal-title":"Int.
+        J. Entrep. Behav. Res."},{"key":"B34","doi-asserted-by":"publisher","first-page":"834","DOI":"10.1037\/a0019364","article-title":"Linking
+        job demands and resources to employee engagement and burnout: a theoretical
+        extension and meta-analytic test","volume":"95","author":"Crawford","year":"2010","journal-title":"J.
+        Appl. Psychol."},{"key":"B35","doi-asserted-by":"publisher","first-page":"92","DOI":"10.1080\/08959285.2019.1597100","article-title":"Organizational
+        politics and deviance: exploring the role of political skill","volume":"32","author":"Crawford","year":"2019","journal-title":"Hum.
+        Perform."},{"key":"B36","doi-asserted-by":"publisher","first-page":"675","DOI":"10.1016\/S0272-6963(01)00066-3","article-title":"Relationships
+        between implementation of TQM, JIT, and TPM and manufacturing performance","volume":"19","author":"Cua","year":"2001","journal-title":"J.
+        Oper. Manag."},{"key":"B37","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1177\/0149206315571154","article-title":"Thriving
+        in central network positions: the role of political skill","volume":"20","author":"Cullen","year":"2015","journal-title":"J.
+        Manage."},{"key":"B38","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1017\/jmo.2020.7","article-title":"When
+        does job stress limit organizational citizenship behavior, or not? Personal
+        and contextual resources as buffers","volume":"26","author":"De Clercq","year":"2020","journal-title":"J.
+        Manag. Organ."},{"key":"B39","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1080\/15313220.2016.1222892","article-title":"The
+        politics, satisfaction, loyalty, and success of Ph. D. students in hospitality
+        and tourism","volume":"17","author":"Deale","year":"2016","journal-title":"J.
+        Teach. Travel Tour."},{"key":"B40","doi-asserted-by":"publisher","first-page":"1301","DOI":"10.1111\/apps.12220","article-title":"Resilience
+        in virtual teams: developing the capacity to bounce back","volume":"69","author":"Degbey","year":"2019","journal-title":"Appl.
+        Psychol."},{"key":"B41","doi-asserted-by":"publisher","first-page":"59","DOI":"10.1177\/017084069301400105","article-title":"Perceived
+        political climate and job attitudes","volume":"14","author":"Drory","year":"1993","journal-title":"Organ.
+        Stud."},{"key":"B42","doi-asserted-by":"publisher","first-page":"194","DOI":"10.1016\/j.hrmr.2009.08.005","article-title":"Human
+        Resource Management Review Organizational politics and human resource management:
+        a typology and the Israeli experience","volume":"20","author":"Drory","year":"2010","journal-title":"Hum.
+        Resour. Manag. Rev."},{"key":"B43","doi-asserted-by":"publisher","first-page":"233","DOI":"10.1111\/apps.12090","article-title":"Looking
+        on the bright side: the positive role of organisational politics in the relationship
+        between employee engagement and performance at work","volume":"66","author":"Eldor","year":"2016","journal-title":"Appl.
+        Psychol."},{"key":"B44","doi-asserted-by":"publisher","first-page":"672","DOI":"10.1108\/MRR-01-2015-0011","article-title":"Impact
+        of behavioral integrity on organizational identification: the moderating roles
+        of power distance and organizational politics","volume":"39","author":"Erkutlu","year":"2016","journal-title":"Manag.
+        Res. Rev."},{"key":"B45","doi-asserted-by":"publisher","first-page":"1","DOI":"10.11648\/j.ajtas.20160501.11","article-title":"Comparison
+        of convenience sampling and purposive sampling","volume":"5","author":"Etikan","year":"2016","journal-title":"Am.
+        J. Theor. Appl. Stat."},{"key":"B46","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1080\/23303131.2018.1464994","article-title":"Work
+        ethic and life satisfaction among social workers in Massachusetts: the moderating
+        effect of gender","volume":"42","author":"Fakunmoju","year":"2018","journal-title":"Hum.
+        Serv. Organ. Manag. Leadersh. Gov."},{"key":"B47","doi-asserted-by":"publisher","first-page":"31","DOI":"10.1057\/s41291-018-00049-9","article-title":"The
+        interactive effects of justice perceptions and Islamic work ethic in predicting
+        citizenship behaviors and work engagement","volume":"18","author":"Farid","year":"2019","journal-title":"Asian
+        Bus. Manag."},{"key":"B48","doi-asserted-by":"publisher","first-page":"179","DOI":"10.1016\/S1475-9144(02)01034-2","article-title":"Perceptions
+        of organizational politics: theory and research directions","volume":"1","author":"Ferris","year":"2002","journal-title":"Res.
+        Multi Level Issues"},{"key":"B49","doi-asserted-by":"publisher","first-page":"93","DOI":"10.1177\/014920639201800107","article-title":"Perceptions
+        of organizational politics","volume":"18","author":"Ferris","year":"1992","journal-title":"J.
+        Manage."},{"key":"B50","doi-asserted-by":"publisher","first-page":"5","DOI":"10.1177\/1548051816656003","article-title":"Social
+        Influence and Politics in Organizational Research?: What We Know and What
+        We Need to Know","volume":"24","author":"Ferris","year":"2017","journal-title":"J.
+        Leaders. Org. Stud."},{"key":"B51","doi-asserted-by":"publisher","first-page":"584","DOI":"10.1108\/02683940910989002","article-title":"Interaction
+        of job-limiting pain and political skill on job satisfaction and organizational
+        citizenship behavior","volume":"24","author":"Ferris","year":"2009","journal-title":"J.
+        Manag. Psychol."},{"key":"B52","first-page":"143","article-title":"Politics
+        in organizations","author":"Ferris","year":"1989","journal-title":"Impr. Manag.
+        Organ."},{"key":"B53","doi-asserted-by":"publisher","first-page":"126","DOI":"10.1177\/0149206304271386","article-title":"Development
+        and validation of the political skill inventory","volume":"31","author":"Ferris","year":"2005","journal-title":"J.
+        Manage."},{"key":"B54","doi-asserted-by":"publisher","first-page":"290","DOI":"10.1177\/0149206307300813","article-title":"Political
+        skill in organizations","volume":"33","author":"Ferris","year":"2007","journal-title":"J.
+        Manage."},{"key":"B55","doi-asserted-by":"publisher","first-page":"39","DOI":"10.1177\/002224378101800104","article-title":"Evaluating
+        structural equation models with unobservable variables and measurement error","volume":"18","author":"Fornell","year":"1981","journal-title":"J.
+        Mark. Res."},{"key":"B56","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1016\/j.emj.2018.08.003","article-title":"Fostering
+        integrated research on organizational politics and con fl ict in teams: a
+        cross-phenomenal review","volume":"36","author":"Franke","year":"2018","journal-title":"Eur.
+        Manag. J."},{"key":"B57","doi-asserted-by":"publisher","first-page":"98","DOI":"10.1177\/1548051818774547","article-title":"The
+        effect of political skill on work role performance and intention to leave:
+        a moderated mediation model","volume":"26","author":"Garc\u00eda-chas","year":"2018","journal-title":"J.
+        Leadersh. Organ. Stud."},{"key":"B58","doi-asserted-by":"publisher","first-page":"511","DOI":"10.1016\/j.ijnurstu.2013.10.005","article-title":"On
+        exploratory factor analysis: A review of recent evidence, an assessment of
+        current practice, and recommendations for future use","volume":"51","author":"Gaskin","year":"2014","journal-title":"Int.
+        J. Nurs. Stud."},{"key":"B59","volume-title":"Master Validity Tool","author":"Gaskin","year":"2016"},{"key":"B60","volume-title":"Multilevel
+        Antecedents of Negativity in Team Meetings: The Role of Job Attitudes and
+        Gender","author":"Gerpott","year":"2020"},{"key":"B61","doi-asserted-by":"publisher","first-page":"76","DOI":"10.1108\/IMEFM-01-2018-0029","article-title":"Mediating
+        effect of intrinsic motivation on the relationship between Islamic work ethic,
+        job satisfaction, and organizational commitment in banking sector","volume":"12","author":"Gheitani","year":"2018","journal-title":"Int.
+        J. Islam. Middle East. Financ. Manag."},{"key":"B62","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1002\/job.2198","article-title":"Building
+        personal resources through interventions: an integrative review","volume":"39","author":"Gilbert","year":"2017","journal-title":"J.
+        Organ. Behav."},{"key":"B63","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1111\/ijsa.12241","article-title":"Work
+        ethic and organizational commitment as conditions of unethical pro - organizational
+        behavior: do engaged workers break the ethical rules?","volume":"27","author":"Grabowski","year":"2019","journal-title":"Int.
+        J. Sel. Assess."},{"key":"B64","doi-asserted-by":"publisher","first-page":"607","DOI":"10.1016\/j.lrp.2017.03.004","article-title":"How
+        organizational cognitive frames affect organizational capabilities: the context
+        of corporate sustainability","volume":"51","author":"Grewatsch","year":"2018","journal-title":"Long
+        Range Plann."},{"key":"B65","doi-asserted-by":"publisher","first-page":"784","DOI":"10.1108\/PR-07-2017-0205","article-title":"Organizational
+        politics as a blindfold","volume":"48","author":"Guo","year":"2019","journal-title":"Pers.
+        Rev."},{"key":"B66","doi-asserted-by":"publisher","first-page":"159","DOI":"10.1037\/h0076546","article-title":"Development
+        of the job diagnostic survey","volume":"60","author":"Hackman","year":"1975","journal-title":"J.
+        Appl. Psychol."},{"key":"B67","volume-title":"Multivariate Data Analysis.
+        A Golbal Perspective","author":"Hair","year":"2006"},{"key":"B68","doi-asserted-by":"publisher","first-page":"44","DOI":"10.5585\/remark.v13i2.2718","article-title":"Amos
+        covariance-based structural equation modeling (cb-sem): guidelines on its
+        application as a marketing research tool","volume":"13","author":"Hair","year":"","journal-title":"Brazil.
+        J. Mark."},{"key":"B69","unstructured":"\u201cSEM: an introduction,\u201d664672\n            HairJ.
+        F.Jr.\n            BlackW. C.\n            BabinB. J.\n            AndersonR.
+        E.\n          Multivariate Data Analysis. A Global Perspect2010"},{"key":"B70","volume-title":"A
+        Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM)","author":"Hair","year":"2016"},{"key":"B71","doi-asserted-by":"publisher","first-page":"106","DOI":"10.1108\/EBR-10-2013-0128","article-title":"Partial
+        least squares structural equation modeling (PLS-SEM): an emerging tool in
+        business research","volume":"26","author":"Hair","year":"","journal-title":"Eur.
+        Bus. Rev."},{"key":"B72","doi-asserted-by":"publisher","first-page":"14920631989850","DOI":"10.1177\/0149206319898506","article-title":"Perceptions
+        of organizational politics research: past, present, and future","volume":"20","author":"Hochwarter","year":"2020","journal-title":"J.
+        Manage."},{"key":"B73","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1080\/15309576.2016.1177557","article-title":"Self-efficacy
+        as a mediator and moderator between emotional labor and job satisfaction:
+        a case study of public service employees in Taiwan","volume":"9576","author":"Hsieh","year":"2016","journal-title":"Public
+        Perform. Manag. Rev."},{"key":"B74","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1080\/10705519909540118","article-title":"Cutoff
+        criteria for fit indexes in covariance structure analysis: conventional criteria
+        versus new alternatives","volume":"6","author":"Hu","year":"1999","journal-title":"Struct.
+        Equ. Model. A Multidiscip. J."},{"key":"B75","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1017\/jmo.2016.13","article-title":"A
+        time-lagged study on the moderating role of overall satisfaction in perceived
+        politics: job outcomes relationships","volume":"2","author":"Jam","year":"2016","journal-title":"J.
+        Manag. Organ."},{"key":"B76","doi-asserted-by":"publisher","first-page":"152","DOI":"10.15614\/ijpp.v9i01.11762","article-title":"An
+        assessment of teacher \u00e2\u20acTM s job satisfaction and its possible effects
+        on student achievements","volume":"9","author":"Kachhawa","year":"2018","journal-title":"Indian
+        J. Posit. Psychol."},{"key":"B77","doi-asserted-by":"publisher","first-page":"33","DOI":"10.1007\/s10551-012-1373-8","article-title":"Ethical
+        leadership and subordinate outcomes: the mediating role of organizational
+        politics and the moderating role of political skill","volume":"115","author":"Kacmar","year":"2013","journal-title":"J.
+        Bus. Ethics"},{"key":"B78","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1080\/09585192.2016.1233447","article-title":"Hard,
+        soft or ambidextrous? Which influence style promotes managers'' task performance
+        and the role of political skill","volume":"5192","author":"Kapoutsis","year":"2016","journal-title":"Int.
+        J. Hum. Resour. Manag."},{"key":"B79","doi-asserted-by":"publisher","first-page":"4737","DOI":"10.3390\/su10124737","article-title":"Investigating
+        the role of psychological contract breach, political skill and work ethic
+        on perceived politics and job attitudes relationships: a case of higher education
+        in Pakistan","volume":"10","author":"Khan","year":"2018","journal-title":"Sustain"},{"key":"B80","doi-asserted-by":"publisher","first-page":"767","DOI":"10.1504\/MEJM.2019.102842","article-title":"Impact
+        of perceived organisational politics on job attitudes in health sector of
+        Pakistan: the moderating role of Islamic work ethic","volume":"6","author":"Khan","year":"2019","journal-title":"Middle
+        East J. Manag."},{"key":"B81","first-page":"254","article-title":"Perceived
+        organisational politics and job attitudes: a structural equation analysis
+        of higher education faculty of Pakistani universities cognition affect behaviour","volume":"5","author":"Khan","year":"2017","journal-title":"Can.
+        J. Appl. Sci. Technol."},{"key":"B82","doi-asserted-by":"publisher","first-page":"2141","DOI":"10.3389\/fpsyg.2020.02141","article-title":"Be
+        aware not reactive: testing a mediated-moderation model of dark triad and
+        perceived victimization via self-regulatory approach","volume":"11","author":"Khan","year":"2020","journal-title":"Front.
+        Psychol."},{"key":"B83","doi-asserted-by":"publisher","first-page":"235","DOI":"10.1007\/s10551-013-1937-2","article-title":"Organizational
+        justice and job outcomes: moderating role of Islamic work ethic","volume":"126","author":"Khan","year":"2013","journal-title":"J.
+        Bus. Ethics"},{"key":"B84","first-page":"451","article-title":"The analysis
+        of the perception of organizational politics among university faculty","volume":"18","author":"Khan","year":"2016","journal-title":"Pakistan
+        Bus. Rev."},{"key":"B85","doi-asserted-by":"publisher","first-page":"122","DOI":"10.1057\/s41291-018-00057-9","article-title":"Relationship
+        between perception of organizational politics and organizational citizenship
+        behavior: testing a moderated mediation model","volume":"18","author":"Khan","year":"2019","journal-title":"Asian
+        Bus. Manag."},{"key":"B86","doi-asserted-by":"crossref","volume-title":"Application
+        of Structural Equation Modeling in Educational Research and Practice","author":"Khine","year":"2013","DOI":"10.1007\/978-94-6209-332-4"},{"key":"B87","doi-asserted-by":"publisher","first-page":"312","DOI":"10.1111\/ijmr.12041","article-title":"A
+        review of political skill: current research trend and directions for future
+        research","volume":"17","author":"Kimura","year":"2014","journal-title":"Int.
+        J. Manag. Rev."},{"key":"B88","doi-asserted-by":"publisher","first-page":"107","DOI":"10.5539\/ibr.v6n12p107","article-title":"Work
+        ethics, work satisfaction and organizational commitment at the Sharia Bank,
+        Indonesia","volume":"6","author":"Komari","year":"2013","journal-title":"Int.
+        Bus. Res."},{"key":"B89","doi-asserted-by":"publisher","first-page":"109","DOI":"10.1111\/inr.12347","article-title":"Organizational
+        politics, nurses'' stress, burnout levels, turnover intention and job satisfaction","volume":"64","author":"Labrague","year":"2017","journal-title":"Int.
+        Nurs. Rev."},{"key":"B90","doi-asserted-by":"publisher","first-page":"85","DOI":"10.1007\/s11896-017-9236-y","article-title":"Job
+        stress, job involvement, job satisfaction, and organizational commitment and
+        their associations with job burnout among Indian police officers: a research
+        note","volume":"33","author":"Lambert","year":"2018","journal-title":"J. Police
+        Crim. Psychol."},{"key":"B91","doi-asserted-by":"publisher","first-page":"357","DOI":"10.1016\/j.hrmr.2012.06.014","article-title":"Organizational
+        political climate: Shared perceptions about the building and use of power
+        bases","volume":"23","author":"Landells","year":"2013","journal-title":"Hum.
+        Resour. Manag. Rev."},{"key":"B92","doi-asserted-by":"publisher","first-page":"41","DOI":"10.1007\/s10869-015-9434-5","article-title":"The
+        positives and negatives of organizational politics: a qualitative study","volume":"32","author":"Landells","year":"2015","journal-title":"J.
+        Bus. Psychol."},{"key":"B93","doi-asserted-by":"publisher","first-page":"1612","DOI":"10.3389\/fpsyg.2019.01612","article-title":"Perceived
+        organizational politics, engagement, and stress: the mediating influence of
+        meaningful work","volume":"10","author":"Landells","year":"2019","journal-title":"Front.
+        Psychol."},{"key":"B94","doi-asserted-by":"publisher","first-page":"4216","DOI":"10.3390\/su10114216","article-title":"The
+        moderating effect of social innovation in perspectives of shared value creation
+        in the educational sector of ghana","volume":"10","author":"Li","year":"2018","journal-title":"Sustainability"},{"key":"B95","doi-asserted-by":"publisher","first-page":"26","DOI":"10.4236\/jssm.2018.111003","article-title":"Perceptions
+        of organizational politics influences on feedback avoidance behavior: the
+        effect of impression management motive and emotional intelligence","volume":"11","author":"Lin","year":"2018","journal-title":"J.
+        Serv. Sci. Manag."},{"key":"B96","doi-asserted-by":"publisher","first-page":"24","DOI":"10.1037\/h0021692","article-title":"The
+        definition and measurement of job involvement","volume":"49","author":"Lodahl","year":"1965","journal-title":"J.
+        Appl. Psychol."},{"key":"B97","doi-asserted-by":"publisher","first-page":"1","DOI":"10.4102\/sajhrm.v11i1.495","article-title":"The
+        relationship between servant leadership, affective team commitment and team
+        effectiveness","volume":"11","author":"Mahembe","year":"2013","journal-title":"J.
+        Hum. Resour. Manag."},{"key":"B98","doi-asserted-by":"publisher","first-page":"232","DOI":"10.1016\/j.paid.2018.05.005","article-title":"Perceptions
+        of organizational politics, knowledge hiding, and employee creativity: the
+        moderating role of professional commitment","volume":"142","author":"Malik","year":"2018","journal-title":"Pers.
+        Individ. Dif."},{"key":"B99","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1177\/0018726717704706","article-title":"When
+        organizational politics matters: the effects of the perceived frequency and
+        distance of experienced politics","volume":"1","author":"Maslyn","year":"2017","journal-title":"Hum.
+        Relat."},{"key":"B100","doi-asserted-by":"publisher","first-page":"1169","DOI":"10.1111\/jan.12906","article-title":"Emotional
+        labour and work engagement among nurses: examining perceived compassion, leadership
+        and work ethic as stress buffers","volume":"72","author":"Mauno","year":"2016","journal-title":"J.
+        Adv. Nurs."},{"key":"B101","doi-asserted-by":"publisher","first-page":"1450","DOI":"10.1111\/jan.13935","article-title":"Caring
+        for aged people: the influence of personal resilience and workplace climate
+        on \u201cdoing good\u201d and \u201cfeeling good.\u201d","volume":"75","author":"McNeil","year":"2019","journal-title":"J.
+        Adv. Nurs."},{"key":"B102","doi-asserted-by":"publisher","first-page":"116","DOI":"10.1108\/PR-02-2012-0040","article-title":"Perceived
+        organizational politics, emotional intelligence and work outcomes: empirical
+        exploration of direct and indirect effects","volume":"43","author":"Meisler","year":"2014","journal-title":"Pers.
+        Rev."},{"key":"B103","doi-asserted-by":"publisher","first-page":"273","DOI":"10.1007\/s10869-016-9460-y","article-title":"Work
+        ethic and work outcomes in an expanded criterion domain","volume":"32","author":"Meriac","year":"2016","journal-title":"J.
+        Bus. Psychol."},{"key":"B104","doi-asserted-by":"publisher","first-page":"315","DOI":"10.1007\/s10869-010-9164-7","article-title":"Generational
+        differences in work ethic: an examination of measurement equivalence across
+        three cohorts","volume":"25","author":"Meriac","year":"2010","journal-title":"J.
+        Bus. Psychol. Psychol."},{"key":"B105","doi-asserted-by":"publisher","first-page":"177","DOI":"10.1111\/joop.12167","article-title":"A
+        meta-analysis of emotional intelligence and work attitudes","volume":"90","author":"Miao","year":"2017","journal-title":"J.
+        Occup. Organ. Psychol."},{"key":"B106","doi-asserted-by":"publisher","first-page":"209","DOI":"10.1007\/s10869-008-9061-5","article-title":"Perceptions
+        of organizational politics: a meta-analysis of outcomes","volume":"22","author":"Miller","year":"2008","journal-title":"J.
+        Bus. Psychol."},{"key":"B107","first-page":"407","article-title":"Workplace
+        spirituality, work ethics, and organizational justice as related to job performance
+        among state university educators","volume":"7","author":"Mi\u00f1on","year":"2017","journal-title":"J.
+        Teach. Educ."},{"key":"B108","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1080\/13602381.2017.1281642","article-title":"Design
+        leadership, work values ethic and workplace innovation: an investigation of
+        SMEs in Thailand and Vietnam","volume":"23","author":"Muenjohn","year":"2017","journal-title":"Asia
+        Pacific Bus. Rev."},{"key":"B109","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1111\/peps.12066","article-title":"Political
+        skill and work outcomes: a theoretical extension, meta-analytic investigation,
+        and agenda for the future","volume":"68","author":"Munyon","year":"2013","journal-title":"Pers.
+        Psychol."},{"key":"B110","doi-asserted-by":"publisher","first-page":"654","DOI":"10.1080\/10615806.2018.1521516","article-title":"Combined
+        effects of workplace bullying and perceived organizational support on employee
+        behaviors: does resource availability help?","volume":"31","author":"Naseer","year":"2018","journal-title":"Anxiety
+        Stress Coping"},{"key":"B111","doi-asserted-by":"publisher","first-page":"14","DOI":"10.1016\/j.leaqua.2015.09.005","article-title":"Perils
+        of being close to a bad leader in a bad environment: exploring the combined
+        effects of despotic leadership, leader member exchange, and perceived organizational
+        politics on behaviors","volume":"27","author":"Naseer","year":"2016","journal-title":"Leadersh.
+        Q."},{"key":"B112","doi-asserted-by":"publisher","first-page":"642","DOI":"10.1108\/JEA-02-2014-0025","article-title":"Examining
+        the role of emotional intelligence and political skill to educational leadership
+        and their effects to teachers'' job satisfaction Nikoletta","volume":"53","author":"Nikoletta","year":"2015","journal-title":"J.
+        Educ. Adm."},{"key":"B113","first-page":"107","article-title":"Work ethics
+        and employees'' job performance","volume":"12","author":"Osibanjo","year":"2015","journal-title":"J.
+        Leadersh. Account. Ethics"},{"key":"B114","doi-asserted-by":"publisher","first-page":"85","DOI":"10.1080\/12294659.2020.1750755","article-title":"Organizational
+        politics, work attitudes and performance: the moderating role of age and public
+        service motivation (PSM)","volume":"25","author":"Park","year":"2020","journal-title":"Int.
+        Rev. Public Adm."},{"key":"B115","doi-asserted-by":"publisher","first-page":"891","DOI":"10.1177\/014920639502100505","article-title":"Perceptions
+        of organizational politics: an lnves tiga tion of antecedents and consequences","volume":"21","author":"Parker","year":"1995","journal-title":"J.
+        Manage."},{"key":"B116","doi-asserted-by":"publisher","first-page":"777","DOI":"10.1108\/02683941011075300","article-title":"The
+        missing link between emotional demands and exhaustion","volume":"25","author":"Peng","year":"2010","journal-title":"J.
+        Manag. Psychol."},{"key":"B117","doi-asserted-by":"publisher","first-page":"6","DOI":"10.18666\/JASM-2016-V8-I3-6476","article-title":"The
+        utilization of political skill as leverage in sport management research","volume":"8","author":"Perrew\u00e9","year":"2016","journal-title":"J.
+        Sport Manag."},{"key":"B118","doi-asserted-by":"publisher","first-page":"141","DOI":"10.2307\/20159566","article-title":"Neutralizing
+        job stressors: political skill as an antidote to the dysfunctional consequences
+        of role conflict","volume":"47","author":"Perrew\u00e9","year":"2004","journal-title":"Acad.
+        Manag. J."},{"key":"B119","doi-asserted-by":"publisher","first-page":"2286","DOI":"10.1111\/jocn.12818","article-title":"Job
+        satisfaction and horizontal violence in hospital staff registered nurses:
+        the mediating role of peer relationships","volume":"24","author":"Purpora","year":"2015","journal-title":"J.
+        Clin. Nurs."},{"key":"B120","doi-asserted-by":"publisher","first-page":"332","DOI":"10.1002\/ijop.12606","article-title":"When
+        ethics create misfit: combined effects of despotic leadership and Islamic
+        work ethic on job performance, job satisfaction, and psychological well-being","volume":"55","author":"Raja","year":"2019","journal-title":"Int.
+        J. Psychol."},{"key":"B121","doi-asserted-by":"publisher","first-page":"74","DOI":"10.1108\/PR-03-2016-0068","article-title":"Perception
+        of politics and job outcomes: moderating role of Islamic work ethic","volume":"47","author":"Rawwas","year":"2018","journal-title":"Pers.
+        Rev."},{"key":"B122","doi-asserted-by":"publisher","first-page":"5","DOI":"10.1177\/1548051817709007","article-title":"Quitting
+        the boss? The role of manager influence tactics and employee emotional engagement
+        in voluntary turnover","volume":"25","author":"Reina","year":"2018","journal-title":"J.
+        Leadersh. Organ. Stud."},{"key":"B123","volume-title":"Fundamental Research
+        Statistics for the Behavioral Sciences","author":"Roscoe","year":"1975"},{"key":"B124","doi-asserted-by":"publisher","first-page":"27","DOI":"10.1177\/0018726708099836","article-title":"The
+        emotional implications of organizational politics: a process model","volume":"62","author":"Rosen","year":"2009","journal-title":"Hum.
+        Relations"},{"key":"B125","doi-asserted-by":"publisher","first-page":"44","DOI":"10.1080\/08959285.2012.736901","article-title":"Stresses,
+        swaps, and skill: an investigation of the psychological dynamics that relate
+        work politics to employee performance","volume":"26","author":"Rosen","year":"2013","journal-title":"Hum.
+        Perform."},{"key":"B126","doi-asserted-by":"publisher","first-page":"211","DOI":"10.1037\/0021-9010.91.1.211","article-title":"Placing
+        perceptions of politics in the context of the feedback environment, employee
+        attitudes, and job performance","volume":"91","author":"Rosen","year":"2006","journal-title":"J.
+        Appl. Psychol."},{"key":"B127","doi-asserted-by":"publisher","first-page":"171","DOI":"10.1007\/BF00302420","article-title":"Work
+        ethic and orientations to work of the young generations: the impact of educational
+        level","volume":"17","author":"Rosseel","year":"1985","journal-title":"Soc.
+        Indic. Res."},{"key":"B128","doi-asserted-by":"publisher","first-page":"839","DOI":"10.2147\/PRBM.S210794","article-title":"Mitigating
+        effect of perceived organizational support on stress in the presence of workplace
+        ostracism in the Pakistani nursing sector","volume":"12","author":"Sarfraz","year":"2019","journal-title":"Psychol.
+        Res. Behav. Manag."},{"key":"B129","doi-asserted-by":"publisher","first-page":"107","DOI":"10.7341\/20191544","article-title":"Collaborati
+        ve eff ect of workplace ostracism and self-effi cacy versus job stress","volume":"15","author":"Sarwar","year":"2019","journal-title":"J.
+        Entrep. Manag. Innov."},{"key":"B130","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1037\/xge0000171","article-title":"Complicating
+        decisions: the work ethic heuristic and the construction of effortful decisions","volume":"145","author":"Schrift","year":"2016","journal-title":"J.
+        Exp. Psychol."},{"key":"B131","doi-asserted-by":"publisher","first-page":"141","DOI":"10.1007\/978-3-319-67913-6_10","article-title":"The
+        impact of organizational politics fact on the act of social media usage in
+        higher education institutions","volume":"8","author":"Sen","year":"2018","journal-title":"Eurasian
+        Bus. Perspect. Eurasian Stud. Bus. Econ."},{"key":"B132","doi-asserted-by":"publisher","first-page":"58","DOI":"10.17645\/up.v3i1.1269","article-title":"Social
+        and physical characterization of urban contexts: techniques and methods for
+        quantification, classification and purposive sampling","volume":"3","author":"Serra","year":"2018","journal-title":"Urban
+        Plan."},{"key":"B133","doi-asserted-by":"publisher","first-page":"5","DOI":"10.1080\/10437797.2019.1627262","article-title":"Examining
+        the place of emotions, affect, and regulation in social work education","volume":"56","author":"Sewell","year":"2020","journal-title":"J.
+        Soc. Work Educ."},{"key":"B134","doi-asserted-by":"publisher","first-page":"44","DOI":"10.1002\/joe.22062","article-title":"Does
+        narcissism encourage unethical pro-organizational behavior in the service
+        sector? A case study in Pakistan","volume":"40","author":"Shah","year":"2020","journal-title":"Glob.
+        Bus. Organ. Excell."},{"key":"B135","doi-asserted-by":"publisher","first-page":"15","DOI":"10.33166\/ACDMHR.2019.01.003","article-title":"Two
+        facets of organizational politics, the constructive and destructive role of
+        organizational politics on employee work related attitudes: a theoretical
+        study","volume":"1","author":"Shahani","year":"2019","journal-title":"Ann.
+        Contemp. Dev. Manag. HR"},{"key":"B136","first-page":"279","article-title":"The
+        experience of using the webinar in the preparation of engineering specialists","volume":"8","author":"Smirnova","year":"2019","journal-title":"Amaz.
+        Investig."},{"key":"B137","doi-asserted-by":"publisher","first-page":"101860","DOI":"10.1016\/j.jairtraman.2020.101860","article-title":"How
+        to create genuine happiness for flight attendants: effects of internal marketing
+        and work-family interface","volume":"87","author":"Tang","year":"2020","journal-title":"J.
+        Air Transp. Manag."},{"key":"B138","first-page":"1","article-title":"Combined
+        effects of job insecurity and Islamic work ethics on job satisfaction and
+        job performance","volume":"10","author":"Taufail","year":"2018","journal-title":"J.
+        Bus. Econ."},{"key":"B139","doi-asserted-by":"publisher","first-page":"147","DOI":"10.17348\/era.5.0.147-158","article-title":"Purposive
+        sampling as a tool for informant selection. Ethnobotany research and applications","volume":"5","author":"Tongco","year":"2007","journal-title":"Ethnobot.
+        Res. Appl."},{"key":"B140","doi-asserted-by":"publisher","first-page":"426","DOI":"10.1177\/0149206307300818","article-title":"Cross-national,
+        cross-cultural organizational behavior research: advances, gaps, and recommendations","volume":"33","author":"Tsui","year":"2007","journal-title":"J.
+        Manage."},{"key":"B141","doi-asserted-by":"publisher","first-page":"581","DOI":"10.1007\/s11165-014-9438-6","article-title":"Global
+        patterns in students'' views of science and interest in science","volume":"45","author":"van
+        Griethuijsen","year":"2014","journal-title":"Res. Sci. Educ."},{"key":"B142","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1016\/j.aucc.2017.05.001","article-title":"Counterbalancing
+        work-related stress? Work engagement among intensive care professionals","volume":"31","author":"Van
+        Mol","year":"2017","journal-title":"Aust. Crit. Care"},{"key":"B143","first-page":"10","article-title":"Work
+        ethic: do new employees mean new work values?","volume":"22","author":"Van
+        Ness","year":"2010","journal-title":"J. Manag. Issues"},{"key":"B144","doi-asserted-by":"publisher","first-page":"571","DOI":"10.1002\/job.160","article-title":"Stress-related
+        aftermaths to workplace politics: the relationships among politics, job distress,
+        and aggressive behavior in organizations","volume":"23","author":"Vigoda","year":"2002","journal-title":"J.
+        Organ. Behav."},{"key":"B145","doi-asserted-by":"publisher","first-page":"72","DOI":"10.1111\/j.1540-6210.2009.02112.x","article-title":"Emotions
+        in management and the management of emotions: the impact of emotional intelligence
+        and organizational politics on public sector employees","volume":"70","author":"Vigoda-gadot","year":"2010","journal-title":"Curr.
+        Trends Public Pers. Adm."},{"key":"B146","doi-asserted-by":"publisher","first-page":"361","DOI":"10.1177\/0361684318769909","article-title":"\u201cDirty\u201d
+        workplace politics and well-being: the role of gender","volume":"42","author":"Webster","year":"2018","journal-title":"Psychol.
+        Women Q."},{"key":"B147","first-page":"1","article-title":"Affective events
+        theory: a theoretical discussion of the structure, causes and consequences
+        of affective experiences at work","volume":"18","author":"Weiss","year":"1996","journal-title":"Res.
+        Organ. Behav."},{"key":"B148","doi-asserted-by":"publisher","first-page":"444","DOI":"10.1016\/j.ijproman.2019.01.015","article-title":"Understanding
+        the soft side of software projects: an empirical study on the interactive
+        effects of social skills and political skills on complexity \u2013 performance
+        relationship","volume":"37","author":"Zaman","year":"2019","journal-title":"Int.
+        J. Proj. Manag."},{"key":"B149","doi-asserted-by":"publisher","first-page":"988","DOI":"10.3390\/ijerph15050988","article-title":"The
+        influence of professional identity, job satisfaction, and work engagement
+        on turnover intention among township health inspectors in China","volume":"15","author":"Zhang","year":"2018","journal-title":"Int.
+        J. Environ. Res. Public Health"}],"container-title":["Frontiers in Psychology"],"link":[{"URL":"https:\/\/www.frontiersin.org\/articles\/10.3389\/fpsyg.2021.609842\/full","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,3,24]],"date-time":"2021-03-24T05:38:08Z","timestamp":1616564288000},"score":0.99999994,"issued":{"date-parts":[[2021,3,24]]},"references-count":149,"alternative-id":["10.3389\/fpsyg.2021.609842"],"URL":"http:\/\/dx.doi.org\/10.3389\/fpsyg.2021.609842","ISSN":["1664-1078"],"issn-type":[{"value":"1664-1078","type":"electronic"}],"subject":["General
+        Psychology"],"published":{"date-parts":[[2021,3,24]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:12:20 GMT
 recorded_with: VCR 6.0.0

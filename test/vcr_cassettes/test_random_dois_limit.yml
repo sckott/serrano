@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:52 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '1518'
+      Set-Cookie:
+      - AWSALB=vOTFaBZEMdc5nzAcNp+1MCdjUWMpU8+g4gwa0GRbPqK4eEYslmyX/iAzNP6fVvXSqj4Bs166UYffcamGjY5/fj90nSN0nqIfLRmvjst1gXTkWMq6J4soTgAnyM6G;
+        Expires=Sat, 25 Sep 2021 16:11:47 GMT; Path=/
+      - AWSALBCORS=vOTFaBZEMdc5nzAcNp+1MCdjUWMpU8+g4gwa0GRbPqK4eEYslmyX/iAzNP6fVvXSqj4Bs166UYffcamGjY5/fj90nSN0nqIfLRmvjst1gXTkWMq6J4soTgAnyM6G;
+        Expires=Sat, 25 Sep 2021 16:11:47 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '28061'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:01 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,249 +57,25 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":126358034,"items":[{"indexed":{"date-parts":[[2021,4,23]],"date-time":"2021-04-23T00:07:37Z","timestamp":1619136457716},"reference-count":0,"publisher":"Walter
-        de Gruyter GmbH","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1986]]},"DOI":"10.1515\/rnam.1986.1.2.101","type":"journal-article","created":{"date-parts":[[2009,11,19]],"date-time":"2009-11-19T16:58:35Z","timestamp":1258649915000},"source":"Crossref","is-referenced-by-count":1,"title":["On
-        the approximate solution of two-dimensional singularly perturbed convection\u2014diffusion
-        equations"],"prefix":"10.1515","volume":"1","author":[{"given":"A. Yu.","family":"SECHIN","sequence":"first","affiliation":[]}],"member":"374","container-title":["Russian
-        Journal of Numerical Analysis and Mathematical Modelling"],"link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/rnam.1986.1.2.101\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,22]],"date-time":"2021-04-22T04:19:34Z","timestamp":1619065174000},"score":1.0,"issued":{"date-parts":[[1986]]},"references-count":0,"journal-issue":{"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.1515\/rnam.1986.1.2.101","ISSN":["0927-6467","1569-3988"],"issn-type":[{"value":"0927-6467","type":"print"},{"value":"1569-3988","type":"electronic"}],"subject":["Modelling
-        and Simulation","Numerical Analysis"]},{"indexed":{"date-parts":[[2020,11,24]],"date-time":"2020-11-24T09:43:55Z","timestamp":1606211035959},"publisher-location":"Wiesbaden","reference-count":52,"publisher":"Springer
-        Fachmedien Wiesbaden","isbn-type":[{"value":"9783658276010","type":"print"},{"value":"9783658276027","type":"electronic"}],"license":[{"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0","start":{"date-parts":[[2019,11,22]],"date-time":"2019-11-22T00:00:00Z","timestamp":1574380800000},"delay-in-days":0,"content-version":"tdm"},{"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0","start":{"date-parts":[[2019,11,22]],"date-time":"2019-11-22T00:00:00Z","timestamp":1574380800000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"name":"Funded
-        by Editor","award":[]},{"name":"Funded by Editor","award":[]}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"DOI":"10.1007\/978-3-658-27602-7_2","type":"book-chapter","created":{"date-parts":[[2019,11,21]],"date-time":"2019-11-21T19:38:06Z","timestamp":1574365086000},"page":"23-39","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":1,"title":["Reflections
-        on the Methodological Approach of Systematic Reviews"],"prefix":"10.1007","author":[{"given":"Martyn","family":"Hammersley","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2019,11,22]]},"reference":[{"key":"2_CR1","doi-asserted-by":"publisher","first-page":"59","DOI":"10.1186\/1471-2288-9-59","volume":"9","author":"E
-        Barnett-Page","year":"2009","unstructured":"Barnett-Page, E., & Thomas, J.
-        (2009). Methods for the synthesis of qualitative research: a critical review,
-        BMC Medical Research Methodology, 9:59. \nhttps:\/\/doi.org\/10.1186\/1471-2288-9-59\n\n.","journal-title":"BMC
-        Medical Research Methodology"},{"issue":"3","key":"2_CR2","doi-asserted-by":"publisher","first-page":"241","DOI":"10.1111\/wvn.12134","volume":"13","author":"A
-        Butler","year":"2016","unstructured":"Butler, A., Hall, H., & Copnell, B.
-        (2016). A guide to writing a qualitative systematic review protocol to enhance
-        evidence-based practice in nursing and health care. Worldviews on Evidence-based
-        Nursing, 13(3), 241\u2013249. \nhttps:\/\/doi.org\/10.1111\/wvn.12134\n\n.","journal-title":"Worldviews
-        on Evidence-based Nursing"},{"key":"2_CR3","doi-asserted-by":"publisher","first-page":"22","DOI":"10.1177\/0002716203254762","volume":"589","author":"I
-        Chalmers","year":"2003","unstructured":"Chalmers, I. (2003). Trying to do
-        more good than harm in policy and practice: the role of rigorous, transparent,
-        up-to-date evaluations. Annals of the American Academy of Political and Social
-        Science, 589, 22\u201340. \nhttps:\/\/doi.org\/10.1177\/0002716203254762\n\n.","journal-title":"Annals
-        of the American Academy of Political and Social Science"},{"issue":"2","key":"2_CR4","doi-asserted-by":"publisher","first-page":"227","DOI":"10.1332\/1744264053730806","volume":"1","author":"I
-        Chalmers","year":"2005","unstructured":"Chalmers, I. (2005). If evidence-informed
-        policy works in practice, does it matter if it doesn\u2019t work in theory?
-        Evidence and Policy, 1(2), 227\u201342. \nhttps:\/\/doi.org\/10.1332\/1744264053730806\n\n.","journal-title":"Evidence
-        and Policy"},{"key":"2_CR5","author":"H Cooper","year":"1998","unstructured":"Cooper.
-        H. (1998). Research synthesis and meta-analysis, Thousand Oaks CA: Sage.","volume-title":"Research
-        synthesis and meta-analysis"},{"issue":"3\/4","key":"2_CR6","doi-asserted-by":"publisher","first-page":"365","DOI":"10.1080\/713688543","volume":"26","author":"P
-        Davies","year":"2000","unstructured":"Davies, P. (2000). The relevance of
-        systematic reviews to educational policy and practice. Oxford Review of Education,
-        26(3\/4), 365\u201378. \nhttps:\/\/doi.org\/10.1080\/713688543\n\n.","journal-title":"Oxford
-        Review of Education"},{"issue":"1","key":"2_CR7","doi-asserted-by":"publisher","first-page":"45","DOI":"10.1177\/135581960501000110","volume":"10","author":"M
-        Dixon-Woods","year":"2005","unstructured":"Dixon-Woods, M., Agarwall, S.,
-        Jones, D., Young, B., & Sutton, A. (2005). Synthesising qualitative and quantitative
-        evidence: a review of possible methods. Journal of Health Service Research
-        and Policy, 10(1), 45\u201353. \nhttps:\/\/doi.org\/10.1177\/135581960501000110\n\n.","journal-title":"Journal
-        of Health Service Research and Policy"},{"issue":"4","key":"2_CR8","doi-asserted-by":"publisher","first-page":"391","DOI":"10.3102\/00346543068004391","volume":"68","author":"Margaret
-        Eisenhart","year":"1998","unstructured":"Eisenhart, M. (1998). On the subject
-        of interpretive reviews. Review of Educational Research, 68(4), 391\u2013399.
-        \nhttps:\/\/www.jstor.org\/stable\/1170731\n\n.","journal-title":"Review of
-        Educational Research"},{"issue":"1","key":"2_CR9","doi-asserted-by":"publisher","first-page":"9","DOI":"10.1080\/03626784.1992.11075389","volume":"22","author":"E
-        Eisner","year":"1992","unstructured":"Eisner, E. (1992). Objectivity in educational
-        research. Curriculum Inquiry, 22(1), 9\u201315. \nhttps:\/\/doi.org\/10.1080\/03626784.1992.11075389\n\n.","journal-title":"Curriculum
-        Inquiry"},{"key":"2_CR10","author":"J Elliott","first-page":"164","year":"2004","unstructured":"Elliott,
-        J. (2004). Making evidence-based practice educational. In G. Thomas & R. Pring
-        (Eds.), Evidence-Based Practice in Education (pp.\u00a0164\u2013186), Maidenhead:
-        Open University Press.","volume-title":"Evidence-Based Practice in Education"},{"key":"2_CR11","author":"D
-        Gough","year":"2013","unstructured":"Gough, D., Oliver, S., & Thomas, J. (2013).
-        Learning from research: systematic reviews for informing policy decisions:
-        A quick guide. London: Alliance for Useful Knowledge.","volume-title":"Learning
-        from research: systematic reviews for informing policy decisions: A quick
-        guide"},{"key":"2_CR12","author":"D Gough","year":"2017","edition":"2","unstructured":"Gough,
-        D., Oliver, S., & Thomas, J. (2017). An introduction to systematic reviews
-        (2nd edition). London: Sage.","volume-title":"An introduction to systematic
-        reviews"},{"key":"2_CR13","author":"P Grice","year":"1989","unstructured":"Grice,
-        P. (1989). Studies in the way of words. Cambridge MA: Harvard University Press.","volume-title":"Studies
-        in the way of words"},{"issue":"2","key":"2_CR14","doi-asserted-by":"publisher","first-page":"141","DOI":"10.1080\/0141192970230203","volume":"23","author":"M
-        Hammersley","year":"1997","unstructured":"Hammersley, M. (1997a). Educational
-        research and teaching: a response to David Hargreaves\u2019 TTA lecture. British
-        Educational Research Journal, 23(2), 141\u2013161. \nhttps:\/\/doi.org\/10.1080\/0141192970230203\n\n.","journal-title":"British
-        Educational Research Journal"},{"key":"2_CR15","author":"M Hammersley","year":"1997","edition":"2","unstructured":"Hammersley,
-        M. (1997b). Reading Ethnographic Research (2nd edition). London: Longman.","volume-title":"Reading
-        Ethnographic Research"},{"key":"2_CR16","author":"M Hammersley","first-page":"163","year":"2000","unstructured":"Hammersley,
-        M. (2000). Evidence-based practice in education and the contribution of educational
-        research. In S. Reynolds & E. Trinder (Eds.), Evidence-based practice (pp.\u00a0163\u2013183),
-        Oxford: Blackwell.","volume-title":"Evidence-based practice","DOI":"10.1002\/9780470699003.ch8","doi-asserted-by":"publisher"},{"issue":"1","key":"2_CR17","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1332\/1744264052703203","volume":"1","author":"M
-        Hammersley","year":"2005","unstructured":"Hammersley, M. (2005). Is the evidence-based
-        practice movement doing more good than harm? Evidence and Policy, 1(1), 1\u201316.
-        \nhttps:\/\/doi.org\/10.1332\/1744264052703203\n\n.","journal-title":"Evidence
-        and Policy"},{"issue":"1","key":"2_CR18","doi-asserted-by":"publisher","first-page":"3","DOI":"10.1080\/17437270801919826","volume":"31","author":"M
-        Hammersley","year":"2008","unstructured":"Hammersley, M. (2008a). Paradigm
-        war revived? On the diagnosis of resistance to randomised controlled trials
-        and systematic review in education. International Journal of Research and
-        Method in Education, 31(1), 3\u201310. \nhttps:\/\/doi.org\/10.1080\/17437270801919826\n\n.","journal-title":"International
-        Journal of Research and Method in Education"},{"issue":"6","key":"2_CR19","doi-asserted-by":"publisher","first-page":"747","DOI":"10.1080\/01411920802031468","volume":"34","author":"M
-        Hammersley","year":"2008","unstructured":"Hammersley, M. (2008b). Troubling
-        criteria: a critical commentary on Furlong and Oancea\u2019s framework for
-        assessing educational research. British Educational Research Journal, 34(6),
-        747\u2013762. \nhttps:\/\/doi.org\/10.1080\/01411920802031468\n\n.","journal-title":"British
-        Educational Research Journal"},{"issue":"1","key":"2_CR20","doi-asserted-by":"publisher","first-page":"3","DOI":"10.1177\/1077800408325325","volume":"15","author":"M
-        Hammersley","year":"2009","unstructured":"Hammersley, M. (2009). Challenging
-        relativism: the problem of assessment criteria. Qualitative Inquiry, 15(1),
-        3\u201329. \nhttps:\/\/doi.org\/10.1177\/1077800408325325\n\n.","journal-title":"Qualitative
-        Inquiry"},{"key":"2_CR21","author":"M Hammersley","year":"2013","unstructured":"Hammersley,
-        M. (2013). The myth of research-based policy and practice. London: Sage.","volume-title":"The
-        myth of research-based policy and practice","DOI":"10.4135\/9781473957626","doi-asserted-by":"publisher"},{"issue":"1","key":"2_CR22","doi-asserted-by":"publisher","first-page":"54","DOI":"10.7202\/1027321ar","volume":"17","author":"Martyn
-        Hammersley","year":"2014","unstructured":"Hammersley, M. (2014). Translating
-        research findings into educational policy or practice: the virtues and vices
-        of a metaphor. Nouveaux c@hiers de la recherche en \u00e9ducation, 17(1),
-        2014, 54\u201374, and Revue suisse des sciences de l\u2019\u00e9ducation,
-        36(2), 213\u2013228.","journal-title":"Nouveaux cahiers de la recherche en
-        \u00e9ducation"},{"issue":"4","key":"2_CR23","doi-asserted-by":"publisher","first-page":"402","DOI":"10.1177\/1468794111432992","volume":"12","author":"K
-        Hannes","year":"2012","unstructured":"Hannes K. & Macaitis K.\u00a0(2012).
-        A move to more systematic and transparent approaches in qualitative evidence
-        synthesis: update on a review of published papers.\u00a0Qualitative Research\u00a012(4),
-        402\u2013442. \nhttps:\/\/doi.org\/10.1177\/1468794111432992\n\n.","journal-title":"Qualitative
-        Research"},{"key":"2_CR24","unstructured":"Hargreaves, D. H. (2007). Teaching
-        as a research-based profession: Possibilities and prospects\u2019, Annual
-        Lecture. In M. Hammersley (Ed.), Educational research and evidence-based practice
-        (pp.\u00a03\u201317). London, Sage. (Original work published 1996)"},{"key":"2_CR25","author":"C
-        Hart","year":"2001","unstructured":"Hart, C. (2001) Doing a literature search:
-        A comprehensive guide for the social sciences. London: Sage.","volume-title":"Doing
-        a literature search: A comprehensive guide for the social sciences"},{"key":"2_CR26","author":"JE
-        Lane","year":"2000","unstructured":"Lane, J. E. (2000) New Public Management.
-        London: Routledge.","volume-title":"New Public Management"},{"key":"2_CR27","year":"2018","unstructured":"Leavy,
-        P. (Ed.) (2018). Handbook of arts-based research. New York: Guilford Press.","volume-title":"Handbook
-        of arts-based research"},{"issue":"4","key":"2_CR28","doi-asserted-by":"publisher","first-page":"393","DOI":"10.1080\/02680930500131801","volume":"20","author":"M
-        MacLure","year":"2005","unstructured":"MacLure, M. (2005). Clarity bordering
-        on stupidity: where\u2019s the quality in systematic review? Journal of Education
-        Policy, 20(4), 393\u2013416. \nhttps:\/\/doi.org\/10.1080\/02680930500131801\n\n.","journal-title":"Journal
-        of Education Policy"},{"key":"2_CR29","author":"RW Newell","year":"1986","unstructured":"Newell,
-        R. W. (1986). Objectivity, empiricism and truth. London: Routledge and Kegan
-        Paul.","volume-title":"Objectivity, empiricism and truth"},{"key":"2_CR30","author":"J
-        Nisbet","year":"1980","unstructured":"Nisbet, J., & Broadfoot, P. (1980).
-        The impact of research on policy and practice in education. Aberdeen: Aberdeen
-        University Press.","volume-title":"The impact of research on policy and practice
-        in education"},{"key":"2_CR31","author":"G Noblit","year":"1988","unstructured":"Noblit
-        G., & Hare R. (1988). Meta-ethnography: synthesising qualitative studies.
-        Newbury Park CA: Sage.","volume-title":"Meta-ethnography: synthesising qualitative
-        studies","DOI":"10.4135\/9781412985000","doi-asserted-by":"publisher"},{"issue":"1","key":"2_CR32","doi-asserted-by":"publisher","first-page":"63","DOI":"10.1332\/174426406775249741","volume":"2","author":"A
-        Oakley","year":"2006","unstructured":"Oakley, A. (2006). Resistances to \u201cnew\u201d
-        technologies of evaluation: education research in the UK as a case study.
-        Evidence and Policy, 2(1), 63\u201387. \nhttps:\/\/doi.org\/10.1332\/174426406775249741\n\n.","journal-title":"Evidence
-        and Policy"},{"key":"2_CR33","unstructured":"Oakley, A. (2007). Evidence-informed
-        policy and practice: challenges for social science. In M. Hammersley (Ed.),
-        Educational research and evidence-based practice (pp.\u00a091\u2013105). London:
-        Sage. (Original work published 2001)"},{"issue":"1","key":"2_CR34","doi-asserted-by":"publisher","first-page":"5","DOI":"10.1332\/1744264052703168","volume":"1","author":"A
-        Oakley","year":"2005","unstructured":"Oakley A., Gough, D., Oliver, S., &
-        Thomas, J. (2005). The politics of evidence and methodology: lessons from
-        the EPPI-Centre. Evidence and Policy, 1(1), 5\u201331. \nhttps:\/\/doi.org\/10.1332\/1744264052703168\n\n.","journal-title":"Evidence
-        and Policy"},{"key":"2_CR35","author":"MR Parlett","first-page":"6","year":"1977","unstructured":"Parlett,
-        M.R., & Hamilton, D. (1977). Evaluation in illumination: a new approach to
-        the study of innovative programmes. In D. Hamilton et al. (Eds.), Beyond the
-        numbers game (pp.\u00a06\u201322). London: Macmillan.","volume-title":"Beyond
-        the numbers game"},{"issue":"2","key":"2_CR36","doi-asserted-by":"publisher","first-page":"127","DOI":"10.1080\/13645570600595314","volume":"9","author":"R
-        Pawson","year":"2006","unstructured":"Pawson, R. (2006a). Digging for nuggets:
-        how \u201cbad\u201d research can yield \u201cgood\u201d evidence. International
-        Journal of Social Research Methodology, 9(2), 127\u201342. \nhttps:\/\/doi.org\/10.1080\/13645570600595314\n\n.","journal-title":"International
-        Journal of Social Research Methodology"},{"key":"2_CR37","author":"R Pawson","year":"2006","unstructured":"Pawson,
-        R. (2006b). Evidence-based policy: a realist perspective. London: Sage.","volume-title":"Evidence-based
-        policy: a realist perspective","DOI":"10.4135\/9781849209120","doi-asserted-by":"publisher"},{"key":"2_CR38","unstructured":"Pawson,
-        R., Greenhalgh, T., Harvey, G., & Walshe, K. (2004). Realist synthesis: an
-        introduction. Retrieved from \nhttps:\/\/www.researchgate.net\/publication\/228855827_Realist_Synthesis_An_Introduction\n\n
-        (last accessed October 17, 2018)."},{"key":"2_CR39","author":"M Petticrew","year":"2006","unstructured":"Petticrew,
-        M., & Roberts, H. (2006). Systematic reviews in the social sciences: A practical
-        guide. Oxford: Blackwell.","volume-title":"Systematic reviews in the social
-        sciences: A practical guide","DOI":"10.1002\/9780470754887","doi-asserted-by":"publisher"},{"key":"2_CR40","author":"C
-        Pope","year":"2007","unstructured":"Pope, C., Mays, N., & Popay, J. (2007).
-        Synthesising qualitative and quantitative health evidence: a guide to methods.
-        Maidenhead: Open University Press.","volume-title":"Synthesising qualitative
-        and quantitative health evidence: a guide to methods"},{"key":"2_CR41","author":"M
-        Sandelowski","year":"2007","unstructured":"Sandelowski M., & Barroso J. (2007).
-        Handbook for synthesising qualitative research. New York: Springer.","volume-title":"Handbook
-        for synthesising qualitative research"},{"key":"2_CR42","author":"W Shadish","first-page":"vi","year":"2006","unstructured":"Shadish,
-        W. (2006). Foreword to Petticrew and Roberts. In M. Petticrew, & H. Roberts,
-        Systematic reviews in the social sciences: A practical guide (pp.\u00a0vi\u2013ix).
-        Oxford: Blackwell.","volume-title":"Systematic reviews in the social sciences:
-        A practical guide"},{"issue":"9","key":"2_CR43","doi-asserted-by":"publisher","first-page":"5","DOI":"10.3102\/0013189X015009005","volume":"15","author":"R
-        Slavin","year":"1986","unstructured":"Slavin, R. (1986). Best-evidence synthesis:
-        an alternative to meta-analysis and traditional reviews\u2019. Educational
-        Researcher, 15(9), 5\u201311.","journal-title":"Educational Researcher"},{"key":"2_CR44","author":"JK
-        Smith","first-page":"45","year":"2004","unstructured":"Smith, J. K. (2004).
-        Learning to live with relativism. In H. Piper, & I. Stronach (Eds.), Educational
-        research: difference and diversity (pp.\u00a045\u201358). Aldershot, UK: Ashgate.","volume-title":"Educational
-        research: difference and diversity"},{"key":"2_CR45","unstructured":"Spencer,
-        L., Richie, J., Lewis, J., & Dillon, L. (2003). Quality in qualitative evaluation:
-        a framework for assessing research evidence. Prepared by the National Centre
-        for Social Research on behalf of the Cabinet Office. Retrieved from \nhttps:\/\/www.heacademy.ac.uk\/system\/files\/166_policy_hub_a_quality_framework.pdf\n\n
-        (last accessed October 17, 2018)."},{"key":"2_CR46","unstructured":"Thomas,
-        J., O\u2019Mara-Eves, A., Harden, A., & Newman, M. (2017). Synthesis methods
-        for combining and configuring textual and mixed methods data. In D. Gough,
-        S. Oliver, S. & J. Thomas (Eds.), An introducation to systematic reviews (2nd
-        edition, pp.\u00a0181\u2013210). London: Sage."},{"issue":"7","key":"2_CR47","doi-asserted-by":"publisher","first-page":"1277","DOI":"10.1016\/j.ijnurstu.2015.03.003","volume":"52","author":"Carl
-        Thompson","year":"2015","unstructured":"Thompson, C. (2015). Sins of omission
-        and commission in systematic reviews in nursing: a commentary on McRae et
-        al. (2015). International Journal of Nursing Studies, 52(7), 1277\u20131278.
-        \nhttps:\/\/doi.org\/10.1016\/j.ijnurstu.2015.03.003\n\n.","journal-title":"International
-        Journal of Nursing Studies"},{"key":"2_CR48","author":"S Timmermans","year":"2003","unstructured":"Timmermans,
-        S., & Berg, M. (2003). The gold standard: the challenge of evidence-based
-        medicine and standardization in health care. Philadelphia PA: Temple University
-        Press.","volume-title":"The gold standard: the challenge of evidence-based
-        medicine and standardization in health care"},{"key":"2_CR49","unstructured":"Torrance,
-        H. (2004, June). Systematic reviewing\u2014the \u2018call centre\u2019 version
-        of research synthesis. Time for a more flexible approach\u2019. Invited presentation
-        to Economic and Social Research Council\/Research Capacity Building Network
-        seminar on Systematic Reviewing, University of Sheffield, UK. Retrieved from
-        \nhttp:\/\/www.esri.mmu.ac.uk\/respapers\/papers-pdf\/seminar-systematicreviewing.pdf\n\n
-        (last accessed October 17, 2018)."},{"key":"2_CR50","doi-asserted-by":"publisher","first-page":"80","DOI":"10.1186\/1471-2288-14-80","volume":"14","author":"F
-        Toye","year":"2014","unstructured":"Toye F., Seers K., Allcock N, Briggs,
-        M., Carr, E., & Barker, K. (2014).\u00a0Meta-ethnography 25\u00a0years on:
-        challenges and insights for synthesising a large number of qualitative studies.
-        BMC Medical Research Methodology\u00a014:80. \nhttps:\/\/doi.org\/10.1186\/1471-2288-14-80\n\n.","journal-title":"BMC
-        Medical Research Methodology"},{"key":"2_CR51","unstructured":"Victor, L.
-        (2008). Systematic reviewing. Social Research Update, 54, Retrieved from \nhttp:\/\/sru.soc.surrey.ac.uk\/SRU54.pdf\n\n
-        (last accessed October 17, 2018)."},{"key":"2_CR52","author":"G Wong","first-page":"131","year":"2018","unstructured":"Wong,
-        G. (2018). Data gathering in realist reviews: looking for needles in haystacks.
-        In N. Emmel, J. Greenhalgh, A. Manzano, M. Monaghan, & S. Dalkin (Eds.) Doing
-        realist research (pp.\u00a0131\u2013146). London: Sage.","volume-title":"Doing
-        realist research","DOI":"10.4135\/9781526451729.n9","doi-asserted-by":"publisher"}],"container-title":["Systematic
-        Reviews in Educational Research"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-658-27602-7_2","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,3,3]],"date-time":"2020-03-03T08:06:46Z","timestamp":1583222806000},"score":1.0,"issued":{"date-parts":[[2019,11,22]]},"ISBN":["9783658276010","9783658276027"],"references-count":52,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-658-27602-7_2","relation":{"cites":[]},"assertion":[{"value":"22
-        November 2019","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-        History"}}]},{"indexed":{"date-parts":[[2020,4,11]],"date-time":"2020-04-11T18:29:48Z","timestamp":1586629788060},"publisher-location":"Dordrecht","reference-count":10,"publisher":"Springer
-        Netherlands","isbn-type":[{"value":"9781402057205","type":"print"},{"value":"9781402057212","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2007]]},"DOI":"10.1007\/1-4020-5721-0_42","type":"book-chapter","created":{"date-parts":[[2007,5,18]],"date-time":"2007-05-18T21:33:57Z","timestamp":1179524037000},"page":"399-407","source":"Crossref","is-referenced-by-count":6,"title":["Direct
-        and Post-Compressed Sound Fields for Different Coded Excitations"],"prefix":"10.1007","author":[{"given":"A.","family":"Nowicki","sequence":"first","affiliation":[]},{"given":"Z.","family":"Klimonda","sequence":"additional","affiliation":[]},{"given":"M.","family":"Lewandowski","sequence":"additional","affiliation":[]},{"given":"J.","family":"Litniewski","sequence":"additional","affiliation":[]},{"given":"P.A.","family":"Lewin","sequence":"additional","affiliation":[]},{"given":"I.","family":"Trots","sequence":"additional","affiliation":[]}],"member":"297","reference":[{"key":"42_CR1","unstructured":"M.N.
-        Cohen, in: Airborne Pulsed Doppler Radar, edited by G. Morris and L. Harkness
-        (Artech House Publishers, Boston \u00b7 London, 1996), pp. 173\u2013214."},{"key":"42_CR2","doi-asserted-by":"publisher","first-page":"98","DOI":"10.1109\/58.646915","volume":"45","author":"B.
-        Haider","year":"1988","unstructured":"B. Haider, P.A Lewin and K.E. Thomenius,
-        Pulse Elongation and Deconvolution Filtering for Medical Ultrasonic Imaging,
-        IEEE Transactions on Ultrasonics, Ferroelectrics And Frequency Control, 45,
-        98\u2013113 (1988).","journal-title":"IEEE Transactions on Ultrasonics, Ferroelectrics
-        And Frequency Control,"},{"issue":"3","key":"42_CR3","doi-asserted-by":"publisher","first-page":"341","DOI":"10.1109\/58.143168","volume":"39","author":"M.
-        O\u2019Donnell","year":"1992","unstructured":"M. O\u2019Donnell, Coded excitation
-        system for improving the penetration of real-time phased-array imaging systems,
-        IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control, 39(3),
-        341\u2013351 (1992).","journal-title":"IEEE Transactions on Ultrasonics, Ferroelectrics
-        and Frequency Control,"},{"key":"42_CR4","doi-asserted-by":"publisher","first-page":"183","DOI":"10.1016\/S0041-624X(99)00130-4","volume":"38","author":"T.X.
-        Misaridis","year":"2000","unstructured":"T.X. Misaridis, K. Gammelmark, Ch.H
-        Jorgensen, N. Lindberg, A.H. Thomsen, M.H. Pedersen and J.A. Jensen, Potential
-        of Coded Excitation in Medical Ultrasound Imaging, Ultrasonics,\n                  38,
-        183\u2013189 (2000).","journal-title":"Ultrasonics,"},{"issue":"4","key":"42_CR5","first-page":"313","volume":"28","author":"A.
-        Nowicki","year":"2003","unstructured":"A. Nowicki, W. Secomski, J. Litniewski
-        and I. Trots, On the application of signal compression using Golay\u2019s
-        codes sequences in ultrasound diagnostic, Archives of Acoustics,\n                  28(4),
-        313\u2013324 (2003).","journal-title":"Archives of Acoustics,"},{"issue":"10","key":"42_CR6","doi-asserted-by":"publisher","first-page":"1101","DOI":"10.1016\/j.ultras.2004.02.020","volume":"42","author":"V.
-        Behar","year":"2004","unstructured":"V. Behar and D. Adam, Parameter optimization
-        of pulse compression in ultrasound imaging systems with coded excitation,
-        Ultrasonics, 42(10), 1101\u20131109 (2004).","journal-title":"Ultrasonics,"},{"issue":"5","key":"42_CR7","doi-asserted-by":"publisher","first-page":"665","DOI":"10.1109\/58.308500","volume":"41","author":"M.
-        Pollakowski","year":"1994","unstructured":"M. Pollakowski and H. Ermert, Chirp
-        Signal Matching and Signal Power Optimization in Pulse-Echo Mode Ultrasonic
-        Nondestructive Testing, IEEE Transactions on Ultrasonics, Ferroelectrics And
-        Frequency Control, 41(5), 665\u2013659 (1994).","journal-title":"IEEE Transactions
-        on Ultrasonics, Ferroelectrics And Frequency Control,"},{"key":"42_CR8","unstructured":"National
-        Electrical Manufactures Association (NEMA), NEMA Acoustic Output Measurement
-        Standard for Diagnostic Ultrasound Equipment, UD-3-1993, NEMA and AIUM (American
-        Institute of Ultrasound in Medicine) Standard for Real Time Display of Thermal
-        and Mechanical Acoustic Output Indices on Diagnostic Ultrasound Equipment."},{"key":"42_CR9","doi-asserted-by":"publisher","first-page":"82","DOI":"10.1109\/TIT.1961.1057620","volume":"IT-7","author":"M.J.E.
-        Golay","year":"1961","unstructured":"M.J.E. Golay, Complementary Serries,
-        IRE Trans. Inf. Theory, IT-7, 82\u201387 (1961).","journal-title":"IRE Trans.
-        Inf. Theory,"},{"key":"42_CR10","unstructured":"T. Missaridis, Ultrasound
-        Imaging Using Coded Signals, PhD thesis, (Center for Fast Ultrasound Imaging,
-        Technical University of Denmark, 2001)."}],"container-title":["Acoustical
-        Imaging"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/1-4020-5721-0_42","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,2,16]],"date-time":"2019-02-16T19:21:15Z","timestamp":1550344875000},"score":1.0,"issued":{"date-parts":[[2007]]},"ISBN":["9781402057205","9781402057212"],"references-count":10,"URL":"http:\/\/dx.doi.org\/10.1007\/1-4020-5721-0_42","relation":{"cites":[]},"ISSN":["0270-5117"],"issn-type":[{"value":"0270-5117","type":"print"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:01 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":127472782,"items":[{"indexed":{"date-parts":[[2021,5,9]],"date-time":"2021-05-09T12:32:36Z","timestamp":1620563556924},"reference-count":0,"publisher":"Oxford
+        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2007,12,1]]},"DOI":"10.1093\/ww\/9780199540884.013.u206658","type":"reference-entry","created":{"date-parts":[[2018,7,17]],"date-time":"2018-07-17T06:18:29Z","timestamp":1531808309000},"source":"Crossref","is-referenced-by-count":0,"title":["Brodie,
+        John A., (1 June 1858\u201316 Nov. 1934), civil engineer; Joint Engineer to
+        the Mersey Tunnel Committee, Liverpool, since 1926"],"prefix":"10.1093","member":"286","container-title":["Who
+        Was Who"],"original-title":["Brodie, John A., (1 June 1858\u201316 Nov. 1934),
+        civil engineer; Joint Engineer to the Mersey Tunnel Committee, Liverpool,
+        since 1926"],"deposited":{"date-parts":[[2018,7,17]],"date-time":"2018-07-17T06:18:29Z","timestamp":1531808309000},"score":0.99999994,"issued":{"date-parts":[[2007,12,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/ww\/9780199540884.013.u206658","published":{"date-parts":[[2007,12,1]]}},{"indexed":{"date-parts":[[2021,5,10]],"date-time":"2021-05-10T19:45:11Z","timestamp":1620675911902},"reference-count":0,"publisher":"The
+        Korean Association of Party Studies","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["KPSR"],"published-print":{"date-parts":[[2020,9,30]]},"DOI":"10.30992\/kpsr.2020.09.19.3.75","type":"journal-article","created":{"date-parts":[[2020,10,13]],"date-time":"2020-10-13T00:21:03Z","timestamp":1602548463000},"page":"75-105","source":"Crossref","is-referenced-by-count":0,"title":["Continuity
+        and Change of Preliminary Review System in Japan\u2019s LDP: Focusing on Changes
+        in the Prime Minister-Ruling Party Relations"],"prefix":"10.30992","volume":"19","author":[{"given":"Jukyung","family":"Lee","sequence":"first","affiliation":[]}],"member":"16026","container-title":["Korean
+        Party Studies Review"],"original-title":["\uc77c\ubcf8 \uc790\ubbfc\ub2f9
+        \uc0ac\uc804\uc2ec\uc0ac\uc81c\uc758 \ubcc0\ud654\uc640 \uc9c0\uc18d: \uc218\uc0c1-\uc5ec\ub2f9
+        \uac04 \uad00\uacc4 \ubcc0\ud654\ub97c \uc911\uc2ec\uc73c\ub85c"],"language":"en","deposited":{"date-parts":[[2020,10,13]],"date-time":"2020-10-13T00:21:05Z","timestamp":1602548465000},"score":0.99999994,"issued":{"date-parts":[[2020,9,30]]},"references-count":0,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2020,9,30]]}},"URL":"http:\/\/dx.doi.org\/10.30992\/kpsr.2020.09.19.3.75","ISSN":["1598-5008"],"issn-type":[{"value":"1598-5008","type":"print"}],"published":{"date-parts":[[2020,9,30]]}},{"indexed":{"date-parts":[[2021,8,26]],"date-time":"2021-08-26T08:25:59Z","timestamp":1629966359751},"reference-count":0,"publisher":"Society
+        for Neuroscience","issue":"33","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Neuroscience"],"published-print":{"date-parts":[[2010,8,18]]},"DOI":"10.1523\/jneurosci.2302-10.2010","type":"journal-article","created":{"date-parts":[[2010,8,18]],"date-time":"2010-08-18T18:12:40Z","timestamp":1282155160000},"page":"11197-11201","source":"Crossref","is-referenced-by-count":16,"title":["Direction-Selective
+        Ganglion Cells Show Symmetric Participation in Retinal Waves During Development"],"prefix":"10.1523","volume":"30","author":[{"given":"J.","family":"Elstrott","sequence":"first","affiliation":[]},{"given":"M.
+        B.","family":"Feller","sequence":"additional","affiliation":[]}],"member":"393","published-online":{"date-parts":[[2010,8,18]]},"container-title":["Journal
+        of Neuroscience"],"language":"en","deposited":{"date-parts":[[2021,4,28]],"date-time":"2021-04-28T18:23:31Z","timestamp":1619634211000},"score":0.99999994,"issued":{"date-parts":[[2010,8,18]]},"references-count":0,"journal-issue":{"issue":"33","published-online":{"date-parts":[[2010,8,18]]},"published-print":{"date-parts":[[2010,8,18]]}},"URL":"http:\/\/dx.doi.org\/10.1523\/jneurosci.2302-10.2010","ISSN":["0270-6474","1529-2401"],"issn-type":[{"value":"0270-6474","type":"print"},{"value":"1529-2401","type":"electronic"}],"subject":["General
+        Neuroscience"],"published":{"date-parts":[[2010,8,18]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:11:52 GMT
 recorded_with: VCR 6.0.0

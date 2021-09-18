@@ -21,7 +21,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 23 Jul 2021 15:45:07 GMT
+      - Sat, 18 Sep 2021 16:11:58 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -33,30 +33,30 @@ http_interactions:
       Location:
       - https://data.crossref.org/10.1007%2F12080.1874-1746
       Expires:
-      - Fri, 23 Jul 2021 16:20:38 GMT
+      - Sat, 18 Sep 2021 16:32:48 GMT
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9mx7lKIdJHqOhM%2FwwrqJPekbXzYR8wAITz2XpCGKgoxYIesCr4dn758%2FABjo1ovmsNYxKP6PengTNQIdU3EIhtuxI7aR45LYqIrcuJcZH4Efe4MpRcGltm4%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OygLiogP8tNi%2FStSehnd%2Bdjt52ABBybltQxHxoDU%2BE03OdeyA%2B0VKuwBT4rmptfe7VfkLiDSXOOl1wDX3A68LSwXBskx1raVeVObrMZkQZqEjYjOix4Le6U%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
-      - '{"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Server:
       - cloudflare
       Cf-Ray:
-      - 673608b52e3e02a2-SEA
+      - 690bda674a4339d2-SEA
       Alt-Svc:
-      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
         ma=86400
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://data.crossref.org/10.1007%2F12080.1874-1746">https://data.crossref.org/10.1007%2F12080.1874-1746</a></body></html>
-  recorded_at: Fri, 23 Jul 2021 15:45:07 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:58 GMT
 - request:
     method: get
     uri: https://data.crossref.org/10.1007%2F12080.1874-1746
@@ -93,7 +93,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Fri, 23 Jul 2021 15:45:07 GMT
+      - Sat, 18 Sep 2021 16:11:58 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -106,7 +106,7 @@ http_interactions:
       encoding: UTF-8
       string: "@misc{1,\n\tdoi = {10.1007/12080.1874-1746},\n\turl = {https://doi.org/10.1007%2F12080.1874-1746},\n\tpublisher
         = {Springer Science and Business Media {LLC}},\n\ttitle = {Theoretical Ecology}\n}"
-  recorded_at: Fri, 23 Jul 2021 15:45:07 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:58 GMT
 - request:
     method: get
     uri: https://doi.org/10.1007%2F10452.1573-5125
@@ -128,7 +128,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 23 Jul 2021 15:45:08 GMT
+      - Sat, 18 Sep 2021 16:11:59 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -140,30 +140,30 @@ http_interactions:
       Location:
       - https://data.crossref.org/10.1007%2F10452.1573-5125
       Expires:
-      - Fri, 23 Jul 2021 15:47:00 GMT
+      - Sat, 18 Sep 2021 16:32:48 GMT
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BW0vtoAL3g76yNGnLACwPrp5fCmRjehougcy%2FRv3UQnchAX3uB5WFhurfpuqH6lKRBZt0xvHq5wUmhWyX%2BTRjnbH4qSEKmUp0s%2BxeAI62CUuOuwvfdQQmAY%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6syo3S8cwxlzTROcqJDOw2DmFVbgLu4APrSEw4KGSsnYvSgKQR7uVEan2zlgx1NT80lwZ%2BwkfnuV3dV3JatcP5u70bIRC3Lo3MhHPOfMPDrDFqf53PH0jSQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
-      - '{"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Server:
       - cloudflare
       Cf-Ray:
-      - 673608b8fe0639b9-SEA
+      - 690bda6d9e5b147e-SEA
       Alt-Svc:
-      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
         ma=86400
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://data.crossref.org/10.1007%2F10452.1573-5125">https://data.crossref.org/10.1007%2F10452.1573-5125</a></body></html>
-  recorded_at: Fri, 23 Jul 2021 15:45:08 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
 - request:
     method: get
     uri: https://data.crossref.org/10.1007%2F10452.1573-5125
@@ -200,7 +200,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Fri, 23 Jul 2021 15:45:08 GMT
+      - Sat, 18 Sep 2021 16:11:59 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -213,7 +213,7 @@ http_interactions:
       encoding: UTF-8
       string: "@misc{1,\n\tdoi = {10.1007/10452.1573-5125},\n\turl = {https://doi.org/10.1007%2F10452.1573-5125},\n\tpublisher
         = {Springer Science and Business Media {LLC}},\n\ttitle = {Aquatic Ecology}\n}"
-  recorded_at: Fri, 23 Jul 2021 15:45:08 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
 - request:
     method: get
     uri: https://doi.org/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
@@ -235,7 +235,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Fri, 23 Jul 2021 15:45:08 GMT
+      - Sat, 18 Sep 2021 16:11:59 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -247,30 +247,30 @@ http_interactions:
       Location:
       - https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v
       Expires:
-      - Fri, 23 Jul 2021 16:20:38 GMT
+      - Sat, 18 Sep 2021 17:10:39 GMT
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GoEfGFoL6c8d%2B%2FnyvcgFU9gTCw%2BZNLxmfJfQvJwaKx9KBlV0DzdTPH00QxrbqmsW46lRyzQ9rfkpsnzBJKYWYl26XKTM2d4qU%2BclaP%2BCoulnzyTKAYMwNyY%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GDdYzdhZ3KdfHS8mSWYjV6W0I0s%2FYwq2P26u35YE9bDGsGhKVn8241mNseQ%2BTICMtqtfNgF5SjbLhxdXujWh7A%2F8VvuoaYVQxV%2FyPPWg9eW03F%2BgfrHdBCQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
-      - '{"report_to":"cf-nel","max_age":604800}'
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Server:
       - cloudflare
       Cf-Ray:
-      - 673608bd7ea2f58d-SEA
+      - 690bda70a8b6f79a-SEA
       Alt-Svc:
-      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
         ma=86400
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v">https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v</a></body></html>
-  recorded_at: Fri, 23 Jul 2021 15:45:08 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
 - request:
     method: get
     uri: https://data.crossref.org/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
@@ -311,7 +311,7 @@ http_interactions:
       Server:
       - http-kit
       Date:
-      - Fri, 23 Jul 2021 15:45:09 GMT
+      - Sat, 18 Sep 2021 16:11:59 GMT
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -331,5 +331,5 @@ http_interactions:
         improved immunocytochemical methods for the preservation and colocalization
         of {GABA} and other neuronal markers},\n\tjournal = {The Journal of Comparative
         Neurology}\n}"
-  recorded_at: Fri, 23 Jul 2021 15:45:09 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
 recorded_with: VCR 6.0.0

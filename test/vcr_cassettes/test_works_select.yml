@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:21 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '1332'
+      Set-Cookie:
+      - AWSALB=r+46gMShTkhmOp61aLLyJzkTKyifsoE0gucShhzIxCrAGQ+vCU+aLrUhpC1YBR2ZNdy66coHs+FSHBifjToMGcWEgZVIc0IzUndOzkGeG2+QfYQZmtnnma70q96l;
+        Expires=Sat, 25 Sep 2021 16:12:20 GMT; Path=/
+      - AWSALBCORS=r+46gMShTkhmOp61aLLyJzkTKyifsoE0gucShhzIxCrAGQ+vCU+aLrUhpC1YBR2ZNdy66coHs+FSHBifjToMGcWEgZVIc0IzUndOzkGeG2+QfYQZmtnnma70q96l;
+        Expires=Sat, 25 Sep 2021 16:12:20 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '2778'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:47:46 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,35 +57,32 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":126358728,"items":[{"DOI":"10.3386\/w23137","title":["Immigration
-        and the Rise of American  Ingenuity"]},{"DOI":"10.1016\/j.anplas.2018.09.003","title":["Les
-        indications des reconstructions mammaires apr\u00e8s mastectomie selon la
-        situation carcinologique"]},{"DOI":"10.1039\/c4ra04415k","title":["Polarization
-        transfer solid-state NMR: a new method for studying cellulose dissolution"]},{"DOI":"10.5055\/jom.2016.0330","title":["Effect
-        of preoperative intravenous oxycodone on sufentanil consumption after laparoscopic
-        radical gastrectomy"]},{"DOI":"10.1016\/j.laa.2017.06.043","title":["A bound
-        on the Carath\u00e9odory number"]},{"DOI":"10.1016\/s0034-5288(18)31216-5","title":["Sensitisation
-        of preruminant calves and piglets to antigenic protein in early weaning diets:
-        control of the systemic antibody responses"]},{"DOI":"10.1016\/s1872-0978(06)01001-5","title":["Chapter
-        1 Enterprise-Wide Asset and Liability Management: Issues, Institutions, and
-        Models"]},{"DOI":"10.1007\/s10509-012-1117-3","title":["Electrostatic solitons
-        in rotating dusty plasmas with anisotropic ion pressure"]},{"DOI":"10.1007\/978-3-322-89521-9_13","title":["M"]},{"DOI":"10.2307\/3504694","title":["Kant''s
-        Theory of Punishment: Deterrence in Its Threat, Retribution in Its Execution"]},{"DOI":"10.1016\/b978-012088438-4.50001-0","title":["Managing
-        Risk Across the Enterprise"]},{"DOI":"10.2307\/1943380","title":["Samuel Eliot
-        Morison, Historian"]},{"DOI":"10.1016\/s0967-2109(97)00165-8","title":["Local
-        anesthesia for above knee femoropopliteal bypass: An alternative technique
-        to endoluminal bypass grafting"]},{"DOI":"10.1163\/2211-4386_rwwtogatt_wtogatt_cs232","title":["Case
-        232 - United States \u0096 Measures Affecting the Production and Sale of Clove
-        Cigarettes"]},{"DOI":"10.1016\/j.jamcollsurg.2007.03.030","title":["Incidence
-        of Complications in Outpatient Mastectomy with Immediate Reconstruction"]},{"DOI":"10.2166\/wst.1994.0689","title":["Transfer
-        Function Modelling of Urban Drainage Systems, and Potential Uses in Real-Time
-        Control Applications"]},{"DOI":"10.1163\/1568527053083430","title":["The Ethics
-        of War and the Concept of War in India and Europe"]},{"DOI":"10.1080\/15348430701693366","title":["Competing
-        Language Ideologies in a Bilingual\/Bicultural After-School Program in Southern
-        California"]},{"DOI":"10.3397\/1.2827591","title":["Are Earth Berms Acoustically
-        Better Than Thin-Wall Barriers"]},{"DOI":"10.1016\/j.ejso.2011.08.001","title":["Initial
-        experiences with a multidisciplinary approach to decreasing the length of
-        hospital stay for patients undergoing unilateral mastectomy"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:47:46 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":127472782,"items":[{"DOI":"10.18261\/issn1891-5760-2015-01-05","title":["Verket
+        som ble borte &#8211; ekfrase som dokumentasjon for ettertiden"]},{"DOI":"10.38146\/2021.4.7","title":["Gamification,
+        mint tehets\u00e9ggondoz\u00e1si eszk\u00f6z a k\u00f6zszolg\u00e1lati oktat\u00e1sban
+        \u2013 a kiberverseny p\u00e9ld\u00e1ja"]},{"DOI":"10.52677\/2019.10.14.27","title":["Hobbes\u2019
+        Philosophy of Education: Finding Model for Civic Education"]},{"DOI":"10.3365\/kjmm.2021.59.5.355","title":["Erratum
+        to: Effects of Two-Step Anodization on Surface Wettability in Surface Treatment
+        of Aluminum Alloy"]},{"DOI":"10.52677\/2018.04.11.33","title":["Hume on the
+        Relationship between Emotion and Desire in Explaining Action"]},{"DOI":"10.52677\/2019.10.14.5","title":["Montaigne\u2019s
+        Education and Philosophy: Power to Create My Own Way of Living"]},{"DOI":"10.38146\/2021.4.11","title":["A
+        t\u00e9nyek makacs dolgok\u2026 Ann\u00e1l rosszabb a t\u00e9nyeknek?!"]},{"DOI":"10.1364\/ome.11.001364","title":["Optical
+        Fibers: Materials and Applications"]},{"DOI":"10.1364\/ome.11.001410","title":["Photonic
+        Topological Materials feature issue: publisher\u2019s note"]},{"DOI":"10.1109\/iembs.2005.1615903","title":["Identification
+        of Spinal Deformity Classification with Total Curvature Analysis and Artificial
+        Neural Network"]},{"DOI":"10.1016\/s0022-3476(69)80360-4","title":["Subject
+        index"]},{"DOI":"10.1016\/s0026-0576(01)80141-0","title":["Centrifugal pumps"]},{"DOI":"10.1109\/iembs.2005.1616586","title":["Development
+        of a Wearable Measurement and Control Unit for Personal Customizing Machine-Supported
+        Exercise"]},{"DOI":"10.1016\/s0002-9610(00)00531-6","title":["Removal of the
+        thrombosed prosthetic axillofemoral graft"]},{"DOI":"10.1016\/s0885-2006(97)90001-6","title":["From
+        the editor"]},{"DOI":"10.1016\/s0022-1139(00)84566-2","title":["Fast ionic
+        fluoride conductors: General criteria and modeling"]},{"DOI":"10.1016\/0031-9422(91)85159-w","title":["Studies
+        in natural product chemistry, volume 7: Structure and chemistry:"]},{"DOI":"10.1016\/j.brachy.2006.03.058","title":["LDR
+        brachytherapy implants as a boost in early stage breast cancer in women with
+        cilastic implants"]},{"DOI":"10.1109\/mape.2005.1618211","title":["Multiuser
+        Channel Estimation for Detection for Cochannel Signals in the Receiver of
+        TETRA Digital trunked System"]},{"DOI":"10.1016\/s0022-3476(69)80327-6","title":["The
+        Journal of Pediatrics Educational Foundation"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:12:21 GMT
 recorded_with: VCR 6.0.0

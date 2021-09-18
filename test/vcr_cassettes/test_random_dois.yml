@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:46 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '8140'
+      Set-Cookie:
+      - AWSALB=bDW/HKfC3yStD3aQjLZIcFe4ZbHGb5J223gTq2sIgOehPA8uiATkdcp5jLSjozrWvXRqy/60u86MnvLXaHVzsyFWfqgmf8DxEaUkbogYJPciPncYRqer70fV47Ob;
+        Expires=Sat, 25 Sep 2021 16:11:40 GMT; Path=/
+      - AWSALBCORS=bDW/HKfC3yStD3aQjLZIcFe4ZbHGb5J223gTq2sIgOehPA8uiATkdcp5jLSjozrWvXRqy/60u86MnvLXaHVzsyFWfqgmf8DxEaUkbogYJPciPncYRqer70fV47Ob;
+        Expires=Sat, 25 Sep 2021 16:11:40 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '38213'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:58 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,218 +57,163 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":126358034,"items":[{"indexed":{"date-parts":[[2021,6,11]],"date-time":"2021-06-11T14:46:59Z","timestamp":1623422819467},"reference-count":0,"publisher":"Springer
-        Science and Business Media LLC","issue":"4","license":[{"URL":"https:\/\/www.springer.com\/tdm","start":{"date-parts":[[2000,4,1]],"date-time":"2000-04-01T00:00:00Z","timestamp":954547200000},"delay-in-days":0,"content-version":"tdm"},{"URL":"https:\/\/www.springer.com\/tdm","start":{"date-parts":[[2000,4,1]],"date-time":"2000-04-01T00:00:00Z","timestamp":954547200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Call
-        Cent Prof"],"published-print":{"date-parts":[[2000,4]]},"DOI":"10.1007\/bf03253729","type":"journal-article","created":{"date-parts":[[2021,6,11]],"date-time":"2021-06-11T14:02:59Z","timestamp":1623420179000},"page":"10-10","source":"Crossref","is-referenced-by-count":0,"title":["Branchengefl\u00fcster"],"prefix":"10.1007","volume":"3","author":[{"given":"Jan
-        Peter","family":"Kruse","sequence":"first","affiliation":[]}],"member":"297","container-title":["Call
-        Center Profi"],"language":"de","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/BF03253729.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/article\/10.1007\/BF03253729\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/BF03253729.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,11]],"date-time":"2021-06-11T14:25:38Z","timestamp":1623421538000},"score":1.0,"issued":{"date-parts":[[2000,4]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2000,4]]},"issue":"4"},"alternative-id":["BF03253729"],"URL":"http:\/\/dx.doi.org\/10.1007\/bf03253729","ISSN":["1433-0199","2192-8673"],"issn-type":[{"value":"1433-0199","type":"print"},{"value":"2192-8673","type":"electronic"}]},{"indexed":{"date-parts":[[2020,2,24]],"date-time":"2020-02-24T22:43:21Z","timestamp":1582584201108},"reference-count":0,"publisher":"Wiley","issue":"2","license":[{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor","start":{"date-parts":[[1983,3,1]],"date-time":"1983-03-01T00:00:00Z","timestamp":415324800000},"delay-in-days":0,"content-version":"vor"},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[1983,3,1]],"date-time":"1983-03-01T00:00:00Z","timestamp":415324800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Crop
-        Sci."],"published-print":{"date-parts":[[1983,3]]},"DOI":"10.2135\/cropsci1983.0011183x002300020005x","type":"journal-article","created":{"date-parts":[[2010,7,29]],"date-time":"2010-07-29T16:00:34Z","timestamp":1280419234000},"page":"213-216","source":"Crossref","is-referenced-by-count":19,"title":["Rate
-        and Extent of Cell Wall Digestion of Total Forage and Morphological Components
-        of Oats and Barley\n            1"],"prefix":"10.1002","volume":"23","author":[{"given":"J.
-        H.","family":"Cherney","sequence":"first","affiliation":[]},{"given":"G. C.","family":"Marten","sequence":"additional","affiliation":[]},{"given":"R.
-        D.","family":"Goodrich","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[1983,3]]},"container-title":["Crop
-        Science"],"language":"en","link":[{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.2135\/cropsci1983.0011183X002300020005x","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.2135\/cropsci1983.0011183X002300020005x","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,1,2]],"date-time":"2020-01-02T19:38:58Z","timestamp":1577993938000},"score":1.0,"issued":{"date-parts":[[1983,3]]},"references-count":0,"journal-issue":{"published-online":{"date-parts":[[1983,3]]},"published-print":{"date-parts":[[1983,3]]},"issue":"2"},"alternative-id":["10.2135\/cropsci1983.0011183X002300020005x"],"URL":"http:\/\/dx.doi.org\/10.2135\/cropsci1983.0011183x002300020005x","archive":["Portico"],"ISSN":["0011-183X","1435-0653"],"issn-type":[{"value":"0011-183X","type":"print"},{"value":"1435-0653","type":"electronic"}],"subject":["Agronomy
-        and Crop Science"]},{"indexed":{"date-parts":[[2020,4,11]],"date-time":"2020-04-11T01:37:39Z","timestamp":1586569059076},"reference-count":62,"publisher":"Elsevier
-        BV","license":[{"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2015,8,1]],"date-time":"2015-08-01T00:00:00Z","timestamp":1438387200000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/501100001809","name":"National
-        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["61305001","91120303","91220301"]},{"DOI":"10.13039\/501100005046","name":"Natural
-        Science Foundation of Heilongjiang Province","doi-asserted-by":"publisher","award":["F200936"]},{"name":"Scientific
-        Research Fund of Heilongjiang Provincial Education Department","award":["12511096"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Digital
-        Signal Processing"],"published-print":{"date-parts":[[2015,8]]},"DOI":"10.1016\/j.dsp.2015.04.014","type":"journal-article","created":{"date-parts":[[2015,5,8]],"date-time":"2015-05-08T16:02:48Z","timestamp":1431100968000},"page":"59-70","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":7,"title":["Spectrum
-        enhancement with sparse coding for robust speech recognition"],"prefix":"10.1016","volume":"43","author":[{"ORCID":"http:\/\/orcid.org\/0000-0001-7540-9773","authenticated-orcid":false,"given":"Yongjun","family":"He","sequence":"first","affiliation":[]},{"given":"Guanglu","family":"Sun","sequence":"additional","affiliation":[]},{"given":"Jiqing","family":"Han","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"issue":"6","key":"10.1016\/j.dsp.2015.04.014_br0010","doi-asserted-by":"crossref","first-page":"1304","DOI":"10.1121\/1.1914702","article-title":"Effectiveness
-        of linear prediction characteristics of the speech wave for automatic speaker
-        identification and verification","volume":"55","author":"Atal","year":"1974","journal-title":"J.
-        Acoust. Soc. Am."},{"key":"10.1016\/j.dsp.2015.04.014_br0020","author":"Viikki","first-page":"733","year":"1998","article-title":"A
-        recursive feature vector normalization approach for robust speech recognition
-        in noise","series-title":"Proc. ICASSP"},{"issue":"3","key":"10.1016\/j.dsp.2015.04.014_br0030","doi-asserted-by":"crossref","first-page":"355","DOI":"10.1109\/TSA.2005.845805","article-title":"Histogram
-        equalization of speech representation for robust speech recognition","volume":"13","author":"de
-        la Torre","year":"2005","journal-title":"IEEE Trans. Speech Audio Process."},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0040","doi-asserted-by":"crossref","first-page":"257","DOI":"10.1109\/TASL.2006.876717","article-title":"MVA
-        processing of speech features","volume":"15","author":"Chen","year":"2007","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"issue":"2","key":"10.1016\/j.dsp.2015.04.014_br0050","doi-asserted-by":"crossref","first-page":"113","DOI":"10.1109\/TASSP.1979.1163209","article-title":"Suppression
-        of acoustic noise in speech using spectral subtraction","volume":"27","author":"Boll","year":"1979","journal-title":"IEEE
-        Trans. Acoust. Speech Signal Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0060","author":"Quatieri","year":"2001","series-title":"Discrete-Time
-        Speech Signal Processing: Principles and Practice"},{"key":"10.1016\/j.dsp.2015.04.014_br0070","author":"Macho","first-page":"17","year":"2002","article-title":"Evaluation
-        of a noise-robust DSR front-end on Aurora databases","series-title":"Proc.
-        ICSLP"},{"key":"10.1016\/j.dsp.2015.04.014_br0080","author":"Moreno","year":"1996","series-title":"Speech
-        recognition in noisy environments"},{"key":"10.1016\/j.dsp.2015.04.014_br0090","author":"Li","first-page":"4677","year":"2012","article-title":"Improvements
-        to VTS feature enhancement","series-title":"Proc. ICASSP"},{"issue":"2","key":"10.1016\/j.dsp.2015.04.014_br0100","doi-asserted-by":"crossref","first-page":"171","DOI":"10.1006\/csla.1995.0010","article-title":"Maximum
-        likelihood linear regression for speaker adaptation of continuous density
-        HMMs","volume":"9","author":"Leggetter","year":"1995","journal-title":"Comput.
-        Speech Lang."},{"key":"10.1016\/j.dsp.2015.04.014_br0110","doi-asserted-by":"crossref","first-page":"75","DOI":"10.1006\/csla.1998.0043","article-title":"Maximum
-        likelihood linear transformations for HMM-based speech recognition","volume":"12","author":"Gales","year":"1998","journal-title":"Comput.
-        Speech Lang."},{"issue":"2","key":"10.1016\/j.dsp.2015.04.014_br0120","doi-asserted-by":"crossref","first-page":"291","DOI":"10.1109\/89.279278","article-title":"Maximum
-        a posteriori estimation for multivariate Gaussian mixture observations of
-        Markov chains","volume":"2","author":"Gauvain","year":"1994","journal-title":"IEEE
-        Trans. Speech Audio Process."},{"issue":"5","key":"10.1016\/j.dsp.2015.04.014_br0130","doi-asserted-by":"crossref","first-page":"352","DOI":"10.1109\/89.536929","article-title":"Robust
-        continuous speech recognition using parallel model combination","volume":"4","author":"Gales","year":"1996","journal-title":"IEEE
-        Trans. Speech Audio Process."},{"issue":"3","key":"10.1016\/j.dsp.2015.04.014_br0140","doi-asserted-by":"crossref","first-page":"389","DOI":"10.1016\/j.csl.2009.02.001","article-title":"A
-        unified framework of HMM adaptation with joint compensation of additive and
-        convolutive distortions","volume":"23","author":"Li","year":"2009","journal-title":"Comput.
-        Speech Lang."},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0150","doi-asserted-by":"crossref","first-page":"39","DOI":"10.1016\/S0167-6393(97)00061-7","article-title":"Speech
-        recognition in noisy environments using first-order vector Taylor series","volume":"24","author":"Kim","year":"1998","journal-title":"Speech
-        Commun."},{"key":"10.1016\/j.dsp.2015.04.014_br0160","author":"Acero","first-page":"869","year":"2000","article-title":"HMM
-        adaptation using vector Taylor series for noisy speech recognition","series-title":"Proc.
-        ICSLP"},{"issue":"5","key":"10.1016\/j.dsp.2015.04.014_br0170","doi-asserted-by":"crossref","first-page":"975","DOI":"10.1109\/TSA.2005.851963","article-title":"A
-        method of joint compensation of additive and convolutive distortions for speaker-independent
-        speech recognition","volume":"13","author":"Gong","year":"2005","journal-title":"IEEE
-        Trans. Speech Audio Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0180","author":"Li","first-page":"65","year":"2007","article-title":"High-performance
-        HMM adaptation with joint compensation of additive and convolutive distortions
-        via vector Taylor series","series-title":"Proc. ASRU"},{"issue":"3","key":"10.1016\/j.dsp.2015.04.014_br0190","doi-asserted-by":"crossref","first-page":"267","DOI":"10.1016\/S0167-6393(00)00034-0","article-title":"Robust
-        automatic speech recognition with missing and unreliable acoustic data","volume":"34","author":"Cook","year":"2001","journal-title":"Speech
-        Commun."},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0200","doi-asserted-by":"crossref","first-page":"123","DOI":"10.1109\/TASL.2010.2045235","article-title":"Advances
-        in missing feature techniques for robust large-vocabulary continuous speech
-        recognition","volume":"19","author":"Van Segbroeck","year":"2011","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"issue":"4","key":"10.1016\/j.dsp.2015.04.014_br0210","doi-asserted-by":"crossref","first-page":"275","DOI":"10.1016\/j.specom.2004.03.007","article-title":"Reconstruction
-        of missing features for robust speech recognition","volume":"43","author":"Raj","year":"2004","journal-title":"Speech
-        Commun."},{"issue":"10","key":"10.1016\/j.dsp.2015.04.014_br0220","doi-asserted-by":"crossref","first-page":"1993","DOI":"10.1109\/TASL.2013.2263802","article-title":"A
-        direct masking approach to robust ASR","volume":"21","author":"Hartmann","year":"2013","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0230","doi-asserted-by":"crossref","first-page":"30","DOI":"10.1109\/TASL.2011.2134090","article-title":"Context-dependent
-        pre-trained deep neural networks for large-vocabulary speech recognition","volume":"20","author":"Dahl","year":"2012","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0240","author":"Seltzer","first-page":"7398","year":"2013","article-title":"An
-        investigation of deep neural networks for noise robust speech recognition","series-title":"Proc.
-        ICASSP"},{"issue":"4","key":"10.1016\/j.dsp.2015.04.014_br0250","doi-asserted-by":"crossref","first-page":"745","DOI":"10.1109\/TASLP.2014.2304637","article-title":"An
-        overview of noise-robust automatic speech recognition","volume":"22","author":"Li","year":"2014","journal-title":"IEEE\/ACM
-        Trans. Audio Speech Lang. Process."},{"issue":"12","key":"10.1016\/j.dsp.2015.04.014_br0260","doi-asserted-by":"crossref","first-page":"3397","DOI":"10.1109\/78.258082","article-title":"Matching
-        pursuits with time\u2013frequency dictionaries","volume":"41","author":"Mallat","year":"1993","journal-title":"IEEE
-        Trans. Signal Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0270","author":"Chen","year":"1995","series-title":"Atomic
-        decomposition by basis pursuit"},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0280","doi-asserted-by":"crossref","first-page":"34","DOI":"10.1137\/060657704","article-title":"From
-        sparse solutions of systems of equations to sparse modeling of signals and
-        images","volume":"51","author":"Bruckstein","year":"2009","journal-title":"SIAM
-        Rev."},{"issue":"6583","key":"10.1016\/j.dsp.2015.04.014_br0290","doi-asserted-by":"crossref","first-page":"607","DOI":"10.1038\/381607a0","article-title":"Emergence
-        of simple-cell receptive field properties by learning a sparse code for natural
-        images","volume":"381","author":"Olshausen","year":"1996","journal-title":"Nature"},{"issue":"10","key":"10.1016\/j.dsp.2015.04.014_br0300","doi-asserted-by":"crossref","first-page":"1133","DOI":"10.1097\/00004647-200110000-00001","article-title":"An
-        energy budget for signaling in the grey matter of the brain","volume":"21","author":"Attwell","year":"2001","journal-title":"J.
-        Cereb. Blood Flow Metab."},{"key":"10.1016\/j.dsp.2015.04.014_br0310","author":"Davenport","year":"2011","article-title":"Introduction
-        to compressed sensing","series-title":"Compressed Sensing: Theory and Applications"},{"issue":"6","key":"10.1016\/j.dsp.2015.04.014_br0320","doi-asserted-by":"crossref","first-page":"972","DOI":"10.1109\/JPROC.2009.2037655","article-title":"On
-        the role of sparse and redundant representations in image processing","volume":"98","author":"Elad","year":"2010","journal-title":"Proc.
-        IEEE"},{"key":"10.1016\/j.dsp.2015.04.014_br0330","author":"Sigg","first-page":"4758","year":"2010","article-title":"Speech
-        enhancement with sparse coding in learned dictionaries","series-title":"Proc.
-        ICASSP"},{"issue":"3","key":"10.1016\/j.dsp.2015.04.014_br0340","doi-asserted-by":"crossref","first-page":"1066","DOI":"10.1109\/TASL.2006.885253","article-title":"Monaural
-        sound source separation by nonnegative matrix factorization with temporal
-        continuity and sparseness criteria","volume":"15","author":"Virtane","year":"2007","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0350","doi-asserted-by":"crossref","first-page":"200","DOI":"10.1016\/j.csl.2008.06.002","article-title":"Continuous
-        speech recognition with sparse coding","volume":"23","author":"Smit","year":"2009","journal-title":"Comput.
-        Speech Lang."},{"key":"10.1016\/j.dsp.2015.04.014_br0360","author":"Sainath","first-page":"4492","year":"2011","article-title":"Exemplar-based
-        sparse representation phone identification features","series-title":"Proc.
-        ICASSP"},{"issue":"8","key":"10.1016\/j.dsp.2015.04.014_br0370","doi-asserted-by":"crossref","first-page":"2598","DOI":"10.1109\/TASL.2011.2155060","article-title":"Exemplar-based
-        sparse representation features: from TIMIT to LVCSR","volume":"19","author":"Sainath","year":"2011","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0380","doi-asserted-by":"crossref","first-page":"462","DOI":"10.1016\/j.csl.2010.06.004","article-title":"Sparse
-        imputation for large vocabulary noise robust ASR","volume":"25","author":"Gemmeke","year":"2011","journal-title":"Comput.
-        Speech Lang."},{"issue":"7","key":"10.1016\/j.dsp.2015.04.014_br0390","doi-asserted-by":"crossref","first-page":"2067","DOI":"10.1109\/TASL.2011.2112350","article-title":"Exemplar-based
-        sparse representations for noise robust automatic speech recognition","volume":"19","author":"Gemmeke","year":"2011","journal-title":"IEEE
-        Trans. Audio Speech Lang. Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0400","author":"Yilmaz","first-page":"8076","year":"2013","article-title":"Embedding
-        time warping in exemplar-based sparse representations of speech","series-title":"Proc.
-        ICASSP"},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0410","doi-asserted-by":"crossref","first-page":"134","DOI":"10.3390\/e13010134","article-title":"Generalized
-        alpha\u2013beta divergences and their application to robust nonnegative matrix
-        factorization","volume":"13","author":"Cichocki","year":"2011","journal-title":"Entropy"},{"key":"10.1016\/j.dsp.2015.04.014_br0420","author":"Yilmaz","first-page":"5502","year":"2014","article-title":"Noise-robust
-        speech recognition with exemplar-based sparse representations using Alpha\u2013Beta
-        divergence","series-title":"Proc. ICASSP"},{"issue":"7","key":"10.1016\/j.dsp.2015.04.014_br0430","doi-asserted-by":"crossref","first-page":"681","DOI":"10.1109\/LSP.2013.2245894","article-title":"Feature
-        denoising using joint sparse representation for in-car speech recognition","volume":"20","author":"Li","year":"2013","journal-title":"IEEE
-        Signal Process. Lett."},{"key":"10.1016\/j.dsp.2015.04.014_br0440","author":"Li","first-page":"7117","year":"2013","article-title":"Joint
-        sparse representation based cepstral-domain dereverberation for distant-talking
-        speech recognition","series-title":"Proc. ICASSP"},{"issue":"2","key":"10.1016\/j.dsp.2015.04.014_br0450","doi-asserted-by":"crossref","first-page":"210","DOI":"10.1109\/TPAMI.2008.79","article-title":"Robust
-        face recognition via sparse representation","volume":"31","author":"Wright","year":"2009","journal-title":"IEEE
-        Trans. Pattern Anal. Mach. Intell."},{"key":"10.1016\/j.dsp.2015.04.014_br0460","author":"Starck","first-page":"132","year":"2004","article-title":"Redundant
-        multiscale transforms and their application for morphological component analysis","journal-title":"Adv.
-        Imaging Electron Phys."},{"issue":"11","key":"10.1016\/j.dsp.2015.04.014_br0470","doi-asserted-by":"crossref","first-page":"2675","DOI":"10.1109\/TIP.2007.907073","article-title":"Morphological
-        component analysis: an adaptive thresholding strategy","volume":"16","author":"Bobin","year":"2007","journal-title":"IEEE
-        Trans. Image Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0480","author":"Hoyer","first-page":"557","year":"2002","article-title":"Non-negative
-        sparse coding","series-title":"Proceedings of the IEEE Workshop on Neural
-        Networks for Signal Processing"},{"key":"10.1016\/j.dsp.2015.04.014_br0490","author":"Teng","first-page":"7373","year":"2013","article-title":"Voice
-        activity detection using convolutive non-negative sparse coding","series-title":"Proc.
-        ICASSP"},{"issue":"11","key":"10.1016\/j.dsp.2015.04.014_br0500","doi-asserted-by":"crossref","first-page":"4311","DOI":"10.1109\/TSP.2006.881199","article-title":"The
-        k-SVD: an algorithm for designing of overcomplete dictionaries for sparse
-        representation","volume":"54","author":"Aharon","year":"2006","journal-title":"IEEE
-        Trans. Signal Process."},{"issue":"4","key":"10.1016\/j.dsp.2015.04.014_br0510","doi-asserted-by":"crossref","first-page":"1289","DOI":"10.1109\/TIT.2006.871582","article-title":"Compressed
-        sensing","volume":"52","author":"Donoho","year":"2006","journal-title":"IEEE
-        Trans. Inf. Theory"},{"issue":"8","key":"10.1016\/j.dsp.2015.04.014_br0520","doi-asserted-by":"crossref","first-page":"1207","DOI":"10.1002\/cpa.20124","article-title":"Stable
-        signal recovery from incomplete and inaccurate measurements","volume":"59","author":"Cand\u00e8s","year":"2006","journal-title":"Commun.
-        Pure Appl. Math."},{"issue":"2","key":"10.1016\/j.dsp.2015.04.014_br0530","doi-asserted-by":"crossref","first-page":"227","DOI":"10.1137\/S0097539792240406","article-title":"Sparse
-        approximate solutions to linear systems","volume":"24","author":"Natarajan","year":"1995","journal-title":"SIAM
-        J. Comput."},{"key":"10.1016\/j.dsp.2015.04.014_br0540","author":"Pati","first-page":"40","year":"1993","article-title":"Orthogonal
-        matching pursuit: recursive function approximation with applications to wavelet
-        decomposition","series-title":"Proc. 27th Annu. Asilomar Conf. Signals, Systems,
-        and Computers"},{"issue":"6","key":"10.1016\/j.dsp.2015.04.014_br0550","doi-asserted-by":"crossref","first-page":"797","DOI":"10.1002\/cpa.20132","article-title":"For
-        most large underdetermined systems of linear equations the minimal l1-norm
-        solution is also the sparsest solution","volume":"59","author":"Donoho","year":"2006","journal-title":"Commun.
-        Pure Appl. Math."},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0560","doi-asserted-by":"crossref","first-page":"129","DOI":"10.1137\/S003614450037906X","article-title":"Atomic
-        decomposition by basis pursuit","volume":"43","author":"Chen","year":"2001","journal-title":"SIAM
-        Rev."},{"issue":"1","key":"10.1016\/j.dsp.2015.04.014_br0570","first-page":"267","article-title":"Regression
-        shrinkage and selection via the Lasso","volume":"58","author":"Tibshirani","year":"1996","journal-title":"J.
-        R. Stat. Soc. B"},{"key":"10.1016\/j.dsp.2015.04.014_br0620","author":"Mairal","year":"2009","article-title":"Online
-        dictionary learning for sparse coding","series-title":"Proc. ICML"},{"issue":"20","key":"10.1016\/j.dsp.2015.04.014_br0680","doi-asserted-by":"crossref","first-page":"77","DOI":"10.1016\/j.ins.2015.03.010","article-title":"Dictionary
-        evaluation and optimization for sparse coding based speech processing","volume":"310","author":"He","year":"2015","journal-title":"Inf.
-        Sci."},{"issue":"5","key":"10.1016\/j.dsp.2015.04.014_br0650","doi-asserted-by":"crossref","first-page":"504","DOI":"10.1109\/89.928915","article-title":"Noise
-        power spectral density estimation based on optimal smoothing and minimum statistics","volume":"9","author":"Martin","year":"2001","journal-title":"IEEE
-        Trans. Speech Audio Process."},{"key":"10.1016\/j.dsp.2015.04.014_br0660","author":"Macho","first-page":"17","year":"2002","article-title":"Evaluation
-        of a noise-robust DSR front-end on Aurora databases","series-title":"Proc.
-        ICSLP"},{"key":"10.1016\/j.dsp.2015.04.014_br0670","author":"Hirsch","first-page":"181","year":"2000","article-title":"The
-        Aurora experimental framework for the performance evaluation of speech recognition
-        systems under noisy conditions","series-title":"Proc. ISCA ITRW ASR"}],"container-title":["Digital
-        Signal Processing"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1051200415001463?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1051200415001463?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,9,22]],"date-time":"2018-09-22T19:28:29Z","timestamp":1537644509000},"score":1.0,"issued":{"date-parts":[[2015,8]]},"references-count":62,"alternative-id":["S1051200415001463"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.dsp.2015.04.014","relation":{"cites":[]},"ISSN":["1051-2004"],"issn-type":[{"value":"1051-2004","type":"print"}],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-        article is maintained by"},{"value":"Spectrum enhancement with sparse coding
-        for robust speech recognition","name":"articletitle","label":"Article Title"},{"value":"Digital
-        Signal Processing","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1016\/j.dsp.2015.04.014","name":"articlelink","label":"CrossRef
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":127472782,"items":[{"indexed":{"date-parts":[[2021,5,12]],"date-time":"2021-05-12T08:17:43Z","timestamp":1620807463692},"reference-count":0,"publisher":"Oxford
+        University Press (OUP)","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1990]]},"DOI":"10.1093\/oxfordjournals.bmb.a072401","type":"journal-article","created":{"date-parts":[[2017,2,2]],"date-time":"2017-02-02T11:37:01Z","timestamp":1486035421000},"page":"319-328","source":"Crossref","is-referenced-by-count":8,"title":["Design
+        of hepatitis A vaccines"],"prefix":"10.1093","volume":"46","author":[{"given":"I
+        D","family":"Gust","sequence":"first","affiliation":[]}],"member":"286","published-online":{"date-parts":[[1990]]},"container-title":["British
+        Medical Bulletin"],"language":"en","link":[{"URL":"http:\/\/academic.oup.com\/bmb\/article-pdf\/46\/2\/319\/6702713\/46-2-319.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,8,22]],"date-time":"2017-08-22T17:33:22Z","timestamp":1503423202000},"score":0.99999994,"issued":{"date-parts":[[1990]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[1990]]},"published-print":{"date-parts":[[1990]]}},"URL":"http:\/\/dx.doi.org\/10.1093\/oxfordjournals.bmb.a072401","ISSN":["1471-8391","0007-1420"],"issn-type":[{"value":"1471-8391","type":"electronic"},{"value":"0007-1420","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[1990]]}},{"indexed":{"date-parts":[[2021,5,11]],"date-time":"2021-05-11T19:40:23Z","timestamp":1620762023743},"reference-count":0,"publisher":"American
+        Association of Petroleum Geologists AAPG\/Datapages","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Bulletin"],"published-print":{"date-parts":[[1999]]},"DOI":"10.1306\/e4fd3649-1732-11d7-8645000102c1865d","type":"journal-article","created":{"date-parts":[[2003,1,1]],"date-time":"2003-01-01T00:41:09Z","timestamp":1041381669000},"source":"Crossref","is-referenced-by-count":1,"title":["Abstract:
+        Stratigraphic Architecture Of The Triassic Series In The Saharan Province,
+        Algeria"],"prefix":"10.1306","volume":"83","author":[{"family":"ESCHARD, REMI,
+        GUY DESAUBLIAUX, RUE","sequence":"first","affiliation":[]}],"member":"2","container-title":["AAPG
+        Bulletin"],"language":"en","link":[{"URL":"http:\/\/archives.datapages.com\/data\/bulletns\/1999\/08aug\/1296\/1298w.htm","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,9,21]],"date-time":"2016-09-21T19:05:17Z","timestamp":1474484717000},"score":0.99999994,"issued":{"date-parts":[[1999]]},"references-count":0,"alternative-id":["E4FD3649-1732-11D7-8645000102C1865D"],"URL":"http:\/\/dx.doi.org\/10.1306\/e4fd3649-1732-11d7-8645000102c1865d","ISSN":["0149-1423"],"issn-type":[{"value":"0149-1423","type":"print"}],"subject":["Earth
+        and Planetary Sciences (miscellaneous)","Geochemistry and Petrology","Geology","Energy
+        Engineering and Power Technology","Fuel Technology"],"published":{"date-parts":[[1999]]}},{"indexed":{"date-parts":[[2021,5,10]],"date-time":"2021-05-10T22:53:22Z","timestamp":1620687202462},"reference-count":0,"publisher":"Eotvos
+        Lorand University (ELTE)","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["TEL-hun"],"DOI":"10.37205\/tel-hun.2015.ksz","type":"journal-issue","created":{"date-parts":[[2021,2,8]],"date-time":"2021-02-08T09:49:21Z","timestamp":1612777761000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.37205","volume":"14","member":"9324","published-online":{"date-parts":[[2015,10,26]]},"container-title":["Pedag\u00f3gusk\u00e9pz\u00e9s"],"deposited":{"date-parts":[[2021,2,8]],"date-time":"2021-02-08T09:49:21Z","timestamp":1612777761000},"score":0.99999994,"issued":{"date-parts":[[2015,10,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.37205\/tel-hun.2015.ksz","ISSN":["0133-2570"],"issn-type":[{"value":"0133-2570","type":"print"}],"published":{"date-parts":[[2015,10,26]]}},{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T14:37:32Z","timestamp":1620484652669},"edition-number":"1","reference-count":0,"publisher":"Imprensa
+        da Universidade de Coimbra","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.14195\/978-989-26-1278-2_5","type":"book-chapter","created":{"date-parts":[[2016,12,30]],"date-time":"2016-12-30T12:29:37Z","timestamp":1483100977000},"page":"77-88","source":"Crossref","is-referenced-by-count":0,"title":["O
+        livro do tempo na Alceste de Eur\u00edpides: narrativa passada e suas reescritas"],"prefix":"10.14195","author":[{"given":"Delfim
+        F.","family":"Le\u00e3o","sequence":"first","affiliation":[]}],"member":"5739","container-title":["O
+        livro do tempo: escritas e reescritas: teatro greco-latino e sua recep\u00e7\u00e3o
+        I"],"deposited":{"date-parts":[[2016,12,30]],"date-time":"2016-12-30T12:29:40Z","timestamp":1483100980000},"score":0.99999994,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.14195\/978-989-26-1278-2_5"},{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T08:39:42Z","timestamp":1620463182368},"publisher-location":"New
+        York, NY","reference-count":7,"publisher":"Springer New York","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014]]},"DOI":"10.1007\/978-1-4614-3872-4_310","type":"book-chapter","created":{"date-parts":[[2013,5,2]],"date-time":"2013-05-02T07:20:43Z","timestamp":1367479243000},"page":"2431-2438","source":"Crossref","is-referenced-by-count":0,"title":["Construction
+        of Personalized Network Learning Resource Service System Based on Semantic
+        Web Services"],"prefix":"10.1007","author":[{"given":"Zhujuan","family":"Li","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2013,4,4]]},"reference":[{"key":"310_CR03101","first-page":"767","volume":"12","author":"Liang
+        Bangyong Li Juan child, Kehong","year":"2004","unstructured":"Liang Bangyong
+        Li Juan child, Kehong (2004) Recommendation model based on semantic web page
+        Chinese Journal of Computers. 12:767\u2013772","journal-title":"Chinese Journal
+        of Computers."},{"key":"310_CR03102","unstructured":"Wikipedia \n                    http:\/\/zh.wikipedia.org\/zh\/Web%E6%9C%8D%E5%8A%A1"},{"key":"310_CR03103","first-page":"387","volume":"33","author":"Lin
+        Zhiyang","year":"2008","unstructured":"Lin Zhiyang (2008) Research of OWL
+        semantic ontology-based reasoning and storage, Journals of network 33: 387\u2013392","journal-title":"Journals
+        of network"},{"key":"310_CR03104","first-page":"37","volume":"12","author":"Chen
+        Xuegang","year":"2009","unstructured":"Chen Xuegang, Yang Lei (2009) Personalized
+        web information recommendation model, Computer Integrated Manufacturing Systems.
+        12:37\u201344","journal-title":"Computer Integrated Manufacturing Systems"},{"key":"310_CR03105","first-page":"40","volume":"3","author":"Chen
+        Jun","year":"2006","unstructured":"Chen Jun, Tang Yan (2006) Personalized
+        web information recommendation model of web social network, Journal of Computer
+        Research and Development. 3:40\u201345","journal-title":"Journal of Computer
+        Research and Development"},{"key":"310_CR03106","first-page":"38","volume":"27","author":"Yong
+        full","year":"2008","unstructured":"Yong full (2008) Web services and semantic
+        web services, Journals of network. 27:38\u201342","journal-title":"Journals
+        of network"},{"key":"310_CR03107","first-page":"09","volume":"22","author":"Huang
+        Boping","year":"2011","unstructured":"Huang Boping, Zhao Wei (2011) Study
+        of the education semantics based personalized E-learning system service-oriented
+        architecture, Journal of Guangdong Polytechnic Normal University. 22:09\u201314","journal-title":"Journal
+        of Guangdong Polytechnic Normal University"}],"container-title":["Proceedings
+        of the 2012 International Conference on Cybernetics and Informatics","Lecture
+        Notes in Electrical Engineering"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4614-3872-4_310","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,5,12]],"date-time":"2019-05-12T19:18:44Z","timestamp":1557688724000},"score":0.99999994,"issued":{"date-parts":[[2013,4,4]]},"references-count":7,"URL":"http:\/\/dx.doi.org\/10.1007\/978-1-4614-3872-4_310","ISSN":["1876-1100","1876-1119"],"issn-type":[{"value":"1876-1100","type":"print"},{"value":"1876-1119","type":"electronic"}],"published":{"date-parts":[[2013,4,4]]}},{"indexed":{"date-parts":[[2021,7,22]],"date-time":"2021-07-22T20:04:40Z","timestamp":1626984280582},"reference-count":42,"publisher":"AIP
+        Publishing","issue":"12","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of Chemical Physics"],"published-print":{"date-parts":[[1981,6,15]]},"DOI":"10.1063\/1.441082","type":"journal-article","created":{"date-parts":[[2003,2,28]],"date-time":"2003-02-28T15:46:48Z","timestamp":1046447208000},"page":"6771-6776","source":"Crossref","is-referenced-by-count":35,"title":["Single
+        and double ionization of nitric oxide by electron impact from threshold up
+        to 180 eV"],"prefix":"10.1063","volume":"74","author":[{"given":"Y. B.","family":"Kim","sequence":"first","affiliation":[]},{"given":"K.","family":"Stephan","sequence":"additional","affiliation":[]},{"given":"E.","family":"M\u00e4rk","sequence":"additional","affiliation":[]},{"given":"T.
+        D.","family":"M\u00e4rk","sequence":"additional","affiliation":[]}],"member":"317","reference":[{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1063\/1.436411"},{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1063\/1.436411"},{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1063\/1.436411"},{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1063\/1.436411"},{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1063\/1.436411"},{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1063\/1.436411"},{"key":"r2","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRevA.19.2154"},{"key":"r3","doi-asserted-by":"publisher","DOI":"10.1063\/1.441478"},{"key":"r3","doi-asserted-by":"publisher","DOI":"10.1063\/1.441478"},{"key":"r4","doi-asserted-by":"publisher","DOI":"10.1063\/1.440606"},{"key":"r4","doi-asserted-by":"publisher","DOI":"10.1063\/1.440606"},{"key":"r5","doi-asserted-by":"crossref","first-page":"1407","DOI":"10.1515\/zna-1971-0906","volume":"26","author":"Edquist
+        O.","year":"1971","journal-title":"Z. Naturforsch."},{"key":"r6","doi-asserted-by":"publisher","DOI":"10.1063\/1.1675233"},{"key":"r7","doi-asserted-by":"publisher","DOI":"10.1063\/1.1677680"},{"key":"r8","doi-asserted-by":"publisher","DOI":"10.1088\/0022-3700\/5\/9\/021"},{"key":"r9","doi-asserted-by":"publisher","DOI":"10.1063\/1.1678729"},{"key":"r10","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRevA.6.607"},{"key":"r11","doi-asserted-by":"publisher","DOI":"10.1103\/RevModPhys.45.423"},{"key":"r12","doi-asserted-by":"publisher","DOI":"10.1029\/JA079i013p01911"},{"key":"r13","doi-asserted-by":"publisher","DOI":"10.1063\/1.433292"},{"key":"r14","doi-asserted-by":"publisher","DOI":"10.1063\/1.438757"},{"key":"r15","doi-asserted-by":"publisher","DOI":"10.1016\/0020-7381(80)80064-7"},{"key":"r16","volume":"6","author":"Rosenstock
+        H. M.","year":"1977","journal-title":"J. Phys. Chem. Ref. Data","issn-type":"print","ISSN":"http:\/\/id.crossref.org\/issn\/0047-2689"},{"key":"r17","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRev.59.354"},{"key":"r18","doi-asserted-by":"publisher","DOI":"10.1063\/1.1731972"},{"key":"r19","doi-asserted-by":"publisher","DOI":"10.1063\/1.1670983"},{"key":"r20","doi-asserted-by":"publisher","DOI":"10.1063\/1.1676411"},{"key":"r21","doi-asserted-by":"publisher","DOI":"10.1088\/0022-3700\/6\/1\/021"},{"key":"r22","doi-asserted-by":"publisher","DOI":"10.1016\/0020-7381(78)80028-X"},{"key":"r23","doi-asserted-by":"publisher","DOI":"10.1063\/1.1731793"},{"key":"r24","doi-asserted-by":"publisher","DOI":"10.1016\/0022-2852(62)90209-6"},{"key":"r25","doi-asserted-by":"publisher","DOI":"10.1063\/1.1680845"},{"key":"r27","doi-asserted-by":"publisher","DOI":"10.1021\/ja00737a003"},{"key":"r28","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRev.51.86"},{"key":"r29","doi-asserted-by":"publisher","DOI":"10.1103\/RevModPhys.23.185"},{"key":"r30","doi-asserted-by":"publisher","DOI":"10.1063\/1.1667949"},{"key":"r31","doi-asserted-by":"publisher","DOI":"10.1063\/1.1697146"},{"key":"r34","doi-asserted-by":"publisher","DOI":"10.1063\/1.1695897"},{"key":"r35","doi-asserted-by":"publisher","DOI":"10.1063\/1.1696957"},{"key":"r36","doi-asserted-by":"publisher","DOI":"10.1063\/1.1700987"},{"key":"r37","first-page":"456","volume":"39","author":"Tanaka
+        Y.","year":"1942","journal-title":"Sci. Papers Inst. Phys. Chem. Research
+        (Tokyo)"},{"key":"r38","doi-asserted-by":"publisher","DOI":"10.1364\/JOSA.49.000338"}],"container-title":["The
+        Journal of Chemical Physics"],"language":"en","link":[{"URL":"http:\/\/aip.scitation.org\/doi\/pdf\/10.1063\/1.441082","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,3,12]],"date-time":"2020-03-12T19:15:07Z","timestamp":1584040507000},"score":0.99999994,"issued":{"date-parts":[[1981,6,15]]},"references-count":42,"journal-issue":{"issue":"12","published-print":{"date-parts":[[1981,6,15]]}},"alternative-id":["10.1063\/1.441082"],"URL":"http:\/\/dx.doi.org\/10.1063\/1.441082","ISSN":["0021-9606","1089-7690"],"issn-type":[{"value":"0021-9606","type":"print"},{"value":"1089-7690","type":"electronic"}],"subject":["Physical
+        and Theoretical Chemistry","General Physics and Astronomy"],"published":{"date-parts":[[1981,6,15]]}},{"indexed":{"date-parts":[[2021,5,9]],"date-time":"2021-05-09T02:22:07Z","timestamp":1620526927189},"reference-count":0,"publisher":"IGI
+        Global","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2008]]},"abstract":"<jats:p>Organizations
+        are faced with increasing costs needed to train employees in today\u2019s
+        high technology environment. Educators are also striving to develop new training
+        and teaching methods that will yield optimal learning transfer and complex
+        skill acquisition. This study suggests that trainee\/learner cognitive processing
+        capacity, information presentation format and complexity, and multimedia technology
+        should be leveraged in order to minimize training duration and costs and maximize
+        knowledge transfer. It presents a causal model of how multimedia and information
+        complexity interact to influence sustained attention, mental effort and information
+        processing quality, all of which subsequently impact comprehension and learner
+        confidence and satisfaction outcomes. Subjects read a text script, viewed
+        an acetate overhead slide presentation containing text-with-graphics, or viewed
+        a multimedia presentation depicting the greenhouse effect (low complexity)
+        or photocopier operation (high complexity). Causal path analysis results indicated
+        that presentation media (or format) had a direct impact on sustained attention,
+        mental effort, information processing quality, comprehension, and learner
+        confidence and satisfaction. Information complexity had direct effects on
+        sustained attention, mental effort and information processing quality. Finally,
+        comprehension and learner confidence and satisfaction were both influenced
+        through an intervening sequence of sustained attention, mental effort and
+        information processing quality.<\/jats:p>","DOI":"10.4018\/978-1-59904-953-3.ch086","type":"book-chapter","created":{"date-parts":[[2011,5,24]],"date-time":"2011-05-24T17:48:42Z","timestamp":1306259322000},"page":"1248-1261","source":"Crossref","is-referenced-by-count":0,"title":["Multimedia,
+        Information Compexity, and Cognitive Processing"],"prefix":"10.4018","author":[{"given":"Hayward
+        P.","family":"Andres","sequence":"first","affiliation":[{"name":"Portland
+        State University, USA"}]}],"member":"2432","container-title":["Multimedia
+        Technologies"],"link":[{"URL":"https:\/\/www.igi-global.com\/viewtitle.aspx?TitleId=27152","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,2,7]],"date-time":"2019-02-07T16:23:48Z","timestamp":1549556628000},"score":0.99999994,"subtitle":[""],"issued":{"date-parts":[[2008]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.4018\/978-1-59904-953-3.ch086","published":{"date-parts":[[2008]]}},{"indexed":{"date-parts":[[2021,5,12]],"date-time":"2021-05-12T09:37:55Z","timestamp":1620812275780},"reference-count":18,"publisher":"Elsevier
+        BV","license":[{"start":{"date-parts":[[2018,9,1]],"date-time":"2018-09-01T00:00:00Z","timestamp":1535760000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/501100001809","name":"National
+        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["51505466","51576203"]},{"DOI":"10.13039\/501100004739","name":"Youth
+        Innovation Promotion Association, CAS","doi-asserted-by":"publisher","award":["2018032"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Measurement"],"published-print":{"date-parts":[[2018,9]]},"DOI":"10.1016\/j.measurement.2018.05.024","type":"journal-article","created":{"date-parts":[[2018,5,7]],"date-time":"2018-05-07T17:00:03Z","timestamp":1525712403000},"page":"545-553","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":8,"title":["Online
+        measuring method and dynamic characteristics of gas kinetic parameters of
+        linear compressor"],"prefix":"10.1016","volume":"125","author":[{"given":"Huiming","family":"Zou","sequence":"first","affiliation":[]},{"given":"Can","family":"Li","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-0036-2696","authenticated-orcid":false,"given":"Mingsheng","family":"Tang","sequence":"additional","affiliation":[]},{"given":"Min","family":"Wang","sequence":"additional","affiliation":[]},{"given":"Changqing","family":"Tian","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.measurement.2018.05.024_b0005","unstructured":"B.
+        Ku, J. Park, Y. Hwang, J. Lee, Performance evaluation of the energy efficiency
+        of crank-driven compressor and linear compressor for a household refrigerator,
+        in: International Compressor Engineering Conference at Purdue, 2010."},{"key":"10.1016\/j.measurement.2018.05.024_b0010","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1016\/j.cryogenics.2007.12.002","article-title":"Analysis
+        on the stirling-type pulse tube refrigerator in consideration of dynamics
+        of linear compressor","volume":"48","author":"Ko","year":"2008","journal-title":"Cryogenics"},{"key":"10.1016\/j.measurement.2018.05.024_b0015","article-title":"Development
+        of a dry linear compressor for GM and pulse tube cryocoolers","volume":"101","author":"Hoehne","year":"2015","journal-title":"Iop
+        Conf. Ser. \u2013 Mater. Sci."},{"key":"10.1016\/j.measurement.2018.05.024_b0020","doi-asserted-by":"crossref","first-page":"340","DOI":"10.1016\/j.enconman.2014.05.041","article-title":"Performance
+        evaluation of free piston compressor coupling organic Rankine cycle under
+        different operating conditions","volume":"86","author":"Han","year":"2014","journal-title":"Energy
+        Conv. Manag."},{"key":"10.1016\/j.measurement.2018.05.024_b0025","doi-asserted-by":"crossref","first-page":"278","DOI":"10.1016\/j.enconman.2015.12.020","article-title":"Gas
+        action effect of free piston Stirling engine","volume":"110","author":"Mou","year":"2016","journal-title":"Energy
+        Conv. Manag."},{"key":"10.1016\/j.measurement.2018.05.024_b0030","doi-asserted-by":"crossref","first-page":"1536","DOI":"10.1016\/j.ijrefrig.2009.05.002","article-title":"An
+        experimental and numerical study on dynamic characteristic of linear compressor
+        in refrigeration system","volume":"32","author":"Kim","year":"2009","journal-title":"Int.
+        J. Refrig."},{"key":"10.1016\/j.measurement.2018.05.024_b0035","unstructured":"M.
+        Lamantia, A. Contarini, S. Giovanni, Numerical and experimental analysis of
+        a linear compressor, in: International Compressor Engineering Conference,
+        Purdue e-Pubs, Purdue University,West Lafayette, Indiana, USA, 2002."},{"key":"10.1016\/j.measurement.2018.05.024_b0040","doi-asserted-by":"crossref","first-page":"152","DOI":"10.1115\/1.1424297","article-title":"Theoretical
+        and experimental analysis of nonlinear dynamics in a linear compressor","volume":"124","author":"Choe","year":"2002","journal-title":"J.
+        Vib. Acoust."},{"key":"10.1016\/j.measurement.2018.05.024_b0045","first-page":"25","article-title":"Performance
+        simulation and experiment research on moving-magnet linear oscillation motor","author":"Zou","year":"2012","journal-title":"Electr.
+        Mach. Control"},{"key":"10.1016\/j.measurement.2018.05.024_b0050","doi-asserted-by":"crossref","first-page":"487","DOI":"10.1108\/03321640610649140","article-title":"Iron
+        loss analysis of linear oscillating actuator for linear compressor","volume":"25","author":"Lee","year":"2006","journal-title":"Compel-Int.
+        J. Comp. Math. Electr. Electron. Eng."},{"key":"10.1016\/j.measurement.2018.05.024_b0055","doi-asserted-by":"crossref","first-page":"4163","DOI":"10.1007\/s12206-014-0929-1","article-title":"Performance
+        characteristics around the TDC of linear compressor based on whole-process
+        simulation","volume":"28","author":"Zou","year":"2014","journal-title":"J.
+        Mech. Sci. Technol"},{"key":"10.1016\/j.measurement.2018.05.024_b0060","doi-asserted-by":"crossref","first-page":"32","DOI":"10.1016\/j.ijrefrig.2016.02.007","article-title":"Piston
+        position sensing and control in a linear compressor using a search coil","volume":"66","author":"Liang","year":"2016","journal-title":"Int.
+        J. Refrig."},{"key":"10.1016\/j.measurement.2018.05.024_b0065","doi-asserted-by":"crossref","first-page":"121","DOI":"10.1016\/0022-460X(79)90507-8","article-title":"On
+        the resonance and operational behavior of an oscillating electrodynamic compressor","volume":"67","author":"Pollak","year":"1979","journal-title":"J.
+        Sound Vib."},{"key":"10.1016\/j.measurement.2018.05.024_b0070","doi-asserted-by":"crossref","first-page":"545","DOI":"10.1299\/jsmec.43.545","article-title":"Analysis
+        of nonlinear dynamics in a linear compressor","volume":"43","author":"Choe","year":"2000","journal-title":"Jsme
+        Int. J. Ser. C-Mech. Syst. Mach. Elem. Manuf."},{"key":"10.1016\/j.measurement.2018.05.024_b0075","first-page":"243","article-title":"Investigation
+        on the jump phenomenon of linear compressor, Mechatronics 2013","author":"Zou","year":"2014","journal-title":"Recent
+        Technol. Scient. Adv."},{"key":"10.1016\/j.measurement.2018.05.024_b0080","doi-asserted-by":"crossref","first-page":"1885","DOI":"10.1007\/s12206-011-0516-7","article-title":"Experimental
+        investigation and performance analysis of a dual-cylinder opposed linear compressor","volume":"25","author":"Zou","year":"2011","journal-title":"J.
+        Mech. Sci. Technol."},{"key":"10.1016\/j.measurement.2018.05.024_b0085","doi-asserted-by":"crossref","first-page":"109","DOI":"10.3233\/JAE-2010-1304","article-title":"Efficiency
+        measurement of linear oscillation motor with gas load","volume":"34","author":"Zou","year":"2010","journal-title":"Int.
+        J. Appl. Electromagnet. Mech."},{"key":"10.1016\/j.measurement.2018.05.024_b0090","unstructured":"L.
+        Zhang, Research on characteristics and control strategy of the linear compressor
+        for the refrigerator, University of Chinese Academy of Sciences, 2012 (in
+        Chinese)."}],"container-title":["Measurement"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0263224118304056?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0263224118304056?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,10,17]],"date-time":"2019-10-17T17:17:55Z","timestamp":1571332675000},"score":0.9999999,"issued":{"date-parts":[[2018,9]]},"references-count":18,"alternative-id":["S0263224118304056"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.measurement.2018.05.024","ISSN":["0263-2241"],"issn-type":[{"value":"0263-2241","type":"print"}],"subject":["Applied
+        Mathematics","Electrical and Electronic Engineering","Condensed Matter Physics","Instrumentation"],"published":{"date-parts":[[2018,9]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Online measuring method and dynamic characteristics
+        of gas kinetic parameters of linear compressor","name":"articletitle","label":"Article
+        Title"},{"value":"Measurement","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1016\/j.measurement.2018.05.024","name":"articlelink","label":"CrossRef
         DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"Copyright \u00a9 2015 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2021,5,31]],"date-time":"2021-05-31T09:03:55Z","timestamp":1622451835718},"reference-count":0,"publisher":"American
-        Chemical Society (ACS)","issue":"9","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Phys. Chem."],"published-print":{"date-parts":[[1989,5]]},"DOI":"10.1021\/j100346a006","type":"journal-article","created":{"date-parts":[[2005,3,15]],"date-time":"2005-03-15T00:04:56Z","timestamp":1110845096000},"page":"3393-3396","source":"Crossref","is-referenced-by-count":4,"title":["Theoretical
-        determination of relative stabilities of various polymorphs of organic substances:
-        application on para-substituted phenols"],"prefix":"10.1021","volume":"93","author":[{"given":"J.","family":"Royer","sequence":"first","affiliation":[]},{"given":"C.","family":"Decoret","sequence":"additional","affiliation":[]},{"given":"B.","family":"Tinland","sequence":"additional","affiliation":[]},{"given":"M.","family":"Perrin","sequence":"additional","affiliation":[]},{"given":"R.","family":"Perrin","sequence":"additional","affiliation":[]}],"member":"316","published-online":{"date-parts":[[2002,5,1]]},"container-title":["The
-        Journal of Physical Chemistry"],"language":"en","link":[{"URL":"https:\/\/pubs.acs.org\/doi\/pdf\/10.1021\/j100346a006","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,4]],"date-time":"2021-04-04T15:29:07Z","timestamp":1617550147000},"score":1.0,"issued":{"date-parts":[[1989,5]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[1989,5]]},"issue":"9"},"alternative-id":["10.1021\/j100346a006"],"URL":"http:\/\/dx.doi.org\/10.1021\/j100346a006","ISSN":["0022-3654","1541-5740"],"issn-type":[{"value":"0022-3654","type":"print"},{"value":"1541-5740","type":"electronic"}],"subject":["Physical
-        and Theoretical Chemistry","General Engineering"]},{"indexed":{"date-parts":[[2021,3,17]],"date-time":"2021-03-17T16:40:34Z","timestamp":1615999234746},"publisher-location":"Washington,
-        DC","reference-count":0,"publisher":"American Chemical Society","isbn-type":[{"value":"9780841239708","type":"print"},{"value":"9780841220782","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2007,3,13]]},"DOI":"10.1021\/bk-2007-0960.ch004","type":"book-chapter","created":{"date-parts":[[2009,7,24]],"date-time":"2009-07-24T01:27:53Z","timestamp":1248398873000},"page":"50-58","source":"Crossref","is-referenced-by-count":1,"title":["Iodoamidation
-        of Glycals: A Facile Preparation of 2-Deoxy-N-glycosylamides"],"prefix":"10.1021","author":[{"given":"Cecilia
-        H.","family":"Marzabadi","sequence":"first","affiliation":[{"name":"Department
-        of Chemistry and Biochemistry, Seton Hall University, 400 South Orange Avenue,
-        South Orange, NJ 07079"}]},{"given":"Michael","family":"DeCastro","sequence":"additional","affiliation":[{"name":"Department
-        of Chemistry and Biochemistry, Seton Hall University, 400 South Orange Avenue,
-        South Orange, NJ 07079"}]}],"member":"316","published-online":{"date-parts":[[2007,7,23]]},"container-title":["ACS
-        Symposium Series","Frontiers in Modern Carbohydrate Chemistry"],"link":[{"URL":"https:\/\/pubs.acs.org\/doi\/pdf\/10.1021\/bk-2007-0960.ch004","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,3,17]],"date-time":"2021-03-17T16:12:07Z","timestamp":1615997527000},"score":1.0,"issued":{"date-parts":[[2007,3,13]]},"ISBN":["9780841239708","9780841220782"],"references-count":0,"alternative-id":["10.1021\/bk-2007-0960.ch004","10.1021\/symposium","10.1021\/bk-2007-0960"],"URL":"http:\/\/dx.doi.org\/10.1021\/bk-2007-0960.ch004","ISSN":["0097-6156","1947-5918"],"issn-type":[{"value":"0097-6156","type":"print"},{"value":"1947-5918","type":"electronic"}]},{"indexed":{"date-parts":[[2020,11,7]],"date-time":"2020-11-07T00:40:15Z","timestamp":1604709615939},"reference-count":0,"publisher":"American
-        Astronomical Society","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["ApJ","ApJL"],"published-print":{"date-parts":[[1995,4]]},"DOI":"10.1086\/175538","type":"journal-article","created":{"date-parts":[[2002,7,26]],"date-time":"2002-07-26T18:38:03Z","timestamp":1027708683000},"page":"450","source":"Crossref","is-referenced-by-count":6,"title":["Heating
-        of the solar middle chromosphere by large-scale electric currents"],"prefix":"10.3847","volume":"443","author":[{"given":"M.
-        L.","family":"Goodman","sequence":"first","affiliation":[]}],"member":"2208","container-title":["The
-        Astrophysical Journal"],"language":"en","deposited":{"date-parts":[[2020,11,6]],"date-time":"2020-11-06T22:15:04Z","timestamp":1604700904000},"score":1.0,"issued":{"date-parts":[[1995,4]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1086\/175538","ISSN":["0004-637X","1538-4357"],"issn-type":[{"value":"0004-637X","type":"print"},{"value":"1538-4357","type":"electronic"}],"subject":["Space
-        and Planetary Science","Astronomy and Astrophysics"]},{"indexed":{"date-parts":[[2021,2,20]],"date-time":"2021-02-20T15:44:30Z","timestamp":1613835870056},"reference-count":8,"publisher":"SPE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2012,9,11]]},"abstract":"<jats:title>Abstract<\/jats:title>\n               <jats:p>Mosquito
-        management is a \"cradle-to-the-grave\" responsibility facing many new major
-        capital projects (MCPs) operating in or around mosquito breeding habitats.
-        The costs associated with developing and implementing an appropriate program
-        can be substantial, resulting in expenditure in the order of tens of millions
-        of dollars over a project''s lifetime.<\/jats:p>\n               <jats:p>This
-        paper discusses the challenges that face new MCPs in Western Australia (WA),
-        which have responsibility for managing mosquito borne diseases. These challenges
-        can broadly be categorised as: Legislative e.g. balancing occupational and
-        public health and safety objectives against environmental objectives, which
-        are sometimes misaligned;Competency surrounding development of an appropriate
-        project level mosquito management plan (MMP);Complexity and costs surrounding
-        mosquito monitoring and chemical treatment programs;Timing and relevance of
-        stakeholder engagement; andOwnership of mosquito control measures.<\/jats:p>\n               <jats:p>A
-        best industry practice mosquito management program can be achieved by ensuring
-        integrity in the following key areas: Understanding the legislative environment
-        and processes involved in program approval;Design and implementation of a
-        comprehensive chemical treatment program;Clear definition of internal company
-        roles and responsibilities for implementing the program; andAppropriate stakeholder
-        engagement and buy-in.<\/jats:p>\n               <jats:p>This paper explains
-        the social, economic and legislative challenges facing MCPs when developing
-        their own mosquito management programs and offers some key insights into components
-        of a successful program.<\/jats:p>","DOI":"10.2118\/156731-ms","type":"proceedings-article","created":{"date-parts":[[2012,9,11]],"date-time":"2012-09-11T07:03:55Z","timestamp":1347347035000},"source":"Crossref","is-referenced-by-count":0,"title":["Mosquito
-        management in Western Australia - An overview of the challenges facing major
-        capital projects and key components of a successful program"],"prefix":"10.2118","author":[{"given":"Andrew","family":"Chandran","sequence":"additional","affiliation":[{"name":"Chevron
-        Australia Pty Ltd."}]}],"member":"861","published-online":{"date-parts":[[2012,9,11]]},"event":{"name":"International
-        Conference on Health, Safety and Environment in Oil and Gas Exploration and
-        Production","location":"Perth, Australia","acronym":"12HSE","start":{"date-parts":[[2012,9,11]]},"end":{"date-parts":[[2012,9,13]]}},"container-title":["All
-        Days"],"link":[{"URL":"http:\/\/onepetro.org\/SPEHSE\/proceedings-pdf\/doi\/10.2118\/156731-MS\/1654294\/spe-156731-ms.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"http:\/\/onepetro.org\/SPEHSE\/proceedings-pdf\/doi\/10.2118\/156731-MS\/1654294\/spe-156731-ms.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,2,20]],"date-time":"2021-02-20T15:17:36Z","timestamp":1613834256000},"score":1.0,"issued":{"date-parts":[[2012,9,11]]},"references-count":8,"URL":"http:\/\/dx.doi.org\/10.2118\/156731-ms"},{"indexed":{"date-parts":[[2021,7,3]],"date-time":"2021-07-03T08:16:26Z","timestamp":1625300186695},"reference-count":0,"publisher":"Wiley","issue":"1-2","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":518,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Feddes
-        Repert."],"published-print":{"date-parts":[[2014,4]]},"DOI":"10.1002\/fedr.201470012","type":"journal-article","created":{"date-parts":[[2015,4,13]],"date-time":"2015-04-13T07:44:32Z","timestamp":1428911072000},"source":"Crossref","is-referenced-by-count":0,"title":["Contents:
-        Feddes Repertorium 1-2\/2014"],"prefix":"10.1002","volume":"125","member":"311","published-online":{"date-parts":[[2015,4,13]]},"container-title":["Feddes
-        Repertorium"],"language":"en","link":[{"URL":"http:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Ffedr.201470012","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Ffedr.201470012","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1002\/fedr.201470012\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,3]],"date-time":"2021-07-03T07:30:39Z","timestamp":1625297439000},"score":1.0,"issued":{"date-parts":[[2014,4]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2014,4]]},"issue":"1-2"},"URL":"http:\/\/dx.doi.org\/10.1002\/fedr.201470012","archive":["Portico"],"ISSN":["0014-8962"],"issn-type":[{"value":"0014-8962","type":"print"}],"subject":["Plant
-        Science","Ecology, Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2020,4,16]],"date-time":"2020-04-16T13:01:13Z","timestamp":1587042073453},"reference-count":0,"publisher":"Southern
-        Medical Association","issue":"12","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Southern
-        Medical Journal"],"published-print":{"date-parts":[[1936,12]]},"DOI":"10.1097\/00007611-193612000-00001","type":"journal-article","created":{"date-parts":[[2011,4,6]],"date-time":"2011-04-06T06:57:28Z","timestamp":1302073048000},"page":"1151-1156","source":"Crossref","is-referenced-by-count":0,"title":["THE
-        ROENTGEN RAY: FACTS AND FICTION"],"prefix":"10.14423","volume":"29","author":[{"given":"Fred
-        M.","family":"Hodges","sequence":"first","affiliation":[]}],"member":"5542","container-title":["Southern
-        Medical Journal"],"language":"en","deposited":{"date-parts":[[2014,7,16]],"date-time":"2014-07-16T17:54:34Z","timestamp":1405533274000},"score":1.0,"subtitle":[""],"issued":{"date-parts":[[1936,12]]},"references-count":0,"journal-issue":{"issue":"12"},"URL":"http:\/\/dx.doi.org\/10.1097\/00007611-193612000-00001","ISSN":["0038-4348"],"issn-type":[{"value":"0038-4348","type":"print"}],"subject":["General
-        Medicine"]},{"indexed":{"date-parts":[[2021,4,21]],"date-time":"2021-04-21T11:57:36Z","timestamp":1619006256051},"publisher-location":"Berlin,
-        Boston","reference-count":0,"publisher":"DE GRUYTER","isbn-type":[{"value":"9783111356365","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1515\/9783111356365.128","type":"book-chapter","created":{"date-parts":[[2014,6,10]],"date-time":"2014-06-10T12:56:36Z","timestamp":1402404996000},"source":"Crossref","is-referenced-by-count":0,"title":["J."],"prefix":"10.1515","member":"374","container-title":["Fr\u00fchneuhochdeutsches
-        Glossar"],"link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9783111356365.128\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,21]],"date-time":"2021-04-21T07:43:21Z","timestamp":1618991001000},"score":1.0,"issued":{"date-parts":[[null]]},"ISBN":["9783111356365"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1515\/9783111356365.128"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:59 GMT
+        Type"},{"value":"\u00a9 2018 Elsevier Ltd. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2021,5,12]],"date-time":"2021-05-12T06:18:25Z","timestamp":1620800305477},"reference-count":6,"publisher":"Informa
+        UK Limited","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of Experimental Education"],"published-print":{"date-parts":[[1934,1,2]]},"DOI":"10.1080\/00220973.1934.11009950","type":"journal-article","created":{"date-parts":[[2015,1,31]],"date-time":"2015-01-31T01:07:43Z","timestamp":1422666463000},"page":"301-309","source":"Crossref","is-referenced-by-count":2,"title":["\u201cPerseveration\u201d
+        in a Group of Subnormal Children"],"prefix":"10.1080","volume":"2","author":[{"given":"K.
+        H.","family":"Rogers","sequence":"first","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2015,1,30]]},"reference":[{"key":"CIT0211","first-page":"20","author":"Cattell
+        R. B.","year":"1933","journal-title":"British Journal of Psychology"},{"key":"CIT0212","first-page":"387419","author":"Lankes
+        W.","year":"1915","journal-title":"British Journal of Psychology"},{"key":"CIT0213","doi-asserted-by":"crossref","first-page":"1","author":"Line
+        W.","year":"1932","journal-title":"Journal of Experimental Education","DOI":"10.1080\/00220973.1932.11009882"},{"key":"CIT0214","first-page":"5","author":"Pinard
+        J. W.","year":"1932","journal-title":"British Journal of Psychology"},{"key":"CIT0215","doi-asserted-by":"crossref","first-page":"35","author":"Rogers
+        K. H.","year":"1933","journal-title":"Journal of Experimental Education","DOI":"10.1080\/00220973.1933.11009925"},{"key":"CIT0216","unstructured":"Spearman,
+        C. The Abilities of Man, (New York: Macmillan Company, 1927), pp. xxxiii and
+        415."}],"container-title":["The Journal of Experimental Education"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/00220973.1934.11009950","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T04:41:11Z","timestamp":1498192871000},"score":0.9999999,"issued":{"date-parts":[[1934,1,2]]},"references-count":6,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2015,1,30]]},"published-print":{"date-parts":[[1934,1,2]]}},"alternative-id":["10.1080\/00220973.1934.11009950"],"URL":"http:\/\/dx.doi.org\/10.1080\/00220973.1934.11009950","ISSN":["0022-0973","1940-0683"],"issn-type":[{"value":"0022-0973","type":"print"},{"value":"1940-0683","type":"electronic"}],"subject":["Developmental
+        and Educational Psychology","Education"],"published":{"date-parts":[[1934,1,2]]}},{"indexed":{"date-parts":[[2021,7,28]],"date-time":"2021-07-28T20:25:18Z","timestamp":1627503918740},"reference-count":0,"publisher":"Wiley","issue":"S1","license":[{"start":{"date-parts":[[2018,4,1]],"date-time":"2018-04-01T00:00:00Z","timestamp":1522540800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"},{"start":{"date-parts":[[2018,4,1]],"date-time":"2018-04-01T00:00:00Z","timestamp":1522540800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"funder":[{"DOI":"10.13039\/501100001663","name":"Volkswagen
+        Foundation","doi-asserted-by":"publisher"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["FASEB
+        j."],"published-print":{"date-parts":[[2018,4]]},"DOI":"10.1096\/fasebj.2018.32.1_supplement.565.11","type":"journal-article","created":{"date-parts":[[2021,6,21]],"date-time":"2021-06-21T16:23:37Z","timestamp":1624292617000},"source":"Crossref","is-referenced-by-count":0,"title":["The
+        Chick Chorioallantoic Membrane (CAM) as a Multi\u2010Purpose Preclinical Model
+        in Oncology"],"prefix":"10.1096","volume":"32","author":[{"given":"Susanne","family":"Hafner","sequence":"first","affiliation":[{"name":"Institute
+        of Pharmacology of Natural Products &amp; Clinical PharmacologyUlm UniversityUlmGermany"}]},{"given":"Zhi","family":"Zuo","sequence":"additional","affiliation":[{"name":"Department
+        of Internal Medicine IICore Facility Small Animal MRIUlm UniversityUlmGermany"}]},{"given":"Volker","family":"Rasche","sequence":"additional","affiliation":[{"name":"Department
+        of Internal Medicine IICore Facility Small Animal MRIUlm UniversityUlmGermany"}]},{"given":"Tatiana","family":"Syrovets","sequence":"additional","affiliation":[{"name":"Institute
+        of Pharmacology of Natural Products &amp; Clinical PharmacologyUlm UniversityUlmGermany"}]},{"given":"Thomas","family":"Simmet","sequence":"additional","affiliation":[{"name":"Institute
+        of Pharmacology of Natural Products &amp; Clinical PharmacologyUlm UniversityUlmGermany"}]}],"member":"311","published-online":{"date-parts":[[2018,4]]},"container-title":["The
+        FASEB Journal"],"language":"en","deposited":{"date-parts":[[2021,6,21]],"date-time":"2021-06-21T16:26:20Z","timestamp":1624292780000},"score":0.9999999,"issued":{"date-parts":[[2018,4]]},"references-count":0,"journal-issue":{"issue":"S1","published-print":{"date-parts":[[2018,4]]}},"alternative-id":["10.1096\/fasebj.2018.32.1_supplement.565.11"],"URL":"http:\/\/dx.doi.org\/10.1096\/fasebj.2018.32.1_supplement.565.11","archive":["Portico"],"ISSN":["0892-6638","1530-6860"],"issn-type":[{"value":"0892-6638","type":"print"},{"value":"1530-6860","type":"electronic"}],"subject":["Genetics","Molecular
+        Biology","Biochemistry","Biotechnology"],"published":{"date-parts":[[2018,4]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:11:46 GMT
 recorded_with: VCR 6.0.0

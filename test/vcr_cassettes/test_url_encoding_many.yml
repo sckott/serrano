@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:00 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '543'
+      Set-Cookie:
+      - AWSALB=/5xD3bfGoNIU4spxIzoJk8KQSRhXnSy8URWSX5S9ESCqhdxvHad/kf9Ot/VEdfS5iLe/qwilcyBDzjylihXLgVn2clbBLFOWg/2aW87Ij2V6Bo8Hctv3YQg9FGRl;
+        Expires=Sat, 25 Sep 2021 16:12:00 GMT; Path=/
+      - AWSALBCORS=/5xD3bfGoNIU4spxIzoJk8KQSRhXnSy8URWSX5S9ESCqhdxvHad/kf9Ot/VEdfS5iLe/qwilcyBDzjylihXLgVn2clbBLFOWg/2aW87Ij2V6Bo8Hctv3YQg9FGRl;
+        Expires=Sat, 25 Sep 2021 16:12:00 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '1095'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:09 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,12 +57,12 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,7,28]],"date-time":"2020-07-28T14:00:45Z","timestamp":1595944845733},"reference-count":0,"publisher":"Springer
-        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
-        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T09:45:10Z","timestamp":1620467110351},"reference-count":0,"publisher":"Springer
+        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
         Modelling","Ecology"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:09 GMT
+  recorded_at: Sat, 18 Sep 2021 16:12:00 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125
@@ -69,20 +83,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:00 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '565'
+      Set-Cookie:
+      - AWSALB=id/Ca9wGvofMw6NPgeeXsQaR2l7vzj4N8ezqVXdAcMKpj+ASz9EWJ6yLCUe16rE1sNtgysmbOyhafnGsD9JZzBNw6CdG7R40z3Ge+SlU8Gab4S9QEcbX3VN2PIIx;
+        Expires=Sat, 25 Sep 2021 16:12:00 GMT; Path=/
+      - AWSALBCORS=id/Ca9wGvofMw6NPgeeXsQaR2l7vzj4N8ezqVXdAcMKpj+ASz9EWJ6yLCUe16rE1sNtgysmbOyhafnGsD9JZzBNw6CdG7R40z3Ge+SlU8Gab4S9QEcbX3VN2PIIx;
+        Expires=Sat, 25 Sep 2021 16:12:00 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '1170'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:09 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -92,13 +120,12 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,7,28]],"date-time":"2020-07-28T14:00:34Z","timestamp":1595944834937},"reference-count":0,"publisher":"Springer
-        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
-        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
-        Science","Ecology, Evolution, Behavior and Systematics","General Agricultural
-        and Biological Sciences"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:09 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T09:43:27Z","timestamp":1620467007388},"reference-count":0,"publisher":"Springer
+        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
+        Science","Ecology, Evolution, Behavior and Systematics"]}}'
+  recorded_at: Sat, 18 Sep 2021 16:12:00 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
@@ -119,20 +146,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:01 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '2717'
+      Set-Cookie:
+      - AWSALB=/RzZx6wMOpGMmBl5fBcC3ONo7yyx1PYhd4q0Q/YYh33OSg15/4o1NvKvB2LXVSPffxDqf6NGeYBYOa5kzXpH+9gVQs0HUGl4Ni2qb3vLmT0jMIijq8PjX6G3fp9W;
+        Expires=Sat, 25 Sep 2021 16:12:01 GMT; Path=/
+      - AWSALBCORS=/RzZx6wMOpGMmBl5fBcC3ONo7yyx1PYhd4q0Q/YYh33OSg15/4o1NvKvB2LXVSPffxDqf6NGeYBYOa5kzXpH+9gVQs0HUGl4Ni2qb3vLmT0jMIijq8PjX6G3fp9W;
+        Expires=Sat, 25 Sep 2021 16:12:01 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '10131'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:10 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -142,46 +183,45 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,7,5]],"date-time":"2021-07-05T06:01:33Z","timestamp":1625464893905},"reference-count":42,"publisher":"Wiley","issue":"3","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":5356,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Comp. Neurol."],"published-print":{"date-parts":[[2001,2,12]]},"DOI":"10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","type":"journal-article","created":{"date-parts":[[2004,10,28]],"date-time":"2004-10-28T05:58:14Z","timestamp":1098943094000},"page":"283-305","source":"Crossref","is-referenced-by-count":69,"title":["Substance
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,9,1]],"date-time":"2021-09-01T09:08:51Z","timestamp":1630487331930},"reference-count":42,"publisher":"Wiley","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":5356,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Comp. Neurol."],"published-print":{"date-parts":[[2001,2,12]]},"DOI":"10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","type":"journal-article","created":{"date-parts":[[2004,10,28]],"date-time":"2004-10-28T05:58:14Z","timestamp":1098943094000},"page":"283-305","source":"Crossref","is-referenced-by-count":74,"title":["Substance
         P receptor expression by inhibitory interneurons of the rat hippocampus: Enhanced
         detection using improved immunocytochemical methods for the preservation and
         colocalization of GABA and other neuronal markers"],"prefix":"10.1002","volume":"430","author":[{"given":"Robert
         S.","family":"Sloviter","sequence":"first","affiliation":[]},{"given":"Leila","family":"Ali-Akbarian","sequence":"additional","affiliation":[]},{"given":"Kathryn
         D.","family":"Horvath","sequence":"additional","affiliation":[]},{"given":"Kent
-        A.","family":"Menkens","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2001]]},"reference":[{"key":"BIB1","author":"Acs\u00e1dy","volume":"378","first-page":"320","year":"1997","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/(SICI)1096-9861(19970217)378:3<320::AID-CNE2>3.0.CO;2-5","doi-asserted-by":"crossref"},{"key":"BIB2","author":"Amaral","volume":"182","first-page":"851","year":"1978","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.901820508","doi-asserted-by":"crossref"},{"key":"BIB3","author":"Bakst","volume":"6","first-page":"1452","year":"1986","journal-title":"J
-        Neurosci","DOI":"10.1523\/JNEUROSCI.06-05-01452.1986","doi-asserted-by":"crossref"},{"key":"BIB4","author":"Berod","volume":"29","first-page":"844","year":"1981","journal-title":"J
-        Histochem Cytochem","DOI":"10.1177\/29.7.6167611","doi-asserted-by":"crossref"},{"key":"BIB5","author":"Borhegyi","volume":"384","first-page":"41","year":"1997","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/(SICI)1096-9861(19970721)384:1<41::AID-CNE3>3.0.CO;2-L","doi-asserted-by":"crossref"},{"key":"BIB6","author":"Borhegyi","volume":"25","first-page":"1393","year":"1999","journal-title":"Soc
-        Neurosci Abstr"},{"key":"BIB7","author":"Deller","volume":"300","first-page":"433","year":"1990","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.903000312","doi-asserted-by":"crossref"},{"key":"BIB8","author":"Dichter","volume":"32","first-page":"663","year":"1969","journal-title":"J
-        Neurophysiol","DOI":"10.1152\/jn.1969.32.5.663","doi-asserted-by":"crossref"},{"key":"BIB9","author":"Freund","volume":"6","first-page":"347","year":"1996","journal-title":"Hippocampus","DOI":"10.1002\/(SICI)1098-1063(1996)6:4<347::AID-HIPO1>3.0.CO;2-I","doi-asserted-by":"crossref"},{"key":"BIB10","author":"Guly\u00e1s","volume":"48","first-page":"1","year":"1992","journal-title":"Neuroscience","DOI":"10.1016\/0306-4522(92)90334-X","doi-asserted-by":"crossref"},{"key":"BIB11","author":"He","volume":"150","first-page":"1","year":"1998","journal-title":"Exp
-        Neurol","DOI":"10.1006\/exnr.1997.6720","doi-asserted-by":"crossref"},{"key":"BIB12","author":"Jacobowitz","volume":"304","first-page":"198","year":"1991","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.903040205","doi-asserted-by":"crossref"},{"key":"BIB13","author":"Katsumaru","volume":"72","first-page":"347","year":"1988","journal-title":"Exp
-        Brain Res"},{"key":"BIB14","author":"K\u00f6hler","volume":"34","first-page":"259","year":"1982","journal-title":"Neurosci
-        Lett","DOI":"10.1016\/0304-3940(82)90185-9","doi-asserted-by":"crossref"},{"key":"BIB15","author":"Kosaka","volume":"239","first-page":"420","year":"1985","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.902390408","doi-asserted-by":"crossref"},{"key":"BIB16","author":"Leranth","volume":"70","first-page":"631","year":"1996","journal-title":"Neuroscience","DOI":"10.1016\/S0306-4522(96)83003-X","doi-asserted-by":"crossref"},{"key":"BIB17","author":"Lowenstein","volume":"12","first-page":"4846","year":"1992","journal-title":"J
-        Neurosci","DOI":"10.1523\/JNEUROSCI.12-12-04846.1992","doi-asserted-by":"crossref"},{"key":"BIB18","author":"Mantyh","volume":"278","first-page":"275","year":"1997","journal-title":"Science","DOI":"10.1126\/science.278.5336.275","doi-asserted-by":"crossref"},{"key":"BIB19","author":"Martin","volume":"26","first-page":"1050","year":"2000","journal-title":"Soc
-        Neurosci Abstr"},{"key":"BIB20","author":"Mart\u00ednez","volume":"376","first-page":"28","year":"1996","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/(SICI)1096-9861(19961202)376:1<28::AID-CNE2>3.0.CO;2-Q","doi-asserted-by":"crossref"},{"key":"BIB21","author":"Meldrum","volume":"17","first-page":"1","year":"1975","journal-title":"Int
-        Rev Neurobiol","DOI":"10.1016\/S0074-7742(08)60205-6","doi-asserted-by":"crossref"},{"key":"BIB22","author":"Miettinen","volume":"48","first-page":"29","year":"1992","journal-title":"Neuroscience","DOI":"10.1016\/0306-4522(92)90335-Y","doi-asserted-by":"crossref"},{"key":"BIB23","author":"Miles","volume":"388","first-page":"611","year":"1987","journal-title":"J
-        Physiol","DOI":"10.1113\/jphysiol.1987.sp016634","doi-asserted-by":"crossref"},{"key":"BIB24","author":"Mullen","volume":"116","first-page":"201","year":"1992","journal-title":"Development","DOI":"10.1242\/dev.116.1.201","doi-asserted-by":"crossref"},{"key":"BIB25","author":"Nakaya","volume":"347","first-page":"249","year":"1994","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.903470208","doi-asserted-by":"crossref"},{"key":"BIB26","author":"Pow","volume":"48","first-page":"51","year":"1993","journal-title":"J
-        Neurosci Methods","DOI":"10.1016\/S0165-0270(05)80007-X","doi-asserted-by":"crossref"},{"key":"BIB27","author":"Prince","volume":"16","first-page":"194","year":"1967","journal-title":"Arch
-        Neurol","DOI":"10.1001\/archneur.1967.00470200082007","doi-asserted-by":"crossref"},{"key":"BIB28","author":"Ribak","volume":"205","first-page":"211","year":"1979","journal-title":"Science","DOI":"10.1126\/science.109922","doi-asserted-by":"crossref"},{"key":"BIB29","author":"Rogers","volume":"587","first-page":"147","year":"1992","journal-title":"Brain
-        Res","DOI":"10.1016\/0006-8993(92)91439-L","doi-asserted-by":"crossref"},{"key":"BIB30","author":"Sloviter","volume":"235","first-page":"73","year":"1987","journal-title":"Science","DOI":"10.1126\/science.2879352","doi-asserted-by":"crossref"},{"key":"BIB31","author":"Sloviter","volume":"280","first-page":"183","year":"1989","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.902800203","doi-asserted-by":"crossref"},{"key":"BIB32","author":"Sloviter","volume":"1","first-page":"41","year":"1991","journal-title":"Hippocampus","DOI":"10.1002\/hipo.450010106","doi-asserted-by":"crossref"},{"key":"BIB33","author":"Sloviter","volume":"35","first-page":"640","year":"1994","journal-title":"Ann
-        Neurol","DOI":"10.1002\/ana.410350604","doi-asserted-by":"crossref"},{"key":"BIB34","author":"Sloviter","volume":"40","first-page":"s34","year":"1999","journal-title":"Epilepsia","DOI":"10.1111\/j.1528-1157.1999.tb00876.x","doi-asserted-by":"crossref"},{"key":"BIB35","author":"Sloviter","volume":"12","first-page":"3004","year":"1992","journal-title":"J
-        Neurosci","DOI":"10.1523\/JNEUROSCI.12-08-03004.1992","doi-asserted-by":"crossref"},{"key":"BIB36","author":"Sloviter","volume":"256","first-page":"42","year":"1987","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/cne.902560105","doi-asserted-by":"crossref"},{"key":"BIB37","author":"Sloviter","volume":"373","first-page":"593","year":"1996","journal-title":"J
-        Comp Neurol","DOI":"10.1002\/(SICI)1096-9861(19960930)373:4<593::AID-CNE8>3.0.CO;2-X","doi-asserted-by":"crossref"},{"key":"BIB38","author":"Soriano","volume":"4","first-page":"65","year":"1994","journal-title":"Hippocampus","DOI":"10.1002\/hipo.450040108","doi-asserted-by":"crossref"},{"key":"BIB39","author":"Toth","volume":"17","first-page":"8106","year":"1997","journal-title":"J
-        Neurosci","DOI":"10.1523\/JNEUROSCI.17-21-08106.1997","doi-asserted-by":"crossref"},{"key":"BIB40","author":"Wenzel","volume":"7","first-page":"559","year":"1997","journal-title":"Hippocampus","DOI":"10.1002\/(SICI)1098-1063(1997)7:5<559::AID-HIPO11>3.0.CO;2-#","doi-asserted-by":"crossref"},{"key":"BIB41","author":"Wiley","volume":"230","first-page":"97","year":"1997","journal-title":"Neurosci
-        Lett","DOI":"10.1016\/S0304-3940(97)00490-4","doi-asserted-by":"crossref"},{"key":"BIB42","author":"Wiley","volume":"277","first-page":"1","year":"1999","journal-title":"Neurosci
-        Lett","DOI":"10.1016\/S0304-3940(99)00846-0","doi-asserted-by":"crossref"}],"container-title":["The
-        Journal of Comparative Neurology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,1]],"date-time":"2021-07-01T10:35:12Z","timestamp":1625135712000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":42,"journal-issue":{"published-print":{"date-parts":[[2001,2,12]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","relation":{"cites":[]},"ISSN":["0021-9967","1096-9861"],"issn-type":[{"value":"0021-9967","type":"print"},{"value":"1096-9861","type":"electronic"}],"subject":["General
-        Neuroscience"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:10 GMT
+        A.","family":"Menkens","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2001]]},"reference":[{"key":"BIB1","doi-asserted-by":"crossref","first-page":"320","DOI":"10.1002\/(SICI)1096-9861(19970217)378:3<320::AID-CNE2>3.0.CO;2-5","volume":"378","author":"Acs\u00e1dy","year":"1997","journal-title":"J
+        Comp Neurol"},{"key":"BIB2","doi-asserted-by":"crossref","first-page":"851","DOI":"10.1002\/cne.901820508","volume":"182","author":"Amaral","year":"1978","journal-title":"J
+        Comp Neurol"},{"key":"BIB3","doi-asserted-by":"crossref","first-page":"1452","DOI":"10.1523\/JNEUROSCI.06-05-01452.1986","volume":"6","author":"Bakst","year":"1986","journal-title":"J
+        Neurosci"},{"key":"BIB4","doi-asserted-by":"crossref","first-page":"844","DOI":"10.1177\/29.7.6167611","volume":"29","author":"Berod","year":"1981","journal-title":"J
+        Histochem Cytochem"},{"key":"BIB5","doi-asserted-by":"crossref","first-page":"41","DOI":"10.1002\/(SICI)1096-9861(19970721)384:1<41::AID-CNE3>3.0.CO;2-L","volume":"384","author":"Borhegyi","year":"1997","journal-title":"J
+        Comp Neurol"},{"key":"BIB6","first-page":"1393","volume":"25","author":"Borhegyi","year":"1999","journal-title":"Soc
+        Neurosci Abstr"},{"key":"BIB7","doi-asserted-by":"crossref","first-page":"433","DOI":"10.1002\/cne.903000312","volume":"300","author":"Deller","year":"1990","journal-title":"J
+        Comp Neurol"},{"key":"BIB8","doi-asserted-by":"crossref","first-page":"663","DOI":"10.1152\/jn.1969.32.5.663","volume":"32","author":"Dichter","year":"1969","journal-title":"J
+        Neurophysiol"},{"key":"BIB9","doi-asserted-by":"crossref","first-page":"347","DOI":"10.1002\/(SICI)1098-1063(1996)6:4<347::AID-HIPO1>3.0.CO;2-I","volume":"6","author":"Freund","year":"1996","journal-title":"Hippocampus"},{"key":"BIB10","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/0306-4522(92)90334-X","volume":"48","author":"Guly\u00e1s","year":"1992","journal-title":"Neuroscience"},{"key":"BIB11","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1006\/exnr.1997.6720","volume":"150","author":"He","year":"1998","journal-title":"Exp
+        Neurol"},{"key":"BIB12","doi-asserted-by":"crossref","first-page":"198","DOI":"10.1002\/cne.903040205","volume":"304","author":"Jacobowitz","year":"1991","journal-title":"J
+        Comp Neurol"},{"key":"BIB13","first-page":"347","volume":"72","author":"Katsumaru","year":"1988","journal-title":"Exp
+        Brain Res"},{"key":"BIB14","doi-asserted-by":"crossref","first-page":"259","DOI":"10.1016\/0304-3940(82)90185-9","volume":"34","author":"K\u00f6hler","year":"1982","journal-title":"Neurosci
+        Lett"},{"key":"BIB15","doi-asserted-by":"crossref","first-page":"420","DOI":"10.1002\/cne.902390408","volume":"239","author":"Kosaka","year":"1985","journal-title":"J
+        Comp Neurol"},{"key":"BIB16","doi-asserted-by":"crossref","first-page":"631","DOI":"10.1016\/S0306-4522(96)83003-X","volume":"70","author":"Leranth","year":"1996","journal-title":"Neuroscience"},{"key":"BIB17","doi-asserted-by":"crossref","first-page":"4846","DOI":"10.1523\/JNEUROSCI.12-12-04846.1992","volume":"12","author":"Lowenstein","year":"1992","journal-title":"J
+        Neurosci"},{"key":"BIB18","doi-asserted-by":"crossref","first-page":"275","DOI":"10.1126\/science.278.5336.275","volume":"278","author":"Mantyh","year":"1997","journal-title":"Science"},{"key":"BIB19","first-page":"1050","volume":"26","author":"Martin","year":"2000","journal-title":"Soc
+        Neurosci Abstr"},{"key":"BIB20","doi-asserted-by":"crossref","first-page":"28","DOI":"10.1002\/(SICI)1096-9861(19961202)376:1<28::AID-CNE2>3.0.CO;2-Q","volume":"376","author":"Mart\u00ednez","year":"1996","journal-title":"J
+        Comp Neurol"},{"key":"BIB21","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0074-7742(08)60205-6","volume":"17","author":"Meldrum","year":"1975","journal-title":"Int
+        Rev Neurobiol"},{"key":"BIB22","doi-asserted-by":"crossref","first-page":"29","DOI":"10.1016\/0306-4522(92)90335-Y","volume":"48","author":"Miettinen","year":"1992","journal-title":"Neuroscience"},{"key":"BIB23","doi-asserted-by":"crossref","first-page":"611","DOI":"10.1113\/jphysiol.1987.sp016634","volume":"388","author":"Miles","year":"1987","journal-title":"J
+        Physiol"},{"key":"BIB24","doi-asserted-by":"crossref","first-page":"201","DOI":"10.1242\/dev.116.1.201","volume":"116","author":"Mullen","year":"1992","journal-title":"Development"},{"key":"BIB25","doi-asserted-by":"crossref","first-page":"249","DOI":"10.1002\/cne.903470208","volume":"347","author":"Nakaya","year":"1994","journal-title":"J
+        Comp Neurol"},{"key":"BIB26","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1016\/S0165-0270(05)80007-X","volume":"48","author":"Pow","year":"1993","journal-title":"J
+        Neurosci Methods"},{"key":"BIB27","doi-asserted-by":"crossref","first-page":"194","DOI":"10.1001\/archneur.1967.00470200082007","volume":"16","author":"Prince","year":"1967","journal-title":"Arch
+        Neurol"},{"key":"BIB28","doi-asserted-by":"crossref","first-page":"211","DOI":"10.1126\/science.109922","volume":"205","author":"Ribak","year":"1979","journal-title":"Science"},{"key":"BIB29","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1016\/0006-8993(92)91439-L","volume":"587","author":"Rogers","year":"1992","journal-title":"Brain
+        Res"},{"key":"BIB30","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1126\/science.2879352","volume":"235","author":"Sloviter","year":"1987","journal-title":"Science"},{"key":"BIB31","doi-asserted-by":"crossref","first-page":"183","DOI":"10.1002\/cne.902800203","volume":"280","author":"Sloviter","year":"1989","journal-title":"J
+        Comp Neurol"},{"key":"BIB32","doi-asserted-by":"crossref","first-page":"41","DOI":"10.1002\/hipo.450010106","volume":"1","author":"Sloviter","year":"1991","journal-title":"Hippocampus"},{"key":"BIB33","doi-asserted-by":"crossref","first-page":"640","DOI":"10.1002\/ana.410350604","volume":"35","author":"Sloviter","year":"1994","journal-title":"Ann
+        Neurol"},{"key":"BIB34","doi-asserted-by":"crossref","first-page":"s34","DOI":"10.1111\/j.1528-1157.1999.tb00876.x","volume":"40","author":"Sloviter","year":"1999","journal-title":"Epilepsia"},{"key":"BIB35","doi-asserted-by":"crossref","first-page":"3004","DOI":"10.1523\/JNEUROSCI.12-08-03004.1992","volume":"12","author":"Sloviter","year":"1992","journal-title":"J
+        Neurosci"},{"key":"BIB36","doi-asserted-by":"crossref","first-page":"42","DOI":"10.1002\/cne.902560105","volume":"256","author":"Sloviter","year":"1987","journal-title":"J
+        Comp Neurol"},{"key":"BIB37","doi-asserted-by":"crossref","first-page":"593","DOI":"10.1002\/(SICI)1096-9861(19960930)373:4<593::AID-CNE8>3.0.CO;2-X","volume":"373","author":"Sloviter","year":"1996","journal-title":"J
+        Comp Neurol"},{"key":"BIB38","doi-asserted-by":"crossref","first-page":"65","DOI":"10.1002\/hipo.450040108","volume":"4","author":"Soriano","year":"1994","journal-title":"Hippocampus"},{"key":"BIB39","doi-asserted-by":"crossref","first-page":"8106","DOI":"10.1523\/JNEUROSCI.17-21-08106.1997","volume":"17","author":"Toth","year":"1997","journal-title":"J
+        Neurosci"},{"key":"BIB40","doi-asserted-by":"crossref","first-page":"559","DOI":"10.1002\/(SICI)1098-1063(1997)7:5<559::AID-HIPO11>3.0.CO;2-#","volume":"7","author":"Wenzel","year":"1997","journal-title":"Hippocampus"},{"key":"BIB41","doi-asserted-by":"crossref","first-page":"97","DOI":"10.1016\/S0304-3940(97)00490-4","volume":"230","author":"Wiley","year":"1997","journal-title":"Neurosci
+        Lett"},{"key":"BIB42","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0304-3940(99)00846-0","volume":"277","author":"Wiley","year":"1999","journal-title":"Neurosci
+        Lett"}],"container-title":["The Journal of Comparative Neurology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,1]],"date-time":"2021-07-01T10:35:12Z","timestamp":1625135712000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":42,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2001,2,12]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","relation":{},"ISSN":["0021-9967","1096-9861"],"issn-type":[{"value":"0021-9967","type":"print"},{"value":"1096-9861","type":"electronic"}],"subject":["General
+        Neuroscience"],"published":{"date-parts":[[2001]]}}}'
+  recorded_at: Sat, 18 Sep 2021 16:12:01 GMT
 recorded_with: VCR 6.0.0

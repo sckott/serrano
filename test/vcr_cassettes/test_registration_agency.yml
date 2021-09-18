@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:53 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '166'
+      Set-Cookie:
+      - AWSALB=5L9GUqXqstCcuWvA7pCiNIM1Ly5fbIhWVu50XSC2cVF9v+GnMztGrHgw27t8oPB1srIeeosmkNP9Y4sySPktWD2gxYKeHJuVJ6Kj8Olp7UY4UTpjgG9klFqBhRtN;
+        Expires=Sat, 25 Sep 2021 16:11:53 GMT; Path=/
+      - AWSALBCORS=5L9GUqXqstCcuWvA7pCiNIM1Ly5fbIhWVu50XSC2cVF9v+GnMztGrHgw27t8oPB1srIeeosmkNP9Y4sySPktWD2gxYKeHJuVJ6Kj8Olp7UY4UTpjgG9klFqBhRtN;
+        Expires=Sat, 25 Sep 2021 16:11:53 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:02 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -45,5 +59,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1371\/journal.pone.0033693","agency":{"id":"crossref","label":"Crossref"}}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:02 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:53 GMT
 recorded_with: VCR 6.0.0

@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:13 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '543'
+      Set-Cookie:
+      - AWSALB=2OhpkkxJvLlhIen8+JejAWWeXyN+YctDCiixhPi1IkXt67xyrcifRnjCU4XBgqj0xyhapO7RuoAIPipUS47oUHCppYPoq9aTmsEEit5SYKLxXbJprRARgSplGz9R;
+        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/
+      - AWSALBCORS=2OhpkkxJvLlhIen8+JejAWWeXyN+YctDCiixhPi1IkXt67xyrcifRnjCU4XBgqj0xyhapO7RuoAIPipUS47oUHCppYPoq9aTmsEEit5SYKLxXbJprRARgSplGz9R;
+        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '1095'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:47:12 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,12 +57,12 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,7,28]],"date-time":"2020-07-28T14:00:45Z","timestamp":1595944845733},"reference-count":0,"publisher":"Springer
-        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
-        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T04:17:50Z","timestamp":1369455470000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T09:45:10Z","timestamp":1620467110351},"reference-count":0,"publisher":"Springer
+        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
         Modelling","Ecology"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:47:12 GMT
+  recorded_at: Sat, 18 Sep 2021 16:12:13 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125
@@ -69,20 +83,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:13 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '565'
+      Set-Cookie:
+      - AWSALB=M+QPxmNYa8OAYzVWje/nKufo4OQQYNaXMqU6n/DIRxFJZVn8N2B8N7T3y5YF3iDQHtXjF3YKSRSBr8qgm8+OiroHjh/M99jwuNtMADsMriMWGUIOstOqdmUxUI4f;
+        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/
+      - AWSALBCORS=M+QPxmNYa8OAYzVWje/nKufo4OQQYNaXMqU6n/DIRxFJZVn8N2B8N7T3y5YF3iDQHtXjF3YKSRSBr8qgm8+OiroHjh/M99jwuNtMADsMriMWGUIOstOqdmUxUI4f;
+        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '1170'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:47:12 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -92,13 +120,12 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,7,28]],"date-time":"2020-07-28T14:00:34Z","timestamp":1595944834937},"reference-count":0,"publisher":"Springer
-        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
-        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T03:59:30Z","timestamp":1369454370000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
-        Science","Ecology, Evolution, Behavior and Systematics","General Agricultural
-        and Biological Sciences"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:47:12 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T09:43:27Z","timestamp":1620467007388},"reference-count":0,"publisher":"Springer
+        Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
+        Science","Ecology, Evolution, Behavior and Systematics"]}}'
+  recorded_at: Sat, 18 Sep 2021 16:12:13 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1111%2F(issn)1442-9993
@@ -119,20 +146,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:14 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '538'
+      Set-Cookie:
+      - AWSALB=pxvWF0rfusSA74MmvjjQztZV6H1PTm7JwUK2gNvGpYx8aMZC/Fsrk3LhLZVw5Y1OvBAThImGGMWuUd8/B9HJR/ymfHEfCv1qd6Ff02mA/TxySOlVyxF7vPGenkVQ;
+        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/
+      - AWSALBCORS=pxvWF0rfusSA74MmvjjQztZV6H1PTm7JwUK2gNvGpYx8aMZC/Fsrk3LhLZVw5Y1OvBAThImGGMWuUd8/B9HJR/ymfHEfCv1qd6Ff02mA/TxySOlVyxF7vPGenkVQ;
+        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '1081'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:47:13 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -142,9 +183,9 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2020,4,14]],"date-time":"2020-04-14T21:09:40Z","timestamp":1586898580217},"reference-count":0,"publisher":"Wiley","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
-        Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T05:38:28Z","timestamp":1273469908000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}],"subject":["Ecology","Ecology,
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T07:15:10Z","timestamp":1620458110472},"reference-count":0,"publisher":"Wiley","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T01:38:28Z","timestamp":1273455508000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
+        Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T01:38:28Z","timestamp":1273455508000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}],"subject":["Ecology","Ecology,
         Evolution, Behavior and Systematics"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:47:13 GMT
+  recorded_at: Sat, 18 Sep 2021 16:12:14 GMT
 recorded_with: VCR 6.0.0

@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:34 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '1371'
+      Set-Cookie:
+      - AWSALB=KOaWLO8xkfGgKfx/8rr7Lu/rs2+fDicJtGcaD3t7WxwCwHTEhDyExIECl9EYmyMYzjA19AonOJZy23x1iPrNQVhVUseHcJaOEyQx9DHbnjFnR67GMZl8FwYjfI5V;
+        Expires=Sat, 25 Sep 2021 16:11:34 GMT; Path=/
+      - AWSALBCORS=KOaWLO8xkfGgKfx/8rr7Lu/rs2+fDicJtGcaD3t7WxwCwHTEhDyExIECl9EYmyMYzjA19AonOJZy23x1iPrNQVhVUseHcJaOEyQx9DHbnjFnR67GMZl8FwYjfI5V;
+        Expires=Sat, 25 Sep 2021 16:11:34 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '2836'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:44:22 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,36 +57,34 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":286067,"items":[{"DOI":"10.1155\/2015\/486346","title":["A
-        Robust Numerical Procedure for the Thermomechanical Flow Simulation of Friction
-        Stir Welding Process Using an Adaptive Element-Free Galerkin Method"]},{"DOI":"10.1155\/2014\/276475","title":["Insulin
-        Resistance, Type 1 and Type 2 Diabetes, and Related Complications: Current
-        Status and Future Perspective"]},{"DOI":"10.1155\/2014\/246714","title":["Glia
-        and the Synapse: Plasticity and Disease"]},{"DOI":"10.1155\/2014\/354132","title":["Refinements
-        of Bounds for Neuman Means"]},{"DOI":"10.1155\/2014\/464276","title":["Tracking
-        Control of a Leg Rehabilitation Machine Driven by Pneumatic Artificial Muscles
-        Using Composite Fuzzy Theory"]},{"DOI":"10.1155\/2014\/607347","title":["On
-        Hardy-Pachpatte-Copson''s Inequalities"]},{"DOI":"10.1155\/2014\/631925","title":["Seismic
-        Stability of Subsea Tunnels Subjected to Seepage"]},{"DOI":"10.1155\/2014\/576365","title":["Analysis
-        of a Patch Model for the Dynamical Transmission of Echinococcosis"]},{"DOI":"10.1155\/2014\/670467","title":["DistributedH\u221eSampled-Data
-        Filtering over Sensor Networks with Markovian Switching Topologies"]},{"DOI":"10.1155\/2014\/523245","title":["Intuitionistic
-        Fuzzy Subbialgebras and Duality"]},{"DOI":"10.1155\/2014\/632871","title":["Context-Aware
-        and Locality-Constrained Coding for Image Categorization"]},{"DOI":"10.1155\/2014\/626972","title":["Erratum
-        to \u201cShenqi Fuzheng Injection Alleviates the Transient Worsening Caused
-        by Steroids Pulse Therapy in Treating Myasthenia Gravis\u201d"]},{"DOI":"10.1155\/2014\/541847","title":["Image
-        Guided Hypofractionated Radiotherapy by Helical Tomotherapy for Prostate Carcinoma:
-        Toxicity and Impact on Nadir PSA"]},{"DOI":"10.1155\/2014\/684068","title":["Interval
-        Oscillation Criteria for Second-Order Forced Functional Dynamic Equations
-        on Time Scales"]},{"DOI":"10.1155\/2014\/718690","title":["Paraplegia after
-        Gastrectomy in a Patient with Cervical Disc Herniation: A Case Report and
-        Review of Literature"]},{"DOI":"10.1155\/2014\/716046","title":["An Embedded
-        Laser Marking Controller Based on ARM and FPGA Processors"]},{"DOI":"10.1155\/2014\/738953","title":["The
-        Empirical Cressie-Read Test Statistics for Longitudinal Generalized Linear
-        Models"]},{"DOI":"10.1155\/2014\/780959","title":["Swellings over the Limbs
-        as the Earliest Feature in a Patient with Osteogenesis Imperfecta Type V"]},{"DOI":"10.1155\/2014\/782393","title":["Mathematical
-        Models Arising in the Fractal Forest Gap via Local Fractional Calculus"]},{"DOI":"10.1155\/2014\/869628","title":["One-Step
-        Dynamic Classifier Ensemble Model for Customer Value Segmentation with Missing
-        Values"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:44:22 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":290683,"items":[{"DOI":"10.1155\/jamsa\/2006\/42542","title":["A
+        scalarization technique for computing the power and exponential\nmoments of
+        Gaussian random matrices"]},{"DOI":"10.1155\/ijmms\/2006\/89545","title":["Invariantf-structures
+        on the flag manifoldsSO(n)\/SO(2)\u00d7SO(n\u22123)"]},{"DOI":"10.1002\/cfg.80","title":["IBC
+        \u2013 Proteomics, 1\u20132 March 2000, Basel Hilton, Switzerland"]},{"DOI":"10.1002\/cfg.118","title":["Current
+        Awareness on Comparative and Functional Genomics"]},{"DOI":"10.1002\/cfg.166","title":["In
+        This Issue"]},{"DOI":"10.1002\/cfg.59","title":["Current Awareness on Comparative
+        and Functional Genomics"]},{"DOI":"10.1002\/cfg.108","title":["Meeting Review:
+        The Intelligent Systems in Bioinformatics Conference 2001 (ISMB2001)"]},{"DOI":"10.1002\/1097-0061(20000930)17:3<169::aid-yea33>3.0.co;2-u","title":["Editorial"]},{"DOI":"10.1155\/2019\/9653526","title":["Intended
+        Pregnancy as a Predictor of Good Knowledge on Birth Preparedness and Complication
+        Readiness: the Case of Northern Ethiopia Pregnant Mothers"]},{"DOI":"10.1155\/2015\/657431","title":["Efficient
+        Multidimensional Top-kQuery Processing in Wireless Multihop Networks"]},{"DOI":"10.1155\/2019\/1451623","title":["Diet
+        Composition Differentially Affects Insulin Pathway Compromised and Control
+        Flies"]},{"DOI":"10.1155\/2019\/8376781","title":["Optimisation Design and
+        Damping Effect Analysis of Large Mass Ratio Tuned Mass Dampers"]},{"DOI":"10.1155\/2015\/965274","title":["Study
+        on the Use of Hydride Fuel in High-Performance Light Water Reactor Concept"]},{"DOI":"10.1155\/2012\/240459","title":["Geodesic
+        Effect Near an Elliptical Orbit"]},{"DOI":"10.5402\/2012\/106051","title":["A
+        Note on the Kelvin Effect in 100Cr6 Steel with Application to Identification
+        of the Elastoplastic Limit"]},{"DOI":"10.1155\/2019\/8614305","title":["Geomaterials
+        in Geotechnical Engineering"]},{"DOI":"10.1155\/2019\/4042689","title":["Leiomyosarcoma
+        of the Right Gonadal Vein: Review of the Approach and Prognostic in a Rare
+        Case"]},{"DOI":"10.1155\/2019\/9357203","title":["Effects of Serum Cytochrome
+        c on Contrast-Induced Nephropathy in Patients with ST-Elevation Myocardial
+        Infarction Undergoing Percutaneous Coronary Intervention"]},{"DOI":"10.1155\/2019\/5064690","title":["The
+        Research on Strength and Deformation Behaviors of Buffer\/Backfill Material
+        under High-Temperature and High-Pressure Conditions"]},{"DOI":"10.1155\/2019\/7876417","title":["Tapered
+        Cuff versus Conventional Cuff for Ventilator-Associated Pneumonia in Ventilated
+        Patients: A Meta-Analysis of Randomized Controlled Trials"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:11:34 GMT
 recorded_with: VCR 6.0.0

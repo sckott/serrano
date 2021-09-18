@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:56 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '869'
+      Set-Cookie:
+      - AWSALB=GqIkyTWdWGEYN1iCSL7gsAJuhVBj5iobIB7A6h4vCVS0REDnDKvIuFEiX00/w5oZTqe4t3RggGPv1vL/MvLp0n72cCOelpXZoPs6FPjY8jdtXddfEoy0/yg4FgfG;
+        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/
+      - AWSALBCORS=GqIkyTWdWGEYN1iCSL7gsAJuhVBj5iobIB7A6h4vCVS0REDnDKvIuFEiX00/w5oZTqe4t3RggGPv1vL/MvLp0n72cCOelpXZoPs6FPjY8jdtXddfEoy0/yg4FgfG;
+        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '1688'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:06 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,23 +57,22 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":43197,"items":[{"DOI":"10.7711\/feemre3.2014.03.001","title":["Review
-        of Environment, Energy and Economics"]},{"DOI":"10.15388\/omee","title":["Organizations
-        and Markets in Emerging Economies"]},{"DOI":"10.5555\/test20140318abc","title":["Journal
-        of Test deposits"]},{"DOI":"10.9734\/ajahr","title":["Asian Journal of Agricultural
-        and Horticultural Research"]},{"DOI":"10.5555\/test20140318","title":["Journal
-        of Test deposits"]},{"DOI":"10.11137\/aig","title":["Anu\u00e1rio do Instituto
-        de Geoci\u00eancias - UFRJ"]},{"DOI":"10.3900\/fpj.7","title":["Fitness &
-        Performance Journal"]},{"DOI":"10.1002\/(issn)1521-3994","title":["Astronomische
-        Nachrichten"]},{"DOI":"10.1002\/(issn)1949-3592","title":["Cytoskeleton"]},{"DOI":"10.1002\/(issn)1522-2357","title":["forschung"]},{"DOI":"10.35465\/burs.1","title":["Revmatologiia
-        (Bulgaria)"]},{"DOI":"10.1002\/(issn)1520-6548","title":["Geoarchaeology"]},{"DOI":"10.1002\/(issn)1542-7811","title":["National
-        Civic Review"]},{"DOI":"10.1002\/(issn)1531-5355","title":["Leader to Leader"]},{"DOI":"10.1002\/(issn)1557-6841","title":["Journal
-        of Synthetic Lubrication"]},{"DOI":"10.1002\/(issn)1099-1107","title":["International
-        Insolvency Review"]},{"DOI":"10.1002\/(issn)1523-149x","title":["Heat Transfer-Asian
-        Research"]},{"DOI":"10.1002\/(issn)1520-6513","title":["Federal Facilities
-        Environmental Journal"]},{"DOI":"10.1002\/(issn)1099-0917","title":["Early
-        Development and Parenting"]},{"DOI":"10.1002\/(issn)1548-2839","title":["Mergent''s
-        Dividend Achievers"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:06 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":43870,"items":[{"DOI":"10.1515\/iprg","title":["Intercultural
+        Pragmatics"]},{"DOI":"10.1515\/crll","title":["Journal f\u00fcr die reine
+        und angewandte Mathematik (Crelles Journal)"]},{"DOI":"10.1515\/agph","title":["Archiv
+        f\u00fcr Geschichte der Philosophie"]},{"DOI":"10.1002\/(issn)1521-3730","title":["CHEMKON"]},{"DOI":"10.1553\/anzeigerr","title":["Anzeiger
+        der philosophisch-historischen Klasse"]},{"DOI":"10.1002\/(issn)1557-6272","title":["Evidence-Based
+        Child Health: A Cochrane Review Journal"]},{"DOI":"10.1515\/nzst","title":["Neue
+        Zeitschrift f\u00fcr Systematische Theologie und Religionsphilosophie"]},{"DOI":"10.1515\/znth","title":["Journal
+        for the History of Modern Theology \/ Zeitschrift f\u00fcr Neuere Theologiegeschichte"]},{"DOI":"10.33474\/jipemas","title":["JIPEMAS:
+        Jurnal Inovasi Hasil Pengabdian Masyarakat"]},{"DOI":"10.4172\/2161-0533","title":["Orthopedic
+        & Muscular System"]},{"DOI":"10.31860\/0136-7447","title":["Russkij Folklor"]},{"DOI":"10.15580\/imjgj","title":["International
+        and Multidisciplinary Journal of Global Justice"]},{"DOI":"10.15448\/1984-4301","title":["Letr\u00f4nica"]},{"DOI":"10.33369\/jsh","title":["Supremasi
+        Hukum: Jurnal Penelitian Hukum"]},{"DOI":"10.5604\/0082044x","title":["\u015awiatowit"]},{"DOI":"10.31295\/ijcms","title":["International
+        Journal of Chemical & Material Sciences"]},{"DOI":"10.31295\/ijhms","title":["International
+        journal of health & medical sciences"]},{"DOI":"10.15602\/1983-9480\/cmrs","title":["Ci\u00eancia
+        em Movimento"]},{"DOI":"10.7176\/hrl","title":["Historical Research Letter"]},{"DOI":"10.26650\/ekoist","title":["Ekoist:
+        Journal of Econometrics and Statistics"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:11:56 GMT
 recorded_with: VCR 6.0.0

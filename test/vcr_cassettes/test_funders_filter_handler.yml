@@ -20,20 +20,34 @@ http_interactions:
       code: 400
       message: Bad Request
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:12 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
+      - application/json;charset=utf-8
       Content-Length:
       - '247'
+      Set-Cookie:
+      - AWSALB=N1+HIzBOwPmHPMR9GxYbqBKy3khsMNHUHykgYPW9WaX1MDFQ/3GRHM0r7yxVnpfkn/uBWiW10Zlb8PvrigHX7IkhXS9+iL0A8IuXm9cqlau3P4Y6tBv9xbaALKqD;
+        Expires=Sat, 25 Sep 2021 16:11:12 GMT; Path=/
+      - AWSALBCORS=N1+HIzBOwPmHPMR9GxYbqBKy3khsMNHUHykgYPW9WaX1MDFQ/3GRHM0r7yxVnpfkn/uBWiW10Zlb8PvrigHX7IkhXS9+iL0A8IuXm9cqlau3P4Y6tBv9xbaALKqD;
+        Expires=Sat, 25 Sep 2021 16:11:12 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:43:28 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -47,5 +61,5 @@ http_interactions:
       string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"filter-not-available","value":"has-funder","message":"Filter
         has-funder specified but there is no such filter for this route. Valid filters
         for this route are: location"}]}'
-  recorded_at: Fri, 23 Jul 2021 15:43:28 GMT
+  recorded_at: Sat, 18 Sep 2021 16:11:12 GMT
 recorded_with: VCR 6.0.0

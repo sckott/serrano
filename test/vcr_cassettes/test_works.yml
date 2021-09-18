@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:12:01 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '7018'
+      Set-Cookie:
+      - AWSALB=+6oMGIJ8GfKJAu+EQ+ylmw64ZpVhJ8wunh5pNhPKb/zt5zI+z9zR+ale4uRizjHy1LTes5CzCE1qokqK1hAzNRhy8WycdRsz0XsuwC/qHcxFgnUBr4E1fpWmKK0r;
+        Expires=Sat, 25 Sep 2021 16:12:01 GMT; Path=/
+      - AWSALBCORS=+6oMGIJ8GfKJAu+EQ+ylmw64ZpVhJ8wunh5pNhPKb/zt5zI+z9zR+ale4uRizjHy1LTes5CzCE1qokqK1hAzNRhy8WycdRsz0XsuwC/qHcxFgnUBr4E1fpWmKK0r;
+        Expires=Sat, 25 Sep 2021 16:12:01 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '23219'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:45:11 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,10 +57,10 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,1,21]],"date-time":"2021-01-21T00:03:40Z","timestamp":1611187420122},"reference-count":70,"publisher":"Public
-        Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":48,"title":["Methylphenidate
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,9,17]],"date-time":"2021-09-17T23:24:55Z","timestamp":1631921095815},"reference-count":70,"publisher":"Public
+        Library of Science (PLoS)","issue":"3","license":[{"start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
+        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":52,"title":["Methylphenidate
         Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
         Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
         B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
@@ -59,10 +73,10 @@ http_interactions:
         Treat Options Neurol"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"L7","DOI":"10.1016\/S0024-3205(99)00225-8","article-title":"Methylphenidate
         and cocaine have a similar in vivo potency to block dopamine transporters
         in the human brain.","volume":"65","author":"ND Volkow","year":"1999","journal-title":"Life
-        Sci"},{"key":"ref5","author":"LD Johnston","first-page":"1","year":"2011","article-title":"Monitoring
-        the Future national survey results on drug use, 1975\u20132010."},{"key":"ref6","author":"LD
-        Johnston","first-page":"1","year":"2011","article-title":"Monitoring the Future
-        national survey results on drug use, 1975\u20132010."},{"key":"ref7","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1007\/s00213-010-1853-4","article-title":"Non-specific
+        Sci"},{"key":"ref5","first-page":"1","article-title":"Monitoring the Future
+        national survey results on drug use, 1975\u20132010.","author":"LD Johnston","year":"2011"},{"key":"ref6","first-page":"1","article-title":"Monitoring
+        the Future national survey results on drug use, 1975\u20132010.","author":"LD
+        Johnston","year":"2011"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1007\/s00213-010-1853-4","article-title":"Non-specific
         effects of methylphenidate (Ritalin) on cognitive ability and decision-making
         of ADHD and healthy adults.","volume":"210","author":"N Agay","year":"2010","journal-title":"Psychopharmacology
         (Berl)"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"46","DOI":"10.1007\/BF02244750","article-title":"Cognitive
@@ -105,9 +119,9 @@ http_interactions:
         effects of metallothionein against dopamine quinone-induced dopaminergic neurotoxicity.","volume":"581","author":"I
         Miyazaki","year":"2007","journal-title":"FEBS Lett"},{"key":"ref23","first-page":"141","article-title":"Dopaminergic
         neuron-specific oxidative stress caused by dopamine itself.","volume":"62","author":"I
-        Miyazaki","year":"2008","journal-title":"Acta Med Okayama"},{"key":"ref24","author":"H
-        Jang","year":"2012","article-title":"Inflammatory effects of highly pathogenic
-        H5N1 influenza virus infection in the CNS of mice.","journal-title":"J Neurosci"},{"key":"ref25","first-page":"382","article-title":"Pharmacokinetics
+        Miyazaki","year":"2008","journal-title":"Acta Med Okayama"},{"key":"ref24","article-title":"Inflammatory
+        effects of highly pathogenic H5N1 influenza virus infection in the CNS of
+        mice.","author":"H Jang","year":"2012","journal-title":"J Neurosci"},{"key":"ref25","first-page":"382","article-title":"Pharmacokinetics
         of methylphenidate in man, rat and monkey.","volume":"226","author":"W Wargin","year":"1983","journal-title":"J
         Pharmacol Exp Ther"},{"key":"ref26","doi-asserted-by":"crossref","first-page":"432","DOI":"10.1002\/1098-2396(20001215)38:4<432::AID-SYN8>3.0.CO;2-Q","article-title":"Synergistic
         interactions between nicotine and cocaine or methylphenidate depend on the
@@ -203,9 +217,10 @@ http_interactions:
         Toxicol"},{"key":"ref58","doi-asserted-by":"crossref","first-page":"2333","DOI":"10.1002\/mds.23263","article-title":"Incidence
         of Parkinson&apos;s disease among hospital patients with methamphetamine-use
         disorders.","volume":"25","author":"RC Callaghan","year":"2010","journal-title":"Mov
-        Disord"},{"key":"ref59","author":"S Walitza","first-page":"311","year":"2007","article-title":"Association
+        Disord"},{"key":"ref59","doi-asserted-by":"crossref","first-page":"311","DOI":"10.1007\/978-3-211-73574-9_38","article-title":"Association
         of Parkinson&apos;s disease with symptoms of attention deficit hyperactivity
-        disorder in childhood.","journal-title":"J Neural Transm Suppl","DOI":"10.1007\/978-3-211-73574-9_38","doi-asserted-by":"crossref"},{"key":"ref60","first-page":"847","article-title":"The
+        disorder in childhood.","author":"S Walitza","year":"2007","journal-title":"J
+        Neural Transm Suppl"},{"key":"ref60","first-page":"847","article-title":"The
         effects of stimulant medication on the growth of hyperkinetic children.","volume":"63","author":"AF
         Croche","year":"1979","journal-title":"Pediatrics"},{"key":"ref61","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1089\/1044546041649066","article-title":"Weekend
         holidays during methylphenidate use in ADHD children: a randomized clinical
@@ -213,8 +228,8 @@ http_interactions:
         Child Adolesc Psychopharmacol"},{"key":"ref62","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1016\/S0166-4328(01)00433-8","article-title":"Pharmacokinetic
         and pharmacodynamic properties of stimulants: implications for the design
         of new treatments for ADHD.","volume":"130","author":"JM Swanson","year":"2002","journal-title":"Behav
-        Brain Res"},{"key":"ref63","author":"G Paxinos","year":"2001","article-title":"The
-        Mouse Brain in Stereotaxic Coordinates"},{"key":"ref64","doi-asserted-by":"crossref","first-page":"1082","DOI":"10.1016\/j.neuroscience.2009.04.031","article-title":"A
+        Brain Res"},{"key":"ref63","article-title":"The Mouse Brain in Stereotaxic
+        Coordinates","author":"G Paxinos","year":"2001"},{"key":"ref64","doi-asserted-by":"crossref","first-page":"1082","DOI":"10.1016\/j.neuroscience.2009.04.031","article-title":"A
         comparison of model-based (2D) and design-based (3D) stereological methods
         for estimating cell number in the substantia nigra pars compacta (SNpc) of
         the C57BL\/6J Mouse.","volume":"161","author":"ZC Baquet","year":"2009","journal-title":"Neuroscience"},{"key":"ref65","doi-asserted-by":"crossref","first-page":"482","DOI":"10.1002\/ar.1092310411","article-title":"Unbiased
@@ -230,9 +245,7 @@ http_interactions:
         Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
         models and empirical bayes methods for assessing differential expression in
         microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,5,8]],"date-time":"2020-05-08T19:05:59Z","timestamp":1588964759000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
-        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"published-online":{"date-parts":[[2012,3,21]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["General
-        Biochemistry, Genetics and Molecular Biology","General Agricultural and Biological
-        Sciences","General Medicine"]}}'
-  recorded_at: Fri, 23 Jul 2021 15:45:11 GMT
+        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,5,8]],"date-time":"2020-05-08T19:05:59Z","timestamp":1588964759000},"score":1,"subtitle":[],"editor":[{"given":"Cesario
+        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2012,3,21]]}},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["Multidisciplinary"],"published":{"date-parts":[[2012,3,21]]}}}'
+  recorded_at: Sat, 18 Sep 2021 16:12:01 GMT
 recorded_with: VCR 6.0.0

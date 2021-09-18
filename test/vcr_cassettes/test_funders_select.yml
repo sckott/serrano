@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:15 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '1547'
+      Set-Cookie:
+      - AWSALB=pRfIcl6Yl4YWPPQu/AJSCgYhEG27WEq/DrepB9uLbk+HWOVbt5xroW8lj347iPiYBsMd/KiN2sDq0a8Jm7OuGaz/NCmdFAQiu+rcDnfbFE9cKWSpYLGknv2szyD9;
+        Expires=Sat, 25 Sep 2021 16:11:15 GMT; Path=/
+      - AWSALBCORS=pRfIcl6Yl4YWPPQu/AJSCgYhEG27WEq/DrepB9uLbk+HWOVbt5xroW8lj347iPiYBsMd/KiN2sDq0a8Jm7OuGaz/NCmdFAQiu+rcDnfbFE9cKWSpYLGknv2szyD9;
+        Expires=Sat, 25 Sep 2021 16:11:15 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '3240'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:43:35 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,41 +57,38 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":306353,"items":[{"DOI":"10.3389\/fevo.2016.00097","title":["Host
-        Defense Skin Peptides Vary with Color Pattern in the Highly Polymorphic Red-Eyed
-        Treefrog"]},{"DOI":"10.1088\/2053-1583\/aadb5f","title":["Theory-assisted
-        determination of nano-rippling and impurities in atomic resolution images
-        of angle-mismatched bilayer graphene"]},{"DOI":"10.1080\/00949655.2018.1440294","title":["The
-        generalized Poisson-binomial distribution and the computation of its distribution
-        function"]},{"DOI":"10.3982\/te1362","title":["Rationalizable partition-confirmed
-        equilibrium"]},{"DOI":"10.1103\/physrevb.97.184430","title":["Quadrupolar
-        quantum criticality on a fractal"]},{"DOI":"10.1371\/journal.pone.0196841","title":["Can
-        excreted thiocyanate be used to detect cyanide exposure in live reef fish?"]},{"DOI":"10.1021\/cm501348r","title":["Water-Based
-        Synthesis of Ultrasmall PEGylated Gold\u2013Silica Core\u2013Shell Nanoparticles
-        with Long-Term Stability"]},{"DOI":"10.1109\/tcad.2016.2523439","title":["OSFA:
-        A New Paradigm of Aging Aware Gate-Sizing for Power\/Performance Optimizations
-        Under Multiple Operating Conditions"]},{"DOI":"10.1021\/acs.jpcb.6b08857","title":["Correction
-        to \u201cBest Face Forward: Crystal-Face Competition at the Ice\u2013Water
-        Interface\u201d"]},{"DOI":"10.1021\/acsmacrolett.6b00560","title":["Poly(isoprenecarboxylates)
-        from Glucose via Anhydromevalonolactone"]},{"DOI":"10.1021\/acs.inorgchem.6b01889","title":["Spectroscopic
-        Evidence for Room Temperature Interaction of Molecular Oxygen with Cobalt
-        Porphyrin Linker Sites within a Metal\u2013Organic Framework"]},{"DOI":"10.1021\/acs.orglett.6b02523","title":["Synthesis
-        of Hindered Anilines: Three-Component Coupling of Arylboronic Acids, tert-Butyl
-        Nitrite, and Alkyl Bromides"]},{"DOI":"10.1021\/acs.inorgchem.6b01909","title":["Sulfate-Incarcerating
-        Nanojars: Solution and Solid-State Studies, Sulfate Extraction from Water,
-        and Anion Exchange with Carbonate"]},{"DOI":"10.1021\/acs.inorgchem.6b01472","title":["Structure
-        and Magnetic Behavior of Layered Honeycomb Tellurates, BiM(III)TeO6 (M = Cr,
-        Mn, Fe)"]},{"DOI":"10.1021\/acs.inorgchem.6b01714","title":["Synthesis and
-        Reactivity of Electronically Unsaturated Dirhenium Carbonyl Compounds Containing
-        Bridging Gold-Carbene Groups"]},{"DOI":"10.1021\/acs.jpca.6b07610","title":["Millimeter-Wave
-        Spectroscopy, X-ray Crystal Structure, and Quantum Chemical Studies of Diketene:
-        Resolving Ambiguities Concerning the Structure of the Ketene Dimer"]},{"DOI":"10.1021\/jacs.6b06562","title":["Two-Dimensional
-        Supramolecular Polymers Embodying Large Unilamellar Vesicles in Water"]},{"DOI":"10.1021\/acs.biochem.6b00517","title":["Interplay
-        of Specific Trans- and Juxtamembrane Interfaces in Plexin A3 Dimerization
-        and Signal Transduction"]},{"DOI":"10.1021\/acs.joc.6b01846","title":["Reversible
-        Hydrolysis Reaction with the Spore Photoproduct under Alkaline Conditions"]},{"DOI":"10.1021\/acs.iecr.6b02279","title":["A
-        One-Step and Scalable Continuous-Flow Nanoprecipitation for Catalytic Reduction
-        of Organic Pollutants in Water"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:43:35 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":314000,"items":[{"DOI":"10.1103\/physrevlett.122.035501","title":["Critical
+        Analysis of an FeP Empirical Potential Employed to Study the Fracture of Metallic
+        Glasses"]},{"DOI":"10.1371\/journal.pone.0210494","title":["Initiation of
+        feeding by four sympatric Neotropical primates (Ateles belzebuth, Lagothrix
+        lagotricha poeppigii, Plecturocebus (Callicebus) discolor, and Pithecia aequatorialis)
+        in Amazonian Ecuador: Relationships to photic and ecological factors"]},{"DOI":"10.1364\/boe.10.000747","title":["Comparison
+        of time- and angular-domain scatter rejection in mesoscopic optical projection
+        tomography: a simulation study"]},{"DOI":"10.1186\/s12859-019-2595-x","title":["Statistical
+        significance approximation for local similarity analysis of dependent time
+        series data"]},{"DOI":"10.1090\/tran\/7482","title":["Models for spaces of
+        dendritic polynomials"]},{"DOI":"10.1007\/s10750-019-3882-2","title":["Drought
+        impacts to trout and salamanders in cool, forested headwater ecosystems in
+        the western Cascade Mountains, OR"]},{"DOI":"10.1103\/physreva.99.013827","title":["Fast
+        amplification and rephasing of entangled cat states in a qubit-oscillator
+        system"]},{"DOI":"10.1364\/ome.9.000516","title":["3D imaging of gems and
+        minerals by multiphoton microscopy"]},{"DOI":"10.1145\/3292040.3219670","title":["Designing
+        Low-Complexity Heavy-Traffic Delay-Optimal Load Balancing Schemes"]},{"DOI":"10.1103\/physrevc.99.014313","title":["Inelastic
+        neutron scattering studies of \nSe76"]},{"DOI":"10.1063\/1.5064740","title":["Control
+        of transverse wakefields via phase-matched laser modes in parabolic plasma
+        channels"]},{"DOI":"10.1039\/c8py01550c","title":["Thermally driven directional
+        free-radical polymerization in confined channels"]},{"DOI":"10.1145\/3292040.3219665","title":["Degree
+        of Queue Imbalance"]},{"DOI":"10.1007\/s40306-018-0295-7","title":["Relative
+        Functoriality and Functional Equations via Trace Formulas"]},{"DOI":"10.1007\/s10530-019-01914-0","title":["Invader
+        invaded: population dynamics of zebra mussels (Dreissena polymorpha) and quagga
+        mussels (Dreissena rostriformis bugensis) in polymictic Oneida Lake, NY, USA
+        (1992\u20132013)"]},{"DOI":"10.1145\/3292040.3219620","title":["Dandelion++"]},{"DOI":"10.1016\/j.actamat.2019.01.017","title":["Interfacial
+        free energies, nucleation, and precipitate morphologies in Ni-Al-Cr alloys:
+        Calculations and atom-probe tomographic experiments"]},{"DOI":"10.1103\/physrevd.99.025010","title":["Positive
+        curvature and scalar field tunneling in the landscape"]},{"DOI":"10.1088\/1361-6587\/ab019a","title":["Petascale
+        particle-in-cell simulations of kinetic effects in inertial fusion energy
+        plasmas"]},{"DOI":"10.1109\/jsen.2019.2893241","title":["An Integrated Circuit
+        Solution to Johnson Noise Thermometry Using Low-Cost and Fast CMOS Technology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:11:15 GMT
 recorded_with: VCR 6.0.0

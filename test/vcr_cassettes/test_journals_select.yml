@@ -20,20 +20,34 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Sat, 18 Sep 2021 16:11:18 GMT
       Content-Type:
-      - application/json;charset=UTF-8
-      Vary:
-      - Accept
+      - application/json
+      Content-Length:
+      - '1595'
+      Set-Cookie:
+      - AWSALB=AroYEbOxcuPk35AMZpB0de7ovXK6psStvhR32VGh/j5K4VM2lB4MMIudRRBHIca0O/nkfTZHF4AXx4o+PxKRyy0wEEhpJK4gEV7YYyNT8V1SCvJ+aIsAynyNzIi7;
+        Expires=Sat, 25 Sep 2021 16:11:17 GMT; Path=/
+      - AWSALBCORS=AroYEbOxcuPk35AMZpB0de7ovXK6psStvhR32VGh/j5K4VM2lB4MMIudRRBHIca0O/nkfTZHF4AXx4o+PxKRyy0wEEhpJK4gEV7YYyNT8V1SCvJ+aIsAynyNzIi7;
+        Expires=Sat, 25 Sep 2021 16:11:17 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
       Access-Control-Allow-Origin:
       - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With
-      Content-Length:
-      - '3264'
+      Vary:
+      - Accept-Encoding
       Server:
-      - http-kit
-      Date:
-      - Fri, 23 Jul 2021 15:43:39 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -43,40 +57,44 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":11753,"items":[{"DOI":"10.7717\/peerj.6161","title":["Changes
-        in bone density and bone quality caused by single fasting for 96 hours in
-        rats"]},{"DOI":"10.7717\/peerj.3409","title":["Europatitan eastwoodi, a new
-        sauropod from the lower Cretaceous of Iberia in the initial radiation of somphospondylans
-        in Laurasia"]},{"DOI":"10.7717\/peerj.4086","title":["Do rotational shear-cushioning
-        shoes influence horizontal ground reaction forces and perceived comfort during
-        basketball cutting maneuvers?"]},{"DOI":"10.7717\/peerj.2068","title":["A
-        closer look at four-dot masking of a foveated target"]},{"DOI":"10.7717\/peerj.903","title":["Temporal
-        changes in nasopharyngeal carriage ofStreptococcus pneumoniaeserotype 1 genotypes
-        in healthy Gambians before and after the 7-valent pneumococcal conjugate vaccine"]},{"DOI":"10.7717\/peerj.4261","title":["Differential
-        response to stress inOstrea luridaas measured by gene expression"]},{"DOI":"10.7717\/peerj.1153","title":["Development
-        of a greenhouse-based inoculation protocol for the fungusColletotrichum cerealepathogenic
-        to annual bluegrass (Poa annua)"]},{"DOI":"10.7717\/peerj.730","title":["A
-        quantitative approach for integrating multiple lines of evidence for the evaluation
-        of environmental health risks"]},{"DOI":"10.7717\/peerj.6513","title":["Effects
-        of root phenotypic changes on the deep rooting of Populus euphratica seedlings
-        under drought stresses"]},{"DOI":"10.7717\/peerj.5611","title":["BdBG: a bucket-based
-        method for compressing genome sequencing data with dynamic de Bruijn graphs"]},{"DOI":"10.7717\/peerj.9714","title":["Extracellular
-        vesicles in patients in the acute phase of psychosis and after clinical improvement:
-        an explorative study"]},{"DOI":"10.7717\/peerj.9769","title":["HPLC profiling
-        of selected phenolic acids and flavonoids in Salvia eigii, Salvia hierosolymitana
-        and Salvia viridis growing wild in Jordan and their in vitro antioxidant activity"]},{"DOI":"10.7717\/peerj.3102","title":["Insect
-        herbivores increase mortality and reduce tree seedling growth of some species
-        in temperate forest canopy gaps"]},{"DOI":"10.7717\/peerj.6752","title":["A
-        proposed terminology for the dentition of gomphodont cynodonts and dental
-        morphology in Diademodontidae and Trirachodontidae"]},{"DOI":"10.7717\/peerj.4485","title":["Ecosystem
-        functional response across precipitation extremes in a sagebrush steppe"]},{"DOI":"10.7717\/peerj.1098","title":["Early
-        prediction of language and literacy problems: is 18 months too early?"]},{"DOI":"10.7717\/peerj.1400","title":["Porphyrobacter
-        mercurialissp. nov., isolated from a stadium seat and emended description
-        of the genusPorphyrobacter"]},{"DOI":"10.7717\/peerj.114","title":["Lacosamide
-        adjunctive therapy for partial-onset seizures: a meta-analysis"]},{"DOI":"10.7717\/peerj.10679","title":["Reproducing
-        country-wide COVID-19 dynamics can require the usage of a set of SIR systems"]},{"DOI":"10.7717\/peerj.10675","title":["Differential
-        relieving effects of shikonin and its derivatives on inflammation and mucosal
-        barrier damage caused by ulcerative colitis"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Fri, 23 Jul 2021 15:43:39 GMT
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":12066,"items":[{"DOI":"10.7717\/peerj.6186","title":["Optimization
+        of a pretreatment and hydrolysis process for the efficient recovery of recycled
+        sugars and unknown compounds from agricultural sweet sorghum bagasse stem
+        pith solid waste"]},{"DOI":"10.7717\/peerj.6211","title":["Outcomes of hospitalizations
+        with atrial fibrillation-flutter on a weekday versus weekend: an analysis
+        from a 2014 nationwide inpatient sample"]},{"DOI":"10.7717\/peerj.6099","title":["Shifting
+        faunal baselines through the Quaternary revealed by cave fossils of eastern
+        Australia"]},{"DOI":"10.7717\/peerj.5920","title":["Aetiology of livestock
+        fetal mortality in Mazandaran province, Iran"]},{"DOI":"10.7717\/peerj.6195","title":["Hardly
+        habitual: chimpanzees and gorillas show flexibility in their motor responses
+        when presented with a causally-clear task"]},{"DOI":"10.7717\/peerj.6159","title":["Relationship
+        between physical and cognitive performance in community dwelling, ethnically
+        diverse older adults: a cross-sectional study"]},{"DOI":"10.7717\/peerj.6192","title":["Climatic
+        niche evolution in the viviparousSceloporus torquatusgroup (Squamata: Phrynosomatidae)"]},{"DOI":"10.7717\/peerj.6274","title":["Effects
+        of nickel and cobalt on methane production and methanogen abundance and diversity
+        in paddy soil"]},{"DOI":"10.7717\/peerj.6453","title":["The value of diffusion
+        tensor tractography delineating corticospinal tract in glioma in rat: validation
+        via correlation histology"]},{"DOI":"10.7717\/peerj.6321","title":["Protein
+        signatures linking history of miscarriages and metabolic syndrome: a proteomic
+        study among North Indian women"]},{"DOI":"10.7717\/peerj.6408","title":["Sexual
+        dimorphism in the Chinese endemic speciesPachyhynobius shangchengensisFei,
+        Qu and Wu, 1983 (Urodela: Hynobiidae)"]},{"DOI":"10.7717\/peerj.6382","title":["Association
+        between education and health outcomes among adults with disabilities: evidence
+        from Shanghai, China"]},{"DOI":"10.7717\/peerj.6386","title":["Characterization
+        of the complete chloroplast genomes of five Populus species from the western
+        Sichuan plateau, southwest China: comparative and phylogenetic analyses"]},{"DOI":"10.7717\/peerj.6438","title":["The
+        association between meteorological variables and road traffic injuries: a
+        study from Macao"]},{"DOI":"10.7717\/peerj.6504","title":["Effects of narrow
+        linear clearings on movement and habitat use in a boreal forest mammal community
+        during winter"]},{"DOI":"10.7717\/peerj.6585","title":["Sea stars of the genus
+        Henricia Gray, 1840 (Echinodermata, Asteroidea) from Vostok Bay, Sea of Japan"]},{"DOI":"10.7717\/peerj.6671","title":["Loancorhynchus
+        catrillancaigen. et sp. nov., a new swordfish (Xiphioidei, Blochiidae) from
+        the Middle Eocene of central Chile"]},{"DOI":"10.7717\/peerj.6350","title":["Impact
+        of old age on resectable colorectal cancer outcomes"]},{"DOI":"10.7717\/peerj.6256","title":["Tamilokus
+        mabinia, a new, anatomically divergent genus and species of wood-boring bivalve
+        from the Philippines"]},{"DOI":"10.7717\/peerj.6527","title":["Psychological
+        flexibility and attitudes toward evidence-based interventions by amyotrophic
+        lateral sclerosis patients"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 18 Sep 2021 16:11:18 GMT
 recorded_with: VCR 6.0.0
