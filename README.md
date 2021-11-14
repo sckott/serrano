@@ -3,7 +3,7 @@ serrano
 
 [![gem version](https://img.shields.io/gem/v/serrano.svg)](https://rubygems.org/gems/serrano)
 [![Ruby](https://github.com/sckott/serrano/workflows/Ruby/badge.svg)](https://github.com/sckott/serrano/actions)
-[![codecov.io](https://codecov.io/github/sckott/serrano/coverage.svg?branch=master)](https://codecov.io/github/sckott/serrano?branch=master)
+[![codecov.io](https://codecov.io/github/sckott/serrano/coverage.svg?branch=main)](https://codecov.io/github/sckott/serrano?branch=main)
 [![DOI](https://zenodo.org/badge/2600/sckott/serrano.svg)](https://zenodo.org/badge/latestdoi/2600/sckott/serrano)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 
@@ -199,4 +199,4 @@ Commands:
 [tdm]: https://www.crossref.org/education/retrieve-metadata/rest-api/text-and-data-mining/
 [ccount]: https://labs.crossref.org/openurl/
 [csl]: https://github.com/citation-style-language/styles
-[changelog]: https://github.com/sckott/serrano/blob/master/CHANGELOG.md
+[changelog]: https://github.com/sckott/serrano/blob/main/CHANGELOG.md
