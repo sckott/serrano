@@ -47,7 +47,7 @@ Other methods:
 
 Note about searching:
 
-You are using the Crossref search API described at https://github.com/CrossRef/rest-api-doc When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://gitlab.com/crossref/issues/issues/101
+You are using the Crossref search API described at https://api.crossref.org When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://gitlab.com/crossref/issues/issues/101
 
 Rate limits:
 
@@ -194,9 +194,8 @@ Commands:
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 * License: MIT
 
-[crapi]: https://api.crossref.org/help
+[crapi]: https://api.crossref.org/
 [cn]: https://citation.crosscite.org/docs.html
-[tdm]: https://www.crossref.org/education/retrieve-metadata/rest-api/text-and-data-mining/
-[ccount]: https://labs.crossref.org/openurl/
+[ccount]: https://www.crossref.org/documentation/retrieve-metadata/openurl/
 [csl]: https://github.com/citation-style-language/styles
 [changelog]: https://github.com/sckott/serrano/blob/main/CHANGELOG.md

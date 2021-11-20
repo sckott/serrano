@@ -42,7 +42,7 @@ require "rexml/xpath"
 #   @param cursor [String] Cursor character string to do deep paging. Default is `nil`.
 #       Pass in '*' to start deep paging. Any combination of query, filters and facets may be
 #       used with deep paging cursors. While limit may be specified along with cursor, offset
-#       and sample cannot be used. See https://api.crossref.org/help
+#       and sample cannot be used. See https://api.crossref.org/
 #   @param cursor_max [Fixnum] Max records to retrieve. Only used when cursor
 #       param used. Because deep paging can result in continuous requests until all
 #       are retrieved, use this parameter to set a maximum number of records. Of course,
@@ -62,7 +62,7 @@ require "rexml/xpath"
 #     - oauth [Hash] A hash with OAuth details
 
 # @!macro field_queries
-#   @param [Hash<Object>] args Field queries, as named parameters. See https://api.crossref.org/help
+#   @param [Hash<Object>] args Field queries, as named parameters. See https://api.crossref.org/
 #       Field query parameters mut be named, and must start with `query_`. Any dashes or
 #       periods should be replaced with underscores. The options include:
 #       - query_container_title: Query container-title aka. publication name
@@ -97,16 +97,16 @@ require "rexml/xpath"
 # For example, if you want to inspect headers returned from the HTTP request,
 # and parse the raw result in any way you wish.
 #
-# @see https://api.crossref.org/help for detailed description of the Crossref API
+# @see https://api.crossref.org for detailed description of the Crossref API
 #
 # What am I actually searching when using the Crossref search API?
 #
-# You are using the Crossref search API described at https://api.crossref.org/help
+# You are using the Crossref search API described at https://api.crossref.org
 # When you search with query terms, on Crossref servers they are not
 # searching full text, or even abstracts of articles, but only what is
 # available in the data that is returned to you. That is, they search
 # article titles, authors, etc. For some discussion on this, see
-# https://gitlab.com/crossref/issues/issues/101
+# https://gitlab.com/crossref/issues/-/issues/101
 #
 #
 # The Polite Pool
@@ -639,7 +639,8 @@ module Serrano
   # @param url [String] the API url for the function (should be left to default)
   # @param key [String] your API key
   #
-  # @see http://labs.crossref.org/openurl/ for more info on this Crossref API service.
+  # @see https://www.crossref.org/documentation/retrieve-metadata/openurl/ for
+  # more info on this Crossref API service.
   #
   # @example
   #   require 'serrano'
