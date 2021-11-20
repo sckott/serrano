@@ -114,7 +114,7 @@ module Serrano
               endpt + "/" + x.to_s
             end
           end
-          
+
           js = _req(conn, endpt2, opts)
           cu = js["message"]["next-cursor"]
           max_avail = js["message"]["total-results"]
