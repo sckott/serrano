@@ -69,10 +69,10 @@ module Serrano
         raise "cursor_max must be of class int" unless cursor_max.is_a?(Integer)
       end
 
-      arguments = {query:, filter: filt, offset:,
-                   rows: limit, sample:, sort:,
-                   order:, facet:, select:,
-                   cursor:}.tostrings
+      arguments = {query: query, filter: filt, offset: offset,
+                   rows: limit, sample: sample, sort: sort,
+                   order: order, facet: facet, select: select,
+                   cursor: cursor}.tostrings
       arguments = arguments.merge(fieldqueries)
       opts = arguments.delete_if { |_k, v| v.nil? }
 

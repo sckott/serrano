@@ -55,8 +55,9 @@ module Serrano
 
       self.select = select&.instance_of?(Array) ? select.join(",") : select
 
-      args = {query:, filter: filt, offset:, rows: limit, sample:, sort:,
-              order:, facet:, select:}
+      args = {query: query, filter: filt, offset: offset, rows: limit,
+              sample: sample, sort: sort, order: order, facet: facet,
+              select: select}
       opts = args.delete_if { |_k, v| v.nil? }
 
       conn = if verbose
