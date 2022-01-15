@@ -12,7 +12,7 @@ require "serrano/helpers/configuration"
 #
 # Class to perform HTTP requests to the Crossref API
 module Serrano
-  class Request #:nodoc:
+  class Request # :nodoc:
     attr_accessor :endpt
     attr_accessor :id
     attr_accessor :query
@@ -55,10 +55,8 @@ module Serrano
 
       self.select = select&.instance_of?(Array) ? select.join(",") : select
 
-      args = {query: query, filter: filt, offset: offset,
-              rows: limit, sample: sample, sort: sort,
-              order: order, facet: facet,
-              select: select}
+      args = {query:, filter: filt, offset:, rows: limit, sample:, sort:,
+              order:, facet:, select:}
       opts = args.delete_if { |_k, v| v.nil? }
 
       conn = if verbose

@@ -23,7 +23,7 @@ CN_FORMAT_HEADERS = {"rdf-xml" => "application/rdf+xml",
 #
 # Class to perform HTTP requests to the Crossref API
 module Serrano
-  class CNRequest #:nodoc:
+  class CNRequest # :nodoc:
     attr_accessor :ids
     attr_accessor :format
     attr_accessor :style

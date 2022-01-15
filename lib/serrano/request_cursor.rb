@@ -15,7 +15,7 @@ require "serrano/utils"
 #
 # Class to perform HTTP requests to the Crossref API
 module Serrano
-  class RequestCursor #:nodoc:
+  class RequestCursor # :nodoc:
     attr_accessor :endpt
     attr_accessor :id
     attr_accessor :query
@@ -69,10 +69,10 @@ module Serrano
         raise "cursor_max must be of class int" unless cursor_max.is_a?(Integer)
       end
 
-      arguments = {query: query, filter: filt, offset: offset,
-                   rows: limit, sample: sample, sort: sort,
-                   order: order, facet: facet, select: select,
-                   cursor: cursor}.tostrings
+      arguments = {query:, filter: filt, offset:,
+                   rows: limit, sample:, sort:,
+                   order:, facet:, select:,
+                   cursor:}.tostrings
       arguments = arguments.merge(fieldqueries)
       opts = arguments.delete_if { |_k, v| v.nil? }
 

@@ -653,7 +653,7 @@ module Serrano
 
     args = {id: "doi:" + doi, pid: key, noredirect: true}
     opts = args.delete_if { |_k, v| v.nil? }
-    conn = Faraday.new(url: url, request: options)
+    conn = Faraday.new(url:, request: options)
     res = conn.get "", opts
     x = res.body
     oc = REXML::Document.new("<doc>#{x}</doc>")

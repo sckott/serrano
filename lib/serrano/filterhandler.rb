@@ -52,11 +52,11 @@ module Helpers
 end
 
 module Serrano
-  class Request #:nodoc:
+  class Request # :nodoc:
     include Helpers
   end
 
-  class RequestCursor #:nodoc:
+  class RequestCursor # :nodoc:
     include Helpers
   end
 end
