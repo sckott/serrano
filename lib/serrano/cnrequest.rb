@@ -89,17 +89,3 @@ def make_request(conn, ids, format, style, locale)
 
   res.body if res.success?
 end
-
-# parser <- cn_types[[self.format]]
-# if (raw) {
-#   content(response, "text")
-# } else {
-#   out <- content(response, "parsed", parser, "UTF-8")
-#   if (format == "text") {
-#     out <- gsub("\n", "", out)
-#   }
-#   if (format == "bibentry") {
-#     out <- parse_bibtex(out)
-#   }
-#   out
-# }
