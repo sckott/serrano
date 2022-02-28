@@ -87,7 +87,7 @@ def make_request(conn, ids, format, style, locale)
     }
   end
 
-  res.body
+  res.body if res.success?
 end
 
 # parser <- cn_types[[self.format]]
