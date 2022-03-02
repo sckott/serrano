@@ -45,7 +45,7 @@ task release: :build do
   system "gem push serrano-#{Serrano::VERSION}.gem"
 end
 
-desc 'open an irb session preloaded with this gem'
+desc "open an irb session preloaded with this gem"
 task :console do
-  sh 'irb -r pp -r ./lib/serrano.rb'
+  sh "irb -r pp -r ./lib/serrano.rb"
 end

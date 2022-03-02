@@ -15,6 +15,7 @@ VCR.configure do |config|
 end
 
 require "test/unit"
+require "test/unit/assertions"
 require "serrano"
 require "fileutils"
 require "json"
