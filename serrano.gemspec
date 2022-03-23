@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.executables = ["serrano"]
 
   s.add_development_dependency "bundler", "~> 2.1", ">= 2.1.4"
-  s.add_development_dependency "codecov", "~> 0.5.0"
+  s.add_development_dependency "codecov", "~> 0.6.0"
   s.add_development_dependency "json", "~> 2.3", ">= 2.3.1"
   s.add_development_dependency "rake", "~> 13.0", ">= 13.0.1"
   s.add_development_dependency "standard", "~> 1.0"
