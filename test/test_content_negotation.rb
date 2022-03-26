@@ -31,8 +31,7 @@ class TestCN < Test::Unit::TestCase
   def test_cn_query
     VCR.use_cassette("test_cn_format_param") do
       res = Serrano.content_negotiation(ids: @id, format: "citeproc-json")
-      assert_equal(4, res.length)
-      assert_equal(Hash, res.class)
+      assert_equal(String, res.class)
       # assert_equal(200, res.status)
     end
   end

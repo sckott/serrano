@@ -9,9 +9,10 @@ if ENV["CI"] == "true"
 end
 
 require "vcr"
-VCR.configure do |config|
-  config.cassette_library_dir = "test/vcr_cassettes"
-  config.hook_into :webmock
+VCR.configure do |c|
+  c.cassette_library_dir = "test/vcr_cassettes"
+  c.hook_into :webmock
+  c.filter_sensitive_data('<email>') { ENV['CROSSREF_EMAIL'] }
 end
 
 require "test/unit"

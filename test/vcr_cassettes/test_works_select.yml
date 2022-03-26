@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:12:21 GMT
+      - Sat, 26 Mar 2022 04:18:21 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1332'
+      - '1352'
       Set-Cookie:
-      - AWSALB=r+46gMShTkhmOp61aLLyJzkTKyifsoE0gucShhzIxCrAGQ+vCU+aLrUhpC1YBR2ZNdy66coHs+FSHBifjToMGcWEgZVIc0IzUndOzkGeG2+QfYQZmtnnma70q96l;
-        Expires=Sat, 25 Sep 2021 16:12:20 GMT; Path=/
-      - AWSALBCORS=r+46gMShTkhmOp61aLLyJzkTKyifsoE0gucShhzIxCrAGQ+vCU+aLrUhpC1YBR2ZNdy66coHs+FSHBifjToMGcWEgZVIc0IzUndOzkGeG2+QfYQZmtnnma70q96l;
-        Expires=Sat, 25 Sep 2021 16:12:20 GMT; Path=/; SameSite=None
+      - AWSALB=RpwE5PtMxCRCYgYtVy+KeiAy4d2dKcDTf3IVF9S1lqaxjc5+tIcrwSo+F0EdXj0Auv+JNkkQUhSzXjcKL1rpu7yCIQCTijnC79fWQbRN3rXXKQXllHD1Nw5sTGOZ;
+        Expires=Sat, 02 Apr 2022 04:18:19 GMT; Path=/
+      - AWSALBCORS=RpwE5PtMxCRCYgYtVy+KeiAy4d2dKcDTf3IVF9S1lqaxjc5+tIcrwSo+F0EdXj0Auv+JNkkQUhSzXjcKL1rpu7yCIQCTijnC79fWQbRN3rXXKQXllHD1Nw5sTGOZ;
+        Expires=Sat, 02 Apr 2022 04:18:19 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,31 +58,27 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":127472782,"items":[{"DOI":"10.18261\/issn1891-5760-2015-01-05","title":["Verket
-        som ble borte &#8211; ekfrase som dokumentasjon for ettertiden"]},{"DOI":"10.38146\/2021.4.7","title":["Gamification,
-        mint tehets\u00e9ggondoz\u00e1si eszk\u00f6z a k\u00f6zszolg\u00e1lati oktat\u00e1sban
-        \u2013 a kiberverseny p\u00e9ld\u00e1ja"]},{"DOI":"10.52677\/2019.10.14.27","title":["Hobbes\u2019
-        Philosophy of Education: Finding Model for Civic Education"]},{"DOI":"10.3365\/kjmm.2021.59.5.355","title":["Erratum
-        to: Effects of Two-Step Anodization on Surface Wettability in Surface Treatment
-        of Aluminum Alloy"]},{"DOI":"10.52677\/2018.04.11.33","title":["Hume on the
-        Relationship between Emotion and Desire in Explaining Action"]},{"DOI":"10.52677\/2019.10.14.5","title":["Montaigne\u2019s
-        Education and Philosophy: Power to Create My Own Way of Living"]},{"DOI":"10.38146\/2021.4.11","title":["A
-        t\u00e9nyek makacs dolgok\u2026 Ann\u00e1l rosszabb a t\u00e9nyeknek?!"]},{"DOI":"10.1364\/ome.11.001364","title":["Optical
-        Fibers: Materials and Applications"]},{"DOI":"10.1364\/ome.11.001410","title":["Photonic
-        Topological Materials feature issue: publisher\u2019s note"]},{"DOI":"10.1109\/iembs.2005.1615903","title":["Identification
-        of Spinal Deformity Classification with Total Curvature Analysis and Artificial
-        Neural Network"]},{"DOI":"10.1016\/s0022-3476(69)80360-4","title":["Subject
-        index"]},{"DOI":"10.1016\/s0026-0576(01)80141-0","title":["Centrifugal pumps"]},{"DOI":"10.1109\/iembs.2005.1616586","title":["Development
-        of a Wearable Measurement and Control Unit for Personal Customizing Machine-Supported
-        Exercise"]},{"DOI":"10.1016\/s0002-9610(00)00531-6","title":["Removal of the
-        thrombosed prosthetic axillofemoral graft"]},{"DOI":"10.1016\/s0885-2006(97)90001-6","title":["From
-        the editor"]},{"DOI":"10.1016\/s0022-1139(00)84566-2","title":["Fast ionic
-        fluoride conductors: General criteria and modeling"]},{"DOI":"10.1016\/0031-9422(91)85159-w","title":["Studies
-        in natural product chemistry, volume 7: Structure and chemistry:"]},{"DOI":"10.1016\/j.brachy.2006.03.058","title":["LDR
-        brachytherapy implants as a boost in early stage breast cancer in women with
-        cilastic implants"]},{"DOI":"10.1109\/mape.2005.1618211","title":["Multiuser
-        Channel Estimation for Detection for Cochannel Signals in the Receiver of
-        TETRA Digital trunked System"]},{"DOI":"10.1016\/s0022-3476(69)80327-6","title":["The
-        Journal of Pediatrics Educational Foundation"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 18 Sep 2021 16:12:21 GMT
-recorded_with: VCR 6.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":132952311,"items":[{"DOI":"10.3126\/nmj.v1i1.20391","title":["Demographic
+        Profile and Risk Factors for Dry Eye"]},{"DOI":"10.1109\/gsis.2009.5408150","title":["Study
+        on hybrid AHP method with its application"]},{"DOI":"10.7287\/peerj.preprints.26709v1","title":["Multiscale
+        spatial distribution of macrofauna response to fishery pressure"]},{"DOI":"10.1080\/10599230802453638","title":["Gender
+        Discrimination in Chinese Recruitment Advertisements: A Content Analysis"]},{"DOI":"10.1016\/j.ijcard.2015.10.237","title":["Disappearing
+        stent but persisting problems? Optical coherence tomography assessment of
+        intra-scaffold restenosis"]},{"DOI":"10.1109\/eait.1990.205476","title":["Induction-motor-driven
+        vehicle with vibration suppression using wheel torque observer"]},{"DOI":"10.1109\/cict.2013.6558203","title":["Performance
+        analysis of CDS-based hybrid path in WSN for condition monitoring"]},{"DOI":"10.1515\/9783111539126-007","title":["D.
+        B\u00fcrgerliches Recht"]},{"DOI":"10.2307\/j.ctt211qx2w.4","title":["Abbreviations"]},{"DOI":"10.7735\/ksmte.2014.23.3.230","title":["Wafer
+        Level Package Design Optimization Using FEM"]},{"DOI":"10.1111\/j.174-1617.1986.tb00129.x","title":["THE
+        DIVORCE ADJUSTMENT EDUCATION AND SUPPORT GROUP FOR CHILDREN"]},{"DOI":"10.3803\/enm.2020.35.2.288","title":["Association
+        of Serum Progranulin Levels with Progression of Papillary Thyroid Cancer"]},{"DOI":"10.1249\/01.mss.0000562291.18781.06","title":["A
+        Narrow Wrestling Decision"]},{"DOI":"10.1017\/s002074380005964x","title":["Riccardo
+        Zipoli, Statistics and Lirica Persica, Lirica Persica 7 (Eurasiatica 26) (Venice:
+        Poligrafo, 1992). Pp. 118."]},{"DOI":"10.1086\/332908","title":["Leaf-Tissue
+        Production and Water Content in a Mutant Race of Phaseolus vulgaris"]},{"DOI":"10.2307\/4108850","title":["Edible
+        Nuts"]},{"DOI":"10.1002\/chin.201425024","title":["ChemInform Abstract: Asymmetric
+        Hydrovinylation and Hydrogenation with Metal Complexes of C3-Symmetric Tris-Binaphthyl
+        Monophosphites."]},{"DOI":"10.52482\/ayurline.v5i03.538","title":["Role of
+        Raktmokshana (Siravedh) & Shaman Chikitsa in Vicharchika - A Case Study"]},{"DOI":"10.1002\/3527602623.app1","title":["Appendix"]},{"DOI":"10.1016\/j.jalz.2018.06.162","title":["P1\u2010158:
+        WITHDRAWN"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 26 Mar 2022 04:18:21 GMT
+recorded_with: VCR 6.1.0

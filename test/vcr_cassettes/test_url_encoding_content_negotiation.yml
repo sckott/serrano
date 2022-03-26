@@ -8,38 +8,40 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 302
-      message: ''
+      message: Found
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:58 GMT
+      - Sat, 26 Mar 2022 04:17:45 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
-      - '187'
+      - '223'
       Connection:
       - keep-alive
+      Location:
+      - https://api.crossref.org/v1/works/10.1007%2F12080.1874-1746/transform
       Vary:
       - Accept
-      Location:
-      - https://data.crossref.org/10.1007%2F12080.1874-1746
       Expires:
-      - Sat, 18 Sep 2021 16:32:48 GMT
+      - Sat, 26 Mar 2022 05:14:45 GMT
+      Permissions-Policy:
+      - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OygLiogP8tNi%2FStSehnd%2Bdjt52ABBybltQxHxoDU%2BE03OdeyA%2B0VKuwBT4rmptfe7VfkLiDSXOOl1wDX3A68LSwXBskx1raVeVObrMZkQZqEjYjOix4Le6U%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=s%2BHnU7TMvHBDrTQD3SNJ%2B7GWeUR%2F9UJrsaoL8pwPdiDrE56CU%2FqUZZiRSAJOnRjfQCyUB96Vl%2BotLsUyLXCk15X5L61PeTkHCXH%2BfHYSAhj7LLRCtJEe1RQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -47,29 +49,28 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 690bda674a4339d2-SEA
+      - 6f1d1412598a39cc-SEA
       Alt-Svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
-        <body><a href="https://data.crossref.org/10.1007%2F12080.1874-1746">https://data.crossref.org/10.1007%2F12080.1874-1746</a></body></html>
-  recorded_at: Sat, 18 Sep 2021 16:11:58 GMT
+        <body><a href="https://api.crossref.org/v1/works/10.1007%2F12080.1874-1746/transform">https://api.crossref.org/v1/works/10.1007%2F12080.1874-1746/transform</a></body></html>
+  recorded_at: Sat, 26 Mar 2022 04:17:45 GMT
 - request:
     method: get
-    uri: https://data.crossref.org/10.1007%2F12080.1874-1746
+    uri: https://api.crossref.org/v1/works/10.1007%2F12080.1874-1746/transform
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -77,23 +78,36 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Sat, 26 Mar 2022 04:17:45 GMT
+      Content-Type:
+      - application/x-bibtex
+      Transfer-Encoding:
+      - chunked
+      Set-Cookie:
+      - AWSALB=FkGdn5RXfb9hSVL34CYiHsrlc+YZqZsdFVkjBPxNXXhcmvpc91a3B8ow4X/X7LzBALz+SooPbcUDv7DplBR8qHe+pjHL2nidkuvjHlWs7A3nXOUFaQLvng6AtfP8;
+        Expires=Sat, 02 Apr 2022 04:17:45 GMT; Path=/
+      - AWSALBCORS=FkGdn5RXfb9hSVL34CYiHsrlc+YZqZsdFVkjBPxNXXhcmvpc91a3B8ow4X/X7LzBALz+SooPbcUDv7DplBR8qHe+pjHL2nidkuvjHlWs7A3nXOUFaQLvng6AtfP8;
+        Expires=Sat, 02 Apr 2022 04:17:45 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Link:
+      - <http://dx.doi.org/10.1007/12080.1874-1746>; rel="canonical"
+      Access-Control-Expose-Headers:
+      - Link
       Access-Control-Allow-Headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
-      Access-Control-Expose-Headers:
-      - Link
-      Link:
-      - <http://dx.doi.org/10.1007/12080.1874-1746>; rel="canonical"
-      Content-Type:
-      - application/x-bibtex
-      Content-Length:
-      - '185'
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Sat, 18 Sep 2021 16:11:58 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -106,7 +120,7 @@ http_interactions:
       encoding: UTF-8
       string: "@misc{1,\n\tdoi = {10.1007/12080.1874-1746},\n\turl = {https://doi.org/10.1007%2F12080.1874-1746},\n\tpublisher
         = {Springer Science and Business Media {LLC}},\n\ttitle = {Theoretical Ecology}\n}"
-  recorded_at: Sat, 18 Sep 2021 16:11:58 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:45 GMT
 - request:
     method: get
     uri: https://doi.org/10.1007%2F10452.1573-5125
@@ -115,38 +129,40 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 302
-      message: ''
+      message: Found
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:59 GMT
+      - Sat, 26 Mar 2022 04:17:45 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
-      - '187'
+      - '223'
       Connection:
       - keep-alive
+      Location:
+      - https://api.crossref.org/v1/works/10.1007%2F10452.1573-5125/transform
       Vary:
       - Accept
-      Location:
-      - https://data.crossref.org/10.1007%2F10452.1573-5125
       Expires:
-      - Sat, 18 Sep 2021 16:32:48 GMT
+      - Sat, 26 Mar 2022 05:14:45 GMT
+      Permissions-Policy:
+      - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6syo3S8cwxlzTROcqJDOw2DmFVbgLu4APrSEw4KGSsnYvSgKQR7uVEan2zlgx1NT80lwZ%2BwkfnuV3dV3JatcP5u70bIRC3Lo3MhHPOfMPDrDFqf53PH0jSQ%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4xucxs%2Bm4sMcsTyGZWZVMrl7Vuv5QDqqK6z8QT93%2Bo2O%2Bnw4kh%2FpRsHsW%2Bn1c1DA%2BnrbqIY3yHzpBO%2F%2FKvkjRgvR8hsX4DlfTE5MXMhKbZF5dmoIaVCXWNg%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -154,29 +170,28 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 690bda6d9e5b147e-SEA
+      - 6f1d1415997a5fc8-SEA
       Alt-Svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
-        <body><a href="https://data.crossref.org/10.1007%2F10452.1573-5125">https://data.crossref.org/10.1007%2F10452.1573-5125</a></body></html>
-  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
+        <body><a href="https://api.crossref.org/v1/works/10.1007%2F10452.1573-5125/transform">https://api.crossref.org/v1/works/10.1007%2F10452.1573-5125/transform</a></body></html>
+  recorded_at: Sat, 26 Mar 2022 04:17:45 GMT
 - request:
     method: get
-    uri: https://data.crossref.org/10.1007%2F10452.1573-5125
+    uri: https://api.crossref.org/v1/works/10.1007%2F10452.1573-5125/transform
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -184,23 +199,36 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Sat, 26 Mar 2022 04:17:46 GMT
+      Content-Type:
+      - application/x-bibtex
+      Transfer-Encoding:
+      - chunked
+      Set-Cookie:
+      - AWSALB=8gBZv9fskeuIYp/FIT2fxSCNaW6F9IFRso2+ZY3lVCbR1iUnHsOeF3D5MA7UF17VR9qPlu0FAnGwRkRcY/wyQ0+p0NFqC7GqlZT91/xWqLyD5ye3icMIzRPGTqHx;
+        Expires=Sat, 02 Apr 2022 04:17:46 GMT; Path=/
+      - AWSALBCORS=8gBZv9fskeuIYp/FIT2fxSCNaW6F9IFRso2+ZY3lVCbR1iUnHsOeF3D5MA7UF17VR9qPlu0FAnGwRkRcY/wyQ0+p0NFqC7GqlZT91/xWqLyD5ye3icMIzRPGTqHx;
+        Expires=Sat, 02 Apr 2022 04:17:46 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
+      Link:
+      - <http://dx.doi.org/10.1007/10452.1573-5125>; rel="canonical"
+      Access-Control-Expose-Headers:
+      - Link
       Access-Control-Allow-Headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
-      Access-Control-Expose-Headers:
-      - Link
-      Link:
-      - <http://dx.doi.org/10.1007/10452.1573-5125>; rel="canonical"
-      Content-Type:
-      - application/x-bibtex
-      Content-Length:
-      - '181'
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Sat, 18 Sep 2021 16:11:59 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -213,7 +241,7 @@ http_interactions:
       encoding: UTF-8
       string: "@misc{1,\n\tdoi = {10.1007/10452.1573-5125},\n\turl = {https://doi.org/10.1007%2F10452.1573-5125},\n\tpublisher
         = {Springer Science and Business Media {LLC}},\n\ttitle = {Aquatic Ecology}\n}"
-  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:46 GMT
 - request:
     method: get
     uri: https://doi.org/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
@@ -222,38 +250,40 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 302
-      message: ''
+      message: Found
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:59 GMT
+      - Sat, 26 Mar 2022 04:17:46 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
-      - '293'
+      - '329'
       Connection:
       - keep-alive
+      Location:
+      - https://api.crossref.org/v1/works/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v/transform
       Vary:
       - Accept
-      Location:
-      - https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v
       Expires:
-      - Sat, 18 Sep 2021 17:10:39 GMT
+      - Sat, 26 Mar 2022 04:44:51 GMT
+      Permissions-Policy:
+      - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GDdYzdhZ3KdfHS8mSWYjV6W0I0s%2FYwq2P26u35YE9bDGsGhKVn8241mNseQ%2BTICMtqtfNgF5SjbLhxdXujWh7A%2F8VvuoaYVQxV%2FyPPWg9eW03F%2BgfrHdBCQ%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PINjocmWerz7RrjRO2UGLQZRCM%2FYcN6srLtJof0eChNAkd1r%2BuI4Oj493JG9mqbsvuHJlEIa4yPaSSen5tvtKCqs3%2BaEcAcIPrQb1yaA86hfz%2Bzs3LHiaXQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -261,29 +291,28 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 690bda70a8b6f79a-SEA
+      - 6f1d14190ea06832-SEA
       Alt-Svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
-        <body><a href="https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v">https://data.crossref.org/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v</a></body></html>
-  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
+        <body><a href="https://api.crossref.org/v1/works/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v/transform">https://api.crossref.org/v1/works/10.1002%2F1096-9861%2820010212%29430%3A3%3C283%3A%3Aaid-cne1031%3E3.0.co%3B2-v/transform</a></body></html>
+  recorded_at: Sat, 26 Mar 2022 04:17:46 GMT
 - request:
     method: get
-    uri: https://data.crossref.org/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
+    uri: https://api.crossref.org/v1/works/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v/transform
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -291,27 +320,40 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
-        Accept-Ranges, Cache-Control
-      Access-Control-Expose-Headers:
-      - Link
+      Date:
+      - Sat, 26 Mar 2022 04:17:46 GMT
+      Content-Type:
+      - application/x-bibtex
+      Transfer-Encoding:
+      - chunked
+      Set-Cookie:
+      - AWSALB=KBOd1iWiuPaxFuxLAlbchIBGVuEQ6tpfsGKCdH7C74KwwTt1rZjPNeV9GAD3jOtgO2CdnSbPZmV+u5gRCZxOjG+ZfXjm+EwOY0opxyoeUKM1J9z1pMNYeARlujiG;
+        Expires=Sat, 02 Apr 2022 04:17:46 GMT; Path=/
+      - AWSALBCORS=KBOd1iWiuPaxFuxLAlbchIBGVuEQ6tpfsGKCdH7C74KwwTt1rZjPNeV9GAD3jOtgO2CdnSbPZmV+u5gRCZxOjG+ZfXjm+EwOY0opxyoeUKM1J9z1pMNYeARlujiG;
+        Expires=Sat, 02 Apr 2022 04:17:46 GMT; Path=/; SameSite=None
+      Vary:
+      - Accept
       Link:
       - <http://dx.doi.org/10.1002/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v>;
         rel="canonical", <https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V>;
         version="vor"; rel="item", <https://onlinelibrary.wiley.com/doi/full/10.1002/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V>;
         version="vor"; rel="item", <http://doi.wiley.com/10.1002/tdm_license_1.1>;
         version="tdm"; rel="license"
-      Content-Type:
-      - application/x-bibtex
-      Content-Length:
-      - '671'
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
       Server:
-      - http-kit
-      Date:
-      - Sat, 18 Sep 2021 16:11:59 GMT
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
       X-Rate-Limit-Limit:
       - '50'
       X-Rate-Limit-Interval:
@@ -331,5 +373,5 @@ http_interactions:
         improved immunocytochemical methods for the preservation and colocalization
         of {GABA} and other neuronal markers},\n\tjournal = {The Journal of Comparative
         Neurology}\n}"
-  recorded_at: Sat, 18 Sep 2021 16:11:59 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:46 GMT
+recorded_with: VCR 6.1.0

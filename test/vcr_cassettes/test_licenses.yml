@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:23 GMT
+      - Sat, 26 Mar 2022 04:17:15 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
       - '372'
       Set-Cookie:
-      - AWSALB=7V9QY7Dd68UVz3oZq5ESwTyqg+h8G7ssC91GpzkpzCSKISC3Yx3QdxYg8dMwcMRK10Ea5BL/SEpkNHONtjLzfih/zaoDolkojV2yPErkvqVYrxMVZCcF744pif+k;
-        Expires=Sat, 25 Sep 2021 16:11:18 GMT; Path=/
-      - AWSALBCORS=7V9QY7Dd68UVz3oZq5ESwTyqg+h8G7ssC91GpzkpzCSKISC3Yx3QdxYg8dMwcMRK10Ea5BL/SEpkNHONtjLzfih/zaoDolkojV2yPErkvqVYrxMVZCcF744pif+k;
-        Expires=Sat, 25 Sep 2021 16:11:18 GMT; Path=/; SameSite=None
+      - AWSALB=/uSUYyVmF8USTCSQPgeXxXBcPsn/WFr2evgTU3dpV7rfUQWO5jxA3XYeZr6TaRXMRhUxRoE9qVcpfa3KdCwvXYswnqzuv1w9G8TdrH7EW+eW+EUloeJBRJl24feL;
+        Expires=Sat, 02 Apr 2022 04:17:02 GMT; Path=/
+      - AWSALBCORS=/uSUYyVmF8USTCSQPgeXxXBcPsn/WFr2evgTU3dpV7rfUQWO5jxA3XYeZr6TaRXMRhUxRoE9qVcpfa3KdCwvXYswnqzuv1w9G8TdrH7EW+eW+EUloeJBRJl24feL;
+        Expires=Sat, 02 Apr 2022 04:17:02 GMT; Path=/; SameSite=None
       Vary:
       - Accept, Accept-Encoding
       Access-Control-Expose-Headers:
@@ -58,9 +58,9 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":7670,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"http:\/\/
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":9879,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"http:\/\/
         creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":11},{"URL":"http:\/\/
         creativecommons.org\/licenses\/by\/4.0\/","work-count":3},{"URL":"http:\/\/
         http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/","work-count":6},{"URL":"http:\/\/\/journals.bsu.by\/index.php\/biology\/about","work-count":9},{"URL":"http:\/\/\/nv.pdpu.edu.ua\/Info\/Index\/be91efc0-7518-4106-b1df-7c0b3b9da77b","work-count":1},{"URL":"http:\/\/0000-0002-1666-2848","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186380","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186387","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186395","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186401","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186407","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186409","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186415","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186421","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186424","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186426","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186430","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186480","work-count":1},{"URL":"http:\/\/10.5281\/zenodo.1186484","work-count":1}]}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:23 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:14 GMT
+recorded_with: VCR 6.1.0

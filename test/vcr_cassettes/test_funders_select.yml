@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:15 GMT
+      - Sat, 26 Mar 2022 04:16:59 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1547'
+      - '1629'
       Set-Cookie:
-      - AWSALB=pRfIcl6Yl4YWPPQu/AJSCgYhEG27WEq/DrepB9uLbk+HWOVbt5xroW8lj347iPiYBsMd/KiN2sDq0a8Jm7OuGaz/NCmdFAQiu+rcDnfbFE9cKWSpYLGknv2szyD9;
-        Expires=Sat, 25 Sep 2021 16:11:15 GMT; Path=/
-      - AWSALBCORS=pRfIcl6Yl4YWPPQu/AJSCgYhEG27WEq/DrepB9uLbk+HWOVbt5xroW8lj347iPiYBsMd/KiN2sDq0a8Jm7OuGaz/NCmdFAQiu+rcDnfbFE9cKWSpYLGknv2szyD9;
-        Expires=Sat, 25 Sep 2021 16:11:15 GMT; Path=/; SameSite=None
+      - AWSALB=eZf7dUuqEwF+D+54xyBbuaZqvrUcjYRmjCqfdrbIW3jiwx6yiWWBNdH2Swn3rCA0NYjcBYPHz/dL6jH4vUAI2uhhTk45N4b4VSyiNRxQREB0MYjhQowhOw5WGYiu;
+        Expires=Sat, 02 Apr 2022 04:16:59 GMT; Path=/
+      - AWSALBCORS=eZf7dUuqEwF+D+54xyBbuaZqvrUcjYRmjCqfdrbIW3jiwx6yiWWBNdH2Swn3rCA0NYjcBYPHz/dL6jH4vUAI2uhhTk45N4b4VSyiNRxQREB0MYjhQowhOw5WGYiu;
+        Expires=Sat, 02 Apr 2022 04:16:59 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,37 +58,34 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":314000,"items":[{"DOI":"10.1103\/physrevlett.122.035501","title":["Critical
-        Analysis of an FeP Empirical Potential Employed to Study the Fracture of Metallic
-        Glasses"]},{"DOI":"10.1371\/journal.pone.0210494","title":["Initiation of
-        feeding by four sympatric Neotropical primates (Ateles belzebuth, Lagothrix
-        lagotricha poeppigii, Plecturocebus (Callicebus) discolor, and Pithecia aequatorialis)
-        in Amazonian Ecuador: Relationships to photic and ecological factors"]},{"DOI":"10.1364\/boe.10.000747","title":["Comparison
-        of time- and angular-domain scatter rejection in mesoscopic optical projection
-        tomography: a simulation study"]},{"DOI":"10.1186\/s12859-019-2595-x","title":["Statistical
-        significance approximation for local similarity analysis of dependent time
-        series data"]},{"DOI":"10.1090\/tran\/7482","title":["Models for spaces of
-        dendritic polynomials"]},{"DOI":"10.1007\/s10750-019-3882-2","title":["Drought
-        impacts to trout and salamanders in cool, forested headwater ecosystems in
-        the western Cascade Mountains, OR"]},{"DOI":"10.1103\/physreva.99.013827","title":["Fast
-        amplification and rephasing of entangled cat states in a qubit-oscillator
-        system"]},{"DOI":"10.1364\/ome.9.000516","title":["3D imaging of gems and
-        minerals by multiphoton microscopy"]},{"DOI":"10.1145\/3292040.3219670","title":["Designing
-        Low-Complexity Heavy-Traffic Delay-Optimal Load Balancing Schemes"]},{"DOI":"10.1103\/physrevc.99.014313","title":["Inelastic
-        neutron scattering studies of \nSe76"]},{"DOI":"10.1063\/1.5064740","title":["Control
-        of transverse wakefields via phase-matched laser modes in parabolic plasma
-        channels"]},{"DOI":"10.1039\/c8py01550c","title":["Thermally driven directional
-        free-radical polymerization in confined channels"]},{"DOI":"10.1145\/3292040.3219665","title":["Degree
-        of Queue Imbalance"]},{"DOI":"10.1007\/s40306-018-0295-7","title":["Relative
-        Functoriality and Functional Equations via Trace Formulas"]},{"DOI":"10.1007\/s10530-019-01914-0","title":["Invader
-        invaded: population dynamics of zebra mussels (Dreissena polymorpha) and quagga
-        mussels (Dreissena rostriformis bugensis) in polymictic Oneida Lake, NY, USA
-        (1992\u20132013)"]},{"DOI":"10.1145\/3292040.3219620","title":["Dandelion++"]},{"DOI":"10.1016\/j.actamat.2019.01.017","title":["Interfacial
-        free energies, nucleation, and precipitate morphologies in Ni-Al-Cr alloys:
-        Calculations and atom-probe tomographic experiments"]},{"DOI":"10.1103\/physrevd.99.025010","title":["Positive
-        curvature and scalar field tunneling in the landscape"]},{"DOI":"10.1088\/1361-6587\/ab019a","title":["Petascale
-        particle-in-cell simulations of kinetic effects in inertial fusion energy
-        plasmas"]},{"DOI":"10.1109\/jsen.2019.2893241","title":["An Integrated Circuit
-        Solution to Johnson Noise Thermometry Using Low-Cost and Fast CMOS Technology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:15 GMT
-recorded_with: VCR 6.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":338530,"items":[{"DOI":"10.1002\/2016ja022605","title":["Zakharov
+        simulations of beam\u2010induced turbulence in the auroral ionosphere"]},{"DOI":"10.1016\/s0927-7757(96)03875-7","title":["Effects
+        of surfactants on particle adhesion Part 1. Interactions of monodispersed
+        colloidal hematite particles with glass beads in the presence of sodium 4-octylbenzenesulfonate"]},{"DOI":"10.1016\/j.peptides.2014.10.015","title":["Development
+        of a CCK1R-membrane nanoparticle as a fish-out tool for bioactive peptides"]},{"DOI":"10.1103\/physrevlett.106.217001","title":["Incoherentc-Axis
+        Interplane Response of the Iron ChalcogenideFeTe0.55Se0.45Superconductor from
+        Infrared Spectroscopy"]},{"DOI":"10.1080\/13506285.2019.1634172","title":["Quantifying
+        the attentional impact of working memory matching targets and distractors"]},{"DOI":"10.1016\/j.matpur.2019.09.013","title":["Convergence
+        as period goes to infinity of spectra of periodic traveling waves toward essential
+        spectra of a homoclinic limit"]},{"DOI":"10.2136\/sssaj1989.03615995005300030023x","title":["Metabolism
+        of Labeled Organic Nitrogen in Soil: Regulation by Inorganic Nitrogen"]},{"DOI":"10.1007\/s12247-017-9288-7","title":["Effects
+        of Process and Design Parameters on Granule Size Distribution in a Continuous
+        High Shear Granulation Process"]},{"DOI":"10.1016\/j.trd.2020.102515","title":["Effects
+        of sea level rise induced land use changes on traffic congestion"]},{"DOI":"10.1103\/physrevd.93.054044","title":["MeasuringCP-violating
+        observables in rare top decays at the LHC"]},{"DOI":"10.1088\/1741-4326\/ac207e","title":["Neural
+        network model of the multi-mode anomalous transport module for accelerated
+        transport simulations"]},{"DOI":"10.1002\/ange.202102148","title":["Sequence\u2010Selective
+        Protection of Peptides from Proteolysis"]},{"DOI":"10.1007\/s10955-016-1531-y","title":["Thermostat-Like
+        Perturbations of an Oscillator"]},{"DOI":"10.5194\/acp-2018-396","title":["H&lt;sub&gt;2&lt;\/sub&gt;SO&lt;sub&gt;4&lt;\/sub&gt;-H&lt;sub&gt;2&lt;\/sub&gt;O-NH&lt;sub&gt;3&lt;\/sub&gt;
+        ternary ion-mediated nucleation (TIMN): Kinetic-based model and comparison
+        with CLOUD measurements"]},{"DOI":"10.1007\/s00359-016-1143-7","title":["Behavioral
+        pieces of neuroethological puzzles"]},{"DOI":"10.1242\/jeb.179564","title":["Neuromuscular
+        control of locomotion is altered by tail autotomy in geckos"]},{"DOI":"10.1103\/physrevb.102.085403","title":["Fluctuational
+        electrodynamics in atomic and macroscopic systems: van der Waals interactions
+        and radiative heat transfer"]},{"DOI":"10.1080\/10586458.2017.1419391","title":["The
+        Generalized Nagell\u2013Ljunggren Problem: Powers with Repetitive Representations"]},{"DOI":"10.1145\/3033274.3085153","title":["Empirical
+        Mechanism Design for Optimizing Clearing Interval in Frequent Call Markets"]},{"DOI":"10.1016\/j.ica.2015.02.006","title":["Cyclic
+        versus acyclic structures of six-carbon ligands in binuclear cobalt carbonyl
+        derivatives: Some thermochemical observations"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 26 Mar 2022 04:16:59 GMT
+recorded_with: VCR 6.1.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:31 GMT
+      - Sat, 26 Mar 2022 04:17:26 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '597'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=q3KTUo5+bVg8NWGdFpLwA7xMhqEGq04h4u9RoE+yP/vCF1el8knWT0lVUOif9o9Sz5tyZUSISr4seTkqybRWN0ap074/uZufeaSbPLPgPgIdMh+JvGJUjPqM/nAO;
-        Expires=Sat, 25 Sep 2021 16:11:31 GMT; Path=/
-      - AWSALBCORS=q3KTUo5+bVg8NWGdFpLwA7xMhqEGq04h4u9RoE+yP/vCF1el8knWT0lVUOif9o9Sz5tyZUSISr4seTkqybRWN0ap074/uZufeaSbPLPgPgIdMh+JvGJUjPqM/nAO;
-        Expires=Sat, 25 Sep 2021 16:11:31 GMT; Path=/; SameSite=None
+      - AWSALB=+kT90JDRGPGi935GqbTnhNbWDL6WTZ1fU0DLuF49tE3iMumj9iBSIE1NYkVLDHd8YTFE1Q+/LoztLaBg5QRE49wgHVqDBTdR74YjxLXM0K3B+1+cBgCRzQUFSSDU;
+        Expires=Sat, 02 Apr 2022 04:17:26 GMT; Path=/
+      - AWSALBCORS=+kT90JDRGPGi935GqbTnhNbWDL6WTZ1fU0DLuF49tE3iMumj9iBSIE1NYkVLDHd8YTFE1Q+/LoztLaBg5QRE49wgHVqDBTdR74YjxLXM0K3B+1+cBgCRzQUFSSDU;
+        Expires=Sat, 02 Apr 2022 04:17:26 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -65,5 +65,5 @@ http_interactions:
         has-funder specified but there is no such filter for this route. Valid filters
         for this route are: prefix, has-public-references, reference-visibility, backfile-doi-count,
         current-doi-count"}]}'
-  recorded_at: Sat, 18 Sep 2021 16:11:32 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:26 GMT
+recorded_with: VCR 6.1.0

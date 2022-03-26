@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:37 GMT
+      - Sat, 26 Mar 2022 04:17:31 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '199'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=DKaPCiSpFvfrYG7m1JF5KI4FJGaGmU9tvXa58eLmVtvUOXz7bR5iTBdjjjJMdxcyTne63rH7QPTR4opPJm3wvd0AMNlmYKijeh82Dq3q+umitXkb4l6aBxJumsYB;
-        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/
-      - AWSALBCORS=DKaPCiSpFvfrYG7m1JF5KI4FJGaGmU9tvXa58eLmVtvUOXz7bR5iTBdjjjJMdxcyTne63rH7QPTR4opPJm3wvd0AMNlmYKijeh82Dq3q+umitXkb4l6aBxJumsYB;
-        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/; SameSite=None
+      - AWSALB=T1fFn6bCKryvPWQN4g3PqEzKXCqYphcKLdqLXogIdkaORmU5NmCTSl+XJPHqp2VjvLS4a3GzR9AQTZdZdy2FKI/h33hqXexoymSSgTdOMQzgBbt6DWdikrz2PKmS;
+        Expires=Sat, 02 Apr 2022 04:17:31 GMT; Path=/
+      - AWSALBCORS=T1fFn6bCKryvPWQN4g3PqEzKXCqYphcKLdqLXogIdkaORmU5NmCTSl+XJPHqp2VjvLS4a3GzR9AQTZdZdy2FKI/h33hqXexoymSSgTdOMQzgBbt6DWdikrz2PKmS;
+        Expires=Sat, 02 Apr 2022 04:17:31 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -60,7 +60,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
         BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:37 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:31 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1371
@@ -69,9 +69,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -82,16 +82,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:37 GMT
+      - Sat, 26 Mar 2022 04:17:31 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '221'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=I9W7ybIqpczklNf9ABqKju+O8UlgLUoo+EL1ghwoSlm5iXfyQ87I8DESPQbFyO3+qiHvomDFihlqiFA0jkPPPu/CaJ1dCI0IU3GTFRNPPEzqBMa649kZhdKIrgzl;
-        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/
-      - AWSALBCORS=I9W7ybIqpczklNf9ABqKju+O8UlgLUoo+EL1ghwoSlm5iXfyQ87I8DESPQbFyO3+qiHvomDFihlqiFA0jkPPPu/CaJ1dCI0IU3GTFRNPPEzqBMa649kZhdKIrgzl;
-        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/; SameSite=None
+      - AWSALB=5f+2PQ6cA5j2f+ePl99YSHUwnhJPq2wn0Qozsqx6c8jjMrVBg7uzjLnjfnVHYwRZNf05GLa6JCTn1IlUZWJoSNsl33q5Bh5yOGnD3Gj1spqR3czKiYMi31fhcLp+;
+        Expires=Sat, 02 Apr 2022 04:17:31 GMT; Path=/
+      - AWSALBCORS=5f+2PQ6cA5j2f+ePl99YSHUwnhJPq2wn0Qozsqx6c8jjMrVBg7uzjLnjfnVHYwRZNf05GLa6JCTn1IlUZWJoSNsl33q5Bh5yOGnD3Gj1spqR3czKiYMi31fhcLp+;
+        Expires=Sat, 02 Apr 2022 04:17:31 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -121,7 +121,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/340","name":"Public
         Library of Science (PLoS)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1371"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:37 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:31 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1023
@@ -130,9 +130,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -143,16 +143,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:38 GMT
+      - Sat, 26 Mar 2022 04:17:31 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '228'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=OHEz3iBGqsO4cEZ6tKuVOTedZv8JBDExyO5eaDa+Z99Ik10ZJT3CRJUBCXYOONIcWoZkxZSQnxrYQkBzJz7Ht1/f8X1dDeXnGu5UIZOgA+IQP8Lu694Rawyv2c2D;
-        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/
-      - AWSALBCORS=OHEz3iBGqsO4cEZ6tKuVOTedZv8JBDExyO5eaDa+Z99Ik10ZJT3CRJUBCXYOONIcWoZkxZSQnxrYQkBzJz7Ht1/f8X1dDeXnGu5UIZOgA+IQP8Lu694Rawyv2c2D;
-        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/; SameSite=None
+      - AWSALB=+wkM2Hg4eCOrLoe8m7rWN+XdITZ5hjnVNrqQBv0SRLfk4evKk+lc+Y5UAdrPtogWhFLGWQ5zu2mVGV89bg+YejdTRR6uG/DMDLoWS3icGx12WGAy49Hg5Gmpb3eH;
+        Expires=Sat, 02 Apr 2022 04:17:31 GMT; Path=/
+      - AWSALBCORS=+wkM2Hg4eCOrLoe8m7rWN+XdITZ5hjnVNrqQBv0SRLfk4evKk+lc+Y5UAdrPtogWhFLGWQ5zu2mVGV89bg+YejdTRR6uG/DMDLoWS3icGx12WGAy49Hg5Gmpb3eH;
+        Expires=Sat, 02 Apr 2022 04:17:31 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -182,7 +182,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/297","name":"Springer
         Science and Business Media LLC","prefix":"http:\/\/id.crossref.org\/prefix\/10.1023"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:38 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:31 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.4176
@@ -191,9 +191,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -204,16 +204,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:38 GMT
+      - Sat, 26 Mar 2022 04:17:32 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '210'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=+LzZCJTc5VQ6FNXaBeuqqDuICpc598LxcpPDhDDMBHJTxHiWfSPjCha5CKf5xyZfllc9t7df5Q+lqXOhEFqrRVPl4n+fCc5iqa/rXOFbJSbqZV2cd5EwJdgVSd/N;
-        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/
-      - AWSALBCORS=+LzZCJTc5VQ6FNXaBeuqqDuICpc598LxcpPDhDDMBHJTxHiWfSPjCha5CKf5xyZfllc9t7df5Q+lqXOhEFqrRVPl4n+fCc5iqa/rXOFbJSbqZV2cd5EwJdgVSd/N;
-        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/; SameSite=None
+      - AWSALB=1hPrOThI7H1jBp6j8jdkddXK/7kMLBEymbEXxPfTQ172xaTH7++YJXZWAjapdowmtbGqPnHutIJ1t6qYYdI80PQkTC6ArNud8sxDtbcVBVKbqj5NDEAk81v98b8B;
+        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/
+      - AWSALBCORS=1hPrOThI7H1jBp6j8jdkddXK/7kMLBEymbEXxPfTQ172xaTH7++YJXZWAjapdowmtbGqPnHutIJ1t6qYYdI80PQkTC6ArNud8sxDtbcVBVKbqj5NDEAk81v98b8B;
+        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -243,7 +243,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/1989","name":"Co-Action
         Publishing","prefix":"http:\/\/id.crossref.org\/prefix\/10.4176"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:38 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:32 GMT
 - request:
     method: get
     uri: https://api.crossref.org/prefixes/10.1093
@@ -252,9 +252,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -265,16 +265,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:38 GMT
+      - Sat, 26 Mar 2022 04:17:32 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '218'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=UT30ebirILdKDTK4pvjzQtqPERLl3OT1Cn+tQ+e8glNZ8NuukSapGcWfRBm4HAZJDiUZHXZQhDwbWgseI3YWgMpvpVm74Z6VlyJUwdnxE1cRm2GpUr8amsR4OBw+;
-        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/
-      - AWSALBCORS=UT30ebirILdKDTK4pvjzQtqPERLl3OT1Cn+tQ+e8glNZ8NuukSapGcWfRBm4HAZJDiUZHXZQhDwbWgseI3YWgMpvpVm74Z6VlyJUwdnxE1cRm2GpUr8amsR4OBw+;
-        Expires=Sat, 25 Sep 2021 16:11:38 GMT; Path=/; SameSite=None
+      - AWSALB=UxXtfVtPJrBbjEfY1YTF0W41feT+6UsslHlpOxf0/ryZh+4tJ7cTIfHq8Z8j4sTuFLftk2MkJ1gqBxyfMVsnIvOlLsOQBI+YIurIvtaI3fz/FBoDqj1VsS3LE3bt;
+        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/
+      - AWSALBCORS=UxXtfVtPJrBbjEfY1YTF0W41feT+6UsslHlpOxf0/ryZh+4tJ7cTIfHq8Z8j4sTuFLftk2MkJ1gqBxyfMVsnIvOlLsOQBI+YIurIvtaI3fz/FBoDqj1VsS3LE3bt;
+        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -304,5 +304,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/286","name":"Oxford
         University Press (OUP)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1093"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:39 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:32 GMT
+recorded_with: VCR 6.1.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:39 GMT
+      - Sat, 26 Mar 2022 04:17:33 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1030'
+      - '1477'
       Set-Cookie:
-      - AWSALB=sdOiZG6S2CJAD08F1B+zbsc0FaTWa8yVCnYeuiTcWCI8MsSIgnM0a9EbdOkRL4GsDX5/DAUW7/oAnKBXxKbBf0w9tjUZ5A1d53zbRvcSbVXb1Y2oYdYeGI/uupEu;
-        Expires=Sat, 25 Sep 2021 16:11:39 GMT; Path=/
-      - AWSALBCORS=sdOiZG6S2CJAD08F1B+zbsc0FaTWa8yVCnYeuiTcWCI8MsSIgnM0a9EbdOkRL4GsDX5/DAUW7/oAnKBXxKbBf0w9tjUZ5A1d53zbRvcSbVXb1Y2oYdYeGI/uupEu;
-        Expires=Sat, 25 Sep 2021 16:11:39 GMT; Path=/; SameSite=None
+      - AWSALB=Xfe3MrG2urDk4nMgY9QMtmX9gmxLOAP0rN3i0jR3gsjWJOzkXpafg1If7oSfkWITky7FqTWVudU28Fkx9mpSkOteSrewqED3vVSsmk/iWOHpjqAtZnZz1ucyopJI;
+        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/
+      - AWSALBCORS=Xfe3MrG2urDk4nMgY9QMtmX9gmxLOAP0rN3i0jR3gsjWJOzkXpafg1If7oSfkWITky7FqTWVudU28Fkx9mpSkOteSrewqED3vVSsmk/iWOHpjqAtZnZz1ucyopJI;
+        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,25 +58,33 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":18162318,"items":[{"DOI":"10.1016\/s0022-3476(69)80360-4","title":["Subject
-        index"]},{"DOI":"10.1016\/s0026-0576(01)80141-0","title":["Centrifugal pumps"]},{"DOI":"10.1016\/s0002-9610(00)00531-6","title":["Removal
-        of the thrombosed prosthetic axillofemoral graft"]},{"DOI":"10.1016\/s0885-2006(97)90001-6","title":["From
-        the editor"]},{"DOI":"10.1016\/s0022-1139(00)84566-2","title":["Fast ionic
-        fluoride conductors: General criteria and modeling"]},{"DOI":"10.1016\/0031-9422(91)85159-w","title":["Studies
-        in natural product chemistry, volume 7: Structure and chemistry:"]},{"DOI":"10.1016\/j.brachy.2006.03.058","title":["LDR
-        brachytherapy implants as a boost in early stage breast cancer in women with
-        cilastic implants"]},{"DOI":"10.1016\/s0022-3476(69)80327-6","title":["The
-        Journal of Pediatrics Educational Foundation"]},{"DOI":"10.1016\/s0031-9422(00)83081-2","title":["Plant
-        membranes:"]},{"DOI":"10.1016\/s1053-2498(00)00470-8","title":["Systemic vasculitis
-        complicating pig to primate xenotransplantation"]},{"DOI":"10.1016\/s0039-6028(01)00881-0","title":["Materials
-        index"]},{"DOI":"10.1016\/s0305-7488(87)80023-3","title":[""]},{"DOI":"10.1016\/s0031-9422(00)90683-6","title":["North
-        American receiving office"]},{"DOI":"10.1016\/s0022-1139(00)85391-9","title":["Electrolytic
-        preparation of bis(fluorosulfuryl) peroxide"]},{"DOI":"10.1016\/s1053-2498(00)00519-2","title":["Specialized,
-        comprehensive care eliminates racial and gender differences in mortality between
-        African American and Caucasian heart failure patients"]},{"DOI":"10.1016\/s0022-1139(00)85466-4","title":["Fluorination
-        of tetralin with potassium tetrafluorocobaltate(III)"]},{"DOI":"10.1016\/0167-2231(77)90007-0","title":["Indexing
-        the economy through financial intermediation: a comment"]},{"DOI":"10.1016\/s0022-1139(00)83326-6","title":["Some
-        reactions of F5SC\ue5fcCH and F5SC\ue5fcCSF5"]},{"DOI":"10.1016\/s0149-7944(01)00436-6","title":["Comment"]},{"DOI":"10.1016\/s0376-7388(01)00347-7","title":["SUBJECT
-        INDEX"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:39 GMT
-recorded_with: VCR 6.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":18615020,"items":[{"DOI":"10.1016\/j.ijcard.2015.10.237","title":["Disappearing
+        stent but persisting problems? Optical coherence tomography assessment of
+        intra-scaffold restenosis"]},{"DOI":"10.1016\/s0300-7073(07)70534-0","title":["Nicotine
+        Patches Seem to Be Safe in Cardiac Patients"]},{"DOI":"10.1016\/j.ecolmodel.2009.12.013","title":["Modelling
+        dynamics of soil organic matter under different historical land-use management
+        techniques in European Russia"]},{"DOI":"10.1016\/j.jhsa.2021.03.002","title":["Forearm
+        Interosseous Ligaments: Anatomical and Histological Analysis of the Proximal,
+        Central, and Distal Bands"]},{"DOI":"10.1016\/s0049-237x(08)70624-4","title":["Chapter
+        8 Symmetric Monoidal Closed Categories"]},{"DOI":"10.1016\/j.jlumin.2015.08.074","title":["Optical
+        limiting of flexible gold nanorods\/organosilicon hybrid materials"]},{"DOI":"10.1016\/j.jns.2017.08.2295","title":["Muscles
+        secretion of toxic factors regulated by miR126-5P facilitate motor neuron
+        degeneration in ALS"]},{"DOI":"10.1016\/s0769-2609(85)80108-3","title":[""]},{"DOI":"10.1016\/s1290-0729(13)00293-7","title":["Editorial
+        board"]},{"DOI":"10.1016\/s2212-2672(14)01005-3","title":["July 2014 New Products
+        & Services"]},{"DOI":"10.1016\/0002-9343(82)90791-4","title":["A convenient
+        approximation of life expectancy. (The \u201cDEALE\u201d). I. Validation of
+        the method"]},{"DOI":"10.1016\/j.ics.2005.02.021","title":["Development of
+        a potential protein vector (NeuroTrans) to deliver drugs across the blood\u2013brain
+        barrier"]},{"DOI":"10.1016\/0032-3861(87)90308-9","title":["Thermotropic polyesters:
+        Synthesis and properties of poly(chloro-1,4-phenylene terephthalate-co-4,4\u2032-oxybisbenzoate)s"]},{"DOI":"10.1016\/s0140-6736(14)60516-x","title":["Immigration
+        for health care in Iran: burden or blessing?"]},{"DOI":"10.1016\/j.carrev.2006.03.083","title":["Effects
+        of zotarolimus, sirolimus, dexamethasone, and paclitaxel on the in vitro migration
+        of human coronary artery smooth muscle and endothelial cells"]},{"DOI":"10.1016\/0002-1571(78)90049-3","title":["Erratum"]},{"DOI":"10.1016\/j.wse.2020.09.008","title":["Evaluation
+        of alum-based water treatment residuals used to adsorb reactive phosphorus"]},{"DOI":"10.1016\/s1556-0864(19)30419-8","title":["Editorial
+        Board"]},{"DOI":"10.1016\/0022-2860(80)80285-7","title":["Structural information
+        on cobalt(II), nickel(II), copper(II), zinc(II), silver(I) and cadmium(II)
+        nitrate complexes with hexamethylenetetramine from their magnetic moments,
+        electronic and infrared spectra"]},{"DOI":"10.1016\/0021-9045(92)90063-t","title":["On
+        a minimal property of cardinal and periodic Lagrange splines"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 26 Mar 2022 04:17:33 GMT
+recorded_with: VCR 6.1.0

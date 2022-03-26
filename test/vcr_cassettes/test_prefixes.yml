@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:35 GMT
+      - Sat, 26 Mar 2022 04:17:29 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '199'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=x/TG9Pi43aZ7AAcQ8R/woMP7CxxKCIanR1p2EdGDQv2gM+77KCU6q+dJzkxeIRfkn5zYnjun6sSuhRtzzkUEgv5bHjEqO7EBwH4dXsa5wHgRSeEsej//M7iko4BX;
-        Expires=Sat, 25 Sep 2021 16:11:35 GMT; Path=/
-      - AWSALBCORS=x/TG9Pi43aZ7AAcQ8R/woMP7CxxKCIanR1p2EdGDQv2gM+77KCU6q+dJzkxeIRfkn5zYnjun6sSuhRtzzkUEgv5bHjEqO7EBwH4dXsa5wHgRSeEsej//M7iko4BX;
-        Expires=Sat, 25 Sep 2021 16:11:35 GMT; Path=/; SameSite=None
+      - AWSALB=Ki8V8yW1qOjZSjVFpjeqYS8lcOHceViVYF0XSRGd7WoMFXZUfDOxl1idKPl9xMrkiErqizw91BgaMQemBL4Vm7V5HpDS3e6o8cyEHB2CErQMu9RhqV+8YXI5nfqB;
+        Expires=Sat, 02 Apr 2022 04:17:29 GMT; Path=/
+      - AWSALBCORS=Ki8V8yW1qOjZSjVFpjeqYS8lcOHceViVYF0XSRGd7WoMFXZUfDOxl1idKPl9xMrkiErqizw91BgaMQemBL4Vm7V5HpDS3e6o8cyEHB2CErQMu9RhqV+8YXI5nfqB;
+        Expires=Sat, 02 Apr 2022 04:17:29 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -60,5 +60,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
         BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:35 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:29 GMT
+recorded_with: VCR 6.1.0

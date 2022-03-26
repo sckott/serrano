@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:56 GMT
+      - Sat, 26 Mar 2022 04:17:44 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '432'
+      - '441'
       Set-Cookie:
-      - AWSALB=Bpt3Bj72b4GJcW7X/Xzh+oEnl7erV5GspDmN5X+dG+0bm9n8q+pZ3NdAKBrQqPvi6EvU8WZ46EQrvpdfslIA4c+5+/pS3IeM7TDtqgSWrbNbaIy8WM9YnhtPXY3K;
-        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/
-      - AWSALBCORS=Bpt3Bj72b4GJcW7X/Xzh+oEnl7erV5GspDmN5X+dG+0bm9n8q+pZ3NdAKBrQqPvi6EvU8WZ46EQrvpdfslIA4c+5+/pS3IeM7TDtqgSWrbNbaIy8WM9YnhtPXY3K;
-        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/; SameSite=None
+      - AWSALB=nxFZkAYcNDeNs2b7AnEwtDkdNiCe+excfow8rH0oxReBRthkcnrees0uzn6lTvN6wdleZVEXelo5PIutYqjalyV8NGznhOLmpj9Cbu2iYdrqOok/Wi942y9QLPn+;
+        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/
+      - AWSALBCORS=nxFZkAYcNDeNs2b7AnEwtDkdNiCe+excfow8rH0oxReBRthkcnrees0uzn6lTvN6wdleZVEXelo5PIutYqjalyV8NGznhOLmpj9Cbu2iYdrqOok/Wi942y9QLPn+;
+        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/; SameSite=None
       Vary:
       - Accept, Accept-Encoding
       Access-Control-Expose-Headers:
@@ -58,7 +58,7 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":28,"items":[{"id":"book-section","label":"Book
+      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":29,"items":[{"id":"book-section","label":"Book
         Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
         Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
         Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
@@ -67,8 +67,8 @@ http_interactions:
         Chapter"},{"id":"proceedings-series","label":"Proceedings Series"},{"id":"report-series","label":"Report
         Series"},{"id":"proceedings","label":"Proceedings"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
         Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
-        Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
+        Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"grant","label":"Grant"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
         Series"},{"id":"edited-book","label":"Edited Book"},{"id":"standard-series","label":"Standard
         Series"}]}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:56 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:44 GMT
+recorded_with: VCR 6.1.0

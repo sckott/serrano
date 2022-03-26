@@ -8,11 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,7 +21,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Tue, 01 Mar 2022 01:01:28 GMT
+      - Sat, 26 Mar 2022 04:16:54 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -33,7 +33,7 @@ http_interactions:
       Vary:
       - Accept
       Expires:
-      - Tue, 01 Mar 2022 01:40:57 GMT
+      - Sat, 26 Mar 2022 04:44:51 GMT
       Permissions-Policy:
       - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
@@ -41,7 +41,7 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mdUYXNGLbQOAdmF8b02%2FbPBbZ9UfOwvplaNMUzs0gdtw7U8Usec1SYhUbThMM1Z2jDWQ4qfywGhea2QjRFmt5D0fFNB8fskP24rkwni%2B%2B9c%2BWmhCh82Q4eA%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=iqyikUAyCZBIYPxBsOwZbQ8305YHJlxfHAkTe2sHy9GiZZW%2BtJ7QlOkVvWASsZA%2B8sy%2FbxbjsgCzI2VPvCDoamWKp0JKbIPW5mEFgpAkI1lIOJEgFMqid5o%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -49,7 +49,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6e4df62f0ea2138a-SEA
+      - 6f1d12d6bacf399c-SEA
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -57,7 +57,7 @@ http_interactions:
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://api.crossref.org/v1/works/10.1484%2Fj.rb.4.01523/transform">https://api.crossref.org/v1/works/10.1484%2Fj.rb.4.01523/transform</a></body></html>
-  recorded_at: Tue, 01 Mar 2022 01:01:28 GMT
+  recorded_at: Sat, 26 Mar 2022 04:16:54 GMT
 - request:
     method: get
     uri: https://api.crossref.org/v1/works/10.1484%2Fj.rb.4.01523/transform
@@ -66,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -79,16 +79,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 Mar 2022 01:01:29 GMT
+      - Sat, 26 Mar 2022 04:16:55 GMT
       Content-Type:
       - application/x-bibtex
       Transfer-Encoding:
       - chunked
       Set-Cookie:
-      - AWSALB=WUUC4ZTwTzdNvTHUDOT7u9Ce2YH7kMXtcGHIcnUVlY30swKqdZ0RNXh0Gr6Z08LVL2kPVWjuvrzgZd5QENdpChwP4SwiloHIfrQ4psRB1Xu4bq7zBTr1GtU2qszD;
-        Expires=Tue, 08 Mar 2022 01:01:29 GMT; Path=/
-      - AWSALBCORS=WUUC4ZTwTzdNvTHUDOT7u9Ce2YH7kMXtcGHIcnUVlY30swKqdZ0RNXh0Gr6Z08LVL2kPVWjuvrzgZd5QENdpChwP4SwiloHIfrQ4psRB1Xu4bq7zBTr1GtU2qszD;
-        Expires=Tue, 08 Mar 2022 01:01:29 GMT; Path=/; SameSite=None
+      - AWSALB=HzW/QHvKU6w1FamvM9AI6dE8jA5OQjuVRrYe5MCpxPY/ScEhdY4vIEC8s2dJk70V5yaIi/badiFXPkccMDtx0s4Pb8FwNuwC9QUC9zL/gE5Cr+Tth/vlh5BPHIGf;
+        Expires=Sat, 02 Apr 2022 04:16:55 GMT; Path=/
+      - AWSALBCORS=HzW/QHvKU6w1FamvM9AI6dE8jA5OQjuVRrYe5MCpxPY/ScEhdY4vIEC8s2dJk70V5yaIi/badiFXPkccMDtx0s4Pb8FwNuwC9QUC9zL/gE5Cr+Tth/vlh5BPHIGf;
+        Expires=Sat, 02 Apr 2022 04:16:55 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Link:
@@ -120,7 +120,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         QGFydGljbGV7V29sbGFzY2hfMTk2MCwKCWRvaSA9IHsxMC4xNDg0L2oucmIuNC4wMTUyM30sCgl1cmwgPSB7aHR0cHM6Ly9kb2kub3JnLzEwLjE0ODQlMkZqLnJiLjQuMDE1MjN9LAoJeWVhciA9IDE5NjAsCgltb250aCA9IHtqYW59LAoJcHVibGlzaGVyID0ge0JyZXBvbHMgUHVibGlzaGVycyB7TlZ9fSwKCXZvbHVtZSA9IHs3MH0sCgludW1iZXIgPSB7MX0sCglwYWdlcyA9IHs2Mi0tODJ9LAoJYXV0aG9yID0ge0ouIFdvbGxhc2NofSwKCXRpdGxlID0ge0dlcmFyZCB2b24gQnJvZ25lIHVuZCBzZWluZSBLbG9zdGVyZ3LDvG5kdW5nfSwKCWpvdXJuYWwgPSB7UmV2dWUgQntcJ3tlfX1ue1wne2V9fWRpY3RpbmV9Cn0=
-  recorded_at: Tue, 01 Mar 2022 01:01:29 GMT
+  recorded_at: Sat, 26 Mar 2022 04:16:55 GMT
 - request:
     method: get
     uri: https://doi.org/10.1186%2F2050-6511-14-s1-p75
@@ -129,11 +129,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -142,7 +142,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Tue, 01 Mar 2022 01:01:29 GMT
+      - Sat, 26 Mar 2022 04:16:55 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -154,7 +154,7 @@ http_interactions:
       Vary:
       - Accept
       Expires:
-      - Tue, 01 Mar 2022 01:40:57 GMT
+      - Sat, 26 Mar 2022 05:14:45 GMT
       Permissions-Policy:
       - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
@@ -162,7 +162,7 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QKPJdW%2FWaXW6inpQmap9YktX%2Fb4pVlq5bqzsOnq%2FLI53ykr4%2Bbg8fS%2FtgPp8imNAPl8a2TS4Uaht1lXhUkYFTc%2BG5HbZJbWDjc0bTKZ%2Fc9FgyiuJ9zLD1dg%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=k7QJiS681TfPv6Zv7bGZLjvUazhWD2Q3JyylyoKv6TTqP93qbYvWNcetISpHfQstY7Yk6ImfcQjl%2FEGK5gH4BpFxb8lYTfei8YvolUT2zjiYGwh41eFw0wQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -170,7 +170,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6e4df631c98527d2-SEA
+      - 6f1d12d9d84060e9-SEA
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -178,7 +178,7 @@ http_interactions:
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://api.crossref.org/v1/works/10.1186%2F2050-6511-14-s1-p75/transform">https://api.crossref.org/v1/works/10.1186%2F2050-6511-14-s1-p75/transform</a></body></html>
-  recorded_at: Tue, 01 Mar 2022 01:01:29 GMT
+  recorded_at: Sat, 26 Mar 2022 04:16:55 GMT
 - request:
     method: get
     uri: https://api.crossref.org/v1/works/10.1186%2F2050-6511-14-s1-p75/transform
@@ -187,11 +187,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -200,16 +200,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 Mar 2022 01:01:29 GMT
+      - Sat, 26 Mar 2022 04:16:55 GMT
       Content-Type:
       - application/x-bibtex
       Transfer-Encoding:
       - chunked
       Set-Cookie:
-      - AWSALB=W3z4gSxGOzhNOwObU0xxt/YmdR9vlYviv2Ha3Qne9fQYHJHtChiv33vE7zyMqcUL7E8ojlg7Miy6F/it/08UHWPcr6Wx90+tTIPIyqchbNK6/xuTdSjkGQqKHn9y;
-        Expires=Tue, 08 Mar 2022 01:01:29 GMT; Path=/
-      - AWSALBCORS=W3z4gSxGOzhNOwObU0xxt/YmdR9vlYviv2Ha3Qne9fQYHJHtChiv33vE7zyMqcUL7E8ojlg7Miy6F/it/08UHWPcr6Wx90+tTIPIyqchbNK6/xuTdSjkGQqKHn9y;
-        Expires=Tue, 08 Mar 2022 01:01:29 GMT; Path=/; SameSite=None
+      - AWSALB=+E3rqqpcZF8LPnszCjypadCNU5n1DG0T6cuOpupxEyMCjpcQ5/9Gzd7GaBNZSYj48ZDkXDgqTy6dbpQnnp7nDU/xegR0uwWcXbMOhnvjGzcVcRMY2+8bBlLJun6e;
+        Expires=Sat, 02 Apr 2022 04:16:55 GMT; Path=/
+      - AWSALBCORS=+E3rqqpcZF8LPnszCjypadCNU5n1DG0T6cuOpupxEyMCjpcQ5/9Gzd7GaBNZSYj48ZDkXDgqTy6dbpQnnp7nDU/xegR0uwWcXbMOhnvjGzcVcRMY2+8bBlLJun6e;
+        Expires=Sat, 02 Apr 2022 04:16:55 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Link:
@@ -251,7 +251,7 @@ http_interactions:
         Brouckaert and Anje Cauwels},\n\ttitle = {The soluble guanylate cyclase activator
         {BAY} 58-2667 protects against morbidity and mortality in endotoxic shock
         by recoupling organ systems},\n\tjournal = {{BMC} Pharmacology and Toxicology}\n}"
-  recorded_at: Tue, 01 Mar 2022 01:01:29 GMT
+  recorded_at: Sat, 26 Mar 2022 04:16:55 GMT
 - request:
     method: get
     uri: https://doi.org/10.1016%2Fj.jns.2015.02.034
@@ -260,11 +260,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -273,7 +273,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Tue, 01 Mar 2022 01:01:29 GMT
+      - Sat, 26 Mar 2022 04:16:56 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -285,7 +285,7 @@ http_interactions:
       Vary:
       - Accept
       Expires:
-      - Tue, 01 Mar 2022 01:40:57 GMT
+      - Sat, 26 Mar 2022 05:14:39 GMT
       Link:
       - "<https://dul.usage.elsevier.com/doi/>; rel=dul"
       Permissions-Policy:
@@ -295,7 +295,7 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ItfIlNCEgS6mFdFamKp5CU%2B0JSw9%2B8%2FRWI8WRclA6zCLUYhmls1rIHhTZecHHn35C2qdsq3cQF317YJy4mQi%2F6he5rBGU%2BoA1B%2FKB1Bri2c8ErAsP%2FMgQro%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F9SDfa6kQ9mkdDzipAZUFku8I%2BfruwAMMJdfsBvHzbhS18u0cG1f5lKkM5AxQWhjMdUgo7pJ7CT%2BkU%2BJ2WEVLLQFPvjhW7FMIfsSHAQq%2FIsGhu7c1EW1ugk%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -303,7 +303,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6e4df6346fbe3098-SEA
+      - 6f1d12dd2fdce141-SEA
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -311,7 +311,7 @@ http_interactions:
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://api.crossref.org/v1/works/10.1016%2Fj.jns.2015.02.034/transform">https://api.crossref.org/v1/works/10.1016%2Fj.jns.2015.02.034/transform</a></body></html>
-  recorded_at: Tue, 01 Mar 2022 01:01:29 GMT
+  recorded_at: Sat, 26 Mar 2022 04:16:56 GMT
 - request:
     method: get
     uri: https://api.crossref.org/v1/works/10.1016%2Fj.jns.2015.02.034/transform
@@ -320,11 +320,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -333,16 +333,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 Mar 2022 01:01:30 GMT
+      - Sat, 26 Mar 2022 04:16:56 GMT
       Content-Type:
       - application/x-bibtex
       Transfer-Encoding:
       - chunked
       Set-Cookie:
-      - AWSALB=SbxX2H15OmuLe0Pd/8vnPBH1ZPHXf4RlYQi5FEuh6so7vDUy1bnO7TwMCNw2iVVQBwvRtijs8XVfMMmC0xpvqpybZa6rXPiMG7C/oxX+aAobW+GU9j+7mIR7hY2V;
-        Expires=Tue, 08 Mar 2022 01:01:30 GMT; Path=/
-      - AWSALBCORS=SbxX2H15OmuLe0Pd/8vnPBH1ZPHXf4RlYQi5FEuh6so7vDUy1bnO7TwMCNw2iVVQBwvRtijs8XVfMMmC0xpvqpybZa6rXPiMG7C/oxX+aAobW+GU9j+7mIR7hY2V;
-        Expires=Tue, 08 Mar 2022 01:01:30 GMT; Path=/; SameSite=None
+      - AWSALB=885dTnwLJ03VgtcBjBtrwVVVlETweDsui1SeUHmjVLmFUCUap41f0YUzov215JFcIZAxgwZXTIs/u+mIwgiZGnOsZBeeph0UUGYER+EK3ly7QnA/TdXEf9b62Ybi;
+        Expires=Sat, 02 Apr 2022 04:16:56 GMT; Path=/
+      - AWSALBCORS=885dTnwLJ03VgtcBjBtrwVVVlETweDsui1SeUHmjVLmFUCUap41f0YUzov215JFcIZAxgwZXTIs/u+mIwgiZGnOsZBeeph0UUGYER+EK3ly7QnA/TdXEf9b62Ybi;
+        Expires=Sat, 02 Apr 2022 04:16:56 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Link:
@@ -381,5 +381,5 @@ http_interactions:
         = {1--2},\n\tauthor = {Andreas Charidimou},\n\ttitle = {Elderly and forgetful
         with transient neurological spells: A story of two amyloids?},\n\tjournal
         = {Journal of the Neurological Sciences}\n}"
-  recorded_at: Tue, 01 Mar 2022 01:01:30 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:16:56 GMT
+recorded_with: VCR 6.1.0

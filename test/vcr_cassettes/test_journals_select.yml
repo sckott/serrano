@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:18 GMT
+      - Sat, 26 Mar 2022 04:17:02 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1595'
+      - '1545'
       Set-Cookie:
-      - AWSALB=AroYEbOxcuPk35AMZpB0de7ovXK6psStvhR32VGh/j5K4VM2lB4MMIudRRBHIca0O/nkfTZHF4AXx4o+PxKRyy0wEEhpJK4gEV7YYyNT8V1SCvJ+aIsAynyNzIi7;
-        Expires=Sat, 25 Sep 2021 16:11:17 GMT; Path=/
-      - AWSALBCORS=AroYEbOxcuPk35AMZpB0de7ovXK6psStvhR32VGh/j5K4VM2lB4MMIudRRBHIca0O/nkfTZHF4AXx4o+PxKRyy0wEEhpJK4gEV7YYyNT8V1SCvJ+aIsAynyNzIi7;
-        Expires=Sat, 25 Sep 2021 16:11:17 GMT; Path=/; SameSite=None
+      - AWSALB=NJDuCuFAkWq46g4E7QJ2O4bP/riisDGo7+xuk3O4hb3Yo/iGANZW7iJnQx0LuBOjSZC6Lq5VbsHMauBH3F4PT+qCMaRKSjNmWl2uYhiTjZIm47bxAnduvGxKjUH6;
+        Expires=Sat, 02 Apr 2022 04:17:02 GMT; Path=/
+      - AWSALBCORS=NJDuCuFAkWq46g4E7QJ2O4bP/riisDGo7+xuk3O4hb3Yo/iGANZW7iJnQx0LuBOjSZC6Lq5VbsHMauBH3F4PT+qCMaRKSjNmWl2uYhiTjZIm47bxAnduvGxKjUH6;
+        Expires=Sat, 02 Apr 2022 04:17:02 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,43 +58,42 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":12066,"items":[{"DOI":"10.7717\/peerj.6186","title":["Optimization
-        of a pretreatment and hydrolysis process for the efficient recovery of recycled
-        sugars and unknown compounds from agricultural sweet sorghum bagasse stem
-        pith solid waste"]},{"DOI":"10.7717\/peerj.6211","title":["Outcomes of hospitalizations
-        with atrial fibrillation-flutter on a weekday versus weekend: an analysis
-        from a 2014 nationwide inpatient sample"]},{"DOI":"10.7717\/peerj.6099","title":["Shifting
-        faunal baselines through the Quaternary revealed by cave fossils of eastern
-        Australia"]},{"DOI":"10.7717\/peerj.5920","title":["Aetiology of livestock
-        fetal mortality in Mazandaran province, Iran"]},{"DOI":"10.7717\/peerj.6195","title":["Hardly
-        habitual: chimpanzees and gorillas show flexibility in their motor responses
-        when presented with a causally-clear task"]},{"DOI":"10.7717\/peerj.6159","title":["Relationship
-        between physical and cognitive performance in community dwelling, ethnically
-        diverse older adults: a cross-sectional study"]},{"DOI":"10.7717\/peerj.6192","title":["Climatic
-        niche evolution in the viviparousSceloporus torquatusgroup (Squamata: Phrynosomatidae)"]},{"DOI":"10.7717\/peerj.6274","title":["Effects
-        of nickel and cobalt on methane production and methanogen abundance and diversity
-        in paddy soil"]},{"DOI":"10.7717\/peerj.6453","title":["The value of diffusion
-        tensor tractography delineating corticospinal tract in glioma in rat: validation
-        via correlation histology"]},{"DOI":"10.7717\/peerj.6321","title":["Protein
-        signatures linking history of miscarriages and metabolic syndrome: a proteomic
-        study among North Indian women"]},{"DOI":"10.7717\/peerj.6408","title":["Sexual
-        dimorphism in the Chinese endemic speciesPachyhynobius shangchengensisFei,
-        Qu and Wu, 1983 (Urodela: Hynobiidae)"]},{"DOI":"10.7717\/peerj.6382","title":["Association
-        between education and health outcomes among adults with disabilities: evidence
-        from Shanghai, China"]},{"DOI":"10.7717\/peerj.6386","title":["Characterization
-        of the complete chloroplast genomes of five Populus species from the western
-        Sichuan plateau, southwest China: comparative and phylogenetic analyses"]},{"DOI":"10.7717\/peerj.6438","title":["The
-        association between meteorological variables and road traffic injuries: a
-        study from Macao"]},{"DOI":"10.7717\/peerj.6504","title":["Effects of narrow
-        linear clearings on movement and habitat use in a boreal forest mammal community
-        during winter"]},{"DOI":"10.7717\/peerj.6585","title":["Sea stars of the genus
-        Henricia Gray, 1840 (Echinodermata, Asteroidea) from Vostok Bay, Sea of Japan"]},{"DOI":"10.7717\/peerj.6671","title":["Loancorhynchus
-        catrillancaigen. et sp. nov., a new swordfish (Xiphioidei, Blochiidae) from
-        the Middle Eocene of central Chile"]},{"DOI":"10.7717\/peerj.6350","title":["Impact
-        of old age on resectable colorectal cancer outcomes"]},{"DOI":"10.7717\/peerj.6256","title":["Tamilokus
-        mabinia, a new, anatomically divergent genus and species of wood-boring bivalve
-        from the Philippines"]},{"DOI":"10.7717\/peerj.6527","title":["Psychological
-        flexibility and attitudes toward evidence-based interventions by amyotrophic
-        lateral sclerosis patients"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:18 GMT
-recorded_with: VCR 6.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":13053,"items":[{"DOI":"10.7717\/peerj.10282","title":["On
+        local scouring downstream small water structures"]},{"DOI":"10.7717\/peerj.9241","title":["Revealing
+        the selective mechanisms of inhibitors to PARP-1 and PARP-2 via multiple computational
+        methods"]},{"DOI":"10.7717\/peerj.8208","title":["Concentration-dependent
+        polymorphism of insulin amyloid fibrils"]},{"DOI":"10.7717\/peerj.5131","title":["Hummingbird
+        migration and flowering synchrony in the temperate forests of northwestern
+        Mexico"]},{"DOI":"10.7717\/peerj.7864","title":["Natural stable isotope ratios
+        and fatty acid profiles of estuarine tidal flat nematodes reveal very limited
+        niche overlap among co-occurring species"]},{"DOI":"10.7717\/peerj.3546","title":["Socioeconomic
+        status influences sex ratios in a Chinese rural population"]},{"DOI":"10.7717\/peerj.12420","title":["The
+        predictive role of preoperative serum glutamate dehydrogenase levels in microvascular
+        invasion and hepatocellular carcinoma prognosis following liver transplantation\u2014a
+        single center retrospective study"]},{"DOI":"10.7717\/peerj.2798","title":["Preventative
+        and therapeutic effects of a GABA transporter 1 inhibitor administered systemically
+        in a mouse model of paclitaxel-induced neuropathic pain"]},{"DOI":"10.7717\/peerj.11219","title":["Construction
+        and validation of an RNA-binding protein-associated prognostic model for colorectal
+        cancer"]},{"DOI":"10.7717\/peerj.7819","title":["Structural analysis of urinary
+        light chains and proteomic analysis of hyaline tubular casts in light chain
+        associated kidney disorders"]},{"DOI":"10.7717\/peerj.9277","title":["WHONDRS-GUI:
+        a web application for global survey of surface water metabolites"]},{"DOI":"10.7717\/peerj.3664","title":["The
+        effects of allogenic stem cells in a murine model of hind limb diabetic ischemic
+        tissue"]},{"DOI":"10.7717\/peerj.11029","title":["Two predicted models based
+        on ceRNAs and immune cells in lung adenocarcinoma"]},{"DOI":"10.7717\/peerj.5312","title":["Comparison
+        of ventricular tachyarrhythmia recurrence between ischemic cardiomyopathy
+        and dilated cardiomyopathy: a retrospective study"]},{"DOI":"10.7717\/peerj.7849","title":["HIF
+        inhibitor topotecan has a neuroprotective effect in a murine retinal ischemia-reperfusion
+        model"]},{"DOI":"10.7717\/peerj.1404","title":["A predictive screening tool
+        to detect diabetic retinopathy or macular edema in primary health care: construction,
+        validation and implementation on a mobile application"]},{"DOI":"10.7717\/peerj.9199","title":["The
+        prevalence of low back pain among female hospital staff at childbearing age"]},{"DOI":"10.7717\/peerj.7040","title":["Composition
+        and dynamics of the bacterial communities present in the post-slaughter environment
+        of farmed Atlantic salmon (Salmo salarL.) and correlations to gelatin degrading
+        activity"]},{"DOI":"10.7717\/peerj.3862","title":["Effects of astragalus polysaccharide
+        on the adhesion-related immune response of endothelial cells stimulated with
+        CSFVin vitro"]},{"DOI":"10.7717\/peerj.4410","title":["Deficit irrigation
+        and fertilization strategies to improve soil quality and alfalfa yield in
+        arid and semi-arid areas of northern China"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 26 Mar 2022 04:17:02 GMT
+recorded_with: VCR 6.1.0

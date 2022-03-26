@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:55 GMT
+      - Sat, 26 Mar 2022 04:17:43 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '108'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=Ms8dUPUkkXNbyURT/LOUAClgjhwAXSYPROTDS3K76E1or6CAqbkKupFazqkQXBXWzuk58ZVYyNlGa/aBkL9lAeOzsteyAIp8vQ4fo4Zc/YGiVbfQOf2gXnrZmYad;
-        Expires=Sat, 25 Sep 2021 16:11:55 GMT; Path=/
-      - AWSALBCORS=Ms8dUPUkkXNbyURT/LOUAClgjhwAXSYPROTDS3K76E1or6CAqbkKupFazqkQXBXWzuk58ZVYyNlGa/aBkL9lAeOzsteyAIp8vQ4fo4Zc/YGiVbfQOf2gXnrZmYad;
-        Expires=Sat, 25 Sep 2021 16:11:55 GMT; Path=/; SameSite=None
+      - AWSALB=W/0EcwcjjaEqkamLykW/HFNffhItdTHGumXvnhMuNbWOGRH4Rp9w+4y39UViBhG23XAfg8PKS6YdVrKSkbjiZg8cnNjTyACIUH2zr4Xcm/d+479XucgZ+TBxnz+O;
+        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/
+      - AWSALBCORS=W/0EcwcjjaEqkamLykW/HFNffhItdTHGumXvnhMuNbWOGRH4Rp9w+4y39UViBhG23XAfg8PKS6YdVrKSkbjiZg8cnNjTyACIUH2zr4Xcm/d+479XucgZ+TBxnz+O;
+        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -59,7 +59,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"journal","label":"Journal"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:55 GMT
+  recorded_at: Sat, 26 Mar 2022 04:17:43 GMT
 - request:
     method: get
     uri: https://api.crossref.org/types/dissertation
@@ -68,9 +68,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -81,16 +81,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:56 GMT
+      - Sat, 26 Mar 2022 04:17:43 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '118'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=44risb8lOQecTFQRjLcmvzeHYOcBx6/1MCQg3DdiPIXFafacT1EFJ/UMB3E3+EuegvrvrP7E1xzkXQEIT0csOcKX7TcyZZeqeZTr/IWrTTQE78lA5jWo40AdUteX;
-        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/
-      - AWSALBCORS=44risb8lOQecTFQRjLcmvzeHYOcBx6/1MCQg3DdiPIXFafacT1EFJ/UMB3E3+EuegvrvrP7E1xzkXQEIT0csOcKX7TcyZZeqeZTr/IWrTTQE78lA5jWo40AdUteX;
-        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/; SameSite=None
+      - AWSALB=zQ1ChJ1qzjhsO/nFIQAtlrZqu5UDNanbq6k82HYkT5mapUGXhca2G45ZO3QNO5xzpl3U1rvzqUTuov/NvQ42SJo0Kr5uG/cMtU3O5ydkaoqJzhLSS5/mnZng9604;
+        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/
+      - AWSALBCORS=zQ1ChJ1qzjhsO/nFIQAtlrZqu5UDNanbq6k82HYkT5mapUGXhca2G45ZO3QNO5xzpl3U1rvzqUTuov/NvQ42SJo0Kr5uG/cMtU3O5ydkaoqJzhLSS5/mnZng9604;
+        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -119,5 +119,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"dissertation","label":"Dissertation"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:56 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:43 GMT
+recorded_with: VCR 6.1.0

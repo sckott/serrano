@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:56 GMT
+      - Sat, 26 Mar 2022 04:17:44 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '869'
+      - '814'
       Set-Cookie:
-      - AWSALB=GqIkyTWdWGEYN1iCSL7gsAJuhVBj5iobIB7A6h4vCVS0REDnDKvIuFEiX00/w5oZTqe4t3RggGPv1vL/MvLp0n72cCOelpXZoPs6FPjY8jdtXddfEoy0/yg4FgfG;
-        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/
-      - AWSALBCORS=GqIkyTWdWGEYN1iCSL7gsAJuhVBj5iobIB7A6h4vCVS0REDnDKvIuFEiX00/w5oZTqe4t3RggGPv1vL/MvLp0n72cCOelpXZoPs6FPjY8jdtXddfEoy0/yg4FgfG;
-        Expires=Sat, 25 Sep 2021 16:11:56 GMT; Path=/; SameSite=None
+      - AWSALB=vsLcRCJdYc7zz26r/Sjs/fmWS97ztKGol/9nbXpIQCX+o8TZUEagp/hd1jFK63l6nK9K74fOEBz4IqOGqF8NNNHsum5Mpgw1Ci7Z6N9vpUlpTF6HUFcQ7/bqCKq4;
+        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/
+      - AWSALBCORS=vsLcRCJdYc7zz26r/Sjs/fmWS97ztKGol/9nbXpIQCX+o8TZUEagp/hd1jFK63l6nK9K74fOEBz4IqOGqF8NNNHsum5Mpgw1Ci7Z6N9vpUlpTF6HUFcQ7/bqCKq4;
+        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,21 +58,21 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":43870,"items":[{"DOI":"10.1515\/iprg","title":["Intercultural
-        Pragmatics"]},{"DOI":"10.1515\/crll","title":["Journal f\u00fcr die reine
-        und angewandte Mathematik (Crelles Journal)"]},{"DOI":"10.1515\/agph","title":["Archiv
-        f\u00fcr Geschichte der Philosophie"]},{"DOI":"10.1002\/(issn)1521-3730","title":["CHEMKON"]},{"DOI":"10.1553\/anzeigerr","title":["Anzeiger
-        der philosophisch-historischen Klasse"]},{"DOI":"10.1002\/(issn)1557-6272","title":["Evidence-Based
-        Child Health: A Cochrane Review Journal"]},{"DOI":"10.1515\/nzst","title":["Neue
-        Zeitschrift f\u00fcr Systematische Theologie und Religionsphilosophie"]},{"DOI":"10.1515\/znth","title":["Journal
-        for the History of Modern Theology \/ Zeitschrift f\u00fcr Neuere Theologiegeschichte"]},{"DOI":"10.33474\/jipemas","title":["JIPEMAS:
-        Jurnal Inovasi Hasil Pengabdian Masyarakat"]},{"DOI":"10.4172\/2161-0533","title":["Orthopedic
-        & Muscular System"]},{"DOI":"10.31860\/0136-7447","title":["Russkij Folklor"]},{"DOI":"10.15580\/imjgj","title":["International
-        and Multidisciplinary Journal of Global Justice"]},{"DOI":"10.15448\/1984-4301","title":["Letr\u00f4nica"]},{"DOI":"10.33369\/jsh","title":["Supremasi
-        Hukum: Jurnal Penelitian Hukum"]},{"DOI":"10.5604\/0082044x","title":["\u015awiatowit"]},{"DOI":"10.31295\/ijcms","title":["International
-        Journal of Chemical & Material Sciences"]},{"DOI":"10.31295\/ijhms","title":["International
-        journal of health & medical sciences"]},{"DOI":"10.15602\/1983-9480\/cmrs","title":["Ci\u00eancia
-        em Movimento"]},{"DOI":"10.7176\/hrl","title":["Historical Research Letter"]},{"DOI":"10.26650\/ekoist","title":["Ekoist:
-        Journal of Econometrics and Statistics"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:56 GMT
-recorded_with: VCR 6.0.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":47425,"items":[{"DOI":"10.21052\/kcmr.","title":["Korean
+        Corporation Management Review"]},{"DOI":"10.5455\/jrmds.","title":["Journal
+        of Research in Medical and Dental Science"]},{"DOI":"10.13107\/bbj","title":["Back
+        Bone Journal"]},{"DOI":"10.11606\/issn.2596-3147","title":["Revista Ingesta"]},{"DOI":"10.3332\/ecancer.2011.242","title":["ecancermedicalscience"]},{"DOI":"10.32501\/jhmb","title":["JURNAL
+        HUKUM MEDIA BHAKTI"]},{"DOI":"10.37745\/ijvter.15","title":["International
+        Journal of Vocational and Technical Education Research"]},{"DOI":"10.30542\/jcems","title":["The
+        Journal of Collegiate Emergency Medical Services"]},{"DOI":"10.14196\/jhd","title":["Journal
+        of Herbal Drugs"]},{"DOI":"10.9754\/journal.wmc.2010.00601","title":["webmedcentral"]},{"DOI":"10.14195\/0258-655x","title":["Ploutarchos"]},{"DOI":"10.17811\/rema","title":["R.E.M.A.
+        Revista electr\u00f3nica de metodolog\u00eda aplicada"]},{"DOI":"10.21917\/ijct","title":["ICTACT
+        Journal on Communication Technology"]},{"DOI":"10.36346\/sarjet","title":["South
+        Asian Research Journal of Engineering and Technology"]},{"DOI":"10.1007\/12645.1868-6966","title":["Cancer
+        Nanotechnology"]},{"DOI":"10.1111\/(issn)1471-1842","title":["Health Information
+        & Libraries Journal"]},{"DOI":"10.26855\/acc","title":["Advances in Computer
+        and Communication"]},{"DOI":"10.1111\/(issn)1936-704x","title":["Journal of
+        Contemporary Water Research & Education"]},{"DOI":"10.1002\/(issn)2190-6653","title":["geotechnik"]},{"DOI":"10.1134\/10913.1573-8736","title":["Journal
+        of Mining Science"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sat, 26 Mar 2022 04:17:44 GMT
+recorded_with: VCR 6.1.0

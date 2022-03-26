@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:12:01 GMT
+      - Sat, 26 Mar 2022 04:17:48 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '7018'
+      - '7021'
       Set-Cookie:
-      - AWSALB=+6oMGIJ8GfKJAu+EQ+ylmw64ZpVhJ8wunh5pNhPKb/zt5zI+z9zR+ale4uRizjHy1LTes5CzCE1qokqK1hAzNRhy8WycdRsz0XsuwC/qHcxFgnUBr4E1fpWmKK0r;
-        Expires=Sat, 25 Sep 2021 16:12:01 GMT; Path=/
-      - AWSALBCORS=+6oMGIJ8GfKJAu+EQ+ylmw64ZpVhJ8wunh5pNhPKb/zt5zI+z9zR+ale4uRizjHy1LTes5CzCE1qokqK1hAzNRhy8WycdRsz0XsuwC/qHcxFgnUBr4E1fpWmKK0r;
-        Expires=Sat, 25 Sep 2021 16:12:01 GMT; Path=/; SameSite=None
+      - AWSALB=C/sbOJk2NbeyCww1zbpLuvPmqOWUOC1P/FpbHc3ndXWC1XwDCsvpxIbOvFirdmnTHua1IGHMki+tW3y6+fmPYriJBDfbOAYMPM1hDdHCqjRXVRcOO6bTQu1ynSNI;
+        Expires=Sat, 02 Apr 2022 04:17:48 GMT; Path=/
+      - AWSALBCORS=C/sbOJk2NbeyCww1zbpLuvPmqOWUOC1P/FpbHc3ndXWC1XwDCsvpxIbOvFirdmnTHua1IGHMki+tW3y6+fmPYriJBDfbOAYMPM1hDdHCqjRXVRcOO6bTQu1ynSNI;
+        Expires=Sat, 02 Apr 2022 04:17:48 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,9 +58,9 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,9,17]],"date-time":"2021-09-17T23:24:55Z","timestamp":1631921095815},"reference-count":70,"publisher":"Public
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2022,1,7]],"date-time":"2022-01-07T05:29:50Z","timestamp":1641533390913},"reference-count":70,"publisher":"Public
         Library of Science (PLoS)","issue":"3","license":[{"start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":52,"title":["Methylphenidate
+        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":54,"title":["Methylphenidate
         Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
         Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
         B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
@@ -220,7 +220,7 @@ http_interactions:
         Disord"},{"key":"ref59","doi-asserted-by":"crossref","first-page":"311","DOI":"10.1007\/978-3-211-73574-9_38","article-title":"Association
         of Parkinson&apos;s disease with symptoms of attention deficit hyperactivity
         disorder in childhood.","author":"S Walitza","year":"2007","journal-title":"J
-        Neural Transm Suppl"},{"key":"ref60","first-page":"847","article-title":"The
+        Neural Transm Suppl"},{"key":"ref60","doi-asserted-by":"crossref","first-page":"847","DOI":"10.1542\/peds.63.6.847","article-title":"The
         effects of stimulant medication on the growth of hyperkinetic children.","volume":"63","author":"AF
         Croche","year":"1979","journal-title":"Pediatrics"},{"key":"ref61","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1089\/1044546041649066","article-title":"Weekend
         holidays during methylphenidate use in ADHD children: a randomized clinical
@@ -245,7 +245,7 @@ http_interactions:
         Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
         models and empirical bayes methods for assessing differential expression in
         microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,5,8]],"date-time":"2020-05-08T19:05:59Z","timestamp":1588964759000},"score":1,"subtitle":[],"editor":[{"given":"Cesario
+        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,6]],"date-time":"2022-01-06T08:12:10Z","timestamp":1641456730000},"score":1,"subtitle":[],"editor":[{"given":"Cesario
         V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2012,3,21]]}},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["Multidisciplinary"],"published":{"date-parts":[[2012,3,21]]}}}'
-  recorded_at: Sat, 18 Sep 2021 16:12:01 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:48 GMT
+recorded_with: VCR 6.1.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:12:13 GMT
+      - Sat, 26 Mar 2022 04:18:12 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '543'
+      - '545'
       Set-Cookie:
-      - AWSALB=2OhpkkxJvLlhIen8+JejAWWeXyN+YctDCiixhPi1IkXt67xyrcifRnjCU4XBgqj0xyhapO7RuoAIPipUS47oUHCppYPoq9aTmsEEit5SYKLxXbJprRARgSplGz9R;
-        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/
-      - AWSALBCORS=2OhpkkxJvLlhIen8+JejAWWeXyN+YctDCiixhPi1IkXt67xyrcifRnjCU4XBgqj0xyhapO7RuoAIPipUS47oUHCppYPoq9aTmsEEit5SYKLxXbJprRARgSplGz9R;
-        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/; SameSite=None
+      - AWSALB=Sw0n38IY26FkT+NIclGU+XG4KpN1ce6Tgx5Srj1xqdaPkajQNKNL/cP8CV0sApgXALrEPr4tqYUnSYNQC+m0b7LSf+IIqYmPPBIq0NlC3C2gDm5aVCiy0gTrjGtK;
+        Expires=Sat, 02 Apr 2022 04:18:12 GMT; Path=/
+      - AWSALBCORS=Sw0n38IY26FkT+NIclGU+XG4KpN1ce6Tgx5Srj1xqdaPkajQNKNL/cP8CV0sApgXALrEPr4tqYUnSYNQC+m0b7LSf+IIqYmPPBIq0NlC3C2gDm5aVCiy0gTrjGtK;
+        Expires=Sat, 02 Apr 2022 04:18:12 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,11 +58,11 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T09:45:10Z","timestamp":1620467110351},"reference-count":0,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,12,21]],"date-time":"2021-12-21T08:07:21Z","timestamp":1640074041563},"reference-count":0,"publisher":"Springer
         Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
         Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
-        Modelling","Ecology"]}}'
-  recorded_at: Sat, 18 Sep 2021 16:12:13 GMT
+        Modeling","Ecology"]}}'
+  recorded_at: Sat, 26 Mar 2022 04:18:12 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125
@@ -71,9 +71,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -84,16 +84,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:12:13 GMT
+      - Sat, 26 Mar 2022 04:18:12 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '565'
+      - '568'
       Set-Cookie:
-      - AWSALB=M+QPxmNYa8OAYzVWje/nKufo4OQQYNaXMqU6n/DIRxFJZVn8N2B8N7T3y5YF3iDQHtXjF3YKSRSBr8qgm8+OiroHjh/M99jwuNtMADsMriMWGUIOstOqdmUxUI4f;
-        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/
-      - AWSALBCORS=M+QPxmNYa8OAYzVWje/nKufo4OQQYNaXMqU6n/DIRxFJZVn8N2B8N7T3y5YF3iDQHtXjF3YKSRSBr8qgm8+OiroHjh/M99jwuNtMADsMriMWGUIOstOqdmUxUI4f;
-        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/; SameSite=None
+      - AWSALB=7u58U0WZocslXs9sEJ/TrHqKabHdnHV1yHFt9zC7r3MHpX39K4PR+omXz90oauvMqPndlcy/r0Cp0LmQamoTyi77oU8uma8kaZW8hC20FcjN+FT/xnE2Imok4ZAQ;
+        Expires=Sat, 02 Apr 2022 04:18:12 GMT; Path=/
+      - AWSALBCORS=7u58U0WZocslXs9sEJ/TrHqKabHdnHV1yHFt9zC7r3MHpX39K4PR+omXz90oauvMqPndlcy/r0Cp0LmQamoTyi77oU8uma8kaZW8hC20FcjN+FT/xnE2Imok4ZAQ;
+        Expires=Sat, 02 Apr 2022 04:18:12 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -121,11 +121,11 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T09:43:27Z","timestamp":1620467007388},"reference-count":0,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,12,10]],"date-time":"2021-12-10T20:02:54Z","timestamp":1639166574230},"reference-count":0,"publisher":"Springer
         Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
         Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
         Science","Ecology, Evolution, Behavior and Systematics"]}}'
-  recorded_at: Sat, 18 Sep 2021 16:12:13 GMT
+  recorded_at: Sat, 26 Mar 2022 04:18:12 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1111%2F(issn)1442-9993
@@ -134,9 +134,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -147,16 +147,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:12:14 GMT
+      - Sat, 26 Mar 2022 04:18:13 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '538'
+      - '539'
       Set-Cookie:
-      - AWSALB=pxvWF0rfusSA74MmvjjQztZV6H1PTm7JwUK2gNvGpYx8aMZC/Fsrk3LhLZVw5Y1OvBAThImGGMWuUd8/B9HJR/ymfHEfCv1qd6Ff02mA/TxySOlVyxF7vPGenkVQ;
-        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/
-      - AWSALBCORS=pxvWF0rfusSA74MmvjjQztZV6H1PTm7JwUK2gNvGpYx8aMZC/Fsrk3LhLZVw5Y1OvBAThImGGMWuUd8/B9HJR/ymfHEfCv1qd6Ff02mA/TxySOlVyxF7vPGenkVQ;
-        Expires=Sat, 25 Sep 2021 16:12:13 GMT; Path=/; SameSite=None
+      - AWSALB=upHfStgl7Q6Ka2NWTXbgUZxjtgOdRnVj5hUBvjhyZp18oCA1NasHwHjWIm/Z8d1moVnKCo9LBiGJos0Q39W27zPUFY3NDVTajhiWXWiVkgF8idZF2hEzxHQEcpVG;
+        Expires=Sat, 02 Apr 2022 04:18:13 GMT; Path=/
+      - AWSALBCORS=upHfStgl7Q6Ka2NWTXbgUZxjtgOdRnVj5hUBvjhyZp18oCA1NasHwHjWIm/Z8d1moVnKCo9LBiGJos0Q39W27zPUFY3NDVTajhiWXWiVkgF8idZF2hEzxHQEcpVG;
+        Expires=Sat, 02 Apr 2022 04:18:13 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -184,8 +184,8 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,5,8]],"date-time":"2021-05-08T07:15:10Z","timestamp":1620458110472},"reference-count":0,"publisher":"Wiley","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T01:38:28Z","timestamp":1273455508000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,12,15]],"date-time":"2021-12-15T03:41:54Z","timestamp":1639539714426},"reference-count":0,"publisher":"Wiley","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1111\/(issn)1442-9993","type":"journal","created":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T01:38:28Z","timestamp":1273455508000},"source":"Crossref","is-referenced-by-count":0,"title":["Austral
         Ecology"],"prefix":"10.1111","member":"311","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T01:38:28Z","timestamp":1273455508000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1111\/(issn)1442-9993","relation":{},"ISSN":["1442-9985","1442-9993"],"issn-type":[{"value":"1442-9985","type":"print"},{"value":"1442-9993","type":"electronic"}],"subject":["Ecology","Ecology,
         Evolution, Behavior and Systematics"]}}'
-  recorded_at: Sat, 18 Sep 2021 16:12:14 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:18:13 GMT
+recorded_with: VCR 6.1.0

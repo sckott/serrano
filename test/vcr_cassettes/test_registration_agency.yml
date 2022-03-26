@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:53 GMT
+      - Sat, 26 Mar 2022 04:17:41 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '166'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=5L9GUqXqstCcuWvA7pCiNIM1Ly5fbIhWVu50XSC2cVF9v+GnMztGrHgw27t8oPB1srIeeosmkNP9Y4sySPktWD2gxYKeHJuVJ6Kj8Olp7UY4UTpjgG9klFqBhRtN;
-        Expires=Sat, 25 Sep 2021 16:11:53 GMT; Path=/
-      - AWSALBCORS=5L9GUqXqstCcuWvA7pCiNIM1Ly5fbIhWVu50XSC2cVF9v+GnMztGrHgw27t8oPB1srIeeosmkNP9Y4sySPktWD2gxYKeHJuVJ6Kj8Olp7UY4UTpjgG9klFqBhRtN;
-        Expires=Sat, 25 Sep 2021 16:11:53 GMT; Path=/; SameSite=None
+      - AWSALB=7EiKBr0n6HM9zmDGq8LQ9JOJvVCMp1gCIYr8238juX6LELsVSPwBK0wmpRwB8LnkAGAhsw4iYOAeNQ/QGdI3k2D0a+jlKrGMI5lJ4qkznWTWRFcD/amZJfgchN0q;
+        Expires=Sat, 02 Apr 2022 04:17:41 GMT; Path=/
+      - AWSALBCORS=7EiKBr0n6HM9zmDGq8LQ9JOJvVCMp1gCIYr8238juX6LELsVSPwBK0wmpRwB8LnkAGAhsw4iYOAeNQ/QGdI3k2D0a+jlKrGMI5lJ4qkznWTWRFcD/amZJfgchN0q;
+        Expires=Sat, 02 Apr 2022 04:17:41 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -59,5 +59,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1371\/journal.pone.0033693","agency":{"id":"crossref","label":"Crossref"}}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:53 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:41 GMT
+recorded_with: VCR 6.1.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:37 GMT
+      - Sat, 26 Mar 2022 04:17:30 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '164'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=/8mxAXDVwXKlx7E2r5bAzrE28u5YdayIo/Hzh268GDHLFZhdxWYiFA6C4bSOR9MQCaMjEueBKIxV/c1X85WKRhvL4o3RKBispy7f/NdpKqvm0XLDQIMPQqwRj0d1;
-        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/
-      - AWSALBCORS=/8mxAXDVwXKlx7E2r5bAzrE28u5YdayIo/Hzh268GDHLFZhdxWYiFA6C4bSOR9MQCaMjEueBKIxV/c1X85WKRhvL4o3RKBispy7f/NdpKqvm0XLDQIMPQqwRj0d1;
-        Expires=Sat, 25 Sep 2021 16:11:37 GMT; Path=/; SameSite=None
+      - AWSALB=FrZCF5ozjJfWZeHM5eoYCRDP8zWq7CPTX/GhUt0dH+ne6C4XTLfYHIMmMc5HNYuq+gxSGMoilU3aGlTn3S4sdYT7Q9ucm/OVfdQBWpLXBTZHCCr+Ng9hQYrUglCS;
+        Expires=Sat, 02 Apr 2022 04:17:30 GMT; Path=/
+      - AWSALBCORS=FrZCF5ozjJfWZeHM5eoYCRDP8zWq7CPTX/GhUt0dH+ne6C4XTLfYHIMmMc5HNYuq+gxSGMoilU3aGlTn3S4sdYT7Q9ucm/OVfdQBWpLXBTZHCCr+Ng9hQYrUglCS;
+        Expires=Sat, 02 Apr 2022 04:17:30 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -60,5 +60,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"filter","message":"This
         route does not support filter"}]}'
-  recorded_at: Sat, 18 Sep 2021 16:11:37 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:30 GMT
+recorded_with: VCR 6.1.0

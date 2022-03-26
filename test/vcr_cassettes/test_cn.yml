@@ -8,11 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,7 +21,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Tue, 01 Mar 2022 00:55:28 GMT
+      - Sat, 26 Mar 2022 04:16:54 GMT
       Content-Type:
       - text/html;charset=utf-8
       Content-Length:
@@ -33,7 +33,7 @@ http_interactions:
       Vary:
       - Accept
       Expires:
-      - Tue, 01 Mar 2022 01:40:57 GMT
+      - Sat, 26 Mar 2022 04:44:51 GMT
       Permissions-Policy:
       - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
@@ -41,7 +41,7 @@ http_interactions:
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CEAkRIytsdA8JpeUF%2ByLNaI%2B%2BRFnjSDLp2xaQUwXRIlTuwLztm3%2FWKiGroJJ70wXpn3GmZdc19N6Blvxgk95TNCHmN5TnyeFuWyjXFkWUFEqKFw53fzti5U%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=87i7zNoAiKLEIjEmNMtDp6ISYit8Ep%2F6R9wQITXoJi6oTAbtcwgUOB11%2BEQ286v8SrcCgRWI%2BQuip4PQhrOxvFI5RgNvIj4hwSBtHtYzU%2FJVq%2BAev9%2FpJ2c%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
@@ -49,7 +49,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6e4ded60aad4e386-SEA
+      - 6f1d12d3caa06805-SEA
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -57,7 +57,7 @@ http_interactions:
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>
-  recorded_at: Tue, 01 Mar 2022 00:55:28 GMT
+  recorded_at: Sat, 26 Mar 2022 04:16:54 GMT
 - request:
     method: get
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
@@ -66,11 +66,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v1.9.3 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -79,16 +79,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 Mar 2022 00:55:28 GMT
+      - Sat, 26 Mar 2022 04:16:54 GMT
       Content-Type:
       - application/x-bibtex
       Transfer-Encoding:
       - chunked
       Set-Cookie:
-      - AWSALB=RrXqmeSSDWVbgqU0NCoCu9nUG5UpIyHS5xzW8sY6q5c5hFzjbeDSjtvMLBtfWkd7Tcpl916e8y/7Md6Kg2IBVukif6l1acd9ziTwcd9yW1cn9b2IRIRZ3hfg8igU;
-        Expires=Tue, 08 Mar 2022 00:55:28 GMT; Path=/
-      - AWSALBCORS=RrXqmeSSDWVbgqU0NCoCu9nUG5UpIyHS5xzW8sY6q5c5hFzjbeDSjtvMLBtfWkd7Tcpl916e8y/7Md6Kg2IBVukif6l1acd9ziTwcd9yW1cn9b2IRIRZ3hfg8igU;
-        Expires=Tue, 08 Mar 2022 00:55:28 GMT; Path=/; SameSite=None
+      - AWSALB=/mJ5YkT1tOeZnsKPrElQE3iulprRqW1+S+MPN6zlpwAtTZbyRFYRL+RR7nr2gVeM/hOkgfIHXRYMQueoZT9PQF3LWyKBlh1zwsxlegZjpcI42H7fsyjYCw43Fkum;
+        Expires=Sat, 02 Apr 2022 04:16:54 GMT; Path=/
+      - AWSALBCORS=/mJ5YkT1tOeZnsKPrElQE3iulprRqW1+S+MPN6zlpwAtTZbyRFYRL+RR7nr2gVeM/hOkgfIHXRYMQueoZT9PQF3LWyKBlh1zwsxlegZjpcI42H7fsyjYCw43Fkum;
+        Expires=Sat, 02 Apr 2022 04:16:54 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Link:
@@ -125,5 +125,5 @@ http_interactions:
         ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
         = {Henry S. Frank},\n\ttitle = {The Structure of Ordinary Water},\n\tjournal
         = {Science}\n}"
-  recorded_at: Tue, 01 Mar 2022 00:55:28 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:16:54 GMT
+recorded_with: VCR 6.1.0

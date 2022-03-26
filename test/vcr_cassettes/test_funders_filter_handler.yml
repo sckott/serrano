@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:12 GMT
+      - Sat, 26 Mar 2022 04:16:57 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '247'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=N1+HIzBOwPmHPMR9GxYbqBKy3khsMNHUHykgYPW9WaX1MDFQ/3GRHM0r7yxVnpfkn/uBWiW10Zlb8PvrigHX7IkhXS9+iL0A8IuXm9cqlau3P4Y6tBv9xbaALKqD;
-        Expires=Sat, 25 Sep 2021 16:11:12 GMT; Path=/
-      - AWSALBCORS=N1+HIzBOwPmHPMR9GxYbqBKy3khsMNHUHykgYPW9WaX1MDFQ/3GRHM0r7yxVnpfkn/uBWiW10Zlb8PvrigHX7IkhXS9+iL0A8IuXm9cqlau3P4Y6tBv9xbaALKqD;
-        Expires=Sat, 25 Sep 2021 16:11:12 GMT; Path=/; SameSite=None
+      - AWSALB=2g5hodqB/WUzKSrr3iACWnSuydrvQGvxYBB5bEBRaHciH7qTpgBxAohNJJtQC3PbH/8LznURDkaigf2DyAw4iZW7H/3EtV3U+MOC+o9ecjrBb/BmipckNr4HZz7m;
+        Expires=Sat, 02 Apr 2022 04:16:57 GMT; Path=/
+      - AWSALBCORS=2g5hodqB/WUzKSrr3iACWnSuydrvQGvxYBB5bEBRaHciH7qTpgBxAohNJJtQC3PbH/8LznURDkaigf2DyAw4iZW7H/3EtV3U+MOC+o9ecjrBb/BmipckNr4HZz7m;
+        Expires=Sat, 02 Apr 2022 04:16:57 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -61,5 +61,5 @@ http_interactions:
       string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"filter-not-available","value":"has-funder","message":"Filter
         has-funder specified but there is no such filter for this route. Valid filters
         for this route are: location"}]}'
-  recorded_at: Sat, 18 Sep 2021 16:11:12 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:16:57 GMT
+recorded_with: VCR 6.1.0

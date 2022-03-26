@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:15 GMT
+      - Sat, 26 Mar 2022 04:17:00 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1060'
+      - '1105'
       Set-Cookie:
-      - AWSALB=VL3UGUN79CPg2brXLZsImQGE8RMFyV8EqkjmHlE/sTgbgt0enX3w0dIEEzolLbQu5/fkaTj1dsBSndPxDj6CCCQy4pvktMtz8DMAi36Y4527cgYePKTpVMp8tuD0;
-        Expires=Sat, 25 Sep 2021 16:11:15 GMT; Path=/
-      - AWSALBCORS=VL3UGUN79CPg2brXLZsImQGE8RMFyV8EqkjmHlE/sTgbgt0enX3w0dIEEzolLbQu5/fkaTj1dsBSndPxDj6CCCQy4pvktMtz8DMAi36Y4527cgYePKTpVMp8tuD0;
-        Expires=Sat, 25 Sep 2021 16:11:15 GMT; Path=/; SameSite=None
+      - AWSALB=A1jbb1AFEgKx1La9QKMTmCd2JsOOt5lqwhmFLJ1pq84GTDWXBON9BPeTN+zq/BjaHtn+ULZULM6hpZ+1qi9Wi61CDnoDyP4paq2PpPChQ2J4xYMNpFivmnMgDvb/;
+        Expires=Sat, 02 Apr 2022 04:17:00 GMT; Path=/
+      - AWSALBCORS=A1jbb1AFEgKx1La9QKMTmCd2JsOOt5lqwhmFLJ1pq84GTDWXBON9BPeTN+zq/BjaHtn+ULZULM6hpZ+1qi9Wi61CDnoDyP4paq2PpPChQ2J4xYMNpFivmnMgDvb/;
+        Expires=Sat, 02 Apr 2022 04:17:00 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,9 +58,9 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1631927356222,"counts":{"current-dois":5966,"backfile-dois":6100,"total-dois":12066},"breakdowns":{"dois-by-issued-year":[[2020,2281],[2019,2126],[2018,1932],[2021,1559],[2017,1368],[2016,1296],[2015,801],[2014,471],[2013,232]]},"publisher":"PeerJ","coverage":{"affiliations-current":0.9125041904123365,"similarity-checking-current":0.9994971505196111,"funders-backfile":0.630655737704918,"licenses-backfile":0.7940983606557377,"funders-current":0.8174656386188401,"affiliations-backfile":0.9565573770491803,"resource-links-backfile":0.7940983606557377,"orcids-backfile":0.1121311475409836,"update-policies-current":0.0,"open-references-backfile":1.0,"orcids-current":0.3052296345960443,"similarity-checking-backfile":0.9959016393442623,"references-backfile":0.9955737704918033,"award-numbers-backfile":0.4781967213114754,"update-policies-backfile":0.0,"licenses-current":0.9994971505196111,"award-numbers-current":0.6771706335903453,"abstracts-backfile":0.7940983606557377,"resource-links-current":0.9994971505196111,"abstracts-current":0.9994971505196111,"open-references-current":1.0,"references-current":0.9983238350653704},"title":"PeerJ","subjects":[{"ASJC":1100,"name":"General
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1648258725598,"counts":{"current-dois":4827,"backfile-dois":8226,"total-dois":13053},"breakdowns":{"dois-by-issued-year":[[2020,2281],[2019,2126],[2021,2119],[2018,1932],[2017,1368],[2016,1296],[2015,801],[2014,471],[2022,427],[2013,232]]},"publisher":"PeerJ","coverage":{"affiliations-current":0.9208618189351564,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.6757840991976659,"licenses-backfile":0.8469486992462922,"funders-current":0.81893515641185,"affiliations-backfile":0.9416484318016047,"resource-links-backfile":0.8469486992462922,"orcids-backfile":0.162898127887187,"update-policies-current":0.0,"open-references-backfile":1.0,"ror-ids-backfile":0.0,"orcids-current":0.3012222912782266,"similarity-checking-backfile":0.9965961585217603,"references-backfile":0.9959883296863603,"descriptions-backfile":0.0,"award-numbers-backfile":0.526622902990518,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.6757820592500517,"abstracts-backfile":0.8469486992462922,"resource-links-current":1.0,"abstracts-current":1.0,"open-references-current":1.0,"references-current":0.999171327946965},"title":"PeerJ","subjects":[{"ASJC":1100,"name":"General
         Agricultural and Biological Sciences"},{"ASJC":1300,"name":"General Biochemistry,
         Genetics and Molecular Biology"},{"ASJC":2700,"name":"General Medicine"},{"ASJC":2800,"name":"General
-        Neuroscience"}],"coverage-type":{"all":{"last-status-check-time":1631927356222,"affiliations":0.9347754019559092,"abstracts":0.8956572186308636,"orcids":0.2076081551466932,"licenses":0.8956572186308636,"references":0.9969335322393502,"funders":0.7230233714569866,"similarity-checking":0.9976794298027515,"award-numbers":0.5765788165091994,"update-policies":0.0,"resource-links":0.8956572186308636,"open-references":1.0},"backfile":{"last-status-check-time":1631927356222,"affiliations":0.9565573770491803,"abstracts":0.7940983606557377,"orcids":0.1121311475409836,"licenses":0.7940983606557377,"references":0.9955737704918033,"funders":0.630655737704918,"similarity-checking":0.9959016393442623,"award-numbers":0.4781967213114754,"update-policies":0.0,"resource-links":0.7940983606557377,"open-references":1.0},"current":{"last-status-check-time":1631927356222,"affiliations":0.9125041904123365,"abstracts":0.9994971505196111,"orcids":0.3052296345960443,"licenses":0.9994971505196111,"references":0.9983238350653704,"funders":0.8174656386188401,"similarity-checking":0.9994971505196111,"award-numbers":0.6771706335903453,"update-policies":0.0,"resource-links":0.9994971505196111,"open-references":1.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-open-references-backfile":true,"deposits-open-references-current":true,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["2167-8359"],"issn-type":[{"value":"2167-8359","type":"electronic"}]}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:15 GMT
-recorded_with: VCR 6.0.0
+        Neuroscience"}],"coverage-type":{"all":{"last-status-check-time":1648258725598,"affiliations":0.9339615414081054,"abstracts":0.9035470773002375,"orcids":0.2140504098674634,"licenses":0.9035470773002375,"references":0.997165402589443,"funders":0.7287213667356163,"similarity-checking":0.9978548992568758,"award-numbers":0.5817819658316096,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.9035470773002375,"descriptions":0.0,"open-references":1.0},"backfile":{"last-status-check-time":1648258725598,"affiliations":0.9416484318016047,"abstracts":0.8469486992462922,"orcids":0.162898127887187,"licenses":0.8469486992462922,"references":0.9959883296863603,"funders":0.6757840991976659,"similarity-checking":0.9965961585217603,"award-numbers":0.526622902990518,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.8469486992462922,"descriptions":0.0,"open-references":1.0},"current":{"last-status-check-time":1648258725598,"affiliations":0.9208618189351564,"abstracts":1.0,"orcids":0.3012222912782266,"licenses":1.0,"references":0.999171327946965,"funders":0.81893515641185,"similarity-checking":1.0,"award-numbers":0.6757820592500517,"ror-ids":0.0,"update-policies":0.0,"resource-links":1.0,"descriptions":0.0,"open-references":1.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-open-references-backfile":true,"deposits-open-references-current":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["2167-8359"],"issn-type":[{"value":"2167-8359","type":"electronic"}]}}'
+  recorded_at: Sat, 26 Mar 2022 04:17:00 GMT
+recorded_with: VCR 6.1.0

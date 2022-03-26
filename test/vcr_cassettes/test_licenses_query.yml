@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:31 GMT
+      - Sat, 26 Mar 2022 04:17:25 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '368'
+      - '365'
       Set-Cookie:
-      - AWSALB=D0ekIz2C/YKoqfxgCjmWtjU3epeDuNi6x3ZG+zVRq0teLR5Uh56nTw0WifZpev0qAME6L5x08KFgORJ1pY2YTbq+U61+SY3PuvvivXCuQdJgCqFI6ArnKel2VfuD;
-        Expires=Sat, 25 Sep 2021 16:11:30 GMT; Path=/
-      - AWSALBCORS=D0ekIz2C/YKoqfxgCjmWtjU3epeDuNi6x3ZG+zVRq0teLR5Uh56nTw0WifZpev0qAME6L5x08KFgORJ1pY2YTbq+U61+SY3PuvvivXCuQdJgCqFI6ArnKel2VfuD;
-        Expires=Sat, 25 Sep 2021 16:11:30 GMT; Path=/; SameSite=None
+      - AWSALB=ub8+87Z9vxb9hZwHNTLWDyZVEZcXfJtizQFfhvCBS7hEP7dxsbn6l0u00zxgCs93lfDCRkk9XCpJGLgKQEwqYF18SOd80GYk38srQ1wGh1NWx5lCcwwA00gMK73f;
+        Expires=Sat, 02 Apr 2022 04:17:25 GMT; Path=/
+      - AWSALBCORS=ub8+87Z9vxb9hZwHNTLWDyZVEZcXfJtizQFfhvCBS7hEP7dxsbn6l0u00zxgCs93lfDCRkk9XCpJGLgKQEwqYF18SOd80GYk38srQ1wGh1NWx5lCcwwA00gMK73f;
+        Expires=Sat, 02 Apr 2022 04:17:25 GMT; Path=/; SameSite=None
       Vary:
       - Accept, Accept-Encoding
       Access-Control-Expose-Headers:
@@ -58,6 +58,6 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":200,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":1},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/CC\/by-nc-nd\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":102},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":193},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/us\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":780},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":440},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":191},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/","work-count":8},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/deed.uk","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/2.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/2.5","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":43},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":99}]}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:31 GMT
-recorded_with: VCR 6.0.0
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":232,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":1},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/CC\/by-nc-nd\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":100},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":193},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/us\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":831},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":497},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":212},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/","work-count":12},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/deed.uk","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/2.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/2.5","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":43},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":110}]}}'
+  recorded_at: Sat, 26 Mar 2022 04:17:25 GMT
+recorded_with: VCR 6.1.0

@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:30 GMT
+      - Sat, 26 Mar 2022 04:17:24 GMT
       Content-Type:
       - application/json;charset=utf-8
-      Content-Length:
-      - '351'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=WgUjRFr34eKpeb9RuF0lM+q8ZlIl4GZ4flhLvvHEGmRjHgj3t4NH/tjp6KkEHZuRdv5feEhMOYPiZuo9jcK1B5/YPnnSCkX4zrjHyjpm1x/BHKqqM0mJZOqaQ7EA;
-        Expires=Sat, 25 Sep 2021 16:11:24 GMT; Path=/
-      - AWSALBCORS=WgUjRFr34eKpeb9RuF0lM+q8ZlIl4GZ4flhLvvHEGmRjHgj3t4NH/tjp6KkEHZuRdv5feEhMOYPiZuo9jcK1B5/YPnnSCkX4zrjHyjpm1x/BHKqqM0mJZOqaQ7EA;
-        Expires=Sat, 25 Sep 2021 16:11:24 GMT; Path=/; SameSite=None
+      - AWSALB=aI/R6jIxvIkqs+QWcT9o7zi/KC2z01sfDY03lOL18BOe6VNeHREgamz5wBUFqXlChJi5wx4Fh6Xrwz/4ICGWNBgcrdaA2eHtJxtT9XH6//JPydsZnTEzeK2UnwvU;
+        Expires=Sat, 02 Apr 2022 04:17:15 GMT; Path=/
+      - AWSALBCORS=aI/R6jIxvIkqs+QWcT9o7zi/KC2z01sfDY03lOL18BOe6VNeHREgamz5wBUFqXlChJi5wx4Fh6Xrwz/4ICGWNBgcrdaA2eHtJxtT9XH6//JPydsZnTEzeK2UnwvU;
+        Expires=Sat, 02 Apr 2022 04:17:15 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -58,8 +58,8 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":7670,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"http:\/\/
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":9879,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"http:\/\/
         creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":11},{"URL":"http:\/\/
         creativecommons.org\/licenses\/by\/4.0\/","work-count":3}]}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:30 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:17:24 GMT
+recorded_with: VCR 6.1.0

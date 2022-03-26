@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:14 GMT
+      - Sat, 26 Mar 2022 04:16:59 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1770'
+      - '1715'
       Set-Cookie:
-      - AWSALB=SHs67yC5KKjf3AcypZqks2jHtPgFS7IEaTd6hRJ6qQIHAfpxN79MHMXW5M0PCmpW8Ra4QoZtvAE7PUswKJm0D7hEzD7XhiUXuRKYpkbQI8grl8mkZu8gJXsI6HKC;
-        Expires=Sat, 25 Sep 2021 16:11:14 GMT; Path=/
-      - AWSALBCORS=SHs67yC5KKjf3AcypZqks2jHtPgFS7IEaTd6hRJ6qQIHAfpxN79MHMXW5M0PCmpW8Ra4QoZtvAE7PUswKJm0D7hEzD7XhiUXuRKYpkbQI8grl8mkZu8gJXsI6HKC;
-        Expires=Sat, 25 Sep 2021 16:11:14 GMT; Path=/; SameSite=None
+      - AWSALB=Mm7BTwlurKJPja/YdFBjxYrgLAifpdHBc6yfgnBS4J0NtCO4wDRX3oEWnAUBaEz3pw34u1mGpoZfgk/CnPsl/LVxkZTFeQkCODCBi3P87m3iGoEslWGMbXoKoypu;
+        Expires=Sat, 02 Apr 2022 04:16:59 GMT; Path=/
+      - AWSALBCORS=Mm7BTwlurKJPja/YdFBjxYrgLAifpdHBc6yfgnBS4J0NtCO4wDRX3oEWnAUBaEz3pw34u1mGpoZfgk/CnPsl/LVxkZTFeQkCODCBi3P87m3iGoEslWGMbXoKoypu;
+        Expires=Sat, 02 Apr 2022 04:16:59 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -58,24 +58,20 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":20,"query":{"start-index":0,"search-terms":"NSF"},"total-results":39,"items":[{"id":"100000001","location":"United
+      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":20,"query":{"start-index":0,"search-terms":"NSF"},"total-results":48,"items":[{"id":"100000001","location":"United
         States","name":"National Science Foundation","alt-names":["USA NSF","NSF","US
         NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","usa","nsf","nsf","us","nsf"]},{"id":"100015388","location":"United
         States","name":"Kansas NSF EPSCoR","alt-names":["KNE","NSF EPSCoR"],"uri":"http:\/\/dx.doi.org\/10.13039\/100015388","replaces":[],"replaced-by":[],"tokens":["kansas","nsf","epscor","kne","nsf","epscor"]},{"id":"100016323","location":"United
         States","name":"Arkansas NSF EPSCoR","alt-names":["Arkansas EPSCoR Program","Arkansas
         EPSCoR","Arkansas''s NSF EPSCoR"],"uri":"http:\/\/dx.doi.org\/10.13039\/100016323","replaces":[],"replaced-by":[],"tokens":["arkansas","nsf","epscor","arkansas","epscor","program","arkansas","epscor","arkansass","nsf","epscor"]},{"id":"100003187","location":"United
         States","name":"National Sleep Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100003187","replaces":[],"replaced-by":[],"tokens":["national","sleep","foundation","nsf"]},{"id":"501100000930","location":"Australia","name":"National
-        Stroke Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000930","replaces":[],"replaced-by":[],"tokens":["national","stroke","foundation","nsf"]},{"id":"501100001809","location":"China","name":"National
-        Natural Science Foundation of China","alt-names":["NNSF of China","NSF of
-        China","NSF","\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1\u59d4\u5458\u4f1a","NSFC","National
-        Science Foundation of China","Natural Science Foundation of China","NNSFC","Chinese
-        National Science Foundation","NNSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100001809","replaces":["501100012659","100014718"],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","nnsf","of","china","nsf","of","china","nsf","\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1\u59d4\u5458\u4f1a","nsfc","national","science","foundation","of","china","natural","science","foundation","of","china","nnsfc","chinese","national","science","foundation","nnsf"]},{"id":"501100004190","location":"Norway","name":"Norsk
+        Stroke Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000930","replaces":[],"replaced-by":[],"tokens":["national","stroke","foundation","nsf"]},{"id":"100017338","location":"China","name":"Key
+        Program of NSFC-Tongyong Union Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100017338","replaces":[],"replaced-by":[],"tokens":["key","program","of","nsfc","tongyong","union","foundation"]},{"id":"100000154","location":"United
+        States","name":"Division of Integrative Organismal Systems","alt-names":["IOS","NSF
+        Division of Integrative Organismal Systems","NSF IOS","BIO\/IOS"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000154","replaces":[],"replaced-by":[],"tokens":["division","of","integrative","organismal","systems","ios","nsf","division","of","integrative","organismal","systems","nsf","ios","bio\/ios"]},{"id":"501100004190","location":"Norway","name":"Norsk
         Sykepleierforbund","alt-names":["NSF","Norwegian Nurses Organisation"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100004190","replaces":[],"replaced-by":[],"tokens":["norsk","sykepleierforbund","nsf","norwegian","nurses","organisation"]},{"id":"501100020414","location":"United
         Kingdom","name":"Neurosciences Foundation","alt-names":["The Neurosciences
-        Foundation","NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100020414","replaces":[],"replaced-by":[],"tokens":["neurosciences","foundation","the","neurosciences","foundation","nsf"]},{"id":"100000154","location":"United
-        States","name":"Division of Integrative Organismal Systems","alt-names":["IOS","NSF
-        Division of Integrative Organismal Systems","NSF IOS","BIO\/IOS"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000154","replaces":[],"replaced-by":[],"tokens":["division","of","integrative","organismal","systems","ios","nsf","division","of","integrative","organismal","systems","nsf","ios","bio\/ios"]},{"id":"100017338","location":"China","name":"Key
-        Program of NSFC-Tongyong Union Foundation","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100017338","replaces":[],"replaced-by":[],"tokens":["key","program","of","nsfc","tongyong","union","foundation"]},{"id":"100000084","location":"United
+        Foundation","NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100020414","replaces":[],"replaced-by":[],"tokens":["neurosciences","foundation","the","neurosciences","foundation","nsf"]},{"id":"100000084","location":"United
         States","name":"Directorate for Engineering","alt-names":["NSF Directorate
         for Engineering","National Science Foundation''s (NSF) Directorate for Engineering
         (ENG)","ENG","ENG\/OAD"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000084","replaces":[],"replaced-by":[],"tokens":["directorate","for","engineering","nsf","directorate","for","engineering","national","science","foundations","nsf","directorate","for","engineering","eng","eng","eng\/oad"]},{"id":"100016620","location":"United
@@ -85,20 +81,22 @@ http_interactions:
         NSF","University of Massachusetts NSF Center for Hierarchical Manufacturing","Center
         for Hierarchical Manufacturing"],"uri":"http:\/\/dx.doi.org\/10.13039\/100006445","replaces":[],"replaced-by":[],"tokens":["center","for","hierarchical","manufacturing","national","science","foundation","chm","nsf","university","of","massachusetts","nsf","center","for","hierarchical","manufacturing","center","for","hierarchical","manufacturing"]},{"id":"100017325","location":"United
         States","name":"Engineering Research Centers","alt-names":["ERC","The NSF
-        Engineering Research Center"],"uri":"http:\/\/dx.doi.org\/10.13039\/100017325","replaces":[],"replaced-by":[],"tokens":["engineering","research","centers","erc","the","nsf","engineering","research","center"]},{"id":"100008367","location":"Denmark","name":"Statens
-        Naturvidenskabelige Forskningsrad","alt-names":["Danish National Science Foundation","SNF","Danish
-        NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100008367","replaces":[],"replaced-by":[],"tokens":["statens","naturvidenskabelige","forskningsrad","danish","national","science","foundation","snf","danish","nsf"]},{"id":"100000179","location":"United
-        States","name":"Office of the Director","alt-names":["NSF Office of the Director","OD"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000179","replaces":[],"replaced-by":[],"tokens":["office","of","the","director","nsf","office","of","the","director","od"]},{"id":"501100019492","location":"China","name":"National
+        Engineering Research Center"],"uri":"http:\/\/dx.doi.org\/10.13039\/100017325","replaces":[],"replaced-by":[],"tokens":["engineering","research","centers","erc","the","nsf","engineering","research","center"]},{"id":"501100019492","location":"China","name":"National
         Natural Science Foundation of China-China Academy of General Technology Joint
         Fund for Basic Research","alt-names":["NSFC-General Technology Fundamental
-        Research Joint Fund","NSFC-GenerTec Joint Fund for Basic Research","NSFC-\u901a\u7528\u6280\u672f\u57fa\u7840\u7814\u7a76\u8054\u5408\u57fa\u91d1"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100019492","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","china","academy","of","general","technology","joint","fund","for","basic","research","nsfc","general","technology","fundamental","research","joint","fund","nsfc","genertec","joint","fund","for","basic","research","nsfc","\u901a\u7528\u6280\u672f\u57fa\u7840\u7814\u7a76\u8054\u5408\u57fa\u91d1"]},{"id":"501100011002","location":"China","name":"National
+        Research Joint Fund","NSFC-GenerTec Joint Fund for Basic Research","NSFC-\u901a\u7528\u6280\u672f\u57fa\u7840\u7814\u7a76\u8054\u5408\u57fa\u91d1"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100019492","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","china","academy","of","general","technology","joint","fund","for","basic","research","nsfc","general","technology","fundamental","research","joint","fund","nsfc","genertec","joint","fund","for","basic","research","nsfc","\u901a\u7528\u6280\u672f\u57fa\u7840\u7814\u7a76\u8054\u5408\u57fa\u91d1"]},{"id":"100008367","location":"Denmark","name":"Statens
+        Naturvidenskabelige Forskningsrad","alt-names":["Danish National Science Foundation","SNF","Danish
+        NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100008367","replaces":[],"replaced-by":[],"tokens":["statens","naturvidenskabelige","forskningsrad","danish","national","science","foundation","snf","danish","nsf"]},{"id":"100000179","location":"United
+        States","name":"Office of the Director","alt-names":["NSF Office of the Director","OD"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000179","replaces":[],"replaced-by":[],"tokens":["office","of","the","director","nsf","office","of","the","director","od"]},{"id":"501100011002","location":"China","name":"National
         Natural Science Foundation of China-Yunnan Joint Fund","alt-names":["NSFC-Yunnan
-        Joint Fund"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011002","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","yunnan","joint","fund","nsfc","yunnan","joint","fund"]},{"id":"501100008982","location":"Sri
-        Lanka","name":"National Science Foundation of Sri Lanka","alt-names":["National
-        Science Foundation","\u0da2\u0dcf\u0dad\u0dd2\u0d9a \u0dc0\u0dd2\u0daf\u0dca\u200d\u0dba\u0dcf
-        \u0db4\u0daf\u0db1\u0db8","NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008982","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","of","sri","lanka","national","science","foundation","\u0da2\u0dcf\u0dad\u0dd2\u0d9a","\u0dc0\u0dd2\u0daf\u0dca\u200d\u0dba\u0dcf","\u0db4\u0daf\u0db1\u0db8","nsf"]},{"id":"501100014220","location":"China","name":"National
+        Joint Fund"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100011002","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","yunnan","joint","fund","nsfc","yunnan","joint","fund"]},{"id":"501100014220","location":"China","name":"National
         Natural Science Foundation of China-Henan Joint Fund","alt-names":["NSFC-Henan
         Joint Fund","\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1-\u6cb3\u5357\u7701\u8054\u5408\u57fa\u91d1","NSFC-Henan
-        Provincial People''s GovernmentJoint Fund"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100014220","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","henan","joint","fund","nsfc","henan","joint","fund","\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1","\u6cb3\u5357\u7701\u8054\u5408\u57fa\u91d1","nsfc","henan","provincial","peoples","governmentjoint","fund"]}]}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:14 GMT
-recorded_with: VCR 6.0.0
+        Provincial People''s GovernmentJoint Fund"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100014220","replaces":[],"replaced-by":[],"tokens":["national","natural","science","foundation","of","china","henan","joint","fund","nsfc","henan","joint","fund","\u56fd\u5bb6\u81ea\u7136\u79d1\u5b66\u57fa\u91d1","\u6cb3\u5357\u7701\u8054\u5408\u57fa\u91d1","nsfc","henan","provincial","peoples","governmentjoint","fund"]},{"id":"501100008982","location":"Sri
+        Lanka","name":"National Science Foundation of Sri Lanka","alt-names":["National
+        Science Foundation","\u0da2\u0dcf\u0dad\u0dd2\u0d9a \u0dc0\u0dd2\u0daf\u0dca\u200d\u0dba\u0dcf
+        \u0db4\u0daf\u0db1\u0db8","NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100008982","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","of","sri","lanka","national","science","foundation","\u0da2\u0dcf\u0dad\u0dd2\u0d9a","\u0dc0\u0dd2\u0daf\u0dca\u200d\u0dba\u0dcf","\u0db4\u0daf\u0db1\u0db8","nsf"]},{"id":"100000160","location":"United
+        States","name":"Division of Earth Sciences","alt-names":["NSF Division of
+        Earth Sciences","Earth Sciences","EAR","GEO\/EAR"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000160","replaces":[],"replaced-by":[],"tokens":["division","of","earth","sciences","nsf","division","of","earth","sciences","earth","sciences","ear","geo\/ear"]}]}}'
+  recorded_at: Sat, 26 Mar 2022 04:16:59 GMT
+recorded_with: VCR 6.1.0

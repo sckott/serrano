@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v1.5.1 Serrano/v1.0.0 (mailto:myrmecocystus@gmail.com)
+      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 18 Sep 2021 16:11:12 GMT
+      - Sat, 26 Mar 2022 04:16:57 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '612'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
-      - AWSALB=2EAjlkTOdjFD4F+GUUhtT3ZB3Pb5Z/ubtM6luyhqPI2ou1jNK7f0XYmzKBm9YoyodGMdBx8/zapyugxbPiY41+Ml16oajUsHOeFrPXnAMB3xz0MbFMQ78Nfj37Mj;
-        Expires=Sat, 25 Sep 2021 16:11:12 GMT; Path=/
-      - AWSALBCORS=2EAjlkTOdjFD4F+GUUhtT3ZB3Pb5Z/ubtM6luyhqPI2ou1jNK7f0XYmzKBm9YoyodGMdBx8/zapyugxbPiY41+Ml16oajUsHOeFrPXnAMB3xz0MbFMQ78Nfj37Mj;
-        Expires=Sat, 25 Sep 2021 16:11:12 GMT; Path=/; SameSite=None
+      - AWSALB=xg/8vzIYkEGzG0cWNDex9WGCGXKKLp033dl7bEmj6ul9F0+rubJc2NlNiuGUGHmPGL8hMxC+nteMrhq3mdprQbhzmWmq67P187rv/C9xLCCHnp7rX2CCI9oGjB38;
+        Expires=Sat, 02 Apr 2022 04:16:57 GMT; Path=/
+      - AWSALBCORS=xg/8vzIYkEGzG0cWNDex9WGCGXKKLp033dl7bEmj6ul9F0+rubJc2NlNiuGUGHmPGL8hMxC+nteMrhq3mdprQbhzmWmq67P187rv/C9xLCCHnp7rX2CCI9oGjB38;
+        Expires=Sat, 02 Apr 2022 04:16:57 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -57,8 +57,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100004410":"European
-        Molecular Biology Organization"},"replaced-by":[],"work-count":2107,"name":"European
-        Molecular Biology Organization","descendants":[],"descendant-work-count":2107,"id":"100004410","tokens":["european","molecular","biology","organization","the","european","molecular","biology","organization","embo"],"replaces":["501100003043"],"uri":"http:\/\/dx.doi.org\/10.13039\/100004410","hierarchy":{"100004410":{}},"alt-names":["The
+        Molecular Biology Organization"},"replaced-by":[],"work-count":2263,"name":"European
+        Molecular Biology Organization","descendants":[],"descendant-work-count":2263,"id":"100004410","tokens":["european","molecular","biology","organization","the","european","molecular","biology","organization","embo"],"replaces":["501100003043"],"uri":"http:\/\/dx.doi.org\/10.13039\/100004410","hierarchy":{"100004410":{}},"alt-names":["The
         European Molecular Biology Organization","EMBO"],"location":"Germany"}}'
-  recorded_at: Sat, 18 Sep 2021 16:11:12 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Sat, 26 Mar 2022 04:16:57 GMT
+recorded_with: VCR 6.1.0
