@@ -6,8 +6,8 @@ require "multi_json"
 def fetch_styles
   base = "https://api.github.com/repos/citation-style-language/styles"
   conn = Faraday.new(url: base) { |f|
-    f.use FaradayMiddleware::RaiseHttpException
-    f.adapter Faraday.default_adapter
+    f.use Faraday::Response::RaiseError
+    # f.adapter Faraday.default_adapter
   }
   args = {per_page: 1}
   tt = conn.get "commits", args

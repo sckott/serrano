@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "faraday"
-require "faraday_middleware"
+require "faraday/follow_redirects"
 require "multi_json"
 require "serrano/error"
 require "serrano/utils"
@@ -47,7 +47,7 @@ module Serrano
       end
 
       conn = Faraday.new "https://doi.org/" do |c|
-        c.use FaradayMiddleware::FollowRedirects
+        c.use Faraday::FollowRedirects::Middleware
         c.adapter :net_http
       end
 

@@ -61,15 +61,13 @@ module Serrano
       opts = args.delete_if { |_k, v| v.nil? }
 
       conn = if verbose
-        Faraday.new(url: Serrano.base_url, request: options || []) do |f|
+        Faraday.new(url: Serrano.base_url, request: options || {}) do |f|
           f.response :logger
-          f.use FaradayMiddleware::RaiseHttpException
-          f.adapter Faraday.default_adapter
+          f.use Faraday::SerranoErrors::Middleware
         end
       else
-        Faraday.new(url: Serrano.base_url, request: options || []) do |f|
-          f.use FaradayMiddleware::RaiseHttpException
-          f.adapter Faraday.default_adapter
+        Faraday.new(url: Serrano.base_url, request: options || {}) do |f|
+          f.use Faraday::SerranoErrors::Middleware
         end
       end
 

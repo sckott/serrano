@@ -31,14 +31,14 @@ Gem::Specification.new do |s|
   s.add_development_dependency "standard", "~> 1.0"
   s.add_development_dependency "simplecov", "~> 0.21.2"
   s.add_development_dependency "test-unit", "~> 3.3", ">= 3.3.6"
-  s.add_development_dependency "vcr", "~> 6.0"
+  s.add_development_dependency 'vcr', '~> 6.1'
   s.add_development_dependency "webmock", "~> 3.14"
 
-  s.add_runtime_dependency "faraday", "~> 1.0"
-  s.add_runtime_dependency "faraday_middleware", "~> 1.2"
+  s.add_runtime_dependency "faraday", "~> 2.2"
+  s.add_runtime_dependency 'faraday-follow_redirects', '~> 0.1.0'
   s.add_runtime_dependency "multi_json", "~> 1.15"
-  s.add_runtime_dependency "rexml", "~> 3.2", ">= 3.2.4"
-  s.add_runtime_dependency "thor", "~> 1.0", ">= 1.0.1"
+  s.add_runtime_dependency "rexml", "~> 3.2", ">= 3.2.5"
+  s.add_runtime_dependency "thor", "~> 1.2", ">= 1.2.1"
 
   s.metadata = {
     "homepage_uri" => "https://github.com/sckott/serrano",
