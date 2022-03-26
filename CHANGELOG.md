@@ -1,3 +1,9 @@
+## 1.4 (2022-03-26)
+
+* Moved to faraday > v2. There's no user facing changes here, but let me know if any issues arise (#172)
+* PR by @LocoDelAssembly fixes `Serrano.content_negotiation(format: "citeproc-json")` by having it return `nil` instead of `Resource not found` when no DOI is found, so that the output is more compatible with flows that use serrano to create JSON (#169)
+* PR by @xuanxu adds `REXML` as a runtime dependency (#159)
+
 ## 1.0.0 (2020-10-19)
 
 * updated dependency versions
