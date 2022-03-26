@@ -184,6 +184,8 @@ Commands:
 
 # Many DOIs
 ~$ serrano works "10.1007/12080.1874-1746,10.1007/10452.1573-5125"
+## if above two dois in a file called dois.txt 
+~$ cat dois.txt | xargs -I{} serrano works {}
 
 # output JSON, then parse with e.g., jq
 ~$ serrano works --filter=has_orcid:true --json --limit=2 | jq '.message.items[].author[].ORCID | select(. != null)'
