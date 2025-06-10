@@ -35,8 +35,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency "webmock", '~> 3.25', '>= 3.25.1'
 
   s.add_runtime_dependency "faraday", '~> 2.13', '>= 2.13.1'
-  s.add_runtime_dependency "faraday-follow-redirects", ">= 0.1", "< 0.4"
-  s.add_runtime_dependency "multi-json", "~> 1.15"
+  s.add_runtime_dependency "faraday-follow_redirects", ">= 0.1", "< 0.4"
+  s.add_runtime_dependency "multi_json", "~> 1.15"
   s.add_runtime_dependency "rexml", "~> 3.2", ">= 3.2.5"
   s.add_runtime_dependency "thor", "~> 1.2", ">= 1.2.1"
 
