@@ -38,7 +38,6 @@ module Serrano
       limit, sample, sort, order, facet, select,
       works, agency, options, verbose, cursor,
       cursor_max, args)
-
       self.endpt = endpt
       self.id = id
       self.query = query

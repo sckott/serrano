@@ -228,7 +228,6 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, options: nil, verbose: false, cursor: nil,
     cursor_max: 5000, **args)
-
     assert_valid_filters(filter) if filter
     RequestCursor.new("works", ids, query, filter, offset,
       limit, sample, sort, order, facet, select, nil, nil, options,
@@ -285,7 +284,6 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
-
     assert_valid_filters(filter) if filter
     RequestCursor.new("members", ids, query, filter, offset,
       limit, sample, sort, order, facet, select, works, nil,
@@ -333,7 +331,6 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
-
     assert_valid_filters(filter) if filter
     RequestCursor.new("prefixes", ids, nil, filter, offset,
       limit, sample, sort, order, facet, select, works, nil,
@@ -386,7 +383,6 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
-
     assert_valid_filters(filter) if filter
     RequestCursor.new("funders", ids, query, filter, offset,
       limit, sample, sort, order, facet, select, works, nil, options,
@@ -439,7 +435,6 @@ module Serrano
     limit: nil, sample: nil, sort: nil, order: nil, facet: nil,
     select: nil, works: false, options: nil, verbose: false,
     cursor: nil, cursor_max: 5000, **args)
-
     assert_valid_filters(filter) if filter
     RequestCursor.new("journals", ids, query, filter, offset,
       limit, sample, sort, order, facet, select, works, nil, options,
@@ -482,7 +477,6 @@ module Serrano
   #      Serrano.types(ids: "journal", works: true, select: ['DOI', 'title'], limit: 3)
   def self.types(ids: nil, offset: nil, limit: nil, select: nil, works: false,
     options: nil, verbose: false, cursor: nil, cursor_max: 5000, **args)
-
     RequestCursor.new("types", ids, nil, nil, offset,
       limit, nil, nil, nil, nil, select, works, nil, options,
       verbose, cursor, cursor_max, args).perform
@@ -523,7 +517,6 @@ module Serrano
   def self.licenses(query: nil, offset: nil,
     limit: nil, sample: nil, sort: nil, order: nil,
     facet: nil, options: nil, verbose: false)
-
     Request.new("licenses", nil, query, nil, offset,
       limit, sample, sort, order, facet, nil, nil, nil, options, verbose).perform
   end
@@ -650,7 +643,6 @@ module Serrano
   #   Serrano.citation_count(doi: "10.1016/j.fbr.2012")
   def self.citation_count(doi:, url: "https://www.crossref.org/openurl/",
     key: "cboettig@ropensci.org", options: nil)
-
     args = {id: "doi:" + doi, pid: key, noredirect: true}
     opts = args.delete_if { |_k, v| v.nil? }
     conn = Faraday.new(url: url, request: options)

@@ -28,7 +28,7 @@ module Faraday
       end
 
       def initialize(app)
-        super app
+        super
         @parser = nil
       end
 

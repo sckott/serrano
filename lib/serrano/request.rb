@@ -32,7 +32,6 @@ module Serrano
     def initialize(endpt, id, query, filter, offset,
       limit, sample, sort, order, facet, select,
       works, agency, options, verbose)
-
       self.endpt = endpt
       self.id = id
       self.query = query
