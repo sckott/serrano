@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:33 GMT
+      - Sun, 08 Jun 2025 20:53:19 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1477'
+      - '2975'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=Xfe3MrG2urDk4nMgY9QMtmX9gmxLOAP0rN3i0jR3gsjWJOzkXpafg1If7oSfkWITky7FqTWVudU28Fkx9mpSkOteSrewqED3vVSsmk/iWOHpjqAtZnZz1ucyopJI;
-        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/
-      - AWSALBCORS=Xfe3MrG2urDk4nMgY9QMtmX9gmxLOAP0rN3i0jR3gsjWJOzkXpafg1If7oSfkWITky7FqTWVudU28Fkx9mpSkOteSrewqED3vVSsmk/iWOHpjqAtZnZz1ucyopJI;
-        Expires=Sat, 02 Apr 2022 04:17:32 GMT; Path=/; SameSite=None
+      - AWSALB=G759aZKLD5Zj8VT8apG1bzmrkjDOFAQvk/OisMeNRnLI1O+LJGg4oYiap4qCkqgk0fJAO1rAMJ0gHYmJElc+AHIWJrQW9tCP9m+WKcfoVo8WjPH0kEpfp/AuvQ+k;
+        Expires=Sun, 15 Jun 2025 20:53:19 GMT; Path=/
+      - AWSALBCORS=G759aZKLD5Zj8VT8apG1bzmrkjDOFAQvk/OisMeNRnLI1O+LJGg4oYiap4qCkqgk0fJAO1rAMJ0gHYmJElc+AHIWJrQW9tCP9m+WKcfoVo8WjPH0kEpfp/AuvQ+k;
+        Expires=Sun, 15 Jun 2025 20:53:19 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,43 +50,38 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":18615020,"items":[{"DOI":"10.1016\/j.ijcard.2015.10.237","title":["Disappearing
-        stent but persisting problems? Optical coherence tomography assessment of
-        intra-scaffold restenosis"]},{"DOI":"10.1016\/s0300-7073(07)70534-0","title":["Nicotine
-        Patches Seem to Be Safe in Cardiac Patients"]},{"DOI":"10.1016\/j.ecolmodel.2009.12.013","title":["Modelling
-        dynamics of soil organic matter under different historical land-use management
-        techniques in European Russia"]},{"DOI":"10.1016\/j.jhsa.2021.03.002","title":["Forearm
-        Interosseous Ligaments: Anatomical and Histological Analysis of the Proximal,
-        Central, and Distal Bands"]},{"DOI":"10.1016\/s0049-237x(08)70624-4","title":["Chapter
-        8 Symmetric Monoidal Closed Categories"]},{"DOI":"10.1016\/j.jlumin.2015.08.074","title":["Optical
-        limiting of flexible gold nanorods\/organosilicon hybrid materials"]},{"DOI":"10.1016\/j.jns.2017.08.2295","title":["Muscles
-        secretion of toxic factors regulated by miR126-5P facilitate motor neuron
-        degeneration in ALS"]},{"DOI":"10.1016\/s0769-2609(85)80108-3","title":[""]},{"DOI":"10.1016\/s1290-0729(13)00293-7","title":["Editorial
-        board"]},{"DOI":"10.1016\/s2212-2672(14)01005-3","title":["July 2014 New Products
-        & Services"]},{"DOI":"10.1016\/0002-9343(82)90791-4","title":["A convenient
-        approximation of life expectancy. (The \u201cDEALE\u201d). I. Validation of
-        the method"]},{"DOI":"10.1016\/j.ics.2005.02.021","title":["Development of
-        a potential protein vector (NeuroTrans) to deliver drugs across the blood\u2013brain
-        barrier"]},{"DOI":"10.1016\/0032-3861(87)90308-9","title":["Thermotropic polyesters:
-        Synthesis and properties of poly(chloro-1,4-phenylene terephthalate-co-4,4\u2032-oxybisbenzoate)s"]},{"DOI":"10.1016\/s0140-6736(14)60516-x","title":["Immigration
-        for health care in Iran: burden or blessing?"]},{"DOI":"10.1016\/j.carrev.2006.03.083","title":["Effects
-        of zotarolimus, sirolimus, dexamethasone, and paclitaxel on the in vitro migration
-        of human coronary artery smooth muscle and endothelial cells"]},{"DOI":"10.1016\/0002-1571(78)90049-3","title":["Erratum"]},{"DOI":"10.1016\/j.wse.2020.09.008","title":["Evaluation
-        of alum-based water treatment residuals used to adsorb reactive phosphorus"]},{"DOI":"10.1016\/s1556-0864(19)30419-8","title":["Editorial
-        Board"]},{"DOI":"10.1016\/0022-2860(80)80285-7","title":["Structural information
-        on cobalt(II), nickel(II), copper(II), zinc(II), silver(I) and cadmium(II)
-        nitrate complexes with hexamethylenetetramine from their magnetic moments,
-        electronic and infrared spectra"]},{"DOI":"10.1016\/0021-9045(92)90063-t","title":["On
-        a minimal property of cardinal and periodic Lagrange splines"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:33 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":21995634,"items":[{"DOI":"10.1016\/j.trsl.2015.01.007","title":["Evidence
+        for metabolic aberrations in asymptomatic persons with type 2 diabetes after
+        initiation of simvastatin therapy"]},{"DOI":"10.1016\/j.perped.2022.01.002","title":["Les
+        assistances extracorporelles respiratoires et circulatoires de l\u2019enfant
+        et du nouveau-n\u00e9"]},{"DOI":"10.1016\/s1063-5777(05)70027-x","title":["Percutaneous
+        Nephrostomy Under Ultrasound\/CT Guidance and Various Nephrostomy Tubes"]},{"DOI":"10.1016\/j.physleta.2004.09.025","title":["A
+        new development on Jacobian elliptic function expansion method"]},{"DOI":"10.1016\/j.jnoncrysol.2010.08.033","title":["Discrepancy
+        of structural stability against temperature between metallic liquids and their
+        glasses"]},{"DOI":"10.1016\/j.epsr.2004.12.005","title":["Elimination of voltage
+        violations in the Spanish electricity market"]},{"DOI":"10.1016\/0002-9149(93)90900-w","title":["Pulsatile
+        varicose veins in tricuspid regurgitation"]},{"DOI":"10.1016\/s0716-8640(12)70313-9","title":["Enfrentamiento
+        de la luxaci\u00f3n de hombro en deportistas de contacto"]},{"DOI":"10.1016\/j.jnucmat.2007.01.080","title":["High
+        temperature creep properties of zirconium and Zircaloy-4 in vacuum and oxygen
+        environments"]},{"DOI":"10.1016\/s0964-2749(02)80085-3","title":["Coronal
+        mass ejections: Relationship with solar flares and coronal holes"]},{"DOI":"10.1097\/00000441-192708000-00017","title":["BIRTH
+        INJURIES OF THE CENTRAL NERVOUS SYSTEM"]},{"DOI":"10.1016\/j.athoracsur.2010.04.073","title":["Congenital
+        Pulmonary Steal in Subclavian Artery Isolation"]},{"DOI":"10.1016\/0002-9610(79)90269-1","title":["Tissue
+        salvage in acute myocardial infarction"]},{"DOI":"10.1016\/0375-9601(71)90451-8","title":["Influence
+        of surface semichannels on ion scattering by crystals"]},{"DOI":"10.1016\/0003-2697(75)90477-7","title":["Use
+        of heteropoly acids as immunological precipitin brighteners"]},{"DOI":"10.1016\/0166-6851(95)00093-g","title":["Purification
+        and partial characterization of the cytosolic malate dehydrogenase from protoscolices
+        of Echinococcus granulosus"]},{"DOI":"10.1016\/s0899-9007(97)85123-4","title":["Effect
+        of early jejunal feeding on the septic complications in acute pancreatitis.
+        A prospective randomized study"]},{"DOI":"10.1016\/s1579-2129(09)60018-5","title":["Pharmacological
+        Tobacco Cessation Treatments: Proposals for Financing"]},{"DOI":"10.1016\/s0009-739x(01)71836-2","title":["Resecci\u00f3n
+        de met\u00e1stasis hep\u00e1ticas de carcinoma colorrectal. \u00cdndice de
+        resecabilidad y supervivencia a largo plazo"]},{"DOI":"10.1016\/j.neurol.2010.12.004","title":["Normes
+        diagnostiques de la batterie de tests neuropsychologiques RAPID pour les sujets
+        \u00e2g\u00e9s de 60\u00a0\u00e0 89ans pr\u00e9sentant une maladie d\u2019Alzheimer"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:19 GMT
+recorded_with: VCR 6.3.1

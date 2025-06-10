@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:44 GMT
+      - Sun, 08 Jun 2025 20:53:25 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '441'
+      - '1386'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=nxFZkAYcNDeNs2b7AnEwtDkdNiCe+excfow8rH0oxReBRthkcnrees0uzn6lTvN6wdleZVEXelo5PIutYqjalyV8NGznhOLmpj9Cbu2iYdrqOok/Wi942y9QLPn+;
-        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/
-      - AWSALBCORS=nxFZkAYcNDeNs2b7AnEwtDkdNiCe+excfow8rH0oxReBRthkcnrees0uzn6lTvN6wdleZVEXelo5PIutYqjalyV8NGznhOLmpj9Cbu2iYdrqOok/Wi942y9QLPn+;
-        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/; SameSite=None
+      - AWSALB=60ogTohavVrXr+0IgTe1hvfldiqMsxtb1jcoIr/BiDUIodJUAugUQHXckAt5Q0E8DA0+Vv9oPm/v6Q+jij2+wZmxt+haF/UKs/IaOhGHEMs/GEBK/iSS6zAwxc5w;
+        Expires=Sun, 15 Jun 2025 20:53:25 GMT; Path=/
+      - AWSALBCORS=60ogTohavVrXr+0IgTe1hvfldiqMsxtb1jcoIr/BiDUIodJUAugUQHXckAt5Q0E8DA0+Vv9oPm/v6Q+jij2+wZmxt+haF/UKs/IaOhGHEMs/GEBK/iSS6zAwxc5w;
+        Expires=Sun, 15 Jun 2025 20:53:25 GMT; Path=/; SameSite=None
       Vary:
       - Accept, Accept-Encoding
       Access-Control-Expose-Headers:
@@ -48,27 +50,21 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":29,"items":[{"id":"book-section","label":"Book
-        Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
+      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":30,"items":[{"id":"book-section","label":"Book
+        Section"},{"id":"monograph","label":"Monograph"},{"id":"report-component","label":"Report
+        Component"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
         Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
         Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
         Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
         Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
         Chapter"},{"id":"proceedings-series","label":"Proceedings Series"},{"id":"report-series","label":"Report
-        Series"},{"id":"proceedings","label":"Proceedings"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
+        Series"},{"id":"proceedings","label":"Proceedings"},{"id":"database","label":"Database"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
         Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
         Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"grant","label":"Grant"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
-        Series"},{"id":"edited-book","label":"Edited Book"},{"id":"standard-series","label":"Standard
-        Series"}]}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:44 GMT
-recorded_with: VCR 6.1.0
+        Series"},{"id":"edited-book","label":"Edited Book"}]}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:25 GMT
+recorded_with: VCR 6.3.1

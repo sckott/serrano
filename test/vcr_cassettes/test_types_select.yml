@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:44 GMT
+      - Sun, 08 Jun 2025 20:53:25 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '814'
+      - '1817'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=vsLcRCJdYc7zz26r/Sjs/fmWS97ztKGol/9nbXpIQCX+o8TZUEagp/hd1jFK63l6nK9K74fOEBz4IqOGqF8NNNHsum5Mpgw1Ci7Z6N9vpUlpTF6HUFcQ7/bqCKq4;
-        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/
-      - AWSALBCORS=vsLcRCJdYc7zz26r/Sjs/fmWS97ztKGol/9nbXpIQCX+o8TZUEagp/hd1jFK63l6nK9K74fOEBz4IqOGqF8NNNHsum5Mpgw1Ci7Z6N9vpUlpTF6HUFcQ7/bqCKq4;
-        Expires=Sat, 02 Apr 2022 04:17:44 GMT; Path=/; SameSite=None
+      - AWSALB=hhdNSMv/AOCFN/brGYcw2aSXy/UH5s1CV9F+OZqCHfKCq8yvD31aU0/qZvyFOYdQ0phBKP5jloKcLCTAW9L5OSC4ARn5Eh2Fab4ZUQQybTGfXy5AlqtsaXxk0TBw;
+        Expires=Sun, 15 Jun 2025 20:53:25 GMT; Path=/
+      - AWSALBCORS=hhdNSMv/AOCFN/brGYcw2aSXy/UH5s1CV9F+OZqCHfKCq8yvD31aU0/qZvyFOYdQ0phBKP5jloKcLCTAW9L5OSC4ARn5Eh2Fab4ZUQQybTGfXy5AlqtsaXxk0TBw;
+        Expires=Sun, 15 Jun 2025 20:53:25 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,31 +50,28 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":47425,"items":[{"DOI":"10.21052\/kcmr.","title":["Korean
-        Corporation Management Review"]},{"DOI":"10.5455\/jrmds.","title":["Journal
-        of Research in Medical and Dental Science"]},{"DOI":"10.13107\/bbj","title":["Back
-        Bone Journal"]},{"DOI":"10.11606\/issn.2596-3147","title":["Revista Ingesta"]},{"DOI":"10.3332\/ecancer.2011.242","title":["ecancermedicalscience"]},{"DOI":"10.32501\/jhmb","title":["JURNAL
-        HUKUM MEDIA BHAKTI"]},{"DOI":"10.37745\/ijvter.15","title":["International
-        Journal of Vocational and Technical Education Research"]},{"DOI":"10.30542\/jcems","title":["The
-        Journal of Collegiate Emergency Medical Services"]},{"DOI":"10.14196\/jhd","title":["Journal
-        of Herbal Drugs"]},{"DOI":"10.9754\/journal.wmc.2010.00601","title":["webmedcentral"]},{"DOI":"10.14195\/0258-655x","title":["Ploutarchos"]},{"DOI":"10.17811\/rema","title":["R.E.M.A.
-        Revista electr\u00f3nica de metodolog\u00eda aplicada"]},{"DOI":"10.21917\/ijct","title":["ICTACT
-        Journal on Communication Technology"]},{"DOI":"10.36346\/sarjet","title":["South
-        Asian Research Journal of Engineering and Technology"]},{"DOI":"10.1007\/12645.1868-6966","title":["Cancer
-        Nanotechnology"]},{"DOI":"10.1111\/(issn)1471-1842","title":["Health Information
-        & Libraries Journal"]},{"DOI":"10.26855\/acc","title":["Advances in Computer
-        and Communication"]},{"DOI":"10.1111\/(issn)1936-704x","title":["Journal of
-        Contemporary Water Research & Education"]},{"DOI":"10.1002\/(issn)2190-6653","title":["geotechnik"]},{"DOI":"10.1134\/10913.1573-8736","title":["Journal
-        of Mining Science"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:44 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":73620,"items":[{"DOI":"10.53555\/\/kuey.v29i4.7348","title":["Educational
+        Administration: Theory and Practice"]},{"DOI":"10.51257\/o-42286210","title":["Micro\u00e9lectronique
+        : dispositifs, technologies et circuits"]},{"DOI":"10.1007\/778.0949-877x","title":["The
+        VLDB Journal"]},{"DOI":"10.36709\/rgap","title":["Jurnal Riset Golden Age
+        PAUD UHO"]},{"DOI":"10.25248\/reao","title":["Revista Eletr\u00f4nica Acervo
+        Odontol\u00f3gico"]},{"DOI":"10.1007\/122.1432-2242","title":["Theoretical
+        and Applied Genetics"]},{"DOI":"10.1080\/21506590.gxp","title":["Journal of
+        GXP Compliance"]},{"DOI":"10.1007\/10993.1573-1863","title":["Language Policy"]},{"DOI":"10.1007\/13594.1958-5594","title":["Dairy
+        Science &amp; Technology"]},{"DOI":"10.29011\/2688-643x.100010","title":["Archives
+        of Analytical, Bioanalytical and Separation Techniques"]},{"DOI":"10.37064\/jpm","title":["Jurnal
+        Pemberdayaan Masyarakat"]},{"DOI":"10.7202\/ltp","title":["Laval th\u00e9ologique
+        et philosophique"]},{"DOI":"10.51201\/6735","title":["Journal of University
+        of Shanghai for Science and Technology"]},{"DOI":"10.1155\/7151","title":["Asian
+        Journal of Neuroscience"]},{"DOI":"10.1111\/(issn)1399-3011b","title":["International
+        Journal of Protein Research"]},{"DOI":"10.1038\/41427.1884-4057","title":["NPG
+        Asia Materials"]},{"DOI":"10.1057\/41284.1743-4645","title":["Security Journal"]},{"DOI":"10.1155\/jps","title":["Journal
+        of Probability and Statistics"]},{"DOI":"10.36458\/1253","title":["\u0645\u062c\u0644\u0629
+        \u0643\u0644\u064a\u0629 \u0627\u0644\u0645\u0623\u0645\u0648\u0646"]},{"DOI":"10.22462\/1.2.2017","title":["Undersea
+        and Hyperbaric Medicine"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:25 GMT
+recorded_with: VCR 6.3.1

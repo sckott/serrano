@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:25 GMT
+      - Sun, 08 Jun 2025 20:53:12 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '365'
+      - '1869'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=ub8+87Z9vxb9hZwHNTLWDyZVEZcXfJtizQFfhvCBS7hEP7dxsbn6l0u00zxgCs93lfDCRkk9XCpJGLgKQEwqYF18SOd80GYk38srQ1wGh1NWx5lCcwwA00gMK73f;
-        Expires=Sat, 02 Apr 2022 04:17:25 GMT; Path=/
-      - AWSALBCORS=ub8+87Z9vxb9hZwHNTLWDyZVEZcXfJtizQFfhvCBS7hEP7dxsbn6l0u00zxgCs93lfDCRkk9XCpJGLgKQEwqYF18SOd80GYk38srQ1wGh1NWx5lCcwwA00gMK73f;
-        Expires=Sat, 02 Apr 2022 04:17:25 GMT; Path=/; SameSite=None
+      - AWSALB=jPf0yFuoTnAoAPsdl/fsm7ZQhc1T6KdLRJd1WG8AYp7LCkn1mGfB0tuFhnEC/IA5WBvQkGFsO6LD13EuM6OTeYq7HNFa+sAU1G1S6q6+ILJdwHyjQuk49se7Ek3H;
+        Expires=Sun, 15 Jun 2025 20:53:12 GMT; Path=/
+      - AWSALBCORS=jPf0yFuoTnAoAPsdl/fsm7ZQhc1T6KdLRJd1WG8AYp7LCkn1mGfB0tuFhnEC/IA5WBvQkGFsO6LD13EuM6OTeYq7HNFa+sAU1G1S6q6+ILJdwHyjQuk49se7Ek3H;
+        Expires=Sun, 15 Jun 2025 20:53:12 GMT; Path=/; SameSite=None
       Vary:
       - Accept, Accept-Encoding
       Access-Control-Expose-Headers:
@@ -48,16 +50,10 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":232,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":1},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/CC\/by-nc-nd\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":100},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":193},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/us\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":831},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":497},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":212},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/","work-count":12},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/deed.uk","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/2.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/2.5","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":43},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":110}]}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:25 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":363,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":1},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":2},{"URL":"http:\/\/burganova-text.com\/wp-content\/uploads\/2025\/05\/Space_of_Culture_02.2025_09_Liu-Hai.pdf","work-count":1},{"URL":"http:\/\/burganova-text.com\/wp-content\/uploads\/2025\/05\/Space_of_Culture_02.2025_11_Chen-Chunhui.pdf","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":8},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":11},{"URL":"http:\/\/creativecommons.org\/licenses\/CC\/by-nc-nd\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/ar\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":101},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":192},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/es\/","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/us\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":1445},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":1031},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/legalcode","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":309},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/","work-count":17},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0\/deed.uk","work-count":2}]}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:12 GMT
+recorded_with: VCR 6.3.1

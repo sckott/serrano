@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:28 GMT
+      - Sun, 08 Jun 2025 20:53:15 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1630'
+      - '2634'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=BMLzY3ip+s42RuhUawPD5Q8rpWU4WC6N20dRwN0ya7iMXRLp/n+6LbCCbrk8vxAajh/0hcvrpXbDKUhe7EFJXNdP7jLBckNr3aUDKjojghmXxZH5oMhma5brE1J0;
-        Expires=Sat, 02 Apr 2022 04:17:28 GMT; Path=/
-      - AWSALBCORS=BMLzY3ip+s42RuhUawPD5Q8rpWU4WC6N20dRwN0ya7iMXRLp/n+6LbCCbrk8vxAajh/0hcvrpXbDKUhe7EFJXNdP7jLBckNr3aUDKjojghmXxZH5oMhma5brE1J0;
-        Expires=Sat, 02 Apr 2022 04:17:28 GMT; Path=/; SameSite=None
+      - AWSALB=B1ysPC9uWsXLTxV6itZ00ht48eN2d+VeCyk72su+rA6rMu437p2oAd2FU+eLRiOx0UuW10X6WpXN1Bn+GGN2CmCyzRW6ka91OCt9rbLQBDij8c5Uc+7DL06tPrWz;
+        Expires=Sun, 15 Jun 2025 20:53:15 GMT; Path=/
+      - AWSALBCORS=B1ysPC9uWsXLTxV6itZ00ht48eN2d+VeCyk72su+rA6rMu437p2oAd2FU+eLRiOx0UuW10X6WpXN1Bn+GGN2CmCyzRW6ka91OCt9rbLQBDij8c5Uc+7DL06tPrWz;
+        Expires=Sun, 15 Jun 2025 20:53:15 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,49 +50,35 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":340033,"items":[{"DOI":"10.1155\/2020\/6525098","title":["Clinicopathological
-        Features of Advanced Gastric Cancers which Were Misjudged and Subjected to
-        Endoscopic Submucosal Dissection"]},{"DOI":"10.1155\/2020\/3401067","title":["Ginsenoside
-        Rh1 Alleviates HK-2 Apoptosis by Inhibiting ROS and the JNK\/p53 Pathways"]},{"DOI":"10.1100\/tsw.2009.51","title":["The
-        Management of Ureteropelvic Junction Obstruction Presenting with Prenatal
-        Hydronephrosis"]},{"DOI":"10.1155\/2013\/516357","title":["Rapid Biosynthesis
-        of Silver Nanoparticles by Exploiting the Reducing Potential of Trapa bispinosa
-        Peel Extract"]},{"DOI":"10.1155\/aaa.2005.185","title":["Multiple solutions
-        for singularly perturbed semilinear elliptic equations in bounded domains"]},{"DOI":"10.1155\/2018\/8347120","title":["Fear
-        Avoidance Beliefs and Risk of Long-Term Sickness Absence: Prospective Cohort
-        Study among Workers with Musculoskeletal Pain"]},{"DOI":"10.1155\/2013\/142582","title":["Assessment
-        of Pain Response in Capsaicin-Induced Dynamic Mechanical Allodynia Using a
-        Novel and Fully Automated Brushing Device"]},{"DOI":"10.1155\/2016\/8603140","title":["Triflumuron
-        Effects on the Physiology and Reproduction ofRhodnius prolixusAdult Females"]},{"DOI":"10.1155\/s1048953303000145","title":["Initial
-        and boundary value problems for nonconvex valued multivalued functional differential
-        equations"]},{"DOI":"10.1155\/2020\/2085303","title":["Oleanolic Acid Attenuates
-        Renal Fibrosis through TGF-\u03b2\/Smad Pathway in a Rat Model of Unilateral
-        Ureteral Obstruction"]},{"DOI":"10.1155\/2013\/579453","title":["Reuse of
-        the Reflective Light and the Recycle Heat Energy in Concentrated Photovoltaic
-        System"]},{"DOI":"10.1155\/2019\/9031087","title":["Nonfatal Hyperammonemic
-        Encephalopathy as a Late Complication of Roux-en-Y Gastric Bypass"]},{"DOI":"10.1155\/2015\/617471","title":["Nutrient
-        Enrichment Mediates the Relationships of Soil Microbial Respiration with Climatic
-        Factors in an Alpine Meadow"]},{"DOI":"10.1155\/2019\/8282414","title":["High
-        SALM3 Expression in Tumor Cells and Fibroblasts Is Correlated with Poor Prognosis
-        in Gastric Cancer Patients"]},{"DOI":"10.1155\/2013\/545983","title":["Tyrosine
-        Phosphorylation Modulates the Vascular Responses of Mesenteric Arteries from
-        Human Colorectal Tumors"]},{"DOI":"10.1155\/1983\/95104","title":["Temperature-Induced
-        Changes in the Calls of the Green Lacewing,\nChrysoperla Plorabunda (Neuroptera:
-        Chrysopidae)"]},{"DOI":"10.1155\/2014\/182613","title":["Finite-TimeH\u221eControl
-        for Discrete-Time Markov Jump Systems with Actuator Saturation"]},{"DOI":"10.1155\/2014\/407193","title":["Fatigue
-        Damage Assessment for Concrete Structures Using a Frequency-Domain Method"]},{"DOI":"10.1100\/tsw.2002.150","title":["Artichoke
-        Cultivars (var. \u201cBlanca de Tudela\u201d) under Elevated Ozone Concentrations"]},{"DOI":"10.1155\/2014\/176429","title":["Global
-        Existence and Blow-Up for the Euler-Bernoulli Plate Equation with Variable
-        Coefficients"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:28 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":151093,"items":[{"DOI":"10.1111\/j.1365-2109.2011.02829.x","title":["Spawning-related
+        mortality in captive Atlantic cod (Gadus morhua L.)"]},{"DOI":"10.1111\/j.1365-2109.2012.03212.x","title":["Bacterial
+        communities in Chinese grass carp (<i>Ctenopharyngodon idellus<\/i>) farming
+        ponds"]},{"DOI":"10.1111\/j.1742-1241.2009.02256.x","title":["Low-grade fever:
+        how to distinguish organic from non-organic forms"]},{"DOI":"10.1111\/j.1529-8019.2006.00059.x","title":["Atopic
+        dermatitis prevention"]},{"DOI":"10.1111\/j.1399-5448.2007.00338.x","title":["Double
+        or hybrid diabetes associated with an increase in type 1 and type 2 diabetes
+        in children and youths"]},{"DOI":"10.1155\/2016\/1417962","title":["Pentraxin
+        3 Is a Predictor for Fibrosis and Arterial Stiffness in Patients with Nonalcoholic
+        Fatty Liver Disease"]},{"DOI":"10.1111\/j.1365-2095.2011.00917.x","title":["Molecular
+        cloning of fatty acid synthase from grass carp (Ctenopharyngodon idella) and
+        the regulation of its expression by dietary fat level"]},{"DOI":"10.1155\/2014\/684305\/dataset"},{"DOI":"10.1111\/anu.2003.9.issue-1"},{"DOI":"10.1155\/2014\/256181","title":["Serotypes
+        and Antimicrobial Resistance of Human Nontyphoidal Isolates of<i>Salmonella
+        enterica<\/i>from Crete, Greece"]},{"DOI":"10.1155\/2011\/494328","title":["Methaemoglobinemia
+        Induced by MDMA?"]},{"DOI":"10.1155\/7151","title":["Asian Journal of Neuroscience"]},{"DOI":"10.1111\/tbj.12212","title":["Ectopic
+        Mammary Tissue as a Vulvar Mass in a Lactating Woman"]},{"DOI":"10.1155\/2014\/159198","title":["Stabilization
+        with Internal Loop for Infinite-Dimensional  Discrete Time-Varying Systems"]},{"DOI":"10.1155\/1988\/259489","title":["The
+        Ciba Collection of Medical Illustrations"]},{"DOI":"10.1017\/s0016672300028913","title":["The
+        Cattle of the Tropics. By John P. Maule. Edinburgh: can be ordered from The
+        Senior Administrative Officer, Centre for Tropical Veterinary Medicine, Easter
+        Bush, Roslin, Midlothian EH25 9RG, Scotland, U.K.255 pages. \u00a325.00 including
+        postage. ISBN 0 907146 05 8."]},{"DOI":"10.1111\/ijcp.13233","title":["Issue
+        Information"]},{"DOI":"10.1155\/2013\/310748","title":["Prospective Engineering
+        Applications of Dynamic Transfer Processes Possessing the Self-Organized Fractal
+        Interfaces"]},{"DOI":"10.1155\/jps","title":["Journal of Probability and Statistics"]},{"DOI":"10.1155\/2014\/209357","title":["Biological
+        Pathotyping of Newcastle Disease Viruses in Sudan 2008\u20132013"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:15 GMT
+recorded_with: VCR 6.3.1

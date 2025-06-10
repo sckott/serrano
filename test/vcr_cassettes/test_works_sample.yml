@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:18:18 GMT
+      - Sun, 08 Jun 2025 20:53:33 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1603'
+      - '14390'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=9yGn9w56ZgBYkHZ+n2AHKakLXA5k3ZwgxwO7ZsVjsLFccE4Dk7Ib940cdLkG+kOQeJfGEAMY1imtxHhQKCPOAmiUxcUz/w9PYz18r22uCxBsluSYMTj9hVuQNb58;
-        Expires=Sat, 02 Apr 2022 04:18:14 GMT; Path=/
-      - AWSALBCORS=9yGn9w56ZgBYkHZ+n2AHKakLXA5k3ZwgxwO7ZsVjsLFccE4Dk7Ib940cdLkG+kOQeJfGEAMY1imtxHhQKCPOAmiUxcUz/w9PYz18r22uCxBsluSYMTj9hVuQNb58;
-        Expires=Sat, 02 Apr 2022 04:18:14 GMT; Path=/; SameSite=None
+      - AWSALB=d+ox2USzfKAE6Vf6Zq97hOza64zwa9erMmILWCtKFSf85U3iNY9oy8GXuiMkESU6bG0iZqtfwBOqsjMYkBXrzQVb77QxLRt1QtsQGyd6CCMqQN5nXlNQAaTJR/WT;
+        Expires=Sun, 15 Jun 2025 20:53:33 GMT; Path=/
+      - AWSALBCORS=d+ox2USzfKAE6Vf6Zq97hOza64zwa9erMmILWCtKFSf85U3iNY9oy8GXuiMkESU6bG0iZqtfwBOqsjMYkBXrzQVb77QxLRt1QtsQGyd6CCMqQN5nXlNQAaTJR/WT;
+        Expires=Sun, 15 Jun 2025 20:53:33 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,32 +50,106 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2021,12,22]],"date-time":"2021-12-22T00:45:21Z","timestamp":1640133921906},"reference-count":0,"publisher":"PeerJ","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.7717\/peerj.3134\/fig-4","type":"component","created":{"date-parts":[[2017,4,6]],"date-time":"2017-04-06T07:48:41Z","timestamp":1491464921000},"source":"Crossref","is-referenced-by-count":0,"title":["Figure
-        4: Analysis of genome alignment between \u201cCa. Desulfopertinax cowenii,\u201d
-        \u201cCa. Desulforudis audaxviator\u201d and five closely related single-cell
-        genomes."],"prefix":"10.7717","member":"4443","deposited":{"date-parts":[[2017,4,6]],"date-time":"2017-04-06T07:48:48Z","timestamp":1491464928000},"score":0.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.7717\/peerj.3134\/fig-4"},{"indexed":{"date-parts":[[2021,12,19]],"date-time":"2021-12-19T16:27:40Z","timestamp":1639931260899},"reference-count":0,"publisher":"SAGE
-        Publications","issue":"4","license":[{"start":{"date-parts":[[1997,12,1]],"date-time":"1997-12-01T00:00:00Z","timestamp":880934400000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/journals.sagepub.com\/page\/policies\/text-and-data-mining-license"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Progress
-        in Physical Geography: Earth and Environment"],"published-print":{"date-parts":[[1997,12]]},"DOI":"10.1177\/030913339702100410","type":"journal-article","created":{"date-parts":[[2007,11,27]],"date-time":"2007-11-27T01:11:10Z","timestamp":1196125870000},"page":"611-612","source":"Crossref","is-referenced-by-count":0,"title":["Book
-        reviews : Anderson, M.G. and Brooks, S.M., editors, 1996: Advances in hillslope
-        processes, Volumes 1 and 2. Chichester: Wiley. xviii + 1308 pp. \u00a3150.00
-        cloth. ISBN: 0 471 96774 2"],"prefix":"10.1177","volume":"21","author":[{"given":"M.J.","family":"Crozier","sequence":"first","affiliation":[{"name":"Victoria
-        University of Wellington"}]}],"member":"179","published-online":{"date-parts":[[2016,8,18]]},"container-title":["Progress
-        in Physical Geography: Earth and Environment"],"language":"en","link":[{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.1177\/030913339702100410","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.1177\/030913339702100410","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,2,4]],"date-time":"2021-02-04T02:59:53Z","timestamp":1612407593000},"score":0.0,"issued":{"date-parts":[[1997,12]]},"references-count":0,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1997,12]]}},"alternative-id":["10.1177\/030913339702100410"],"URL":"http:\/\/dx.doi.org\/10.1177\/030913339702100410","ISSN":["0309-1333","1477-0296"],"issn-type":[{"value":"0309-1333","type":"print"},{"value":"1477-0296","type":"electronic"}],"subject":["General
-        Earth and Planetary Sciences","Earth and Planetary Sciences (miscellaneous)","Geography,
-        Planning and Development"],"published":{"date-parts":[[1997,12]]}},{"indexed":{"date-parts":[[2021,12,17]],"date-time":"2021-12-17T22:18:25Z","timestamp":1639779505281},"reference-count":0,"publisher":"Oxford
-        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2007,12,1]]},"DOI":"10.1093\/ww\/9780199540884.013.36079","type":"reference-entry","created":{"date-parts":[[2018,3,6]],"date-time":"2018-03-06T10:50:58Z","timestamp":1520333458000},"source":"Crossref","is-referenced-by-count":0,"title":["Steele,
-        Tommy, (Thomas Hicks), (born 17 Dec. 1936), actor"],"prefix":"10.1093","member":"286","container-title":["Who''s
-        Who"],"original-title":["Steele, Tommy, (Thomas Hicks), (born 17 Dec. 1936),
-        actor"],"deposited":{"date-parts":[[2018,3,6]],"date-time":"2018-03-06T10:50:58Z","timestamp":1520333458000},"score":0.0,"issued":{"date-parts":[[2007,12,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/ww\/9780199540884.013.36079","published":{"date-parts":[[2007,12,1]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:18:18 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2025,5,2]],"date-time":"2025-05-02T04:14:02Z","timestamp":1746159242638,"version":"3.40.4"},"reference-count":5,"publisher":"Ovid
+        Technologies (Wolters Kluwer Health)","issue":"21","content-domain":{"domain":["lww.com","ovid.com"],"crossmark-restriction":true},"published-print":{"date-parts":[[2023,11,1]]},"DOI":"10.1097\/brs.0000000000004785","type":"journal-article","created":{"date-parts":[[2023,7,31]],"date-time":"2023-07-31T13:00:58Z","timestamp":1690808458000},"page":"E373-E373","update-policy":"https:\/\/doi.org\/10.1097\/lww.0000000000001000","source":"Crossref","is-referenced-by-count":3,"title":["Response
+        to the Letter to the Editor Regarding: \u201cCan Pelvic Incidence Change After
+        Lumbo-Pelvic Fixation for Adult Spine Deformity and Would the Change be Affected
+        by the Type of Pelvic Fixation?\u201d"],"prefix":"10.1097","volume":"48","author":[{"given":"Maroun","family":"Rizkallah","sequence":"first","affiliation":[]},{"given":"Zhi","family":"Wang","sequence":"additional","affiliation":[]}],"member":"276","published-online":{"date-parts":[[2023,7,31]]},"reference":[{"key":"R2-20250501","doi-asserted-by":"crossref","first-page":"1093","DOI":"10.1097\/BRS.0000000000004340","article-title":"The
+        impact of spinopelvic parameters on hip degeneration after spinal fusion","volume":"47","author":"Kawai","year":"2022","journal-title":"Spine
+        (Phila Pa 1976)"},{"key":"R3-20250501","doi-asserted-by":"crossref","first-page":"241","DOI":"10.1007\/s00586-021-07024-7","article-title":"Comparison
+        of pelvic incidence measurement using lateral x-ray, standard ct versus ct
+        with 3d reconstruction","volume":"31","author":"Lee","year":"2022","journal-title":"Eur
+        Spine J"},{"key":"R4-20250501","doi-asserted-by":"crossref","first-page":"2002","DOI":"10.1007\/s00586-017-5111-x","article-title":"Classification
+        of normal sagittal spine alignment: refounding the Roussouly classification","volume":"27","author":"Laouissat","year":"2018","journal-title":"Eur
+        Spine J"},{"key":"R5-20250501","doi-asserted-by":"crossref","first-page":"2486","DOI":"10.1007\/s00586-020-06658-3","article-title":"Can
+        pelvic incidence change after spinal deformity correction to the pelvis with
+        S2-alar-iliac screws?","volume":"30","author":"Wei","year":"2021","journal-title":"Eur
+        Spine J"},{"key":"R6-20250501","doi-asserted-by":"crossref","DOI":"10.1097\/BRS.0000000000004785","article-title":"Can
+        Pelvic Incidence Change After Lumbo-Pelvic Fixation for Adult Spine Deformity
+        and Would the Change Be Affected By the Type of Pelvic Fixation?","author":"Rizkallah","year":"2023","journal-title":"Spine
+        (Phila Pa 1976)"}],"container-title":["Spine"],"language":"en","link":[{"URL":"https:\/\/journals.lww.com\/10.1097\/BRS.0000000000004785","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,5,1]],"date-time":"2025-05-01T18:06:28Z","timestamp":1746122788000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/journals.lww.com\/10.1097\/BRS.0000000000004785"}},"issued":{"date-parts":[[2023,7,31]]},"references-count":5,"journal-issue":{"issue":"21","published-print":{"date-parts":[[2023]]}},"URL":"https:\/\/doi.org\/10.1097\/brs.0000000000004785","ISSN":["0362-2436"],"issn-type":[{"type":"print","value":"0362-2436"}],"published":{"date-parts":[[2023,7,31]]},"assertion":[{"value":"2023-07-06","name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2023-07-10","name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2024,1,31]],"date-time":"2024-01-31T00:31:47Z","timestamp":1706661107208},"reference-count":29,"publisher":"Elsevier
+        BV","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["SSRN
+        Journal"],"DOI":"10.2139\/ssrn.4562432","type":"journal-article","created":{"date-parts":[[2023,9,25]],"date-time":"2023-09-25T14:26:22Z","timestamp":1695651982000},"source":"Crossref","is-referenced-by-count":0,"title":["Honey-at-Risk:
+        Honey Production Modeling via Factor Copulae with an application to Optimal
+        Trigger Calibration for Weather-Indexed Insurance Contracts"],"prefix":"10.2139","author":[{"given":"Alessio","family":"Brini","sequence":"first","affiliation":[]},{"given":"Ginevra  Virginia","family":"Lombardi","sequence":"additional","affiliation":[]},{"given":"Elia","family":"Smaniotto","sequence":"additional","affiliation":[]},{"given":"Giacomo","family":"Toscano","sequence":"additional","affiliation":[]}],"member":"78","published-online":{"date-parts":[[2023]]},"reference":[{"issue":"3","key":"ref1","doi-asserted-by":"crossref","first-page":"307","DOI":"10.1016\/0304-4076(86)90063-1","article-title":"Generalized
+        autoregressive conditional heteroskedasticity","volume":"31","author":"Tim
+        Bollerslev","year":"1986","journal-title":"Journal of econometrics"},{"key":"ref2","author":"Alessio
+        Brini","year":"2023","journal-title":"A machine learning approach to forecasting
+        honey production with tree-based methods"},{"issue":"1","key":"ref3","doi-asserted-by":"crossref","DOI":"10.1038\/s41598-021-81051-8","article-title":"Summer
+        weather conditions influence winter survival of honey bees (apis mellifera)
+        in the northeastern united states","volume":"11","author":"M Calovi","year":"2021","journal-title":"Scientific
+        reports"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"22","DOI":"10.1016\/j.pce.2016.05.001","article-title":"Regionalization
+        of europe based on a k-means cluster analysis of the climate change of temperatures
+        and precipitation","volume":"94","author":"P Carvalho","year":"2016","journal-title":"Physics
+        and Chemistry of the Earth"},{"key":"ref5","author":"Ilaria Colivicchi","year":"2023","journal-title":"A
+        parametric insurance policy for beekeepers and honey production: Random forest
+        regressions and real world pricing"},{"key":"ref6","doi-asserted-by":"crossref","DOI":"10.1079\/9780851994482.0000","author":"K
+        S Delaplane","year":"2000","journal-title":"Crop pollination by bees"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"1111","DOI":"10.1016\/j.scitotenv.2018.11.004","article-title":"Effect
+        of the climate change on honey bee colonies in a temperate mediterranean zone
+        assessed through remote hive weight monitoring system in conjunction with
+        exhaustive colonies assessment","volume":"653","author":"J M Flores","year":"2019","journal-title":"Science
+        of The Total Environment"},{"key":"ref8","year":"2018","journal-title":"Why
+        bees matter: The importance of bees and other pollinators for food and agriculture"},{"issue":"8","key":"ref9","doi-asserted-by":"crossref","first-page":"439","DOI":"10.1890\/130330","article-title":"From
+        research to action: enhancing crop yield through wild pollinators","volume":"12","author":"Lucas
+        A Garibaldi","year":"2014","journal-title":"Frontiers in Ecology and the Environment"},{"issue":"5","key":"ref10","doi-asserted-by":"crossref","first-page":"1779","DOI":"10.1111\/j.1540-6261.1993.tb05128.x","article-title":"On
+        the relation between the expected value and the volatility of the nominal
+        excess return on stocks","volume":"48","author":"Ravi Lawrence R Glosten","year":"1993","journal-title":"The
+        journal of finance"},{"issue":"3","key":"ref11","doi-asserted-by":"crossref","first-page":"261","DOI":"10.1111\/j.1365-2311.2006.00787.x","article-title":"Temporal
+        trends in phenology of the honey bee apis mellifera (l.) and the small white
+        pieris rapae (l.) in the iberian peninsula","volume":"31","author":"O Gordo","year":"1952","journal-title":"Ecological
+        Entomology"},{"issue":"4","key":"ref12","doi-asserted-by":"crossref","first-page":"479","DOI":"10.1080\/00218839.2019.1615661","article-title":"Loss
+        rates of honey bee colonies during winter 2017\/18 in 36 countries participating
+        in the coloss survey, including effects of forage sources","volume":"58","author":"Alison
+        Gray","year":"2019","journal-title":"Journal of Apicultural Research"},{"key":"ref13","doi-asserted-by":"crossref","first-page":"705","DOI":"10.2307\/2527081","article-title":"Autoregressive
+        conditional density estimation","author":"Bruce E Hansen","year":"1994","journal-title":"International
+        Economic Review"},{"issue":"1","key":"ref14","doi-asserted-by":"crossref","first-page":"95","DOI":"10.1017\/S0021859602002277","article-title":"The
+        influence of weather on annual yields of honey","volume":"139","author":"W
+        Holmes","year":"2002","journal-title":"The Journal of Agricultural Science"},{"key":"ref15","article-title":"Principal
+        component analysis: a review and recent developments","volume":"374","author":"T
+        Ian","year":"2016","journal-title":"Philosophical transactions of the royal
+        society A: Mathematical, Physical and Engineering Sciences"},{"key":"ref16","first-page":"303","article-title":"Importance
+        of pollinators in changing landscapes for world crops","volume":"274","author":"A
+        M Klein","year":"1608","journal-title":"Proceedings. Biological sciences"},{"issue":"2","key":"ref17","first-page":"499","article-title":"Climate
+        change: impact on honey bee populations and diseases","volume":"27","author":"Y","year":"2008","journal-title":"Revue
+        Scientifique et Technique-Office International des Epizooties"},{"key":"ref18","first-page":"281","article-title":"Some
+        methods for classification and analysis of multivariate observations","volume":"1","author":"James
+        Macqueen","year":"1967","journal-title":"Proceedings of the fifth Berkeley
+        symposium on mathematical statistics and probability"},{"key":"ref19","author":"Alexander
+        Mcneil","year":"2015","journal-title":"Quantitative risk management: concepts,
+        techniques and tools"},{"key":"ref20","volume":"5","year":"2005","journal-title":"Millennium
+        Ecosystem Assessment (MEA). Ecosystems and Human Well-being: Synthesis"},{"key":"ref21","doi-asserted-by":"crossref","first-page":"347","DOI":"10.2307\/2938260","article-title":"Conditional
+        heteroskedasticity in asset returns: A new approach","author":"Daniel B Nelson","year":"1991","journal-title":"Econometrica:
+        Journal of the econometric society"},{"issue":"502","key":"ref22","doi-asserted-by":"crossref","first-page":"689","DOI":"10.1080\/01621459.2013.785952","article-title":"Simulated
+        method of moments estimation for copulabased multivariate models","volume":"108","author":"Dong
+        Hwan","year":"2013","journal-title":"Journal of the American Statistical Association"},{"issue":"1","key":"ref23","doi-asserted-by":"crossref","first-page":"139","DOI":"10.1080\/07350015.2015.1062384","article-title":"Modeling
+        dependence in high dimensions with factor copulas","volume":"35","author":"Dong
+        Hwan","year":"2017","journal-title":"Journal of Business & Economic Statistics"},{"issue":"5","key":"ref24","article-title":"The
+        status of honey bee health in italy: Results from the nationwide bee monitoring
+        network","volume":"11","author":"Claudio Porrini","year":"2016","journal-title":"PloS
+        one"},{"key":"ref25","doi-asserted-by":"crossref","first-page":"861","DOI":"10.1007\/s00484-019-01699-w","article-title":"Climate
+        data clustering effects on arid and semi-arid rainfed wheat yield: a comparison
+        of artificial intelligence and k-means approaches","volume":"63","author":"Nasrin
+        Salehnia","year":"2019","journal-title":"International journal of biometeorology"},{"issue":"1","key":"ref26","article-title":"Influence
+        of weather conditions on the honey productivity of bee colonies in the valdai
+        district of the novgorod region","volume":"613","author":"V V Solovev","year":"2020","journal-title":"IOP
+        Conference Series: Earth and Environmental Science"},{"key":"ref27","doi-asserted-by":"crossref","first-page":"1581","DOI":"10.1016\/j.scitotenv.2016.11.178","article-title":"Modelling
+        seasonal effects of temperature and precipitation on honey bee winter mortality
+        in a temperate climate","volume":"579","author":"M Switanek","year":"2017","journal-title":"Science
+        of the Total Environment"},{"key":"ref28","first-page":"53","article-title":"Global
+        food security, biodiversity conservation and the future of agricultural intensification","volume":"151","author":"Teja
+        Tscharntke","year":"2012","journal-title":"Advancing Environmental Conservation:
+        essays in honor of Navjot Sodhi"},{"key":"ref29","volume":"5","journal-title":"Average
+        values of the BIC for the different GARCH specifications considered. The optimal
+        value is in bold"}],"container-title":["SSRN Electronic Journal"],"language":"en","deposited":{"date-parts":[[2024,1,30]],"date-time":"2024-01-30T20:52:03Z","timestamp":1706647923000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.ssrn.com\/abstract=4562432"}},"issued":{"date-parts":[[2023]]},"references-count":29,"URL":"https:\/\/doi.org\/10.2139\/ssrn.4562432","ISSN":["1556-5068"],"issn-type":[{"value":"1556-5068","type":"electronic"}],"published":{"date-parts":[[2023]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T20:41:39Z","timestamp":1649191299635},"reference-count":0,"publisher":"Peeters
+        Publishers","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Revue
+        des \u00c9tudes Juives"],"DOI":"10.2143\/rej.159.1.148","type":"journal-article","created":{"date-parts":[[2005,2,28]],"date-time":"2005-02-28T06:02:11Z","timestamp":1109570531000},"page":"19-47","source":"Crossref","is-referenced-by-count":0,"title":["L''eau
+        et les bains \u00e0 Qoumr\u00e2n"],"prefix":"10.2143","volume":"159","author":[{"given":"Patricia","family":"HIDIROGLOU","sequence":"first","affiliation":[]}],"member":"896","published-online":{"date-parts":[[2000,1,1]]},"container-title":["Revue
+        des \u00c9tudes Juives"],"deposited":{"date-parts":[[2018,8,15]],"date-time":"2018-08-15T11:41:04Z","timestamp":1534333264000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/poj.peeters-leuven.be\/content.php?url=article&id=148"}},"issued":{"date-parts":[[2000,1,1]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2000,1,1]]}},"URL":"https:\/\/doi.org\/10.2143\/rej.159.1.148","ISSN":["0484-8616"],"issn-type":[{"value":"0484-8616","type":"electronic"}],"published":{"date-parts":[[2000,1,1]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:33 GMT
+recorded_with: VCR 6.3.1

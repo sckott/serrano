@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,17 +21,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:16:56 GMT
+      - Sun, 08 Jun 2025 20:52:42 GMT
       Content-Length:
-      - '5325'
+      - '21689'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=D11JY7Tcwh2IpVJbZ8Sif/HBwEizd5JcnicIrRbUgw4qmIvgvoi5ErP2qCY4eIobLKiZdeXUMX7NfYqWGA77FEo61fM4JDmgOorjAWGs7s720UycN0YnqadAITGV;
-        Expires=Sat, 02 Apr 2022 04:16:56 GMT; Path=/
-      - AWSALBCORS=D11JY7Tcwh2IpVJbZ8Sif/HBwEizd5JcnicIrRbUgw4qmIvgvoi5ErP2qCY4eIobLKiZdeXUMX7NfYqWGA77FEo61fM4JDmgOorjAWGs7s720UycN0YnqadAITGV;
-        Expires=Sat, 02 Apr 2022 04:16:56 GMT; Path=/; SameSite=None
-      Link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
-        version="vor"; rel="item"
+      - AWSALB=TeHkvr5wxXzgNO5uDhS8t5gnpgSVSfvIbZggfEl+iGB1cl2wlFVJrVCIUrmXv1QTLpc5hiX8FgsC4/o4lGKNjBJwAgNjCaXlMhZ06t5UARHwkfnG38AYL2UluwF/;
+        Expires=Sun, 15 Jun 2025 20:52:42 GMT; Path=/
+      - AWSALBCORS=TeHkvr5wxXzgNO5uDhS8t5gnpgSVSfvIbZggfEl+iGB1cl2wlFVJrVCIUrmXv1QTLpc5hiX8FgsC4/o4lGKNjBJwAgNjCaXlMhZ06t5UARHwkfnG38AYL2UluwF/;
+        Expires=Sun, 15 Jun 2025 20:52:42 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -49,33 +48,45 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"indexed":{"date-parts":[[2022,3,26]],"date-time":"2022-03-26T00:28:22Z","timestamp":1648254502598},"reference-count":76,"publisher":"American
-        Association for the Advancement of Science (AAAS)","issue":"3946","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1970,8,14]]},"DOI":"10.1126\/science.169.3946.635","type":"journal-article","created":{"date-parts":[[2006,10,5]],"date-time":"2006-10-05T12:56:56Z","timestamp":1160053016000},"page":"635-641","source":"Crossref","is-referenced-by-count":83,"title":"The
+      string: '{"indexed":{"date-parts":[[2024,9,20]],"date-time":"2024-09-20T15:45:05Z","timestamp":1726847105811},"reference-count":76,"publisher":"American
+        Association for the Advancement of Science (AAAS)","issue":"3946","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1970,8,14]]},"abstract":"<jats:p>The
+        train of thought pursued in this article has led to the conclusion that the
+        structure of cold water seems likely to consist, for the most part, of hydrogen-bonded,
+        four-coordinated, framework regions, with interstitial monomers occupying
+        some fraction of the cavities the framework encloses. The precise geometry
+        of the framework has not been specified, but some evidence suggests that it
+        is rather regular at low temperatures and becomes more random as the water
+        gets warmer. These conclusions, meager as they are in comparison with what
+        we shall eventually need to know about water, are still \"subject to change
+        without notice.\" Such a change would, for instance, be made necessary by
+        the discrediting either of the data or of the interpretations on which the
+        model is based. The discovery of new facts, or of new meanings in old facts,
+        which were clearly in conflict with the model, would also make it necessary
+        to modify, if not to abandon, it. Even this would be progress, however, for
+        it would be another product of the method of drawing upon data from diverse
+        sources and would be a further step toward the progressively more comprehensive
+        model to which this method will lead and the progressively greater confidence
+        we will be able to place in our conclusions.<\/jats:p>","DOI":"10.1126\/science.169.3946.635","type":"journal-article","created":{"date-parts":[[2006,10,5]],"date-time":"2006-10-05T12:56:56Z","timestamp":1160053016000},"page":"635-641","source":"Crossref","is-referenced-by-count":89,"title":"The
         Structure of Ordinary Water","prefix":"10.1126","volume":"169","author":[{"given":"Henry
         S.","family":"Frank","sequence":"first","affiliation":[{"name":"University
-        of Pittsburgh, Mellon Institute of Carnegie-Mellon University"}]}],"member":"221","reference":[{"key":"e_1_2_1_1_1","unstructured":"Essayes
-        of Natural Experiments 1964"},{"key":"e_1_2_1_2_1","first-page":"2020","volume":"5","year":"1670","unstructured":"PHILOSOPHICAL
+        of Pittsburgh, Mellon Institute of Carnegie-Mellon University"}]}],"member":"221","reference":[{"key":"e_1_2_1_1_1","unstructured":"Waller
+        R. Essayes of Natural Experiments (1964)."},{"key":"e_1_2_1_2_1","first-page":"2020","volume":"5","year":"1670","unstructured":"PHILOSOPHICAL
         TRANSACTIONS 5: 2020 (1670).","journal-title":"PHILOSOPHICAL TRANSACTIONS"},{"key":"e_1_2_1_3_1","first-page":"105","year":"1967","unstructured":"Arnett,
         E. M., Physico-Chemical Processes in Mixed Aqueous Solvents: 105 (1967).","journal-title":"Physico-Chemical
-        Processes in Mixed Aqueous Solvents"},{"key":"e_1_2_1_4_1","unstructured":"Water
-        and Aqueous Solutions: Structure Thermodynamics and Transport Processes 1970"},{"key":"e_1_2_1_5_1","doi-asserted-by":"crossref","first-page":"515","DOI":"10.1063\/1.1749327","volume":"1","year":"1933","unstructured":"BERNAL,
+        Processes in Mixed Aqueous Solvents"},{"key":"e_1_2_1_4_1","unstructured":"Ben-Naim
+        A. Water and Aqueous Solutions: Structure Thermodynamics and Transport Processes
+        (1970)."},{"key":"e_1_2_1_5_1","doi-asserted-by":"crossref","first-page":"515","DOI":"10.1063\/1.1749327","volume":"1","year":"1933","unstructured":"BERNAL,
         J.D., A theory of water and ionic solution, with particular reference to hydrogen
         and hydroxyl ions, JOURNAL OF CHEMICAL PHYSICS 1: 515 (1933).","journal-title":"JOURNAL
         OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_6_1","first-page":"299","volume":"280","year":"1964","unstructured":"BERNAL,
         J.D., BAKERIAN LECTURE 1962 - STRUCTURE OF LIQUIDS, PROCEEDINGS OF THE ROYAL
         SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES 280: 299 (1964).","journal-title":"PROCEEDINGS
-        OF THE ROYAL SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES"},{"key":"e_1_2_1_7_1","unstructured":"Raman
-        Newsletter 1968 1"},{"key":"e_1_2_1_8_1","first-page":"40","volume":"3","year":"1926","unstructured":"International
+        OF THE ROYAL SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES"},{"key":"e_1_2_1_7_1","unstructured":"Bernstein
+        H. J. Raman Newsletter 1 (1968)."},{"key":"e_1_2_1_8_1","first-page":"40","volume":"3","year":"1926","unstructured":"International
         Critical Tables 3: 40 (1926).","journal-title":"International Critical Tables"},{"key":"e_1_2_1_9_1","doi-asserted-by":"crossref","first-page":"57","DOI":"10.2307\/20026138","volume":"61","year":"1926","unstructured":"BRIDGMAN,
         P.W., The effect of pressure on the viscosity of forty-four pure liquids.,
         PROCEEDINGS OF THE AMERICAN ACADEMY OF ARTS AND SCIENCES 61: 57 (1926).","journal-title":"PROCEEDINGS
@@ -97,9 +108,9 @@ http_interactions:
         POLYMERS USING A MINIMAL SLATER-TYPE BASIS, JOURNAL OF CHEMICAL PHYSICS 52:
         4858 (1970).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_17_1","doi-asserted-by":"crossref","first-page":"109","DOI":"10.1039\/df9664200109","volume":"42","year":"1966","unstructured":"DERJAGUIN,
         B. V., DISCUSSIONS OF THE FARADAY SOCIETY 42: 109 (1966).","journal-title":"DISCUSSIONS
-        OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_18_1","unstructured":"Properties
-        of Ordinary Water-Substance In All Its Phases 1968"},{"key":"e_1_2_1_19_1","unstructured":"The
-        Structure and Properties of Water 1969"},{"key":"e_1_2_1_20_1","first-page":"79","year":"1969","unstructured":"Eisenberg,
+        OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_18_1","unstructured":"Dorsey N. E.
+        Properties of Ordinary Water-Substance In All Its Phases (1968)."},{"key":"e_1_2_1_19_1","unstructured":"Eisenberg
+        D. The Structure and Properties of Water (1969)."},{"key":"e_1_2_1_20_1","first-page":"79","year":"1969","unstructured":"Eisenberg,
         D., The Structure and Properties of Water: 79 (1969).","journal-title":"The
         Structure and Properties of Water"},{"key":"e_1_2_1_21_1","first-page":"38","year":"1946","unstructured":"EUCKEN,
         A, NACHRICHTEN VON DER GESELLSCHAFT DER WISSENSCHAFTEN: 38 (1946).","journal-title":"NACHRICHTEN
@@ -108,8 +119,8 @@ http_interactions:
         44: 1699 (1966).","journal-title":"CANADIAN JOURNAL OF CHEMISTRY"},{"key":"e_1_2_1_23_1","first-page":"9","volume":"115","year":"1952","unstructured":"FORSLIND,
         E, ACTA POLYTECH SCAND 115: 9 (1952).","journal-title":"ACTA POLYTECH SCAND"},{"key":"e_1_2_1_24_1","first-page":"108","year":"1967","unstructured":"FRANCK,
         E. U., DISCUSSIONS OF THE FARADAY SOCIETY: 108 (1967).","journal-title":"DISCUSSIONS
-        OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_25_1","unstructured":"Berichte der
-        Bunsengesellschaft f\u00fcr physikalische Chemie"},{"key":"e_1_2_1_26_1","first-page":"133","year":"1957","unstructured":"FRANK,
+        OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_25_1","unstructured":"Franck E. U.
+        Berichte der Bunsengesellschaft f\u00fcr physikalische Chemie in press."},{"key":"e_1_2_1_26_1","first-page":"133","year":"1957","unstructured":"FRANK,
         H. S., DISCUSSIONS OF THE FARADAY SOCIETY: 133 (1957).","journal-title":"DISCUSSIONS
         OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_27_1","first-page":"137","year":"1967","unstructured":"FRANK,
         H.S., DISCUSSIONS OF THE FARADAY SOCIETY: 137 (1967).","journal-title":"DISCUSSIONS
@@ -128,17 +139,17 @@ http_interactions:
         REVIEW"},{"key":"e_1_2_1_33_1","doi-asserted-by":"crossref","first-page":"2454","DOI":"10.1063\/1.1703330","volume":"47","year":"1967","unstructured":"HALL,
         R.T., PURE ROTATIONAL SPECTRUM OF WATER VAPOR, JOURNAL OF CHEMICAL PHYSICS
         47: 2454 (1967).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_34_1","doi-asserted-by":"crossref","first-page":"527","DOI":"10.1016\/0009-2614(70)87052-X","volume":"4","year":"1970","unstructured":"HANKINS,
-        D, CHEM PHYS LETT 4: 527 (1970).","journal-title":"CHEM PHYS LETT"},{"key":"e_1_2_1_35_1","first-page":"979","volume":"71","year":"1967","unstructured":"HERTZ,
+        D, CHEM PHYS LETT 4: 527 (1970).","journal-title":"CHEM PHYS LETT"},{"key":"e_1_2_1_35_1","doi-asserted-by":"crossref","first-page":"979","DOI":"10.1002\/bbpc.19670710905","volume":"71","year":"1967","unstructured":"HERTZ,
         H.G., ROTATIONAL AND TRANSLATIONAL DIFFUSION AND DIPOLAR SPIN RELAXATION IN
         DIAMAGNETIC ELECTROLYTE SOLUTIONS, BERICHTE DER BUNSEN-GESELLSCHAFT FUR PHYSIKALISCHE
         CHEMIE 71: 979 (1967).","journal-title":"BERICHTE DER BUNSEN-GESELLSCHAFT
-        FUR PHYSIKALISCHE CHEMIE"},{"key":"e_1_2_1_36_1","first-page":"999","volume":"71","year":"1967","unstructured":"HERTZ,
+        FUR PHYSIKALISCHE CHEMIE"},{"key":"e_1_2_1_36_1","doi-asserted-by":"crossref","first-page":"999","DOI":"10.1002\/bbpc.19670710906","volume":"71","year":"1967","unstructured":"HERTZ,
         H.G., INTERMOLECULAR PROTON-RELAXATION RATE IN DIAMAGNETIC ELECTROLYTE SOLUTIONS,
         BERICHTE DER BUNSEN-GESELLSCHAFT FUR PHYSIKALISCHE CHEMIE 71: 999 (1967).","journal-title":"BERICHTE
         DER BUNSEN-GESELLSCHAFT FUR PHYSIKALISCHE CHEMIE"},{"key":"e_1_2_1_37_1","first-page":"997","year":"1954","unstructured":"Hirschfelder,
         J. O., Molecular Theory of Gases and Liquids: 997 (1954).","journal-title":"Molecular
-        Theory of Gases and Liquids"},{"key":"e_1_2_1_38_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.167.3924.1520"},{"key":"e_1_2_1_39_1","unstructured":"Water
-        and Solute-Water Interactions 1964"},{"key":"e_1_2_1_40_1","doi-asserted-by":"crossref","first-page":"2325","DOI":"10.1021\/j100879a040","volume":"70","year":"1966","unstructured":"KAY,
+        Theory of Gases and Liquids"},{"key":"e_1_2_1_38_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.167.3924.1520"},{"key":"e_1_2_1_39_1","doi-asserted-by":"crossref","unstructured":"Kavanau
+        J. L. Water and Solute-Water Interactions (1964).","DOI":"10.1119\/1.1971997"},{"key":"e_1_2_1_40_1","doi-asserted-by":"crossref","first-page":"2325","DOI":"10.1021\/j100879a040","volume":"70","year":"1966","unstructured":"KAY,
         R. L., JOURNAL OF PHYSICAL CHEMISTRY 70: 2325 (1966).","journal-title":"JOURNAL
         OF PHYSICAL CHEMISTRY"},{"key":"e_1_2_1_41_1","doi-asserted-by":"crossref","first-page":"2336","DOI":"10.1021\/j100879a041","volume":"70","year":"1966","unstructured":"KAY,
         R.L., VISCOSITY B COEFFICIENTS FOR TETRAALKYLAMMONIUM HALIDES, JOURNAL OF
@@ -181,8 +192,8 @@ http_interactions:
         OF THE AMERICAN ACADEMY OF ARTS AND SCIENCES"},{"key":"e_1_2_1_62_1","doi-asserted-by":"crossref","first-page":"4444","DOI":"10.1063\/1.1670917","volume":"50","year":"1969","unstructured":"SAFFORD,
         G.J., INVESTIGATION OF LOW-FREQUENCY MOTIONS OF H2O MOLECULES IN IONIC SOLUTIONS
         BY NEUTRON INELASTIC SCATTERING, JOURNAL OF CHEMICAL PHYSICS 50: 4444 (1969).","journal-title":"JOURNAL
-        OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_63_1","unstructured":"Structure of Aqueous
-        Electrolyte Solutions and the Hydration of Ions 1965"},{"key":"e_1_2_1_64_1","first-page":"12","volume":"20","year":"1946","unstructured":"SAMOILOV,
+        OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_63_1","unstructured":"Samoilov O. Y.
+        Structure of Aqueous Electrolyte Solutions and the Hydration of Ions (1965)."},{"key":"e_1_2_1_64_1","first-page":"12","volume":"20","year":"1946","unstructured":"SAMOILOV,
         O.Y., ZHURNAL FIZICHESKOI KHIMII 20: 12 (1946).","journal-title":"ZHURNAL
         FIZICHESKOI KHIMII"},{"key":"e_1_2_1_65_1","doi-asserted-by":"crossref","first-page":"4242","DOI":"10.1021\/j100846a035","volume":"73","year":"1969","unstructured":"SENIOR,
         W.A., SPECTROSCOPIC EVIDENCE FOR MIXTURE MODEL IN HOD SOLUTIONS, JOURNAL OF
@@ -209,11 +220,11 @@ http_interactions:
         J.H., SELF-DIFFUSION AND STRUCTURE OF LIQUID WATER .3. MEASUREMENT OF THE
         SELF-DIFFUSION OF LIQUID WATER WITH H-2, H-3, AND O-18 AS TRACERS, JOURNAL
         OF THE AMERICAN CHEMICAL SOCIETY 75: 466 (1953).","journal-title":"JOURNAL
-        OF THE AMERICAN CHEMICAL SOCIETY"},{"key":"e_1_2_1_75_1","unstructured":"THESIS
-        HARVARD U 1884"},{"key":"e_1_2_1_76_1","doi-asserted-by":"crossref","first-page":"106","DOI":"10.1002\/anie.196601061","volume":"5","year":"1966","unstructured":"WICKE,
+        OF THE AMERICAN CHEMICAL SOCIETY"},{"key":"e_1_2_1_75_1","unstructured":"WHITING
+        H THESIS HARVARD U (1884)."},{"key":"e_1_2_1_76_1","doi-asserted-by":"crossref","first-page":"106","DOI":"10.1002\/anie.196601061","volume":"5","year":"1966","unstructured":"WICKE,
         E, STRUCTURE FORMATION AND MOLECULAR MOBILITY IN WATER AND IN AQUEOUS SOLUTIONS,
         ANGEWANDTE CHEMIE-INTERNATIONAL EDITION 5: 106 (1966).","journal-title":"ANGEWANDTE
-        CHEMIE-INTERNATIONAL EDITION"}],"container-title":"Science","original-title":[],"language":"en","link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1126\/science.169.3946.635","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,10,23]],"date-time":"2021-10-23T19:24:14Z","timestamp":1635017054000},"score":1,"subtitle":["New
-        data and interpretations are yielding new insights into this fascinating substance."],"short-title":[],"issued":{"date-parts":[[1970,8,14]]},"references-count":76,"journal-issue":{"issue":"3946","published-print":{"date-parts":[[1970,8,14]]}},"alternative-id":["10.1126\/science.169.3946.635"],"URL":"http:\/\/dx.doi.org\/10.1126\/science.169.3946.635","relation":{},"ISSN":["0036-8075","1095-9203"],"subject":["Multidisciplinary"],"container-title-short":"Science","published":{"date-parts":[[1970,8,14]]}}'
-  recorded_at: Sat, 26 Mar 2022 04:16:56 GMT
-recorded_with: VCR 6.1.0
+        CHEMIE-INTERNATIONAL EDITION"}],"container-title":"Science","original-title":[],"language":"en","link":[{"URL":"https:\/\/www.science.org\/doi\/pdf\/10.1126\/science.169.3946.635","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,2,6]],"date-time":"2024-02-06T23:56:00Z","timestamp":1707263760000},"score":1,"resource":{"primary":{"URL":"https:\/\/www.science.org\/doi\/10.1126\/science.169.3946.635"}},"subtitle":["New
+        data and interpretations are yielding new insights into this fascinating substance."],"short-title":[],"issued":{"date-parts":[[1970,8,14]]},"references-count":76,"journal-issue":{"issue":"3946","published-print":{"date-parts":[[1970,8,14]]}},"alternative-id":["10.1126\/science.169.3946.635"],"URL":"http:\/\/dx.doi.org\/10.1126\/science.169.3946.635","relation":{},"ISSN":["0036-8075","1095-9203"],"subject":[],"container-title-short":"Science","published":{"date-parts":[[1970,8,14]]}}'
+  recorded_at: Sun, 08 Jun 2025 20:52:42 GMT
+recorded_with: VCR 6.3.1

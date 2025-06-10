@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:00 GMT
+      - Sun, 08 Jun 2025 20:52:54 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '998'
+      - '3371'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=kMZitOB0vmnW8lcYnsxmF3bXBmuUBXpYNagQLaOSHj5P8k/yuTWvM7RGT/oP12G5Gt7DjH904R8aUudK9hlVOydn6op3lgmqi2HlnaKotX+/Vb5RQV0WhVy4nhz5;
-        Expires=Sat, 02 Apr 2022 04:17:00 GMT; Path=/
-      - AWSALBCORS=kMZitOB0vmnW8lcYnsxmF3bXBmuUBXpYNagQLaOSHj5P8k/yuTWvM7RGT/oP12G5Gt7DjH904R8aUudK9hlVOydn6op3lgmqi2HlnaKotX+/Vb5RQV0WhVy4nhz5;
-        Expires=Sat, 02 Apr 2022 04:17:00 GMT; Path=/; SameSite=None
+      - AWSALB=43+gf/RFYVntsiiJyn9g7nF9E+D9fwxanei1Z2ZhXjaWkKLIVzj1aElE0w35iWrMomVPsv5ZOyo+cJrwSb+7euIGibU64eM1/paHZakm5t0Pm7eZUu31SaWYKV1h;
+        Expires=Sun, 15 Jun 2025 20:52:53 GMT; Path=/
+      - AWSALBCORS=43+gf/RFYVntsiiJyn9g7nF9E+D9fwxanei1Z2ZhXjaWkKLIVzj1aElE0w35iWrMomVPsv5ZOyo+cJrwSb+7euIGibU64eM1/paHZakm5t0Pm7eZUu31SaWYKV1h;
+        Expires=Sun, 15 Jun 2025 20:52:53 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,21 +50,14 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1648258475661,"counts":{"current-dois":42,"backfile-dois":192,"total-dois":234},"breakdowns":{"dois-by-issued-year":[[2017,35],[2018,23],[2020,22],[2021,20],[2019,20],[2015,20],[2016,15],[2013,15],[2011,15],[2014,11],[2010,10],[2008,10],[2012,9],[2009,9]]},"publisher":"De
-        Gruyter Poland Sp. z o.o.","coverage":{"affiliations-current":0.9761904761904762,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.6770833333333333,"funders-current":0.0,"affiliations-backfile":0.6770833333333333,"resource-links-backfile":0.8385416666666667,"orcids-backfile":0.0,"update-policies-current":0.0,"open-references-backfile":1.0,"ror-ids-backfile":0.0,"orcids-current":0.119047619047619,"similarity-checking-backfile":0.9791666666666667,"references-backfile":0.6822916666666667,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.8385416666666667,"resource-links-current":0.5238095238095238,"abstracts-current":0.9761904761904762,"open-references-current":1.0,"references-current":0.9761904761904762},"title":"Journal
-        of Landscape Ecology","subjects":[{"ASJC":2308,"name":"Management, Monitoring,
-        Policy and Law"},{"ASJC":2309,"name":"Nature and Landscape Conservation"},{"ASJC":2303,"name":"Ecology"}],"coverage-type":{"all":{"last-status-check-time":1648258475661,"affiliations":0.7307692307692308,"abstracts":0.8632478632478632,"orcids":0.02136752136752137,"licenses":0.735042735042735,"references":0.735042735042735,"funders":0.0,"similarity-checking":0.9829059829059829,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.782051282051282,"descriptions":0.0,"open-references":1.0},"backfile":{"last-status-check-time":1648258475661,"affiliations":0.6770833333333333,"abstracts":0.8385416666666667,"orcids":0.0,"licenses":0.6770833333333333,"references":0.6822916666666667,"funders":0.0,"similarity-checking":0.9791666666666667,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.8385416666666667,"descriptions":0.0,"open-references":1.0},"current":{"last-status-check-time":1648258475661,"affiliations":0.9761904761904762,"abstracts":0.9761904761904762,"orcids":0.119047619047619,"licenses":1.0,"references":0.9761904761904762,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.5238095238095238,"descriptions":0.0,"open-references":1.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":false,"deposits-open-references-backfile":true,"deposits-open-references-current":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["1803-2427","1805-4196"],"issn-type":[{"type":"print","value":"1803-2427"},{"type":"electronic","value":"1805-4196"}]}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:00 GMT
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1749346641976,"counts":{"current-dois":60,"backfile-dois":254,"total-dois":314},"breakdowns":{"dois-by-issued-year":[[2017,35],[2024,23],[2018,23],[2020,22],[2023,20],[2022,20],[2021,20],[2019,20],[2015,20],[2025,17],[2016,15],[2013,15],[2011,15],[2014,11],[2010,10],[2008,10],[2012,9],[2009,9]]},"publisher":"De
+        Gruyter Poland Sp. z o.o.","coverage":{"affiliations-current":1.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.7559055118110236,"funders-current":0.0,"affiliations-backfile":0.7519685039370079,"resource-links-backfile":0.7204724409448819,"orcids-backfile":0.03937007874015748,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.1666666666666667,"similarity-checking-backfile":0.984251968503937,"references-backfile":0.7559055118110236,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.8740157480314961,"resource-links-current":0.0,"abstracts-current":1.0,"references-current":1.0},"title":"Journal
+        of Landscape Ecology","subjects":[],"coverage-type":{"all":{"last-status-check-time":1749346641976,"affiliations":0.7993630573248408,"abstracts":0.8980891719745223,"orcids":0.06369426751592357,"licenses":0.8025477707006369,"references":0.8025477707006369,"funders":0.0,"similarity-checking":0.9872611464968153,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.5828025477707006,"descriptions":0.0},"backfile":{"last-status-check-time":1749346641976,"affiliations":0.7519685039370079,"abstracts":0.8740157480314961,"orcids":0.03937007874015748,"licenses":0.7559055118110236,"references":0.7559055118110236,"funders":0.0,"similarity-checking":0.984251968503937,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.7204724409448819,"descriptions":0.0},"current":{"last-status-check-time":1749346641976,"affiliations":1.0,"abstracts":1.0,"orcids":0.1666666666666667,"licenses":1.0,"references":1.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["1803-2427","1805-4196"],"issn-type":[{"type":"print","value":"1803-2427"},{"type":"electronic","value":"1805-4196"}]}}'
+  recorded_at: Sun, 08 Jun 2025 20:52:55 GMT
 - request:
     method: get
     uri: https://api.crossref.org/journals/2326-4225
@@ -71,9 +66,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -84,16 +79,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:01 GMT
+      - Sun, 08 Jun 2025 20:52:55 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '742'
+      - '2918'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=IL4y8MvwvaZ2zUhSHzS8zWBNTmwYDYbtj0KYyT0L4ukJRRikQ5Hz9q+Q9i5vieQ7nMAnyAuwbS1B4Sa0jR2Kmu5KNheow9gXitlsaPVy/diH8dmFqDi92ZZcuaOp;
-        Expires=Sat, 02 Apr 2022 04:17:01 GMT; Path=/
-      - AWSALBCORS=IL4y8MvwvaZ2zUhSHzS8zWBNTmwYDYbtj0KYyT0L4ukJRRikQ5Hz9q+Q9i5vieQ7nMAnyAuwbS1B4Sa0jR2Kmu5KNheow9gXitlsaPVy/diH8dmFqDi92ZZcuaOp;
-        Expires=Sat, 02 Apr 2022 04:17:01 GMT; Path=/; SameSite=None
+      - AWSALB=xqn+ClWIg6ALssf2Vzlk5wpM/LFUuqI+1lUWQ02pHCgeoxNyARxSP56MG7PeGXL//LJ84bAMSh5TIXw0OqQaRcP+VxN85Q81H2gFlWxdG/+M8wIPeL1VW8TpXroV;
+        Expires=Sun, 15 Jun 2025 20:52:55 GMT; Path=/
+      - AWSALBCORS=xqn+ClWIg6ALssf2Vzlk5wpM/LFUuqI+1lUWQ02pHCgeoxNyARxSP56MG7PeGXL//LJ84bAMSh5TIXw0OqQaRcP+VxN85Q81H2gFlWxdG/+M8wIPeL1VW8TpXroV;
+        Expires=Sun, 15 Jun 2025 20:52:55 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -111,19 +108,12 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1648258893415,"counts":{"current-dois":0,"backfile-dois":179,"total-dois":179},"breakdowns":{"dois-by-issued-year":[[2014,55],[2013,50],[2017,33],[2016,27],[2018,14]]},"publisher":"American
-        Scientific Publishers","coverage":{"affiliations-current":0.0,"similarity-checking-current":0.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"open-references-backfile":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.547486033519553,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"open-references-current":0.0,"references-current":0.0},"title":"Journal
-        of Nutritional Ecology and Food Research","subjects":[{"ASJC":2700,"name":"General
-        Medicine"}],"coverage-type":{"all":{"last-status-check-time":1648258893415,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0,"open-references":0.0},"backfile":{"last-status-check-time":1648258893415,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0,"open-references":0.0},"current":{"last-status-check-time":1648258893415,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0,"open-references":0.0}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-open-references-backfile":false,"deposits-open-references-current":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":false,"deposits-licenses-current":false},"ISSN":["2326-4225"],"issn-type":[{"value":"2326-4225","type":"print"}]}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:01 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1749346749198,"counts":{"current-dois":0,"backfile-dois":179,"total-dois":179},"breakdowns":{"dois-by-issued-year":[[2014,55],[2013,50],[2017,33],[2016,27],[2018,14]]},"publisher":"American
+        Scientific Publishers","coverage":{"affiliations-current":0.0,"similarity-checking-current":0.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.547486033519553,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"title":"Journal
+        of Nutritional Ecology and Food Research","subjects":[],"coverage-type":{"all":{"last-status-check-time":1749346749198,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"backfile":{"last-status-check-time":1749346749198,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"current":{"last-status-check-time":1749346749198,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":false,"deposits-licenses-current":false},"ISSN":["2326-4225"],"issn-type":[{"type":"print","value":"2326-4225"}]}}'
+  recorded_at: Sun, 08 Jun 2025 20:52:55 GMT
+recorded_with: VCR 6.3.1

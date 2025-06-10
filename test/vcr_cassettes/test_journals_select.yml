@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:02 GMT
+      - Sun, 08 Jun 2025 20:52:56 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1545'
+      - '3577'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=NJDuCuFAkWq46g4E7QJ2O4bP/riisDGo7+xuk3O4hb3Yo/iGANZW7iJnQx0LuBOjSZC6Lq5VbsHMauBH3F4PT+qCMaRKSjNmWl2uYhiTjZIm47bxAnduvGxKjUH6;
-        Expires=Sat, 02 Apr 2022 04:17:02 GMT; Path=/
-      - AWSALBCORS=NJDuCuFAkWq46g4E7QJ2O4bP/riisDGo7+xuk3O4hb3Yo/iGANZW7iJnQx0LuBOjSZC6Lq5VbsHMauBH3F4PT+qCMaRKSjNmWl2uYhiTjZIm47bxAnduvGxKjUH6;
-        Expires=Sat, 02 Apr 2022 04:17:02 GMT; Path=/; SameSite=None
+      - AWSALB=8wWrWv7DrXljgQufvP0jG86xG5n0NWBkxQ0OzmObdDOC8j3SJBk+aezTbIrxnp01/a1Sq/V19/wP4nsqCgZs196xf8VNa9c2iikbFY1UwXR1pM7Y8w80OF814pDD;
+        Expires=Sun, 15 Jun 2025 20:52:56 GMT; Path=/
+      - AWSALBCORS=8wWrWv7DrXljgQufvP0jG86xG5n0NWBkxQ0OzmObdDOC8j3SJBk+aezTbIrxnp01/a1Sq/V19/wP4nsqCgZs196xf8VNa9c2iikbFY1UwXR1pM7Y8w80OF814pDD;
+        Expires=Sun, 15 Jun 2025 20:52:56 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,52 +50,49 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":13053,"items":[{"DOI":"10.7717\/peerj.10282","title":["On
-        local scouring downstream small water structures"]},{"DOI":"10.7717\/peerj.9241","title":["Revealing
-        the selective mechanisms of inhibitors to PARP-1 and PARP-2 via multiple computational
-        methods"]},{"DOI":"10.7717\/peerj.8208","title":["Concentration-dependent
-        polymorphism of insulin amyloid fibrils"]},{"DOI":"10.7717\/peerj.5131","title":["Hummingbird
-        migration and flowering synchrony in the temperate forests of northwestern
-        Mexico"]},{"DOI":"10.7717\/peerj.7864","title":["Natural stable isotope ratios
-        and fatty acid profiles of estuarine tidal flat nematodes reveal very limited
-        niche overlap among co-occurring species"]},{"DOI":"10.7717\/peerj.3546","title":["Socioeconomic
-        status influences sex ratios in a Chinese rural population"]},{"DOI":"10.7717\/peerj.12420","title":["The
-        predictive role of preoperative serum glutamate dehydrogenase levels in microvascular
-        invasion and hepatocellular carcinoma prognosis following liver transplantation\u2014a
-        single center retrospective study"]},{"DOI":"10.7717\/peerj.2798","title":["Preventative
-        and therapeutic effects of a GABA transporter 1 inhibitor administered systemically
-        in a mouse model of paclitaxel-induced neuropathic pain"]},{"DOI":"10.7717\/peerj.11219","title":["Construction
-        and validation of an RNA-binding protein-associated prognostic model for colorectal
-        cancer"]},{"DOI":"10.7717\/peerj.7819","title":["Structural analysis of urinary
-        light chains and proteomic analysis of hyaline tubular casts in light chain
-        associated kidney disorders"]},{"DOI":"10.7717\/peerj.9277","title":["WHONDRS-GUI:
-        a web application for global survey of surface water metabolites"]},{"DOI":"10.7717\/peerj.3664","title":["The
-        effects of allogenic stem cells in a murine model of hind limb diabetic ischemic
-        tissue"]},{"DOI":"10.7717\/peerj.11029","title":["Two predicted models based
-        on ceRNAs and immune cells in lung adenocarcinoma"]},{"DOI":"10.7717\/peerj.5312","title":["Comparison
-        of ventricular tachyarrhythmia recurrence between ischemic cardiomyopathy
-        and dilated cardiomyopathy: a retrospective study"]},{"DOI":"10.7717\/peerj.7849","title":["HIF
-        inhibitor topotecan has a neuroprotective effect in a murine retinal ischemia-reperfusion
-        model"]},{"DOI":"10.7717\/peerj.1404","title":["A predictive screening tool
-        to detect diabetic retinopathy or macular edema in primary health care: construction,
-        validation and implementation on a mobile application"]},{"DOI":"10.7717\/peerj.9199","title":["The
-        prevalence of low back pain among female hospital staff at childbearing age"]},{"DOI":"10.7717\/peerj.7040","title":["Composition
-        and dynamics of the bacterial communities present in the post-slaughter environment
-        of farmed Atlantic salmon (Salmo salarL.) and correlations to gelatin degrading
-        activity"]},{"DOI":"10.7717\/peerj.3862","title":["Effects of astragalus polysaccharide
-        on the adhesion-related immune response of endothelial cells stimulated with
-        CSFVin vitro"]},{"DOI":"10.7717\/peerj.4410","title":["Deficit irrigation
-        and fertilization strategies to improve soil quality and alfalfa yield in
-        arid and semi-arid areas of northern China"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:02 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":19409,"items":[{"DOI":"10.7717\/peerj.1681","title":["Testing
+        the effects of perimeter fencing and elephant exclosures on lion predation
+        patterns in a Kenyan wildlife conservancy"]},{"DOI":"10.7717\/peerj.16541","title":["A
+        vertebra of a small species of <i>Pachycetus<\/i> from the North Sea and its
+        inner structure and vascularity compared with other basilosaurid vertebrae
+        from the same site"]},{"DOI":"10.7717\/peerj.4638","title":["Lighten up the
+        dark: metazoan parasites as indicators for the ecology of Antarctic crocodile
+        icefish (Channichthyidae) from the north-west Antarctic Peninsula"]},{"DOI":"10.7717\/peerj.16168","title":["Genome-wide
+        identification of <i>DUF506<\/i> gene family in <i>Oryza<\/i> <i>sativa<\/i>
+        and expression profiling under abiotic stresses"]},{"DOI":"10.7717\/peerj.15241","title":["Identification
+        of key immune-related genes associated with LPS\/D-GalN-induced acute liver
+        failure in mice based on transcriptome sequencing"]},{"DOI":"10.7717\/peerj.17798","title":["Validation
+        and measurement invariance of the Chinese version of the academic self-efficacy
+        scale for university students"]},{"DOI":"10.7717\/peerj.18810","title":["Clinical
+        characteristics of pathogens in children with community-acquired pneumonia
+        were analyzed <i>via<\/i> targeted next-generation sequencing detection"]},{"DOI":"10.7717\/peerj.14092","title":["Stigma
+        and its associated factors among patients with COVID-19 in Dhaka City: evidence
+        from a cross-sectional investigation"]},{"DOI":"10.7717\/peerj.15091","title":["Common
+        eating habit patterns are associated with a high maximum occlusal force and
+        pre-eating cardiac vagal tone"]},{"DOI":"10.7717\/peerj.16406","title":["Cloning
+        and functional characterization of porcine <i>AACS<\/i> revealing the regulative
+        roles for fat deposition in pigs"]},{"DOI":"10.7717\/peerj.9726","title":["Five
+        new pseudocryptic land planarian species of <i>Cratera<\/i> (Platyhelminthes:
+        Tricladida) unveiled through integrative taxonomy"]},{"DOI":"10.7717\/peerj.2488","title":["Spermatozoon
+        ultrastructure in two monorchiid digeneans"]},{"DOI":"10.7717\/peerj.9090","title":["Nonalcoholic
+        fatty liver disease, a potential risk factor of non-specific ST-T segment
+        changes: data from a cross-sectional study"]},{"DOI":"10.7717\/peerj.4216","title":["Joint
+        damage is amplified in rheumatoid arthritis patients with positive thyroid
+        autoantibodies"]},{"DOI":"10.7717\/peerj.196","title":["An extended genovo
+        metagenomic assembler by incorporating paired-end information"]},{"DOI":"10.7717\/peerj.15393","title":["Integrative
+        species delimitation helps to find the hidden diversity of the leaf-litter
+        frog <i>Ischnocnema manezinho<\/i> (Garcia, 1996) (Anura, Brachycephalidae),
+        endemic to the southern Atlantic Forest"]},{"DOI":"10.7717\/peerj.978","title":["Elevational
+        gradient of Hemiptera (Heteroptera, Auchenorrhyncha) on a tropical mountain
+        in Papua New Guinea"]},{"DOI":"10.7717\/peerj.14837","title":["High-throughput
+        Treg cell receptor sequencing reveals differential immune repertoires in rheumatoid
+        arthritis with kidney deficiency"]},{"DOI":"10.7717\/peerj.5111","title":["Comparison
+        of the toxic effects of different mycotoxins on porcine and mouse oocyte meiosis"]},{"DOI":"10.7717\/peerj.15572","title":["Development
+        of a circHIPK3-based ceRNA network and identification of mRNA signature in
+        breast cancer patients harboring BRCA mutation"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:52:56 GMT
+recorded_with: VCR 6.3.1

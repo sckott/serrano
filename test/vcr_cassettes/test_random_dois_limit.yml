@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:40 GMT
+      - Sun, 08 Jun 2025 20:53:22 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1890'
+      - '9212'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=dlaTxHZa5onFtrW9lBcu3X6C+UGaJrxqgvWH9zDIewrOohXkzuSztEjEogZfwQ7cabbtaGP4mwjXVj1zWyqOm6w4QupIhlna9r9YkZ4iCW9jrY/uyMg9ML9MLtkO;
-        Expires=Sat, 02 Apr 2022 04:17:36 GMT; Path=/
-      - AWSALBCORS=dlaTxHZa5onFtrW9lBcu3X6C+UGaJrxqgvWH9zDIewrOohXkzuSztEjEogZfwQ7cabbtaGP4mwjXVj1zWyqOm6w4QupIhlna9r9YkZ4iCW9jrY/uyMg9ML9MLtkO;
-        Expires=Sat, 02 Apr 2022 04:17:36 GMT; Path=/; SameSite=None
+      - AWSALB=oqLWkQ///K0+FsxuEIsPeHVpnTMwTmnl82enSDAqFUdmM2EFlLxyz85DUknc9j74OU9ErIyGM27bsFcWyPeL3J6KjKaZ7z77Dl9RQqko8cYjzP4v25y3vTMxOTXC;
+        Expires=Sun, 15 Jun 2025 20:53:21 GMT; Path=/
+      - AWSALBCORS=oqLWkQ///K0+FsxuEIsPeHVpnTMwTmnl82enSDAqFUdmM2EFlLxyz85DUknc9j74OU9ErIyGM27bsFcWyPeL3J6KjKaZ7z77Dl9RQqko8cYjzP4v25y3vTMxOTXC;
+        Expires=Sun, 15 Jun 2025 20:53:21 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,39 +50,55 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2021,12,13]],"date-time":"2021-12-13T17:50:15Z","timestamp":1639417815104},"reference-count":8,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1109\/acssc.2004.1399257","type":"proceedings-article","created":{"date-parts":[[2005,3,31]],"date-time":"2005-03-31T18:26:51Z","timestamp":1112293611000},"source":"Crossref","is-referenced-by-count":44,"title":["Opportunistic
-        multicasting"],"prefix":"10.1109","author":[{"given":"P.K.","family":"Gopala","sequence":"first","affiliation":[]},{"given":"H.","family":"El
-        Gamal","sequence":"additional","affiliation":[]}],"member":"263","event":{"name":"Conference
-        Record of the Thirty-Eighth Asilomar Conference on Signals, Systems and Computers,
-        2004.","location":"Pacific Grove, Ca, USA"},"container-title":["Conference
-        Record of the Thirty-Eighth Asilomar Conference on Signals, Systems and Computers,
-        2004."],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/9626\/30419\/01399257.pdf?arnumber=1399257","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T17:51:01Z","timestamp":1497635461000},"score":0.0,"issued":{"date-parts":[[null]]},"references-count":8,"URL":"http:\/\/dx.doi.org\/10.1109\/acssc.2004.1399257"},{"indexed":{"date-parts":[[2021,12,13]],"date-time":"2021-12-13T12:23:56Z","timestamp":1639398236187},"reference-count":0,"publisher":"Springer
-        Science and Business Media LLC","issue":"3","license":[{"start":{"date-parts":[[2003,3,1]],"date-time":"2003-03-01T00:00:00Z","timestamp":1046476800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Mathematical
-        Programming"],"published-print":{"date-parts":[[2003,3,1]]},"DOI":"10.1007\/s10107-002-0363-5","type":"journal-article","created":{"date-parts":[[2003,12,11]],"date-time":"2003-12-11T01:37:41Z","timestamp":1071106661000},"page":"533-554","source":"Crossref","is-referenced-by-count":36,"title":["On
-        the maximum feasible subsystem problem, IISs and IIS-hypergraphs"],"prefix":"10.1007","volume":"95","author":[{"given":"Edoardo","family":"Amaldi","sequence":"first","affiliation":[]},{"given":"Marc
-        E.","family":"Pfetsch","sequence":"additional","affiliation":[]},{"given":"Leslie
-        E.","family":"Trotter, Jr.","sequence":"additional","affiliation":[]}],"member":"297","container-title":["Mathematical
-        Programming"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s10107-002-0363-5.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/s10107-002-0363-5\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s10107-002-0363-5","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,5,29]],"date-time":"2019-05-29T09:49:54Z","timestamp":1559123394000},"score":0.0,"issued":{"date-parts":[[2003,3,1]]},"references-count":0,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2003,3,1]]}},"alternative-id":["FEC0JH95APHBNPUV"],"URL":"http:\/\/dx.doi.org\/10.1007\/s10107-002-0363-5","ISSN":["0025-5610","1436-4646"],"issn-type":[{"value":"0025-5610","type":"print"},{"value":"1436-4646","type":"electronic"}],"subject":["General
-        Mathematics","Software"],"published":{"date-parts":[[2003,3,1]]}},{"indexed":{"date-parts":[[2022,2,16]],"date-time":"2022-02-16T07:40:15Z","timestamp":1644997215062},"reference-count":15,"publisher":"Academy
-        of Natural Sciences of Philadelphia","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Proceedings
-        of the Academy of Natural Sciences of Philadelphia"],"published-print":{"date-parts":[[2013,3]]},"DOI":"10.1635\/053.162.0110","type":"journal-article","created":{"date-parts":[[2013,5,7]],"date-time":"2013-05-07T11:12:00Z","timestamp":1367925120000},"page":"157-173","source":"Crossref","is-referenced-by-count":9,"title":["Sternarchella
-        calhamazonn. sp., the Amazon''s Most Abundant Species of Apteronotid Electric
-        Fish, with a Note on the Taxonomic Status ofSternarchus capanemaeSteindachner,
-        1868 (Gymnotiformes, Apteronotidae)"],"prefix":"10.1635","volume":"162","author":[{"given":"John
-        G.","family":"Lundberg","sequence":"first","affiliation":[]},{"given":"Cristina
-        Cox","family":"Fernandes","sequence":"additional","affiliation":[]},{"given":"Ricardo","family":"Campos-Da-Paz","sequence":"additional","affiliation":[]},{"given":"John
-        P.","family":"Sullivan","sequence":"additional","affiliation":[]}],"member":"1210","container-title":["Proceedings
-        of the Academy of Natural Sciences of Philadelphia"],"language":"en","deposited":{"date-parts":[[2022,2,16]],"date-time":"2022-02-16T07:07:07Z","timestamp":1644995227000},"score":0.0,"issued":{"date-parts":[[2013,3]]},"references-count":15,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2013,3]]}},"alternative-id":["10.1635\/053.162.0110"],"URL":"http:\/\/dx.doi.org\/10.1635\/053.162.0110","ISSN":["0097-3157","1938-5293"],"issn-type":[{"value":"0097-3157","type":"print"},{"value":"1938-5293","type":"electronic"}],"subject":["Ecology","Ecology,
-        Evolution, Behavior and Systematics"],"published":{"date-parts":[[2013,3]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:40 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T05:12:09Z","timestamp":1697001129964},"reference-count":0,"publisher":"Omah
+        Jurnal Sunan Giri, INSURI Ponorogo","issue":"2","license":[{"start":{"date-parts":[[2022,12,28]],"date-time":"2022-12-28T00:00:00Z","timestamp":1672185600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["QLMN"],"abstract":"<jats:p>This
+        study aims to determine students'' experiences with comprehensive reading
+        strategies using Wattpad. This study uses a qualitative descriptive research
+        method. Data are collected using interviews, observation, documentation, and
+        questionnaires. The analysis of this research uses a triangulation technique
+        which consists of steps; data reduction, data display, and ultimately conclusion
+        to analyze the data. The results of this study indicate that extensive reading
+        through Wattpad can be used for pleasure, extensive reading through the Wattpad
+        platform can reduce stress, extensive reading through Wattpad can increase
+        motivation, and extensive reading through Wattpad can increase vocabulary.
+        All of these activities can have a positive impact on students. Plus, Wattpad''s
+        platform is great for in-depth reading. Therefore, one of the best ways to
+        learn English is to read extensively on the Wattpad platform. Teachers should
+        realize that because Wattpad is a practical reading tool that can be accessed
+        anywhere and at any time, all the stories students read must be age-appropriate.<\/jats:p>","DOI":"10.37680\/qalamuna.v14i2.3308","type":"journal-article","created":{"date-parts":[[2023,10,10]],"date-time":"2023-10-10T23:56:30Z","timestamp":1696982190000},"page":"423-432","source":"Crossref","is-referenced-by-count":0,"title":["The
+        Positive Impact of Extensive Reading Through Wattpad for Students in Learning
+        English as A Foreign Language (EFL)"],"prefix":"10.37680","volume":"14","author":[{"given":"Dewi
+        Suriyani","family":"Djamdjuri","sequence":"first","affiliation":[]},{"given":"Librilianti
+        Kurnia","family":"Yuki","sequence":"first","affiliation":[]},{"given":"Dedi","family":"Supriadi","sequence":"first","affiliation":[]},{"given":"Nanik","family":"Retnowati","sequence":"first","affiliation":[]},{"given":"Sitinur
+        Afifah","family":"Aulia","sequence":"first","affiliation":[]},{"given":"Arin","family":"Khairunnisa","sequence":"first","affiliation":[]}],"member":"24607","published-online":{"date-parts":[[2022,12,28]]},"container-title":["QALAMUNA:
+        Jurnal Pendidikan, Sosial, dan Agama"],"link":[{"URL":"https:\/\/ejournal.insuriponorogo.ac.id\/index.php\/qalamuna\/article\/download\/3308\/1625","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/ejournal.insuriponorogo.ac.id\/index.php\/qalamuna\/article\/download\/3308\/1625","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,10]],"date-time":"2023-10-10T23:56:55Z","timestamp":1696982215000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/ejournal.insuriponorogo.ac.id\/index.php\/qalamuna\/article\/view\/3308"}},"issued":{"date-parts":[[2022,12,28]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2022,7,22]]}},"URL":"https:\/\/doi.org\/10.37680\/qalamuna.v14i2.3308","ISSN":["2656-9779","1907-6355"],"issn-type":[{"value":"2656-9779","type":"electronic"},{"value":"1907-6355","type":"print"}],"published":{"date-parts":[[2022,12,28]]}},{"indexed":{"date-parts":[[2023,8,27]],"date-time":"2023-08-27T05:03:45Z","timestamp":1693112625443},"reference-count":5,"publisher":"Oxford
+        University Press (OUP)","issue":"15","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2018,8,1]]},"DOI":"10.2146\/ajhp180158","type":"journal-article","created":{"date-parts":[[2018,7,25]],"date-time":"2018-07-25T10:25:29Z","timestamp":1532514329000},"page":"1093-1094","source":"Crossref","is-referenced-by-count":2,"title":["Possible
+        confounders in study of oral versus i.v. acetaminophen for postoperative pain
+        control"],"prefix":"10.1093","volume":"75","author":[{"given":"Mark C.","family":"Kendall","sequence":"first","affiliation":[{"name":"Department
+        of Anesthesiology Rhode Island Hospital Warren Alpert Medical School of Brown
+        University Providence, RI"}]}],"member":"286","reference":[{"key":"2019061905101193600_b1-0751093","doi-asserted-by":"crossref","first-page":"367","DOI":"10.2146\/ajhp170064","article-title":"Randomized
+        trial of oral versus intravenous acetaminophen for postoperative pain control","volume":"75","author":"Hickman","year":"2018","journal-title":"Am
+        J Health-Syst Pharm"},{"key":"2019061905101193600_b2-0751093","doi-asserted-by":"crossref","first-page":"30","DOI":"10.1016\/j.jclinane.2017.06.004","article-title":"Effect
+        of parecoxib sodium pretreatment combined with dexmedetomidine on early postoperative
+        cognitive dysfunction in elderly patients after shoulder arthroscopy: a randomized
+        double blinded controlled trial","volume":"41","author":"Lu","year":"2017","journal-title":"J
+        Clin Anesth"},{"key":"2019061905101193600_b3-0751093","doi-asserted-by":"crossref","first-page":"84","DOI":"10.1016\/j.jclinane.2017.08.030","article-title":"Nonsteroidal
+        anti-inflammatory drugs for postoperative pain control after lumbar spine
+        surgery: a meta-analysis of randomized controlled trials","volume":"43","author":"Zhang","year":"2017","journal-title":"J
+        Clin Anesth"},{"key":"2019061905101193600_b4-0751093","doi-asserted-by":"crossref","first-page":"76","DOI":"10.1016\/j.jclinane.2017.07.002","article-title":"Is
+        gabapentin effective and safe in open hysterectomy? A PRISMA compliant meta-analysis
+        of randomized controlled trials","volume":"41","author":"Li","year":"2017","journal-title":"J
+        Clin Anesth"},{"key":"2019061905101193600_b5-0751093","doi-asserted-by":"crossref","first-page":"714","DOI":"10.1213\/ANE.0000000000000593","article-title":"The
+        trouble with using provider assessments for rating clinical performance: it\u2019s
+        a matter of bias","volume":"120","author":"McCarthy","year":"2015","journal-title":"Anesth
+        Analg"}],"container-title":["American Journal of Health-System Pharmacy"],"language":"en","link":[{"URL":"http:\/\/academic.oup.com\/ajhp\/article-pdf\/75\/15\/1093\/28841706\/ajhp1093.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,19]],"date-time":"2019-06-19T09:10:46Z","timestamp":1560935446000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/ajhp\/article\/75\/15\/1093\/5102360"}},"issued":{"date-parts":[[2018,8,1]]},"references-count":5,"journal-issue":{"issue":"15","published-print":{"date-parts":[[2018,8,1]]}},"URL":"https:\/\/doi.org\/10.2146\/ajhp180158","ISSN":["1079-2082","1535-2900"],"issn-type":[{"value":"1079-2082","type":"print"},{"value":"1535-2900","type":"electronic"}],"published-other":{"date-parts":[[2018,8,1]]},"published":{"date-parts":[[2018,8,1]]}},{"indexed":{"date-parts":[[2022,3,31]],"date-time":"2022-03-31T08:23:42Z","timestamp":1648715022347},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"1-2","license":[{"start":{"date-parts":[[2009,9,1]],"date-time":"2009-09-01T00:00:00Z","timestamp":1251763200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Membrane Science"],"published-print":{"date-parts":[[2009,9]]},"DOI":"10.1016\/s0376-7388(09)00428-1","type":"journal-article","created":{"date-parts":[[2009,6,13]],"date-time":"2009-06-13T08:56:58Z","timestamp":1244883418000},"page":"CO2","source":"Crossref","is-referenced-by-count":0,"title":["Editorial
+        Board"],"prefix":"10.1016","volume":"339","member":"78","container-title":["Journal
+        of Membrane Science"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0376738809004281?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0376738809004281?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,12,19]],"date-time":"2018-12-19T01:29:07Z","timestamp":1545182947000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0376738809004281"}},"issued":{"date-parts":[[2009,9]]},"references-count":0,"journal-issue":{"issue":"1-2","published-print":{"date-parts":[[2009,9]]}},"alternative-id":["S0376738809004281"],"URL":"https:\/\/doi.org\/10.1016\/s0376-7388(09)00428-1","ISSN":["0376-7388"],"issn-type":[{"value":"0376-7388","type":"print"}],"published":{"date-parts":[[2009,9]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:22 GMT
+recorded_with: VCR 6.3.1

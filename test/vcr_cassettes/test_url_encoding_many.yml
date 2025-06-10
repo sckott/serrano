@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:47 GMT
+      - Sun, 08 Jun 2025 20:53:28 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '545'
+      - '1134'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=wIAloA2MFuGa/ePbncNngLlewb/6SO6TsJG9u/SO6XyPk8PXZS+uZI2iLDm2eFQIsoKJeOoflfZ4B93v2r7GtZPODqpnZtD0WYXXI4UEOLKdiLOsZBaxNSNT9EQu;
-        Expires=Sat, 02 Apr 2022 04:17:47 GMT; Path=/
-      - AWSALBCORS=wIAloA2MFuGa/ePbncNngLlewb/6SO6TsJG9u/SO6XyPk8PXZS+uZI2iLDm2eFQIsoKJeOoflfZ4B93v2r7GtZPODqpnZtD0WYXXI4UEOLKdiLOsZBaxNSNT9EQu;
-        Expires=Sat, 02 Apr 2022 04:17:47 GMT; Path=/; SameSite=None
+      - AWSALB=pVlT3+YnjIUZLtFxps5BG1FPoCCXjkRfJtp937dAOFN2jrtgBn5ae9CZ/AoWQ72E7F27jcGkJ5BV64PfXV9dVWrtnFfYAlnobM4ybczYu046SSG02rfOfwwmfMbB;
+        Expires=Sun, 15 Jun 2025 20:53:28 GMT; Path=/
+      - AWSALBCORS=pVlT3+YnjIUZLtFxps5BG1FPoCCXjkRfJtp937dAOFN2jrtgBn5ae9CZ/AoWQ72E7F27jcGkJ5BV64PfXV9dVWrtnFfYAlnobM4ybczYu046SSG02rfOfwwmfMbB;
+        Expires=Sun, 15 Jun 2025 20:53:28 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,21 +50,14 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,12,21]],"date-time":"2021-12-21T08:07:21Z","timestamp":1640074041563},"reference-count":0,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T02:05:56Z","timestamp":1649124356664},"reference-count":0,"publisher":"Springer
         Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/12080.1874-1746","type":"journal","created":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"source":"Crossref","is-referenced-by-count":0,"title":["Theoretical
-        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
-        Modeling","Ecology"]}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:47 GMT
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,25]],"date-time":"2013-05-25T00:17:50Z","timestamp":1369441070000},"score":1,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/journal\/12080"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/12080.1874-1746","relation":{},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":[]}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:28 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125
@@ -71,9 +66,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -84,16 +79,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:47 GMT
+      - Sun, 08 Jun 2025 20:53:28 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '568'
+      - '1131'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=smDWGprTTW2ECf9AwoPiExZo5zTx4KHwGRHCJDBwWfbDRwKwCiuw+4XSWh8QxJJKIb8KHZOmA+tUtcikQj6nAJCszYwlQkQS6PScvErR1TWZ5GhR+O9W40txV/6W;
-        Expires=Sat, 02 Apr 2022 04:17:47 GMT; Path=/
-      - AWSALBCORS=smDWGprTTW2ECf9AwoPiExZo5zTx4KHwGRHCJDBwWfbDRwKwCiuw+4XSWh8QxJJKIb8KHZOmA+tUtcikQj6nAJCszYwlQkQS6PScvErR1TWZ5GhR+O9W40txV/6W;
-        Expires=Sat, 02 Apr 2022 04:17:47 GMT; Path=/; SameSite=None
+      - AWSALB=SZp2CLzYvw0WMgPoellSM7jqX3H5LCdfWqt9IjaQrnCV+GgNwhV19CnLGtcSZg8gEFF2dShpjJRhK5888o8//9kTzcmVHI31GWum2R8JJnjFpk3AdGc6eLJ2Qlfd;
+        Expires=Sun, 15 Jun 2025 20:53:28 GMT; Path=/
+      - AWSALBCORS=SZp2CLzYvw0WMgPoellSM7jqX3H5LCdfWqt9IjaQrnCV+GgNwhV19CnLGtcSZg8gEFF2dShpjJRhK5888o8//9kTzcmVHI31GWum2R8JJnjFpk3AdGc6eLJ2Qlfd;
+        Expires=Sun, 15 Jun 2025 20:53:28 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -111,21 +108,14 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2021,12,10]],"date-time":"2021-12-10T20:02:54Z","timestamp":1639166574230},"reference-count":0,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T03:52:22Z","timestamp":1648612342746},"reference-count":0,"publisher":"Springer
         Science and Business Media LLC","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/10452.1573-5125","type":"journal","created":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"source":"Crossref","is-referenced-by-count":0,"title":["Aquatic
-        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":["Aquatic
-        Science","Ecology, Evolution, Behavior and Systematics"]}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:47 GMT
+        Ecology"],"prefix":"10.1007","member":"297","container-title":[],"original-title":[],"language":"en","deposited":{"date-parts":[[2013,5,24]],"date-time":"2013-05-24T23:59:30Z","timestamp":1369439970000},"score":1,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/journal\/10452"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/10452.1573-5125","relation":{},"ISSN":["1386-2588","1573-5125"],"issn-type":[{"value":"1386-2588","type":"print"},{"value":"1573-5125","type":"electronic"}],"subject":[]}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:28 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1002%2F1096-9861(20010212)430:3%3C283::aid-cne1031%3E3.0.co;2-v
@@ -134,9 +124,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -147,16 +137,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:47 GMT
+      - Sun, 08 Jun 2025 20:53:29 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '2727'
+      - '10266'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=k97FY22G4QZAzXIflBMpgrgrVA46ZLmzwEikUvdjOEMVw2bRRwYT5poJpl3FI04x8N1HSzRWR/XH2JvIdMtI4Lsi1DoRBs2rhN2eY+eIo3sFMi5aJo5sv+AWVZD3;
-        Expires=Sat, 02 Apr 2022 04:17:47 GMT; Path=/
-      - AWSALBCORS=k97FY22G4QZAzXIflBMpgrgrVA46ZLmzwEikUvdjOEMVw2bRRwYT5poJpl3FI04x8N1HSzRWR/XH2JvIdMtI4Lsi1DoRBs2rhN2eY+eIo3sFMi5aJo5sv+AWVZD3;
-        Expires=Sat, 02 Apr 2022 04:17:47 GMT; Path=/; SameSite=None
+      - AWSALB=lZyyxcKEkJe3AHCjN9O2xVrWbHRU+E9Y44R/KckLepeAxHe3Io4zcCgV1CuegExNyD9rKsgRKKsZbhQfH67ZgiiVccbVeX+pPEqvDDVgKh8dQ8yjLbpm2LFr8IgN;
+        Expires=Sun, 15 Jun 2025 20:53:29 GMT; Path=/
+      - AWSALBCORS=lZyyxcKEkJe3AHCjN9O2xVrWbHRU+E9Y44R/KckLepeAxHe3Io4zcCgV1CuegExNyD9rKsgRKKsZbhQfH67ZgiiVccbVeX+pPEqvDDVgKh8dQ8yjLbpm2LFr8IgN;
+        Expires=Sun, 15 Jun 2025 20:53:29 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -174,18 +166,12 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2022,3,4]],"date-time":"2022-03-04T17:50:29Z","timestamp":1646416229534},"reference-count":42,"publisher":"Wiley","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":5356,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Comp. Neurol."],"published-print":{"date-parts":[[2001,2,12]]},"DOI":"10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","type":"journal-article","created":{"date-parts":[[2004,10,28]],"date-time":"2004-10-28T05:58:14Z","timestamp":1098943094000},"page":"283-305","source":"Crossref","is-referenced-by-count":74,"title":["Substance
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,9,7]],"date-time":"2024-09-07T09:18:30Z","timestamp":1725700710804},"reference-count":42,"publisher":"Wiley","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":5356,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Comp. Neurol."],"published-print":{"date-parts":[[2001,2,12]]},"DOI":"10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","type":"journal-article","created":{"date-parts":[[2004,10,28]],"date-time":"2004-10-28T05:58:14Z","timestamp":1098943094000},"page":"283-305","source":"Crossref","is-referenced-by-count":75,"title":["Substance
         P receptor expression by inhibitory interneurons of the rat hippocampus: Enhanced
         detection using improved immunocytochemical methods for the preservation and
         colocalization of GABA and other neuronal markers"],"prefix":"10.1002","volume":"430","author":[{"given":"Robert
@@ -221,7 +207,6 @@ http_interactions:
         Comp Neurol"},{"key":"BIB38","doi-asserted-by":"crossref","first-page":"65","DOI":"10.1002\/hipo.450040108","volume":"4","author":"Soriano","year":"1994","journal-title":"Hippocampus"},{"key":"BIB39","doi-asserted-by":"crossref","first-page":"8106","DOI":"10.1523\/JNEUROSCI.17-21-08106.1997","volume":"17","author":"Toth","year":"1997","journal-title":"J
         Neurosci"},{"key":"BIB40","doi-asserted-by":"crossref","first-page":"559","DOI":"10.1002\/(SICI)1098-1063(1997)7:5<559::AID-HIPO11>3.0.CO;2-#","volume":"7","author":"Wenzel","year":"1997","journal-title":"Hippocampus"},{"key":"BIB41","doi-asserted-by":"crossref","first-page":"97","DOI":"10.1016\/S0304-3940(97)00490-4","volume":"230","author":"Wiley","year":"1997","journal-title":"Neurosci
         Lett"},{"key":"BIB42","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0304-3940(99)00846-0","volume":"277","author":"Wiley","year":"1999","journal-title":"Neurosci
-        Lett"}],"container-title":["The Journal of Comparative Neurology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,1]],"date-time":"2021-07-01T10:35:12Z","timestamp":1625135712000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":42,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2001,2,12]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","relation":{},"ISSN":["0021-9967","1096-9861"],"issn-type":[{"value":"0021-9967","type":"print"},{"value":"1096-9861","type":"electronic"}],"subject":["General
-        Neuroscience"],"published":{"date-parts":[[2001]]}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:47 GMT
-recorded_with: VCR 6.1.0
+        Lett"}],"container-title":["The Journal of Comparative Neurology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,1]],"date-time":"2021-07-01T10:35:12Z","timestamp":1625135712000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/1096-9861(20010212)430:3<283::AID-CNE1031>3.0.CO;2-V"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":42,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2001,2,12]]}},"URL":"https:\/\/doi.org\/10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","relation":{},"ISSN":["0021-9967","1096-9861"],"issn-type":[{"value":"0021-9967","type":"print"},{"value":"1096-9861","type":"electronic"}],"subject":[],"published":{"date-parts":[[2001]]}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:29 GMT
+recorded_with: VCR 6.3.1

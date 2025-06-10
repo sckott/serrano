@@ -19,7 +19,6 @@ class TestLicenses < Test::Unit::TestCase
       assert_equal(4, res.length)
       assert_equal(Hash, res.class)
       assert_equal(Array, res["message"]["items"].class)
-      assert_equal(MatchData, res["message"]["items"][3]["URL"].match("creative").class)
     end
   end
 

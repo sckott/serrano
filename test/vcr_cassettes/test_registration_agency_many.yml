@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:41 GMT
+      - Sun, 08 Jun 2025 20:53:23 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=yzOvGeduSepAKKjTYzETiH7rMNe9U8zEM8dYfY68Eede6quQsk4sc0ZDmkHcceSSuFWaNyPZ59SpvHHQR0ZJ8SrHDQKHknL7SPW9eMNxJEC4OEgL+b+E//QojPbe;
-        Expires=Sat, 02 Apr 2022 04:17:41 GMT; Path=/
-      - AWSALBCORS=yzOvGeduSepAKKjTYzETiH7rMNe9U8zEM8dYfY68Eede6quQsk4sc0ZDmkHcceSSuFWaNyPZ59SpvHHQR0ZJ8SrHDQKHknL7SPW9eMNxJEC4OEgL+b+E//QojPbe;
-        Expires=Sat, 02 Apr 2022 04:17:41 GMT; Path=/; SameSite=None
+      - AWSALB=L12B7YeZ70te4HXI1Rh4OiDCEVm3aUlAeg4l77MQOC5Z1LJxFM9daOPm/dD+Ec5kG9O8/3zB++CN8CVCo3jUpNAlA7sMWkZrYkDyYLlzA0V10XMnLad/OM0KKUpx;
+        Expires=Sun, 15 Jun 2025 20:53:23 GMT; Path=/
+      - AWSALBCORS=L12B7YeZ70te4HXI1Rh4OiDCEVm3aUlAeg4l77MQOC5Z1LJxFM9daOPm/dD+Ec5kG9O8/3zB++CN8CVCo3jUpNAlA7sMWkZrYkDyYLlzA0V10XMnLad/OM0KKUpx;
+        Expires=Sun, 15 Jun 2025 20:53:23 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -48,18 +50,12 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1007\/12080.1874-1746","agency":{"id":"crossref","label":"Crossref"}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:41 GMT
+  recorded_at: Sun, 08 Jun 2025 20:53:23 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1007%2F10452.1573-5125/agency
@@ -68,9 +64,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -81,16 +77,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:42 GMT
+      - Sun, 08 Jun 2025 20:53:23 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=ZMIy5oUL4iBpvk5DlLgLVTiR/T58b0emt2hhQclJQcZ30lfljHM28PMM9Ws8EfPkCPIr+CrNdKzEH/dKOhgFGBTj2CpUitvcnhTdKuAjgh9QqtqA2X+QoVP7P4GW;
-        Expires=Sat, 02 Apr 2022 04:17:42 GMT; Path=/
-      - AWSALBCORS=ZMIy5oUL4iBpvk5DlLgLVTiR/T58b0emt2hhQclJQcZ30lfljHM28PMM9Ws8EfPkCPIr+CrNdKzEH/dKOhgFGBTj2CpUitvcnhTdKuAjgh9QqtqA2X+QoVP7P4GW;
-        Expires=Sat, 02 Apr 2022 04:17:42 GMT; Path=/; SameSite=None
+      - AWSALB=u1uPpXFnGzC1BOYLU00qeKVyXecJAfWyDYgxwPIqZ0JY68q+9B4IWP3h9UcFDXqfxOHUslL8iCEx1BmAGAv5i0BJT31B1GJZ2HyGp7oj9R51bkfGnc0+S2cd7u3U;
+        Expires=Sun, 15 Jun 2025 20:53:23 GMT; Path=/
+      - AWSALBCORS=u1uPpXFnGzC1BOYLU00qeKVyXecJAfWyDYgxwPIqZ0JY68q+9B4IWP3h9UcFDXqfxOHUslL8iCEx1BmAGAv5i0BJT31B1GJZ2HyGp7oj9R51bkfGnc0+S2cd7u3U;
+        Expires=Sun, 15 Jun 2025 20:53:23 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -108,18 +106,12 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1007\/10452.1573-5125","agency":{"id":"crossref","label":"Crossref"}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:42 GMT
+  recorded_at: Sun, 08 Jun 2025 20:53:23 GMT
 - request:
     method: get
     uri: https://api.crossref.org/works/10.1111%2F(issn)1442-9993/agency
@@ -128,9 +120,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -141,16 +133,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:42 GMT
+      - Sun, 08 Jun 2025 20:53:24 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=cmFM8yLR/CWvPPKv0sykIwg1Cd5A7IO8ip0AUxkSc7Tik9kVxg+psSsUeRpvRhm0IGdcbCmHhuDm1wDGxiG8e9cSGYSk/jFDN4QatAF42degRCmj7c3RYjL7zHdL;
-        Expires=Sat, 02 Apr 2022 04:17:42 GMT; Path=/
-      - AWSALBCORS=cmFM8yLR/CWvPPKv0sykIwg1Cd5A7IO8ip0AUxkSc7Tik9kVxg+psSsUeRpvRhm0IGdcbCmHhuDm1wDGxiG8e9cSGYSk/jFDN4QatAF42degRCmj7c3RYjL7zHdL;
-        Expires=Sat, 02 Apr 2022 04:17:42 GMT; Path=/; SameSite=None
+      - AWSALB=eLmRR9G9vxqobtYRfLbIJyS6MMoEUNZ3xDjimWL+QLAJ1s6mylUEjbuvqXIAZD8hfQ7S0HHlbXi5yC44E6lA5TLUJNRspTkIEP5zwCdkondY454hz9TW68fJvF2v;
+        Expires=Sun, 15 Jun 2025 20:53:24 GMT; Path=/
+      - AWSALBCORS=eLmRR9G9vxqobtYRfLbIJyS6MMoEUNZ3xDjimWL+QLAJ1s6mylUEjbuvqXIAZD8hfQ7S0HHlbXi5yC44E6lA5TLUJNRspTkIEP5zwCdkondY454hz9TW68fJvF2v;
+        Expires=Sun, 15 Jun 2025 20:53:24 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -168,16 +162,10 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1111\/(issn)1442-9993","agency":{"id":"crossref","label":"Crossref"}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:43 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Sun, 08 Jun 2025 20:53:24 GMT
+recorded_with: VCR 6.3.1

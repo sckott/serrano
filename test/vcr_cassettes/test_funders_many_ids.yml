@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.12.2 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.12.2 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:16:58 GMT
+      - Sun, 08 Jun 2025 20:51:01 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '928'
+      - '3237'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=zb/4uRP/p7TFfGbmVPiiK3wIPTzds+HDVfbCVtYlzO323eDg1lS50UetRzoQ7vLCsLqdk3Uo9EId1DbrvYeJTmpwNZPCKuqyNN3vcrLIVd/BvVt6FzmdH3lF7lag;
-        Expires=Sat, 02 Apr 2022 04:16:57 GMT; Path=/
-      - AWSALBCORS=zb/4uRP/p7TFfGbmVPiiK3wIPTzds+HDVfbCVtYlzO323eDg1lS50UetRzoQ7vLCsLqdk3Uo9EId1DbrvYeJTmpwNZPCKuqyNN3vcrLIVd/BvVt6FzmdH3lF7lag;
-        Expires=Sat, 02 Apr 2022 04:16:57 GMT; Path=/; SameSite=None
+      - AWSALB=xbG2vpSj3Hq9VSZNTj2tteRR7LMaZznHrwxVBMUjQgYkeR9KwzFsqULGxs0RlSx0m0aeTkHgUZiMcd5CtW2dtgt6M84RJCV79BMeBvFj+oPJVryuDSO4XQqmec6r;
+        Expires=Sun, 15 Jun 2025 20:51:01 GMT; Path=/
+      - AWSALBCORS=xbG2vpSj3Hq9VSZNTj2tteRR7LMaZznHrwxVBMUjQgYkeR9KwzFsqULGxs0RlSx0m0aeTkHgUZiMcd5CtW2dtgt6M84RJCV79BMeBvFj+oPJVryuDSO4XQqmec6r;
+        Expires=Sun, 15 Jun 2025 20:51:01 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,31 +50,30 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100010608":"Office
-        of Inspector General","100000179":"Office of the Director","100014411":"Center
-        for Unmanned Aircraft Systems","100005716":"National Science Board","100000081":"Directorate
-        for Education and Human Resources","100000083":"Directorate for Computer and
-        Information Science and Engineering","100015815":"Power Systems Engineering
-        Research Center","100005441":"Office of Budget, Finance and Award Management","100000001":"National
-        Science Foundation","100000076":"Directorate for Biological Sciences","100000084":"Directorate
-        for Engineering","100014073":"National Nanotechnology Coordinating Office","100014591":"BioXFEL
-        Science and Technology Center","100000088":"Directorate for Social, Behavioral
-        and Economic Sciences","100005447":"Office of Information and Resource Management","100000086":"Directorate
-        for Mathematical and Physical Sciences","100000085":"Directorate for Geosciences","100014072":"National
-        Coordination Office"},"replaced-by":[],"work-count":271778,"name":"National
-        Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005553","100005554","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100015815"],"descendant-work-count":338530,"id":"100000001","tokens":["national","science","foundation","usa","nsf","nsf","us","nsf"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100010608":{},"100000179":{"more":true},"100014411":{},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100015815":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100000085":{"more":true},"100014072":{}}},"alt-names":["USA
-        NSF","NSF","US NSF"],"location":"United States"}}'
-  recorded_at: Sat, 26 Mar 2022 04:16:58 GMT
+      string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100014074":"Integrative
+        and Collaborative Education and Research","100010608":"Office of Inspector
+        General","100000179":"Office of the Director","100014411":"Center for Unmanned
+        Aircraft Systems","100020475":"Directorate for STEM Education","100020427":"Directorate
+        for Technology, Innovation and Partnerships","100005716":"National Science
+        Board","100000081":"Directorate for Education and Human Resources","100000083":"Directorate
+        for Computer and Information Science and Engineering","100031042":"Next Generation
+        Network for Neuroscience","100005441":"Office of Budget, Finance and Award
+        Management","100000001":"National Science Foundation","100000076":"Directorate
+        for Biological Sciences","100000084":"Directorate for Engineering","100014073":"National
+        Nanotechnology Coordinating Office","100014591":"BioXFEL Science and Technology
+        Center","100000088":"Directorate for Social, Behavioral and Economic Sciences","100005447":"Office
+        of Information and Resource Management","100000086":"Directorate for Mathematical
+        and Physical Sciences","100023581":"National Science Foundation Graduate Research
+        Fellowship Program","100000085":"Directorate for Geosciences","100014072":"National
+        Coordination Office"},"replaced-by":[],"work-count":389447,"name":"National
+        Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005553","100005554","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100020427","100020428","100020429","100020474","100020475","100020476","100022807","100023581","100024040","100031042","100031424"],"descendant-work-count":483776,"id":"100000001","tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","us","nsf","nsf"],"replaces":[],"uri":"https:\/\/doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100020475":{"more":true},"100020427":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100031042":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100023581":{},"100000085":{"more":true},"100014072":{}}},"alt-names":["U.S.
+        National Science Foundation","USA NSF","US NSF","NSF"],"location":"United
+        States"}}'
+  recorded_at: Sun, 08 Jun 2025 20:51:01 GMT
 - request:
     method: get
     uri: https://api.crossref.org/funders/10.13039%2F100000015
@@ -81,9 +82,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.12.2 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.12.2 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -94,16 +95,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:16:58 GMT
+      - Sun, 08 Jun 2025 20:51:01 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1596'
+      - '5742'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=2yS5b+wCoj/CJNJ+FAMClLTGiHU5xkxK1kUTi3CXKAMiZTkoAiXiV6dDSN1MSgFEwydq8HzWpRLRfRgy7Nb9l4Svk3YS3KwmCB77Mm382NtyY9NmK+X59kgy0EOp;
-        Expires=Sat, 02 Apr 2022 04:16:58 GMT; Path=/
-      - AWSALBCORS=2yS5b+wCoj/CJNJ+FAMClLTGiHU5xkxK1kUTi3CXKAMiZTkoAiXiV6dDSN1MSgFEwydq8HzWpRLRfRgy7Nb9l4Svk3YS3KwmCB77Mm382NtyY9NmK+X59kgy0EOp;
-        Expires=Sat, 02 Apr 2022 04:16:58 GMT; Path=/; SameSite=None
+      - AWSALB=xZmOsAK+h7N0TDfRTf+rxxblaOolnXM04UvS+BSw9LRS87ZPDhsTAFGTWqxNA/cXBDF76tabEcoZn4URqw372SanpLZJ5LfITMH7L/7CzmBbn5MBPvZwcq/LqyVj;
+        Expires=Sun, 15 Jun 2025 20:51:01 GMT; Path=/
+      - AWSALBCORS=xZmOsAK+h7N0TDfRTf+rxxblaOolnXM04UvS+BSw9LRS87ZPDhsTAFGTWqxNA/cXBDF76tabEcoZn4URqw372SanpLZJ5LfITMH7L/7CzmBbn5MBPvZwcq/LqyVj;
+        Expires=Sun, 15 Jun 2025 20:51:01 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -121,14 +124,8 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
       string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100017865":"Office
@@ -137,27 +134,29 @@ http_interactions:
         Assessments","100016186":"Idaho Operations Office, U.S. Department of Energy","100017268":"Office
         of Technology Transitions","100006229":"Oak Ridge Institute for Science and
         Education","100000015":"U.S. Department of Energy","100017271":"Office of
-        Indian Energy Policy and Programs","100013165":"National Energy Technology
-        Laboratory","100006138":"Office of Environmental Management","100006133":"Advanced
+        Indian Energy Policy and Programs","100006138":"Office of Environmental Management","100006133":"Advanced
         Research Projects Agency - Energy","100007783":"Office of International Affairs","100006174":"Office
         of Under Secretary for Science","100015704":"Bonneville Power Administration","100006132":"Office
-        of Science","100006113":"Office of Under Secretary","100006131":"Office of
-        Public Affairs","100006124":"Office of the Chief Information Officer","100006147":"Office
-        of Nuclear Energy","100006122":"Office of Environment, Health, Safety, and
-        Security","100006150":"Office of Policy and International Affairs","100007002":"Small
-        Business Innovative Research and Small Business Technology Transfer","100006120":"Office
-        of Fossil Energy","100016153":"Office of Electricity","100015814":"Great Lakes
-        Bioenergy Research Center","100006162":"Energy Information Administration","100006157":"Office
-        of Secretary of Energy","100013178":"Environmental Management Consolidated
-        Business Center","100006144":"Office of Intelligence and Counterintelligence","100017269":"Office
-        of Policy","100006186":"Office of Legacy Management","100006143":"Office of
-        Inspector General","100006121":"Office of the General Counsel","100017266":"Artificial
+        of Science","100006113":"Office of Under Secretary for Nuclear Security","100020312":"Office
+        of Fossil Energy and Carbon Management","100006131":"Office of Public Affairs","100006124":"Office
+        of the Chief Information Officer, U.S. Department of Energy","100006147":"Office
+        of Nuclear Energy","100006122":"Office of Health, Safety, and Security","100006150":"Office
+        of Policy and International Affairs","100006120":"Office of Fossil Energy","100016153":"Office
+        of Electricity","100015814":"Great Lakes Bioenergy Research Center","100006162":"Energy
+        Information Administration","100006157":"Office of Secretary of Energy","100013178":"Environmental
+        Management Consolidated Business Center","100006144":"Office of Intelligence
+        and Counterintelligence","100017269":"Office of Policy","100006186":"Office
+        of Legacy Management","100006143":"Office of Inspector General","100006121":"Office
+        of the General Counsel, U.S. Department of Energy","100017266":"Artificial
         Intelligence and Technology Office","100006158":"Office of Congressional and
         Intergovernmental Affairs","100006168":"National Nuclear Security Administration","100006134":"Office
-        of Energy Efficiency and Renewable Energy","100017270":"Office of Under Secretary
-        for Science and Energy"},"replaced-by":[],"work-count":89387,"name":"U.S.
-        Department of Energy","descendants":["100006113","100006114","100006115","100006116","100006117","100006118","100006119","100006120","100006121","100006122","100006123","100006124","100006126","100006127","100006129","100006130","100006131","100006132","100006133","100006134","100006135","100006136","100006137","100006138","100006139","100006140","100006141","100006142","100006143","100006144","100006145","100006146","100006147","100006148","100006149","100006150","100006151","100006157","100006158","100006159","100006160","100006161","100006162","100006163","100006164","100006165","100006166","100006167","100006168","100006169","100006170","100006171","100006172","100006173","100006174","100006175","100006176","100006177","100006178","100006179","100006180","100006181","100006182","100006183","100006184","100006185","100006186","100006187","100006188","100006189","100006190","100006191","100006192","100006200","100006201","100006206","100006207","100006208","100006209","100006210","100006224","100006226","100006227","100006228","100006229","100006230","100006231","100006233","100006234","100006235","100006335","100006998","100006999","100007000","100007001","100007002","100007783","100008902","100010268","100011030","100011031","100011659","100011660","100011661","100011662","100011663","100011664","100011665","100011680","100011681","100011682","100011735","100011883","100011884","100013055","100013145","100013165","100013178","100014456","100014492","100015417","100015704","100015814","100016153","100016186","100017258","100017259","100017260","100017261","100017262","100017263","100017264","100017265","100017266","100017267","100017268","100017269","100017270","100017271","100017272","100017273","100017274","100017275","100017276","100017280","100017281","100017282","100017283","100017284","100017285","100017286","100017535","100017613","100017865","100018075"],"descendant-work-count":143983,"id":"100000015","tokens":["us","department","of","energy","doe","united","states","department","of","energy","department","of","energy","usdoe","energy","department","energygov","usadoe","us","doe"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000015","hierarchy":{"100000015":{"100017865":{},"100006130":{"more":true},"100017267":{},"100016186":{},"100017268":{},"100006229":{},"100017271":{},"100013165":{},"100006138":{"more":true},"100006133":{"more":true},"100007783":{"more":true},"100006174":{},"100015704":{},"100006132":{"more":true},"100006113":{},"100006131":{"more":true},"100006124":{"more":true},"100006147":{"more":true},"100006122":{"more":true},"100006150":{},"100007002":{},"100006120":{"more":true},"100016153":{"more":true},"100015814":{},"100006162":{"more":true},"100006157":{},"100013178":{},"100006144":{"more":true},"100017269":{},"100006186":{"more":true},"100006143":{"more":true},"100006121":{"more":true},"100017266":{},"100006158":{"more":true},"100006168":{"more":true},"100006134":{"more":true},"100017270":{}}},"alt-names":["DOE","United
-        States Department of Energy","Department of Energy","USDOE","Energy Department","ENERGY.GOV","USADOE","US
-        DOE"],"location":"United States"}}'
-  recorded_at: Sat, 26 Mar 2022 04:16:58 GMT
-recorded_with: VCR 6.1.0
+        of Energy Efficiency and Renewable Energy","100017279":"Office of Environment,
+        Health, Safety and Security","100006178":"Office of Federal Energy Management
+        Programs","100017270":"Office of Under Secretary for Science and Innovation","100031047":"Office
+        of State and Community Energy Programs"},"replaced-by":[],"work-count":126007,"name":"U.S.
+        Department of Energy","descendants":["100006113","100006114","100006115","100006116","100006117","100006118","100006119","100006120","100006121","100006122","100006123","100006124","100006126","100006127","100006129","100006130","100006131","100006132","100006133","100006134","100006135","100006136","100006137","100006138","100006139","100006140","100006141","100006142","100006143","100006144","100006145","100006146","100006147","100006148","100006149","100006150","100006151","100006157","100006158","100006159","100006160","100006161","100006162","100006163","100006164","100006166","100006167","100006168","100006169","100006170","100006171","100006172","100006173","100006174","100006175","100006176","100006177","100006178","100006179","100006180","100006181","100006182","100006183","100006184","100006185","100006186","100006187","100006188","100006189","100006190","100006191","100006192","100006200","100006201","100006206","100006207","100006208","100006209","100006210","100006224","100006226","100006227","100006228","100006229","100006230","100006231","100006233","100006234","100006235","100006335","100006998","100006999","100007000","100007783","100008902","100010268","100011030","100011031","100011659","100011660","100011661","100011662","100011663","100011664","100011665","100011680","100011681","100011682","100011735","100011883","100011884","100013055","100013145","100013165","100013178","100014456","100014492","100015417","100015704","100015814","100016153","100016186","100017258","100017259","100017260","100017261","100017262","100017263","100017264","100017265","100017266","100017267","100017268","100017269","100017270","100017271","100017272","100017273","100017274","100017275","100017276","100017277","100017278","100017279","100017280","100017281","100017282","100017283","100017284","100017285","100017286","100017865","100018075","100019109","100019666","100020312","100020315","100020316","100021126","100021127","100021459","100021876","100022808","100022964","100023678","100031047","100031425","100031426","100031427","100031428"],"descendant-work-count":212047,"id":"100000015","tokens":["us","department","of","energy","us","department","of","energy","doe","united","states","department","of","energy","department","of","energy","usdoe","energy","department","energygov","usadoe"],"replaces":[],"uri":"https:\/\/doi.org\/10.13039\/100000015","hierarchy":{"100000015":{"100017865":{"more":true},"100006130":{"more":true},"100017267":{},"100016186":{},"100017268":{},"100006229":{},"100017271":{},"100006138":{"more":true},"100006133":{},"100007783":{"more":true},"100006174":{},"100015704":{},"100006132":{"more":true},"100006113":{},"100020312":{"more":true},"100006131":{"more":true},"100006124":{"more":true},"100006147":{"more":true},"100006122":{"more":true},"100006150":{},"100006120":{"more":true},"100016153":{"more":true},"100015814":{},"100006162":{"more":true},"100006157":{},"100013178":{},"100006144":{"more":true},"100017269":{},"100006186":{"more":true},"100006143":{"more":true},"100006121":{"more":true},"100017266":{},"100006158":{"more":true},"100006168":{"more":true},"100006134":{"more":true},"100017279":{"more":true},"100006178":{},"100017270":{},"100031047":{"more":true}}},"alt-names":["US
+        Department of Energy","DOE","United States Department of Energy","Department
+        of Energy","USDOE","Energy Department","ENERGY.GOV","USADOE"],"location":"United
+        States"}}'
+  recorded_at: Sun, 08 Jun 2025 20:51:01 GMT
+recorded_with: VCR 6.3.1

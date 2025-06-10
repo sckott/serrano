@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:45 GMT
+      - Sun, 08 Jun 2025 20:53:26 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '2727'
+      - '10266'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=JDyZy1EoPc6PKr5YWXvjsIo+qoIk6os9xmyrfeV38MJVWfIRmuf5w5NchgXKaYfQU4bDdqad4VdwQzQpfZX4mv3oWwmTdT3Oexz2/1k0QBVGJsUAlaOvBm9+qsC+;
-        Expires=Sat, 02 Apr 2022 04:17:45 GMT; Path=/
-      - AWSALBCORS=JDyZy1EoPc6PKr5YWXvjsIo+qoIk6os9xmyrfeV38MJVWfIRmuf5w5NchgXKaYfQU4bDdqad4VdwQzQpfZX4mv3oWwmTdT3Oexz2/1k0QBVGJsUAlaOvBm9+qsC+;
-        Expires=Sat, 02 Apr 2022 04:17:45 GMT; Path=/; SameSite=None
+      - AWSALB=cIz70Qv0ncgquQ2pngbBhV2/3qr3oyUgtEUVQHEUU0ZztWMUaV2sTTnTTts6LAAnngZCcdpGn6+mq5kr6L1sKBs5tDop814eQsETiR0s0GqeD8jFt008jlYt7gqC;
+        Expires=Sun, 15 Jun 2025 20:53:26 GMT; Path=/
+      - AWSALBCORS=cIz70Qv0ncgquQ2pngbBhV2/3qr3oyUgtEUVQHEUU0ZztWMUaV2sTTnTTts6LAAnngZCcdpGn6+mq5kr6L1sKBs5tDop814eQsETiR0s0GqeD8jFt008jlYt7gqC;
+        Expires=Sun, 15 Jun 2025 20:53:26 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,18 +50,12 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2022,3,4]],"date-time":"2022-03-04T17:50:29Z","timestamp":1646416229534},"reference-count":42,"publisher":"Wiley","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":5356,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Comp. Neurol."],"published-print":{"date-parts":[[2001,2,12]]},"DOI":"10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","type":"journal-article","created":{"date-parts":[[2004,10,28]],"date-time":"2004-10-28T05:58:14Z","timestamp":1098943094000},"page":"283-305","source":"Crossref","is-referenced-by-count":74,"title":["Substance
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,9,7]],"date-time":"2024-09-07T09:18:30Z","timestamp":1725700710804},"reference-count":42,"publisher":"Wiley","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":5356,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Comp. Neurol."],"published-print":{"date-parts":[[2001,2,12]]},"DOI":"10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","type":"journal-article","created":{"date-parts":[[2004,10,28]],"date-time":"2004-10-28T05:58:14Z","timestamp":1098943094000},"page":"283-305","source":"Crossref","is-referenced-by-count":75,"title":["Substance
         P receptor expression by inhibitory interneurons of the rat hippocampus: Enhanced
         detection using improved immunocytochemical methods for the preservation and
         colocalization of GABA and other neuronal markers"],"prefix":"10.1002","volume":"430","author":[{"given":"Robert
@@ -95,7 +91,6 @@ http_interactions:
         Comp Neurol"},{"key":"BIB38","doi-asserted-by":"crossref","first-page":"65","DOI":"10.1002\/hipo.450040108","volume":"4","author":"Soriano","year":"1994","journal-title":"Hippocampus"},{"key":"BIB39","doi-asserted-by":"crossref","first-page":"8106","DOI":"10.1523\/JNEUROSCI.17-21-08106.1997","volume":"17","author":"Toth","year":"1997","journal-title":"J
         Neurosci"},{"key":"BIB40","doi-asserted-by":"crossref","first-page":"559","DOI":"10.1002\/(SICI)1098-1063(1997)7:5<559::AID-HIPO11>3.0.CO;2-#","volume":"7","author":"Wenzel","year":"1997","journal-title":"Hippocampus"},{"key":"BIB41","doi-asserted-by":"crossref","first-page":"97","DOI":"10.1016\/S0304-3940(97)00490-4","volume":"230","author":"Wiley","year":"1997","journal-title":"Neurosci
         Lett"},{"key":"BIB42","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0304-3940(99)00846-0","volume":"277","author":"Wiley","year":"1999","journal-title":"Neurosci
-        Lett"}],"container-title":["The Journal of Comparative Neurology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,1]],"date-time":"2021-07-01T10:35:12Z","timestamp":1625135712000},"score":1,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":42,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2001,2,12]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","relation":{},"ISSN":["0021-9967","1096-9861"],"issn-type":[{"value":"0021-9967","type":"print"},{"value":"1096-9861","type":"electronic"}],"subject":["General
-        Neuroscience"],"published":{"date-parts":[[2001]]}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:45 GMT
-recorded_with: VCR 6.1.0
+        Lett"}],"container-title":["The Journal of Comparative Neurology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/1096-9861(20010212)430:3%3C283::AID-CNE1031%3E3.0.CO;2-V","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,1]],"date-time":"2021-07-01T10:35:12Z","timestamp":1625135712000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/1096-9861(20010212)430:3<283::AID-CNE1031>3.0.CO;2-V"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":42,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2001,2,12]]}},"URL":"https:\/\/doi.org\/10.1002\/1096-9861(20010212)430:3<283::aid-cne1031>3.0.co;2-v","relation":{},"ISSN":["0021-9967","1096-9861"],"issn-type":[{"value":"0021-9967","type":"print"},{"value":"1096-9861","type":"electronic"}],"subject":[],"published":{"date-parts":[[2001]]}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:26 GMT
+recorded_with: VCR 6.3.1

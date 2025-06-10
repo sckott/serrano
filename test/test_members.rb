@@ -49,7 +49,7 @@ class TestMembers < Test::Unit::TestCase
   def test_members_filter_handler
     VCR.use_cassette("test_members_filter_handler") do
       exception = assert_raise(Serrano::BadRequest) { Serrano.members(filter: {has_funder: true, has_full_text: true}) }
-      assert_equal("\n   GET https://api.crossref.org/members?filter=has-funder%3Atrue%2Chas-full-text%3Atrue\n   Status 400: Filter has-full-text specified but there is no such filter for this route. Valid filters for this route are: prefix, has-public-references, reference-visibility, backfile-doi-count, current-doi-count; Filter has-funder specified but there is no such filter for this route. Valid filters for this route are: prefix, has-public-references, reference-visibility, backfile-doi-count, current-doi-count",
+      assert_equal("\n   GET https://api.crossref.org/members?filter=has-funder%3Atrue%2Chas-full-text%3Atrue\n   Status 400: Filter has-full-text specified but there is no such filter for this route. Valid filters for this route are: prefix, backfile-doi-count, current-doi-count; Filter has-funder specified but there is no such filter for this route. Valid filters for this route are: prefix, backfile-doi-count, current-doi-count",
         exception.message)
     end
   end

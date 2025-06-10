@@ -8,11 +8,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -21,43 +21,44 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:16:54 GMT
+      - Sun, 08 Jun 2025 20:52:40 GMT
       Content-Type:
       - text/html;charset=utf-8
-      Content-Length:
-      - '233'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
+      Cf-Ray:
+      - 94cb4636c817683a-SEA
       Location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       Vary:
       - Accept
+      - Origin
       Expires:
-      - Sat, 26 Mar 2022 04:44:51 GMT
+      - Sun, 08 Jun 2025 20:55:28 GMT
       Permissions-Policy:
       - interest-cohort=(),browsing-topics=()
       Cf-Cache-Status:
       - DYNAMIC
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=87i7zNoAiKLEIjEmNMtDp6ISYit8Ep%2F6R9wQITXoJi6oTAbtcwgUOB11%2BEQ286v8SrcCgRWI%2BQuip4PQhrOxvFI5RgNvIj4hwSBtHtYzU%2FJVq%2BAev9%2FpJ2c%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bAsxjOuJQgtfKFC267XXc1mh22ztxPCh28RFS3RzDDGxWBXDWiulTYdDXAKbIyx37nzXpD%2B6kFyS%2FMubPciVF62C6zvYnXj8y6F0oXPqXMvGJOG%2B6abHRCA%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Server:
       - cloudflare
-      Cf-Ray:
-      - 6f1d12d3caa06805-SEA
       Alt-Svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      - h3=":443"; ma=86400
+      Server-Timing:
+      - cfL4;desc="?proto=TCP&rtt=10163&min_rtt=9959&rtt_var=4143&sent=5&recv=8&lost=0&retrans=0&sent_bytes=3902&recv_bytes=1949&delivery_rate=374741&cwnd=251&unsent_bytes=0&cid=94a794e49d6ae577&ts=108&x=0"
     body:
       encoding: UTF-8
       string: |-
         <html><head><title>Handle Redirect</title></head>
         <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>
-  recorded_at: Sat, 26 Mar 2022 04:16:54 GMT
+  recorded_at: Sun, 08 Jun 2025 20:52:40 GMT
 - request:
     method: get
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
@@ -66,11 +67,11 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept:
       - application/x-bibtex
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -79,21 +80,20 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:16:54 GMT
+      - Sun, 08 Jun 2025 20:52:40 GMT
       Content-Type:
       - application/x-bibtex
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=/mJ5YkT1tOeZnsKPrElQE3iulprRqW1+S+MPN6zlpwAtTZbyRFYRL+RR7nr2gVeM/hOkgfIHXRYMQueoZT9PQF3LWyKBlh1zwsxlegZjpcI42H7fsyjYCw43Fkum;
-        Expires=Sat, 02 Apr 2022 04:16:54 GMT; Path=/
-      - AWSALBCORS=/mJ5YkT1tOeZnsKPrElQE3iulprRqW1+S+MPN6zlpwAtTZbyRFYRL+RR7nr2gVeM/hOkgfIHXRYMQueoZT9PQF3LWyKBlh1zwsxlegZjpcI42H7fsyjYCw43Fkum;
-        Expires=Sat, 02 Apr 2022 04:16:54 GMT; Path=/; SameSite=None
+      - AWSALB=3Roy2CbzMQMpnWb2hLyETu+t6SinbpRslOqbfoICHY53RdNEbwDhE3gKeX4zTTkM6B/ooUkegHrkHPyHLTokHZnyOuOJywpI/hClbRAbIpd5O1l9/t+gm2Pacs8X;
+        Expires=Sun, 15 Jun 2025 20:52:40 GMT; Path=/
+      - AWSALBCORS=3Roy2CbzMQMpnWb2hLyETu+t6SinbpRslOqbfoICHY53RdNEbwDhE3gKeX4zTTkM6B/ooUkegHrkHPyHLTokHZnyOuOJywpI/hClbRAbIpd5O1l9/t+gm2Pacs8X;
+        Expires=Sun, 15 Jun 2025 20:52:40 GMT; Path=/; SameSite=None
       Vary:
       - Accept
-      Link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
-        version="vor"; rel="item"
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -109,21 +109,11 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
-      encoding: UTF-8
-      string: "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl
-        = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\tmonth
-        = {aug},\n\tpublisher = {American Association for the Advancement of Science
-        ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
-        = {Henry S. Frank},\n\ttitle = {The Structure of Ordinary Water},\n\tjournal
-        = {Science}\n}"
-  recorded_at: Sat, 26 Mar 2022 04:16:54 GMT
-recorded_with: VCR 6.1.0
+      encoding: ASCII-8BIT
+      string: !binary |-
+        IEBhcnRpY2xle0ZyYW5rXzE5NzAsIHRpdGxlPXtUaGUgU3RydWN0dXJlIG9mIE9yZGluYXJ5IFdhdGVyOiBOZXcgZGF0YSBhbmQgaW50ZXJwcmV0YXRpb25zIGFyZSB5aWVsZGluZyBuZXcgaW5zaWdodHMgaW50byB0aGlzIGZhc2NpbmF0aW5nIHN1YnN0YW5jZS59LCB2b2x1bWU9ezE2OX0sIElTU049ezEwOTUtOTIwM30sIHVybD17aHR0cDovL2R4LmRvaS5vcmcvMTAuMTEyNi9zY2llbmNlLjE2OS4zOTQ2LjYzNX0sIERPST17MTAuMTEyNi9zY2llbmNlLjE2OS4zOTQ2LjYzNX0sIG51bWJlcj17Mzk0Nn0sIGpvdXJuYWw9e1NjaWVuY2V9LCBwdWJsaXNoZXI9e0FtZXJpY2FuIEFzc29jaWF0aW9uIGZvciB0aGUgQWR2YW5jZW1lbnQgb2YgU2NpZW5jZSAoQUFBUyl9LCBhdXRob3I9e0ZyYW5rLCBIZW5yeSBTLn0sIHllYXI9ezE5NzB9LCBtb250aD1hdWcsIHBhZ2VzPXs2MzXigJM2NDF9IH0K
+  recorded_at: Sun, 08 Jun 2025 20:52:40 GMT
+recorded_with: VCR 6.3.1

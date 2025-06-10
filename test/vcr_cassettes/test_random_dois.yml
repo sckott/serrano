@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:35 GMT
+      - Sun, 08 Jun 2025 20:53:21 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '15602'
+      - '53322'
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=pRRpysKh8KhVTKD7rdEuDX0vIx3wSaH1naJYsMtw5zSEXRk+5F7XH1JCkxvpvVjgja6r8KNIjwcq6jQfOCt/p9FgkUlVrGRP8+FuyRiJO6EeWyIqQQri7MVBFSpw;
-        Expires=Sat, 02 Apr 2022 04:17:35 GMT; Path=/
-      - AWSALBCORS=pRRpysKh8KhVTKD7rdEuDX0vIx3wSaH1naJYsMtw5zSEXRk+5F7XH1JCkxvpvVjgja6r8KNIjwcq6jQfOCt/p9FgkUlVrGRP8+FuyRiJO6EeWyIqQQri7MVBFSpw;
-        Expires=Sat, 02 Apr 2022 04:17:35 GMT; Path=/; SameSite=None
+      - AWSALB=s3MMW2zo6C9TAGep+g+2JLTKLMs/gVwKaRiNVOIDe9pj+K9POabphfGvaLVgy/PMMWqR9aQTN1uIs2QKtcIgEiYVaurc4cCse2fx4KdrTgiDUnzX5LPiKfibzA8Q;
+        Expires=Sun, 15 Jun 2025 20:53:20 GMT; Path=/
+      - AWSALBCORS=s3MMW2zo6C9TAGep+g+2JLTKLMs/gVwKaRiNVOIDe9pj+K9POabphfGvaLVgy/PMMWqR9aQTN1uIs2QKtcIgEiYVaurc4cCse2fx4KdrTgiDUnzX5LPiKfibzA8Q;
+        Expires=Sun, 15 Jun 2025 20:53:20 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -48,391 +50,300 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2021,12,10]],"date-time":"2021-12-10T16:43:10Z","timestamp":1639154590933},"reference-count":2,"publisher":"Oxford
-        University Press (OUP)","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Progress
-        of Theoretical Physics"],"published-print":{"date-parts":[[1989,6,1]]},"DOI":"10.1143\/ptp.81.1095","type":"journal-article","created":{"date-parts":[[2005,12,14]],"date-time":"2005-12-14T07:50:26Z","timestamp":1134546626000},"page":"1095-1098","source":"Crossref","is-referenced-by-count":0,"title":["Techniaxion"],"prefix":"10.1093","volume":"81","author":[{"given":"K.-i.","family":"Matumoto","sequence":"first","affiliation":[]}],"member":"286","reference":[{"key":"5_45659925","first-page":"199","volume":"B104","year":"1981","journal-title":"PHYS
-        LETT"},{"key":"7_45659926","first-page":"313","volume":"B207","year":"1982","journal-title":"NUCL
-        PHYS"}],"container-title":["Progress of Theoretical Physics"],"language":"en","link":[{"URL":"http:\/\/academic.oup.com\/ptp\/article-pdf\/81\/6\/1095\/6866453\/81-6-1095.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,8,24]],"date-time":"2017-08-24T07:37:41Z","timestamp":1503560261000},"score":0.0,"issued":{"date-parts":[[1989,6,1]]},"references-count":2,"journal-issue":{"issue":"6","published-print":{"date-parts":[[1989,6,1]]}},"URL":"http:\/\/dx.doi.org\/10.1143\/ptp.81.1095","ISSN":["0033-068X","1347-4081"],"issn-type":[{"value":"0033-068X","type":"print"},{"value":"1347-4081","type":"electronic"}],"subject":["Physics
-        and Astronomy (miscellaneous)"],"published":{"date-parts":[[1989,6,1]]}},{"indexed":{"date-parts":[[2021,12,22]],"date-time":"2021-12-22T18:52:23Z","timestamp":1640199143721},"reference-count":0,"publisher":"VLDB
-        Endowment","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Proc.
-        VLDB Endow."],"published-print":{"date-parts":[[2017,10,1]]},"DOI":"10.14778\/3167892","type":"journal-issue","created":{"date-parts":[[2017,12,12]],"date-time":"2017-12-12T18:33:38Z","timestamp":1513103618000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.14778","volume":"11","member":"5777","container-title":["Proceedings
-        of the VLDB Endowment"],"language":"en","deposited":{"date-parts":[[2017,12,12]],"date-time":"2017-12-12T18:33:38Z","timestamp":1513103618000},"score":0.0,"issued":{"date-parts":[[2017,10,1]]},"references-count":0,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2017,10,1]]}},"URL":"http:\/\/dx.doi.org\/10.14778\/3167892","ISSN":["2150-8097"],"issn-type":[{"value":"2150-8097","type":"print"}],"subject":["General
-        Medicine"],"published":{"date-parts":[[2017,10,1]]}},{"indexed":{"date-parts":[[2021,12,11]],"date-time":"2021-12-11T02:33:52Z","timestamp":1639190032840},"reference-count":30,"publisher":"Emerald","issue":"5","license":[{"start":{"date-parts":[[2018,8,2]],"date-time":"2018-08-02T00:00:00Z","timestamp":1533168000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.emerald.com\/insight\/site-policies"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["EC"],"published-print":{"date-parts":[[2018,9,5]]},"abstract":"<jats:sec>\n<jats:title
-        content-type=\"abstract-subheading\">Purpose<\/jats:title>\n<jats:p>This paper
-        aims to automatically derive a 2D parametric model of the main characteristic
-        lines of a car from images, blueprints or hand-made sketches of its side view.
-        Then this model can be used for the further computer-aided design manipulation
-        starting from images of the side view of a car.<\/jats:p>\n<\/jats:sec>\n<jats:sec>\n<jats:title
-        content-type=\"abstract-subheading\">Design\/methodology\/approach<\/jats:title>\n<jats:p>The
-        method combines different image edge detection techniques and edge removal
-        processes with optimization techniques according to local and global constraints
-        specific of the single curves to automatically construct a precise parametric
-        model of the main character lines of a car from images. First, process the
-        car image to compute the most important curves and then warp a car template
-        model to match its feature points and curves with the ones detected in the
-        image.<\/jats:p>\n<\/jats:sec>\n<jats:sec>\n<jats:title content-type=\"abstract-subheading\">Findings<\/jats:title>\n<jats:p>The
-        paper provides method to construct parametric model from an image using maximum
-        cover ratio to the edge points obtained by state-of-the-art edge detection
-        algorithms. A feature points\u2019 organization mechanism produces quadric
-        curves to express feature curves of a product.<\/jats:p>\n<\/jats:sec>\n<jats:sec>\n<jats:title
-        content-type=\"abstract-subheading\">Research limitations\/implications<\/jats:title>\n<jats:p>The
-        robustness of the presented method depends on the completeness of edge detection
-        results and the accuracy of some key points\u2019 registration result, so
-        if the image is not good, the result cannot be trusted. Only side-view is
-        considered in this paper. Additional limits in the process regard the side
-        view verification: pictures of the front or rear view can be wrongly classified
-        as lateral ones when they contain round lights.<\/jats:p>\n<\/jats:sec>\n<jats:sec>\n<jats:title
-        content-type=\"abstract-subheading\">Practical implications<\/jats:title>\n<jats:p>This
-        program enables designers to convert the image to geometric parametric model
-        directly.<\/jats:p>\n<\/jats:sec>\n<jats:sec>\n<jats:title content-type=\"abstract-subheading\">Originality\/value<\/jats:title>\n<jats:p>The
-        method is applicable to shaded pictures, sketches and blue prints of the side
-        view of a car. It can process a database of car images in a batch mode or
-        a specific picture on user demand. The method classifies the cars to different
-        categories: SUV\/Wagon\/Hatchback, sedan, city and coupe. The authors obtain
-        good results for every category.<\/jats:p>\n<\/jats:sec>","DOI":"10.1108\/ec-11-2016-0376","type":"journal-article","created":{"date-parts":[[2018,8,1]],"date-time":"2018-08-01T15:18:34Z","timestamp":1533136714000},"page":"1873-1906","source":"Crossref","is-referenced-by-count":0,"title":["Car
-        model reconstruction from images through character line recognition"],"prefix":"10.1108","volume":"35","author":[{"given":"Bo","family":"Wang","sequence":"first","affiliation":[]},{"given":"Franca","family":"Giannini","sequence":"additional","affiliation":[]},{"given":"Marina","family":"Monti","sequence":"additional","affiliation":[]},{"given":"BaoJun","family":"Li","sequence":"additional","affiliation":[]},{"given":"Ping","family":"Hu","sequence":"additional","affiliation":[]},{"given":"JiCai","family":"Liang","sequence":"additional","affiliation":[]}],"member":"140","published-online":{"date-parts":[[2018,8,2]]},"reference":[{"key":"key2021041413144365400_ref001","doi-asserted-by":"crossref","first-page":"20","DOI":"10.1016\/j.jvcir.2015.07.012","article-title":"Semantic
-        content-based image retrieval: a comprehensive study","volume":"32","year":"2015","journal-title":"Journal
-        of Visual Communication and Image Representation"},{"key":"key2021041413144365400_ref002","unstructured":"Arbelaez,
-        P. Fowlkes, C. and Martin, D. (2007), available at: www2.eecs.berkeley.edu\/Research\/Projects\/CS\/vision\/bsds\/"},{"issue":"5","key":"key2021041413144365400_ref003","doi-asserted-by":"crossref","first-page":"898","DOI":"10.1109\/TPAMI.2010.161","article-title":"Contour
-        detection and hierarchical image segmentation","volume":"33","year":"2011","journal-title":"IEEE
-        Transactions on Pattern Analysis and Machine Intelligence"},{"issue":"4","key":"key2021041413144365400_ref004","doi-asserted-by":"crossref","first-page":"509","DOI":"10.1109\/34.993558","article-title":"Shape
-        matching and object recognition using shape contexts","volume":"24","year":"2002","journal-title":"IEEE
-        Transactions on Pattern Analysis and Machine Intelligence"},{"key":"key2021041413144365400_ref005","first-page":"258","article-title":"Car
-        styling: a CAD approach to identify, extract and interpret characteristic
-        lines","volume":"21","year":"2014","journal-title":"24th CIRP Design Conference
-        Procedia CIRP"},{"issue":"6","key":"key2021041413144365400_ref006","first-page":"679","article-title":"A
-        computational approach to edge detection","volume":"8","year":"1986","journal-title":"IEEE
-        Transactions on Pattern Analysis and Machine Intelligence"},{"issue":"1","key":"key2021041413144365400_ref007","doi-asserted-by":"crossref","first-page":"104","DOI":"10.1145\/355873.355883","article-title":"Algorithm
-        548: Solution of the assignment problem [H]","volume":"6","year":"1980","journal-title":"ACM
-        Transactions on Mathematical Software"},{"issue":"1","key":"key2021041413144365400_ref008","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1017\/S0890060407070151","article-title":"A
-        framework for the automatic annotation of car aesthetics","volume":"21","year":"2007","journal-title":"Ai
-        Edam-Artificial Intelligence for Engineering Design Analysis and Manufacturing"},{"issue":"3","key":"key2021041413144365400_ref009","doi-asserted-by":"crossref","first-page":"224","DOI":"10.1016\/j.destud.2008.08.001","article-title":"Shaping
-        things: intended consumer response and the other determinants of product form","volume":"30","year":"2009","journal-title":"Design
-        Studies"},{"key":"key2021041413144365400_ref010","first-page":"1841","article-title":"Structured
-        forests for fast edge detection","volume-title":"Proceedings of International
-        Conference on Computer Vision (ICCV)","year":"2013"},{"key":"key2021041413144365400_ref011","unstructured":"Dollar,
-        P. and Zitnick, C.L. (2014), available at: https:\/\/github.com\/pdollar\/edges"},{"issue":"1","key":"key2021041413144365400_ref012","doi-asserted-by":"crossref","first-page":"11","DOI":"10.1145\/361237.361242","article-title":"Use
-        of the hough transformation to detect lines and curves in pictures","volume":"15","year":"1972","journal-title":"Communications
-        of the Acm"},{"key":"key2021041413144365400_ref013","first-page":"359","article-title":"Automatic
-        image-based car profile character line recognition","volume-title":"International
-        conference on innovative Methods in Product Design","year":"2011"},{"key":"key2021041413144365400_ref014","first-page":"554","article-title":"Machine
-        Analysis of Bubble Chamber Pictures","volume-title":"Proeedings, 2nd Internation
-        Conference on High Energy Accelerators and Instrumentation","year":"1959"},{"issue":"8","key":"key2021041413144365400_ref015","doi-asserted-by":"crossref","first-page":"1633","DOI":"10.1109\/TPAMI.2010.223","article-title":"Robust
-        point set registration using gaussian mixture models","volume":"33","year":"2011","journal-title":"IEEE
-        Transactions on Pattern Analysis and Machine Intelligence"},{"key":"key2021041413144365400_ref016","doi-asserted-by":"crossref","first-page":"736","DOI":"10.1016\/j.neucom.2014.08.003","article-title":"A
-        survey of recent advances in visual feature detection","volume":"149","year":"2015","journal-title":"Neurocomputing"},{"issue":"7","key":"key2021041413144365400_ref017","doi-asserted-by":"crossref","first-page":"1907","DOI":"10.12733\/jics20101659","article-title":"Recovery
-        of hierarchical styling features from images","volume":"10","year":"2013","journal-title":"Journal
-        of Information and Computational Science"},{"key":"key2021041413144365400_ref018","unstructured":"Ma,
-        J.Y. (2016), available at: www.escience.cn\/people\/jiayima\/cxdm.html"},{"issue":"1","key":"key2021041413144365400_ref019","doi-asserted-by":"crossref","first-page":"53","DOI":"10.1109\/TIP.2015.2467217","article-title":"Non-rigid
-        point set registration by preserving global and local structures","volume":"25","year":"2016","journal-title":"IEEE
-        Transactions on Image Processing: a Publication of the Ieee Signal Processing
-        Society"},{"key":"key2021041413144365400_ref020","first-page":"2147","article-title":"Robust
-        estimation of non rigid transformation for point set registration","volume-title":"The
-        IEEE Conference on Computer Vision and Pattern Recognition (CVPR)","year":"2013"},{"issue":"1","key":"key2021041413144365400_ref021","first-page":"1","article-title":"Study
-        and comparison of various image edge detection techniques","volume":"3","year":"2009","journal-title":"International
-        Journal of Image Processing (IJIP)"},{"key":"key2021041413144365400_ref022","doi-asserted-by":"crossref","first-page":"1137","article-title":"Robust
-        Nonrigid Point Set Registration using Graph-Laplacian Regularization","volume-title":"2015
-        IEEE Winter Conference on Applications of Computer Vision","year":"2015","DOI":"10.1109\/WACV.2015.156"},{"issue":"4","key":"key2021041413144365400_ref023","doi-asserted-by":"crossref","first-page":"330","DOI":"10.1115\/1.2795306","article-title":"Algorithms
-        for on-line monitoring of micro-spheres in an optical tweezers-based assembly
-        cell","volume":"7","year":"2007","journal-title":"ASME Journal of Computing
-        and Information Science in Engineering"},{"key":"key2021041413144365400_ref024","article-title":"Discriminatively
-        trained sparse code gradients for contour detection","year":"2012"},{"issue":"1","key":"key2021041413144365400_ref025","doi-asserted-by":"crossref","first-page":"235","DOI":"10.12733\/jics20105193","article-title":"An
-        effective image reuse approach for product styling","volume":"12","year":"2015","journal-title":"Journal
-        of Information and Computational Science"},{"issue":"9","key":"key2021041413144365400_ref026","doi-asserted-by":"crossref","first-page":"52","DOI":"10.5815\/ijigsp.2012.09.08","article-title":"Comparative
-        analysis of automatic vehicle classification techniques: a survey","volume":"4","year":"2012","journal-title":"International
-        Journal of Image, Graphics and Signal Processing"},{"issue":"4","key":"key2021041413144365400_ref027","doi-asserted-by":"crossref","first-page":"643","DOI":"10.1109\/TPAMI.2006.81","article-title":"Robust
-        point matching for non rigid shapes by preserving local neighborhood structures","volume":"28","year":"2006","journal-title":"IEEE
-        Transactions on Pattern Analysis and Machine Intelligence"},{"key":"key2021041413144365400_ref028","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1007\/978-3-642-30223-7_1","article-title":"Vehicle
-        style recognition based on image processing and neural network","volume":"169","year":"2012","journal-title":"Advances
-        in Computer Science and Information Engineering, Springer Berlin Heidelberg"},{"key":"key2021041413144365400_ref029","doi-asserted-by":"crossref","first-page":"149","article-title":"Pen-based
-        styling design of 3D geometry using concept sketches and template models","volume-title":"Proceedings
-        of the 2006 ACM symposium on Solid and Physical Modeling","year":"2006","DOI":"10.1145\/1128888.1128909"},{"issue":"1\/2","key":"key2021041413144365400_ref030","first-page":"83","article-title":"The
-        hungarian method for the assignment problem","volume":"2","year":"1955","journal-title":"Naval
-        Research Logistics Quarterly"}],"container-title":["Engineering Computations"],"language":"en","link":[{"URL":"https:\/\/www.emerald.com\/insight\/content\/doi\/10.1108\/EC-11-2016-0376\/full\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.emerald.com\/insight\/content\/doi\/10.1108\/EC-11-2016-0376\/full\/html","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,16]],"date-time":"2021-04-16T15:08:22Z","timestamp":1618585702000},"score":0.0,"issued":{"date-parts":[[2018,8,2]]},"references-count":30,"journal-issue":{"issue":"5","published-online":{"date-parts":[[2018,8,2]]},"published-print":{"date-parts":[[2018,9,5]]}},"alternative-id":["10.1108\/EC-11-2016-0376"],"URL":"http:\/\/dx.doi.org\/10.1108\/ec-11-2016-0376","ISSN":["0264-4401"],"issn-type":[{"value":"0264-4401","type":"print"}],"subject":["Computational
-        Theory and Mathematics","Computer Science Applications","General Engineering","Software"],"published":{"date-parts":[[2018,8,2]]}},{"indexed":{"date-parts":[[2022,1,6]],"date-time":"2022-01-06T17:06:11Z","timestamp":1641488771699},"reference-count":7,"publisher":"Elsevier
-        BV","issue":"9-11","license":[{"start":{"date-parts":[[2005,9,1]],"date-time":"2005-09-01T00:00:00Z","timestamp":1125532800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Microelectronics
-        Reliability"],"published-print":{"date-parts":[[2005,9]]},"DOI":"10.1016\/j.microrel.2005.07.081","type":"journal-article","created":{"date-parts":[[2005,9,25]],"date-time":"2005-09-25T11:13:42Z","timestamp":1127646822000},"page":"1617-1621","source":"Crossref","is-referenced-by-count":28,"title":["A
-        3000 hours DC Life Test on AlGaN\/GaN HEMT for RF and microwave applications"],"prefix":"10.1016","volume":"45","author":[{"given":"A.","family":"Sozza","sequence":"first","affiliation":[]},{"given":"C.","family":"Dua","sequence":"additional","affiliation":[]},{"given":"E.","family":"Morvan","sequence":"additional","affiliation":[]},{"given":"B.","family":"Grimber","sequence":"additional","affiliation":[]},{"given":"S.L.","family":"Delage","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.microrel.2005.07.081_bib1","unstructured":"GaN\u2013ready
-        for cellular 3G? Compound Semiconductors, March 2004."},{"key":"10.1016\/j.microrel.2005.07.081_bib2","unstructured":"X-band
-        radar is set to reap benefits of GaN technology, Compound Semiconductors,
-        March 2005."},{"key":"10.1016\/j.microrel.2005.07.081_bib3","doi-asserted-by":"crossref","unstructured":"Sozza
-        A et al. Reliability investigation of gallium nitride HEMT, Microelectron
-        Reliab Special Issue, 2004;44(October):1369\u201373.","DOI":"10.1016\/j.microrel.2004.07.018"},{"key":"10.1016\/j.microrel.2005.07.081_bib4","series-title":"Reliability
-        of gallium arsenide MMIC","author":"Christou","year":"1992"},{"key":"10.1016\/j.microrel.2005.07.081_bib5","unstructured":"Sozza
-        A et al. A 2000 hour storage test on AlGaN\/GaN HEMTs for RF and microwave
-        applications, Tech. Dig. WOCSDICE 2005, p. 119\u2013121."},{"key":"10.1016\/j.microrel.2005.07.081_bib6","unstructured":"Jacquet
-        JC et al. Analytical transport model of AlGaN\/GaN HEMT based on electrical
-        and thermal measurement, 12th GAAS Symposium 2004, p. 235\u20138."},{"key":"10.1016\/j.microrel.2005.07.081_bib7","unstructured":"Braga
-        N et al. Edge trapping mechanism of current collapse in III-N FETs, IEDM 2004
-        Tech. Dig, p. 815\u20138."}],"container-title":["Microelectronics Reliability"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0026271405002325?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0026271405002325?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,4,9]],"date-time":"2020-04-09T22:00:33Z","timestamp":1586469633000},"score":0.0,"issued":{"date-parts":[[2005,9]]},"references-count":7,"journal-issue":{"issue":"9-11","published-print":{"date-parts":[[2005,9]]}},"alternative-id":["S0026271405002325"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.microrel.2005.07.081","ISSN":["0026-2714"],"issn-type":[{"value":"0026-2714","type":"print"}],"subject":["Electrical
-        and Electronic Engineering","Surfaces, Coatings and Films","Safety, Risk,
-        Reliability and Quality","Condensed Matter Physics","Atomic and Molecular
-        Physics, and Optics","Electronic, Optical and Magnetic Materials"],"published":{"date-parts":[[2005,9]]}},{"indexed":{"date-parts":[[2021,12,12]],"date-time":"2021-12-12T03:32:33Z","timestamp":1639279953086},"reference-count":0,"publisher":"eLife
-        Sciences Publications, Ltd","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.7554\/elife.43002.001","type":"component","created":{"date-parts":[[2019,4,8]],"date-time":"2019-04-08T13:00:21Z","timestamp":1554728421000},"source":"Crossref","is-referenced-by-count":0,"title":["Abstract"],"prefix":"10.7554","member":"4374","deposited":{"date-parts":[[2019,4,8]],"date-time":"2019-04-08T13:00:24Z","timestamp":1554728424000},"score":0.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.7554\/elife.43002.001"},{"indexed":{"date-parts":[[2022,2,11]],"date-time":"2022-02-11T14:05:16Z","timestamp":1644588316017},"reference-count":72,"publisher":"Elsevier
-        BV","issue":"2","license":[{"start":{"date-parts":[[1983,5,1]],"date-time":"1983-05-01T00:00:00Z","timestamp":420595200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Earth
-        and Planetary Science Letters"],"published-print":{"date-parts":[[1983,5]]},"DOI":"10.1016\/0012-821x(83)90039-0","type":"journal-article","created":{"date-parts":[[2002,11,11]],"date-time":"2002-11-11T18:59:57Z","timestamp":1037041197000},"page":"229-240","source":"Crossref","is-referenced-by-count":218,"title":["A
-        Nd isotope investigation of sediments related to crustal development in the
-        British Isles"],"prefix":"10.1016","volume":"63","author":[{"given":"R.K.","family":"O''Nions","sequence":"first","affiliation":[]},{"given":"P.J.","family":"Hamilton","sequence":"additional","affiliation":[]},{"given":"P.J.","family":"Hooker","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0012-821X(83)90039-0_bib1","doi-asserted-by":"crossref","first-page":"119","DOI":"10.2475\/ajs.272.2.119","article-title":"Geochemical
-        mass balance among lithosphere, hydrosphere and atmosphere","volume":"272","author":"Li","year":"1972","journal-title":"Am.
-        J. Sci."},{"key":"10.1016\/0012-821X(83)90039-0_bib2","series-title":"The
-        Earth''s Crust and Upper Mantle","first-page":"37","article-title":"Chemical
-        composition of the Earth''s crust","volume":"13","author":"Ronov","year":"1969"},{"key":"10.1016\/0012-821X(83)90039-0_bib3","series-title":"Evolution
-        of Sedimentary Rocks","author":"Garrels","year":"1971"},{"key":"10.1016\/0012-821X(83)90039-0_bib4","series-title":"The
-        Nature of the Solid Earth","first-page":"93","article-title":"Sedimentary
-        cycling in relation to the history of the continents and oceans","author":"Garrels","year":"1972"},{"key":"10.1016\/0012-821X(83)90039-0_bib5","doi-asserted-by":"crossref","first-page":"341","DOI":"10.1086\/628425","article-title":"Basement
-        and sedimentary recycling and continental evolution","volume":"87","author":"Veizer","year":"1979","journal-title":"J.
-        Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib6","doi-asserted-by":"crossref","first-page":"1521","DOI":"10.1016\/0016-7037(69)90153-7","article-title":"Strontium
-        isotopes in weathering profiles, deep-sea sediments and sedimentary rocks","volume":"33","author":"Dasch","year":"1969","journal-title":"Geochim.
-        Cosmochim. Acta"},{"key":"10.1016\/0012-821X(83)90039-0_bib7","doi-asserted-by":"crossref","first-page":"5087","DOI":"10.1029\/JC076i021p05087","article-title":"The
-        rubidium, strontium, strontium isotope system in deep sea sediments: Argentine
-        basin","volume":"76","author":"Biscaye","year":"1971","journal-title":"J.
-        Geophys. Res."},{"key":"10.1016\/0012-821X(83)90039-0_bib8","doi-asserted-by":"crossref","first-page":"1003","DOI":"10.1126\/science.200.4345.1003","article-title":"Sm-Nd
-        and Rb-Sr chronology of continental crust formation","volume":"200","author":"McCullogh","year":"1978","journal-title":"Science"},{"key":"10.1016\/0012-821X(83)90039-0_bib9","doi-asserted-by":"crossref","first-page":"139","DOI":"10.1016\/0012-821X(80)90125-9","article-title":"Sm-Nd
-        isotopic evolution of chondrites","volume":"50","author":"Jacobsen","year":"1980","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib10","doi-asserted-by":"crossref","first-page":"1989","DOI":"10.1016\/0016-7037(64)90142-5","article-title":"Trace
-        element abundances and the chondritic earth model","volume":"28","author":"Taylor","year":"1964","journal-title":"Geochim.
-        Cosmochim. Acta"},{"key":"10.1016\/0012-821X(83)90039-0_bib11","series-title":"The
-        Earth, its Origin, Structure and Evolution","first-page":"2","article-title":"Chemical
-        composition and evolution of the continental crust; the rare earth element
-        evidence","author":"Taylor","year":"1978"},{"key":"10.1016\/0012-821X(83)90039-0_bib12","doi-asserted-by":"crossref","first-page":"6091","DOI":"10.1029\/JZ071i024p06091","article-title":"Rare
-        earths in sediments","volume":"71","author":"Haskin","year":"1966","journal-title":"J.
-        Geophys. Res."},{"key":"10.1016\/0012-821X(83)90039-0_bib13","article-title":"Has
-        the Earth''s crust changed with time? Rare-earth abundances in ancient sediments","author":"Schnetzler","year":"1967","journal-title":"Goddard
-        Space Flight Center Rep. X-641-67-237"},{"key":"10.1016\/0012-821X(83)90039-0_bib14","doi-asserted-by":"crossref","first-page":"1539","DOI":"10.1016\/0016-7037(76)90093-4","article-title":"Rare
-        earth element patterns and crustal evolution, 1. Australian post-Archaean
-        sedimentary rocks","volume":"40","author":"Nance","year":"1976","journal-title":"Geochim.
-        Cosmochim. Acta"},{"key":"10.1016\/0012-821X(83)90039-0_bib15","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1016\/0016-7037(79)90202-3","article-title":"Rare
-        earth elements in Huronian (Lower Proterozoic) sedimentary rocks: composition
-        and evolution of the post-Kenoran upper crust","volume":"43","author":"McLennan","year":"1979","journal-title":"Geochim.
-        Cormochim. Acta"},{"key":"10.1016\/0012-821X(83)90039-0_bib16","series-title":"Proc.
-        Int. Uranium Symp.","first-page":"175","article-title":"Rare earth elements
-        in sedimentary rocks, granites and uranium deposits of the Pine Creek geosyncline","author":"McLennan","year":"1980"},{"key":"10.1016\/0012-821X(83)90039-0_bib17","doi-asserted-by":"crossref","first-page":"1833","DOI":"10.1016\/0016-7037(80)90232-X","article-title":"Rare
-        earth element-thorium correlations in sedimentary rocks and the composition
-        of the continental crust","volume":"44","author":"McLennan","year":"1980","journal-title":"Geochim.
-        Cosmochim. Acta"},{"key":"10.1016\/0012-821X(83)90039-0_bib18","doi-asserted-by":"crossref","first-page":"381","DOI":"10.1098\/rsta.1981.0119","article-title":"Chemical
-        composition and evolution of the continental crust: rare earth element evidence
-        from sedimentary rocks","volume":"301","author":"Taylor","year":"1981","journal-title":"Philos.
-        Trans. R. Soc. London"},{"key":"10.1016\/0012-821X(83)90039-0_bib19","doi-asserted-by":"crossref","first-page":"10470","DOI":"10.1029\/JB086iB11p10470","article-title":"A
-        neodymium and strontium itotopic study of the Mesozoic calc-alkaline granitic
-        batholiths of the Sierra Nevada and Peninsular Ranges, California","volume":"86","author":"DePaolo","year":"1981","journal-title":"J.
-        Geophys. Res."},{"key":"10.1016\/0012-821X(83)90039-0_bib20","doi-asserted-by":"crossref","first-page":"263","DOI":"10.1016\/0012-821X(83)90089-4","article-title":"Sm-Nd
-        studies of Archaean metasediments and metavolcanics from West Greenland and
-        their implications for the Earth''s early history","volume":"62","author":"Hamilton","year":"1983","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib21","first-page":"480","article-title":"Nd-isotopic
-        study of river particulates, atmospheric dusts, and pelagic sediments","volume":"68","author":"Goldstein","year":"1982","journal-title":"EOS"},{"key":"10.1016\/0012-821X(83)90039-0_bib22","doi-asserted-by":"crossref","first-page":"180","DOI":"10.1016\/0012-821X(81)90125-4","article-title":"An
-        estimate of the Nd isotopic composition of Iapetus seawater from ca. 490 Ma
-        metalliferous sediments","volume":"56","author":"Hooker","year":"1981","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib23","series-title":"The
-        Lewisian and Torridonian Rocks of North-west Scotland","first-page":"59","article-title":"The
-        Tollie and Gairloch Districts (Lewisian)","volume":"21","author":"Park","year":"1978"},{"key":"10.1016\/0012-821X(83)90039-0_bib24","doi-asserted-by":"crossref","first-page":"237","DOI":"10.1144\/gsjgs.131.3.0237","article-title":"Rb-Sr
-        whole rock isotopic studies of Lewisian metasediments and gneisses in the
-        Loch Maree region, Ross-shire","volume":"131","author":"Bickerman","year":"1975","journal-title":"J.
-        Geol. Soc. London"},{"key":"10.1016\/0012-821X(83)90039-0_bib25","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1038\/277025a0","article-title":"Sm-Nd
-        systematics of Lewisian gneisses: implications for the origin of granulites","volume":"277","author":"Hamilton","year":"1979","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib26","doi-asserted-by":"crossref","first-page":"213","DOI":"10.1144\/gsjgs.131.2.0213","article-title":"Isotopic
-        evidence for the age and origin of the \u201cgrey gneiss\u201d complex of
-        the southern Outer Hebrides, Scotland","volume":"131","author":"Moorbath","year":"1975","journal-title":"J.
-        Geol. Soc. London"},{"key":"10.1016\/0012-821X(83)90039-0_bib27","doi-asserted-by":"crossref","first-page":"245","DOI":"10.1016\/0012-821X(69)90164-2","article-title":"The
-        significance of lead isotope studies in ancient, high-grade metamorphic basement
-        complexes, as exemplified by the Lewisian rocks of northwest Scotland","volume":"6","author":"Moorbath","year":"1969","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib28","doi-asserted-by":"crossref","first-page":"41","DOI":"10.1038\/268041a0","article-title":"Lead
-        isotope measurements from the oldest recognized Lewisian gneisses of north-west
-        Scotland","volume":"268","author":"Chapman","year":"1977","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib29","article-title":"The
-        geological structure of the northwest Highlands of Scotland","author":"Peach","year":"1907","journal-title":"Mem.
-        Geol. Surv. U.K."},{"key":"10.1016\/0012-821X(83)90039-0_bib30","doi-asserted-by":"crossref","first-page":"1303","DOI":"10.1038\/2091303a0","article-title":"Palaeogeography
-        of the Torridonian Applecross Group","volume":"209","author":"Williams","year":"1966","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib31","doi-asserted-by":"crossref","first-page":"706","DOI":"10.1038\/207706a0","article-title":"Lithofacies
-        and correlation within the Lower Torridonian","volume":"207","author":"Lawson","year":"1965","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib32","doi-asserted-by":"crossref","first-page":"399","DOI":"10.1017\/S0016756800059677","article-title":"Greywacke
-        sedimentation in the Torridonian of Colonsay and Oronsay","volume":"99","author":"Stewart","year":"1962","journal-title":"Geol.
-        Mag."},{"key":"10.1016\/0012-821X(83)90039-0_bib33","doi-asserted-by":"crossref","first-page":"154","DOI":"10.1144\/sjg05020154","article-title":"Evidence
-        for the age of deposition of the Torridonian sediments of N.W. Scotland","volume":"5","author":"Moorbath","year":"1969","journal-title":"Scott.
-        J. Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib34","doi-asserted-by":"crossref","first-page":"389","DOI":"10.1144\/sjg03030389","article-title":"Geochronological
-        studies on the Torridonian sediments of north-west Scotland","volume":"3","author":"Moorbath","year":"1967","journal-title":"Scott.
-        J. Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib35","doi-asserted-by":"crossref","first-page":"85","DOI":"10.1144\/gsjgs.130.1.0085","article-title":"Torridonian
-        tourmaline-quartz pebbles and the Precambrian crust north-west of Britain","volume":"130","author":"Allen","year":"1974","journal-title":"J.
-        Geol. Soc. London"},{"key":"10.1016\/0012-821X(83)90039-0_bib36","doi-asserted-by":"crossref","first-page":"124","DOI":"10.1038\/222124a0","article-title":"Evolution
-        of the Appalachian-Caledonian orogen","volume":"222","author":"Dewey","year":"1969","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib37","doi-asserted-by":"crossref","first-page":"219","DOI":"10.1144\/sjg07030219","article-title":"A
-        model for the Lower Palaeozoic evolution of the southern margin of the early
-        Caledonides of Scotland and Ireland","volume":"7","author":"Dewey","year":"1971","journal-title":"Scott.
-        J. Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib38","series-title":"The
-        Geology of Continental Margins","first-page":"933","article-title":"Continental
-        margins and ophiolite obduction: Appalachian-Caledonian system","author":"Dewey","year":"1974"},{"key":"10.1016\/0012-821X(83)90039-0_bib39","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1038\/242111a0","article-title":"Location
-        of the Proto-Atlantic in the British Isles","volume":"242","author":"Gunn","year":"1973","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib40","doi-asserted-by":"crossref","first-page":"497","DOI":"10.1017\/S0016756800037900","article-title":"The
-        Ballantrae ophiolite","volume":"110","author":"Church","year":"1973","journal-title":"Geol.
-        Mag."},{"key":"10.1016\/0012-821X(83)90039-0_bib41","doi-asserted-by":"crossref","first-page":"579","DOI":"10.1144\/gsjgs.132.6.0579","article-title":"A
-        Caledonian plate tectonic model","volume":"132","author":"Phillips","year":"1976","journal-title":"J.
-        Geol. Soc. London"},{"key":"10.1016\/0012-821X(83)90039-0_bib42","doi-asserted-by":"crossref","first-page":"271","DOI":"10.1144\/sjg12040271","article-title":"The
-        Grampian orogeny","volume":"12","author":"Lambert","year":"1976","journal-title":"Scott.
-        J. Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib43","series-title":"A
-        Correlation of the Precambrian Rocks in the British Isles","first-page":"52","article-title":"The
-        Dalradian Supergroup","author":"Harris","year":"1975"},{"key":"10.1016\/0012-821X(83)90039-0_bib44","article-title":"A
-        palynological investigation of the Dalradian rocks of Scotland","volume":"71\/9","author":"Downie","year":"1971","journal-title":"Rep.
-        Inst. Geol. Sci."},{"key":"10.1016\/0012-821X(83)90039-0_bib45","doi-asserted-by":"crossref","first-page":"345","DOI":"10.1130\/0016-7606(1974)85<345:RWCOCE>2.0.CO;2","article-title":"Rb-Sr
-        whole-rock chronology of Caledonian events in northeast Scotland","volume":"85","author":"Pankhurst","year":"1974","journal-title":"Geol.
-        Soc. Am. Bull."},{"key":"10.1016\/0012-821X(83)90039-0_bib46","series-title":"A
-        Dynamic Stratigraphy of the British Isles","author":"Anderton","year":"1979"},{"key":"10.1016\/0012-821X(83)90039-0_bib47","doi-asserted-by":"crossref","first-page":"324","DOI":"10.1038\/292324a0","article-title":"Nd
-        and Sr isotopic relationships in pelagic clays and ferromanganese deposits","volume":"292","author":"Goldstein","year":"1981","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib48","doi-asserted-by":"crossref","first-page":"237","DOI":"10.1038\/267237a0","article-title":"Imbricate
-        thrust model of the Southern Uplands of Scotland","volume":"267","author":"McKerrow","year":"1977","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib49","series-title":"The
-        Caledonides of the British Isles reviewed","first-page":"495","article-title":"Oceanic
-        sediments from the Ordovician of the Southern Uplands","author":"Leggett","year":"1977"},{"key":"10.1016\/0012-821X(83)90039-0_bib50","series-title":"The
-        Caledonides of the British Isles Reviewed","first-page":"499","article-title":"The
-        north-western margin of the Iapetus ocean","author":"Leggett","year":"1979"},{"key":"10.1016\/0012-821X(83)90039-0_bib51","doi-asserted-by":"crossref","first-page":"225","DOI":"10.1144\/transed.19.3.225","article-title":"The
-        petrography, sedimentation and provenance of Wenlock rocks near Hawick, Roxburghshire","volume":"19","author":"Warren","year":"1963","journal-title":"Trans.
-        Edinburgh Geol. Soc."},{"key":"10.1016\/0012-821X(83)90039-0_bib52","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1017\/S0080456800012448","article-title":"The
-        petrology and sedimentation of Upper Ordovician rocks in the Rhinns of Galloway,
-        south-west Scotland","volume":"65","author":"Kelling","year":"1962","journal-title":"Trans.
-        R. Soc. Edinburgh"},{"key":"10.1016\/0012-821X(83)90039-0_bib53","doi-asserted-by":"crossref","first-page":"7429","DOI":"10.1029\/JB084iB13p07429","article-title":"Nd
-        and Sr isotopic study of the Bay of Islands ophiolite complex and the evolution
-        of the source of mid-ocean ridge basalts","volume":"84","author":"Jacobsen","year":"1979","journal-title":"J.
-        Geophys. Res."},{"key":"10.1016\/0012-821X(83)90039-0_bib54","doi-asserted-by":"crossref","first-page":"97","DOI":"10.1017\/S0263593300013535","article-title":"Sm-Nd
-        isotopic study of garnets and their metamorphic host rocks","volume":"71","author":"Van
-        Breemen","year":"1980","journal-title":"Trans. R. Soc. Edinburgh"},{"key":"10.1016\/0012-821X(83)90039-0_bib55","doi-asserted-by":"crossref","first-page":"211","DOI":"10.1016\/0012-821X(78)90132-2","article-title":"Early
-        Archaean rocks and geochemical evolution of the Earth''s crust","volume":"38","author":"O''Nions","year":"1978","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib56","doi-asserted-by":"crossref","first-page":"6091","DOI":"10.1029\/JB084iB11p06091","article-title":"Geochemical
-        modelling of mantle differentiation and crustal growth","volume":"84","author":"O''Nions","year":"1979","journal-title":"J.
-        Geophys. Res."},{"key":"10.1016\/0012-821X(83)90039-0_bib57","doi-asserted-by":"crossref","first-page":"395","DOI":"10.1038\/254395a0","article-title":"Evolution
-        of Precambrian crust from strontium isotopic evidence","volume":"254","author":"Moorbath","year":"1975","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib58","doi-asserted-by":"crossref","first-page":"109","DOI":"10.1016\/0040-1951(82)90125-1","article-title":"Chemical
-        geodynamics","volume":"81","author":"All\u00e8gre","year":"1982","journal-title":"Tectonophysics"},{"key":"10.1016\/0012-821X(83)90039-0_bib59","first-page":"173","article-title":"Two
-        contrasting granite types","volume":"8","author":"Chappell","year":"1974","journal-title":"Pacific
-        Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib60","doi-asserted-by":"crossref","first-page":"335","DOI":"10.1038\/286335a0","article-title":"Nd-Sr
-        isotopic relationship in granitoid rocks and continental crust development:
-        a chemical approach to orogenesis","volume":"286","author":"All\u00e8gre","year":"1980","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib61","doi-asserted-by":"crossref","first-page":"279","DOI":"10.1038\/287279a0","article-title":"Isotopic
-        evidence for the provenance of some Caledonian granites","volume":"287","author":"Hamilton","year":"1980","journal-title":"Nature"},{"key":"10.1016\/0012-821X(83)90039-0_bib62","doi-asserted-by":"crossref","first-page":"233","DOI":"10.1098\/rsta.1981.0108","article-title":"Fate
-        of sediments on the descending plate at convergent margins","volume":"301","author":"Karig","year":"1981","journal-title":"Philos.
-        Trans. R. Soc. London"},{"key":"10.1016\/0012-821X(83)90039-0_bib63","doi-asserted-by":"crossref","first-page":"497","DOI":"10.1086\/628541","article-title":"Volcanic
-        arc magmas: implications of a melting-mixing model for element recycling in
-        the crust-upper mantle system","volume":"88","author":"Kay","year":"1980","journal-title":"J.
-        Geol."},{"key":"10.1016\/0012-821X(83)90039-0_bib64","doi-asserted-by":"crossref","first-page":"167","DOI":"10.1016\/0012-821X(81)90124-2","article-title":"143Nd\/144Nd,87Sr\/86Sr
-        and trace element constraints on the petrogenesis of Aleutian island arc magmas","volume":"56","author":"McCullogh","year":"1981","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib65","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1016\/0012-821X(82)90040-1","article-title":"Identification
-        of recycled continental material in the mantle from Sr, Nd and Pb isotope
-        investigations","volume":"61","author":"Cohen","year":"1982","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib66","doi-asserted-by":"crossref","first-page":"264","DOI":"10.1016\/0012-821X(81)90181-3","article-title":"Nd
-        and Sr isotopic study of volcanic rocks from Japan","volume":"52","author":"Nohda","year":"1981","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib67","doi-asserted-by":"crossref","first-page":"299","DOI":"10.1093\/petrology\/23.3.299","article-title":"The
-        lead, neodymium and strontium isotopic structure of ocean ridge basalts","volume":"23","author":"Cohen","year":"1982","journal-title":"J.
-        Petrol."},{"key":"10.1016\/0012-821X(83)90039-0_bib68","doi-asserted-by":"crossref","first-page":"139","DOI":"10.1016\/0012-821X(80)90125-9","article-title":"Sm-Nd
-        evolution of chondrites","volume":"50","author":"Jacobsen","year":"1980","journal-title":"Earth
-        Planet. Sci. Lett."},{"key":"10.1016\/0012-821X(83)90039-0_bib69","doi-asserted-by":"crossref","first-page":"313","DOI":"10.1017\/S0080456800015295","article-title":"The
-        Silurian rocks bordering Kirkcudbright Bay, South Scotland","volume":"69","author":"Clarkson","year":"1975","journal-title":"Trans.
-        R. Soc. Edinburgh"},{"key":"10.1016\/0012-821X(83)90039-0_bib70","series-title":"A
-        Field Guide to the Lower Palaeozoic Geology of the Southern Uplands of Scotland","author":"Leggett","year":"1980"},{"key":"10.1016\/0012-821X(83)90039-0_bib71","doi-asserted-by":"crossref","first-page":"115","DOI":"10.1093\/petrology\/10.1.115","article-title":"Strontium
-        isotope studies related to petrogenesis in the Caledonian basic igneous province
-        of NE. Scotland","volume":"10","author":"Pankhurst","year":"1969","journal-title":"J.
-        Petrol."},{"key":"10.1016\/0012-821X(83)90039-0_bib72","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/0012-821X(80)90250-2","article-title":"The
-        Ordovician, Silurian and Devonian time scales","volume":"51","author":"McKerrow","year":"1980","journal-title":"Earth
-        Planet. Sci. Lett."}],"container-title":["Earth and Planetary Science Letters"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0012821X83900390?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0012821X83900390?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,4,4]],"date-time":"2019-04-04T00:56:47Z","timestamp":1554339407000},"score":0.0,"issued":{"date-parts":[[1983,5]]},"references-count":72,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1983,5]]}},"alternative-id":["0012821X83900390"],"URL":"http:\/\/dx.doi.org\/10.1016\/0012-821x(83)90039-0","ISSN":["0012-821X"],"issn-type":[{"value":"0012-821X","type":"print"}],"subject":["Space
-        and Planetary Science","Earth and Planetary Sciences (miscellaneous)","Geochemistry
-        and Petrology","Geophysics"],"published":{"date-parts":[[1983,5]]}},{"indexed":{"date-parts":[[2021,12,19]],"date-time":"2021-12-19T23:58:31Z","timestamp":1639958311005},"reference-count":25,"publisher":"Royal
-        Society of Chemistry (RSC)","issue":"7","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["New
-        J. Chem."],"DOI":"10.1039\/b300398c","type":"journal-article","created":{"date-parts":[[2003,6,30]],"date-time":"2003-06-30T15:50:22Z","timestamp":1056988222000},"page":"1059-1064","source":"Crossref","is-referenced-by-count":7,"title":["Solution
-        interaction of O-donor ligand metal complexes with thiocarbonyl compounds\u2014a
-        new general route to metal sulfide materials"],"prefix":"10.1039","volume":"27","author":[{"given":"Gulaim
-        A.","family":"Seisenbaeva","sequence":"first","affiliation":[]},{"given":"Suresh","family":"Gohil","sequence":"additional","affiliation":[]},{"given":"Kjell","family":"Jansson","sequence":"additional","affiliation":[]},{"given":"Konrad","family":"Herbst","sequence":"additional","affiliation":[]},{"given":"Michael","family":"Brorson","sequence":"additional","affiliation":[]},{"given":"Vadim
-        G.","family":"Kessler","sequence":"additional","affiliation":[]}],"member":"292","published-online":{"date-parts":[[2003]]},"reference":[{"key":"B300398C-(cit1)\/*[position()=1]","volume-title":"Transition
-        Metal Sulfur Chemistry: Biological and Industrial Significance","year":"1996","unstructured":"Transition
-        Metal Sulfur Chemistry: Biological and Industrial Significance, eds. E. J.
-        Stiefel and K. Matsumoto, ACS Symposium Series 653, American Chemical Society,
-        Washington, D.C.,, 1996"},{"key":"B300398C-(cit2)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"191","DOI":"10.1097\/00003072-200003000-00007","volume":"25","author":"Liu","year":"2000","journal-title":"Clin.
-        Nucl. Med."},{"key":"B300398C-(cit3)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"347","DOI":"10.1016\/S0969-8051(00)00093-7","volume":"27","author":"Yu","year":"2000","journal-title":"Nucl.
-        Med. Biol."},{"key":"B300398C-(cit4)\/*[position()=1]","doi-asserted-by":"crossref","volume-title":"Hydrotreating
-        Catalysis: Science and Technology","author":"Tops\u00f8e","year":"1996","unstructured":"H.
-        Tops\u00f8e , B. S.Clausen and F. E.Massoth, Hydrotreating Catalysis: Science
-        and Technology, Springer-Verlag, Berlin, 1996","DOI":"10.1007\/978-3-642-61040-0_1"},{"key":"B300398C-(cit5)\/*[position()=1]","volume-title":"Sulfide
-        Catalysts, Their Properties and Applications","author":"Weisser","year":"1973","unstructured":"O.
-        Weisser and S.Landa, Sulfide Catalysts, Their Properties and Applications,
-        Pergamon Press, New York, 1973"},{"key":"B300398C-(cit6)\/*[position()=1]","volume-title":"Condensed
-        Matter Physics","author":"Marder","year":"2000","unstructured":"M. P. Marder
-        , Condensed Matter Physics, Wiley, 2000"},{"key":"B300398C-(cit7)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"117","DOI":"10.1016\/S0920-5861(98)00140-0","volume":"43","author":"Alonso","year":"1998","journal-title":"Catal.
-        Today"},{"key":"B300398C-(cit8)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"497","DOI":"10.1023\/A:1018538424373","volume":"32","author":"Wang","year":"1997","journal-title":"J.
-        Mater. Sci."},{"key":"B300398C-(cit9)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"207","DOI":"10.1016\/0079-6786(76)90009-1","volume":"10","author":"Rao","year":"1975","journal-title":"Prog.
-        Solid State Chem."},{"key":"B300398C-(cit10)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"309","DOI":"10.1002\/zaac.19643280514","volume":"328","author":"Wildervanck","year":"1964","journal-title":"Z.
-        Anorg. Allg. Chem."},{"key":"B300398C-(cit11)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"L13","DOI":"10.1016\/S0166-9834(00)82228-9","volume":"62","author":"M\u00fcller","year":"1990","journal-title":"Appl.
-        Catal."},{"key":"B300398C-(cit12)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"698","DOI":"10.1006\/jcat.1995.1335","volume":"157","author":"Muijers","year":"1995","journal-title":"J.
-        Catal."},{"key":"B300398C-(cit13)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"510","DOI":"10.1038\/349510a0","volume":"349","author":"Bonneau","year":"1991","journal-title":"Nature
-        (London)"},{"key":"B300398C-(cit14)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"404","DOI":"10.1006\/jcat.1997.1669","volume":"169","author":"Rueda","year":"1997","journal-title":"J.
-        Catal."},{"issue":"11","key":"B300398C-(cit15)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"10","DOI":"10.1021\/ie50707a004","volume":"60","author":"Davenport","year":"1968","journal-title":"Ind.
-        Eng. Chem."},{"key":"B300398C-(cit16)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1535","DOI":"10.1021\/ic980700t","volume":"38","author":"Close","year":"1999","journal-title":"Inorg.
-        Chem."},{"key":"B300398C-(cit17)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"3216","DOI":"10.1021\/cm991062v","volume":"11","author":"Afanasiev","year":"1999","journal-title":"Chem.
-        Mater."},{"key":"B300398C-(cit18)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"6136","DOI":"10.1021\/jp010138j","volume":"105","author":"Stanic","year":"2001","journal-title":"J.
-        Phys. Chem. A"},{"key":"B300398C-(cit19)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"31","DOI":"10.1016\/S0921-5107(99)00515-2","volume":"72","author":"Tsay","year":"2000","journal-title":"Mater.
-        Sci. Eng., B"},{"key":"B300398C-(cit20)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"564","author":"Nair","year":"2002","journal-title":"Chem.
-        Commun.","DOI":"10.1039\/b200434h"},{"key":"B300398C-(cit21)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"21","author":"Kessler","year":"1998","journal-title":"J.
-        Chem. Soc., Dalton Trans.","DOI":"10.1039\/a704198e"},{"key":"B300398C-(cit22)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"387","author":"Johansson","year":"2000","journal-title":"J.
-        Chem. Soc., Dalton Trans.","DOI":"10.1039\/a907720k"},{"key":"B300398C-(cit23)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"2163","DOI":"10.1016\/S0277-5387(01)00814-2","volume":"20","author":"Werndrup","year":"2001","journal-title":"Polyhedron"},{"key":"B300398C-(cit24)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"45","DOI":"10.1016\/0022-3093(84)90385-5","volume":"63","author":"Brinker","year":"1984","journal-title":"J.
-        Non-Cryst. Solids"},{"key":"B300398C-(cit25)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"3843","DOI":"10.1021\/cm000843p","volume":"13","author":"Trindade","year":"2001","journal-title":"Chem.
-        Mater."}],"container-title":["New J. Chem."],"language":"en","link":[{"URL":"http:\/\/pubs.rsc.org\/en\/content\/articlepdf\/2003\/NJ\/B300398C","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T22:50:27Z","timestamp":1497567027000},"score":0.0,"issued":{"date-parts":[[2003]]},"references-count":25,"journal-issue":{"issue":"7","published-print":{"date-parts":[[2003]]}},"URL":"http:\/\/dx.doi.org\/10.1039\/b300398c","ISSN":["1144-0546","1369-9261"],"issn-type":[{"value":"1144-0546","type":"print"},{"value":"1369-9261","type":"electronic"}],"subject":["Materials
-        Chemistry","General Chemistry","Catalysis"],"published":{"date-parts":[[2003]]}},{"indexed":{"date-parts":[[2022,3,20]],"date-time":"2022-03-20T21:10:15Z","timestamp":1647810615301},"reference-count":90,"publisher":"SAGE
-        Publications","issue":"4","license":[{"start":{"date-parts":[[1994,12,1]],"date-time":"1994-12-01T00:00:00Z","timestamp":786240000000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/journals.sagepub.com\/page\/policies\/text-and-data-mining-license"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Group
-        & Organization Management"],"published-print":{"date-parts":[[1994,12]]},"abstract":"<jats:p>
-        The effect of top management team demography on the strategic planning dimension
-        of planning openness was examined in a sample of retail banks. The following
-        demographic characteristics were analyzed: mean tenure, age, and education
-        level, and heterogeneity on educational major and functional background. After
-        controlling for firm size and performance volatility, low tenure mean, low
-        education mean, and functional heterogeneity were found to have an influence
-        on planning openness. <\/jats:p>","DOI":"10.1177\/1059601194194002","type":"journal-article","created":{"date-parts":[[2007,3,11]],"date-time":"2007-03-11T03:56:13Z","timestamp":1173585373000},"page":"406-424","source":"Crossref","is-referenced-by-count":54,"title":["Strategic
-        Planning Openness"],"prefix":"10.1177","volume":"19","author":[{"given":"Karen
-        A.","family":"Bantel","sequence":"first","affiliation":[{"name":"Wayne State
-        University"}]}],"member":"179","published-online":{"date-parts":[[2016,7,26]]},"reference":[{"key":"atypb1","volume-title":"Academy
-        of Management meeting","author":"Allutto, J."},{"key":"atypb2","volume-title":"The
-        concept of corporate strategy","author":"Andrews, K. R.","year":"1971"},{"key":"atypb3","volume-title":"Corporate
-        strategy","author":"Ansoff, H.","year":"1965"},{"key":"atypb4","doi-asserted-by":"publisher","DOI":"10.1016\/0024-6301(70)90001-4"},{"key":"atypb5","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250100709"},{"key":"atypb6","volume-title":"Stodgill''s
-        handbook of leadership","author":"Bass, B. M.","year":"1991"},{"key":"atypb7","volume-title":"Changing
-        organizations: Essays on the development and evolution of human organizations","author":"Bennis,
-        W. G.","year":"1966"},{"key":"atypb8","volume-title":"Inequality and heterogeneity","author":"Blau,
-        P. M.","year":"1977"},{"key":"atypb9","doi-asserted-by":"publisher","DOI":"10.5465\/amr.1980.4288844"},{"key":"atypb10","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-6486.1991.tb00286.x"},{"issue":"2","key":"atypb11","first-page":"7","volume":"7","author":"Campbell,
-        D. P.","year":"1987","journal-title":"Issues and Observations"},{"key":"atypb12","doi-asserted-by":"publisher","DOI":"10.2307\/2093946"},{"key":"atypb13","doi-asserted-by":"publisher","DOI":"10.2307\/2393553"},{"key":"atypb14","doi-asserted-by":"publisher","DOI":"10.2307\/2785898"},{"key":"atypb15","doi-asserted-by":"publisher","DOI":"10.2307\/255929"},{"key":"atypb16","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250080306"},{"key":"atypb17","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250080202"},{"key":"atypb18","volume-title":"Business
-        economic planning: Theory, practice and comparison","author":"Eliasson, G.","year":"1976"},{"key":"atypb19","doi-asserted-by":"publisher","DOI":"10.2307\/2393314"},{"key":"atypb20","doi-asserted-by":"publisher","DOI":"10.2307\/256039"},{"key":"atypb21","doi-asserted-by":"publisher","DOI":"10.2307\/256433"},{"key":"atypb22","doi-asserted-by":"publisher","DOI":"10.2307\/256444"},{"key":"atypb23","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250100305"},{"key":"atypb24","volume-title":"Academy
-        of Management meeting","author":"Grimm, C."},{"key":"atypb25","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250120708"},{"key":"atypb26","doi-asserted-by":"publisher","DOI":"10.2307\/255955"},{"key":"atypb27","doi-asserted-by":"publisher","DOI":"10.1111\/j.1744-6570.1991.tb00959.x"},{"key":"atypb28","doi-asserted-by":"publisher","DOI":"10.2307\/2391664"},{"key":"atypb29","doi-asserted-by":"publisher","DOI":"10.5465\/amr.1984.4277628"},{"key":"atypb30","doi-asserted-by":"publisher","DOI":"10.1037\/h0077723"},{"key":"atypb31","doi-asserted-by":"publisher","DOI":"10.1108\/eb000925"},{"key":"atypb32","doi-asserted-by":"publisher","DOI":"10.1037\/0033-295X.84.3.260"},{"key":"atypb33","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250120502"},{"key":"atypb34","volume-title":"Strategy
-        formulation: Analytical concepts","author":"Hofer, C.","year":"1978"},{"key":"atypb35","doi-asserted-by":"publisher","DOI":"10.1037\/h0044025"},{"key":"atypb36","volume-title":"Making
-        vocational choices: A theory of careers","author":"Holland, J.","year":"1973"},{"key":"atypb37","doi-asserted-by":"publisher","DOI":"10.1177\/014920638701300203"},{"key":"atypb38","doi-asserted-by":"publisher","DOI":"10.1037\/0021-9010.76.5.675"},{"key":"atypb39","volume-title":"Victims
-        of groupthink","author":"Janis, I.","year":"1972"},{"key":"atypb40","first-page":"18","volume":"6","author":"Kahalas,
-        H.","year":"1979","journal-title":"Jounal of Industrial Psychology"},{"key":"atypb41","doi-asserted-by":"publisher","DOI":"10.2307\/2392547"},{"key":"atypb42","volume-title":"Strategies
-        for diversification and change","author":"Leontiades, M.","year":"1980"},{"key":"atypb43","volume-title":"The
-        policy-making process","author":"Lindblom, C. E.","year":"1968"},{"key":"atypb44","first-page":"385","volume":"23","author":"Lindsay,
-        W. M.","year":"1980","journal-title":"Proceedings of the Academy of Management"},{"key":"atypb45","volume-title":"Corporate
-        planning: An executive viewpoint","author":"Lorange, P.","year":"1980"},{"key":"atypb46","volume-title":"Taking
-        risks: The management of uncertainty","author":"MacCrimmon, K.","year":"1986"},{"key":"atypb47","first-page":"26","volume":"64","author":"Malik,
-        Z.","year":"1975","journal-title":"Management Review"},{"key":"atypb48","volume-title":"Organizations","author":"March,
-        J. G.","year":"1958"},{"key":"atypb49","doi-asserted-by":"publisher","DOI":"10.2307\/256471"},{"key":"atypb50","doi-asserted-by":"publisher","DOI":"10.1287\/mnsc.37.1.34"},{"key":"atypb51","volume-title":"The
-        structuring of organizations","author":"Mintzberg, H.","year":"1979"},{"key":"atypb52","doi-asserted-by":"publisher","DOI":"10.2307\/2392045"},{"key":"atypb53","volume-title":"Diversification,
-        market structure, and firm performance","author":"Montgomery, C. A.","year":"1979"},{"key":"atypb54","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250090303"},{"key":"atypb55","volume-title":"Executive
-        team demography, organizational innovation, and firm performance","author":"O''Reilly,
-        C.","year":"1989"},{"key":"atypb56","first-page":"299","volume-title":"Research
-        in organizational behavior","author":"Pfeffer, J.","year":"1983"},{"key":"atypb57","first-page":"7","author":"Quinn,
-        J. B.","year":"1978","journal-title":"Sloan Management Review"},{"key":"atypb58","volume-title":"Strategies
-        for change: Logical incrementalism","author":"Quinn, J. B.","year":"1980"},{"key":"atypb59","doi-asserted-by":"publisher","DOI":"10.2307\/2094498"},{"key":"atypb60","doi-asserted-by":"publisher","DOI":"10.1002\/smj.4250060403"},{"key":"atypb61","doi-asserted-by":"publisher","DOI":"10.2307\/256025"},{"key":"atypb62","doi-asserted-by":"publisher","DOI":"10.5465\/amr.1984.4278109"},{"key":"atypb63","first-page":"129","volume-title":"The
-        executive effect: Concept and methods for studying top managers","author":"Romanelli,
-        E.","year":"1988"},{"key":"atypb64","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-6486.1987.tb00942.x"},{"key":"atypb65","volume-title":"Managerial
-        values in perspective","author":"Schmidt, W.","year":"1983"},{"key":"atypb66","volume-title":"Human
-        information processing","author":"Schroder, H.","year":"1967"},{"key":"atypb67","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-6486.1988.tb00021.x"},{"key":"atypb68","volume-title":"The
-        banks of Illinois","author":"Sheshunoff Information Services, Inc.","year":"1988"},{"key":"atypb69","volume-title":"The
-        banks of Indiana","author":"Sheshunoff Information Services, Inc.","year":"1988"},{"key":"atypb70","volume-title":"The
-        banks of Michigan","author":"Sheshunoff Information Services, Inc.","year":"1988"},{"key":"atypb71","volume-title":"The
-        banks of Minnesota","author":"Sheshunoff Information Services, Inc.","year":"1988"},{"key":"atypb72","volume-title":"The
-        banks of Ohio","author":"Sheshunoff Information Services, Inc.","year":"1988"},{"key":"atypb73","volume-title":"The
-        banks of Wisconsin","author":"Sheshunoff Information Services, Inc.","year":"1988"},{"key":"atypb74","doi-asserted-by":"publisher","DOI":"10.2307\/256224"},{"key":"atypb75","doi-asserted-by":"publisher","DOI":"10.1037\/0022-3514.38.6.841"},{"key":"atypb76","doi-asserted-by":"publisher","DOI":"10.2307\/2392337"},{"key":"atypb77","doi-asserted-by":"publisher","DOI":"10.2307\/255721"},{"key":"atypb78","doi-asserted-by":"publisher","DOI":"10.2307\/255626"},{"key":"atypb79","doi-asserted-by":"publisher","DOI":"10.1016\/0007-6813(70)90162-X"},{"key":"atypb80","doi-asserted-by":"publisher","DOI":"10.2307\/2391925"},{"key":"atypb81","doi-asserted-by":"publisher","DOI":"10.1177\/001872676501800104"},{"key":"atypb82","first-page":"171","volume":"7","author":"Tushman,
-        M.","year":"1985","journal-title":"Research in Organizational Behavior"},{"key":"atypb83","doi-asserted-by":"publisher","DOI":"10.2307\/254712"},{"key":"atypb84","doi-asserted-by":"publisher","DOI":"10.5465\/amr.1986.4283976"},{"key":"atypb85","doi-asserted-by":"publisher","DOI":"10.1037\/h0031776"},{"key":"atypb86","doi-asserted-by":"publisher","DOI":"10.2307\/2393081"},{"key":"atypb87","doi-asserted-by":"publisher","DOI":"10.2307\/255866"},{"key":"atypb88","doi-asserted-by":"publisher","DOI":"10.2307\/3151683"},{"key":"atypb89","doi-asserted-by":"publisher","DOI":"10.2307\/256474"},{"key":"atypb90","doi-asserted-by":"publisher","DOI":"10.2307\/255741"}],"container-title":["Group
-        & Organization Management"],"language":"en","link":[{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.1177\/1059601194194002","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.1177\/1059601194194002","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,3,15]],"date-time":"2021-03-15T05:21:42Z","timestamp":1615785702000},"score":0.0,"subtitle":["The
-        Role of Top Team Demography"],"issued":{"date-parts":[[1994,12]]},"references-count":90,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1994,12]]}},"alternative-id":["10.1177\/1059601194194002"],"URL":"http:\/\/dx.doi.org\/10.1177\/1059601194194002","ISSN":["1059-6011","1552-3993"],"issn-type":[{"value":"1059-6011","type":"print"},{"value":"1552-3993","type":"electronic"}],"subject":["Organizational
-        Behavior and Human Resource Management","Applied Psychology","Arts and Humanities
-        (miscellaneous)"],"published":{"date-parts":[[1994,12]]}},{"indexed":{"date-parts":[[2021,12,19]],"date-time":"2021-12-19T06:52:40Z","timestamp":1639896760647},"reference-count":0,"publisher":"Bloomsbury
-        Academic","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.5040\/9781474284974.00396","type":"book-chapter","created":{"date-parts":[[2015,11,27]],"date-time":"2015-11-27T11:39:42Z","timestamp":1448624382000},"source":"Crossref","is-referenced-by-count":0,"title":["bursary"],"prefix":"10.5040","member":"2984","container-title":["Scoor-oot
-        : A Dictionary of Scots Words and Phrases in Current Use"],"deposited":{"date-parts":[[2020,5,21]],"date-time":"2020-05-21T22:35:50Z","timestamp":1590100550000},"score":0.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781474284974.00396"},{"indexed":{"date-parts":[[2022,1,31]],"date-time":"2022-01-31T09:29:07Z","timestamp":1643621347142},"reference-count":0,"publisher":"European
-        Mathematical Society - EMS - Publishing House GmbH","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Elem.
-        Math."],"published-print":{"date-parts":[[2008]]},"DOI":"10.4171\/em\/97","type":"journal-article","created":{"date-parts":[[2009,12,24]],"date-time":"2009-12-24T09:40:50Z","timestamp":1261647650000},"page":"122-125","source":"Crossref","is-referenced-by-count":3,"title":["Mean
-        value theorems for differences"],"prefix":"10.4171","author":[{"given":"J.
-        Marshall","family":"Ash","sequence":"first","affiliation":[]}],"member":"2673","container-title":["Elemente
-        der Mathematik"],"language":"en","link":[{"URL":"http:\/\/www.ems-ph.org\/fulltext\/10.4171\/EM\/97","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,6]],"date-time":"2022-01-06T11:33:54Z","timestamp":1641468834000},"score":0.0,"issued":{"date-parts":[[2008]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.4171\/em\/97","ISSN":["0013-6018"],"issn-type":[{"value":"0013-6018","type":"print"}],"subject":["General
-        Economics, Econometrics and Finance"],"published":{"date-parts":[[2008]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:35 GMT
-recorded_with: VCR 6.1.0
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2022,4,1]],"date-time":"2022-04-01T15:24:46Z","timestamp":1648826686371},"reference-count":0,"publisher":"TechKnowledge
+        General Trading LLC","issue":"30","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["\u0627\u0644\u0639\u0644\u0648\u0645
+        \u0627\u0644\u0634\u0631\u0639\u064a\u0629"],"published-print":{"date-parts":[[2013,11]]},"DOI":"10.12816\/0017032","type":"journal-article","created":{"date-parts":[[2016,1,14]],"date-time":"2016-01-14T11:25:38Z","timestamp":1452770738000},"page":"377-416","source":"Crossref","is-referenced-by-count":0,"title":["\u0627\u0644\u0627\u062e\u062a\u0635\u0627\u0635
+        \u0641\u064a \u0627\u062a\u062e\u0627\u0630 \u0627\u0644\u0642\u0631\u0627\u0631
+        \u0627\u0644\u0625\u062f\u0627\u0631\u064a \u0641\u064a \u0627\u0644\u0645\u0645\u0644\u0643\u0629
+        \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629
+        : \u062f\u0631\u0627\u0633\u0629 \u0645\u0642\u0627\u0631\u0646\u0629"],"prefix":"10.12816","author":[{"given":"\u062e\u0627\u0644\u062f
+        \u062e\u0644\u064a\u0644","family":"\u0627\u0644\u0638\u0627\u0647\u0631","sequence":"first","affiliation":[]}],"member":"5068","container-title":["\u0645\u062c\u0644\u0629
+        \u0627\u0644\u0639\u0644\u0648\u0645 \u0627\u0644\u0634\u0631\u0639\u064a\u0629"],"deposited":{"date-parts":[[2017,5,3]],"date-time":"2017-05-03T09:17:55Z","timestamp":1493803075000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/platform.almanhal.com\/MNHL\/Preview\/?ID=2-73338"}},"issued":{"date-parts":[[2013,11]]},"references-count":0,"journal-issue":{"issue":"30","published-print":{"date-parts":[[2013,11]]}},"URL":"https:\/\/doi.org\/10.12816\/0017032","ISSN":["1658-4201"],"issn-type":[{"value":"1658-4201","type":"print"}],"published":{"date-parts":[[2013,11]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T02:30:10Z","timestamp":1740105010525,"version":"3.37.3"},"reference-count":33,"publisher":"Wiley","issue":"10","license":[{"start":{"date-parts":[[2017,8,3]],"date-time":"2017-08-03T00:00:00Z","timestamp":1501718400000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"funder":[{"DOI":"10.13039\/501100001871","name":"Funda\u00e7\u00e3o
+        para a Ci\u00eancia e a Tecnologia","doi-asserted-by":"publisher","award":["POCI\u201001\u20100145\u2010FEDER\u2010006684","NORTE\u201001\u20100145\u2010FEDER\u2010000004"],"id":[{"id":"10.13039\/501100001871","id-type":"DOI","asserted-by":"publisher"}]},{"DOI":"10.13039\/501100008530","name":"European
+        Regional Development Fund","doi-asserted-by":"publisher","id":[{"id":"10.13039\/501100008530","id-type":"DOI","asserted-by":"publisher"}]},{"DOI":"10.13039\/501100003725","name":"National
+        Research Foundation of Korea","doi-asserted-by":"publisher","id":[{"id":"10.13039\/501100003725","id-type":"DOI","asserted-by":"publisher"}]},{"DOI":"10.13039\/501100002701","name":"Ministry
+        of Education","doi-asserted-by":"publisher","award":["2015R1D1A1A01060747"],"id":[{"id":"10.13039\/501100002701","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Engineering
+        in Life Sciences"],"published-print":{"date-parts":[[2017,10]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Bacterial
+        cellulose (BC) was obtained by static cultivation using commercial BC gel
+        from scoby. BC membranes (oven dried and freeze\u2010dried) were swelled with
+        8% NaOH, in the absence and in the presence of ultrasound (US), for 30, 60,
+        and 90 min. The influence of swelling conditions on both physico\u2010chemical
+        properties and molecules entrapment was evaluated. Considering the highest
+        levels of entrapment, an optimum swelling procedure was established: 8% NaOH
+        for 30\u00a0min at room temperature in the presence of US. Native and PEGylated
+        laccase from <jats:italic>Myceliophthora thermophila<\/jats:italic> was immobilized
+        on BC membranes and a different catalytic behaviour was observed after immobilization.
+        Native laccase presented activity values similar to published reports (5\u20137\u00a0U\/gBC)
+        after immobilization whereas PEGylated enzymes showed much lower activity
+        (1\u20132\u00a0U\/gBC). BC swelled membranes are presented herein as a potential
+        support for the preparation of immobilized enzymes for industrial applications,
+        like phenolics polymerization.<\/jats:p>","DOI":"10.1002\/elsc.201700085","type":"journal-article","created":{"date-parts":[[2017,7,17]],"date-time":"2017-07-17T08:53:54Z","timestamp":1500281634000},"page":"1108-1117","source":"Crossref","is-referenced-by-count":23,"title":["Ultrasound\u2010assisted
+        swelling of bacterial cellulose"],"prefix":"10.1002","volume":"17","author":[{"given":"Ji
+        Eun","family":"Song","sequence":"first","affiliation":[{"name":"Department
+        of Clothing and Textiles Sookmyung Women''s University  Seoul South Korea"},{"name":"Centre
+        of Biological Engineering University of Minho  Braga Portugal"}]},{"given":"Jing","family":"Su","sequence":"additional","affiliation":[{"name":"College
+        of Textiles Jiangnan University  Wuxi Jiangsu P. R. China"},{"name":"Centre
+        of Biological Engineering University of Minho  Braga Portugal"}]},{"given":"Ana","family":"Loureiro","sequence":"additional","affiliation":[{"name":"Centre
+        of Biological Engineering University of Minho  Braga Portugal"}]},{"given":"Madalena","family":"Martins","sequence":"additional","affiliation":[{"name":"Centre
+        of Biological Engineering University of Minho  Braga Portugal"}]},{"ORCID":"https:\/\/orcid.org\/0000-0001-7204-2064","authenticated-orcid":false,"given":"Artur","family":"Cavaco\u2010Paulo","sequence":"additional","affiliation":[{"name":"College
+        of Textiles Jiangnan University  Wuxi Jiangsu P. R. China"},{"name":"Centre
+        of Biological Engineering University of Minho  Braga Portugal"}]},{"given":"Hye
+        Rim","family":"Kim","sequence":"additional","affiliation":[{"name":"Department
+        of Clothing and Textiles Sookmyung Women''s University  Seoul South Korea"}]},{"ORCID":"https:\/\/orcid.org\/0000-0001-6252-8693","authenticated-orcid":false,"given":"Carla","family":"Silva","sequence":"additional","affiliation":[{"name":"Centre
+        of Biological Engineering University of Minho  Braga Portugal"}]}],"member":"311","published-online":{"date-parts":[[2017,8,3]]},"reference":[{"key":"e_1_2_8_2_1","first-page":"53","article-title":"Swelling
+        studies of composite hydrogels based on bacterial cellulose and gelatin","volume":"77","author":"P\u0103v\u0103loiu
+        R. D.","year":"2015","journal-title":"U.P.B. Sci. Bull. Ser."},{"key":"e_1_2_8_3_1","doi-asserted-by":"publisher","DOI":"10.1111\/1541-4337.12073"},{"key":"e_1_2_8_4_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.carbpol.2013.01.076"},{"key":"e_1_2_8_5_1","doi-asserted-by":"publisher","DOI":"10.1002\/bab.1148"},{"key":"e_1_2_8_6_1","doi-asserted-by":"publisher","DOI":"10.1021\/jp204422v"},{"key":"e_1_2_8_7_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.procbio.2011.07.006"},{"key":"e_1_2_8_8_1","doi-asserted-by":"publisher","DOI":"10.1163\/156856209X412182"},{"key":"e_1_2_8_9_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0079-6700(01)00021-1"},{"key":"e_1_2_8_10_1","doi-asserted-by":"publisher","DOI":"10.1021\/es991271g"},{"key":"e_1_2_8_11_1","doi-asserted-by":"crossref","first-page":"1","DOI":"10.3389\/fmicb.2015.01245","article-title":"Evaluation
+        of laccase immobilized on natural nanostructured bacterial cellulose","volume":"6","author":"Chen
+        L.","year":"2015","journal-title":"Front. Microbiol."},{"key":"e_1_2_8_12_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.carbpol.2016.03.009"},{"key":"e_1_2_8_13_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.bej.2005.04.019"},{"key":"e_1_2_8_14_1","doi-asserted-by":"publisher","DOI":"10.1002\/jctb.4994"},{"key":"e_1_2_8_15_1","doi-asserted-by":"publisher","DOI":"10.1007\/s13369-015-1712-z"},{"key":"e_1_2_8_16_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.molcatb.2007.12.021"},{"key":"e_1_2_8_17_1","first-page":"4623","article-title":"Immobilization
+        of collagen peptide on dialdehyde bacterial cellulose nanofibers via covalent
+        bonds for tissue engineering and regeneration","volume":"21","author":"Wen
+        X.","year":"2015","journal-title":"Int. J. Nanomedicine"},{"key":"e_1_2_8_18_1","doi-asserted-by":"publisher","DOI":"10.1002\/elsc.201400054"},{"key":"e_1_2_8_19_1","doi-asserted-by":"publisher","DOI":"10.1016\/0022-2836(76)90011-5"},{"key":"e_1_2_8_20_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.eurpolymj.2009.04.033"},{"key":"e_1_2_8_21_1","doi-asserted-by":"crossref","unstructured":"T.
+        Yang 2012 22 24","DOI":"10.1021\/cm302700w"},{"key":"e_1_2_8_22_1","doi-asserted-by":"publisher","DOI":"10.1007\/s10570-015-0843-4"},{"key":"e_1_2_8_23_1","doi-asserted-by":"publisher","DOI":"10.1023\/B:CELL.0000046412.11983.61"},{"key":"e_1_2_8_24_1","doi-asserted-by":"publisher","DOI":"10.1007\/s10570-009-9362-5"},{"key":"e_1_2_8_25_1","doi-asserted-by":"publisher","DOI":"10.1021\/mp500337r"},{"key":"e_1_2_8_26_1","doi-asserted-by":"publisher","DOI":"10.1155\/2013\/905471"},{"key":"e_1_2_8_27_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0304-4165(97)00030-5"},{"key":"e_1_2_8_28_1","first-page":"399","article-title":"Comparison
+        study of hydrogels properties synthesized with micro\u2010 and nano\u2010
+        size bacterial cellulose particles extracted from Nata de coco","volume":"26","author":"Johari
+        N. S.","year":"2012","journal-title":"Chem Biochem. Eng. Q."},{"key":"e_1_2_8_29_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.carbpol.2008.12.038"},{"key":"e_1_2_8_30_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.ultsonch.2011.11.007"},{"key":"e_1_2_8_31_1","unstructured":"Oubani
+        H. Abbas A. Harris A. Investigation on the mechanical pretreatment of cellulose
+        by high intensity ultrasound and ball milling. CHEMECA 2011: Engineering a
+        Better World Sydney Hilton Hotel NSW Australia Sept 18\u221221."},{"key":"e_1_2_8_32_1","doi-asserted-by":"publisher","DOI":"10.3389\/fmicb.2015.01245"},{"key":"e_1_2_8_33_1","doi-asserted-by":"publisher","DOI":"10.1039\/c2cp41988b"},{"key":"e_1_2_8_34_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.molcatb.2013.12.008"}],"container-title":["Engineering
+        in Life Sciences"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Felsc.201700085","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/elsc.201700085","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,24]],"date-time":"2023-09-24T15:21:07Z","timestamp":1695568867000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/elsc.201700085"}},"issued":{"date-parts":[[2017,8,3]]},"references-count":33,"journal-issue":{"issue":"10","published-print":{"date-parts":[[2017,10]]}},"alternative-id":["10.1002\/elsc.201700085"],"URL":"https:\/\/doi.org\/10.1002\/elsc.201700085","archive":["Portico"],"ISSN":["1618-0240","1618-2863"],"issn-type":[{"type":"print","value":"1618-0240"},{"type":"electronic","value":"1618-2863"}],"published":{"date-parts":[[2017,8,3]]}},{"indexed":{"date-parts":[[2024,10,30]],"date-time":"2024-10-30T06:53:08Z","timestamp":1730271188168,"version":"3.28.0"},"reference-count":11,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2013,7]]},"DOI":"10.1109\/isbast.2013.5","type":"proceedings-article","created":{"date-parts":[[2013,9,19]],"date-time":"2013-09-19T12:24:40Z","timestamp":1379593480000},"page":"14-19","source":"Crossref","is-referenced-by-count":0,"title":["Application
+        of Network Analyzer Based on the Automatic Control of LabVIEW in Radio and
+        Television Test"],"prefix":"10.1109","author":[{"given":"Kang","family":"Jianhua","sequence":"first","affiliation":[]},{"given":"She","family":"Fangyi","sequence":"additional","affiliation":[]},{"given":"Zhang","family":"Weidong","sequence":"additional","affiliation":[]},{"given":"Ping","family":"Jie","sequence":"additional","affiliation":[]}],"member":"263","reference":[{"key":"3","first-page":"974","volume":"41","author":"sanpietro","year":"1995","journal-title":"Accuracy
+        of A Multiport Network Analyzer"},{"journal-title":"Agilent E5061A\/E5062A
+        ENA Series ENA Series RF Network Analyzers Programmer''s Guide","year":"2008","key":"2"},{"key":"10","first-page":"251","article-title":"The
+        application of video index in satellite digital television receiver with labview","volume":"22","author":"kang","year":"2008","journal-title":"Journal
+        of Electronic Measurement and Instrument"},{"journal-title":"LabVIEW User
+        Manual","year":"2010","key":"1"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1109\/ICECOM.2003.1290977"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1109\/22.238511"},{"key":"5","doi-asserted-by":"publisher","DOI":"10.1109\/TIM.2006.880309"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1109\/MWSYM.2003.1210493"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1063\/1.1634356"},{"key":"8","first-page":"26","article-title":"Control
+        and test system for f ilter based on LabVIEW","volume":"32","author":"yu","year":"2004","journal-title":"Huazhong
+        Univ of Sci & Tech (Nature Science Edition)"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1109\/ICCDA.2010.5541233"}],"event":{"name":"2013
+        International Symposium on Biometrics and Security Technologies (ISBAST)","start":{"date-parts":[[2013,7,2]]},"location":"Chengdu,
+        Sichuan, China","end":{"date-parts":[[2013,7,5]]}},"container-title":["2013
+        International Symposium on Biometrics and Security Technologies"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx7\/6597099\/6597649\/06597660.pdf?arnumber=6597660","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,22]],"date-time":"2017-03-22T17:26:42Z","timestamp":1490203602000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/6597660\/"}},"issued":{"date-parts":[[2013,7]]},"references-count":11,"URL":"https:\/\/doi.org\/10.1109\/isbast.2013.5","published":{"date-parts":[[2013,7]]}},{"indexed":{"date-parts":[[2024,11,13]],"date-time":"2024-11-13T05:32:18Z","timestamp":1731475938582,"version":"3.28.0"},"reference-count":0,"publisher":"Institution
+        of Engineering and Technology (IET)","issue":"8","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Electron.
+        Lett."],"published-print":{"date-parts":[[2011,4,14]]},"DOI":"10.1049\/el.2011.9033","type":"journal-article","created":{"date-parts":[[2011,4,13]],"date-time":"2011-04-13T22:52:59Z","timestamp":1302735179000},"page":"474-474","source":"Crossref","is-referenced-by-count":0,"title":["Interview"],"prefix":"10.1049","volume":"47","author":[{"given":"David","family":"Graham","sequence":"first","affiliation":[{"name":"West
+        Virginia University, USA"}]}],"member":"265","container-title":["Electronics
+        Letters"],"language":"en","link":[{"URL":"https:\/\/digital-library.theiet.org\/content\/journals\/10.1049\/el.2011.9033?crawler=true&mimetype=application\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,11,12]],"date-time":"2024-11-12T16:53:40Z","timestamp":1731430420000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/digital-library.theiet.org\/doi\/10.1049\/el.2011.9033"}},"issued":{"date-parts":[[2011,4,14]]},"references-count":0,"journal-issue":{"issue":"8","published-print":{"date-parts":[[2011,4,14]]}},"alternative-id":["10.1049\/el.2011.9033"],"URL":"https:\/\/doi.org\/10.1049\/el.2011.9033","ISSN":["0013-5194","1350-911X"],"issn-type":[{"type":"print","value":"0013-5194"},{"type":"electronic","value":"1350-911X"}],"published":{"date-parts":[[2011,4,14]]}},{"indexed":{"date-parts":[[2025,6,3]],"date-time":"2025-06-03T06:24:24Z","timestamp":1748931864182},"reference-count":38,"publisher":"Springer
+        Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2015,8,10]],"date-time":"2015-08-10T00:00:00Z","timestamp":1439164800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"},{"start":{"date-parts":[[2015,8,10]],"date-time":"2015-08-10T00:00:00Z","timestamp":1439164800000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
+        Rep"],"abstract":"<jats:title>Abstract<\/jats:title><jats:p>We demonstrate
+        a fiber optic surface plasmon resonance (SPR) biosensor based on smart phone
+        platforms. The light-weight optical components and sensing element are connected
+        by optical fibers on a phone case. This SPR adaptor can be conveniently installed
+        or removed from smart phones. The measurement, control and reference channels
+        are illuminated by the light entering the lead-in fibers from the phone\u2019s
+        LED flash, while the light from the end faces of the lead-out fibers is detected
+        by the phone\u2019s camera. The SPR-sensing element is fabricated by a light-guiding
+        silica capillary that is stripped off its cladding and coated with 50-nm gold
+        film. Utilizing a smart application to extract the light intensity information
+        from the camera images, the light intensities of each channel are recorded
+        every 0.5\u2009s with refractive index (RI) changes. The performance of the
+        smart phone-based SPR platform for accurate and repeatable measurements was
+        evaluated by detecting different concentrations of antibody binding to a functionalized
+        sensing element and the experiment results were validated through contrast
+        experiments with a commercial SPR instrument. This cost-effective and portable
+        SPR biosensor based on smart phones has many applications, such as medicine,
+        health and environmental monitoring.<\/jats:p>","DOI":"10.1038\/srep12864","type":"journal-article","created":{"date-parts":[[2015,8,10]],"date-time":"2015-08-10T10:46:10Z","timestamp":1439203570000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":224,"title":["Surface
+        Plasmon Resonance Biosensor Based on Smart Phone Platforms"],"prefix":"10.1038","volume":"5","author":[{"given":"Yun","family":"Liu","sequence":"first","affiliation":[]},{"given":"Qiang","family":"Liu","sequence":"additional","affiliation":[]},{"given":"Shimeng","family":"Chen","sequence":"additional","affiliation":[]},{"given":"Fang","family":"Cheng","sequence":"additional","affiliation":[]},{"given":"Hanqi","family":"Wang","sequence":"additional","affiliation":[]},{"given":"Wei","family":"Peng","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2015,8,10]]},"reference":[{"key":"BFsrep12864_CR1","doi-asserted-by":"publisher","first-page":"336","DOI":"10.1111\/j.1440-1843.2009.01697.x","volume":"15","author":"SS
+        Ng","year":"2010","unstructured":"Ng, S. S. et al. Validation of Embletta
+        portable diagnostic system for identifying patients with suspected obstructive
+        sleep apnoea syndrome (OSAS). Respirology. 15, 336\u2013342 (2010).","journal-title":"Respirology."},{"key":"BFsrep12864_CR2","doi-asserted-by":"publisher","first-page":"253","DOI":"10.1183\/09031936.03.00298103","volume":"21","author":"K
+        Dingli","year":"2003","unstructured":"Dingli, K. et al. Evaluation of a portable
+        device for diagnosing the sleep apnoea\/hypopnoea syndrome. Eur. Respir. J.
+        21, 253\u2013259 (2003).","journal-title":"Eur. Respir. J."},{"key":"BFsrep12864_CR3","doi-asserted-by":"publisher","first-page":"1700","DOI":"10.1007\/s00216-003-2435-7","volume":"378","author":"J
+        G. E.","year":"2004","unstructured":"G. E. J. & Van den Berg, A. Lab-on-a-chip
+        systems for biomedical and environmental monitoring. Anal. Bioanal. Chem.
+        378, 1700\u20131703 (2004).","journal-title":"Anal. Bioanal. Chem."},{"key":"BFsrep12864_CR4","doi-asserted-by":"publisher","first-page":"492","DOI":"10.1016\/j.biotechadv.2008.05.007","volume":"26","author":"JH
+        Luong","year":"2008","unstructured":"Luong, J. H., Male, K. B. & Glennon,
+        J. D. Biosensor technology: technology push versus market pull. Biotechnol.
+        Adv. 26, 492\u2013500 (2008).","journal-title":"Biotechnol. Adv."},{"key":"BFsrep12864_CR5","doi-asserted-by":"publisher","first-page":"256","DOI":"10.1109\/7361.983465","volume":"1","author":"DM
+        Wilson","year":"2001","unstructured":"Wilson, D. M., Hoyt, S., Janata, J.,
+        Booksh, K. & Obando, L. Chemical sensors for portable, handheld field instruments.
+        IEEE. Sens. J. 1, 256\u2013274 (2001).","journal-title":"IEEE. Sens. J."},{"key":"BFsrep12864_CR6","doi-asserted-by":"publisher","first-page":"226","DOI":"10.1016\/S0165-9936(02)00402-8","volume":"21","author":"J
+        Wang","year":"2002","unstructured":"Wang, J. Portable electrochemical systems.
+        Trac-Trend Anal Chem. 21, 226\u2013232 (2002).","journal-title":"Trac-Trend
+        Anal Chem."},{"key":"BFsrep12864_CR7","doi-asserted-by":"publisher","first-page":"742","DOI":"10.1093\/ajcn\/85.3.742","volume":"85","author":"M
+        St-Onge","year":"2007","unstructured":"St-Onge, M., Mignault, D., Allison,
+        D. B. & Rabasa-Lhoret, R. Evaluation of a portable device to measure daily
+        energy expenditure in free-living adults. Am. J. Clin. Nutr. 85, 742\u2013749
+        (2007).","journal-title":"Am. J. Clin. Nutr."},{"key":"BFsrep12864_CR8","doi-asserted-by":"publisher","first-page":"772","DOI":"10.1002\/ange.201105986","volume":"124","author":"H
+        Kim","year":"2012","unstructured":"Kim, H. et al. Palladium Nanoparticle Catalyzed
+        Conversion of Iron Nanoparticles into Diameter- and Length-Controlled Fe2P
+        Nanorods. Angew. Chem. Int. Ed. Engl. 124, 772\u2013775 (2012).","journal-title":"Angew.
+        Chem. Int. Ed. Engl."},{"key":"BFsrep12864_CR9","doi-asserted-by":"publisher","first-page":"11753","DOI":"10.1002\/ange.201206804","volume":"124","author":"P
+        Preechaburana","year":"2012","unstructured":"Preechaburana, P., Gonzalez,
+        M. C., Suska, A. & Filippini, D. Surface plasmon resonance chemical sensing
+        on cell phones. Angew. Chem. Int. Ed. Engl. 124, 11753\u201311756 (2012).","journal-title":"Angew.
+        Chem. Int. Ed. Engl."},{"key":"BFsrep12864_CR10","doi-asserted-by":"publisher","first-page":"734","DOI":"10.1109\/TITB.2010.2047865","volume":"14","author":"JJ
+        Oresko","year":"2010","unstructured":"Oresko, J. J. et al. A wearable smartphone-based
+        platform for real-time cardiovascular disease detection via electrocardiogram
+        processing. IEEE. Trans. Inf. Technol. Biomed. 14, 734\u2013740 (2010).","journal-title":"IEEE.
+        Trans. Inf. Technol. Biomed."},{"key":"BFsrep12864_CR11","doi-asserted-by":"publisher","first-page":"4240","DOI":"10.1039\/c2lc40741h","volume":"12","author":"L
+        Shen","year":"2012","unstructured":"Shen, L., Hagen, J. A. & Papautsky, I.
+        Point-of-care colorimetric detection with a smartphone. Lab Chip. 12, 4240\u20134243
+        (2012).","journal-title":"Lab Chip."},{"key":"BFsrep12864_CR12","doi-asserted-by":"publisher","first-page":"1454","DOI":"10.1039\/c2lc21226a","volume":"12","author":"RD
+        Stedtfeld","year":"2012","unstructured":"Stedtfeld, R. D. et al. Gene-Z: a
+        device for point of care genetic testing using a smartphone. Lab Chip. 12,
+        1454\u20131462 (2012).","journal-title":"Lab Chip."},{"key":"BFsrep12864_CR13","doi-asserted-by":"publisher","first-page":"9147","DOI":"10.1021\/nn4037706","volume":"7","author":"Q
+        Wei","year":"2013","unstructured":"Wei, Q. et al. Fluorescent imaging of single
+        nanoparticles and viruses on a smart phone. ACS nano. 7, 9147\u20139155 (2013).","journal-title":"ACS
+        nano."},{"key":"BFsrep12864_CR14","doi-asserted-by":"publisher","first-page":"636","DOI":"10.1039\/C2LC41152K","volume":"13","author":"AF
+        Coskun","year":"2013","unstructured":"Coskun, A. F. et al. A personalized
+        food allergen testing platform on a cellphone. Lab Chip. 13, 636\u2013640
+        (2013).","journal-title":"Lab Chip."},{"key":"BFsrep12864_CR15","doi-asserted-by":"publisher","first-page":"462","DOI":"10.1021\/cr068107d","volume":"108","author":"J
+        Homola","year":"2008","unstructured":"Homola, J. \u201cSurface plasmon resonance
+        sensors for detection of chemical and biological species\u201d, Chem. Rev.
+        108, 462\u2013493 (2008).","journal-title":"Chem. Rev."},{"key":"BFsrep12864_CR16","doi-asserted-by":"publisher","first-page":"2226","DOI":"10.1021\/ac051777j","volume":"78","author":"N
+        Kanoh","year":"2006","unstructured":"Kanoh, N. et al. SPR imaging of photo-cross-linked
+        small-molecule arrays on gold. Anal. Chem. 78, 2226\u20132230 (2006).","journal-title":"Anal.
+        Chem."},{"key":"BFsrep12864_CR17","doi-asserted-by":"publisher","first-page":"3979","DOI":"10.1021\/ac050135t","volume":"77","author":"K
+        Inamori","year":"2005","unstructured":"Inamori, K. et al. Detection and quantification
+        of on-chip phosphorylated peptides by surface plasmon resonance imaging techniques
+        using a phosphate capture molecule. Anal. Chem. 77, 3979\u20133985 (2005).","journal-title":"Anal.
+        Chem."},{"key":"BFsrep12864_CR18","doi-asserted-by":"publisher","first-page":"1549","DOI":"10.1016\/j.foodchem.2011.10.109","volume":"132","author":"Y
+        Li","year":"2012","unstructured":"Li, Y., Liu, X. & Lin, Z. Recent developments
+        and applications of surface plasmon resonance biosensors for the detection
+        of mycotoxins in foodstuffs. Food. Chem. 132, 1549\u20131554 (2012).","journal-title":"Food.
+        Chem."},{"key":"BFsrep12864_CR19","doi-asserted-by":"publisher","first-page":"4948","DOI":"10.1021\/ac9708001","volume":"69","author":"AJ
+        Thiel","year":"1997","unstructured":"Thiel, A. J., Frutos, A. G., Jordan,
+        C. E., Corn, R. M. & Smith, L. M. In situ surface plasmon resonance imaging
+        detection of DNA hybridization to oligonucleotide arrays on gold surfaces.
+        Anal. Chem. 69, 4948\u20134956 (1997).","journal-title":"Anal. Chem."},{"key":"BFsrep12864_CR20","doi-asserted-by":"publisher","first-page":"1449","DOI":"10.1021\/ac961012z","volume":"69","author":"CE
+        Jordan","year":"1997","unstructured":"Jordan, C. E. & Corn, R. M. Surface
+        Plasmon Resonance Imaging Measurements of Electrostatic Biopolymer Adsorption
+        onto Chemically Modified Gold Surfaces. Anal. Chem. 69, 1449\u20131456 (1997).","journal-title":"Anal.
+        Chem."},{"key":"BFsrep12864_CR21","doi-asserted-by":"publisher","first-page":"664","DOI":"10.1016\/j.bios.2014.09.082","volume":"64","author":"SS
+        Zhao","year":"2015","unstructured":"Zhao, S. S. et al. Miniature multi-channel
+        SPR instrument for methotrexate monitoring in clinical samples. Biosensors
+        & Bioelectronics. 64, 664\u2013670 (2015).","journal-title":"Biosensors &
+        Bioelectronics."},{"key":"BFsrep12864_CR22","doi-asserted-by":"publisher","first-page":"213","DOI":"10.1016\/0925-4005(93)80021-3","volume":"12","author":"RC
+        Jorgenson","year":"1993","unstructured":"Jorgenson, R. C. & Yee, S. S. A fiber-optic
+        chemical sensor based on surface plasmon resonance. Sens. Actuators B. 12,
+        213\u2013220 (1993).","journal-title":"Sens. Actuators B."},{"key":"BFsrep12864_CR23","doi-asserted-by":"publisher","first-page":"1244","DOI":"10.1016\/j.bios.2009.09.042","volume":"25","author":"Y
+        Yanase","year":"2010","unstructured":"Yanase, Y. et al. Development of an
+        optical fiber SPR sensor for living cell activation. Biosensors & Bioelectronics.
+        25, 1244\u20131247 (2010).","journal-title":"Biosensors & Bioelectronics."},{"key":"BFsrep12864_CR24","doi-asserted-by":"publisher","first-page":"614","DOI":"10.1364\/OL.37.000614","volume":"37","author":"S
+        Kim","year":"2012","unstructured":"Kim, S., Kim, S. J., Moon, H. & Jun, S.
+        B. In vivo optical neural recording using fiber-based surface plasmon resonance.
+        Opt. Lett. 37, 614\u2013616 (2012).","journal-title":"Opt. Lett."},{"key":"BFsrep12864_CR25","doi-asserted-by":"publisher","first-page":"2988","DOI":"10.1364\/OL.30.002988","volume":"30","author":"W
+        Peng","year":"2005","unstructured":"Peng, W., Banerji, S., Kim, Y. C. & Booksh,
+        K. S. Investigation of dual-channel fiber-optic surface plasmon resonance
+        sensing for biological applications. Opt. Lett. 30, 2988\u20132990 (2005).","journal-title":"Opt.
+        Lett."},{"key":"BFsrep12864_CR26","doi-asserted-by":"publisher","first-page":"71","DOI":"10.1016\/S0925-4005(97)80279-1","volume":"41","author":"AJC
+        Tubb","year":"1997","unstructured":"Tubb, A. J. C., Payne, F. P., Millington,
+        R. B. & Lowe, C. R. Single-mode optical fibre surface plasma wave chemical
+        sensor. Sens. Actuators B. 41, 71\u201379 (1997).","journal-title":"Sens.
+        Actuators B."},{"key":"BFsrep12864_CR27","doi-asserted-by":"publisher","first-page":"015005","DOI":"10.1088\/2040-8978\/12\/1\/015005","volume":"12","author":"X
+        Yu","year":"2010","unstructured":"Yu, X. et al. A selectively coated photonic
+        crystal fiber based surface plasmon resonance sensor. J. Optics. 12, 015005
+        (2010).","journal-title":"J. Optics."},{"key":"BFsrep12864_CR28","doi-asserted-by":"publisher","first-page":"120","DOI":"10.1016\/j.snb.2005.04.012","volume":"114","author":"SF
+        Wang","year":"2006","unstructured":"Wang, S. F., Chiu, M. H. & Chang, R. S.
+        Numerical simulation of a D-type optical fiber sensor based on the Kretchmann\u2019s
+        configuration and heterodyne interferometry. Sens. Actuators B. 114, 120\u2013126
+        (2006).","journal-title":"Sens. Actuators B."},{"key":"BFsrep12864_CR29","doi-asserted-by":"publisher","first-page":"236","DOI":"10.1016\/S0925-4005(03)00034-0","volume":"90","author":"M
+        Piliarik","year":"2003","unstructured":"Piliarik, M., Homola, J., Man\u0131kov\u00e1,
+        Z. & \u010ctyrok\u00fd, J. Surface plasmon resonance sensor based on a single-mode
+        polarization-maintaining optical fiber. Sens. Actuators B. 90, 236\u2013242
+        (2003).","journal-title":"Sens. Actuators B."},{"key":"BFsrep12864_CR30","doi-asserted-by":"publisher","first-page":"2218","DOI":"10.1364\/OL.30.002218","volume":"30","author":"YC
+        Kim","year":"2005","unstructured":"Kim, Y. C., Peng, W., Banerji, S. & Booksh,
+        K. S. Tapered fiber optic surface plasmon resonance sensor for analyses of
+        vapor and liquid phases. Opt. Lett. 30, 2218\u20132220 (2005).","journal-title":"Opt.
+        Lett."},{"key":"BFsrep12864_CR31","doi-asserted-by":"publisher","first-page":"23254","DOI":"10.1364\/OE.17.023254","volume":"17","author":"B
+        \u0160pa\u010dkov\u00e1","year":"2009","unstructured":"\u0160pa\u010dkov\u00e1,
+        B. & Homola, J. Theoretical analysis of a fiber optic surface plasmon resonance
+        sensor utilizing a Bragg grating. Opt. Express. 17, 23254\u201323264 (2009).","journal-title":"Opt.
+        Express."},{"key":"BFsrep12864_CR32","doi-asserted-by":"publisher","first-page":"5116","DOI":"10.1021\/ac990470f","volume":"71","author":"LA
+        Obando","year":"1999","unstructured":"Obando, L. A. & Booksh, K. S. Tuning
+        Dynamic Range and Sensitivity of White-Light, Multimode, Fiber-Optic Surface
+        Plasmon Resonance Sensors, Anal. Chem. 71, 5116\u20135122 (1999).","journal-title":"Anal.
+        Chem."},{"key":"BFsrep12864_CR33","doi-asserted-by":"publisher","first-page":"2988","DOI":"10.1364\/OL.30.002988","volume":"30","author":"W
+        Peng","year":"2005","unstructured":"Peng, W., Banerji, S., Kim, Y. C. & Booksh,
+        K. S. Investigation of dual-channel fiber-optic surface plasmon resonance
+        sensing for biological applications. Opt. Lett. 30, 2988\u20132990 (2005).","journal-title":"Opt.
+        Lett."},{"key":"BFsrep12864_CR34","doi-asserted-by":"publisher","first-page":"855","DOI":"10.1039\/b403885a","volume":"129","author":"JF
+        Masson","year":"2004","unstructured":"Masson, J. F. et al. Monitoring of recombinant
+        survival motor neuron protein using fiber-optic surface plasmon resonance.
+        Analyst. 129, 855\u2013859 (2004).","journal-title":"Analyst."},{"key":"BFsrep12864_CR35","doi-asserted-by":"publisher","first-page":"7016","DOI":"10.1021\/ac050568w","volume":"77","author":"TM
+        Battaglia","year":"2005","unstructured":"Battaglia, T. M. et al. Quantification
+        of cytokines involved in wound healing using surface plasmon resonance. Anal
+        Chem. 77, 7016\u20137023 (2005).","journal-title":"Anal Chem."},{"key":"BFsrep12864_CR36","doi-asserted-by":"publisher","first-page":"612","DOI":"10.1021\/ac061089f","volume":"79","author":"JF
+        Masson","year":"2007","unstructured":"Masson, J. F., Battaglia, T. M., Khairallah,
+        P., Beaudoin, S. & Booksh, K. S. Quantitative measurement of cardiac markers
+        in undiluted serum. Anal Chem. 79, 612\u2013619 (2007).","journal-title":"Anal
+        Chem."},{"key":"BFsrep12864_CR37","doi-asserted-by":"publisher","first-page":"2357","DOI":"10.1021\/ac900007c","volume":"81","author":"SD
+        Soelberg","year":"2009","unstructured":"Soelberg, S. D., Stevens, R. C., Limaye,
+        A. P. & Furlong, C. E. Surface plasmon resonance detection using antibody-linked
+        magnetic nanoparticles for analyte capture, purification, concentration and
+        signal amplification. Anal. Chem. 81, 2357\u20132363 (2009).","journal-title":"Anal.
+        Chem."},{"key":"BFsrep12864_CR38","doi-asserted-by":"publisher","first-page":"5177","DOI":"10.1021\/ac9809940","volume":"70","author":"LA
+        Lyon","year":"1998","unstructured":"Lyon, L. A., Musick, M. D. & Natan, M.
+        J. Colloidal Au-enhanced surface plasmon resonance immunosensing. Anal. Chem.
+        70, 5177\u20135183 (1998).","journal-title":"Anal. Chem."}],"container-title":["Scientific
+        Reports"],"language":"en","link":[{"URL":"https:\/\/www.nature.com\/articles\/srep12864","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep12864.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep12864.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,1,5]],"date-time":"2023-01-05T23:33:01Z","timestamp":1672961581000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.nature.com\/articles\/srep12864"}},"issued":{"date-parts":[[2015,8,10]]},"references-count":38,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2015,10,16]]}},"alternative-id":["BFsrep12864"],"URL":"https:\/\/doi.org\/10.1038\/srep12864","ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"published":{"date-parts":[[2015,8,10]]},"assertion":[{"value":"24
+        February 2015","order":1,"name":"received","label":"Received","group":{"name":"ArticleHistory","label":"Article
+        History"}},{"value":"10 July 2015","order":2,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
+        History"}},{"value":"10 August 2015","order":3,"name":"first_online","label":"First
+        Online","group":{"name":"ArticleHistory","label":"Article History"}},{"value":"The
+        authors declare no competing financial interests.","order":1,"name":"Ethics","group":{"name":"EthicsHeading","label":"Competing
+        interests"}}],"article-number":"12864"},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T04:41:01Z","timestamp":1648528861910},"reference-count":0,"publisher":"De
+        Gruyter","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1918,12,31]]},"DOI":"10.1515\/9783111526379-014","type":"book-chapter","created":{"date-parts":[[2019,4,4]],"date-time":"2019-04-04T09:01:51Z","timestamp":1554368511000},"page":"113-118","source":"Crossref","is-referenced-by-count":0,"title":["Kapitel
+        X: Verletzung der zum Schutze der \u00f6ffentlichen und pers\u00f6nlichen
+        Sicherheit erlassenen Bestimmungen. \u00a7\u00a7 222\u2014239"],"prefix":"10.1515","member":"374","container-title":["Das
+        neue russische Strafgesetzbuch vom 22. M\u00e4rz 1903"],"link":[{"URL":"http:\/\/www.degruyter.com\/view\/books\/9783111526379\/9783111526379-014\/9783111526379-014.xml","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9783111526379-014\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9783111526379-014\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,21]],"date-time":"2021-04-21T12:08:29Z","timestamp":1619006909000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9783111526379-014\/html"}},"issued":{"date-parts":[[1918,12,31]]},"references-count":0,"alternative-id":["10.1515\/9783111526379-014","10.1515\/9783111526379"],"URL":"https:\/\/doi.org\/10.1515\/9783111526379-014","published":{"date-parts":[[1918,12,31]]}},{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T16:50:26Z","timestamp":1648659026094},"reference-count":0,"publisher":"Universitat
+        Jaume I","issue":"21","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["ForumRecerca"],"DOI":"10.6035\/forumrecerca.2016.21.25","type":"journal-article","created":{"date-parts":[[2019,10,17]],"date-time":"2019-10-17T11:46:32Z","timestamp":1571312792000},"page":"441-461","source":"Crossref","is-referenced-by-count":0,"title":["A
+        study on language use and language attitudes by Arabs living in Spain"],"prefix":"10.6035","author":[{"given":"Mariam","family":"Benkasem
+        Agbalu","sequence":"first","affiliation":[]}],"member":"4077","published-online":{"date-parts":[[2016]]},"container-title":["F\u00f2rum
+        de recerca"],"deposited":{"date-parts":[[2019,10,17]],"date-time":"2019-10-17T11:46:40Z","timestamp":1571312800000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/hdl.handle.net\/10234\/184233"}},"issued":{"date-parts":[[2016]]},"references-count":0,"journal-issue":{"issue":"21","published-online":{"date-parts":[[2016]]}},"URL":"https:\/\/doi.org\/10.6035\/forumrecerca.2016.21.25","ISSN":["1139-5486"],"issn-type":[{"value":"1139-5486","type":"electronic"}],"published":{"date-parts":[[2016]]}},{"indexed":{"date-parts":[[2025,6,4]],"date-time":"2025-06-04T04:06:21Z","timestamp":1749009981838,"version":"3.41.0"},"reference-count":0,"publisher":"BRILL","isbn-type":[{"type":"electronic","value":"9789004589377"},{"type":"print","value":"9789004560000"},{"type":"print","value":"9789004560000"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1906,1,1]]},"DOI":"10.1163\/9789004589377_044","type":"book-chapter","created":{"date-parts":[[2025,4,1]],"date-time":"2025-04-01T06:19:55Z","timestamp":1743488395000},"page":"148-149","source":"Crossref","is-referenced-by-count":0,"title":["Moraceae."],"prefix":"10.1163","author":[{"given":"A.","family":"Pulle","sequence":"first","affiliation":[]}],"member":"374","container-title":["Enumeration
+        of the vascular plants known from Surinam, together with their distribution
+        and synonymy"],"link":[{"URL":"https:\/\/brill.com\/view\/book\/9789004589377\/B9789004589377_s044.xml","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/brill.com\/downloadpdf\/title\/65597","content-type":"text\/html","content-version":"vor","intended-application":"syndication"}],"deposited":{"date-parts":[[2025,6,3]],"date-time":"2025-06-03T04:38:33Z","timestamp":1748925513000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/brill.com\/view\/book\/9789004589377\/B9789004589377_s044.xml"}},"issued":{"date-parts":[[1906,1,1]]},"ISBN":["9789004589377","9789004560000","9789004560000"],"references-count":0,"URL":"https:\/\/doi.org\/10.1163\/9789004589377_044","published":{"date-parts":[[1906,1,1]]}},{"indexed":{"date-parts":[[2024,5,30]],"date-time":"2024-05-30T15:51:12Z","timestamp":1717084272857},"reference-count":54,"publisher":"Royal
+        Society of Chemistry (RSC)","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Mol.
+        BioSyst."],"published-print":{"date-parts":[[2007]]},"DOI":"10.1039\/b614103j","type":"journal-article","created":{"date-parts":[[2007,1,8]],"date-time":"2007-01-08T15:34:10Z","timestamp":1168270450000},"page":"241","source":"Crossref","is-referenced-by-count":24,"title":["Artificial
+        protein sensors"],"prefix":"10.1039","volume":"3","author":[{"given":"Thomas","family":"Schrader","sequence":"first","affiliation":[]},{"given":"Sebastian","family":"Koch","sequence":"additional","affiliation":[]}],"member":"292","reference":[{"key":"b614103j-(cit1)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1233","DOI":"10.1021\/cr960387h","volume":"97","author":"Stites","year":"1997","journal-title":"Chem.
+        Rev."},{"key":"b614103j-(cit2)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1016\/S0165-6147(00)01584-4","volume":"22","author":"Terstappen","year":"2001","journal-title":"Trends
+        Pharmacol. Sci."},{"key":"b614103j-(cit3)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"4130","DOI":"10.1002\/anie.200461786","volume":"44","author":"Yin","year":"2005","journal-title":"Angew.
+        Chem., Int. Ed."},{"key":"b614103j-(cit4)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"6283","DOI":"10.1021\/ja003193z","volume":"123","author":"Fazal","year":"2001","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit5)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1038","DOI":"10.1126\/science.3285470","author":"Skerra","year":"1988","journal-title":"Science"},{"key":"b614103j-(cit6)\/*[position()=1]","first-page":"1041","author":"Horwitz","year":"1988","journal-title":"Science"},{"key":"b614103j-(cit7)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"6938","DOI":"10.1021\/ja990968z","volume":"121","author":"Zondlo","year":"1999","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit8)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"3416","DOI":"10.1021\/ja028628s","volume":"125","author":"Montclare","year":"2003","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit9)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"3806","DOI":"10.1002\/1521-3773(20011015)40:20<3806::AID-ANIE3806>3.0.CO;2-B","volume":"40","author":"Chin","year":"2001","journal-title":"Angew.
+        Chem., Int. Ed."},{"key":"b614103j-(cit10)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"14336","DOI":"10.1021\/ja034508o","volume":"125","author":"Rutledge","year":"2003","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit11)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"5","DOI":"10.1016\/S1367-5931(97)80102-0","volume":"1","author":"Osborne","year":"1997","journal-title":"Curr.
+        Opin. Chem. Biol."},{"key":"b614103j-(cit12)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"34992","DOI":"10.1074\/jbc.273.52.34992","volume":"273","author":"Jing","year":"1998","journal-title":"J.
+        Biol. Chem."},{"key":"b614103j-(cit13)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"32","DOI":"10.1016\/S1367-5931(97)80106-8","volume":"1","author":"Patel","year":"1997","journal-title":"Curr.
+        Opin. Chem. Biol."},{"key":"b614103j-(cit14)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"505","DOI":"10.1126\/science.2200121","volume":"249","author":"Tuerk","year":"1990","journal-title":"Science"},{"key":"b614103j-(cit15)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"818","DOI":"10.1038\/346818a0","volume":"346","author":"Ellington","year":"1990","journal-title":"Nature"},{"key":"b614103j-(cit16)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"9599","DOI":"10.1021\/bi00029a037","volume":"34","author":"Schneider","year":"1995","journal-title":"Biochemistry"},{"key":"b614103j-(cit17)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"173","DOI":"10.1021\/ar960298r","volume":"31","author":"Gellman","year":"1998","journal-title":"Acc.
+        Chem. Res."},{"key":"b614103j-(cit18)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1223","DOI":"10.1002\/(SICI)1521-3773(19990503)38:9<1223::AID-ANIE1223>3.0.CO;2-A","volume":"38","author":"Gademann","year":"1999","journal-title":"Angew.
+        Chem., Int. Ed."},{"key":"b614103j-(cit20)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1721","DOI":"10.1021\/ol005871s","volume":"2","author":"Jain","year":"2000","journal-title":"Org.
+        Lett."},{"key":"b614103j-(cit21)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"2651","DOI":"10.1016\/S0960-894X(03)00551-1","volume":"13","author":"Aya","year":"2003","journal-title":"Bioorg.
+        Med. Chem. Lett."},{"key":"b614103j-(cit22)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"4420","DOI":"10.1021\/ja028574m","volume":"125","author":"Wilson","year":"2003","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit23)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"12833","DOI":"10.1021\/ja0317731","volume":"126","author":"Groves","year":"2004","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit24)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"285","DOI":"10.1002\/(SICI)1097-0282(1998)47:4<285::AID-BIP4>3.0.CO;2-C","volume":"47","author":"Lin","year":"1998","journal-title":"Biopolymers"},{"key":"b614103j-(cit25)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1580","DOI":"10.1039\/b104142h","author":"Wei","year":"2001","journal-title":"Chem.
+        Commun."},{"key":"b614103j-(cit26)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"2345","DOI":"10.1039\/a907642e","author":"Takashima","year":"1999","journal-title":"Chem.
+        Commun."},{"key":"b614103j-(cit27)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"5050","DOI":"10.1073\/pnas.97.10.5050","volume":"97","author":"Leung","year":"2000","journal-title":"Proc.
+        Natl. Acad. Sci. U. S. A."},{"key":"b614103j-(cit29)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"10672","DOI":"10.1021\/ja00052a093","volume":"114","author":"Smith","year":"1992","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit30)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1831","DOI":"10.1021\/jm0204587","volume":"46","author":"Smith","year":"2003","journal-title":"J.
+        Med. Chem."},{"key":"b614103j-(cit31)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"11037","DOI":"10.1021\/ja002964w","volume":"122","author":"Smith","year":"2000","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit32)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1016\/0162-3109(96)00058-6","volume":"33","author":"Horwell","year":"1996","journal-title":"Immunopharmacology"},{"key":"b614103j-(cit33)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"33","DOI":"10.1016\/0968-0896(95)00169-7","volume":"4","author":"Horwell","year":"1996","journal-title":"Bioorg.
+        Med. Chem."},{"key":"b614103j-(cit34)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"5382","DOI":"10.1021\/ja0025548","volume":"123","author":"Orner","year":"2001","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit35)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1019","DOI":"10.1158\/1535-7163.MCT-04-0342","volume":"4","author":"Chen","year":"2005","journal-title":"Mol.
+        Cancer Ther."},{"key":"b614103j-(cit36)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"5463","DOI":"10.1021\/ja0446404","volume":"127","author":"Yin","year":"2005","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit37)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1375","DOI":"10.1016\/j.bmcl.2003.09.096","volume":"14","author":"Yin","year":"2004","journal-title":"Bioorg.
+        Med. Chem. Lett."},{"key":"b614103j-(cit38)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"535","DOI":"10.1002\/anie.200390154","volume":"42","author":"Ernst","year":"2003","journal-title":"Angew.
+        Chem., Int. Ed."},{"key":"b614103j-(cit39)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1086","DOI":"10.1126\/science.295.5557.1086","volume":"295","author":"Gadek","year":"2002","journal-title":"Science"},{"key":"b614103j-(cit40)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1812","DOI":"10.1002\/anie.199518121","volume":"34","author":"Wulff","year":"1995","journal-title":"Angew.
+        Chem., Int. Ed. Engl."},{"key":"b614103j-(cit41)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1031","DOI":"10.1002\/(SICI)1521-3773(20000317)39:6<1031::AID-ANIE1031>3.0.CO;2-F","volume":"39","author":"Sellergren","year":"2000","journal-title":"Angew.
+        Chem., Int. Ed."},{"key":"b614103j-(cit42)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1035","DOI":"10.1246\/cl.1995.1035","author":"Nicholls","year":"1995","journal-title":"Chem.
+        Lett."},{"key":"b614103j-(cit43)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"4788","DOI":"10.1073\/pnas.92.11.4788","volume":"92","author":"Andersson","year":"1995","journal-title":"Proc.
+        Natl. Acad. Sci. U. S. A."},{"key":"b614103j-(cit44)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"255","DOI":"10.1016\/S0167-4838(00)00226-0","volume":"1544","author":"Rachkov","year":"2001","journal-title":"Biochim.
+        Biophys. Acta"},{"key":"b614103j-(cit45)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"259","DOI":"10.1007\/BF02290306","volume":"42","author":"Liao","year":"1996","journal-title":"Chromatographia"},{"key":"b614103j-(cit46)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"20","DOI":"10.1016\/j.aca.2004.12.074","volume":"542","author":"Chou","year":"2005","journal-title":"Anal.
+        Chim. Acta"},{"key":"b614103j-(cit47)\/*[position()=1]","first-page":"151","volume":"347","author":"Glad","year":"1995","journal-title":"J.
+        Chromatogr."},{"key":"b614103j-(cit48)\/*[position()=1]","first-page":"299","volume":"18","author":"Mallik","year":"1994","journal-title":"New
+        J. Chem."},{"key":"b614103j-(cit49)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"1075","DOI":"10.1002\/app.1529","volume":"81","author":"Vaidya","year":"2001","journal-title":"J.
+        Appl. Polym. Sci."},{"key":"b614103j-(cit50)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"3378","DOI":"10.1002\/app.1794","volume":"81","author":"Hirayama","year":"2001","journal-title":"J.
+        Appl. Polym. Sci."},{"key":"b614103j-(cit51)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"593","DOI":"10.1038\/19267","volume":"398","author":"Shi","year":"1999","journal-title":"Nature"},{"key":"b614103j-(cit52)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"620","DOI":"10.1021\/ja0560229","volume":"128","author":"Renner","year":"2006","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit53)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"6352","DOI":"10.1002\/anie.200601161","volume":"45","author":"Koch","year":"2006","journal-title":"Angew.
+        Chem., Int. Ed."},{"key":"b614103j-(cit54)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"7752","DOI":"10.1021\/ja049191m","volume":"126","author":"Zadmard","year":"2004","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit55)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"904","DOI":"10.1021\/ja045785d","volume":"127","author":"Zadmard","year":"2005","journal-title":"J.
+        Am. Chem. Soc."},{"key":"b614103j-(cit56)\/*[position()=1]","doi-asserted-by":"crossref","first-page":"13592","DOI":"10.1021\/ja064957z","volume":"128","author":"Kolusheva","year":"2006","journal-title":"J.
+        Am. Chem. Soc."}],"container-title":["Molecular BioSystems"],"language":"en","link":[{"URL":"http:\/\/pubs.rsc.org\/en\/content\/articlepdf\/2007\/MB\/B614103J","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,4,17]],"date-time":"2024-04-17T12:19:23Z","timestamp":1713356363000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/xlink.rsc.org\/?DOI=b614103j"}},"issued":{"date-parts":[[2007]]},"references-count":54,"journal-issue":{"issue":"4","published-print":{"date-parts":[[2007]]}},"URL":"https:\/\/doi.org\/10.1039\/b614103j","ISSN":["1742-206X","1742-2051"],"issn-type":[{"value":"1742-206X","type":"print"},{"value":"1742-2051","type":"electronic"}],"published":{"date-parts":[[2007]]}},{"indexed":{"date-parts":[[2024,9,6]],"date-time":"2024-09-06T02:16:55Z","timestamp":1725589015941},"publisher-location":"Berlin\/Heidelberg","reference-count":0,"publisher":"Springer-Verlag","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1007\/springerreference_23662","type":"reference-entry","created":{"date-parts":[[2011,8,1]],"date-time":"2011-08-01T14:34:47Z","timestamp":1312209287000},"source":"Crossref","is-referenced-by-count":0,"title":["response
+        unit"],"prefix":"10.1007","member":"297","container-title":["SpringerReference"],"language":"en","deposited":{"date-parts":[[2011,8,1]],"date-time":"2011-08-01T14:37:26Z","timestamp":1312209446000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.springerreference.com\/index\/doi\/10.1007\/SpringerReference_23662"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/springerreference_23662"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 08 Jun 2025 20:53:21 GMT
+recorded_with: VCR 6.3.1

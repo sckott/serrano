@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:43 GMT
+      - Sun, 08 Jun 2025 20:53:24 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=W/0EcwcjjaEqkamLykW/HFNffhItdTHGumXvnhMuNbWOGRH4Rp9w+4y39UViBhG23XAfg8PKS6YdVrKSkbjiZg8cnNjTyACIUH2zr4Xcm/d+479XucgZ+TBxnz+O;
-        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/
-      - AWSALBCORS=W/0EcwcjjaEqkamLykW/HFNffhItdTHGumXvnhMuNbWOGRH4Rp9w+4y39UViBhG23XAfg8PKS6YdVrKSkbjiZg8cnNjTyACIUH2zr4Xcm/d+479XucgZ+TBxnz+O;
-        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/; SameSite=None
+      - AWSALB=uy6/7nnh3iywRQsfdACoNwjhBNJR0jLdHzjh7qEFxJmZazWZGhcRtb3hluVUNy5z68eaaAsiHsfg+TPKf3DVSdyUYKYyiBqSRXD2R5cfXfhBfT6L/I4dz3WznRWm;
+        Expires=Sun, 15 Jun 2025 20:53:24 GMT; Path=/
+      - AWSALBCORS=uy6/7nnh3iywRQsfdACoNwjhBNJR0jLdHzjh7qEFxJmZazWZGhcRtb3hluVUNy5z68eaaAsiHsfg+TPKf3DVSdyUYKYyiBqSRXD2R5cfXfhBfT6L/I4dz3WznRWm;
+        Expires=Sun, 15 Jun 2025 20:53:24 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -48,18 +50,12 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"journal","label":"Journal"}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:43 GMT
+  recorded_at: Sun, 08 Jun 2025 20:53:24 GMT
 - request:
     method: get
     uri: https://api.crossref.org/types/dissertation
@@ -68,9 +64,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -81,16 +77,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:43 GMT
+      - Sun, 08 Jun 2025 20:53:24 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=zQ1ChJ1qzjhsO/nFIQAtlrZqu5UDNanbq6k82HYkT5mapUGXhca2G45ZO3QNO5xzpl3U1rvzqUTuov/NvQ42SJo0Kr5uG/cMtU3O5ydkaoqJzhLSS5/mnZng9604;
-        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/
-      - AWSALBCORS=zQ1ChJ1qzjhsO/nFIQAtlrZqu5UDNanbq6k82HYkT5mapUGXhca2G45ZO3QNO5xzpl3U1rvzqUTuov/NvQ42SJo0Kr5uG/cMtU3O5ydkaoqJzhLSS5/mnZng9604;
-        Expires=Sat, 02 Apr 2022 04:17:43 GMT; Path=/; SameSite=None
+      - AWSALB=Lux8pb71ClZhfov/yP82eFiL4NRHgrIOMAD0UWs6wDW9iMud/6Va6dgB1QF3vdVR1yVvmQbXGHOrDY1HM62RAbVDx4bj115Hpct+o/XlVT3rSCHJ5YpC+heAXg1c;
+        Expires=Sun, 15 Jun 2025 20:53:24 GMT; Path=/
+      - AWSALBCORS=Lux8pb71ClZhfov/yP82eFiL4NRHgrIOMAD0UWs6wDW9iMud/6Va6dgB1QF3vdVR1yVvmQbXGHOrDY1HM62RAbVDx4bj115Hpct+o/XlVT3rSCHJ5YpC+heAXg1c;
+        Expires=Sun, 15 Jun 2025 20:53:24 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -108,16 +106,10 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: UTF-8
       string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"dissertation","label":"Dissertation"}}'
-  recorded_at: Sat, 26 Mar 2022 04:17:43 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Sun, 08 Jun 2025 20:53:24 GMT
+recorded_with: VCR 6.3.1

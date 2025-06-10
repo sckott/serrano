@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       X-User-Agent:
-      - Faraday/v2.2.0 Serrano/v1.0.0 (mailto:<email>)
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,16 +21,18 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Sat, 26 Mar 2022 04:17:26 GMT
+      - Sun, 08 Jun 2025 20:53:13 GMT
       Content-Type:
       - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
       Set-Cookie:
-      - AWSALB=+kT90JDRGPGi935GqbTnhNbWDL6WTZ1fU0DLuF49tE3iMumj9iBSIE1NYkVLDHd8YTFE1Q+/LoztLaBg5QRE49wgHVqDBTdR74YjxLXM0K3B+1+cBgCRzQUFSSDU;
-        Expires=Sat, 02 Apr 2022 04:17:26 GMT; Path=/
-      - AWSALBCORS=+kT90JDRGPGi935GqbTnhNbWDL6WTZ1fU0DLuF49tE3iMumj9iBSIE1NYkVLDHd8YTFE1Q+/LoztLaBg5QRE49wgHVqDBTdR74YjxLXM0K3B+1+cBgCRzQUFSSDU;
-        Expires=Sat, 02 Apr 2022 04:17:26 GMT; Path=/; SameSite=None
+      - AWSALB=h+WhQ84vd3aWMH9ZLPVYL0J8rnZGA3uxmsa0P33eeMRn3sXjrtrIMxxrW08blS8/98s9K/2KbpaAKZArTtnx+Af1p2AFXxUa+axpHP4uxl3hgA9qLWT8yswFMQ9V;
+        Expires=Sun, 15 Jun 2025 20:53:13 GMT; Path=/
+      - AWSALBCORS=h+WhQ84vd3aWMH9ZLPVYL0J8rnZGA3uxmsa0P33eeMRn3sXjrtrIMxxrW08blS8/98s9K/2KbpaAKZArTtnx+Af1p2AFXxUa+axpHP4uxl3hgA9qLWT8yswFMQ9V;
+        Expires=Sun, 15 Jun 2025 20:53:13 GMT; Path=/; SameSite=None
       Vary:
       - Accept
       Access-Control-Expose-Headers:
@@ -48,22 +50,14 @@ http_interactions:
       - 1s
       X-Api-Pool:
       - polite
-      X-Rate-Limit-Limit:
-      - '50'
-      X-Rate-Limit-Interval:
-      - 1s
       Permissions-Policy:
       - interest-cohort=()
-      Connection:
-      - close
     body:
       encoding: UTF-8
       string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"filter-not-available","value":"has-full-text","message":"Filter
         has-full-text specified but there is no such filter for this route. Valid
-        filters for this route are: prefix, has-public-references, reference-visibility,
-        backfile-doi-count, current-doi-count"},{"type":"filter-not-available","value":"has-funder","message":"Filter
+        filters for this route are: prefix, backfile-doi-count, current-doi-count"},{"type":"filter-not-available","value":"has-funder","message":"Filter
         has-funder specified but there is no such filter for this route. Valid filters
-        for this route are: prefix, has-public-references, reference-visibility, backfile-doi-count,
-        current-doi-count"}]}'
-  recorded_at: Sat, 26 Mar 2022 04:17:26 GMT
-recorded_with: VCR 6.1.0
+        for this route are: prefix, backfile-doi-count, current-doi-count"}]}'
+  recorded_at: Sun, 08 Jun 2025 20:53:13 GMT
+recorded_with: VCR 6.3.1
