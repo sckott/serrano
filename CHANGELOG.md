@@ -1,3 +1,7 @@
+## Dev version (2025-06-14)
+
+* Fixed filter handling so that the same filter can be used multiple times (#176)
+
 ## 1.4 (2022-03-26)
 
 * Moved to faraday > v2. There's no user facing changes here, but let me know if any issues arise (#172)

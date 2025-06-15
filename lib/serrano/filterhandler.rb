@@ -37,8 +37,13 @@ module Helpers
 
       newnn = nn.collect { |m| m.tr("_", "-") }
       x = rename_keys(x, newnn)
-      x.collect { |k, v| [k, v].join(":") }.join(",")
-
+      x.collect { |k, v|
+        if v.is_a?(Array)
+          v.map { |val| [k, val].join(":") }
+        else
+          [k, v].join(":")
+        end
+      }.join(",")
     end
   end
 

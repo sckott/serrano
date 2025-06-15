@@ -1,0 +1,681 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works?filter=type:journal-article,type:book
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
+      X-User-Agent:
+      - Faraday/v2.13.1 Serrano/v1.4 (mailto:<email>)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Jun 2025 05:34:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '94006'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - AWSALB=mXhKEiiAPfq4lzGJRNcZt/Ftz7pkPTTr2AGG4E201hhz0vrnyPLSYkoDCUkkptKfVJBWZYioRQdnihoHxYW+GmuQTM6J1hNzmwKOCu6ceysNFPKyHbFFM+x8rXwf;
+        Expires=Sun, 22 Jun 2025 05:34:17 GMT; Path=/
+      - AWSALBCORS=mXhKEiiAPfq4lzGJRNcZt/Ftz7pkPTTr2AGG4E201hhz0vrnyPLSYkoDCUkkptKfVJBWZYioRQdnihoHxYW+GmuQTM6J1hNzmwKOCu6ceysNFPKyHbFFM+x8rXwf;
+        Expires=Sun, 22 Jun 2025 05:34:17 GMT; Path=/; SameSite=None
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Jetty(9.4.40.v20210413)
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Interval:
+      - 1s
+      X-Api-Pool:
+      - polite
+      Permissions-Policy:
+      - interest-cohort=()
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":115373763,"items":[{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T21:49:01Z","timestamp":1651009741455},"reference-count":62,"publisher":"Springer
+        Science and Business Media LLC","issue":"9","license":[{"start":{"date-parts":[[1986,9,1]],"date-time":"1986-09-01T00:00:00Z","timestamp":525916800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Radiophys
+        Quantum Electron"],"published-print":{"date-parts":[[1986,9]]},"DOI":"10.1007\/bf01034473","type":"journal-article","created":{"date-parts":[[2005,1,21]],"date-time":"2005-01-21T15:54:30Z","timestamp":1106322870000},"page":"768-781","source":"Crossref","is-referenced-by-count":3,"title":["Semiconductor
+        masers using cyclotron resonance"],"prefix":"10.1007","volume":"29","author":[{"given":"A.
+        A.","family":"Andronov","sequence":"first","affiliation":[]}],"member":"297","reference":[{"issue":"No.
+        4","key":"CR1","doi-asserted-by":"crossref","first-page":"567","DOI":"10.1071\/PH580564","volume":"11","author":"R.
+        Q. Twiss","year":"1958","unstructured":"R. Q. Twiss, Austral. J. Phys.,11,
+        No. 4, 567 (1958).","journal-title":"Austral. J. Phys."},{"issue":"No. 3","key":"CR2","first-page":"450","volume":"2","author":"A.
+        V. Gaponov","year":"1959","unstructured":"A. V. Gaponov, Izv. Vyssh. Uchebn.
+        Zaved., Radiofiz.,2, No. 3, 450; No. 5, 836 (1959).","journal-title":"Izv.
+        Vyssh. Uchebn. Zaved., Radiofiz."},{"issue":"No. 1","key":"CR3","first-page":"57","volume":"3","author":"V.
+        V. Zheleznyakov","year":"1960","unstructured":"V. V. Zheleznyakov, Izv. Vyssh.
+        Uchebn. Zaved., Radiofiz.,3, No. 1, 57 (1960).","journal-title":"Izv. Vyssh.
+        Uchebn. Zaved., Radiofiz."},{"issue":"No. 6","key":"CR4","first-page":"1146","volume":"47","author":"R.
+        H. Pantell","year":"1959","unstructured":"R. H. Pantell, Proc. IRE,47, No.
+        6, 1146 (1959).","journal-title":"Proc. IRE"},{"issue":"No. 12","key":"CR5","doi-asserted-by":"crossref","first-page":"504","DOI":"10.1103\/PhysRevLett.2.504","volume":"2","author":"J.
+        Schmeider","year":"1959","unstructured":"J. Schmeider, Phys. Rev. Lett.,2,
+        No. 12, 504 (1959).","journal-title":"Phys. Rev. Lett."},{"issue":"No. 2","key":"CR6","doi-asserted-by":"crossref","first-page":"368","DOI":"10.1103\/PhysRev.98.368","volume":"98","author":"G.
+        Dresselhaus","year":"1955","unstructured":"G. Dresselhaus, A. P. Kip, and
+        S. Kittel, Phys. Rev.,98, No. 2, 368 (1955); R. H. Dexter, H. J. Zeiger, and
+        B. Lax, Phys. Rev.,104, No. 3, 637 (1956).","journal-title":"Phys. Rev."},{"key":"CR7","first-page":"428","volume-title":"Quantum
+        Electronics Symposium","author":"B. Lax","year":"1960","unstructured":"B.
+        Lax, in: Quantum Electronics Symposium, Columbia Univ. Press, New York (1960),
+        p. 428."},{"issue":"No. 3","key":"CR8","first-page":"808","volume":"35","author":"A.
+        C. Tager","year":"1958","unstructured":"A. C. Tager and A. D. Gladun, Zh.
+        Eksp. Teor. Fiz.,35, No. 3, 808 (1958).","journal-title":"Zh. Eksp. Teor.
+        Fiz."},{"issue":"No. 5","key":"CR9","doi-asserted-by":"crossref","first-page":"1856","DOI":"10.1103\/PhysRev.109.1856","volume":"109","author":"H.
+        Kroemer","year":"1958","unstructured":"H. Kroemer, Phys. Rev.,109, No. 5,
+        1856 (1958).","journal-title":"Phys. Rev."},{"issue":"No. 2","key":"CR10","doi-asserted-by":"crossref","first-page":"551","DOI":"10.1103\/PhysRevLett.1.55","volume":"1","author":"G.
+        C. Dousmanis","year":"1958","unstructured":"G. C. Dousmanis, Phys. Rev. Lett.,1,
+        No. 2, 551 (1958).","journal-title":"Phys. Rev. Lett."},{"key":"CR11","unstructured":"G.
+        C. Dousmanis, R. C. Duncan, J. J. Thomas, and R. C. Williams, Proc. Int. Conf.
+        Semicond. Phys., Prague (1961), p. 603."},{"key":"CR12","first-page":"1","volume":"4","author":"H.
+        Kroemer","year":"1960","unstructured":"H. Kroemer, Prog. Semicond.,4, 1 (1960).","journal-title":"Prog.
+        Semicond."},{"issue":"No. 3","key":"CR13","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1103\/PhysicsPhysiqueFizika.1.147","volume":"1","author":"P.
+        A. Wolff","year":"1964","unstructured":"P. A. Wolff, Physics,1, No. 3, 147
+        (1964).","journal-title":"Physics"},{"issue":"No. 2","key":"CR14","first-page":"165","volume":"2","author":"V.
+        F. Elesin","year":"1968","unstructured":"V. F. Elesin, Fiz. Tekh. Poluprovodn.,2,
+        No. 2, 165 (1968).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No.
+        9-10","key":"CR15","first-page":"1414","volume":"10","author":"A. V. Gaponov","year":"1967","unstructured":"A.
+        V. Gaponov, M. I. Petelin, and V. K. Yulpatov, Izv. Vyssh. Uchebn. Zaved.,
+        Radiofiz.,10, No. 9-10, 1414 (1967).","journal-title":"Izv. Vyssh. Uchebn.
+        Zaved., Radiofiz."},{"issue":"No. 6","key":"CR16","doi-asserted-by":"crossref","first-page":"514","DOI":"10.1109\/TMTT.1977.1129149","volume":"25","author":"V.
+        A. Flyagin","year":"1977","unstructured":"V. A. Flyagin, A. V. Gaponov, M.
+        I. Petelin, and V. K. Yulpatov, IEEE Trans., Mekh. Tverd. Tela,MTT-25, No.
+        6, 514 (1977).","journal-title":"IEEE Trans., Mekh. Tverd. Tela, MTT-"},{"issue":"No.
+        1","key":"CR17","first-page":"3","volume":"12","author":"V. N. Abakumov","year":"1978","unstructured":"V.
+        N. Abakumov, V. I. Perel'', and I. N. Yassievich, Fiz. Tekh. Poluprovodn.,12,
+        No. 1, 3 (1978).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No.
+        4","key":"CR18","first-page":"1170","volume":"5","author":"Yu. M. Popov","year":"1963","unstructured":"Yu.
+        M. Popov, Fiz. Tverd. Tela,5, No. 4, 1170 (1963).","journal-title":"Fiz. Tverd.
+        Tela"},{"key":"CR19","first-page":"141","volume-title":"Proceedings of the
+        IX International Conference on Semiconductor Physics","author":"Kh. Yu. F\u00e9n","year":"1969","unstructured":"Kh.
+        Yu. F\u00e9n, Proceedings of the IX International Conference on Semiconductor
+        Physics [in Russian], Nauka, Moscow (1969), p. 141."},{"issue":"No. 9","key":"CR20","first-page":"1637","volume":"19","author":"A.
+        A. Andronov","year":"1977","unstructured":"A. A. Andronov, Yu. N. Nozdrin,
+        and V. N. Shastin, Fiz. Tverd. Tela,19, No. 9, 1637 (1977).","journal-title":"Fiz.
+        Tverd. Tela"},{"issue":"No. 5","key":"CR21","first-page":"1577","volume":"20","author":"A.
+        A. Andronov","year":"1978","unstructured":"A. A. Andronov, Yu. N. Nozdrin,
+        and V. N. Shastin, Fiz. Tverd. Tela,20, No. 5, 1577 (1978).","journal-title":"Fiz.
+        Tverd. Tela"},{"key":"CR22","first-page":"606","volume-title":"Electromagnetic
+        Wave Propagation in Plasma","author":"V. L. Ginzburg","year":"1967","unstructured":"V.
+        L. Ginzburg, Electromagnetic Wave Propagation in Plasma [in Russian], Nauka,
+        Moscow (1967), p. 606."},{"issue":"No. 2","key":"CR23","doi-asserted-by":"crossref","first-page":"161","DOI":"10.3367\/UFNr.0072.196010a.0161","volume":"72","author":"I.
+        G. Basov","year":"1960","unstructured":"I. G. Basov, O. N. Krokhin, and Yu.
+        M. Popov, Usp. Fiz. Nauk,72, No. 2, 161 (1960).","journal-title":"Usp. Fiz.
+        Nauk"},{"issue":"No. 1","key":"CR24","doi-asserted-by":"crossref","first-page":"5","DOI":"10.1016\/0038-1101(78)90108-9","volume":"21","author":"C.
+        Hilsum","year":"1978","unstructured":"C. Hilsum, Solid-State Electron.,21,
+        No. 1, 5 (1978).","journal-title":"Solid-State Electron."},{"issue":"No. 11","key":"CR25","doi-asserted-by":"crossref","first-page":"731","DOI":"10.1016\/0375-9601(69)90588-X","volume":"28A","author":"W.
+        Fawcett","year":"1969","unstructured":"W. Fawcett and H. D. Rees, Phys. Lett.,28A,
+        No. 11, 731 (1969).","journal-title":"Phys. Lett."},{"issue":"No. 2","key":"CR26","doi-asserted-by":"crossref","first-page":"562","DOI":"10.1143\/JPSJ.33.562","volume":"33","author":"H.
+        Maeda","year":"1972","unstructured":"H. Maeda and T. Kurosawa, J. Phys. Soc.
+        Jpn.,33, No. 2, 562 (1972).","journal-title":"J. Phys. Soc. Jpn."},{"issue":"No.
+        3","key":"CR27","first-page":"557","volume":"14","author":"V. N. Shastin","year":"1980","unstructured":"V.
+        N. Shastin, Fiz. Tekh. Poluprovodn.,14, No. 3, 557 (1980);15, No. 8, 1641
+        (1981).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No. 8","key":"CR28","first-page":"1660","volume":"50","author":"I.
+        I. Vosilyus","year":"1966","unstructured":"I. I. Vosilyus and I. B. Levinson,
+        Zh. Eksp. Teor. Fiz.,50, No. 8, 1660 (1966);52, No. 4, 1013 (1967).","journal-title":"Zh.
+        Eksp. Teor. Fiz."},{"issue":"No. 9","key":"CR29","first-page":"124","volume":"17","author":"A.
+        A. Andronov","year":"1973","unstructured":"A. A. Andronov and V. A. Kozlov,
+        Pis''ma Zh. Eksp. Teor. Fiz.,17, No. 9, 124 (1973); A. A. Andronov, V. A.
+        Valov, V. A. Kozlov, and L. S. Mazov, Fiz. Tverd. Tela,22, No. 5, 1275 (1980).","journal-title":"Pis''ma
+        Zh. Eksp. Teor. Fiz."},{"issue":"No. 3","key":"CR30","first-page":"1030","volume":"72","author":"Ya.
+        I. Al''ber","year":"1977","unstructured":"Ya. I. Al''ber, A. A. Andronov,
+        V. A. Valov, et al., Zh. Eksp. Teor. Fiz.,72, No. 3, 1030 (1977).","journal-title":"Zh.
+        Eksp. Teor. Fiz."},{"issue":"No. 3","key":"CR31","doi-asserted-by":"crossref","first-page":"645","DOI":"10.1103\/RevModPhys.55.645","volume":"55","author":"C.
+        Jacoboni","year":"1983","unstructured":"C. Jacoboni and L. Reggiani, Rev.
+        Mod. Phys.,55, No. 3, 645 (1983).","journal-title":"Rev. Mod. Phys."},{"issue":"No.
+        10","key":"CR32","first-page":"432","volume":"35","author":"V. I. Gavrilenko","year":"1982","unstructured":"V.
+        I. Gavrilenko, E. P. Dodin, Z. F. Krasil''nik, et al., Pis''ma Zh. Eksp. Teor.
+        Fiz.,35, No. 10, 432 (1982).","journal-title":"Pis''ma Zh. Eksp. Teor. Fiz."},{"issue":"No.
+        1","key":"CR33","first-page":"367","volume":"90","author":"A. A. Andronov","year":"1986","unstructured":"A.
+        A. Andronov, A. M. Belyantsev, E. P. Dodin, et al., Zh. Eksp. Teor. Fiz.,90,
+        No. 1, 367 (1986).","journal-title":"Zh. Eksp. Teor. Fiz."},{"key":"CR34","first-page":"210","volume":"134B","author":"A.
+        A. Andronov","year":"1985","unstructured":"A. A. Andronov, A. M. Belyantsev,
+        E. P. Dodin, et al., Physica,134B, 210 (1985).","journal-title":"Physica"},{"key":"CR35","volume-title":"Cyclotron
+        Resonance Semiconductor Masers","year":"1986","unstructured":"in: Cyclotron
+        Resonance Semiconductor Masers [in Russian], A. A. Andronov (ed.), Inst. Prikl.
+        Fiz. Akad. Nauk SSSR, Gor''kii (1986)"},{"key":"CR36","volume-title":"Inverted
+        Hot Electron Distributions in Semiconductors","year":"1983","unstructured":"in:
+        A. A. Andronov and Yu. K. Pozhela (eds.), Inverted Hot Electron Distributions
+        in Semiconductors [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR, Gor''kii
+        (1983)."},{"issue":"No. 5A","key":"CR37","doi-asserted-by":"crossref","first-page":"1449","DOI":"10.1103\/PhysRev.136.A1449","volume":"136","author":"W.
+        E. Pinson","year":"1964","unstructured":"W. E. Pinson and R. Bray, Phys. Rev.,136,
+        No. 5A, 1449 (1964).","journal-title":"Phys. Rev."},{"issue":"No. 3","key":"CR38","doi-asserted-by":"crossref","first-page":"668","DOI":"10.1143\/JPSJ.31.668","volume":"31","author":"T.
+        Kurosawa","year":"1971","unstructured":"T. Kurosawa and H. Maeda, J. Phys.
+        Soc. Jpn.,31, No. 3, 668 (1971).","journal-title":"J. Phys. Soc. Jpn."},{"key":"CR39","volume-title":"Hot
+        Electrons in Semiconductors: Streaming and Anisotropic Distributions in Crossed
+        Fields","year":"1983","unstructured":"in: A. A. Andronov and Yu. K. Pozhela
+        (eds.), Hot Electrons in Semiconductors: Streaming and Anisotropic Distributions
+        in Crossed Fields [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR, Gor''kii
+        (1983)."},{"issue":"No. 2","key":"CR40","first-page":"212","volume":"16","author":"A.
+        A. Andronov","year":"1982","unstructured":"A. A. Andronov, E. P. Dodin, and
+        Z. P. Krasil''nik, Fiz. Tekh. Poluprovodn.,16, No. 2, 212 (1982).","journal-title":"Fiz.
+        Tekh. Poluprovodn."},{"issue":"No. 2","key":"CR41","doi-asserted-by":"crossref","first-page":"347","DOI":"10.3367\/UFNr.0139.198302f.0347","volume":"139","author":"I.
+        B. Levinson","year":"1983","unstructured":"I. B. Levinson, Usp. Fiz. Nauk,139,
+        No. 2, 347 (1983).","journal-title":"Usp. Fiz. Nauk"},{"issue":"No. 4","key":"CR42","doi-asserted-by":"crossref","first-page":"357","DOI":"10.1016\/0038-1098(77)90228-9","volume":"24","author":"T.
+        Kurosawa","year":"1977","unstructured":"T. Kurosawa, Solid-State Commun.,24,
+        No. 4, 357 (1977).","journal-title":"Solid-State Commun."},{"issue":"No. 6","key":"CR43","first-page":"234","volume":"40","author":"A.
+        P. Chebotarev","year":"1984","unstructured":"A. P. Chebotarev and V. N. Murzin,
+        Pis''ma Zh. Eksp. Teor. Fiz.,40, No. 6, 234 (1984).","journal-title":"Pis''ma
+        Zh. Eksp. Teor. Fiz."},{"issue":"No. 5","key":"CR44","first-page":"924","volume":"11","author":"I.
+        I. Vosilyus","year":"1969","unstructured":"I. I. Vosilyus, Fiz. Tverd. Tela,11,
+        No. 5, 924 (1969).","journal-title":"Fiz. Tverd. Tela"},{"issue":"No. 3","key":"CR45","first-page":"142","volume":"37","author":"V.
+        A. Kozlov","year":"1983","unstructured":"V. A. Kozlov, L. S. Mazov, and I.
+        M. Nefedov, Pis''ma Zh. Eksp. Teor. Fiz.,37, No. 3, 142 (1983).","journal-title":"Pis''ma
+        Zh. Eksp. Teor. Fiz."},{"issue":"No. 4","key":"CR46","doi-asserted-by":"crossref","first-page":"869","DOI":"10.1103\/PhysRev.97.869","volume":"97","author":"J.
+        M. Luttinger","year":"1955","unstructured":"J. M. Luttinger and W. Kohn, Phys.
+        Rev.,97, No. 4, 869 (1955).","journal-title":"Phys. Rev."},{"issue":"No. 19","key":"CR47","first-page":"1204","volume":"9","author":"B.
+        M. Gorbovitskii","year":"1983","unstructured":"B. M. Gorbovitskii and V. I.
+        Perel'', Pis''ma Zh. Tekh. Fiz.,9, No. 19, 1204 (1983); B. M. Gorbovitskii,
+        Fiz. Tekh. Poluprovodn.,18, No. 4, 704 (1984).","journal-title":"Pis''ma Zh.
+        Tekh. Fiz."},{"issue":"No. 5","key":"CR48","first-page":"1857","volume":"87","author":"V.
+        Ya. Aleshkin","year":"1984","unstructured":"V. Ya. Aleshkin and Yu. A. Romanov,
+        Zh. Eksp. Teor. Fiz.,87, No. 5, 1857 (1984).","journal-title":"Zh. Eksp. Teor.
+        Fiz."},{"issue":"No. 10","key":"CR49","first-page":"613","volume":"9","author":"Yu.
+        L. Ivanov","year":"1983","unstructured":"Yu. L. Ivanov and Yu. B. Vasil''ev,
+        Pis''ma Zh. Tekh. Fiz.,9, No. 10, 613 (1983);10, No. 15, 949 (1984).","journal-title":"Pis''ma
+        Zh. Tekh. Fiz."},{"issue":"No. 12","key":"CR50","doi-asserted-by":"crossref","first-page":"1570","DOI":"10.1103\/PhysRevLett.54.1570","volume":"54","author":"J.
+        R. Hayes","year":"1985","unstructured":"J. R. Hayes, A. F. J. Levi, and W.
+        Weigman, Phys. Rev. Lett.,54, No. 12, 1570 (1985); A. P. Long, P. H. Benton,
+        M. J. Kelley, and T. M. Kerr, Electron. Lett.,22, No. 3, 130 (1986).","journal-title":"Phys.
+        Rev. Lett."},{"issue":"No. 8","key":"CR51","first-page":"373","volume":"43","author":"A.
+        A. Andronov","year":"1986","unstructured":"A. A. Andronov, E. P. Dodin, and
+        Z. F. Krasil''nik, Pis''ma Zh. Eksp. Teor. Fiz.,43, No. 8, 373 (1986).","journal-title":"Pis''ma
+        Zh. Eksp. Teor. Fiz."},{"issue":"No. 5","key":"CR52","first-page":"944","volume":"18","author":"E.
+        P. Dodin","year":"1984","unstructured":"E. P. Dodin and Z. F. Krasil''nik,
+        Fiz. Tekh. Poluprovodn.,18, No. 5, 944 (1984).","journal-title":"Fiz. Tekh.
+        Poluprovodn."},{"issue":"No. 6","key":"CR53","first-page":"1076","volume":"20","author":"E.
+        V. Starikov","year":"1986","unstructured":"E. V. Starikov and P. N. Shiktorov,
+        Fiz. Tekh. Poluprovodn.,20, No. 6, 1076 (1986).","journal-title":"Fiz. Tekh.
+        Poluprovodn."},{"key":"CR54","first-page":"142","volume-title":"Inverted Hot
+        Electron Distributions in Semiconductors","author":"V. I. Gavrilenko","year":"1983","unstructured":"V.
+        I. Gavrilenko, E. P. Dodin, and Z. F. Krasil''nik, in: Inverted Hot Electron
+        Distributions in Semiconductors [in Russian], Inst. Prikl. Fiz. Akad. Nauk
+        SSSR, Gor''kii (1983), p. 142."},{"key":"CR55","volume-title":"Alfven Masers","author":"P.
+        A. Bespalov","year":"1986","unstructured":"P. A. Bespalov and V. Yu. Trakhtengerts,
+        in: Alfven Masers [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR, Gor''kii
+        (1986)."},{"issue":"No. 9","key":"CR56","first-page":"583","volume":"30","author":"A.
+        A. Andronov","year":"1979","unstructured":"A. A. Andronov, V. A. Kozlov, L.
+        S. Mazov, and V. N. Shastin, Pis''ma Zh. Eksp. Teor. Fiz.,30, No. 9, 583 (1979).","journal-title":"Pis''ma
+        Zh. Eksp. Teor. Fiz."},{"issue":"No. 10","key":"CR57","first-page":"1000","volume":"11","author":"A.
+        A. Andronov","year":"1985","unstructured":"A. A. Andronov, V. A. Valov, V.
+        A. Kozlov, Yu. P. Nozdrin, S. A. Pavlov, and V. N. Shastin, Pis''ma Zh. Tekh.
+        Fiz.,11, No. 10, 1000 (1985); A. V. Murav''ev, Yu. I. Nozdrin, and V. N. Shastin,
+        Pis''ma Zh. Eksp. Teor. Fiz.,43, No. 7, 348 (1986); S. Komiyama, N. Iizuka,
+        and J. Akasaka, Appl. Phys. Lett.,47, No. 9, 958 (1985).","journal-title":"Pis''ma
+        Zh. Tekh. Fiz."},{"issue":"No. 3","key":"CR58","first-page":"499","volume":"18","author":"E.
+        M. Gershenzon","year":"1983","unstructured":"E. M. Gershenzon, A. P. Mel''nikov,
+        R. I. Rabinovich, and V. B. Smirnova, Fiz. Tekh. Poluprovodn.,18, No. 3, 499
+        (1983); E. B. Gol''dgur and R. I. Rabinovich, Zh. Eksp. Teor. Fiz.,84, No.
+        3, 1109 (1983).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No.
+        2","key":"CR59","first-page":"2218","volume":"17","author":"Yu. A. Gurvich","year":"1983","unstructured":"Yu.
+        A. Gurvich and M. D. Cherepanov, Fiz. Tekh. Poluprovodn.,17, No. 2, 2218 (1983);
+        L. A. Vorozhtsova, E. M. Gershenzon, and Yu. A. Gurvich, Izv. Akad. Nauk SSSR,
+        Ser. Fiz.,50, No. 2, 272 (1986).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No.
+        8","key":"CR60","first-page":"1576","volume":"6","author":"A. A. Kastal''skii","year":"1972","unstructured":"A.
+        A. Kastal''skii, Fiz. Tekh. Poluprovodn.,6, No. 8, 1576 (1972).","journal-title":"Fiz.
+        Tekh. Poluprovodn."},{"issue":"No. 6","key":"CR61","first-page":"295","volume":"29","author":"E.
+        Gornik","year":"1972","unstructured":"E. Gornik, Phys. Rev. Lett.,29, No.
+        6, 295 (1972); W. Muller. F. Kohl, and E. Gornik, Infrared Phys.,18, No. 5\/6,
+        691 (1978).","journal-title":"Phys. Rev. Lett."},{"key":"CR62","unstructured":"E.
+        Otsuka, in: Infrared and Millimeter Waves, Vol. 3, Academic Press (1980),
+        p. 347."}],"container-title":["Radiophysics and Quantum Electronics"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01034473.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/BF01034473\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01034473","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,4,30]],"date-time":"2019-04-30T02:57:14Z","timestamp":1556593034000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/BF01034473"}},"issued":{"date-parts":[[1986,9]]},"references-count":62,"journal-issue":{"issue":"9","published-print":{"date-parts":[[1986,9]]}},"alternative-id":["BF01034473"],"URL":"https:\/\/doi.org\/10.1007\/bf01034473","ISSN":["0033-8443","1573-9120"],"issn-type":[{"value":"0033-8443","type":"print"},{"value":"1573-9120","type":"electronic"}],"published":{"date-parts":[[1986,9]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T21:48:39Z","timestamp":1651009719886},"reference-count":0,"publisher":"Informa
+        UK Limited","issue":"4","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Critical
+        Studies in Media Communication"],"published-print":{"date-parts":[[2019,8,8]]},"DOI":"10.1080\/15295036.2019.1593479","type":"journal-article","created":{"date-parts":[[2019,3,27]],"date-time":"2019-03-27T21:38:45Z","timestamp":1553722725000},"page":"407-410","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":1,"title":["From
+        media hype to twitter storm: news explosions and their impact on issues, crises
+        and public opinion"],"prefix":"10.1080","volume":"36","author":[{"given":"Zeyu","family":"Zhang","sequence":"first","affiliation":[{"name":"Ohio
+        University"}]}],"member":"301","published-online":{"date-parts":[[2019,3,27]]},"container-title":["Critical
+        Studies in Media Communication"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/15295036.2019.1593479","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,9,2]],"date-time":"2019-09-02T07:52:49Z","timestamp":1567410769000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/15295036.2019.1593479"}},"subtitle":["by
+        Peter Vasterman, Amsterdam, Amsterdam University Press, 2018, 401 pp., $136
+        (Hardback), ISBN 9789462982178"],"issued":{"date-parts":[[2019,3,27]]},"references-count":0,"journal-issue":{"issue":"4","published-online":{"date-parts":[[2019,4,25]]},"published-print":{"date-parts":[[2019,8,8]]}},"alternative-id":["10.1080\/15295036.2019.1593479"],"URL":"https:\/\/doi.org\/10.1080\/15295036.2019.1593479","ISSN":["1529-5036","1479-5809"],"issn-type":[{"value":"1529-5036","type":"print"},{"value":"1479-5809","type":"electronic"}],"published":{"date-parts":[[2019,3,27]]},"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rcsm20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rcsm20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"},{"value":"2019-03-27","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T20:06:41Z","timestamp":1651003601274},"reference-count":2,"publisher":"Informa
+        UK Limited","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Rocks
+        &amp; Minerals"],"published-print":{"date-parts":[[1988,11]]},"DOI":"10.1080\/00357529.1988.11761883","type":"journal-article","created":{"date-parts":[[2016,9,2]],"date-time":"2016-09-02T23:10:58Z","timestamp":1472857858000},"page":"460-465","source":"Crossref","is-referenced-by-count":1,"title":["Harvard
+        Hosts a Mine Party: Palermo Revisited"],"prefix":"10.1080","volume":"63","author":[{"given":"F.
+        William","family":"Miller","sequence":"first","affiliation":[]},{"given":"Ronald
+        E.","family":"Bentley","sequence":"additional","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,9,2]]},"reference":[{"key":"CIT0001","first-page":"810","volume":"23","author":"Lisle
+        T. O.","year":"1948","journal-title":"Rocks & Minerals"},{"key":"CIT0002","first-page":"196","volume":"56","author":"Segeler
+        C.","year":"1981","journal-title":"Rocks & Minerals"}],"container-title":["Rocks
+        &amp; Minerals"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/00357529.1988.11761883","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,17]],"date-time":"2016-12-17T15:37:09Z","timestamp":1481989029000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/00357529.1988.11761883"}},"issued":{"date-parts":[[1988,11]]},"references-count":2,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2016,9,2]]},"published-print":{"date-parts":[[1988,11]]}},"alternative-id":["10.1080\/00357529.1988.11761883"],"URL":"https:\/\/doi.org\/10.1080\/00357529.1988.11761883","ISSN":["0035-7529","1940-1191"],"issn-type":[{"value":"0035-7529","type":"print"},{"value":"1940-1191","type":"electronic"}],"published":{"date-parts":[[1988,11]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T20:06:08Z","timestamp":1651003568278},"reference-count":0,"publisher":"JSTOR","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Asian
+        Folklore Studies"],"published-print":{"date-parts":[[1995]]},"DOI":"10.2307\/1178221","type":"journal-article","created":{"date-parts":[[2006,4,19]],"date-time":"2006-04-19T10:48:35Z","timestamp":1145443715000},"page":"119","source":"Crossref","is-referenced-by-count":1,"title":["Indexing
+        Folk Literature of South American Indians"],"prefix":"10.2307","volume":"54","author":[{"given":"Kristina","family":"Lindell","sequence":"first","affiliation":[]},{"given":"Johannes","family":"Wilbert","sequence":"additional","affiliation":[]},{"given":"Karin","family":"Simoneau","sequence":"additional","affiliation":[]}],"member":"1121","container-title":["Asian
+        Folklore Studies"],"deposited":{"date-parts":[[2018,4,18]],"date-time":"2018-04-18T06:53:23Z","timestamp":1524034403000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.jstor.org\/stable\/1178221?origin=crossref"}},"issued":{"date-parts":[[1995]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1995]]}},"URL":"https:\/\/doi.org\/10.2307\/1178221","ISSN":["0385-2342"],"issn-type":[{"value":"0385-2342","type":"print"}],"published":{"date-parts":[[1995]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T22:42:26Z","timestamp":1651012946027},"reference-count":0,"publisher":"Bajang
+        Institute","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IJSS"],"abstract":"<jats:p>The
+        Lord''s Supper is a sacred ecclesiastical ceremony and this is the example
+        set by Jesus. The Holy Communion is a symbol of the sacrifice Jesus made on
+        the cross for the purpose of human salvation. The Holy Communion ceremony
+        is not just an ecclesiastical event but has spiritual meanings such as: a
+        memorial of God''s mercy, a higher form of cleansing, a fellowship of forgiveness,
+        is God''s command, and contains God''s blessing. This study uses a qualitative
+        literature study method that describes descriptively the meaning of the Holy
+        Communion according to the view of the Seventh-day Adventist Church, and the
+        results of this study are so that everyone can better understand the meaning
+        of the Holy Communion ceremony so that they can further build spiritual faith
+        and understand the meaning of Jesus'' sacrifice which is symbolized through
+        the ceremony. Holy communion.<\/jats:p>","DOI":"10.53625\/ijss.v1i6.1959","type":"journal-article","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T22:24:58Z","timestamp":1651011898000},"page":"1017-1024","source":"Crossref","is-referenced-by-count":0,"title":["SEVENTH
+        DAY ADVENTIST CHURCH\u2019S VIEW ABOUT HOLY COMMUNION ACCORDING TO JOHN 13:4-17"],"prefix":"10.53625","volume":"1","author":[{"given":"Polman","family":"Sinaga","sequence":"first","affiliation":[]},{"given":"Stimson","family":"Hutagalung","sequence":"additional","affiliation":[]},{"given":"Rolyana","family":"Ferinia","sequence":"additional","affiliation":[]}],"member":"31710","published-online":{"date-parts":[[2022,4,20]]},"container-title":["International
+        Journal of Social Science"],"link":[{"URL":"https:\/\/bajangjournal.com\/index.php\/IJSS\/article\/download\/1959\/1383","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/bajangjournal.com\/index.php\/IJSS\/article\/download\/1959\/1383","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T22:24:59Z","timestamp":1651011899000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/bajangjournal.com\/index.php\/IJSS\/article\/view\/1959"}},"issued":{"date-parts":[[2022,4,20]]},"references-count":0,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2022,4,3]]}},"URL":"https:\/\/doi.org\/10.53625\/ijss.v1i6.1959","ISSN":["2798-4079","2798-3463"],"issn-type":[{"value":"2798-4079","type":"electronic"},{"value":"2798-3463","type":"print"}],"published":{"date-parts":[[2022,4,20]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T19:40:55Z","timestamp":1651002055329},"publisher-location":"6
+        Bonhill Street,\u00a0London\u00a0EC2A 4PU\u00a0","reference-count":0,"publisher":"SAGE
+        Publications Ltd","isbn-type":[{"value":"9780761964322","type":"print"},{"value":"9780857024534","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2002]]},"DOI":"10.4135\/9780857024534","type":"book","created":{"date-parts":[[2011,7,15]],"date-time":"2011-07-15T19:48:50Z","timestamp":1310759330000},"source":"Crossref","is-referenced-by-count":7,"title":["Public
+        Information Campaigns and Opinion Research"],"prefix":"10.4135","author":[{"given":"Hans-Dieter","family":"Klingemann","sequence":"first","affiliation":[]},{"given":"Andrea","family":"R\u00f6mmele","sequence":"additional","affiliation":[]}],"member":"179","link":[{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.4135\/9780857024534","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T19:14:07Z","timestamp":1651000447000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/methods.sagepub.com\/book\/public-information-campaigns-and-opinion-research"}},"issued":{"date-parts":[[2002]]},"ISBN":["9780761964322","9780857024534"],"references-count":0,"alternative-id":["10.4135\/9780857024534"],"URL":"https:\/\/doi.org\/10.4135\/9780857024534","published":{"date-parts":[[2002]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T19:27:03Z","timestamp":1651001223790},"reference-count":0,"publisher":"Kluwer
+        Law International BV","issue":"Issue 12","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["BULA"],"published-print":{"date-parts":[[1981,12,1]]},"DOI":"10.54648\/bula1981168","type":"journal-article","created":{"date-parts":[[2022,3,18]],"date-time":"2022-03-18T13:48:13Z","timestamp":1647611293000},"page":"354-354","source":"Crossref","is-referenced-by-count":1,"title":["Saint
+        Piran"],"prefix":"10.54648","volume":"2","member":"33083","container-title":["Business
+        Law Review"],"language":"en","link":[{"URL":"https:\/\/kluwerlawonline.com\/journalarticle\/Business+Law+Review\/2.12\/BULA1981168","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,3,18]],"date-time":"2022-03-18T14:00:56Z","timestamp":1647612056000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/kluwerlawonline.com\/journalarticle\/Business+Law+Review\/2.12\/BULA1981168"}},"issued":{"date-parts":[[1981,12,1]]},"references-count":0,"journal-issue":{"issue":"Issue
+        12","published-print":{"date-parts":[[1981,12,1]]}},"alternative-id":["0143-6295(19811201)2:12;1-J"],"URL":"https:\/\/doi.org\/10.54648\/bula1981168","ISSN":["0143-6295"],"issn-type":[{"value":"0143-6295","type":"electronic"}],"published":{"date-parts":[[1981,12,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:40:30Z","timestamp":1651034430477},"reference-count":27,"publisher":"Springer
+        Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2015,1,1]],"date-time":"2015-01-01T00:00:00Z","timestamp":1420070400000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Radiologe"],"published-print":{"date-parts":[[2015,1]]},"DOI":"10.1007\/s00117-014-2706-7","type":"journal-article","created":{"date-parts":[[2015,1,21]],"date-time":"2015-01-21T12:08:52Z","timestamp":1421842132000},"page":"36-42","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":2,"title":["Moderne
+        Bildgebung der Lebermetastasen"],"prefix":"10.1007","volume":"55","author":[{"given":"J.","family":"Breitenseher","sequence":"first","affiliation":[]},{"given":"M.","family":"Pones","sequence":"additional","affiliation":[]},{"given":"G.","family":"Wengert","sequence":"additional","affiliation":[]},{"given":"A.","family":"Ba-Ssalamah","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2015,1,23]]},"reference":[{"key":"2706_CR1","doi-asserted-by":"crossref","first-page":"74","DOI":"10.1002\/1097-0142(1950)3:1<74::AID-CNCR2820030111>3.0.CO;2-7","volume":"3","author":"Abrams","year":"1950","unstructured":"Abrams
+        HL, Spiro R, Goldstein N (1950) Metastases in carcinoma; analysis of 1000
+        autopsied cases. Cancer 3:74\u201385","journal-title":"Cancer"},{"key":"2706_CR2","unstructured":"Prokop
+        M, Galanski M, Schaefer-Prokop C, Molen AJ van der (2007) Ganzk\u00f6rper-Computertomographie,
+        2.\u00a0Aufl. Thieme, Stuttgart"},{"key":"2706_CR3","doi-asserted-by":"crossref","first-page":"741","DOI":"10.1016\/S1064-9689(21)00641-3","volume":"8","author":"Imam","year":"2000","unstructured":"Imam
+        K, Bluemke DA (2000) MR imaging in the evaluation of hepatic metastases. Magn
+        Reson Imaging Clin North Am 8:741\u2013756","journal-title":"Magn Reson Imaging
+        Clin North Am"},{"key":"2706_CR4","doi-asserted-by":"crossref","first-page":"613","DOI":"10.1002\/bjs.9465","volume":"101","author":"Zech","year":"2014","unstructured":"Zech
+        CJ, Korpraphong P, Huppertz A et al (2014) Randomized multicentre trial of
+        gadoxetic acid-enhanced MRI versus conventional MRI or CT in the staging of
+        colorectal cancer liver metastases. Br J Surg 101:613\u2013621","journal-title":"Br
+        J Surg"},{"key":"2706_CR5","doi-asserted-by":"crossref","first-page":"809","DOI":"10.2214\/ajr.181.3.1810809","volume":"181","author":"Danet","year":"2003","unstructured":"Danet
+        IM, Semelka RC, Leonardou P et al (2003) Spectrum of MRI appearances of untreated
+        metastases of the liver. AJR Am J Roentgenol 181:809\u2013817","journal-title":"AJR
+        Am J Roentgenol"},{"key":"2706_CR6","doi-asserted-by":"crossref","first-page":"342","DOI":"10.1007\/s00330-008-1172-x","volume":"19","author":"Ba-Ssalamah","year":"2009","unstructured":"Ba-Ssalamah
+        A, Uffmann M, Saini S et al (2009) Clinical value of MRI liver-specific contrast
+        agents: a tailored examination for a confident non-invasive diagnosis of focal
+        liver lesions. Eur Radiol 19:342\u2013357","journal-title":"Eur Radiol"},{"key":"2706_CR7","doi-asserted-by":"crossref","first-page":"895","DOI":"10.1148\/radiographics.21.4.g01jl16895","volume":"21","author":"Mortele","year":"2001","unstructured":"Mortele
+        KJ, Ros PR (2001) Cystic focal liver lesions in the adult: differential CT
+        and MR imaging features. Radiographics 21:895\u2013910","journal-title":"Radiographics"},{"key":"2706_CR8","doi-asserted-by":"crossref","first-page":"815","DOI":"10.1007\/s11596-010-0664-5","volume":"30","author":"Xu","year":"2010","unstructured":"Xu
+        L, Zhou Y, Qiu D (2010) Correlation between calcified liver metastases and
+        histopathology of primary colorectal carcinoma in Chinese. J Huazhong Univ
+        Sci Technolog Med Sci 30:815\u2013818","journal-title":"J Huazhong Univ Sci
+        Technolog Med Sci"},{"key":"2706_CR9","doi-asserted-by":"crossref","first-page":"675","DOI":"10.1148\/radiographics.18.3.9599391","volume":"18","author":"Stoupis","year":"1998","unstructured":"Stoupis
+        C, Taylor HM, Paley MR et al (1998) The Rocky liver: radiologic-pathologic
+        correlation of calcified hepatic masses. Radiographics 18:675\u2013685 (quiz
+        726)","journal-title":"Radiographics"},{"key":"2706_CR10","doi-asserted-by":"crossref","first-page":"2187","DOI":"10.1007\/s00330-013-2824-z","volume":"23","author":"Scharitzer","year":"2013","unstructured":"Scharitzer
+        M, Ba-Ssalamah A, Ringl H et al (2013) Preoperative evaluation of colorectal
+        liver metastases: comparison between gadoxetic acid-enhanced 3.0-T MRI and
+        contrast-enhanced MDCT with histopathological correlation. Eur Radiol 23:2187\u20132196","journal-title":"Eur
+        Radiol"},{"key":"2706_CR11","doi-asserted-by":"crossref","first-page":"818","DOI":"10.1097\/01.sla.0000128305.90650.71","volume":"239","author":"Abdalla","year":"2004","unstructured":"Abdalla
+        EK, Vauthey JN, Ellis LM et al (2004) Recurrence and outcomes following hepatic
+        resection, radiofrequency ablation, and combined resection\/ablation for colorectal
+        liver metastases. Ann Surg 239:818\u2013825 (discussion 825\u2013817)","journal-title":"Ann
+        Surg"},{"key":"2706_CR12","doi-asserted-by":"crossref","first-page":"759","DOI":"10.1097\/00000658-200206000-00002","volume":"235","author":"Choti","year":"2002","unstructured":"Choti
+        MA, Sitzmann JV, Tiburi MF et al (2002) Trends in long-term survival following
+        liver resection for hepatic colorectal metastases. Ann Surg 235:759\u2013766","journal-title":"Ann
+        Surg"},{"key":"2706_CR13","doi-asserted-by":"crossref","first-page":"P25","DOI":"10.1007\/s10406-004-0088-z","volume":"14","author":"Albrecht","year":"2004","unstructured":"Albrecht
+        T, Hohmann J, Oldenburg A et al (2004) Detection and characterisation of liver
+        metastases. Eur Radiol 14(Suppl 8):P25\u2013P33","journal-title":"Eur Radiol"},{"key":"2706_CR14","doi-asserted-by":"crossref","first-page":"476","DOI":"10.1007\/s10350-004-6224-y","volume":"45","author":"Glover","year":"2002","unstructured":"Glover
+        C, Douse P, Kane P et al (2002) Accuracy of investigations for asymptomatic
+        colorectal liver metastases. Dis Colon Rectum 45:476\u2013484","journal-title":"Dis
+        Colon Rectum"},{"key":"2706_CR15","doi-asserted-by":"crossref","first-page":"9998","DOI":"10.3748\/wjg.v20.i29.9998","volume":"20","author":"Cantisani","year":"2014","unstructured":"Cantisani
+        V, Grazhdani H, Fioravanti C et al (2014) Liver metastases: contrast-enhanced
+        ultrasound compared with computed tomography and magnetic resonance. World
+        J Gastroenterol 20:9998\u201310007","journal-title":"World J Gastroenterol"},{"key":"2706_CR16","doi-asserted-by":"crossref","first-page":"16","DOI":"10.1007\/s001170050923","volume":"41","author":"Kulinna","year":"2001","unstructured":"Kulinna
+        C, Helmberger T, Kessler M, Reiser M (2001) Improvement in diagnosis of liver
+        metastases with the multi-detector CT. Radiologe 41:16\u201323","journal-title":"Radiologe"},{"key":"2706_CR17","doi-asserted-by":"crossref","first-page":"971","DOI":"10.1007\/s001170050590","volume":"39","author":"Kopka","year":"1999","unstructured":"Kopka
+        L, Grabbe E (1999) Biphasic liver diagnosis with multiplanar-detector spiral
+        CT. Radiologe 39:971\u2013978","journal-title":"Radiologe"},{"key":"2706_CR18","doi-asserted-by":"crossref","first-page":"e1","DOI":"10.1016\/j.ejrad.2010.03.004","volume":"79","author":"Kulemann","year":"2011","unstructured":"Kulemann
+        V, Schima W, Tamandl D et al (2011) Preoperative detection of colorectal liver
+        metastases in fatty liver: MDCT or MRI? Eur J Radiol 79:e1\u2013e6","journal-title":"Eur
+        J Radiol"},{"key":"2706_CR19","doi-asserted-by":"crossref","first-page":"670","DOI":"10.1016\/j.ejso.2012.05.004","volume":"38","author":"Berger-Kulemann","year":"2012","unstructured":"Berger-Kulemann
+        V, Schima W, Baroud S et al (2012) Gadoxetic acid-enhanced 3.0\u00a0T MR imaging
+        versus multidetector-row CT in the detection of colorectal metastases in fatty
+        liver using intraoperative ultrasound and histopathology as a standard of
+        reference. Eur J Surg Oncol 38:670\u2013676","journal-title":"Eur J Surg Oncol"},{"key":"2706_CR20","doi-asserted-by":"crossref","first-page":"903","DOI":"10.1007\/s00330-007-0847-z","volume":"18","author":"Koh","year":"2008","unstructured":"Koh
+        DM, Brown G, Riddell AM et al (2008) Detection of colorectal hepatic metastases
+        using MnDPDP MR imaging and diffusion-weighted imaging (DWI) alone and in
+        combination. Eur Radiol 18:903\u2013910","journal-title":"Eur Radiol"},{"key":"2706_CR21","unstructured":"Schima
+        W, Koelblinger C, Lesnik G, Ba-Ssalamah A (2011) Liver metastases. JBR-BTR
+        94:169\u2013177"},{"key":"2706_CR22","doi-asserted-by":"crossref","first-page":"777","DOI":"10.1148\/radiol.13130210","volume":"269","author":"Wibmer","year":"2013","unstructured":"Wibmer
+        A, Prusa AM, Nolz R et al (2013) Liver failure after major liver resection:
+        risk assessment by using preoperative gadoxetic acid-enhanced 3-T MR imaging.
+        Radiology 269:777\u2013786","journal-title":"Radiology"},{"key":"2706_CR23","doi-asserted-by":"crossref","first-page":"211","DOI":"10.1308\/003588414X13814021679195","volume":"96","author":"Lake","year":"2014","unstructured":"Lake
+        ES, Wadhwani S, Subar D et al (2014) The influence of FDG PET-CT on the detection
+        of extrahepatic disease in patients being considered for resection of colorectal
+        liver metastasis. Ann R Coll Surg Engl 96:211\u2013215","journal-title":"Ann
+        R Coll Surg Engl"},{"key":"2706_CR24","doi-asserted-by":"crossref","first-page":"1774","DOI":"10.1093\/annonc\/mdm108","volume":"18","author":"Herbertson","year":"2007","unstructured":"Herbertson
+        RA, Lee ST, Tebbutt N, Scott AM (2007) The expanding role of PET technology
+        in the management of patients with colorectal cancer. Ann Oncol 18:1774\u20131781","journal-title":"Ann
+        Oncol"},{"key":"2706_CR25","doi-asserted-by":"crossref","first-page":"938","DOI":"10.1097\/MNM.0b013e32833fa9ba","volume":"31","author":"Wiering","year":"2010","unstructured":"Wiering
+        B, Adang EM, Sijp JR van der et al (2010) Added value of positron emission
+        tomography imaging in the surgical treatment of colorectal liver metastases.
+        Nucl Med Commun 31:938\u2013944","journal-title":"Nucl Med Commun"},{"key":"2706_CR26","first-page":"1200","volume":"44","author":"Bar-Shalom","year":"2003","unstructured":"Bar-Shalom
+        R, Yefremov N, Guralnik L et al (2003) Clinical performance of PET\/CT in
+        evaluation of cancer: additional value for diagnostic imaging and patient
+        management. J Nucl Med 44:1200\u20131209","journal-title":"J Nucl Med"},{"key":"2706_CR27","doi-asserted-by":"crossref","first-page":"508","DOI":"10.2967\/jnumed.106.035667","volume":"48","author":"Gabriel","year":"2007","unstructured":"Gabriel
+        M, Decristoforo C, Kendler D et al (2007) 68Ga-DOTA-Tyr3-octreotide PET in
+        neuroendocrine tumors: comparison with somatostatin receptor scintigraphy
+        and CT. J Nucl Med 48:508\u2013518","journal-title":"J Nucl Med"}],"container-title":["Der
+        Radiologe"],"language":"de","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00117-014-2706-7.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/s00117-014-2706-7\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00117-014-2706-7","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:20:32Z","timestamp":1651033232000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/s00117-014-2706-7"}},"issued":{"date-parts":[[2015,1]]},"references-count":27,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2015,1]]}},"alternative-id":["2706"],"URL":"https:\/\/doi.org\/10.1007\/s00117-014-2706-7","ISSN":["0033-832X","1432-2102"],"issn-type":[{"value":"0033-832X","type":"print"},{"value":"1432-2102","type":"electronic"}],"published":{"date-parts":[[2015,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:42:19Z","timestamp":1651034539913},"reference-count":0,"publisher":"IJTHFAG
+        Journal","issue":"1","license":[{"start":{"date-parts":[[2022,3,23]],"date-time":"2022-03-23T00:00:00Z","timestamp":1647993600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["ijthfa"],"abstract":"<jats:p>Azerbaijan
+        is a country rich in its subsoil and surface natural resources. There is a
+        colorful hydrographic network in the Greater and Lesser Caucasus, and Kur
+        lowland that separate them. Our republic with a very fascinating landscape
+        is more beautiful in a river, lake, waterfall, spring and others. The Caspian
+        Sea, high mountains and green forests are further beautifying the homeland.
+        Among such beauties, sanatorium-resort complexes\u00a0are more attractive.
+        Thermal waters with temperatures of 72 C are used for treatment purposes in
+        the territory of Shikhov, Baku city. These waters play a big role in the treatment
+        of spinal, skin-venereal, wind and other diseases. Everyone may use thermal
+        waters in Goran, Samukh, Gazanbulag, Tartar, Barda, Aghjabadi, Khachmaz, Lankaran,
+        Astara, Masall\u0131 and other places for treatment purposes. Other territories
+        of our republic also have sanatorium-resort complexes. So, waters used in
+        Galaalti are being for treatment of kidney stones. There is a very important
+        resort complex in the bosom of nature. In general, Azerbaijan is a country
+        distinguished with its beautiful resort zones. Sanatorium hospitals which
+        operate in these zones are well-known for treatment of cardiac, cardiovascular,
+        nervous system, gastrointestinal, chronic and other diseases. In this regard,
+        we welcome everyone from different countries of the world to the sanatorium-resort
+        hospitals of our republic.<\/jats:p>","DOI":"10.31214\/ijthfa.v5i1.86","type":"journal-article","created":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:22:15Z","timestamp":1651033335000},"page":"51-54","source":"Crossref","is-referenced-by-count":0,"title":["The
+        importance of Sanatorium-resort complexes for medical treatments in Azerbaijan"],"prefix":"10.31214","volume":"5","author":[{"given":"Sakhavat","family":"Salakhov","sequence":"first","affiliation":[]}],"member":"16088","published-online":{"date-parts":[[2022,3,23]]},"container-title":["International
+        Journal of Terrestrial Heat Flow and Applications"],"link":[{"URL":"http:\/\/ijthfa.com\/index.php\/journal\/article\/download\/86\/67","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/ijthfa.com\/index.php\/journal\/article\/download\/86\/67","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:22:27Z","timestamp":1651033347000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ijthfa.com\/index.php\/journal\/article\/view\/86"}},"issued":{"date-parts":[[2022,3,23]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2022,4,4]]}},"URL":"https:\/\/doi.org\/10.31214\/ijthfa.v5i1.86","ISSN":["2595-4180"],"issn-type":[{"value":"2595-4180","type":"electronic"}],"published":{"date-parts":[[2022,3,23]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:42:38Z","timestamp":1651034558131},"reference-count":0,"publisher":"Universitas
+        Muhammadiyah Tangerang","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["al-muyassar"],"abstract":"<jats:p>Arabic
+        debate is one of the highest components of the art of speaking (maharah kalam)
+        in learning. This activity also trains students in addition to Arabic language
+        knowledge but also trains in arguing, studying, various kinds of perspectives.
+        Based on a wide variety of knowledge and sharp analysis of phenomena. So that
+        every Debate title is issued. Of course there are problems that are solved
+        through various points of view, for example in terms of economy, education,
+        social, culture and others. This study uses a qualitative approach with a
+        descriptive method. The purpose of this study was to determine the Arabic
+        debate training strategy for Al Kindy students at the Mahad Al Jami''ah Center
+        of UIN Maulana Malik Ibrahim Malang. Therefore, it has a strategic-systematic
+        way of arguing that is built to be accepted, until it is implemented. Of course
+        it has a maximum preparation process so that it can be realized. The following
+        are the stages of the debate training: (1) Before starting the exercise, students
+        are given various information about the exercise and are called to prepare
+        several arguments and data sources related to the title of the debate raised,(2)
+        The process of cross-member discussion\/study does not just flow, but there
+        are presenters who are scheduled to take turns, he is responsible for the
+        flow of discussions or studies related to current topics and issues led by
+        a moderator and concluded with the minutes, (3) The practice of practicing
+        direct Arabic debate, using two ASEAN Parliamentary systems consisting of
+        two teams of three people each. And the British Parliamentary system consists
+        of four groups, namely the agree group 1, the agree group 2, the contra group
+        1, the contra group 2, each group consists of two people.<\/jats:p>","DOI":"10.31000\/al-muyassar.v1i1.6071","type":"journal-article","created":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:24:25Z","timestamp":1651033465000},"page":"41","source":"Crossref","is-referenced-by-count":0,"title":["Strategi
+        Pelatihan Bahasa Arab dengan Metode Debat bagi Mahasiswa Komunitas Al-Kindy
+        di Pusat Ma\u2019had Al-Jaami\u2019ah UIN Maulana Malik Ibrahim Malang"],"prefix":"10.31000","volume":"1","author":[{"given":"Agung","family":"Muttaqien","sequence":"first","affiliation":[]},{"given":"Faedurrohman","family":"Faedurrohman","sequence":"additional","affiliation":[]}],"member":"15945","published-online":{"date-parts":[[2022,3,6]]},"container-title":["Al-Muyassar:
+        Journal of Arabic Education"],"link":[{"URL":"http:\/\/jurnal.umt.ac.id\/index.php\/al\/article\/viewFile\/6071\/3215","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/jurnal.umt.ac.id\/index.php\/al\/article\/viewFile\/6071\/3215","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:24:35Z","timestamp":1651033475000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/jurnal.umt.ac.id\/index.php\/al\/article\/view\/6071"}},"issued":{"date-parts":[[2022,3,6]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2022,1,22]]}},"URL":"https:\/\/doi.org\/10.31000\/al-muyassar.v1i1.6071","ISSN":["2829-095X"],"issn-type":[{"value":"2829-095X","type":"electronic"}],"published":{"date-parts":[[2022,3,6]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:40:59Z","timestamp":1651027259933},"reference-count":35,"publisher":"Springer
+        Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2022,3,1]],"date-time":"2022-03-01T00:00:00Z","timestamp":1646092800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,3,1]],"date-time":"2022-03-01T00:00:00Z","timestamp":1646092800000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Chem
+        Technol Fuels Oils"],"published-print":{"date-parts":[[2022,3]]},"DOI":"10.1007\/s10553-022-01347-x","type":"journal-article","created":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T02:03:41Z","timestamp":1648605821000},"page":"19-28","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Formation
+        of \u042110\u2013\u042114 Adamantanes from Petroleum Protoadamantanes"],"prefix":"10.1007","volume":"58","author":[{"given":"G.
+        A.","family":"Gadzhiev","sequence":"first","affiliation":[]},{"given":"M.
+        V.","family":"Giruts","sequence":"additional","affiliation":[]},{"given":"D.
+        S.","family":"Vylekzhanina","sequence":"additional","affiliation":[]},{"given":"G.
+        N.","family":"Gordadze","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,3,30]]},"reference":[{"issue":"4","key":"1347_CR1","first-page":"243","volume":"48","author":"GN
+        Gordadze","year":"2008","unstructured":"G. N. Gordadze, Neftekhimiya, 48,
+        No. 4, 243-255 (2008).","journal-title":"Neftekhimiya"},{"key":"1347_CR2","unstructured":"M.
+        V. Giruts, G N. Gordadze, Chemistry and Geochemistry of Hydrocarbons of Diamond-Like
+        Structure [in Russian], Nedra, Moscow (2017), 221 pp."},{"key":"1347_CR3","doi-asserted-by":"publisher","first-page":"1108","DOI":"10.1134\/S0965544119100098","volume":"59","author":"AI
+        Nekhaev","year":"2019","unstructured":"A. I. Nekhaev, A. L Maksimov, Petroleum
+        Chemistry, 59, 1108-1117 (2019).","journal-title":"Petroleum Chemistry"},{"key":"1347_CR4","unstructured":"E.
+        I. Bagrii, Adamantanes [in Russian], Nauka, Moscow (1989), 264 pp."},{"issue":"4","key":"1347_CR5","first-page":"243","volume":"48","author":"GN
+        Gordadze","year":"2008","unstructured":"G. N. Gordadze, Neftekhimiya, 48,
+        No. 4, 243-255 (2008).","journal-title":"Neftekhimiya"},{"key":"1347_CR6","unstructured":"M.
+        V. Giruts, G. N. Gordadze, Chemistry and Geochemistry of Hydrocarbons with
+        Diamond-Like Structure [in Russian], Nedra, Moscow (2017), 221 pp."},{"issue":"3","key":"1347_CR7","first-page":"345","volume":"13","author":"ZV
+        Yakubson","year":"1973","unstructured":"Z. V. Yakubson, O. A. Aref\u2019ev,
+        Al. A. Petrov, Neftekhimiya, 13, No. 3, 345-351 (1973).","journal-title":"Neftekhimiya"},{"key":"1347_CR8","unstructured":"Al.
+        A. Petrov, Hydrocarbons of Oil [in Russian], Nauka, Moscow (1984), 263 pp."},{"issue":"3","key":"1347_CR9","first-page":"163","volume":"45","author":"MV
+        Giruts","year":"2005","unstructured":"M. V. Giruts, G. V. Rusinova, G. N.
+        Gordadze, Neftekhimiya, 45, No. 3, 163-177 (2005).","journal-title":"Neftekhimiya"},{"issue":"4","key":"1347_CR10","first-page":"251","volume":"46","author":"MV
+        Giruts","year":"2006","unstructured":"M. V. Giruts, G. V. Rusinova, G. N.
+        Gordadze, Neftekhimiya, 46, No. 4, 251-261 (2006).","journal-title":"Neftekhimiya"},{"issue":"1","key":"1347_CR11","first-page":"13","volume":"47","author":"MV
+        Giruts","year":"2007","unstructured":"M. V. Giruts, G. N. Gordadze, Neftekhimiya,
+        47, No. 1, 13-23 (2007).","journal-title":"Neftekhimiya"},{"issue":"5","key":"1347_CR12","first-page":"606","volume":"61","author":"GA
+        Gadzhiev","year":"2021","unstructured":"G. A. Gadzhiev, M. V. Giruts, 61,
+        No. 5, 606-610 (2021).","journal-title":"M. V. Giruts"},{"issue":"3","key":"1347_CR13","first-page":"214","volume":"35","author":"EN
+        Bagrii","year":"1995","unstructured":"E. N. Bagrii, Neftekhimiya, 35, No.
+        3, 214-218 (1995).","journal-title":"Neftekhimiya"},{"key":"1347_CR14","unstructured":"G.
+        A. Mansoori, Diamondoid Molecules with Application in Biomedicine, Material
+        Science, Nanotechnology & Petroleum Science, World Scientific Publishing Co.
+        Pte. Ltd, Singapore (2012), 408 pp."},{"key":"1347_CR15","unstructured":"M.
+        V. Giruts, G. N. Gordadze, Chemistry and Geochemistry of Hydrocarbons with
+        Diamond-Like Structure [in Russian], Nedra, Moscow (2017), 221 pp."},{"key":"1347_CR16","doi-asserted-by":"crossref","unstructured":"R.
+        C. Merkle, Nanotechnology, 11, 89-99 (2000).","DOI":"10.1088\/0957-4484\/11\/2\/309"},{"key":"1347_CR17","doi-asserted-by":"publisher","first-page":"5","DOI":"10.1016\/S0167-7799(98)01278-5","volume":"17","author":"\u041aE
+        Drexler","year":"1999","unstructured":"\u041a. E. Drexler, Trends in Biotechnology,
+        17, 5-7 (1999).","journal-title":"Trends in Biotechnology"},{"issue":"6","key":"1347_CR18","doi-asserted-by":"publisher","first-page":"467","DOI":"10.7868\/S0028242113060026","volume":"53","author":"EN
+        Bagrii","year":"2013","unstructured":"E. N. Bagrii, G. B. Maravin, Neftekhimiya,
+        53, No. 6, 467-472 (2013).","journal-title":"Neftekhimiya"},{"key":"1347_CR19","unstructured":"US
+        Patent No. 5345020."},{"key":"1347_CR20","doi-asserted-by":"publisher","first-page":"95","DOI":"10.1016\/j.ces.2017.11.044","volume":"180","author":"X
+        Zhang","year":"2018","unstructured":"X. Zhang, L. Pan, L. Wang, et al., Chemical
+        Engineering Science, 180, 95-125 (2018).","journal-title":"Chemical Engineering
+        Science"},{"key":"1347_CR21","doi-asserted-by":"crossref","unstructured":"J.
+        Xie, T. Jia, S. Gong, et al., Fuel, 260. Article No. 116424 (2020).","DOI":"10.1016\/j.fuel.2019.116424"},{"issue":"3","key":"1347_CR22","doi-asserted-by":"publisher","first-page":"775","DOI":"10.1021\/je4008926","volume":"59","author":"X
+        Qin","year":"2014","unstructured":"X. Qin, X. Cao, Y. Guo, et al., Journal
+        of Chemical and Engineering Data, 59 (3), 775-783 (2014).","journal-title":"Journal
+        of Chemical and Engineering Data"},{"issue":"7","key":"1347_CR23","doi-asserted-by":"publisher","first-page":"2486","DOI":"10.1021\/ie303227g","volume":"52","author":"T
+        Ma","year":"2013","unstructured":"T. Ma, R. Feng, J. -J. Zou, et al., Industrial
+        and Engineering Chemistry Research, 52 (7), 2486-2492 (2013).","journal-title":"Industrial
+        and Engineering Chemistry Research"},{"issue":"1","key":"1347_CR24","doi-asserted-by":"publisher","first-page":"164","DOI":"10.1016\/j.fuel.2011.07.038","volume":"91","author":"L
+        Wang","year":"2012","unstructured":"L. Wang, J. -J. Zou, X. Zhang, et al.,
+        Fuel, 91 (1), 164-169 (2012).","journal-title":"Fuel"},{"issue":"3","key":"1347_CR25","doi-asserted-by":"publisher","first-page":"467","DOI":"10.1039\/C6SE00108D","volume":"1","author":"KW
+        Harrison","year":"2017","unstructured":"K. W. Harrison, B. G. Harvey, Sustainable
+        Energy and Fuels, 1 (3), 467-473 (2017).","journal-title":"Sustainable Energy
+        and Fuels"},{"issue":"7","key":"1347_CR26","doi-asserted-by":"publisher","first-page":"7786","DOI":"10.1021\/acs.energyfuels.8b00792","volume":"32","author":"KW
+        Harrison","year":"2018","unstructured":"K. W. Harrison, K. E. Rosenkoetter,
+        B. G. Harvey, Energy and Fuels, 32 (7), 7786-7791 (2018).","journal-title":"Energy
+        and Fuels"},{"key":"1347_CR27","doi-asserted-by":"publisher","first-page":"652","DOI":"10.1016\/j.fuel.2018.11.064","volume":"239","author":"J
+        Xie","year":"2019","unstructured":"J. Xie, X. Zhang, J. Xie, et al., Fuel,
+        239, 652-658 (2019).","journal-title":"Fuel"},{"issue":"12","key":"1347_CR28","doi-asserted-by":"publisher","first-page":"10171","DOI":"10.1021\/acs.energyfuels.6b01865","volume":"30","author":"BG
+        Harvey","year":"2016","unstructured":"B. G. Harvey, K. W. Harrison, M. C.
+        Davis, et al., Energy and Fuels, 30 (12), 10171-10178 (2016).","journal-title":"Energy
+        and Fuels"},{"key":"1347_CR29","unstructured":"E. I. Bagrii, Adamantanes [in
+        Russian], Nauka, Moscow (1989) 264 pp."},{"key":"1347_CR30","unstructured":"Patent
+        WO2002096804-A."},{"key":"1347_CR31","unstructured":"US Patent No. 5019665."},{"key":"1347_CR32","unstructured":"US
+        Patent No. 5461184."},{"key":"1347_CR33","unstructured":"US Patent No. 4952747."},{"issue":"2","key":"1347_CR34","doi-asserted-by":"publisher","first-page":"166","DOI":"10.31857\/S0028242121020040","volume":"61","author":"GA
+        Gadzhiev","year":"2021","unstructured":"G. A. Gadzhiev, Ch. M. Badmaev, G.
+        N. Gordadze, et al., Neftekhimiya, 61, No. 2, 166-171 (2021).","journal-title":"Neftekhimiya"},{"key":"1347_CR35","doi-asserted-by":"crossref","unstructured":"O.
+        R. Sergeeva, V. V. Chenets, V. G. Lipovich, 19, Is. 3-4, 411-414 (1982).","DOI":"10.1007\/BF02074072"}],"container-title":["Chemistry
+        and Technology of Fuels and Oils"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s10553-022-01347-x.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/article\/10.1007\/s10553-022-01347-x\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s10553-022-01347-x.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:18:43Z","timestamp":1651025923000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/s10553-022-01347-x"}},"issued":{"date-parts":[[2022,3]]},"references-count":35,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2022,3]]}},"alternative-id":["1347"],"URL":"https:\/\/doi.org\/10.1007\/s10553-022-01347-x","ISSN":["0009-3092","1573-8310"],"issn-type":[{"value":"0009-3092","type":"print"},{"value":"1573-8310","type":"electronic"}],"published":{"date-parts":[[2022,3]]},"assertion":[{"value":"30
+        March 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ArticleHistory","label":"Article
+        History"}}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T03:10:22Z","timestamp":1651029022431},"reference-count":21,"publisher":"Informa
+        UK Limited","issue":"2","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Religion"],"published-print":{"date-parts":[[2015,4,3]]},"DOI":"10.1080\/0048721x.2014.992109","type":"journal-article","created":{"date-parts":[[2015,1,20]],"date-time":"2015-01-20T11:40:02Z","timestamp":1421754002000},"page":"191-208","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":3,"title":["Decolonising
+        the word: Themba Masinga and his religious poetry in Ibandla LamaNazaretha"],"prefix":"10.1080","volume":"45","author":[{"given":"Nkosinathi","family":"Sithole","sequence":"first","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2015,1,20]]},"reference":[{"key":"CIT0002","first-page":"1","volume":"88","author":"Boer
+        R","year":"2001","journal-title":"Semia Special Issue: A Vanishing Mediator?
+        The Presence\/Absence of the Bible in Postcolonialism"},{"key":"CIT0003","volume-title":"Voicing
+        the Text: South African Oral Poetry and Performance","author":"Brown D","year":"1998"},{"key":"CIT0005","doi-asserted-by":"publisher","DOI":"10.1080\/1013929X.2008.9678297"},{"key":"CIT0006","doi-asserted-by":"publisher","DOI":"10.1080\/1013929X.2008.9678302"},{"key":"CIT0007","volume-title":"Religion
+        and Spirituality in South Africa: New Perspectives","author":"Brown D.","year":"2009"},{"key":"CIT0009","doi-asserted-by":"publisher","DOI":"10.7208\/chicago\/9780226114477.001.0001"},{"key":"CIT0010","volume-title":"Postcolonial
+        Feminist Interpretation of the Bible","author":"Dube M","year":"2000"},{"key":"CIT0011","doi-asserted-by":"crossref","DOI":"10.1163\/9789004496682","volume-title":"The
+        Man of Heaven and the Beautiful Ones of God: Writings from Ibandla lamaNazaretha,
+        a Nazaretha Church","author":"Gunner E","year":"2002"},{"key":"CIT0012","doi-asserted-by":"publisher","DOI":"10.1006\/reli.1997.0094"},{"key":"CIT0013","volume-title":"Where
+        is the Way: Song and Struggle in South Africa","author":"Kivnick H. Q.","year":"1990"},{"key":"CIT0014","volume-title":"Izwi
+        Lezulu","author":"Mpanza M","year":"1999"},{"key":"CIT0015","volume-title":"Rituals
+        of Fertility and the Sacrifice of Desire: Nazarite Women''s Performances in
+        South Africa","author":"Muller C","year":"1999"},{"issue":"2","key":"CIT0016","first-page":"12","volume":"2","author":"Oosthuizen
+        G. C.","year":"1981","journal-title":"Religion in Southern Africa"},{"key":"CIT0017","doi-asserted-by":"publisher","DOI":"10.1163\/157006699X00340"},{"issue":"1","key":"CIT0022","first-page":"209","volume":"24","author":"Sithole
+        N","year":"2011","journal-title":"Old Testament Essays"},{"key":"CIT0023","volume-title":"Bantu
+        Prophets in South Africa","author":"Sundkler B. G. M.","year":"1948"},{"key":"CIT0024","doi-asserted-by":"publisher","DOI":"10.1525\/nr.2006.9.4.079"},{"key":"CIT0025","volume-title":"Shembe:
+        The Revitalisation of African Society","author":"Vilakazi A.","year":"1986"},{"key":"CIT0026","volume-title":"The
+        Academy of the Poor: Towards a Dialogical Reading of the Bible","author":"West
+        G","year":"1999"},{"issue":"1","key":"CIT0028","first-page":"157","volume":"40","author":"West
+        G","year":"2006","journal-title":"Neotestamenica"},{"key":"CIT0030","volume-title":"Postcolonialism:
+        An Historical Introduction","author":"Young R. J. C.","year":"2001"}],"container-title":["Religion"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/0048721X.2014.992109","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:30:53Z","timestamp":1651026653000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.tandfonline.com\/doi\/full\/10.1080\/0048721X.2014.992109"}},"issued":{"date-parts":[[2015,1,20]]},"references-count":21,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2015,2,16]]},"published-print":{"date-parts":[[2015,4,3]]}},"alternative-id":["10.1080\/0048721X.2014.992109"],"URL":"https:\/\/doi.org\/10.1080\/0048721x.2014.992109","ISSN":["0048-721X","1096-1151"],"issn-type":[{"value":"0048-721X","type":"print"},{"value":"1096-1151","type":"electronic"}],"published":{"date-parts":[[2015,1,20]]},"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rrel20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rrel20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T03:10:49Z","timestamp":1651029049720},"reference-count":0,"publisher":"Faculty
+        of Education and Teacher Training, Jambi University","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JPJ"],"abstract":"<jats:p>Introduction
+        Santri who attend Islamic boarding schools, require them to live far apart
+        from their parents and families. And this condition can be a barrier for these
+        students to achieve happiness. The life of the Islamic boarding school which
+        is different from school life in general makes it difficult for some students
+        to adapt. In addition, the existing rules and learning programs stress the
+        students. As a result, it makes the students depressed and stressed and has
+        an impact on the happiness of the students. One of the factors affecting happiness
+        is friendship. A person will be happier when experiencing high quality friendships
+        with his friends.\nMethods The purpose of this study was to examine the relationship
+        between the quality of friendship and happiness in the students of the Imam
+        Ibnu Katsir Islamic boarding school in Rumbai District. The sample in this
+        study amounted to 151 people who were obtained through the quota sampling
+        technique. The instrument used in this study was the friendship quality scale
+        with a reliability coefficient of 0.891 and a happiness scale of 0.897. This
+        research uses Product moment analysis technique.\nResults of this study indicate
+        a significant value of = 0.000 (p \u2264 0.001) meaning that the hypothesis
+        is accepted, that is, there is a significant positive relationship between
+        the quality of friendship and happiness of the students. The effective contribution
+        of friendship quality to happiness is 7.5%. This shows that the quality of
+        friendship plays an important role in increasing happiness in students.\nConclusions
+        and Recommendation This research concluded that quality of friendship have
+        influence for the conquest of happiness in santri. Therefore this research
+        that recommendation to santri for cultivate a quality friendly relationship
+        with other person.\nKeywords: friendship quality, happiness, school.\nABSTRAK\nPendahuluan
+        Santri yang bersekolah di Pondok Pesantren, mengharuskan mereka untuk hidup
+        jauh terpisah dari orangtua maupun keluarganya. Dan kondisi tersebut bisa
+        menjadi penghalang untuk santri tersebut untuk mencapai kebahagiaan. Kehidupan
+        Pondok Pesantren yang berbeda dengan kehidupan sekolah pada umumnya membuat
+        beberapa santri sulit untuk beradaptasi. Selain itu, aturan-aturan serta program
+        pembelajaran yang ada membuat santri tertekan. Akibatnya membuat santri tertekan
+        dan stress serta berdampak pada kebahagiaan para santri. Salah satu faktor
+        mempengaruhi kebahagiaan adalah persahabatan. Seseorang akan lebih bahagia
+        saat mengalami persahabatan dengan kualitas yang tinggi dengan sahabat-sahabatnya.\nMetode
+        Tujuan penelitian ini untuk meneliti hubungan antara Kualitas Persahabatan
+        dengan Kebahagiaan pada Santri Pondok Pesantren Imam Ibnu Katsir di Kecamatan
+        Rumbai. Sampel dalam penelitian ini berjumlah 151 orang yang diperoleh melalui
+        teknik kuota sampling. Instrumen yang digunakan dalam penelitian ini adalah
+        skala kualitas persahabatan dengan koefisien reliabilitas sebesar 0,891 dan
+        skala kebahagiaan sebesar 0,897. Penelitian ini menggunakan teknik analisis
+        Product moment.\nHasil Penelitian ini menunjukkan nilai signifikan sebesar
+        = 0,000 (p \u2264 0,001) artinya hipotesis diterima, yaitu ada hubungan positif
+        yang signifikan antara kualitas persahabatan dengan kebahagiaan pada santri.
+        Sumbangan efektif kualitas persahabatan terhadap kebahagiaan yaitu sebesar
+        7,5%. Hal ini menunjukkan bahwa kualitas persahabatan berperan penting dalam
+        meningkatkan kebahagiaan pada santri.\nKesimpulan dan Saran Penelitian ini
+        disimpulkan bahwa kualitas persahabatan berperan penting dalam meraih kebahagiaan
+        pada santri. Oleh karena itu, direkomendasikan setiap santri hendaknya memupuk
+        hubungan persahabatan yang berkualitas dengan teman.\nKata Kunci: kualitas
+        persahabatan, kebahagiaan, sekolah\n\u00a0\n\u00a0<\/jats:p>","DOI":"10.22437\/jpj.v7i2.12637","type":"journal-article","created":{"date-parts":[[2021,11,5]],"date-time":"2021-11-05T08:13:01Z","timestamp":1636099981000},"page":"17-27","source":"Crossref","is-referenced-by-count":0,"title":["HUBUNGAN
+        ANTARA KUALITAS PERSAHABATAN DENGAN KEBAHAGIAAN PADA SANTRI PONDOK PESANTREN
+        IIK RIAU"],"prefix":"10.22437","volume":"5","author":[{"given":"Yuliani Intan","family":"Lestari","sequence":"first","affiliation":[]},{"given":"Winda","family":"Palasari","sequence":"additional","affiliation":[]}],"member":"9726","published-online":{"date-parts":[[2021,6,25]]},"container-title":["Jurnal
+        Psikologi Jambi"],"link":[{"URL":"https:\/\/online-journal.unja.ac.id\/jpj\/article\/download\/12637\/10965","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/online-journal.unja.ac.id\/jpj\/article\/download\/12637\/10965","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:44:08Z","timestamp":1651027448000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/online-journal.unja.ac.id\/jpj\/article\/view\/12637"}},"subtitle":["THE
+        RELATIONSHIP BETWEEN THE QUALITY OF FRIENDSHIP AND HAPPINESS IN SANTRI PONDOK
+        PESANTREN IIK RIAU"],"issued":{"date-parts":[[2021,6,25]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2021,6,25]]}},"URL":"https:\/\/doi.org\/10.22437\/jpj.v7i2.12637","ISSN":["2580-7021","2528-2735"],"issn-type":[{"value":"2580-7021","type":"electronic"},{"value":"2528-2735","type":"print"}],"published":{"date-parts":[[2021,6,25]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:26:35Z","timestamp":1651033595212},"reference-count":0,"publisher":"Informa
+        UK Limited","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Minerals
+        &amp; Energy - Raw Materials Report"],"published-print":{"date-parts":[[1999,1]]},"DOI":"10.1080\/14041049909362532","type":"journal-article","created":{"date-parts":[[2008,11,21]],"date-time":"2008-11-21T16:21:34Z","timestamp":1227284494000},"page":"3-5","source":"Crossref","is-referenced-by-count":1,"title":["The
+        mining and energy research network: Aims and scope of the project"],"prefix":"10.1080","volume":"14","author":[{"given":"Alyson","family":"Warhurst","sequence":"first","affiliation":[]}],"member":"301","container-title":["Minerals
+        &amp; Energy - Raw Materials Report"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/14041049909362532","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,15]],"date-time":"2016-12-15T16:30:51Z","timestamp":1481819451000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/14041049909362532"}},"issued":{"date-parts":[[1999,1]]},"references-count":0,"journal-issue":{"issue":"3","published-print":{"date-parts":[[1999,1]]}},"alternative-id":["10.1080\/14041049909362532"],"URL":"https:\/\/doi.org\/10.1080\/14041049909362532","ISSN":["1404-1049","1651-2286"],"issn-type":[{"value":"1404-1049","type":"print"},{"value":"1651-2286","type":"electronic"}],"published":{"date-parts":[[1999,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:25:45Z","timestamp":1651033545885},"reference-count":20,"publisher":"The
+        Korea Contents Association","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of the Korea Contents Association"],"published-print":{"date-parts":[[2014,3,28]]},"DOI":"10.5392\/jkca.2014.14.03.314","type":"journal-article","created":{"date-parts":[[2014,7,18]],"date-time":"2014-07-18T04:31:05Z","timestamp":1405657865000},"page":"314-327","source":"Crossref","is-referenced-by-count":3,"title":["Effectiveness
+        of an Emergent Care Management Simulation Education among Senior Nursing Students
+        According to Learning Styles"],"prefix":"10.5392","volume":"14","author":[{"given":"Hea
+        Kung","family":"Hur","sequence":"first","affiliation":[]},{"given":"Yun Hee","family":"Shin","sequence":"additional","affiliation":[]},{"given":"SoMi","family":"Park","sequence":"additional","affiliation":[]},{"given":"Young
+        Mi","family":"Lim","sequence":"additional","affiliation":[]},{"given":"Gi
+        Yon","family":"Kim","sequence":"additional","affiliation":[]},{"given":"Ki
+        Kyong","family":"Kim","sequence":"additional","affiliation":[]},{"given":"Hee-Young","family":"Song","sequence":"additional","affiliation":[]},{"given":"Hyang
+        Ok","family":"Choi","sequence":"additional","affiliation":[]},{"given":"Jihea","family":"Choi","sequence":"additional","affiliation":[]}],"member":"3346","reference":[{"key":"CCTHCV_2014_v14n3_314_002","doi-asserted-by":"publisher","DOI":"10.7475\/kjan.2013.25.5.574"},{"key":"CCTHCV_2014_v14n3_314_003","first-page":"96","volume":"26","year":"2005","journal-title":"Nurs
+        Educ Perspect"},{"key":"CCTHCV_2014_v14n3_314_005","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2013.19.2.228"},{"key":"CCTHCV_2014_v14n3_314_006","first-page":"1","volume":"23","year":"2011","journal-title":"Korean
+        Journal of Adult Nursing"},{"key":"CCTHCV_2014_v14n3_314_008","first-page":"14","volume":"4","year":"0000","journal-title":"Teach
+        Lear Nurs"},{"key":"CCTHCV_2014_v14n3_314_009","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2012.18.1.111"},{"key":"CCTHCV_2014_v14n3_314_010","doi-asserted-by":"publisher","DOI":"10.5977\/JKASNE.2009.15.2.183"},{"key":"CCTHCV_2014_v14n3_314_012","doi-asserted-by":"crossref","first-page":"3","DOI":"10.1111\/j.1365-2648.2009.05240.x","volume":"66","year":"2010","journal-title":"J
+        Adv Nurs"},{"key":"CCTHCV_2014_v14n3_314_013","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2013.19.1.5"},{"key":"CCTHCV_2014_v14n3_314_014","doi-asserted-by":"crossref","first-page":"269","DOI":"10.3928\/01484834-20070601-06","volume":"46","year":"2007","journal-title":"J
+        Nurs Educ"},{"key":"CCTHCV_2014_v14n3_314_019","first-page":"13","volume":"13","year":"2007","journal-title":"The
+        Journal of Korean Academic Society of Nursing Education"},{"key":"CCTHCV_2014_v14n3_314_021","doi-asserted-by":"publisher","DOI":"10.13065\/jksdh.2013.13.2.343"},{"key":"CCTHCV_2014_v14n3_314_022","first-page":"200","volume":"16","year":"2009","journal-title":"Journal
+        of Korean Academy of Fundamentals of Nursing"},{"key":"CCTHCV_2014_v14n3_314_023","doi-asserted-by":"publisher","DOI":"10.7739\/jkafn.2012.19.3.334"},{"key":"CCTHCV_2014_v14n3_314_025","first-page":"731","volume":"20","year":"2008","journal-title":"Korean
+        Journal of Adult Nursing"},{"key":"CCTHCV_2014_v14n3_314_026","doi-asserted-by":"crossref","first-page":"1","DOI":"10.5688\/aj700101","volume":"70","year":"2006","journal-title":"Am
+        J Pharm Educ"},{"key":"CCTHCV_2014_v14n3_314_027","doi-asserted-by":"publisher","DOI":"10.5392\/JKCA.2013.13.11.1046"},{"key":"CCTHCV_2014_v14n3_314_035","doi-asserted-by":"publisher","DOI":"10.5977\/JKASNE.2011.17.3.355"},{"key":"CCTHCV_2014_v14n3_314_036","doi-asserted-by":"crossref","first-page":"506","DOI":"10.1016\/j.nedt.2011.08.001","volume":"32","year":"2012","journal-title":"Nurse
+        Educ Today"},{"key":"CCTHCV_2014_v14n3_314_037","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2013.19.3.413"}],"container-title":["The
+        Journal of the Korea Contents Association"],"original-title":["\uac04\ud638\ub300\ud559
+        4\ud559\ub144 \ud559\uc0dd\uc758 \ud559\uc2b5\uc720\ud615\uc5d0 \ub530\ub978
+        \uc751\uae09\uc0c1\ud669\uad00\ub9ac \uc2dc\ubbac\ub808\uc774\uc158 \uad50\uc721\uc758
+        \ud6a8\uacfc"],"language":"en","deposited":{"date-parts":[[2020,8,22]],"date-time":"2020-08-22T10:53:26Z","timestamp":1598093606000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/koreascience.or.kr\/journal\/view.jsp?kj=CCTHCV&py=2014&vnc=v14n3&sp=314"}},"issued":{"date-parts":[[2014,3,28]]},"references-count":20,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2014,3,28]]}},"URL":"https:\/\/doi.org\/10.5392\/jkca.2014.14.03.314","ISSN":["1598-4877"],"issn-type":[{"value":"1598-4877","type":"print"}],"published":{"date-parts":[[2014,3,28]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:11:56Z","timestamp":1651054316899},"reference-count":0,"publisher":"Informa
+        UK Limited","issue":"sup1","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Nordic
+        Journal of Psychiatry"],"published-print":{"date-parts":[[2021,12,31]]},"DOI":"10.1080\/08039488.2021.2019912","type":"journal-article","created":{"date-parts":[[2022,3,22]],"date-time":"2022-03-22T16:05:02Z","timestamp":1647965102000},"page":"S8-S8","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Life
+        course associations between smoking and depressive symptoms. A 30-year Finnish
+        follow-up study"],"prefix":"10.1080","volume":"75","author":[{"given":"Olli","family":"Kiviruusu","sequence":"first","affiliation":[{"name":"Department
+        of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
+        Finland"},{"name":"Psychiatry, University of Helsinki and Helsinki University
+        Hospital, Helsinki, Finland"}]},{"given":"Noora","family":"Berg","sequence":"additional","affiliation":[{"name":"Department
+        of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
+        Finland"},{"name":"Department of Public Health and Caring Sciences, Uppsala
+        University, Uppsala, Sweden"},{"name":"Institute for Molecular Medicine Finland
+        (FIMM), HiLIFE, University of Helsinki, Helsinki, Finland"}]},{"given":"Maarit","family":"Piirtola","sequence":"additional","affiliation":[{"name":"Institute
+        for Molecular Medicine Finland (FIMM), HiLIFE, University of Helsinki, Helsinki,
+        Finland"}]},{"given":"Satu","family":"Vierti\u00f6","sequence":"additional","affiliation":[{"name":"Department
+        of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
+        Finland"}]},{"given":"Jaana","family":"Suvisaari","sequence":"additional","affiliation":[{"name":"Department
+        of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
+        Finland"}]},{"given":"Tellervo","family":"Korhonen","sequence":"additional","affiliation":[{"name":"Institute
+        for Molecular Medicine Finland (FIMM), HiLIFE, University of Helsinki, Helsinki,
+        Finland"}]},{"given":"Mauri","family":"Marttunen","sequence":"additional","affiliation":[{"name":"Department
+        of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
+        Finland"},{"name":"Psychiatry, University of Helsinki and Helsinki University
+        Hospital, Helsinki, Finland"}]}],"member":"301","published-online":{"date-parts":[[2022,3,22]]},"container-title":["Nordic
+        Journal of Psychiatry"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/08039488.2021.2019912","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T09:29:19Z","timestamp":1651051759000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/08039488.2021.2019912"}},"issued":{"date-parts":[[2021,12,31]]},"references-count":0,"journal-issue":{"issue":"sup1","published-print":{"date-parts":[[2021,12,31]]}},"alternative-id":["10.1080\/08039488.2021.2019912"],"URL":"https:\/\/doi.org\/10.1080\/08039488.2021.2019912","ISSN":["0803-9488","1502-4725"],"issn-type":[{"value":"0803-9488","type":"print"},{"value":"1502-4725","type":"electronic"}],"published":{"date-parts":[[2021,12,31]]},"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"},{"value":"2022-03-22","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:11:58Z","timestamp":1651054318085},"reference-count":0,"publisher":"Informa
+        UK Limited","issue":"sup1","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Nordic
+        Journal of Psychiatry"],"published-print":{"date-parts":[[2021,12,31]]},"DOI":"10.1080\/08039488.2021.2019897","type":"journal-article","created":{"date-parts":[[2022,4,12]],"date-time":"2022-04-12T13:50:12Z","timestamp":1649771412000},"page":"S1-S1","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["SYMPOSIUM
+        1: suicide prevention: Nordic Perspectives"],"prefix":"10.1080","volume":"75","author":[{"given":"Erkki","family":"Isomets\u00e4","sequence":"first","affiliation":[{"name":"Professor
+        of Psychiatry, University of Helsinki, Helsinki, Finland"}]}],"member":"301","published-online":{"date-parts":[[2022,4,12]]},"container-title":["Nordic
+        Journal of Psychiatry"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/08039488.2021.2019897","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T09:29:06Z","timestamp":1651051746000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/08039488.2021.2019897"}},"issued":{"date-parts":[[2021,12,31]]},"references-count":0,"journal-issue":{"issue":"sup1","published-print":{"date-parts":[[2021,12,31]]}},"alternative-id":["10.1080\/08039488.2021.2019897"],"URL":"https:\/\/doi.org\/10.1080\/08039488.2021.2019897","ISSN":["0803-9488","1502-4725"],"issn-type":[{"value":"0803-9488","type":"print"},{"value":"1502-4725","type":"electronic"}],"published":{"date-parts":[[2021,12,31]]},"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"},{"value":"2022-04-12","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:12:14Z","timestamp":1651054334514},"reference-count":0,"publisher":"Walter
+        de Gruyter GmbH","issue":"3","license":[{"start":{"date-parts":[[2014,5,29]],"date-time":"2014-05-29T00:00:00Z","timestamp":1401321600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014,6,1]]},"DOI":"10.1515\/gps-2014-0032","type":"journal-article","created":{"date-parts":[[2014,6,2]],"date-time":"2014-06-02T21:08:35Z","timestamp":1401743315000},"page":"247-251","source":"Crossref","is-referenced-by-count":0,"title":["Conferences
+        2014\u20132017"],"prefix":"10.1515","volume":"3","member":"374","published-online":{"date-parts":[[2014,5,29]]},"container-title":["Green
+        Processing and Synthesis"],"language":"en","link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2014-0032\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2014-0032\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T09:28:06Z","timestamp":1651051686000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2014-0032\/html"}},"issued":{"date-parts":[[2014,5,29]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2014,4,18]]},"published-print":{"date-parts":[[2014,6,1]]}},"alternative-id":["10.1515\/gps-2014-0032"],"URL":"https:\/\/doi.org\/10.1515\/gps-2014-0032","ISSN":["2191-9550","2191-9542"],"issn-type":[{"value":"2191-9550","type":"electronic"},{"value":"2191-9542","type":"print"}],"published":{"date-parts":[[2014,5,29]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:12:43Z","timestamp":1651057963368},"reference-count":0,"publisher":"Walter
+        de Gruyter GmbH","issue":"6","license":[{"start":{"date-parts":[[2013,12,1]],"date-time":"2013-12-01T00:00:00Z","timestamp":1385856000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Green
+        Processing and Synthesis"],"published-print":{"date-parts":[[2013,12,1]]},"DOI":"10.1515\/gps-2013-0098","type":"journal-article","created":{"date-parts":[[2013,11,5]],"date-time":"2013-11-05T17:16:41Z","timestamp":1383671801000},"page":"625-626","source":"Crossref","is-referenced-by-count":0,"title":["4th
+        International Congress of the Flow Chemistry Society (Barcelona, Spain, February
+        18\u201319, 2014)"],"prefix":"10.1515","volume":"2","author":[{"given":"Aaron","family":"Woodley","sequence":"first","affiliation":[{"name":"SELECTBIO
+        Ltd, 6 Woodview, Bull Lane, Acton, Sudbury CO10 0FD, UK"}]}],"member":"374","published-online":{"date-parts":[[2013,12,2]]},"container-title":["gps"],"language":"en","link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2013-0098\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2013-0098\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:32:55Z","timestamp":1651055575000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2013-0098\/html"}},"issued":{"date-parts":[[2013,12,1]]},"references-count":0,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2013,11,14]]},"published-print":{"date-parts":[[2013,12,1]]}},"alternative-id":["10.1515\/gps-2013-0098"],"URL":"https:\/\/doi.org\/10.1515\/gps-2013-0098","ISSN":["2191-9550","2191-9542"],"issn-type":[{"value":"2191-9550","type":"electronic"},{"value":"2191-9542","type":"print"}],"published":{"date-parts":[[2013,12,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:12:50Z","timestamp":1651057970208},"reference-count":20,"publisher":"EDP
+        Sciences","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["EPJ
+        Web of Conferences"],"published-print":{"date-parts":[[2015]]},"DOI":"10.1051\/epjconf\/20158201019","type":"journal-article","created":{"date-parts":[[2015,1,23]],"date-time":"2015-01-23T09:32:37Z","timestamp":1422005557000},"page":"01019","source":"Crossref","is-referenced-by-count":4,"title":["Mathematical
+        simulation of heat transfer at deciduous tree ignition by cloud-to-ground
+        lightning discharge"],"prefix":"10.1051","volume":"82","author":[{"given":"Geniy
+        V.","family":"Kuznetsov","sequence":"first","affiliation":[]},{"given":"Nikolay
+        V.","family":"Baranovskiy","sequence":"additional","affiliation":[]},{"given":"Vladimir
+        B.","family":"Barakhnin","sequence":"additional","affiliation":[]}],"member":"250","published-online":{"date-parts":[[2015,1,20]]},"reference":[{"key":"R1","unstructured":"Baranovskiy
+        N.V.,Matematicheskoe modelirovanie naibolee veroyatnikh scenariev i usloviy
+        vozniknoveniya lesnikh pozharov. Diss. \u2026 Cand. fiz.-mat. nauk. (2007)
+        (In Russian)"},{"key":"R2","first-page":"835","volume":"6","author":"Baranovskiy","year":"2004","journal-title":"Sibirskiy
+        ecologicheskiy zhurnal"},{"key":"R3","first-page":"59","volume":"9","author":"Baranovskiy","year":"2008","journal-title":"Ecologia
+        i promyshlennost Rossii"},{"key":"R4","first-page":"147","volume":"1","author":"Ponomarev
+        E.I.","year":"2006","journal-title":"Geographia i prirodnie resursi"},{"key":"R5","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1051\/epjconf\/20147600001","volume":"76","author":"Kuznetsov","year":"2014","journal-title":"EPJ
+        Web of Conferences"},{"key":"R6","unstructured":"Esau K.Anatomy of seed plants.
+        (1977)"},{"key":"R7","doi-asserted-by":"crossref","first-page":"4242","DOI":"10.1063\/1.1516211","volume":"14","author":"Gusarov","year":"2002","journal-title":"Physics
+        of Fluid"},{"key":"R8","doi-asserted-by":"crossref","unstructured":"Majumdar
+        P.,Computational Methods for Heat and Mass Transfer.(2005)","DOI":"10.1201\/b15915"},{"key":"R9","first-page":"15","volume":"7
+        \u2013 8","author":"Zabolotniy","year":"1995","journal-title":"Voprosy specialnogo
+        mashinostroeniya"},{"key":"R10","unstructured":"Latham D., Williams E.,Forest
+        fires: Behavior and Ecological Effects. (2001)"},{"key":"R11","doi-asserted-by":"crossref","first-page":"531","DOI":"10.1016\/0021-9169(95)00054-2","volume":"58","author":"Burke","year":"1996","journal-title":"Journal
+        of Atmospheric and Solar-Terrestrial Physics"},{"key":"R12","doi-asserted-by":"crossref","first-page":"1632","DOI":"10.1016\/j.jastp.2005.08.019","volume":"67","author":"Soriano","year":"2005","journal-title":"Journal
+        of Atmospheric and Solar-Terrestrial Physics"},{"key":"R13","doi-asserted-by":"crossref","first-page":"9035","DOI":"10.1029\/98JD00153","volume":"103","author":"Cummins","year":"1998","journal-title":"Journal
+        of Geophysical Research"},{"key":"R14","first-page":"166","volume":"76","author":"Grishin","year":"2003","journal-title":"Journal
+        of Engineering Physics and Thermophysics"},{"key":"R15","doi-asserted-by":"crossref","unstructured":"Baranovskiy
+        N.V., Zharikova M.V., Lecture Notes in Geoinformation and Cartography \u2013
+        LNG&C.Thematic Cartography for the Society. 13 (2014)","DOI":"10.1007\/978-3-319-08180-9_2"},{"key":"R16","unstructured":"Baranovskiy
+        N.V., Yankovich E.P., Proceedings of 5th International Conference on Cartography
+        and GIS (Riviera, Bulgaria, 15 \u2013 20 june 2014),2, 756 (2014)"},{"key":"R17","unstructured":"Yankovich
+        E.P., Baranovskiy N.V., 14thInternational Multidisciplinary Scientific Geoconference
+        SGEM \u2013 2014. GeoConference on Informatics, Geoinformatics and Remote
+        Sensing,1, 607 (2014) (DOI: 10.5593\/sgem2014B21)"},{"key":"R18","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0378-1127(00)00271-1","volume":"140","author":"Pew","year":"2001","journal-title":"Forest
+        Ecology and Management"},{"key":"R19","doi-asserted-by":"crossref","first-page":"S68","DOI":"10.1016\/j.foreco.2006.08.096","volume":"234","author":"Conedera","year":"2006","journal-title":"Forest
+        Ecology and Management"},{"key":"R20","unstructured":"Plummer F.G., Bulletin
+        111. USDA Forest Service. (1912)"}],"container-title":["EPJ Web of Conferences"],"link":[{"URL":"http:\/\/epjwoc.epj.org\/10.1051\/epjconf\/20158201019\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:39:25Z","timestamp":1651055965000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.epj-conferences.org\/10.1051\/epjconf\/20158201019"}},"editor":[{"given":"G.
+        V.","family":"Kuznetsov","sequence":"first","affiliation":[]},{"given":"P.
+        A.","family":"Strizhak","sequence":"additional","affiliation":[]},{"given":"A.
+        O.","family":"Zhdanova","sequence":"additional","affiliation":[]},{"given":"E.
+        E.","family":"Bulba","sequence":"additional","affiliation":[]}],"issued":{"date-parts":[[2015]]},"references-count":20,"alternative-id":["epjconf-tbet2014_01019"],"URL":"https:\/\/doi.org\/10.1051\/epjconf\/20158201019","ISSN":["2100-014X"],"issn-type":[{"value":"2100-014X","type":"electronic"}],"published":{"date-parts":[[2015]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+  recorded_at: Sun, 15 Jun 2025 05:34:22 GMT
+recorded_with: VCR 6.3.1

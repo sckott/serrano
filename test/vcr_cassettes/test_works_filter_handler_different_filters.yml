@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Jun 2025 20:53:31 GMT
+      - Sun, 15 Jun 2025 05:34:16 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,10 +29,10 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - AWSALB=zSyv+yHw4e8fRu6iDsCmmQcvQSz/rFYVjt2Jzgewf+9JwEyrGD/rtieqXJbs/D7kuMClvz++2tS0gH2LUN+GCbT1XETUaRE3xJkQNjVhP2t1l3NZxzCy1zPXJNO8;
-        Expires=Sun, 15 Jun 2025 20:53:30 GMT; Path=/
-      - AWSALBCORS=zSyv+yHw4e8fRu6iDsCmmQcvQSz/rFYVjt2Jzgewf+9JwEyrGD/rtieqXJbs/D7kuMClvz++2tS0gH2LUN+GCbT1XETUaRE3xJkQNjVhP2t1l3NZxzCy1zPXJNO8;
-        Expires=Sun, 15 Jun 2025 20:53:30 GMT; Path=/; SameSite=None
+      - AWSALB=yymYKxVZZgFkpcQeZvVx+nbRaIBNASvKtNviteJ8rtibrCTFfkL4VaXHUvaubzqzH1DiFsQIVm7LcLDvdM2FwLc5fwV0ZiSyFcT+ou6TvVMm244C1C7h4LuDChCP;
+        Expires=Sun, 22 Jun 2025 05:34:13 GMT; Path=/
+      - AWSALBCORS=yymYKxVZZgFkpcQeZvVx+nbRaIBNASvKtNviteJ8rtibrCTFfkL4VaXHUvaubzqzH1DiFsQIVm7LcLDvdM2FwLc5fwV0ZiSyFcT+ou6TvVMm244C1C7h4LuDChCP;
+        Expires=Sun, 22 Jun 2025 05:34:13 GMT; Path=/; SameSite=None
       Access-Control-Expose-Headers:
       - Link
       Access-Control-Allow-Headers:
@@ -54,7 +54,7 @@ http_interactions:
       - interest-cohort=()
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":12082445,"items":[{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T20:11:20Z","timestamp":1651090280032},"reference-count":45,"publisher":"Elsevier
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":12113091,"items":[{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T20:11:20Z","timestamp":1651090280032},"reference-count":45,"publisher":"Elsevier
         BV","issue":"2","license":[{"start":{"date-parts":[[2015,8,1]],"date-time":"2015-08-01T00:00:00Z","timestamp":1438387200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/100000041","name":"American
         Diabetes Association","doi-asserted-by":"publisher","award":["1-10-IN-30"],"id":[{"id":"10.13039\/100000041","id-type":"DOI","asserted-by":"publisher"}]},{"name":"Iowa
         City VA Health Care System (5101BX00285-07)"},{"DOI":"10.13039\/100000002","name":"National
@@ -2270,5 +2270,5 @@ http_interactions:
         Title"},{"value":"https:\/\/doi.org\/10.1016\/j.ijbiomac.2018.08.062","name":"articlelink","label":"CrossRef
         DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
         Type"},{"value":"\u00a9 2018 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
-  recorded_at: Sun, 08 Jun 2025 20:53:31 GMT
+  recorded_at: Sun, 15 Jun 2025 05:34:16 GMT
 recorded_with: VCR 6.3.1

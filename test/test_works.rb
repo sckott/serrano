@@ -34,15 +34,20 @@ class TestWorks < Test::Unit::TestCase
       assert_equal(4, res.length)
       assert_equal(Hash, res.class)
     end
-    # assert_equal(200, res.status)
   end
 
-  def test_works_filter_handler
-    VCR.use_cassette("test_works_filter_handler") do
+  def test_works_filter_handler_different_filters
+    VCR.use_cassette("test_works_filter_handler_different_filters") do
       res = Serrano.works(filter: {has_funder: true, has_full_text: true})
       assert_equal(Hash, res.class)
     end
-    # assert_equal(200, res.status)
+  end
+
+  def test_works_filter_handler_same_filters
+    VCR.use_cassette("test_works_filter_handler_same_filters") do
+      res = Serrano.works(filter: {type: ["journal-article", "book"]})
+      assert_equal(Hash, res.class)
+    end
   end
 
   def test_bad_filter_structure_raises_exception
