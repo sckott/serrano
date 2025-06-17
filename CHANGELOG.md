@@ -1,4 +1,4 @@
-## Dev version (2025-06-14)
+## 1.6 (2025-06-17)
 
 * Fixed filter handling so that the same filter can be used multiple times (#176)
 
