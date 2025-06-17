@@ -45,8 +45,13 @@ class TestWorks < Test::Unit::TestCase
 
   def test_works_filter_handler_same_filters
     VCR.use_cassette("test_works_filter_handler_same_filters") do
-      res = Serrano.works(filter: {type: ["journal-article", "book"]})
+      res = Serrano.works(query: "Climate", limit: 20,
+        filter: {type: ["book", "journal-article"]})
       assert_equal(Hash, res.class)
+      assert_equal(
+        ["book", "journal-article"],
+        res["message"]["items"].map{ |x| x["type"] }.uniq.sort
+      )
     end
   end
 
