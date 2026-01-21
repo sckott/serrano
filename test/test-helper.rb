@@ -3,7 +3,7 @@ SimpleCov.start do
   track_files "../lib/**/*.rb"
   add_filter "/test"
 end
-if ENV["CI"] == "true"
+if ENV["CI"] == "true" && RUBY_VERSION.start_with?("4.0")
   require "codecov"
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
