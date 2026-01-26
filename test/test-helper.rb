@@ -3,10 +3,10 @@ SimpleCov.start do
   track_files "../lib/**/*.rb"
   add_filter "/test"
 end
-if ENV["CI"] == "true" && RUBY_VERSION.start_with?("4.0")
-  require "codecov"
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
+# if ENV["CI"] == "true" && RUBY_VERSION.start_with?("4.0")
+require 'simplecov-cobertura'
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+# end
 
 require "vcr"
 VCR.configure do |c|

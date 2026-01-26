@@ -24,12 +24,11 @@ Gem::Specification.new do |s|
   s.bindir = "bin"
   s.executables = ["serrano"]
 
-  s.add_development_dependency "bundler", ">= 2.1.4"
-  s.add_development_dependency "codecov", "~> 0.5.0"
+  s.add_development_dependency "bundler", "~> 2.1", ">= 2.1.4"
   s.add_development_dependency "json", "~> 2.3", ">= 2.3.1"
   s.add_development_dependency "rake", "~> 13.0", ">= 13.0.1"
   s.add_development_dependency "standard", "~> 1.0"
-  s.add_development_dependency "simplecov", "~> 0.21.2"
+  s.add_development_dependency "simplecov-cobertura", "~> 1.4.2"
   s.add_development_dependency "test-unit", "~> 3.3", ">= 3.3.6"
   s.add_development_dependency "vcr", "~> 6.3", ">= 6.3.1"
   s.add_development_dependency "webmock", "~> 3.25", ">= 3.25.1"
@@ -41,7 +40,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "thor", "~> 1.2", ">= 1.2.1"
 
   s.metadata = {
-    "homepage_uri" => "https://github.com/sckott/serrano",
     "documentation_uri" => "https://www.rubydoc.info/gems/serrano",
     "changelog_uri" =>
       "https://github.com/sckott/serrano/releases/tag/v#{s.version}",
