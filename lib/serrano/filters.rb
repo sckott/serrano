@@ -69,6 +69,7 @@ module Serrano
       "directory" => {"possible_values" => "{directory}", "description" => "metadata records whose article or serial are mentioned in the given '{directory}'. Currently the only supported value is 'doaj'"},
       "doi" => {"possible_values" => "{doi}", "description" => "metadata describing the DOI '{doi}'"},
       "updates" => {"possible_values" => "{doi}", "description" => "metadata for records that represent editorial updates to the DOI '{doi}'"},
+      "update_type" => {"possible_values" => nil, "description" => "One of the update types from the Crossref update type schema (e.g. correction, retraction, expression_of_concern)"},
       "is_update" => {"possible_values" => nil, "description" => "metadata for records that represent editorial updates"},
       "has_update_policy" => {"possible_values" => nil, "description" => "metadata for records that include a link to an editorial update policy"},
       "container_title" => {"possible_values" => nil, "description" => "metadata for records with a publication title exactly with an exact match"},
