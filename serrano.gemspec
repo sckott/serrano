@@ -25,18 +25,18 @@ Gem::Specification.new do |s|
   s.executables = ["serrano"]
 
   s.add_development_dependency "bundler", "~> 4.0", ">= 4.0.7"
-  s.add_development_dependency "json", "~> 2.3", ">= 2.3.1"
+  s.add_development_dependency "json", "~> 2.18", ">= 2.18.1"
   s.add_development_dependency "rake", "~> 13.0", ">= 13.0.1"
-  s.add_development_dependency "standard", "~> 1.0"
-  s.add_development_dependency "test-unit", "~> 3.3", ">= 3.3.6"
-  s.add_development_dependency "vcr", "~> 6.3", ">= 6.3.1"
-  s.add_development_dependency "webmock", "~> 3.25", ">= 3.25.1"
+  s.add_development_dependency "standard", "~> 1.54"
+  s.add_development_dependency "test-unit", "~> 3.7", ">= 3.7.7"
+  s.add_development_dependency "vcr", "~> 6.4"
+  s.add_development_dependency "webmock", "~> 3.26", ">= 3.26.1"
 
-  s.add_runtime_dependency "faraday", "~> 2.13", ">= 2.13.1"
-  s.add_runtime_dependency "faraday-follow_redirects", ">= 0.1", "< 0.6"
-  s.add_runtime_dependency "multi_json", "~> 1.15"
-  s.add_runtime_dependency "rexml", "~> 3.2", ">= 3.2.5"
-  s.add_runtime_dependency "thor", "~> 1.2", ">= 1.2.1"
+  s.add_runtime_dependency "faraday", "~> 2.14", ">= 2.14.1"
+  s.add_runtime_dependency "faraday-follow_redirects", "~> 0.5.0"
+  s.add_runtime_dependency "multi_json", "~> 1.19", ">= 1.19.1"
+  s.add_runtime_dependency "rexml", "~> 3.4", ">= 3.4.4"
+  s.add_runtime_dependency "thor", "~> 1.5"
 
   s.metadata = {
     "documentation_uri" => "https://www.rubydoc.info/gems/serrano",
