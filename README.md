@@ -3,7 +3,6 @@ serrano
 
 [![gem version](https://img.shields.io/gem/v/serrano.svg)](https://rubygems.org/gems/serrano)
 [![Ruby](https://github.com/sckott/serrano/actions/workflows/ruby.yml/badge.svg)](https://github.com/sckott/serrano/actions/workflows/ruby.yml)
-[![codecov.io](https://codecov.io/github/sckott/serrano/coverage.svg?branch=main)](https://codecov.io/github/sckott/serrano?branch=main)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6386581.svg)](https://zenodo.org/badge/latestdoi/2600/sckott/serrano)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 

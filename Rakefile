@@ -5,7 +5,7 @@ require "rake/testtask"
 require "standard"
 require "standard/rake"
 
-Rake::TestTask.new do |t|
+Rake::TestTask.new(:test) do |t|
   t.libs << "test"
   t.test_files = FileList["test/test_*.rb"]
   t.verbose = true
