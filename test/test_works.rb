@@ -50,7 +50,7 @@ class TestWorks < Test::Unit::TestCase
       assert_equal(Hash, res.class)
       assert_equal(
         ["book", "journal-article"],
-        res["message"]["items"].map{ |x| x["type"] }.uniq.sort
+        res["message"]["items"].map { |x| x["type"] }.uniq.sort
       )
     end
   end
