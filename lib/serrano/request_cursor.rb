@@ -2,6 +2,7 @@
 
 require "erb"
 require "faraday"
+require "faraday/follow_redirects"
 require "multi_json"
 require "serrano/error"
 require "serrano/helpers/configuration"
@@ -77,10 +78,12 @@ module Serrano
       conn = if verbose
         Faraday.new(url: Serrano.base_url, request: options || {}) do |f|
           f.response :logger
+          f.use Faraday::FollowRedirects::Middleware
           f.use Faraday::SerranoErrors::Middleware
         end
       else
         Faraday.new(url: Serrano.base_url, request: options || {}) do |f|
+          f.use Faraday::FollowRedirects::Middleware
           f.use Faraday::SerranoErrors::Middleware
         end
       end
