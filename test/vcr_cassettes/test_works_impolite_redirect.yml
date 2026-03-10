@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.26434%2Fchemrxiv.5406907
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v2.14.1 Serrano/v1.6
+      X-User-Agent:
+      - Faraday/v2.14.1 Serrano/v1.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 15:51:51 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Location:
+      - "/works/10.26434/chemrxiv.5406907.v5"
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - Jetty(9.4.40.v20210413)
+      X-Rate-Limit-Limit:
+      - '5'
+      X-Rate-Limit-Interval:
+      - 1s
+      X-Concurrency-Limit:
+      - '1'
+      X-Api-Pool:
+      - public
+      Permissions-Policy:
+      - interest-cohort=()
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 10 Mar 2026 15:51:51 GMT
+- request:
+    method: get
+    uri: https://api.crossref.org/works/10.26434/chemrxiv.5406907.v5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v2.14.1 Serrano/v1.6
+      X-User-Agent:
+      - Faraday/v2.14.1 Serrano/v1.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2026 15:51:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2798'
+      Connection:
+      - keep-alive
+      Access-Control-Expose-Headers:
+      - Link
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Jetty(9.4.40.v20210413)
+      X-Rate-Limit-Limit:
+      - '5'
+      X-Rate-Limit-Interval:
+      - 1s
+      X-Concurrency-Limit:
+      - '1'
+      X-Api-Pool:
+      - public
+      Permissions-Policy:
+      - interest-cohort=()
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2026,1,22]],"date-time":"2026-01-22T11:28:17Z","timestamp":1769081297791,"version":"3.49.0"},"posted":{"date-parts":[[2018,2,23]]},"reference-count":0,"publisher":"American
+        Chemical Society (ACS)","license":[{"start":{"date-parts":[[2018,2,23]],"date-time":"2018-02-23T00:00:00Z","timestamp":1519344000000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.26434\/chemrxiv.5406907.v5","type":"posted-content","created":{"date-parts":[[2018,2,23]],"date-time":"2018-02-23T07:05:59Z","timestamp":1519369559000},"source":"Crossref","is-referenced-by-count":0,"title":["Binding
+        Modes of Ligands Using Enhanced Sampling (BLUES): Rapid Decorrelation of Ligand
+        Binding Modes Using Nonequilibrium Candidate Monte Carlo"],"prefix":"10.26434","author":[{"given":"Samuel","family":"Gill","sequence":"first","affiliation":[]},{"given":"Nathan
+        M.","family":"Lim","sequence":"additional","affiliation":[]},{"given":"Patrick","family":"Grinaway","sequence":"additional","affiliation":[]},{"given":"Ari\u00ebn
+        S.","family":"Rustenburg","sequence":"additional","affiliation":[]},{"given":"Josh","family":"Fass","sequence":"additional","affiliation":[]},{"given":"Gregory","family":"Ross","sequence":"additional","affiliation":[]},{"given":"John
+        D.","family":"Chodera","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-1083-5533","authenticated-orcid":false,"given":"David","family":"Mobley","sequence":"additional","affiliation":[{"name":"University
+        of California, Irvine","place":["United States"]}]}],"member":"316","container-title":[],"original-title":[],"link":[{"URL":"https:\/\/chemrxiv.org\/engage\/api-gateway\/chemrxiv\/assets\/orp\/resource\/item\/60c73e98ee301c1988c78755\/original\/binding-modes-of-ligands-using-enhanced-sampling-blues-rapid-decorrelation-of-ligand-binding-modes-using-nonequilibrium-candidate-monte-carlo.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2026,1,21]],"date-time":"2026-01-21T18:11:33Z","timestamp":1769019093000},"score":1,"resource":{"primary":{"URL":"https:\/\/chemrxiv.org\/doi\/full\/10.26434\/chemrxiv.5406907.v5"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2018,2,23]]},"references-count":0,"aliases":["10.26434\/chemrxiv.5406907"],"URL":"https:\/\/doi.org\/10.26434\/chemrxiv.5406907.v5","relation":{"is-preprint-of":[{"id-type":"doi","id":"10.1021\/acs.jpcb.7b11820","asserted-by":"subject"}]},"subject":[],"published":{"date-parts":[[2018,2,23]]},"subtype":"preprint"}}'
+  recorded_at: Tue, 10 Mar 2026 15:51:51 GMT
+recorded_with: VCR 6.4.0
