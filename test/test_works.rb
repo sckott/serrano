@@ -6,6 +6,7 @@ class TestWorks < Test::Unit::TestCase
   def setup
     @doi = "10.1371/journal.pone.0033693"
     @dois = ["10.1007/12080.1874-1746", "10.1007/10452.1573-5125", "10.1111/(issn)1442-9993"]
+    @redirect_doi = '10.26434/chemrxiv.5406907'
   end
 
   def test_works
@@ -16,6 +17,26 @@ class TestWorks < Test::Unit::TestCase
       assert_equal(Hash, res[0].class)
     end
     # assert_equal(200, res[0].status)
+  end
+
+   def test_works_impolite
+    VCR.use_cassette("test_works_impolite") do
+      Serrano.configuration{|c| c.mailto = nil }
+      res = Serrano.works(ids: @doi)
+      assert_equal(1, res.length)
+      assert_equal(Array, res.class)
+      assert_equal(Hash, res[0].class)
+    end
+  end
+
+  def test_works_impolite_redirect
+    VCR.use_cassette("test_works_impolite_redirect") do
+      Serrano.configuration{|c| c.mailto = nil }
+      res = Serrano.works(ids: @redirect_doi)
+      assert_equal(1, res.length)
+      assert_equal(Array, res.class)
+      assert_equal(Hash, res[0].class)
+    end
   end
 
   def test_works_many_dois
