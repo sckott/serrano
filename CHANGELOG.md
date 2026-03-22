@@ -1,3 +1,8 @@
+## 1.7 (2026-03-21)
+
+* Add `update_type` filter by @ahamelers in (#180) (#181)
+* Add follow redirects for http requests by @ahamelers in (#182) (#183)
+
 ## 1.6 (2025-06-17)
 
 * Fixed filter handling so that the same filter can be used multiple times (#176)
